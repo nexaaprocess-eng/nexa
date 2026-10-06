@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="330 -20 255 230">
+  <defs>
+    <mask id="m">
+      <rect x="300" y="-50" width="320" height="300" fill="#fff"/>
+      <polygon points="350,0 405,0 565,190 510,190" fill="#000" stroke="#000" stroke-width="24" stroke-linejoin="round"/>
+    </mask>
+  </defs>
+  <polygon points="500,0 555,0 410,190 355,190" fill="#0B2F4F" mask="url(#m)"/>
+  <polygon points="350,0 405,0 565,190 510,190" fill="#00A86B"/>
+</svg>
