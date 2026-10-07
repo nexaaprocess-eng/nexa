@@ -86,11 +86,24 @@
      Avanza solo; al tocar una tarjeta lateral, se coloca en el centro. */
   const track = document.getElementById("carousel-track");
   if (track) {
+    // Carrusel infinito: se duplican las tarjetas antes y después de las originales.
+    // Cuando la tarjeta centrada es una copia, se salta sin animación a la original equivalente.
+    const originals = [...track.querySelectorAll(".card")];
+    const total = originals.length;
+    const makeClones = () => originals.map((c) => {
+      const clone = c.cloneNode(true);
+      clone.setAttribute("aria-hidden", "true");
+      return clone;
+    });
+    track.prepend(...makeClones());
+    track.append(...makeClones());
     const cards = [...track.querySelectorAll(".card")];
+    const current = document.getElementById("carousel-current");
+    document.getElementById("carousel-total").textContent = String(total).padStart(2, "0");
     let active = -1;
 
     const centerOf = (card) => card.offsetLeft - (track.clientWidth - card.offsetWidth) / 2;
-    const goTo = (i) => track.scrollTo({ left: centerOf(cards[(i + cards.length) % cards.length]) });
+    const goTo = (i) => track.scrollTo({ left: centerOf(cards[Math.max(0, Math.min(i, cards.length - 1))]) });
 
     const updateActive = () => {
       const mid = track.scrollLeft + track.clientWidth / 2;
@@ -101,8 +114,25 @@
       if (best !== active) {
         cards.forEach((c, i) => c.classList.toggle("is-active", i === best));
         active = best;
+        current.textContent = String((best % total) + 1).padStart(2, "0");
       }
     };
+
+    // Si el centro ha quedado en una copia, salta a la tarjeta original equivalente
+    const jumpTo = (i) => {
+      track.classList.add("no-anim");
+      track.style.scrollBehavior = "auto";
+      track.scrollLeft = centerOf(cards[i]);
+      updateActive();
+      track.style.scrollBehavior = "";
+      requestAnimationFrame(() => requestAnimationFrame(() => track.classList.remove("no-anim")));
+    };
+    let settleTimer = null;
+    const settle = () => {
+      if (active < total) jumpTo(active + total);
+      else if (active >= total * 2) jumpTo(active - total);
+    };
+    track.addEventListener("scroll", () => { clearTimeout(settleTimer); settleTimer = setTimeout(settle, 160); }, { passive: true });
     let ticking = false;
     track.addEventListener("scroll", () => {
       if (ticking) return;
@@ -110,9 +140,9 @@
       requestAnimationFrame(() => { updateActive(); ticking = false; });
     }, { passive: true });
     window.addEventListener("resize", updateActive);
-    // Empieza en la segunda tarjeta para que haya una difuminada a cada lado
+    // Empieza en la primera tarjeta original: a los lados quedan la 9 y la 2, difuminadas
     track.style.scrollBehavior = "auto";
-    track.scrollLeft = centerOf(cards[1]);
+    track.scrollLeft = centerOf(cards[total]);
     track.style.scrollBehavior = "";
     updateActive();
 
