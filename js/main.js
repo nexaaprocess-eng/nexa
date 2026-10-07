@@ -81,6 +81,86 @@
     }, { threshold: 0.4 }).observe(timelineFill.closest(".timeline"));
   }
 
+  /* ---------- Carrusel de soluciones ---------- */
+  const track = document.getElementById("carousel-track");
+  if (track) {
+    const prev = document.getElementById("carousel-prev");
+    const next = document.getElementById("carousel-next");
+    const bar = document.getElementById("carousel-bar");
+    const step = () => track.querySelector(".card").offsetWidth + parseFloat(getComputedStyle(track).columnGap || 24);
+    const maxScroll = () => track.scrollWidth - track.clientWidth;
+    const atEnd = () => track.scrollLeft >= maxScroll() - 4;
+
+    const updateBar = () => {
+      const visible = track.clientWidth / track.scrollWidth;
+      const pos = maxScroll() > 0 ? track.scrollLeft / maxScroll() : 0;
+      bar.style.width = visible * 100 + "%";
+      bar.style.marginLeft = pos * (1 - visible) * 100 + "%";
+    };
+    const go = (dir) => {
+      if (dir > 0 && atEnd()) track.scrollTo({ left: 0 });
+      else if (dir < 0 && track.scrollLeft <= 4) track.scrollTo({ left: maxScroll() });
+      else track.scrollBy({ left: dir * step() });
+    };
+
+    prev.addEventListener("click", () => { go(-1); restart(); });
+    next.addEventListener("click", () => { go(1); restart(); });
+    track.addEventListener("scroll", updateBar, { passive: true });
+    window.addEventListener("resize", updateBar);
+    updateBar();
+
+    // Avance automático: se pausa al pasar el ratón, al tocar o si la sección no se ve
+    let timer = null;
+    let paused = false;
+    let inView = false;
+    const start = () => {
+      if (reduceMotion || timer) return;
+      timer = setInterval(() => { if (!paused && inView) go(1); }, 3800);
+    };
+    const restart = () => { clearInterval(timer); timer = null; start(); };
+    track.addEventListener("mouseenter", () => { paused = true; });
+    track.addEventListener("mouseleave", () => { paused = false; });
+    track.addEventListener("touchstart", () => { paused = true; }, { passive: true });
+    track.addEventListener("focusin", () => { paused = true; });
+    track.addEventListener("focusout", () => { paused = false; });
+    new IntersectionObserver((entries) => { inView = entries[0].isIntersecting; }, { threshold: 0.4 }).observe(track);
+    start();
+  }
+
+  /* ---------- Formulario de contacto ----------
+     Para recibir los mensajes en tu correo, crea un formulario gratis en https://formspree.io
+     y pega aquí su dirección, por ejemplo: "https://formspree.io/f/abcdwxyz" */
+  const FORM_ENDPOINT = "";
+  const form = document.getElementById("contact-form");
+  if (form) {
+    const status = document.getElementById("form-status");
+    const setStatus = (text, type) => { status.textContent = text; status.className = "form__status is-" + type; };
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      if (!form.checkValidity()) {
+        setStatus("Revisa los campos obligatorios: nombre, email válido, mensaje y la casilla de privacidad.", "error");
+        form.querySelector(":invalid").focus();
+        return;
+      }
+      if (!FORM_ENDPOINT) {
+        setStatus("El formulario estará activo muy pronto. ¡Gracias por tu interés!", "info");
+        return;
+      }
+      const btn = form.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      try {
+        const res = await fetch(FORM_ENDPOINT, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } });
+        if (!res.ok) throw new Error(res.status);
+        form.reset();
+        setStatus("¡Mensaje enviado! Te responderemos en menos de 24 horas.", "ok");
+      } catch (err) {
+        setStatus("No se ha podido enviar. Inténtalo de nuevo en unos minutos.", "error");
+      } finally {
+        btn.disabled = false;
+      }
+    });
+  }
+
   /* ---------- Demo de facturas (hero) ---------- */
   const demo = document.getElementById("demo");
   if (demo) {
