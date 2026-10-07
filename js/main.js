@@ -81,33 +81,44 @@
     }, { threshold: 0.4 }).observe(timelineFill.closest(".timeline"));
   }
 
-  /* ---------- Carrusel de soluciones ---------- */
+  /* ---------- Carrusel de soluciones ----------
+     La tarjeta activa queda en el centro y las de los lados se difuminan.
+     Avanza solo; al tocar una tarjeta lateral, se coloca en el centro. */
   const track = document.getElementById("carousel-track");
   if (track) {
-    const prev = document.getElementById("carousel-prev");
-    const next = document.getElementById("carousel-next");
-    const bar = document.getElementById("carousel-bar");
-    const step = () => track.querySelector(".card").offsetWidth + parseFloat(getComputedStyle(track).columnGap || 24);
-    const maxScroll = () => track.scrollWidth - track.clientWidth;
-    const atEnd = () => track.scrollLeft >= maxScroll() - 4;
+    const cards = [...track.querySelectorAll(".card")];
+    let active = -1;
 
-    const updateBar = () => {
-      const visible = track.clientWidth / track.scrollWidth;
-      const pos = maxScroll() > 0 ? track.scrollLeft / maxScroll() : 0;
-      bar.style.width = visible * 100 + "%";
-      bar.style.marginLeft = pos * (1 - visible) * 100 + "%";
-    };
-    const go = (dir) => {
-      if (dir > 0 && atEnd()) track.scrollTo({ left: 0 });
-      else if (dir < 0 && track.scrollLeft <= 4) track.scrollTo({ left: maxScroll() });
-      else track.scrollBy({ left: dir * step() });
-    };
+    const centerOf = (card) => card.offsetLeft - (track.clientWidth - card.offsetWidth) / 2;
+    const goTo = (i) => track.scrollTo({ left: centerOf(cards[(i + cards.length) % cards.length]) });
 
-    prev.addEventListener("click", () => { go(-1); restart(); });
-    next.addEventListener("click", () => { go(1); restart(); });
-    track.addEventListener("scroll", updateBar, { passive: true });
-    window.addEventListener("resize", updateBar);
-    updateBar();
+    const updateActive = () => {
+      const mid = track.scrollLeft + track.clientWidth / 2;
+      let best = 0;
+      cards.forEach((c, i) => {
+        if (Math.abs(c.offsetLeft + c.offsetWidth / 2 - mid) < Math.abs(cards[best].offsetLeft + cards[best].offsetWidth / 2 - mid)) best = i;
+      });
+      if (best !== active) {
+        cards.forEach((c, i) => c.classList.toggle("is-active", i === best));
+        active = best;
+      }
+    };
+    let ticking = false;
+    track.addEventListener("scroll", () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => { updateActive(); ticking = false; });
+    }, { passive: true });
+    window.addEventListener("resize", updateActive);
+    // Empieza en la segunda tarjeta para que haya una difuminada a cada lado
+    track.style.scrollBehavior = "auto";
+    track.scrollLeft = centerOf(cards[1]);
+    track.style.scrollBehavior = "";
+    updateActive();
+
+    cards.forEach((card, i) => card.addEventListener("click", () => {
+      if (i !== active) { goTo(i); restart(); }
+    }));
 
     // Avance automático: se pausa al pasar el ratón, al tocar o si la sección no se ve
     let timer = null;
@@ -115,17 +126,19 @@
     let inView = false;
     const start = () => {
       if (reduceMotion || timer) return;
-      timer = setInterval(() => { if (!paused && inView) go(1); }, 3800);
+      timer = setInterval(() => { if (!paused && inView) goTo(active + 1); }, 3800);
     };
     const restart = () => { clearInterval(timer); timer = null; start(); };
     track.addEventListener("mouseenter", () => { paused = true; });
     track.addEventListener("mouseleave", () => { paused = false; });
     track.addEventListener("touchstart", () => { paused = true; }, { passive: true });
-    track.addEventListener("focusin", () => { paused = true; });
-    track.addEventListener("focusout", () => { paused = false; });
+    track.addEventListener("touchend", () => { paused = false; restart(); }, { passive: true });
     new IntersectionObserver((entries) => { inView = entries[0].isIntersecting; }, { threshold: 0.4 }).observe(track);
     start();
   }
+
+  /* ---------- Redes sociales aún sin enlace ---------- */
+  document.querySelectorAll('.socials a[href="#"]').forEach((a) => a.addEventListener("click", (e) => e.preventDefault()));
 
   /* ---------- Formulario de contacto ----------
      Para recibir los mensajes en tu correo, crea un formulario gratis en https://formspree.io

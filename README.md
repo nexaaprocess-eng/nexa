@@ -7,7 +7,8 @@ Es una web estática (HTML, CSS y JavaScript), sin dependencias ni proceso de co
 ## Estructura
 
 ```
-index.html        Página principal (todo el contenido)
+index.html        Página principal
+faq.html          Preguntas frecuentes (enlazada desde el menú)
 css/styles.css    Estilos, colores y animaciones
 js/main.js        Interacciones: menú, animaciones al hacer scroll, demo de facturas, contadores
 assets/logo.svg   Logo completo en vectorial
@@ -40,5 +41,5 @@ Cuando compres el dominio, se conecta desde el panel de Netlify o de GitHub Page
 ## Pendiente para más adelante
 
 - **Datos de contacto**: en `index.html`, sección `<!-- ============ CONTACTO ============ -->`, cambia los textos "Próximamente" por el email y el teléfono reales.
-- **Redes sociales**: en esa misma sección, cambia el `href="#contacto"` de cada icono por el enlace de tu perfil.
-- **Formulario que llegue al correo**: la opción más sencilla es [Formspree](https://formspree.io) (gratis): se crea un formulario, te dan una URL y se añade un `<form action="https://formspree.io/f/XXXX" method="POST">` en la sección de contacto.
+- **Redes sociales**: en el pie de página de `index.html` y `faq.html`, cambia el `href="#"` de cada icono por el enlace de tu perfil.
+- **Formulario que llegue al correo**: crea un formulario gratis en [Formspree](https://formspree.io) y pega su dirección en `FORM_ENDPOINT`, al principio del bloque del formulario en `js/main.js`.
