@@ -1,0 +1,47 @@
+[
+ {
+  "id": "hook",
+  "text": "¿Cuántas horas pierde tu equipo cada semana en tareas repetitivas?",
+  "dur": 3.33
+ },
+ {
+  "id": "problem",
+  "text": "Descargar facturas, correo a correo. Actualizar Excels que nunca cuadran. Copiar datos de un programa a otro. Pequeñas tareas que, sumadas, se comen días enteros. Y quien acaba pagándolo, eres tú.",
+  "dur": 12.63
+ },
+ {
+  "id": "brand",
+  "text": "En NEXA Process implantamos la inteligencia artificial en tu empresa, para que trabaje por ti.",
+  "dur": 5.15
+ },
+ {
+  "id": "demo",
+  "text": "Por ejemplo: nuestra inteligencia artificial revisa tu correo, detecta cada factura, extrae sus datos, y te las deja listas para descargar en un solo clic.",
+  "dur": 9.3
+ },
+ {
+  "id": "solutions",
+  "text": "Y no solo facturas. Control de stock, paneles que sustituyen al Excel, programas conectados entre sí, informes automáticos, y asistentes que atienden a tus clientes.",
+  "dur": 9.87
+ },
+ {
+  "id": "stats",
+  "text": "Lo que antes era una tarde entera, ahora son minutos. Hasta un noventa y cinco por ciento menos de tiempo en tareas repetitivas.",
+  "dur": 7.5
+ },
+ {
+  "id": "values",
+  "text": "Software privado, hecho a tu medida, que se conecta a las herramientas que ya usas. Tus datos, siempre bajo tu control.",
+  "dur": 7.39
+ },
+ {
+  "id": "method",
+  "text": "Primero entendemos cómo trabajas. Después construimos. Y la primera conversación es gratuita y sin compromiso.",
+  "dur": 7.36
+ },
+ {
+  "id": "cta",
+  "text": "NEXA Process. Deja que la inteligencia artificial trabaje por ti. Solicita hoy tu diagnóstico gratuito.",
+  "dur": 6.97
+ }
+]
