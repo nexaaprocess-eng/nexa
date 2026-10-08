@@ -1,0 +1,6 @@
+node_modules/
+voices/
+out/
+public/audio/music.wav
+public/audio/sfx.wav
+public/audio/voice.wav
