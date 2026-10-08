@@ -4,7 +4,7 @@ const { chromium } = require('playwright-core');
   const [,, html, out, fpsArg, list] = process.argv;
   const fs = require('fs'); fs.mkdirSync(out, { recursive: true });
   const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
-  const p = await b.newPage({ viewport: { width: 1920, height: 1080 } });
+  const p = await b.newPage({ viewport: { width: +(process.env.W || 1920), height: +(process.env.H || 1080) } });
   p.on('pageerror', e => console.log('PAGEERROR', e.message));
   await p.goto('file://' + html); await p.evaluate(() => window.ready);
   const total = await p.evaluate(() => window.TOTAL);

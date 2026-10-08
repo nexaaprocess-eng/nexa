@@ -1,0 +1,32 @@
+[
+ {
+  "id": "hook",
+  "text": "¿Tu equipo pierde horas cada semana en tareas repetitivas?",
+  "dur": 3.07
+ },
+ {
+  "id": "problem",
+  "text": "Facturas, Excels, copiar y pegar datos… Y quien lo acaba pagando, eres tú.",
+  "dur": 3.81
+ },
+ {
+  "id": "brand",
+  "text": "En NEXA Process implantamos la inteligencia artificial en tu empresa.",
+  "dur": 3.74
+ },
+ {
+  "id": "demo",
+  "text": "Por ejemplo: detecta todas las facturas de tu correo, y te las deja listas en un solo clic.",
+  "dur": 5.13
+ },
+ {
+  "id": "stats",
+  "text": "Hasta un noventa y cinco por ciento menos de tiempo.",
+  "dur": 2.58
+ },
+ {
+  "id": "cta",
+  "text": "La primera conversación es gratis. NEXA Process: deja que la inteligencia artificial trabaje por ti.",
+  "dur": 6.18
+ }
+]
