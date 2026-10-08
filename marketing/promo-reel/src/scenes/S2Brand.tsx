@@ -113,7 +113,7 @@ export const S2Brand: React.FC = () => {
       )}
 
       <div style={{position: 'absolute', left: LX, top: LT}}>
-        <Logo id="s2" width={LW} line={1} green={p(t, L - 0.15, 0.4)} bar={p(t, L, 0.5, E.outCubic)}
+        <Logo id="s2" width={LW} line={p(t, L - 0.45, 0.4, E.inOutCubic)} green={p(t, L - 0.15, 0.4)} bar={p(t, L, 0.5, E.outCubic)}
           letters={p(t, L + 0.05, 0.9, E.linear)} process={p(t, L + 0.45, 0.7)} glow={0.7 * halo} />
       </div>
       {/* destello al formarse el logo */}

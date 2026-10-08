@@ -34,9 +34,6 @@ export const Logo: React.FC<{
           <rect x="-20" y="-20" width="820" height="340" fill="#fff" />
           <polygon points={GREEN} fill="#000" stroke="#000" strokeWidth="24" strokeLinejoin="round" />
         </mask>
-        <clipPath id={`bar-${id}`}>
-          <rect x={355 - 40} y={190 - 230 * E.outQuart(clamp(bar))} width="260" height="240" />
-        </clipPath>
         <filter id={`glow-${id}`} x="-50%" y="-50%" width="200%" height="200%">
           <feGaussianBlur stdDeviation="18" />
         </filter>
@@ -62,7 +59,7 @@ export const Logo: React.FC<{
       <g fill={ink}>
         <polygon style={letter(0, -40)} points="0,190 0,0 48,0 124,104 124,0 170,0 170,190 122,190 46,86 46,190" />
         <path style={letter(1, -30)} d="M190 0h150v40H236v35h96v40h-96v35h104v40H190z" />
-        <g clipPath={`url(#bar-${id})`}>
+        <g style={{opacity: E.outQuart(clamp(bar)), transform: `translateY(${(1 - E.outQuart(clamp(bar))) * -40}px)`}}>
           <polygon points="500,0 555,0 410,190 355,190" mask={`url(#gap-${id})`} />
         </g>
         <polygon style={letter(2, 40)} points="575,190 648,0 692,0 765,190 715,190 670,72 625,190" />
