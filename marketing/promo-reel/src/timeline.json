@@ -3,47 +3,47 @@
  "vo": {
   "q": {
    "start": 0.5,
-   "end": 4.154
+   "end": 3.672
   },
   "intro": {
    "start": 4.45,
-   "end": 10.232
+   "end": 9.641
   },
   "fact": {
    "start": 10.4,
-   "end": 12.46
+   "end": 12.271
   },
   "mail": {
    "start": 13.2,
-   "end": 15.926
+   "end": 15.306
   },
   "stock": {
    "start": 16.5,
-   "end": 18.051
+   "end": 18.042
   },
   "ia": {
    "start": 20.45,
-   "end": 24.051
+   "end": 23.44
   },
   "menos": {
-   "start": 24.55,
-   "end": 26.217
+   "start": 24.45,
+   "end": 25.77
   },
   "mas": {
    "start": 26.5,
-   "end": 28.052
+   "end": 27.785
   },
   "brand": {
    "start": 29.45,
-   "end": 30.499
+   "end": 30.555
   },
   "claim1": {
    "start": 31.0,
-   "end": 32.789
+   "end": 32.558
   },
   "claim2": {
    "start": 32.95,
-   "end": 34.548
+   "end": 34.03
   }
  },
  "scenes": {

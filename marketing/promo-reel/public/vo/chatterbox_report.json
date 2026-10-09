@@ -1,0 +1,47 @@
+{
+ "q": {
+  "heard": "y si tu empresa pudiera hacer en segundos lo que hoy le lleva horas",
+  "speech_s": 3.06
+ },
+ "intro": {
+  "heard": "En Exaproces conectamos tus herramientas y automatizamos los procesos que frenan tu negocio.",
+  "speech_s": 5.09
+ },
+ "fact": {
+  "heard": "facturas que se clasifican solas.",
+  "speech_s": 1.76
+ },
+ "mail": {
+  "heard": "correos que se organizan automáticamente.",
+  "speech_s": 1.91
+ },
+ "stock": {
+  "heard": "tu stock bajo control.",
+  "speech_s": 1.4
+ },
+ "ia": {
+  "heard": "y soluciones con inteligencia artificial que trabajan para ti.",
+  "speech_s": 2.88
+ },
+ "menos": {
+  "heard": "Menos tareas repetitivas.",
+  "speech_s": 1.72
+ },
+ "mas": {
+  "heard": "más tiempo para crecer.",
+  "speech_s": 1.18
+ },
+ "brand": {
+  "heard": "¡Nexa Proces!",
+  "speech_s": 1.3,
+  "text": "Néksa Prósess. (exaggeration 0.7, semilla 2)"
+ },
+ "claim1": {
+  "heard": "automatizamos el trabajo.",
+  "speech_s": 1.45
+ },
+ "claim2": {
+  "heard": "Impulsamos tu negocio.",
+  "speech_s": 2.37
+ }
+}

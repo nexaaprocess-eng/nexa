@@ -5,12 +5,13 @@ música electrónica y efectos de sonido. El render final está en `output/nexa-
 (en la raíz del repositorio).
 
 Todo es programático y editable: animaciones con [Remotion](https://www.remotion.dev) (React + TypeScript),
-voz femenina con [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) (vía kokoro-onnx) y música/efectos sintetizados con Python.
+voz masculina con [Chatterbox Multilingual](https://github.com/resemble-ai/chatterbox) y música/efectos sintetizados con Python.
 
 ## Estructura
 
 ```
-audio-src/voz.py        Texto de la locución → public/vo/*.wav (Kokoro, voz ef_dora)
+audio-src/voz_chatterbox.py  Locución actual: voz masculina enérgica → public/vo/*.wav (Chatterbox)
+audio-src/voz.py        Alternativa: voz femenina (Kokoro, ef_dora)
 audio-src/timeline.py   Tiempos de TODO el vídeo: frases, escenas y eventos → src/timeline.json
 audio-src/mezcla.py     Música + efectos (sintetizados) + mezcla final → public/audio/mix.wav
 src/theme.ts            Colores y tipografías de la marca
@@ -43,7 +44,7 @@ curl -L -o voices/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/re
 ```
 
 - **Cambiar textos en pantalla**: en el archivo de cada escena (`src/scenes/`). Colores en `src/theme.ts`.
-- **Cambiar la locución**: edita `LINES` (y `VOICE`/`SPEED`) en `audio-src/voz.py` y ejecuta `python3 audio-src/voz.py`.
+- **Cambiar la locución**: edita `LINES` en `audio-src/voz_chatterbox.py` (necesita un entorno con torch, ver el propio archivo) y revisa `public/vo/chatterbox_report.json`; o usa `audio-src/voz.py` y ejecuta `python3 audio-src/voz.py`.
 - **Cambiar tiempos**: edita `VO_START`, `SCENES` y `EV` en `audio-src/timeline.py`. Imagen y sonido se
   mueven juntos porque ambos leen `src/timeline.json`.
 - **Previsualizar**: `npm run studio` (abre Remotion Studio en el navegador).
@@ -54,6 +55,10 @@ Después de cualquier cambio de voz, tiempos o sonido:
 python3 audio-src/timeline.py    # recorta la voz y recalcula tiempos
 python3 audio-src/mezcla.py      # música, efectos y mezcla (-14 LUFS, listo para redes)
 npm run render                   # → ../../output/nexa-process-promo.mp4
+
+Si solo cambia la voz o el sonido (no los tiempos de `EV`/`SCENES`), no hace falta volver a renderizar:
+basta con sustituir la pista de audio del MP4:
+`ffmpeg -i ../../output/nexa-process-promo.mp4 -i public/audio/mix.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 256k out.mp4`
 ```
 
 `remotion.config.ts` apunta al Chromium del entorno donde se creó; en otro ordenador borra la línea
@@ -61,7 +66,8 @@ npm run render                   # → ../../output/nexa-process-promo.mp4
 
 ## Licencias de los recursos
 
-- **Voz**: Kokoro-82M, voz `ef_dora` (licencia Apache 2.0, uso comercial permitido).
+- **Voz**: Chatterbox Multilingual (Resemble AI, licencia MIT, uso comercial permitido). El acento de España sale de
+  `public/vo/ref_es.wav`, generado con la voz Piper `es_ES-davefx-medium` (dataset CC0): no se clona a ninguna persona real.
 - **Música y efectos**: sintetizados desde cero en `audio-src/mezcla.py`; no hay muestras de terceros.
 - **Tipografías**: Montserrat e Inter (SIL Open Font License), vía Fontsource.
 - **Logo**: el original de la web (`assets/logo.svg`), en su versión en negativo (letras en blanco) por ir sobre fondo oscuro.

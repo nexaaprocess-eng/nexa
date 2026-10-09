@@ -242,11 +242,11 @@ def ding(notes=(88, 95), dur=0.9):
     return sum(np.sin(2 * np.pi * hz(n) * t) * np.exp(-t * (5 + i * 2)) / (i + 1) for i, n in enumerate(notes)) * np.minimum(1, t / 0.002)
 
 
-def impact(dur=2.2, big=1.0):
+def impact(dur=2.2, big=1.0, crack_g=0.5):
     t = T(dur)
     f = 38 + 70 * np.exp(-t * 14)
     boom = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 2.6)
-    crack = lp(rng.standard_normal(len(t)), 2500) * np.exp(-t * 16) * 0.5
+    crack = lp(rng.standard_normal(len(t)), 2500) * np.exp(-t * 16) * crack_g
     air = hp(rng.standard_normal(len(t)), 5000) * np.exp(-t * 5) * 0.06
     return reverb(np.tanh((boom + crack + air) * 1.3) * big, 2.5, 0.35, 3000)
 
@@ -279,7 +279,7 @@ add(sfx, reverb(click(1800, 0.05), 1.0, 0.3), EV["s1_text2"] + 0.45, 0.22)
 # Escena 2
 add(sfx, stereo_whoosh(0.9, 3000, 300, 0.35, 1.0, 0.5, -0.5), EV["s2_whoosh"] - 0.25, 0.42)
 add(sfx, reverb(shimmer(0.8, 81), 1.5, 0.4), EV["s2_whoosh"], 0.5)
-add(sfx, impact(2.6, 1.0), EV["s2_logo"] - 0.06, 0.6)
+add(sfx, impact(2.6, 1.0, 0.0), EV["s2_logo"] - 0.06, 0.45)  # sin chasquido: no tapa "Nexa"
 add(sfx, reverb(ding((84, 91), 1.2), 2.0, 0.45), EV["s2_logo"] + 0.02, 0.18)
 add(sfx, reverb(click(1500, 0.06), 1.2, 0.3), EV["s2_sub"], 0.25)
 for i in range(5):
@@ -324,8 +324,8 @@ add(sfx, impact(2.0, 0.6), EV["s5_mas"] + 0.1, 0.45)
 add(sfx, stereo_whoosh(0.55, 6000, 300, 0.2, 1.0, 0.3, -0.3), TL["scenes"]["s5"][1] - 0.5, 0.26)
 # Escena 6 · cierre
 add(sfx, reverb(zap(0.75), 2.0, 0.4), EV["s6_line"], 0.3)
-add(sfx, impact(3.2, 1.1), EV["s6_logo"] - 0.1, 0.55)
-add(sfx, reverb(shimmer(2.2, 81), 3.0, 0.5), EV["s6_logo"], 0.45)
+add(sfx, impact(3.2, 1.1, 0.0), EV["s6_logo"] - 0.1, 0.4)
+add(sfx, reverb(shimmer(2.2, 81), 3.0, 0.5), EV["s6_logo"] + 0.6, 0.4)
 add(sfx, reverb(click(1500, 0.06), 1.5, 0.35), EV["s6_claim1"], 0.18)
 add(sfx, reverb(click(1700, 0.06), 1.5, 0.35), EV["s6_claim2"], 0.18)
 add(sfx, reverb(shimmer(1.2, 88), 2.5, 0.5), EV["s6_end"] - 0.75, 0.35)
@@ -357,7 +357,7 @@ for k, v in VO.items():
     x = read_wav(ROOT / "public" / "vo" / "trim" / f"{k}.wav")
     x = hp(x, 75, 2)
     # calidez y presencia
-    x = x + 0.1 * lp(x, 200) + 0.08 * bp(x, 3000, 6000)
+    x = x + 0.16 * lp(x, 180) + 0.1 * bp(x, 2500, 5500)  # cuerpo y presencia de locutor
     x = compress(x / (np.max(np.abs(x)) + 1e-9) * 0.9)
     x = x / (np.sqrt(np.mean(x ** 2)) + 1e-9) * 0.11
     i = int(v["start"] * SR)

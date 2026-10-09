@@ -17,10 +17,14 @@ SR = 48000
 # ---- Inicio (s) de cada frase de la locución ----
 VO_START = {
     "q": 0.5, "intro": 4.45, "fact": 10.4, "mail": 13.2, "stock": 16.5,
-    "ia": 20.45, "menos": 24.55, "mas": 26.5,
+    "ia": 20.45, "menos": 24.45, "mas": 26.5,
     "brand": 29.45, "claim1": 31.0, "claim2": 32.95,
 }
 TOTAL = 36.4
+
+# Recortes manuales (s) para quitar ruidos que el TTS deja al final de alguna frase.
+# Si regeneras la voz, revisa o borra estos valores.
+CUT = {"menos": 1.32, "claim2": 1.08}
 
 # ---- Escenas: [inicio, fin] (se solapan para las transiciones) ----
 SCENES = {
@@ -61,6 +65,10 @@ durs = {}
 (VO / "trim").mkdir(exist_ok=True)
 for k in VO_START:
     y = trim(VO / f"{k}.wav")
+    if k in CUT:
+        y = y[: int(CUT[k] * SR)].copy()
+        nf = int(0.06 * SR)
+        y[-nf:] *= np.linspace(1, 0, nf)
     durs[k] = round(len(y) / SR, 3)
     with wave.open(str(VO / "trim" / f"{k}.wav"), "wb") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR)
