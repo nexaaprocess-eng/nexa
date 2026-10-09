@@ -4,24 +4,24 @@
   "speech_s": 3.06
  },
  "intro": {
-  "heard": "En Exaproces conectamos tus herramientas y automatizamos los procesos que frenan tu negocio.",
-  "speech_s": 5.09
+  "heard": "En Nexa Process automatizamos los procesos de tu empresa para que ahorres tiempo y dinero.",
+  "speech_s": 5.26
  },
  "fact": {
-  "heard": "facturas que se clasifican solas.",
-  "speech_s": 1.76
+  "heard": "facturas que se procesan solas.",
+  "speech_s": 1.73
  },
  "mail": {
   "heard": "correos que se organizan automáticamente.",
   "speech_s": 1.91
  },
  "stock": {
-  "heard": "tu stock bajo control.",
-  "speech_s": 1.4
+  "heard": "Tu stock siempre bajo control.",
+  "speech_s": 1.79
  },
  "ia": {
-  "heard": "y soluciones con inteligencia artificial que trabajan para ti.",
-  "speech_s": 2.88
+  "heard": "Todo conectado y funcionando solo, mientras tú ahorras tiempo y dinero.",
+  "speech_s": 3.76
  },
  "menos": {
   "heard": "Menos tareas repetitivas.",

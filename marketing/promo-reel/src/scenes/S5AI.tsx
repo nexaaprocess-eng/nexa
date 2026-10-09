@@ -120,14 +120,11 @@ export const S5AI: React.FC = () => {
           {/* símbolo X de NEXA: el motor que conecta los procesos */}
           <div style={{position: 'absolute', left: 100, top: 100, width: 200, height: 200, display: 'grid', placeItems: 'center',
             transform: `scale(${1 + 0.04 * Math.sin(t * 5) + masFlash * 0.12})`}}>
-            <svg width={118} height={106} viewBox="330 -20 255 230" style={{overflow: 'visible', filter: 'drop-shadow(0 0 14px rgba(61,220,151,.7))'}}>
-              <defs>
-                <mask id="s5gap" maskUnits="userSpaceOnUse">
-                  <rect x="300" y="-50" width="320" height="300" fill="#fff" />
-                  <polygon points="350,0 405,0 565,190 510,190" fill="#000" stroke="#000" strokeWidth="24" strokeLinejoin="round" />
-                </mask>
-              </defs>
-              <polygon points="500,0 555,0 410,190 355,190" fill="#fff" mask="url(#s5gap)" />
+            <svg width={128} height={115} viewBox="330 -20 255 230" style={{overflow: 'visible', filter: 'drop-shadow(0 0 14px rgba(61,220,151,.7))'}}>
+              <polygon points="500,0 555,0 410,190 355,190" fill="#fff" />
+              {/* el hueco entre las dos barras se dibuja con un trazo del color del fondo */}
+              <clipPath id="s5bar"><polygon points="500,0 555,0 410,190 355,190" /></clipPath>
+              <polygon points="350,0 405,0 565,190 510,190" fill="none" stroke="#0A3322" strokeWidth={24} strokeLinejoin="round" clipPath="url(#s5bar)" />
               <polygon points="350,0 405,0 565,190 510,190" fill={C.green} />
             </svg>
           </div>

@@ -1,6 +1,6 @@
 # Anuncio vertical de NEXA Process (Reels / TikTok)
 
-Vídeo publicitario de ~36 s en **1080 × 1920 (9:16), 60 fps, H.264**, con locución en español de España,
+Vídeo publicitario de ~37 s en **1080 × 1920 (9:16), 60 fps, H.264**, con locución en español de España,
 música electrónica y efectos de sonido. El render final está en `output/nexa-process-promo.mp4`
 (en la raíz del repositorio).
 
@@ -24,11 +24,11 @@ scripts/stills.mjs      Saca fotogramas sueltos para revisar
 | Escena | Tiempo | Contenido |
 |---|---|---|
 | 1 | 0–4 s | Punto verde → red de nodos → «¿Tu empresa sigue haciéndolo todo a mano?» |
-| 2 | 4–9 s | Las partículas forman el logo, módulos conectados, «Automatización + IA» |
-| 3 | 9–16 s | Interfaz: facturas PDF analizadas y clasificadas → correo que se organiza solo |
+| 2 | 4–9 s | Las partículas forman el logo, módulos conectados, «Automatización de procesos» y nexaprocess.es |
+| 3 | 9–16 s | Interfaz: facturas PDF que se procesan solas → correo que se organiza solo |
 | 4 | 16–20 s | Dashboard de stock: KPIs, ventas, inventario, apps sincronizadas (datos demo) |
-| 5 | 20–28 s | Núcleo de IA conectado a documentos, correo, inventario y CRM; «Menos tareas repetitivas» → «Más tiempo para crecer» |
-| 6 | 28–36 s | Trazo de la X, logo, «Automatizamos el trabajo. Impulsamos tu negocio.» y botón nexaprocess.es |
+| 5 | 20–29 s | La X de NEXA como motor que conecta facturas, correo, stock y CRM; beneficios (ahorra tiempo, reduce costes, menos errores); «Menos tareas repetitivas» → «Más tiempo para crecer» |
+| 6 | 29–37 s | Trazo de la X, logo, «Automatizamos el trabajo. Impulsamos tu negocio.» y botón nexaprocess.es |
 
 ## Cómo modificarlo
 

@@ -17,10 +17,10 @@ SR = 48000
 # ---- Inicio (s) de cada frase de la locución ----
 VO_START = {
     "q": 0.5, "intro": 4.45, "fact": 10.4, "mail": 13.2, "stock": 16.5,
-    "ia": 20.45, "menos": 24.45, "mas": 26.5,
-    "brand": 29.45, "claim1": 31.0, "claim2": 32.95,
+    "ia": 20.45, "menos": 25.5, "mas": 27.2,
+    "brand": 30.15, "claim1": 31.7, "claim2": 33.6,
 }
-TOTAL = 36.4
+TOTAL = 37.0
 
 # Recortes manuales (s) para quitar ruidos que el TTS deja al final de alguna frase.
 # Si regeneras la voz, revisa o borra estos valores.
@@ -29,7 +29,7 @@ CUT = {"menos": 1.32, "claim2": 1.08}
 # ---- Escenas: [inicio, fin] (se solapan para las transiciones) ----
 SCENES = {
     "s1": [0.0, 4.35], "s2": [4.05, 9.45], "s3": [9.15, 16.3],
-    "s4": [16.0, 20.45], "s5": [20.15, 28.55], "s6": [28.2, TOTAL],
+    "s4": [16.0, 20.45], "s5": [20.15, 29.3], "s6": [28.95, TOTAL],
 }
 
 # ---- Eventos clave (s, absolutos). Los usan imagen y sonido. ----
@@ -41,8 +41,8 @@ EV = {
     "s3_mailIn": [13.25, 13.4, 13.55, 13.7, 13.85], "s3_sort": [14.2, 14.5, 14.8, 15.1, 15.4],
     "s4_whoosh": 16.0, "s4_chart": 16.5, "s4_sync": [17.6, 18.4, 19.2],
     "s5_whoosh": 20.15, "s5_core": 20.55, "s5_nodes": [21.35, 21.95, 22.55, 23.15],
-    "s5_menos": 24.5, "s5_mas": 26.5,
-    "s6_line": 28.75, "s6_logo": 29.45, "s6_claim1": 31.0, "s6_claim2": 32.95, "s6_end": 34.65, "s6_web": 33.9,
+    "s5_benefits": [23.4, 23.95, 24.5], "s5_menos": 25.45, "s5_mas": 27.15,
+    "s6_line": 29.45, "s6_logo": 30.15, "s6_claim1": 31.7, "s6_claim2": 33.6, "s6_end": 35.3, "s6_web": 34.55,
 }
 
 
