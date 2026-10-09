@@ -16,11 +16,11 @@ SR = 48000
 
 # ---- Inicio (s) de cada frase de la locución ----
 VO_START = {
-    "q": 0.55, "intro": 4.55, "fact": 10.15, "mail": 13.25, "stock": 16.55,
-    "ia": 20.45, "menos": 24.55, "mas": 26.55,
-    "brand": 29.45, "claim1": 31.0, "claim2": 32.85,
+    "q": 0.5, "intro": 4.45, "fact": 10.4, "mail": 13.2, "stock": 16.5,
+    "ia": 20.45, "menos": 24.55, "mas": 26.5,
+    "brand": 29.45, "claim1": 31.0, "claim2": 32.95,
 }
-TOTAL = 35.4
+TOTAL = 36.4
 
 # ---- Escenas: [inicio, fin] (se solapan para las transiciones) ----
 SCENES = {
@@ -31,14 +31,14 @@ SCENES = {
 # ---- Eventos clave (s, absolutos). Los usan imagen y sonido. ----
 EV = {
     "s1_dot": 0.15, "s1_net": 0.45, "s1_text1": 1.05, "s1_text2": 1.55,
-    "s2_whoosh": 4.05, "s2_logo": 4.75, "s2_sub": 6.0, "s2_links": 6.6,
+    "s2_whoosh": 4.05, "s2_logo": 4.75, "s2_sub": 6.0, "s2_links": 6.6, "s2_web": 7.3,
     "s3_whoosh": 9.15, "s3_pdf": [9.6, 9.85, 10.1, 10.35], "s3_scan": 10.6,
     "s3_state": [11.05, 11.45, 11.85, 12.25], "s3_toMail": 12.85,
     "s3_mailIn": [13.25, 13.4, 13.55, 13.7, 13.85], "s3_sort": [14.2, 14.5, 14.8, 15.1, 15.4],
     "s4_whoosh": 16.0, "s4_chart": 16.5, "s4_sync": [17.6, 18.4, 19.2],
     "s5_whoosh": 20.15, "s5_core": 20.55, "s5_nodes": [21.35, 21.95, 22.55, 23.15],
     "s5_menos": 24.5, "s5_mas": 26.5,
-    "s6_line": 28.75, "s6_logo": 29.45, "s6_claim1": 31.0, "s6_claim2": 32.85, "s6_end": 34.45,
+    "s6_line": 28.75, "s6_logo": 29.45, "s6_claim1": 31.0, "s6_claim2": 32.95, "s6_end": 34.65, "s6_web": 33.9,
 }
 
 
@@ -47,7 +47,9 @@ def trim(path):
         sr = w.getframerate()
         x = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768
     if sr != SR:
-        x = resample_poly(x, SR // 150, sr // 150) if sr == 16000 else resample_poly(x, 320, 147)
+        from math import gcd
+        g = gcd(SR, sr)
+        x = resample_poly(x, SR // g, sr // g)
     env = np.convolve(np.abs(x), np.ones(480) / 480, mode="same")
     idx = np.where(env > 0.012)[0]
     a = max(idx[0] - int(0.03 * SR), 0)

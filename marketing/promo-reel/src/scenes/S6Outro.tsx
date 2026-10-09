@@ -4,6 +4,7 @@ import {C, F} from '../theme';
 import {E, ev, mix, p, tl, useT} from '../anim';
 import {Glow, Reveal} from '../components/Common';
 import {Logo} from '../components/Logo';
+import {Icon} from '../components/Icon';
 
 const LW = 800, LX = (1080 - LW) / 2, LCY = 830, LT = LCY - (LW * 310) / 785 / 2;
 
@@ -48,9 +49,16 @@ export const S6Outro: React.FC = () => {
           <Reveal text="Impulsamos tu negocio." at={ev.s6_claim2} size={56} weight={700} tracking="0.02em" stagger={0.09}
             color={C.green300} style={{textShadow: '0 0 30px rgba(0,168,107,.55)'}} />
         </div>
-        <div style={{position: 'absolute', left: 0, right: 0, top: 1450, textAlign: 'center', fontFamily: F.body, fontWeight: 500,
-          fontSize: 30, letterSpacing: '0.24em', color: C.text2, opacity: p(t, ev.s6_end - 0.4, 0.8),
-          transform: `translateY(${(1 - p(t, ev.s6_end - 0.4, 0.8)) * 14}px)`}}>NEXAPROCESS.ES</div>
+        {/* web */}
+        <div style={{position: 'absolute', left: 0, right: 0, top: 1400, display: 'flex', justifyContent: 'center',
+          opacity: p(t, ev.s6_web, 0.5), transform: `translateY(${(1 - p(t, ev.s6_web, 0.7, E.outBack)) * 30}px) scale(${mix(0.9, 1, p(t, ev.s6_web, 0.7, E.outBack))})`}}>
+          <div style={{display: 'flex', alignItems: 'center', gap: 16, padding: '20px 40px', borderRadius: 999,
+            background: 'rgba(0,168,107,.14)', border: `2px solid rgba(61,220,151,.6)`,
+            boxShadow: `0 0 ${40 + 20 * Math.sin(t * 3)}px rgba(0,168,107,.45), inset 0 1px 0 rgba(255,255,255,.08)`,
+            fontFamily: F.head, fontWeight: 700, fontSize: 44, color: C.white, letterSpacing: '0.01em'}}>
+            <Icon name="globe" size={42} color={C.green300} stroke={2} />nexaprocess.es
+          </div>
+        </div>
       </AbsoluteFill>
     </AbsoluteFill>
   );

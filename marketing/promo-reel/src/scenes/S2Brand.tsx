@@ -66,7 +66,7 @@ export const S2Brand: React.FC = () => {
         {MODULES.map((m, i) => {
           const at = ev.s2_links + i * 0.18;
           const v = p(t, at, 0.7, E.inOutCubic);
-          const tx = 540, ty = m.y < LCY ? LT - 20 : LT + (LW * 310) / 785 + 150;
+          const tx = 540, ty = m.y < LCY ? LT - 20 : 1335;
           const midY = (m.y + ty) / 2;
           const d = `M${m.x} ${m.y} C ${m.x} ${midY}, ${tx} ${midY}, ${tx} ${ty}`;
           const ph = (t * 0.7 + i * 0.23) % 1;
@@ -125,6 +125,13 @@ export const S2Brand: React.FC = () => {
         <Reveal text="Automatización" at={ev.s2_sub} size={38} weight={700} tracking="0.18em" stagger={0.05} />
         <Reveal text="+ inteligencia artificial" at={ev.s2_sub + 0.2} size={38} weight={700} tracking="0.18em"
           stagger={0.08} accent={['+']} style={{marginTop: 8}} />
+        <div style={{display: 'flex', justifyContent: 'center', marginTop: 34, opacity: p(t, ev.s2_web, 0.6),
+          transform: `translateY(${(1 - p(t, ev.s2_web, 0.6)) * 16}px)`}}>
+          <span style={{display: 'flex', alignItems: 'center', gap: 12, fontFamily: F.body, fontWeight: 500, fontSize: 30,
+            color: C.text2, letterSpacing: '0.04em'}}>
+            <Icon name="globe" size={28} color={C.green300} stroke={1.8} />nexaprocess.es
+          </span>
+        </div>
       </div>
     </AbsoluteFill>
   );

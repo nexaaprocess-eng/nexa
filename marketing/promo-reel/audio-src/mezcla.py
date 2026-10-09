@@ -330,6 +330,8 @@ add(sfx, reverb(click(1500, 0.06), 1.5, 0.35), EV["s6_claim1"], 0.18)
 add(sfx, reverb(click(1700, 0.06), 1.5, 0.35), EV["s6_claim2"], 0.18)
 add(sfx, reverb(shimmer(1.2, 88), 2.5, 0.5), EV["s6_end"] - 0.75, 0.35)
 add(sfx, impact(2.5, 0.55), EV["s6_end"], 0.5)
+add(sfx, reverb(pop(1300, 900, 0.1), 1.5, 0.35), EV["s6_web"], 0.2)
+add(sfx, reverb(click(1600, 0.05), 1.2, 0.3), EV["s2_web"], 0.14)
 
 
 # ----------------------------------------------------------------- VOZ
@@ -355,7 +357,7 @@ for k, v in VO.items():
     x = read_wav(ROOT / "public" / "vo" / "trim" / f"{k}.wav")
     x = hp(x, 75, 2)
     # calidez y presencia
-    x = x + 0.18 * lp(x, 220) + 0.22 * bp(x, 2500, 5000)
+    x = x + 0.1 * lp(x, 200) + 0.08 * bp(x, 3000, 6000)
     x = compress(x / (np.max(np.abs(x)) + 1e-9) * 0.9)
     x = x / (np.sqrt(np.mean(x ** 2)) + 1e-9) * 0.11
     i = int(v["start"] * SR)

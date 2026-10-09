@@ -1,8 +1,11 @@
-"""Genera la locución (una pista WAV por frase) con Piper, voz es_ES-davefx-medium (CC0).
-Uso: python3 audio-src/voz.py   (desde marketing/promo-reel)"""
-import json, wave
+"""Genera la locución (una pista WAV por frase) con Kokoro-82M (licencia Apache 2.0), voz femenina "ef_dora".
+Uso: python3 audio-src/voz.py   (desde marketing/promo-reel)
+Modelos: voices/kokoro-v1.0.onnx y voices/voices-v1.0.bin
+(https://github.com/thewh1teagle/kokoro-onnx/releases/tag/model-files-v1.0)"""
+import json
 from pathlib import Path
-from piper import PiperVoice, SynthesisConfig
+import soundfile as sf
+from kokoro_onnx import Kokoro
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "public" / "vo"
@@ -23,14 +26,12 @@ LINES = [
     ("claim2", "Impulsamos tu negocio."),
 ]
 
-voice = PiperVoice.load(str(ROOT / "voices" / "es_ES-davefx-medium.onnx"))
-cfg = SynthesisConfig(length_scale=1.0, noise_scale=0.6, noise_w_scale=0.75)
+VOICE, SPEED = "ef_dora", 0.94   # algo más pausada que la velocidad por defecto: suena más natural
+tts = Kokoro(str(ROOT / "voices" / "kokoro-v1.0.onnx"), str(ROOT / "voices" / "voices-v1.0.bin"))
 durs = {}
 for key, text in LINES:
-    p = OUT / f"{key}.wav"
-    with wave.open(str(p), "wb") as w:
-        voice.synthesize_wav(text, w, syn_config=cfg)
-    with wave.open(str(p)) as w:
-        durs[key] = round(w.getnframes() / w.getframerate(), 3)
+    audio, sr = tts.create(text, voice=VOICE, speed=SPEED, lang="es")
+    sf.write(OUT / f"{key}.wav", audio, sr, subtype="PCM_16")
+    durs[key] = round(len(audio) / sr, 3)
     print(key, durs[key])
 json.dump(durs, open(OUT / "durations.json", "w"), indent=1)
