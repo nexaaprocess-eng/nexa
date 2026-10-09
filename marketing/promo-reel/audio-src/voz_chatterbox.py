@@ -18,16 +18,16 @@ from chatterbox.mtl_tts import ChatterboxMultilingualTTS
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "public" / "vo"
 REF = OUT / "ref_es.wav"
-TAKES = 2
+TAKES = 3
 
 # (clave, texto, duración máxima en s para no pisar la frase siguiente)
 LINES = [
     ("q",      "¿Y si tu empresa pudiera hacer en segundos lo que hoy le lleva horas?", 3.75),
-    ("intro",  "En Nexa Próses conectamos tus herramientas y automatizamos los procesos que frenan tu negocio.", 5.75),
-    ("fact",   "Facturas que se clasifican solas.", 2.6),
+    ("intro",  "En Nexa Próses automatizamos los procesos de tu empresa, para que ahorres tiempo y dinero.", 5.75),
+    ("fact",   "Facturas que se procesan solas.", 2.6),
     ("mail",   "Correos que se organizan automáticamente.", 3.1),
-    ("stock",  "Tu stock, bajo control.", 3.0),
-    ("ia",     "Y soluciones con inteligencia artificial que trabajan para ti.", 3.9),
+    ("stock",  "Tu stock, siempre bajo control.", 3.0),
+    ("ia",     "Todo conectado y funcionando solo, mientras tú ahorras tiempo y dinero.", 4.1),
     ("menos",  "¡Menos tareas repetitivas!", 1.8),
     ("mas",    "¡Más tiempo para crecer!", 1.85),
     ("brand",  "Néksa Prósess.", 1.4),  # esta grafía es la que mejor pronuncia la marca
@@ -49,10 +49,15 @@ def speech_len(path):
     return (idx[-1] - idx[0]).item() / sr if len(idx) else 0
 
 
+import sys
+ONLY = set(sys.argv[1:])  # opcional: claves a regenerar (p. ej. intro fact); sin argumentos, todas
 tts = ChatterboxMultilingualTTS.from_pretrained(device="cpu")
 asr = whisper.load_model("small")
-report = {}
+rp = OUT / "chatterbox_report.json"
+report = json.load(open(rp)) if ONLY and rp.exists() else {}
 for key, text, max_d in LINES:
+    if ONLY and key not in ONLY:
+        continue
     best = None
     for take in range(TAKES):
         torch.manual_seed(100 + take)

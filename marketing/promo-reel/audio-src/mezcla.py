@@ -317,6 +317,9 @@ add(sfx, reverb(shimmer(1.6, 76), 2.5, 0.45), EV["s5_core"] + 0.1, 0.55)
 for i, at in enumerate(EV["s5_nodes"]):
     add(sfx, reverb(pluck(hz([76, 79, 81, 84][i]), 0.9, 1.5), 2.2, 0.45), at, 0.3, pan=[-0.5, 0.5, -0.5, 0.5][i])
     add(sfx, stereo_whoosh(0.4, 800, 3000, 0.8, 1.0, 0, [-0.5, 0.5, -0.5, 0.5][i]), at - 0.38, 0.1)
+for i, at in enumerate(EV["s5_benefits"]):
+    add(sfx, reverb(pop(900 + i * 150, 600, 0.12), 1.4, 0.35), at, 0.22, pan=[-0.5, 0, 0.5][i])
+    add(sfx, reverb(ding(([84, 88, 91][i],), 0.6), 1.2, 0.3), at + 0.05, 0.08, pan=[-0.5, 0, 0.5][i])
 add(sfx, stereo_whoosh(0.7, 200, 1800, 0.7, 1.0, -0.2, 0.2), EV["s5_menos"] - 0.4, 0.22)
 add(sfx, impact(1.6, 0.45), EV["s5_menos"] + 0.05, 0.3)
 add(sfx, reverb(shimmer(1.4, 81), 2.5, 0.5), EV["s5_mas"] - 0.6, 0.55)

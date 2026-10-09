@@ -122,9 +122,9 @@ export const S2Brand: React.FC = () => {
       <div style={{position: 'absolute', left: 0, right: 0, top: LCY + 230}}>
         <div style={{margin: '0 auto 30px', width: 380 * p(t, ev.s2_sub - 0.2, 0.8, E.inOutCubic), height: 2,
           background: `linear-gradient(90deg, transparent, ${C.green300}, transparent)`}} />
-        <Reveal text="Automatización" at={ev.s2_sub} size={38} weight={700} tracking="0.18em" stagger={0.05} />
-        <Reveal text="+ inteligencia artificial" at={ev.s2_sub + 0.2} size={38} weight={700} tracking="0.18em"
-          stagger={0.08} accent={['+']} style={{marginTop: 8}} />
+        <Reveal text="Automatización" at={ev.s2_sub} size={40} weight={700} tracking="0.18em" stagger={0.05} />
+        <Reveal text="de procesos" at={ev.s2_sub + 0.2} size={40} weight={700} tracking="0.18em"
+          stagger={0.08} accent={['procesos']} style={{marginTop: 8}} />
         <div style={{display: 'flex', justifyContent: 'center', marginTop: 34, opacity: p(t, ev.s2_web, 0.6),
           transform: `translateY(${(1 - p(t, ev.s2_web, 0.6)) * 16}px)`}}>
           <span style={{display: 'flex', alignItems: 'center', gap: 12, fontFamily: F.body, fontWeight: 500, fontSize: 30,

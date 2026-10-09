@@ -213,7 +213,7 @@ export const S3Docs: React.FC = () => {
     <AbsoluteFill style={{opacity: 1 - exit}}>
       <div style={{position: 'absolute', left: 0, right: 0, top: 230}}>
         <div style={{position: 'absolute', left: 0, right: 0, opacity: 1 - p(t, ev.s3_toMail, 0.3, E.inCubic)}}>
-          <Reveal text={'Facturas que se\nclasifican solas'} at={start + 0.35} size={74} accent={['solas']} />
+          <Reveal text={'Facturas que se\nprocesan solas'} at={start + 0.35} size={74} accent={['solas']} />
         </div>
         <div style={{position: 'absolute', left: 0, right: 0}}>
           <Reveal text={'Correos que se\norganizan solos'} at={ev.s3_toMail + 0.2} size={74} accent={['solos']} />
@@ -229,7 +229,7 @@ export const S3Docs: React.FC = () => {
               <span style={{position: 'absolute', opacity: 1 - sw, transform: `translateY(${-sw * 20}px)`}}>Nexa Flow · Facturas</span>
               <span style={{position: 'absolute', opacity: sw, transform: `translateY(${(1 - sw) * 20}px)`}}>Nexa Flow · Correo</span>
             </>}
-            right={<Chip tone="green" style={{fontSize: 20}}><LiveDot t={t} />IA activa</Chip>}>
+            right={<Chip tone="green" style={{fontSize: 20}}><LiveDot t={t} />Automático</Chip>}>
             <div style={{position: 'absolute', inset: 0, transform: `translateX(${-sw * 100}%)`, opacity: 1 - sw * 0.8}}>
               <InvoiceView t={t} />
             </div>
