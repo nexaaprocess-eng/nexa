@@ -41,5 +41,5 @@ Cuando compres el dominio, se conecta desde el panel de Netlify o de GitHub Page
 ## Pendiente para más adelante
 
 - **Datos de contacto**: en `index.html`, sección `<!-- ============ CONTACTO ============ -->`, cambia los textos "Próximamente" por el email y el teléfono reales.
-- **Redes sociales**: en el pie de página de `index.html` y `faq.html`, cambia el `href="#"` de cada icono por el enlace de tu perfil.
-- **Formulario que llegue al correo**: crea un formulario gratis en [Formspree](https://formspree.io) y pega su dirección en `FORM_ENDPOINT`, al principio del bloque del formulario en `js/main.js`.
+- **Redes sociales**: de momento no aparecen en la web. Cuando tengas perfiles, se añaden al pie de página de `index.html` y `faq.html`.
+- **Formulario de contacto**: las solicitudes llegan por email con [Web3Forms](https://web3forms.com) (gratis). Pide tu *Access Key* en su web con el correo donde quieras recibirlas y pégala en `WEB3FORMS_KEY`, en `js/main.js`. Mientras esté vacía, el formulario avisa de que estará activo muy pronto.

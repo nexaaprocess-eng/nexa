@@ -167,13 +167,10 @@
     start();
   }
 
-  /* ---------- Redes sociales aún sin enlace ---------- */
-  document.querySelectorAll('.socials a[href="#"]').forEach((a) => a.addEventListener("click", (e) => e.preventDefault()));
-
   /* ---------- Formulario de contacto ----------
-     Para recibir los mensajes en tu correo, crea un formulario gratis en https://formspree.io
-     y pega aquí su dirección, por ejemplo: "https://formspree.io/f/abcdwxyz" */
-  const FORM_ENDPOINT = "";
+     Cada solicitud llega por email gracias a Web3Forms (gratis, https://web3forms.com).
+     Pega aquí la "Access Key" que Web3Forms envía a tu correo: */
+  const WEB3FORMS_KEY = "";
   const form = document.getElementById("contact-form");
   if (form) {
     const status = document.getElementById("form-status");
@@ -185,17 +182,24 @@
         form.querySelector(":invalid").focus();
         return;
       }
-      if (!FORM_ENDPOINT) {
+      if (!WEB3FORMS_KEY) {
         setStatus("El formulario estará activo muy pronto. ¡Gracias por tu interés!", "info");
         return;
       }
+      const data = new FormData(form);
+      if (data.get("botcheck")) return; // lo ha rellenado un robot de spam
+      data.delete("botcheck");
+      data.append("access_key", WEB3FORMS_KEY);
+      data.append("replyto", data.get("email")); // al pulsar "Responder" en tu correo, contestas al cliente
       const btn = form.querySelector('button[type="submit"]');
       btn.disabled = true;
+      setStatus("Enviando…", "info");
       try {
-        const res = await fetch(FORM_ENDPOINT, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } });
-        if (!res.ok) throw new Error(res.status);
+        const res = await fetch("https://api.web3forms.com/submit", { method: "POST", body: data, headers: { Accept: "application/json" } });
+        const json = await res.json().catch(() => ({}));
+        if (!res.ok || json.success === false) throw new Error(json.message || res.status);
         form.reset();
-        setStatus("¡Mensaje enviado! Te responderemos en menos de 24 horas.", "ok");
+        setStatus("¡Solicitud enviada! Te responderemos en menos de 24 horas.", "ok");
       } catch (err) {
         setStatus("No se ha podido enviar. Inténtalo de nuevo en unos minutos.", "error");
       } finally {

@@ -311,11 +311,6 @@ p { margin: 0 0 1em; }
 .contact-list strong { color: #fff; font-family: var(--font-head); font-size: .96rem; }
 .contact-list span:not(.contact-list__icon) { display: block; color: rgba(255, 255, 255, .7); font-size: .9rem; }
 .contact-list { margin-bottom: 0; }
-.socials { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
-.socials a { width: 40px; height: 40px; display: grid; place-items: center; border-radius: 11px; background: rgba(255, 255, 255, .08); color: #fff; transition: background .3s, transform .3s var(--ease); }
-.socials a:hover { background: var(--green); transform: translateY(-3px); }
-.socials .ico { width: 18px; height: 18px; }
-.socials span { font-size: .82rem; color: var(--green-300); margin-left: 6px; }
 .form { background: #fff; color: var(--text); border-radius: 24px; padding: 36px; box-shadow: 0 40px 80px -30px rgba(0, 0, 0, .6); display: grid; gap: 16px; }
 .form h3 { color: var(--navy); font-size: 1.4rem; margin: 0 0 4px; }
 .form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
@@ -326,6 +321,7 @@ p { margin: 0 0 1em; }
 .form .form__check { display: flex; align-items: flex-start; gap: 10px; font-family: var(--font-body); font-weight: 400; font-size: .85rem; color: var(--muted); }
 .form__check input { width: 18px; height: 18px; margin: 2px 0 0; accent-color: var(--green); flex-shrink: 0; }
 .form .btn { justify-self: start; }
+.form__hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 .form__status { margin: 0; font-size: .9rem; min-height: 1.4em; }
 .form__status.is-ok { color: var(--green-600); }
 .form__status.is-info { color: var(--navy); }
@@ -333,14 +329,13 @@ p { margin: 0 0 1em; }
 
 /* Pie */
 .footer { background: var(--navy-900); color: rgba(255, 255, 255, .6); padding: 72px 0 28px; font-size: .93rem; }
-.footer__inner { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.2fr; gap: 40px; padding-bottom: 48px; border-bottom: 1px solid rgba(255, 255, 255, .1); }
+.footer__inner { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; padding-bottom: 48px; border-bottom: 1px solid rgba(255, 255, 255, .1); }
 .footer__brand .logo { width: 170px; margin-bottom: 18px; }
 .footer__brand p { max-width: 380px; }
 .footer__col { display: flex; flex-direction: column; gap: 10px; }
 .footer__col h4 { color: #fff; font-size: .95rem; margin-bottom: 8px; }
 .footer__col a { transition: color .2s; }
 .footer__col a:hover { color: var(--green-300); }
-.footer__social small { color: var(--green-300); font-size: .8rem; }
 
 /* Página de preguntas frecuentes */
 .page-hero { padding-top: 150px; }
