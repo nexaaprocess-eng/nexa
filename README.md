@@ -41,4 +41,4 @@ Cuando compres el dominio, se conecta desde el panel de Netlify o de GitHub Page
 ## Pendiente para más adelante
 
 - **Redes sociales**: de momento no aparecen en la web. Cuando tengas perfiles, se añaden al pie de página de `index.html` y `faq.html`.
-- **Formulario de contacto**: las solicitudes llegan por email con [Web3Forms](https://web3forms.com) (gratis). Pide tu *Access Key* en su web con el correo donde quieras recibirlas y pégala en `WEB3FORMS_KEY`, en `js/main.js`. Mientras esté vacía, el formulario avisa de que estará activo muy pronto.
+- **Formulario de contacto**: las solicitudes llegan por email con [Web3Forms](https://web3forms.com) (gratis). La clave de acceso está en `WEB3FORMS_KEY`, en `js/main.js` (se ve en Web3Forms → Nexa Process → Form Setup). El correo que recibe las solicitudes se elige en el panel de Web3Forms.

@@ -170,7 +170,7 @@
   /* ---------- Formulario de contacto ----------
      Cada solicitud llega por email gracias a Web3Forms (gratis, https://web3forms.com).
      Pega aquí la "Access Key" que Web3Forms envía a tu correo: */
-  const WEB3FORMS_KEY = "";
+  const WEB3FORMS_KEY = "2f67b4e3-79c1-45f0-9a9f-b49672e106e4";
   const form = document.getElementById("contact-form");
   if (form) {
     const status = document.getElementById("form-status");
