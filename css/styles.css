@@ -311,6 +311,12 @@ p { margin: 0 0 1em; }
 .contact-list strong { color: #fff; font-family: var(--font-head); font-size: .96rem; }
 .contact-list span:not(.contact-list__icon) { display: block; color: rgba(255, 255, 255, .7); font-size: .9rem; }
 .contact-list { margin-bottom: 0; }
+.contact-list li > div { flex: 1; min-width: 0; }
+.contact-list a strong { transition: color .2s; }
+.contact-list a:hover strong { color: var(--green-300); }
+.wa-btn { flex-shrink: 0; display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-head); font-weight: 700; font-size: .85rem; color: var(--navy); background: var(--green-300); padding: 9px 14px; border-radius: 999px; transition: transform .25s var(--ease), background .25s; }
+.wa-btn:hover { background: #fff; transform: translateY(-2px); }
+.wa-btn .ico { width: 16px; height: 16px; }
 .form { background: #fff; color: var(--text); border-radius: 24px; padding: 36px; box-shadow: 0 40px 80px -30px rgba(0, 0, 0, .6); display: grid; gap: 16px; }
 .form h3 { color: var(--navy); font-size: 1.4rem; margin: 0 0 4px; }
 .form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
@@ -329,7 +335,7 @@ p { margin: 0 0 1em; }
 
 /* Pie */
 .footer { background: var(--navy-900); color: rgba(255, 255, 255, .6); padding: 72px 0 28px; font-size: .93rem; }
-.footer__inner { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; padding-bottom: 48px; border-bottom: 1px solid rgba(255, 255, 255, .1); }
+.footer__inner { display: grid; grid-template-columns: 1.7fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 48px; border-bottom: 1px solid rgba(255, 255, 255, .1); }
 .footer__brand .logo { width: 170px; margin-bottom: 18px; }
 .footer__brand p { max-width: 380px; }
 .footer__col { display: flex; flex-direction: column; gap: 10px; }
