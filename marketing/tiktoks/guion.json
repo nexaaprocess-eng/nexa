@@ -1,0 +1,113 @@
+{
+ "_nota": "Locución de cada TikTok. 't' = segundo en que empieza la escena (cuando aparece el texto en pantalla).",
+ "01_reto_gratis": [
+  [0.2, "Te reto a resolver este asesinato en veinte minutos."],
+  [3.2, "Matilde se tomaba un chocolate cada noche, a las ocho."],
+  [6.5, "Esa noche, alguien envenenó su taza."],
+  [9.5, "Tres sospechosos. Uno miente."],
+  [13.7, "Tickets, coartadas, y ocho pruebas."],
+  [17.03, "Y una polilla roja, que esconde algo más grande..."],
+  [20.17, "Es gratis, en mi perfil. ¿Quién crees que fue?"]
+ ],
+ "02_quien_miente": [
+  [0.2, "Una de estas tres personas miente."],
+  [3.2, "Uno: la sobrina. Lo hereda todo."],
+  [6.8, "Dos: el rival. Su azúcar estaba junto a la taza."],
+  [10.4, "Tres: el ayudante. «Me fui a las siete»."],
+  [14.0, "Pista: Matilde nunca tomaba azúcar."],
+  [17.17, "Comenta: uno, dos o tres. El caso es gratis."]
+ ],
+ "03_cosecha_teaser": [
+  [0.2, "Un bodeguero aparece muerto entre sus barricas."],
+  [3.2, "Parece una caída por la escalera..."],
+  [6.2, "Pero la puerta estaba cerrada desde fuera."],
+  [9.4, "Su reloj dejó de marcar pulso a las once y cuarenta y siete."],
+  [12.6, "Cuatro sospechosos, dieciséis pruebas, un culpable."],
+  [16.77, "¿Te atreves? Expediente número uno, en mi perfil."]
+ ],
+ "04_quien_cosecha": [
+  [0.2, "Un bodeguero aparece muerto. ¿Quién fue?"],
+  [3.2, "Uno: la hija. Quería vender la bodega."],
+  [6.6, "Dos: la esposa. Un seguro de trescientos mil euros."],
+  [10.0, "Tres: el enólogo. «Me fui a casa»."],
+  [13.4, "Cuatro: el camarero. Tiene antecedentes."],
+  [16.77, "¿Quién fue? Comenta: uno, dos, tres o cuatro."]
+ ],
+ "05_pista_azucar": [
+  [0.2, "El noventa por ciento no ve esta pista."],
+  [3.2, "La víctima lo tomaba sin azúcar. Siempre."],
+  [6.4, "Entonces... ¿qué hace este sobre junto a la taza?"],
+  [9.6, "Alguien quiso que culparan a otro."],
+  [12.77, "¿Sabes quién? Es gratis, en mi perfil."]
+ ],
+ "06_reloj_miente": [
+  [0.17, "El reloj de la víctima se paró a las once y treinta y dos."],
+  [3.23, "Y todos los sospechosos tienen coartada para esa hora..."],
+  [6.4, "Pero era el reloj de su truco de magia."],
+  [9.6, "¿Y si la hora es mentira?"],
+  [12.97, "Nuevo caso: Última función. Link en mi perfil."]
+ ],
+ "07_que_ves_raro": [
+  [0.2, "Mira bien estas dos fotos."],
+  [3.2, "Ocho de la tarde. Foto de familia."],
+  [6.8, "Once y treinta y uno. Fotomatón."],
+  [10.6, "¿Qué ha cambiado?"],
+  [13.97, "¿Lo ves? Comenta. Link en mi perfil."]
+ ],
+ "08_polillas": [
+  [0.2, "Alguien me está enviando expedientes."],
+  [3.4, "Casos que la policía cerró en falso."],
+  [6.83, "Y en cada uno, esconde una polilla roja."],
+  [10.2, "Todo lleva a una noche: el apagón del noventa y ocho."],
+  [13.57, "¿Quién es R? Empieza gratis, en mi perfil."]
+ ],
+ "09_pov_sobre": [
+  [0.2, "Imagina: te llega un sobre rojo a casa."],
+  [3.4, "Dentro: un asesinato sin resolver."],
+  [6.8, "Sospechosos, pruebas, coartadas..."],
+  [10.23, "Y solo tú puedes decir quién fue."],
+  [13.57, "¿Te atreves? Tu primer expediente es gratis, en mi perfil."]
+ ],
+ "10_tres_pistas": [
+  [0.2, "Tres pistas, un asesino. ¿Lo ves?"],
+  [3.2, "Pista uno: un mensaje leído a las once y trece."],
+  [6.6, "Pista dos: un ticket de gasolinera a las doce menos dos."],
+  [10.0, "Pista tres: la puerta se cerró con llave."],
+  [13.37, "¿Quién fue? Comenta. Link en mi perfil."]
+ ],
+ "11_coartada_falsa": [
+  [0.2, "Esta coartada parece perfecta..."],
+  [3.2, "«De once menos cuarto a once y diez, estuve en la churrería»."],
+  [6.8, "Pero esa noche, colgaron este cartel."],
+  [10.2, "Cerrada de diez y media a once y cuarto."],
+  [13.57, "Te ha mentido. Descubre por qué, en mi perfil."]
+ ],
+ "12_noticia": [
+  [0.2, "El periódico dijo que fue un accidente."],
+  [3.4, "Pero el cuerpo tenía astillas de roble en la herida."],
+  [6.83, "Y su reloj dejó de marcar pulso, de golpe."],
+  [10.2, "Esto no fue una caída."],
+  [13.57, "Investiga tú. Cosecha de sangre, link en mi perfil."]
+ ],
+ "13_dificultad": [
+  [0.2, "¿Qué caso podrías resolver?"],
+  [3.2, "Fácil: Chocolate amargo."],
+  [6.6, "Medio: Cosecha de sangre."],
+  [10.0, "Difícil: Última función."],
+  [13.37, "Empieza por el fácil: es gratis. ¿Cuál eliges?"]
+ ],
+ "14_mensaje": [
+  [0.17, "El último mensaje de la víctima: «Sé lo de las botellas»."],
+  [3.4, "Lo leyeron a las once y trece."],
+  [6.8, "Pero él dijo que esa noche, ni miró el móvil."],
+  [10.2, "Treinta y cuatro minutos después, el pulso se detuvo."],
+  [13.57, "¿Caso cerrado? Aún no. Link en mi perfil."]
+ ],
+ "15_coartadas": [
+  [0.2, "Tres sospechosos dicen que no se movieron."],
+  [3.2, "Ella tiene una story de Instagram."],
+  [6.6, "Él arbitraba un partido."],
+  [10.03, "Y él... cerró la caja a las ocho menos ocho."],
+  [13.37, "¿Quién miente? Chocolate amargo, gratis, en mi perfil."]
+ ]
+}
