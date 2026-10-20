@@ -1,12 +1,13 @@
 # TikToks de Expediente Rojo: voz en off
 
 - `guion.json`: texto de la locución de cada TikTok, una frase por escena, con el segundo en que aparece el texto en pantalla.
-- `voz.py`: genera la voz (Edge TTS, voz `es-ES-AlvaroNeural`), la ajusta para que cada frase quepa en su escena y la mezcla con el vídeo (normalizada a -14 LUFS, el nivel de TikTok).
+- `voz.py`: genera la voz (Edge TTS, voz `es-ES-AlvaroNeural`), la ajusta para que cada frase quepa en su escena y la mezcla con el vídeo y la música (normalizado a -14 LUFS, el nivel de TikTok).
+- `musica.py`: música de suspense generada por código, sin derechos de autor: dron grave, latido, tic-tac, un *whoosh* en cada cambio de escena y un golpe en la escena final. Baja de volumen sola cuando habla la voz; el nivel general se cambia con `MUSICA_DB` en `voz.py`.
 
 ## Cómo regenerarlo
 
 ```bash
-pip install edge-tts   # además necesita ffmpeg
+pip install edge-tts numpy scipy   # además necesita ffmpeg
 python3 voz.py <carpeta_con_los_mp4_originales> <carpeta_salida>
 ```
 

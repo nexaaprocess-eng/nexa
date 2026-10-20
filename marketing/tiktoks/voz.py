@@ -7,12 +7,14 @@ import asyncio, json, os, ssl, subprocess, sys, tempfile
 from pathlib import Path
 
 import edge_tts
+import musica
 if os.environ.get("TTS_CA_BUNDLE"):  # proxy con certificado propio
     import edge_tts.communicate as C
     C._SSL_CTX = ssl.create_default_context(cafile=os.environ["TTS_CA_BUNDLE"])
 
 VOZ = "es-ES-AlvaroNeural"
 LEAD = 0.05   # retraso de la voz respecto al inicio de la escena
+MUSICA_DB = -9   # volumen de la música respecto a la voz
 GAP = 0.1     # margen mínimo antes de la escena siguiente
 GUION = json.load(open(Path(__file__).with_name("guion.json")))
 
@@ -51,9 +53,16 @@ def build(video, name, outdir, tmp):
         delay = int((t + LEAD) * 1000)
         filters.append(f"[{i + 1}:a]atempo={tempo:.3f},adelay={delay}[a{i}]")
     mix = "".join(f"[a{i}]" for i in range(len(segs)))
-    filters.append(f"{mix}amix=inputs={len(segs)}:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11,apad[vo]")
+    # música de suspense, que baja de volumen cuando habla la voz
+    music = tmp / f"{name}_musica.wav"
+    musica.make(total, [t for t, _ in segs], music)
+    m = len(segs) + 1
+    filters.append(f"{mix}amix=inputs={len(segs)}:normalize=0,aformat=channel_layouts=stereo,apad,asplit[voz][clave]")
+    filters.append(f"[{m}:a]volume={MUSICA_DB}dB[mus]")
+    filters.append("[mus][clave]sidechaincompress=threshold=0.02:ratio=5:attack=15:release=350[musb]")
+    filters.append("[voz][musb]amix=inputs=2:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11[vo]")
     out = outdir / f"{name}.mp4"
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(video), *inputs,
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(video), *inputs, "-i", str(music),
                     "-filter_complex", ";".join(filters), "-map", "0:v", "-map", "[vo]",
                     "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-t", f"{total}",
                     "-movflags", "+faststart", str(out)], check=True)
