@@ -26,11 +26,11 @@ export const S07WhyFree: React.FC = () => {
       {/* beat 0: the question */}
       <div style={{position: 'absolute', inset: 0, opacity: b.during(0, 0)}}>
         <Stage>
-          <Place x={960} y={460} s={1.6 * b.pop(0, 0.2)} r={-8 + Math.sin(frame / 20) * 3}>
+          <Place x={960} y={460} s={1.6 * b.pop(0, -0.35)} r={-8 + Math.sin(frame / 20) * 3}>
             <Tag text="FREE" />
           </Place>
         </Stage>
-        <Abs x={0} y={640} w={1920} align="center" o={b.ramp(0, 0.6)}>
+        <Abs x={0} y={640} w={1920} align="center" o={b.ramp(0, 0.1)}>
           <Title size={76}>Why offer free returns at all?</Title>
         </Abs>
       </div>
@@ -52,7 +52,7 @@ export const S07WhyFree: React.FC = () => {
           <Body size={34} style={{marginTop: 18}} color={C.cream}>
             …and returns, but by less.
           </Body>
-          <Body size={24} color={C.muted} style={{marginTop: 22}}>
+          <Body size={28} color={C.muted} style={{marginTop: 22}}>
             Arrow heights are qualitative, not effect sizes.
           </Body>
         </Abs>
@@ -67,7 +67,7 @@ export const S07WhyFree: React.FC = () => {
                 <Jacket />
               </g>
               <rect x={-90} y={80} width={180} height={40} rx={20} fill={C.green} />
-              <text x={0} y={107} textAnchor="middle" fill={C.bg} fontSize={20} fontWeight={700} fontFamily="Inter">
+              <text x={0} y={107} textAnchor="middle" fill={C.bg} fontSize={26} fontWeight={700} fontFamily="Inter">
                 Free returns
               </text>
             </Phone>
@@ -152,7 +152,7 @@ export const S07WhyFree: React.FC = () => {
         <Abs x={220} y={280} w={1480}>
           <div style={{display: 'flex', gap: 60}}>
             {[
-              {h: 'Upside', c: C.green, items: [['53%', 'fewer returns overall'], ['52%', 'more exchanges']], at: 0.4},
+              {h: 'Upside', c: C.green, items: [['53%', 'fewer returns overall'], ['52%', 'more exchanges']], at: -0.2},
               {h: 'Downside', c: C.red, items: [['47%', 'more customer complaints'], ['37%', 'lost customers over fees']], at: 4.2},
             ].map((col) => (
               <Card key={col.h} w={700} accent={col.c} style={{opacity: b.ramp(5, col.at)}}>
@@ -160,7 +160,7 @@ export const S07WhyFree: React.FC = () => {
                   {col.h}
                 </Title>
                 {col.items.map(([v, l], i) => (
-                  <div key={l} style={{display: 'flex', alignItems: 'baseline', gap: 24, marginTop: 22, opacity: b.ramp(5, col.at + 0.6 + i * 0.8)}}>
+                  <div key={l} style={{display: 'flex', alignItems: 'baseline', gap: 24, marginTop: 22, opacity: b.ramp(5, col.at + 0.4 + i * 0.8)}}>
                     <div style={{fontFamily: FONT_TITLE, fontSize: 104, fontWeight: 700, color: C.cream, width: 250}}>{v}</div>
                     <Body size={32}>{l}</Body>
                   </div>

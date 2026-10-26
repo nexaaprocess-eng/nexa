@@ -2,9 +2,9 @@
 
 *Hidden Ledger · Episode 001 · narration only, by scene. Generated from `episode.json` by `python/write_docs.py`.*
 
-Words: **1391** · measured narration length: **9:52** (592.3 s)
+Words: **1391** · measured narration length: **9:53** (593.5 s)
 
-## 1. Cold open  `0:00–0:28`
+## 1. Cold open  `0:00–0:29`
 
 You order a jacket online. It arrives on a Tuesday.
 
@@ -18,7 +18,7 @@ It will be scanned, trucked, sorted, inspected, and judged. And every one of tho
 
 So who actually pays for a free return?
 
-## 2. Why it matters  `0:28–1:46`
+## 2. Why it matters  `0:29–1:47`
 
 Start with the scale.
 
@@ -38,7 +38,7 @@ And 57 percent said they had decided not to shop with a retailer after it starte
 
 So retailers are caught between two pressures. Returns are expensive, and making them harder can push customers away.
 
-## 3. Reverse logistics  `1:46–3:01`
+## 3. Reverse logistics  `1:47–3:02`
 
 Let's follow the jacket. What comes next is one common path, not the only one.
 
@@ -58,7 +58,7 @@ This backward journey has a name: reverse logistics. And it can be slow. About h
 
 All that time, the jacket isn't for sale. And if it's seasonal, it can lose value every week it sits.
 
-## 4. The costs nobody sees  `3:01–4:43`
+## 4. The costs nobody sees  `3:02–4:44`
 
 So where does the money go? It helps to split the costs into two piles.
 
@@ -80,7 +80,7 @@ Change any assumption and the answer changes. Real costs depend on the product, 
 
 There's also fraud. In the NRF survey, retailers that track it estimated that about 9 percent of returns were fraudulent, from empty boxes to swapped items. That's the retailers' own estimate, not an audited number.
 
-## 5. Who absorbs the bill  `4:43–6:19`
+## 5. Who absorbs the bill  `4:44–6:21`
 
 So, who pays? The honest answer is: it depends on who's in the chain.
 
@@ -98,7 +98,7 @@ And more retailers are charging shoppers directly. In the NRF survey, 72 percent
 
 That can mean a fee on one return method while another stays free, which nudges shoppers toward the option that's cheaper for the retailer. The cost doesn't vanish. It gets routed.
 
-## 6. Where the jacket goes  `6:19–7:53`
+## 6. Where the jacket goes  `6:21–7:54`
 
 Back to the jacket. Once it's been inspected, where does it actually go?
 
@@ -118,7 +118,7 @@ And some returns are destroyed. There's no single figure for the whole industry.
 
 Since July 2026, the European Union has banned large companies from destroying unsold clothing, accessories, and footwear, with some exceptions.
 
-## 7. Why free can still be good business  `7:53–9:04`
+## 7. Why free can still be good business  `7:54–9:06`
 
 If returns cost this much, why offer them for free at all?
 
@@ -134,7 +134,7 @@ In the NRF survey, retailers that added return fees reported fewer returns and m
 
 There's no free lunch here. Just a business decision about which costs are worth paying.
 
-## 8. Payoff  `9:04–9:52`
+## 8. Payoff  `9:06–9:53`
 
 So, who really pays for free returns?
 

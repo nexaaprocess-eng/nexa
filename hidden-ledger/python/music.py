@@ -53,6 +53,21 @@ MOODS = {
         "chords": [["F3", "A3", "C4", "E4"], ["D3", "F3", "A3", "C4"], ["A#2", "D3", "F3", "A3"], ["C3", "E3", "G3", "A#3"]],
         "pad_gain": 0.16, "pulse": False, "tick": False, "mallet": True, "bright": 0.25,
     },
+    "process": {  # logistics / machinery: steady light pulse, suspended colours
+        "bpm": 92, "beats_per_chord": 8, "root_octave": 2,
+        "chords": [["G2", "D3", "A3", "C4"], ["E2", "B2", "D3", "G3"], ["C3", "G3", "B3", "D4"], ["D3", "A3", "C4", "E4"]],
+        "pad_gain": 0.15, "pulse": True, "tick": True, "mallet": False, "bright": 0.3,
+    },
+    "tension": {  # costs: minor, darker, sparse ticks
+        "bpm": 80, "beats_per_chord": 8, "root_octave": 2,
+        "chords": [["A2", "E3", "G3", "C4"], ["F2", "C3", "E3", "A3"], ["D3", "F3", "A3", "C4"], ["E2", "B2", "D3", "G#3"]],
+        "pad_gain": 0.16, "pulse": False, "tick": True, "mallet": False, "bright": 0.22,
+    },
+    "lift": {  # why free can pay off: brighter major, mallets
+        "bpm": 88, "beats_per_chord": 8, "root_octave": 2,
+        "chords": [["D3", "F#3", "A3", "C#4"], ["B2", "D3", "F#3", "A3"], ["G2", "B2", "D3", "F#3"], ["A2", "C#3", "E3", "G3"]],
+        "pad_gain": 0.16, "pulse": False, "tick": False, "mallet": True, "bright": 0.4,
+    },
     "reveal": {
         "bpm": 76, "beats_per_chord": 8, "root_octave": 2,
         "chords": [["A#2", "D3", "F3", "A3"], ["C3", "E3", "G3", "C4"], ["D3", "F3", "A3", "C4"], ["F3", "A3", "C4", "F4"]],

@@ -3,7 +3,7 @@
 * Music: one original cue per scene (mood from episode.json), crossfaded at scene boundaries.
   If assets/music/documentary_bed.(wav|mp3|flac) exists it replaces the synthesized score
   (log its licence in asset_licenses.csv first).
-* Ducking: gain curve driven by the narration envelope (attack 40 ms / release 350 ms) plus an extra
+* Ducking: gain curve driven by the narration envelope (attack 40 ms / release 350 ms, 150 ms look-ahead) plus an extra
   dip during segments flagged "duck": true (key figures).
 * SFX: whoosh on scene changes, tick on figure reveals, click on process steps, thump on the payoff.
 * Loudness: two-pass ffmpeg loudnorm, target -16 LUFS integrated, -1.5 dBTP (guide values).
@@ -150,6 +150,9 @@ def main():
 
     # voice activity / envelope
     env = smooth_env(voice, 0.04, 0.35)
+    # look-ahead: duck 150 ms before each onset so the music is already down when a word starts after a pause
+    la = int(0.15 * SR)
+    env = np.maximum(env, np.concatenate([env[la:], np.zeros(la, dtype=env.dtype)]))
     speech_mask = env > (np.max(env) * 0.08)
     voice_rms = rms_db(voice[speech_mask])
     voice_peak = float(np.max(np.abs(voice)))
@@ -192,7 +195,7 @@ def main():
     sf.write(str(base / "stem_sfx.wav"), sfx, SR, subtype="PCM_16")
 
     # two-pass loudnorm
-    target = "I=-16:TP=-2.6:LRA=11"  # AAC encoding adds ~0.6 dB of true peak; keeps the MP4 <= -1.5 dBTP
+    target = "I=-15:TP=-2.6:LRA=11"  # AAC encoding adds up to ~0.6 dB of true peak; keeps the MP4 <= -1.5 dBTP
     r = ffmpeg("-i", str(pre), "-af", f"loudnorm={target}:print_format=json", "-f", "null", "-")
     m = json.loads(r.stderr[r.stderr.rindex("{"): r.stderr.rindex("}") + 1])
     flt = (f"loudnorm={target}:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}"

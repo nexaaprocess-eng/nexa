@@ -116,14 +116,14 @@ export const S02Scale: React.FC = () => {
               const t = b.ramp(3, 1.2 + i * 0.18, 0.6);
               return (
                 <div key={d.y} style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8}}>
-                  <div style={{fontFamily: FONT_TITLE, fontSize: 24, color: C.cream, opacity: t}}>${d.v}B</div>
+                  <div style={{fontFamily: FONT_TITLE, fontSize: 30, color: C.cream, opacity: t}}>${d.v}B</div>
                   <div style={{width: 96, height: (d.v / 900) * 300 * t, background: i === HISTORY.length - 1 ? C.orange : C.line, borderRadius: 6}} />
-                  <div style={{fontFamily: FONT_TITLE, fontSize: 24, color: C.muted}}>{d.y}</div>
+                  <div style={{fontFamily: FONT_TITLE, fontSize: 30, color: C.muted}}>{d.y}</div>
                 </div>
               );
             })}
           </div>
-          <Body size={22} color={C.muted} style={{marginTop: 18}}>
+          <Body size={26} color={C.muted} style={{marginTop: 18}}>
             NRF series. 2023 omitted by NRF (different method). *2025 = projection.
           </Body>
         </Abs>

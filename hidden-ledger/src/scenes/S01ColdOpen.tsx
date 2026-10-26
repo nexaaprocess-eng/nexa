@@ -175,7 +175,7 @@ export const S01ColdOpen: React.FC = () => {
       {phoneO > 0 && (
         <div style={{position: 'absolute', inset: 0, opacity: phoneO, background: `rgba(17,20,24,${phoneO})`}}>
           <Stage>
-            <Place x={960} y={500} s={phoneS}>
+            <Place x={960} y={545} s={phoneS}>
               <Phone>
                 <g transform="translate(0 -70) scale(0.7)">
                   <Jacket />
@@ -197,6 +197,13 @@ export const S01ColdOpen: React.FC = () => {
           </Stage>
         </div>
       )}
+
+      {/* ================= the central question, on screen from 0:00 until the refund toast */}
+      <div style={{position: 'absolute', left: 0, right: 0, top: 118, display: 'flex', justifyContent: 'center', opacity: b.ramp(0, -0.6, 0.4) * (1 - b.rampAt(fRefund - 8, 0.3))}}>
+        <div style={{background: 'rgba(14,17,20,0.88)', border: `3px solid ${C.orange}`, borderRadius: 18, padding: '8px 30px', fontFamily: FONT_TITLE, fontWeight: 700, fontSize: 46, color: C.cream, letterSpacing: 1}}>
+          WHO PAYS FOR A <span style={{color: C.orange}}>FREE</span> RETURN?
+        </div>
+      </div>
 
       {/* ================= phase D: whip pan into a warehouse + teaser */}
       <div style={{position: 'absolute', inset: 0, opacity: whip * (1 - journey) * (frame < b.at(4) + 15 ? 1 : 0), transform: `translateX(${1900 * (1 - whip)}px)`}}>

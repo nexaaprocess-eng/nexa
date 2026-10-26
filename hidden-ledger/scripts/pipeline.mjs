@@ -214,6 +214,51 @@ const commands = {
     console.log(JSON.stringify(v, null, 2));
     if (!v.ok) process.exit(2);
   },
+  // Final delivery: render the episode in N chunks from the original compositions (robust on small machines),
+  // join them losslessly inside a two-pass H.264 encode, mux the lossless mix as AAC, then verify.
+  final() {
+    py('music.py', ['all']);
+    narration();
+    const {tl, props} = timeline('full');
+    const dest = path.join(OUT, 'final');
+    const parts = path.join(dest, 'parts');
+    fs.mkdirSync(parts, {recursive: true});
+    const chunks = Number(opt('chunks', '3'));
+    const per = Math.ceil(tl.durationInFrames / chunks);
+    const conc = opt('concurrency', String(defaultConcurrency()));
+    const files = [];
+    for (let i = 0; i < chunks; i++) {
+      const from = i * per;
+      const to = Math.min(tl.durationInFrames - 1, (i + 1) * per - 1);
+      const f = path.join(parts, `part${i + 1}.mp4`);
+      if (!flag('reuse-parts') || !fs.existsSync(f)) {
+        run(NPX, ['remotion', 'render', 'Episode', f, `--props=${props}`, `--frames=${from}-${to}`, `--concurrency=${conc}`,
+          '--muted', '--codec=h264', '--crf=14', '--timeout=120000', '--log=error']);
+      }
+      files.push(f);
+    }
+    const name = opt('name', `hidden_ledger_episode_${EP}_FINAL_1080p`);
+    const out = path.join(dest, `${name}.mp4`);
+    const kbps = parseInt(opt('bitrate', '10M'), 10) * 1000;
+    const dur = (tl.durationInFrames / tl.fps).toFixed(4);
+    const inputs = files.flatMap((f) => ['-i', f]);
+    const fc = files.map((_, i) => `[${i}:v]`).join('') + `concat=n=${files.length}:v=1:a=0[v]`;
+    const v = ['-c:v', 'libx264', '-preset', 'slow', '-b:v', `${kbps}k`, '-maxrate', `${Math.round(kbps * 1.25)}k`, '-bufsize', `${kbps * 2}k`,
+      '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-level', '4.2', '-r', '30', '-g', '15', '-keyint_min', '15', '-sc_threshold', '0', '-bf', '2',
+      '-flags', '+cgop', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709'];
+    const log = path.join(dest, 'x264_final');
+    run('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', ...inputs, '-filter_complex', fc, '-map', '[v]', ...v, '-pass', '1', '-passlogfile', log, '-an', '-f', 'mp4', IS_WIN ? 'NUL' : '/dev/null']);
+    run('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', ...inputs, '-i', path.join(AUDIO, 'full', 'mix.wav'),
+      '-filter_complex', `${fc};[${files.length}:a]apad=whole_dur=${dur}[a]`, '-map', '[v]', '-map', '[a]', ...v, '-pass', '2', '-passlogfile', log,
+      '-c:a', 'aac', '-b:a', opt('audio-bitrate', '256k'), '-ar', '48000', '-ac', '2', '-t', dur, '-movflags', '+faststart', out]);
+    for (const f of fs.readdirSync(dest)) if (f.startsWith('x264_final')) fs.rmSync(path.join(dest, f));
+    fs.copyFileSync(path.join(AUDIO, 'full', 'full.srt'), path.join(dest, `hidden_ledger_episode_${EP}.srt`));
+    py('av_check.py', ['--episode', EP, '--video', path.relative(ROOT, out), '--asr'], {allowFail: true});
+    py('stem_check.py', ['--episode', EP, '--name', 'full'], {allowFail: true});
+    const rep = validateVideo(out, {minDur: 400, maxDur: 660});
+    writeReport(`${name}_report`, rep);
+    console.log(JSON.stringify(rep, null, 2));
+  },
   shorts() {
     const ep = episode();
     const fullProps = path.join(AUDIO, 'full', 'props.json');

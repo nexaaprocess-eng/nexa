@@ -114,7 +114,7 @@ export const Source: React.FC<{children: React.ReactNode; o?: number}> = ({child
       textAlign: 'right',
       opacity: o,
       fontFamily: FONT_BODY,
-      fontSize: 25,
+      fontSize: 26,
       color: C.muted,
       lineHeight: 1.35,
     }}

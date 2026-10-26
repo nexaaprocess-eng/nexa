@@ -28,3 +28,8 @@ out/
 output/**/full/full_video_v2.mp4
 output/**/full/s01_fix.mp4
 output/**/full/x264*
+
+# final delivery: ~760 MB master (over GitHub's 100 MB limit) + render chunks
+output/**/final/*.mp4
+output/**/final/parts/
+output/**/final/x264*

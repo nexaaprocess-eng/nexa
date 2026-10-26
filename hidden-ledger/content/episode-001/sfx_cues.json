@@ -1,21 +1,243 @@
 {
-  "_about": "Word-anchored sound effects for python/mix.py. 'word' is a regex matched against the ASR word anchors of the segment; 'offset' is seconds relative to that word; 'gain_db' is relative to the default SFX level. Scene-change whooshes and figure ticks are added automatically.",
-  "cues": [
-    {"segment": "s01-01", "word": "order", "offset": 0.05, "sound": "click", "gain_db": 2},
-    {"segment": "s01-01", "word": "online", "offset": 0.0, "sound": "whoosh", "gain_db": 0},
-    {"segment": "s01-01", "word": "Tuesday", "offset": 0.15, "sound": "thump", "gain_db": 2},
-    {"segment": "s01-02", "word": "Thursday", "offset": 0.0, "sound": "tick", "gain_db": 0},
-    {"segment": "s01-02", "word": "short", "offset": 0.0, "sound": "thump", "gain_db": 3},
-    {"segment": "s01-03", "word": "free", "offset": 0.0, "sound": "thump", "gain_db": 3},
-    {"segment": "s01-03", "word": "refund", "offset": 0.55, "sound": "whoosh", "gain_db": -2},
-    {"segment": "s01-03", "word": "refund", "offset": 0.0, "sound": "pop", "gain_db": 0},
-    {"segment": "s01-04", "word": "jacket", "offset": -0.25, "sound": "whoosh", "gain_db": 2},
-    {"segment": "s01-05", "word": "scanned", "offset": 0.0, "sound": "tick", "gain_db": 0},
-    {"segment": "s01-05", "word": "trucked", "offset": 0.0, "sound": "tick", "gain_db": 0},
-    {"segment": "s01-05", "word": "sorted", "offset": 0.0, "sound": "tick", "gain_db": 0},
-    {"segment": "s01-05", "word": "inspected", "offset": 0.0, "sound": "tick", "gain_db": 0},
-    {"segment": "s01-05", "word": "judged", "offset": 0.0, "sound": "tick", "gain_db": 0},
-    {"segment": "s01-06", "word": "pays", "offset": 0.0, "sound": "thump", "gain_db": 0},
-    {"segment": "s02-01", "word": "scale", "offset": -0.3, "sound": "whoosh", "gain_db": -3}
-  ]
+ "_about": "Word-anchored sound effects for python/mix.py. 'word' is a regex matched against the ASR word anchors of the segment; 'offset' is seconds relative to that word; 'gain_db' is relative to the default SFX level. Scene-change whooshes and figure ticks are added automatically.",
+ "cues": [
+  {
+   "segment": "s01-01",
+   "word": "order",
+   "offset": 0.05,
+   "sound": "click",
+   "gain_db": 2
+  },
+  {
+   "segment": "s01-01",
+   "word": "online",
+   "offset": 0.0,
+   "sound": "whoosh",
+   "gain_db": 0
+  },
+  {
+   "segment": "s01-01",
+   "word": "Tuesday",
+   "offset": 0.15,
+   "sound": "thump",
+   "gain_db": 2
+  },
+  {
+   "segment": "s01-02",
+   "word": "Thursday",
+   "offset": 0.0,
+   "sound": "tick",
+   "gain_db": 0
+  },
+  {
+   "segment": "s01-02",
+   "word": "short",
+   "offset": 0.0,
+   "sound": "thump",
+   "gain_db": 3
+  },
+  {
+   "segment": "s01-03",
+   "word": "free",
+   "offset": 0.0,
+   "sound": "thump",
+   "gain_db": 3
+  },
+  {
+   "segment": "s01-03",
+   "word": "refund",
+   "offset": 0.55,
+   "sound": "whoosh",
+   "gain_db": -2
+  },
+  {
+   "segment": "s01-03",
+   "word": "refund",
+   "offset": 0.0,
+   "sound": "pop",
+   "gain_db": 0
+  },
+  {
+   "segment": "s01-04",
+   "word": "jacket",
+   "offset": -0.25,
+   "sound": "whoosh",
+   "gain_db": 2
+  },
+  {
+   "segment": "s01-05",
+   "word": "scanned",
+   "offset": 0.0,
+   "sound": "tick",
+   "gain_db": 0
+  },
+  {
+   "segment": "s01-05",
+   "word": "trucked",
+   "offset": 0.0,
+   "sound": "tick",
+   "gain_db": 0
+  },
+  {
+   "segment": "s01-05",
+   "word": "sorted",
+   "offset": 0.0,
+   "sound": "tick",
+   "gain_db": 0
+  },
+  {
+   "segment": "s01-05",
+   "word": "inspected",
+   "offset": 0.0,
+   "sound": "tick",
+   "gain_db": 0
+  },
+  {
+   "segment": "s01-05",
+   "word": "judged",
+   "offset": 0.0,
+   "sound": "tick",
+   "gain_db": 0
+  },
+  {
+   "segment": "s01-06",
+   "word": "pays",
+   "offset": 0.0,
+   "sound": "thump",
+   "gain_db": 0
+  },
+  {
+   "segment": "s02-01",
+   "word": "scale",
+   "offset": -0.3,
+   "sound": "whoosh",
+   "gain_db": -3
+  },
+  {
+   "segment": "s04-03",
+   "word": "shipping",
+   "offset": 0.55,
+   "sound": "tick",
+   "gain_db": -2
+  },
+  {
+   "segment": "s04-03",
+   "word": "labor",
+   "offset": 0.55,
+   "sound": "tick",
+   "gain_db": -2
+  },
+  {
+   "segment": "s04-03",
+   "word": "cleaning",
+   "offset": 0.55,
+   "sound": "tick",
+   "gain_db": -2
+  },
+  {
+   "segment": "s04-03",
+   "word": "customer",
+   "offset": 0.55,
+   "sound": "tick",
+   "gain_db": -2
+  },
+  {
+   "segment": "s04-03",
+   "word": "software",
+   "offset": 0.55,
+   "sound": "tick",
+   "gain_db": -2
+  },
+  {
+   "segment": "s04-05",
+   "word": "marked",
+   "offset": 0.55,
+   "sound": "tick",
+   "gain_db": -2
+  },
+  {
+   "segment": "s04-05",
+   "word": "bulk",
+   "offset": 0.55,
+   "sound": "tick",
+   "gain_db": -2
+  },
+  {
+   "segment": "s04-07",
+   "word": "\\$8",
+   "offset": 0.55,
+   "sound": "tick",
+   "gain_db": -2
+  },
+  {
+   "segment": "s04-07",
+   "word": "\\$6",
+   "offset": 0.55,
+   "sound": "tick",
+   "gain_db": -2
+  },
+  {
+   "segment": "s04-07",
+   "word": "\\$70",
+   "offset": 0.55,
+   "sound": "tick",
+   "gain_db": -2
+  },
+  {
+   "segment": "s06-02",
+   "word": "new",
+   "offset": 0.12,
+   "sound": "click",
+   "gain_db": -1
+  },
+  {
+   "segment": "s06-03",
+   "word": "used",
+   "offset": 0.12,
+   "sound": "click",
+   "gain_db": -1
+  },
+  {
+   "segment": "s06-04",
+   "word": "repaired",
+   "offset": 0.12,
+   "sound": "click",
+   "gain_db": -1
+  },
+  {
+   "segment": "s06-04",
+   "word": "bulk",
+   "offset": 0.12,
+   "sound": "click",
+   "gain_db": -1
+  },
+  {
+   "segment": "s06-06",
+   "word": "seller",
+   "offset": 0.12,
+   "sound": "click",
+   "gain_db": -1
+  },
+  {
+   "segment": "s06-06",
+   "word": "donated",
+   "offset": 0.12,
+   "sound": "click",
+   "gain_db": -1
+  },
+  {
+   "segment": "s06-06",
+   "word": "recycled",
+   "offset": 0.12,
+   "sound": "click",
+   "gain_db": -1
+  },
+  {
+   "segment": "s06-08",
+   "word": "destroyed",
+   "offset": 0.12,
+   "sound": "click",
+   "gain_db": -1
+  }
+ ]
 }

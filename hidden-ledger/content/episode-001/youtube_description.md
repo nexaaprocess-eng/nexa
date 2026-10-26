@@ -11,13 +11,13 @@ No single answer fits every store. The cost doesn't disappear; companies decide 
 **Chapters**
 <!-- chapters:start (generated from the measured timeline by python/write_docs.py chapters) -->
 0:00 A jacket goes back
-0:28 The scale of returns
-1:46 The trip back
-3:01 The costs nobody sees
-4:43 Who absorbs the bill
-6:19 Where the jacket goes
-7:53 Why free can still pay off
-9:04 So who pays?
+0:29 The scale of returns
+1:47 The trip back
+3:02 The costs nobody sees
+4:44 Who absorbs the bill
+6:21 Where the jacket goes
+7:54 Why free can still pay off
+9:06 So who pays?
 <!-- chapters:end -->
 
 **Sources**

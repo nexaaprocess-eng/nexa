@@ -38,7 +38,7 @@
         { "id": "03", "text": "So you send it back. The label is free. The refund shows up a few days later." },
         { "id": "04", "text": "For you, the story ends there. For the jacket, it's just getting started." },
         { "id": "05", "text": "It will be scanned, trucked, sorted, inspected, and judged. And every one of those steps costs somebody something." },
-        { "id": "06", "text": "So who actually pays for a free return?" }
+        { "id": "06", "text": "So who actually pays for a free return?", "say": "So, who actually pays... for a free return?" }
       ]
     },
     {
@@ -62,14 +62,14 @@
       "id": "s03",
       "title": "Reverse logistics",
       "chapter": "The trip back",
-      "music": "neutral",
+      "music": "process",
       "segments": [
         { "id": "01", "text": "Let's follow the jacket. What comes next is one common path, not the only one." },
         { "id": "02", "text": "Step one: the hand-off. Depending on the store, you might mail it, leave it with a carrier, or bring it to a counter, sometimes without a box or a label." },
         { "id": "03", "text": "In NRF's survey, more retailers offered box-free, label-free drop-offs in 2025 than a year earlier.", "claims": ["C07"] },
         { "id": "04", "text": "Step two: consolidation. Instead of shipping every item back on its own, some return networks pool many returns together and ship them in bulk.", "claims": ["C08"] },
         { "id": "05", "text": "Step three: a warehouse or returns center, where someone opens the package and scans what's inside." },
-        { "id": "06", "text": "Step four: inspection. Is it the right item? Is it damaged? Has it been worn? Are the tags still on?" },
+        { "id": "06", "text": "Step four: inspection. Is it the right item? Is it damaged? Has it been worn? Are the tags still on?", "say": "Step four: inspection. Is it the right item? ... Is it damaged? ... Has it been worn? ... Are the tags still on?" },
         { "id": "07", "text": "Step five: a decision. Restock it, discount it, send it somewhere else, or write it off." },
         { "id": "08", "text": "This backward journey has a name: reverse logistics. And it can be slow. About half of the retailers in the NRF survey said it takes six to ten days to get a returned item back in stock.", "claims": ["C09"], "duck": true },
         { "id": "09", "text": "All that time, the jacket isn't for sale. And if it's seasonal, it can lose value every week it sits." }
@@ -79,7 +79,7 @@
       "id": "s04",
       "title": "The costs nobody sees",
       "chapter": "The costs nobody sees",
-      "music": "neutral",
+      "music": "tension",
       "segments": [
         { "id": "01", "text": "So where does the money go? It helps to split the costs into two piles." },
         { "id": "02", "text": "The first pile is operating costs: money spent moving and handling the item." },
@@ -130,7 +130,7 @@
       "id": "s07",
       "title": "Why free can still be good business",
       "chapter": "Why free can still pay off",
-      "music": "neutral",
+      "music": "lift",
       "segments": [
         { "id": "01", "text": "If returns cost this much, why offer them for free at all?" },
         { "id": "02", "text": "Because a generous return policy can sell more than it costs. A 2016 review in the Journal of Retailing, which pooled results from 21 studies, found that more lenient return policies increased purchases. They increased returns too, but by less.", "claims": ["C18"] },

@@ -24,7 +24,7 @@ export const S03ReverseLogistics: React.FC = () => {
   const {frame} = b;
   const segIdx = b.ctx.segStart.filter((s) => s <= frame).length - 1;
   const active = ACTIVE[Math.max(0, segIdx)] ?? -1;
-  const draw = b.ramp(0, 0.3, 2.2);
+  const draw = b.ramp(0, -0.4, 1.6);
   const nodeX = (a: number) => (a >= 0 ? NODES[a].x : NODES[NODES.length - 1].x);
   const prev = segIdx > 0 ? ACTIVE[segIdx - 1] ?? -1 : 0;
   // the parcel glides from the previous node to the active one at the start of each segment
@@ -37,7 +37,7 @@ export const S03ReverseLogistics: React.FC = () => {
         <DrawPath d={`M${NODES[0].x} ${MAP_Y + 60} L${NODES[5].x} ${MAP_Y + 60}`} t={draw} color={C.line} width={8} />
         <line x1={NODES[0].x} x2={px} y1={MAP_Y + 60} y2={MAP_Y + 60} stroke={C.orange} strokeWidth={8} strokeLinecap="round" />
         {NODES.map((n, i) => {
-          const on = b.ramp(0, 0.3 + i * 0.3, 0.4);
+          const on = b.ramp(0, -0.35 + i * 0.15, 0.35);
           const isActive = i === active;
           return (
             <g key={n.label} opacity={on}>
@@ -66,7 +66,7 @@ export const S03ReverseLogistics: React.FC = () => {
       {/* beat 0: jacket at home */}
       <div style={{position: 'absolute', inset: 0, opacity: b.during(0, 0)}}>
         <Stage>
-          <Place x={960} y={640} s={1.1 * b.pop(0, 0.5)}>
+          <Place x={960} y={640} s={1.1 * b.pop(0, -0.2)}>
             <Jacket />
           </Place>
         </Stage>
@@ -213,7 +213,7 @@ export const S03ReverseLogistics: React.FC = () => {
               <div key={i} style={{flex: 1, height: 26, borderRadius: 6, background: i < 6 ? C.line : C.orange, opacity: b.ramp(7, 4 + i * 0.12, 0.3)}} />
             ))}
           </div>
-          <Body size={24} color={C.muted} style={{marginTop: 8}}>
+          <Body size={28} color={C.muted} style={{marginTop: 8}}>
             day 1 … day 10
           </Body>
         </Abs>
@@ -239,7 +239,7 @@ export const S03ReverseLogistics: React.FC = () => {
           <div style={{height: 40, marginTop: 12, background: C.bg2, border: `2px solid ${C.line}`, borderRadius: 8, overflow: 'hidden'}}>
             <div style={{width: `${100 - 55 * b.through(8)}%`, height: '100%', background: C.green}} />
           </div>
-          <Body size={22} color={C.muted} style={{marginTop: 10}}>
+          <Body size={26} color={C.muted} style={{marginTop: 10}}>
             qualitative — the rate varies by product and season
           </Body>
         </Abs>

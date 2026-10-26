@@ -1,70 +1,70 @@
 {
   "name": "full",
-  "duration": 592.278,
+  "duration": 593.518,
   "sample_rate": 48000,
   "channels": 2,
-  "integrated_lufs": -16.1,
-  "true_peak_dbtp": -2.6,
-  "lra": 4.1,
+  "integrated_lufs": -15.3,
+  "true_peak_dbtp": -2.5,
+  "lra": 3.6,
   "clipped_samples": 0,
   "music_source": "procedural (python/music.py)",
-  "sfx_events": 42,
+  "sfx_events": 60,
   "audits": [
     {
       "from": 0,
       "to": 30,
+      "voice_db": -22.8,
+      "music_db": -46.8,
+      "voice_over_music_db": 24.0
+    },
+    {
+      "from": 25.08,
+      "to": 33.08,
+      "voice_db": -23.0,
+      "music_db": -45.5,
+      "voice_over_music_db": 22.5
+    },
+    {
+      "from": 103.31,
+      "to": 111.31,
       "voice_db": -22.5,
-      "music_db": -46.0,
-      "voice_over_music_db": 23.4
+      "music_db": -48.0,
+      "voice_over_music_db": 25.5
     },
     {
-      "from": 24.46,
-      "to": 32.46,
+      "from": 178.32,
+      "to": 186.32,
       "voice_db": -22.5,
-      "music_db": -45.4,
-      "voice_over_music_db": 22.9
+      "music_db": -48.2,
+      "voice_over_music_db": 25.7
     },
     {
-      "from": 102.69,
-      "to": 110.69,
-      "voice_db": -22.4,
-      "music_db": -46.2,
-      "voice_over_music_db": 23.9
-    },
-    {
-      "from": 177.08,
-      "to": 185.08,
-      "voice_db": -22.5,
-      "music_db": -45.8,
-      "voice_over_music_db": 23.3
-    },
-    {
-      "from": 279.58,
-      "to": 287.58,
+      "from": 280.82,
+      "to": 288.82,
       "voice_db": -23.5,
-      "music_db": -46.0,
-      "voice_over_music_db": 22.6
+      "music_db": -46.7,
+      "voice_over_music_db": 23.2
     },
     {
-      "from": 375.88,
-      "to": 383.88,
-      "voice_db": -22.5,
-      "music_db": -44.2,
-      "voice_over_music_db": 21.7
+      "from": 377.12,
+      "to": 385.12,
+      "voice_db": -22.7,
+      "music_db": -44.7,
+      "voice_over_music_db": 22.0
     },
     {
-      "from": 469.5,
-      "to": 477.5,
-      "voice_db": -22.9,
-      "music_db": -47.3,
-      "voice_over_music_db": 24.4
+      "from": 470.74,
+      "to": 478.74,
+      "voice_db": -23.0,
+      "music_db": -46.7,
+      "voice_over_music_db": 23.8
     },
     {
-      "from": 540.88,
-      "to": 548.88,
-      "voice_db": -23.3,
+      "from": 542.12,
+      "to": 550.12,
+      "voice_db": -23.6,
       "music_db": -47.0,
-      "voice_over_music_db": 23.6
+      "voice_over_music_db": 23.4
     }
   ],
   "targets": {
