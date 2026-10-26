@@ -1,0 +1,149 @@
+{
+  "file": "output/episode-001/full/full_video.mp4",
+  "duration": 592.278,
+  "size_mb": 76,
+  "video": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "frames": 17765
+  },
+  "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  "integrated_lufs": -16.1,
+  "true_peak_dbfs": -1.4,
+  "black_sections": 0,
+  "long_silences": 0,
+  "ok": true,
+  "problems": [],
+  "screenshots": [
+    "diagnostics/screenshots/full_0004.0s.jpg",
+    "diagnostics/screenshots/full_0014.2s.jpg",
+    "diagnostics/screenshots/full_0032.5s.jpg",
+    "diagnostics/screenshots/full_0067.6s.jpg",
+    "diagnostics/screenshots/full_0110.7s.jpg",
+    "diagnostics/screenshots/full_0143.9s.jpg",
+    "diagnostics/screenshots/full_0185.1s.jpg",
+    "diagnostics/screenshots/full_0232.3s.jpg",
+    "diagnostics/screenshots/full_0287.6s.jpg",
+    "diagnostics/screenshots/full_0331.7s.jpg",
+    "diagnostics/screenshots/full_0383.9s.jpg",
+    "diagnostics/screenshots/full_0426.7s.jpg",
+    "diagnostics/screenshots/full_0477.5s.jpg",
+    "diagnostics/screenshots/full_0509.2s.jpg",
+    "diagnostics/screenshots/full_0548.9s.jpg",
+    "diagnostics/screenshots/full_0568.6s.jpg"
+  ],
+  "chapters": [
+    {
+      "start": 0,
+      "title": "A jacket goes back"
+    },
+    {
+      "start": 28.46,
+      "title": "The scale of returns"
+    },
+    {
+      "start": 106.694,
+      "title": "The trip back"
+    },
+    {
+      "start": 181.08,
+      "title": "The costs nobody sees"
+    },
+    {
+      "start": 283.583,
+      "title": "Who absorbs the bill"
+    },
+    {
+      "start": 379.883,
+      "title": "Where the jacket goes"
+    },
+    {
+      "start": 473.501,
+      "title": "Why free can still pay off"
+    },
+    {
+      "start": 544.881,
+      "title": "So who pays?"
+    }
+  ],
+  "audio_mix": {
+    "name": "full",
+    "duration": 592.278,
+    "sample_rate": 48000,
+    "channels": 2,
+    "integrated_lufs": -16.1,
+    "true_peak_dbtp": -2,
+    "lra": 4.3,
+    "clipped_samples": 0,
+    "music_source": "procedural (python/music.py)",
+    "sfx_events": 26,
+    "audits": [
+      {
+        "from": 0,
+        "to": 30,
+        "voice_db": -22.5,
+        "music_db": -44.2,
+        "voice_over_music_db": 21.6
+      },
+      {
+        "from": 24.46,
+        "to": 32.46,
+        "voice_db": -22.5,
+        "music_db": -43.7,
+        "voice_over_music_db": 21.2
+      },
+      {
+        "from": 102.69,
+        "to": 110.69,
+        "voice_db": -22.4,
+        "music_db": -44.4,
+        "voice_over_music_db": 22.1
+      },
+      {
+        "from": 177.08,
+        "to": 185.08,
+        "voice_db": -22.5,
+        "music_db": -43.9,
+        "voice_over_music_db": 21.4
+      },
+      {
+        "from": 279.58,
+        "to": 287.58,
+        "voice_db": -23.5,
+        "music_db": -44.2,
+        "voice_over_music_db": 20.8
+      },
+      {
+        "from": 375.88,
+        "to": 383.88,
+        "voice_db": -22.5,
+        "music_db": -42.5,
+        "voice_over_music_db": 20.1
+      },
+      {
+        "from": 469.5,
+        "to": 477.5,
+        "voice_db": -22.9,
+        "music_db": -45.4,
+        "voice_over_music_db": 22.5
+      },
+      {
+        "from": 540.88,
+        "to": 548.88,
+        "voice_db": -23.3,
+        "music_db": -45.1,
+        "voice_over_music_db": 21.8
+      }
+    ],
+    "targets": {
+      "integrated_lufs": -16,
+      "true_peak_max": -1.5
+    }
+  }
+}

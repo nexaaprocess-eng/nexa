@@ -173,7 +173,7 @@ def main():
     sf.write(str(base / "stem_sfx.wav"), sfx, SR, subtype="PCM_16")
 
     # two-pass loudnorm
-    target = "I=-16:TP=-2.0:LRA=11"  # -2.0 leaves headroom for the AAC encode (guide: <= -1.5 dBTP)
+    target = "I=-16:TP=-2.6:LRA=11"  # AAC encoding adds ~0.6 dB of true peak; keeps the MP4 <= -1.5 dBTP
     r = ffmpeg("-i", str(pre), "-af", f"loudnorm={target}:print_format=json", "-f", "null", "-")
     m = json.loads(r.stderr[r.stderr.rindex("{"): r.stderr.rindex("}") + 1])
     flt = (f"loudnorm={target}:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}"

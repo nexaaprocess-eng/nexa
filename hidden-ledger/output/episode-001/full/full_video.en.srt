@@ -1,0 +1,753 @@
+1
+00:00:00,600 --> 00:00:02,120
+You order a jacket online.
+
+2
+00:00:02,120 --> 00:00:03,970
+It arrives on a Tuesday.
+
+3
+00:00:04,350 --> 00:00:07,540
+By Thursday, you've decided
+the sleeves are too short.
+
+4
+00:00:07,920 --> 00:00:09,060
+So you send it back.
+
+5
+00:00:09,060 --> 00:00:10,540
+The label is free.
+
+6
+00:00:10,540 --> 00:00:13,050
+The refund shows up a few days later.
+
+7
+00:00:13,430 --> 00:00:15,330
+For you, the story ends there.
+
+8
+00:00:15,330 --> 00:00:17,740
+For the jacket, it's just getting started.
+
+9
+00:00:18,120 --> 00:00:22,030
+It will be scanned, trucked,
+sorted, inspected, and judged.
+
+10
+00:00:22,030 --> 00:00:25,310
+And every one of those steps
+costs somebody something.
+
+11
+00:00:25,690 --> 00:00:28,010
+So who actually pays for a free return?
+
+12
+00:00:28,910 --> 00:00:30,120
+Start with the scale.
+
+13
+00:00:30,500 --> 00:00:35,710
+In October 2025, the National Retail
+Federation and Happy Returns,
+
+14
+00:00:35,710 --> 00:00:41,870
+a returns company owned by UPS,
+published a report based on two surveys:
+
+15
+00:00:41,870 --> 00:00:45,903
+one of shoppers, one of
+large American retailers.
+
+16
+00:00:46,283 --> 00:00:49,883
+Those retailers estimated that about 15.8
+
+17
+00:00:49,883 --> 00:00:53,583
+percent of their sales
+would come back in 2025.
+
+18
+00:00:53,963 --> 00:00:55,903
+Across the whole industry,
+
+19
+00:00:55,903 --> 00:01:02,583
+the report projected $849.9 billion
+worth of returned merchandise.
+
+20
+00:01:02,963 --> 00:01:08,553
+Online, the estimate was higher:
+about 19.3 percent of online sales.
+
+21
+00:01:08,933 --> 00:01:11,163
+Keep in mind what those numbers are.
+
+22
+00:01:11,163 --> 00:01:16,043
+They measure the value of goods sent
+back, not the cost of processing them.
+
+23
+00:01:16,043 --> 00:01:20,273
+And they're projections for the
+United States, not a final count.
+
+24
+00:01:20,653 --> 00:01:22,633
+Shoppers are paying attention.
+
+25
+00:01:22,633 --> 00:01:24,113
+In the same report,
+
+26
+00:01:24,113 --> 00:01:28,033
+82 percent of consumers
+said free returns are an
+
+27
+00:01:28,033 --> 00:01:30,803
+important consideration
+when shopping online.
+
+28
+00:01:31,183 --> 00:01:34,723
+And 57 percent said they had
+decided not to shop with a
+
+29
+00:01:34,723 --> 00:01:38,184
+retailer after it started
+charging for returns.
+
+30
+00:01:38,564 --> 00:01:41,434
+So retailers are caught
+between two pressures.
+
+31
+00:01:41,434 --> 00:01:46,244
+Returns are expensive, and making
+them harder can push customers away.
+
+32
+00:01:47,144 --> 00:01:48,604
+Let's follow the jacket.
+
+33
+00:01:48,604 --> 00:01:52,384
+What comes next is one common
+path, not the only one.
+
+34
+00:01:52,764 --> 00:01:53,684
+Step one: the hand-off.
+
+35
+00:01:53,684 --> 00:01:58,254
+Depending on the store, you might
+mail it, leave it with a carrier,
+
+36
+00:01:58,254 --> 00:02:02,404
+or bring it to a counter,
+sometimes without a box or a label.
+
+37
+00:02:02,784 --> 00:02:07,104
+In NRF's survey, more
+retailers offered box-free,
+
+38
+00:02:07,104 --> 00:02:10,884
+label-free drop-offs in
+2025 than a year earlier.
+
+39
+00:02:11,264 --> 00:02:13,534
+Step two: consolidation.
+
+40
+00:02:13,534 --> 00:02:16,344
+Instead of shipping every
+item back on its own,
+
+41
+00:02:16,344 --> 00:02:20,834
+some return networks pool many returns
+together and ship them in bulk.
+
+42
+00:02:21,214 --> 00:02:24,224
+Step three: a warehouse or returns center,
+
+43
+00:02:24,224 --> 00:02:27,574
+where someone opens the package
+and scans what's inside.
+
+44
+00:02:27,954 --> 00:02:29,054
+Step four: inspection.
+
+45
+00:02:29,054 --> 00:02:30,614
+Is it the right item?
+
+46
+00:02:30,614 --> 00:02:31,664
+Is it damaged?
+
+47
+00:02:31,664 --> 00:02:32,714
+Has it been worn?
+
+48
+00:02:32,714 --> 00:02:34,404
+Are the tags still on?
+
+49
+00:02:34,784 --> 00:02:36,274
+Step five: a decision.
+
+50
+00:02:36,274 --> 00:02:40,294
+Restock it, discount it, send it
+somewhere else, or write it off.
+
+51
+00:02:40,674 --> 00:02:44,714
+This backward journey has
+a name: reverse logistics.
+
+52
+00:02:44,714 --> 00:02:46,474
+And it can be slow.
+
+53
+00:02:46,474 --> 00:02:50,434
+About half of the retailers in
+the NRF survey said it takes
+
+54
+00:02:50,434 --> 00:02:53,594
+six to ten days to get a
+returned item back in stock.
+
+55
+00:02:53,974 --> 00:02:56,604
+All that time, the jacket isn't for sale.
+
+56
+00:02:56,604 --> 00:03:00,630
+And if it's seasonal, it can
+lose value every week it sits.
+
+57
+00:03:01,530 --> 00:03:03,000
+So where does the money go?
+
+58
+00:03:03,000 --> 00:03:05,960
+It helps to split the
+costs into two piles.
+
+59
+00:03:06,340 --> 00:03:11,160
+The first pile is operating costs: money
+spent moving and handling the item.
+
+60
+00:03:11,540 --> 00:03:13,040
+Return shipping.
+
+61
+00:03:13,040 --> 00:03:15,930
+Labor to receive, open, and inspect.
+
+62
+00:03:15,930 --> 00:03:17,850
+Cleaning, repacking, or re-tagging.
+
+63
+00:03:17,850 --> 00:03:19,380
+Customer service time.
+
+64
+00:03:19,380 --> 00:03:21,470
+Software and fraud checks.
+
+65
+00:03:21,850 --> 00:03:26,700
+The second pile is lost value: what
+the item itself is no longer worth.
+
+66
+00:03:27,080 --> 00:03:30,900
+A jacket that comes back in perfect
+shape, while it's still in season,
+
+67
+00:03:30,900 --> 00:03:33,520
+might be resold at full price.
+
+68
+00:03:33,520 --> 00:03:39,300
+One that comes back late, missing tags, or
+slightly worn may have to be marked down,
+
+69
+00:03:39,300 --> 00:03:42,893
+or sold off in bulk for
+a fraction of its price.
+
+70
+00:03:43,273 --> 00:03:45,283
+Here's a simple way to picture it.
+
+71
+00:03:45,283 --> 00:03:49,073
+This is an illustrative
+example, not industry data.
+
+72
+00:03:49,453 --> 00:03:52,493
+Imagine a jacket that sold for $100.
+
+73
+00:03:52,493 --> 00:03:58,843
+Say the return shipping costs the
+seller $8, handling costs another $6,
+
+74
+00:03:58,843 --> 00:04:03,673
+and because it's now out of
+season, it resells for $70.
+
+75
+00:04:04,053 --> 00:04:06,053
+The customer got a full refund.
+
+76
+00:04:06,053 --> 00:04:11,763
+The seller spent $14 to get back
+an item now worth $30 less.
+
+77
+00:04:11,763 --> 00:04:17,073
+In this example, the seller is
+down $44 on a single return.
+
+78
+00:04:17,453 --> 00:04:20,113
+Change any assumption
+and the answer changes.
+
+79
+00:04:20,113 --> 00:04:25,043
+Real costs depend on the product,
+the carrier contract, the warehouse,
+
+80
+00:04:25,043 --> 00:04:27,013
+and the condition of the item.
+
+81
+00:04:27,393 --> 00:04:28,673
+There's also fraud.
+
+82
+00:04:28,673 --> 00:04:30,493
+In the NRF survey,
+
+83
+00:04:30,493 --> 00:04:36,133
+retailers that track it estimated that
+about 9 percent of returns were fraudulent,
+
+84
+00:04:36,133 --> 00:04:38,913
+from empty boxes to swapped items.
+
+85
+00:04:38,913 --> 00:04:43,133
+That's the retailers' own
+estimate, not an audited number.
+
+86
+00:04:44,033 --> 00:04:45,083
+So, who pays?
+
+87
+00:04:45,083 --> 00:04:48,593
+The honest answer is: it
+depends on who's in the chain.
+
+88
+00:04:48,973 --> 00:04:52,333
+Case one: a retailer
+selling its own products.
+
+89
+00:04:52,333 --> 00:04:57,173
+Here, the retailer typically absorbs
+the cost of a free return directly,
+
+90
+00:04:57,173 --> 00:04:58,563
+at least at first.
+
+91
+00:04:58,943 --> 00:05:02,363
+Case two: a marketplace
+with independent sellers.
+
+92
+00:05:02,363 --> 00:05:05,663
+The platform's rules decide
+how costs are split,
+
+93
+00:05:05,663 --> 00:05:10,093
+and some marketplaces charge
+sellers fees tied to returns.
+
+94
+00:05:10,473 --> 00:05:11,943
+Amazon, for example,
+
+95
+00:05:11,943 --> 00:05:18,073
+has charged returns processing fees on some
+products sold through its fulfillment service,
+
+96
+00:05:18,073 --> 00:05:22,673
+under rules that vary by category
+and have changed over time.
+
+97
+00:05:23,053 --> 00:05:25,473
+Case three: logistics partners.
+
+98
+00:05:25,473 --> 00:05:29,213
+Carriers and returns companies
+get paid for their work.
+
+99
+00:05:29,213 --> 00:05:32,453
+They're not absorbing the
+cost; they're billing for it,
+
+100
+00:05:32,453 --> 00:05:35,123
+under contracts the public rarely sees.
+
+101
+00:05:35,503 --> 00:05:37,483
+Case four: the shopper.
+
+102
+00:05:37,483 --> 00:05:41,923
+Not always through a fee on that
+return, but potentially through prices,
+
+103
+00:05:41,923 --> 00:05:47,493
+shipping charges, or memberships that
+help cover returns across all customers.
+
+104
+00:05:47,493 --> 00:05:52,123
+How much that happens varies, and it's
+hard to measure from the outside.
+
+105
+00:05:52,503 --> 00:05:55,793
+And more retailers are
+charging shoppers directly.
+
+106
+00:05:55,793 --> 00:05:57,633
+In the NRF survey,
+
+107
+00:05:57,633 --> 00:06:04,833
+72 percent of merchants said they had started charging
+for at least one return option in the past 12 months,
+
+108
+00:06:04,833 --> 00:06:07,673
+up from 66 percent the year before.
+
+109
+00:06:08,053 --> 00:06:11,983
+That can mean a fee on one return
+method while another stays free,
+
+110
+00:06:11,983 --> 00:06:16,253
+which nudges shoppers toward the option
+that's cheaper for the retailer.
+
+111
+00:06:16,253 --> 00:06:18,203
+The cost doesn't vanish.
+
+112
+00:06:18,203 --> 00:06:19,433
+It gets routed.
+
+113
+00:06:20,333 --> 00:06:21,383
+Back to the jacket.
+
+114
+00:06:21,383 --> 00:06:24,593
+Once it's been inspected,
+where does it actually go?
+
+115
+00:06:24,973 --> 00:06:29,773
+If it's in sellable condition, it can
+go back into stock and be sold as new.
+
+116
+00:06:30,153 --> 00:06:35,763
+If it's been opened or isn't quite perfect,
+it may be resold as used or open-box,
+
+117
+00:06:35,763 --> 00:06:37,673
+usually at a discount.
+
+118
+00:06:38,053 --> 00:06:40,083
+Some items are repaired first.
+
+119
+00:06:40,083 --> 00:06:42,573
+Others are sold in bulk to liquidators,
+
+120
+00:06:42,573 --> 00:06:46,553
+who move them through discount
+stores and secondary markets.
+
+121
+00:06:46,933 --> 00:06:54,393
+A 2025 study in the Journal of Business
+Logistics noted that more than $800 billion of
+
+122
+00:06:54,393 --> 00:07:00,123
+returned and excess inventory passes
+through secondary market channels each year.
+
+123
+00:07:00,503 --> 00:07:06,043
+Items can also go back to the original
+seller, get donated, or be recycled.
+
+124
+00:07:06,423 --> 00:07:12,973
+Amazon, for one, says the vast majority
+of its returns are resold as new or used,
+
+125
+00:07:12,973 --> 00:07:17,373
+and that items it can't resell
+may be donated or recycled.
+
+126
+00:07:17,373 --> 00:07:22,093
+That's the company's own account, and
+it doesn't describe every retailer.
+
+127
+00:07:22,473 --> 00:07:24,453
+And some returns are destroyed.
+
+128
+00:07:24,453 --> 00:07:27,733
+There's no single figure
+for the whole industry.
+
+129
+00:07:27,733 --> 00:07:33,963
+A 2024 briefing by the European Environment
+Agency estimated that in Europe,
+
+130
+00:07:33,963 --> 00:07:39,693
+between 22 and 43 percent of returned
+clothing bought online may end up destroyed,
+
+131
+00:07:39,693 --> 00:07:41,843
+based on limited data.
+
+132
+00:07:42,223 --> 00:07:44,243
+Since July 2026,
+
+133
+00:07:44,243 --> 00:07:49,783
+the European Union has banned large
+companies from destroying unsold clothing,
+
+134
+00:07:49,783 --> 00:07:53,051
+accessories, and footwear,
+with some exceptions.
+
+135
+00:07:53,951 --> 00:07:57,561
+If returns cost this much, why
+offer them for free at all?
+
+136
+00:07:57,941 --> 00:08:01,941
+Because a generous return policy
+can sell more than it costs.
+
+137
+00:08:01,941 --> 00:08:08,171
+A 2016 review in the Journal of Retailing,
+which pooled results from 21 studies,
+
+138
+00:08:08,171 --> 00:08:12,121
+found that more lenient return
+policies increased purchases.
+
+139
+00:08:12,121 --> 00:08:15,921
+They increased returns too, but by less.
+
+140
+00:08:16,301 --> 00:08:20,861
+Free returns lower the risk of buying
+something you can't touch or try on.
+
+141
+00:08:20,861 --> 00:08:25,321
+That builds trust, and trust
+can turn browsers into buyers.
+
+142
+00:08:25,701 --> 00:08:27,041
+But there are trade-offs.
+
+143
+00:08:27,041 --> 00:08:32,781
+Lenient policies can encourage bracketing,
+ordering several sizes and keeping one,
+
+144
+00:08:32,781 --> 00:08:35,407
+and in some cases, outright abuse.
+
+145
+00:08:35,787 --> 00:08:40,727
+So retailers tune the dials: return
+windows, fees for some methods,
+
+146
+00:08:40,727 --> 00:08:45,707
+exchanges instead of refunds, better
+size guides, and fraud screening.
+
+147
+00:08:46,087 --> 00:08:47,627
+In the NRF survey,
+
+148
+00:08:47,627 --> 00:08:53,107
+retailers that added return fees reported
+fewer returns and more exchanges.
+
+149
+00:08:53,107 --> 00:08:58,951
+But many also reported more customer
+complaints, and some said they lost customers.
+
+150
+00:08:59,331 --> 00:09:00,971
+There's no free lunch here.
+
+151
+00:09:00,971 --> 00:09:04,431
+Just a business decision about
+which costs are worth paying.
+
+152
+00:09:05,331 --> 00:09:07,678
+So, who really pays for free returns?
+
+153
+00:09:08,058 --> 00:09:10,528
+Sometimes the retailer, out of its margin.
+
+154
+00:09:10,528 --> 00:09:13,808
+Sometimes the seller,
+through marketplace fees.
+
+155
+00:09:13,808 --> 00:09:18,078
+Sometimes the shopper, through
+fees on certain return methods,
+
+156
+00:09:18,078 --> 00:09:20,598
+or possibly through prices.
+
+157
+00:09:20,598 --> 00:09:24,648
+And part of the cost shows
+up as lost value, or waste.
+
+158
+00:09:25,028 --> 00:09:28,518
+What's almost never true is that
+the cost simply disappears.
+
+159
+00:09:28,518 --> 00:09:33,128
+Someone decides how to absorb
+it, share it, or pass it along.
+
+160
+00:09:33,508 --> 00:09:38,388
+So the next time you see free returns,
+read it as: free for you, at that moment.
+
+161
+00:09:38,768 --> 00:09:43,738
+What would you trade for an easier
+return: a higher price, a shorter window,
+
+162
+00:09:43,738 --> 00:09:45,058
+or a trip to the store?
+
+163
+00:09:45,438 --> 00:09:46,928
+This is Hidden Ledger.
+
+164
+00:09:46,928 --> 00:09:49,778
+The sources for every number
+are in the description.
+

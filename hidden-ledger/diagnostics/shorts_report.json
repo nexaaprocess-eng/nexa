@@ -1,0 +1,48 @@
+[
+  {
+    "file": "output/episode-001/shorts/short_1.mp4",
+    "duration": 28.5,
+    "size_mb": 3.4,
+    "video": {
+      "codec": "h264",
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "frames": 855
+    },
+    "audio": {
+      "codec": "aac",
+      "sample_rate": 48000,
+      "channels": 2
+    },
+    "integrated_lufs": -16.5,
+    "true_peak_dbfs": -2.5,
+    "black_sections": 0,
+    "long_silences": 0,
+    "ok": true,
+    "problems": []
+  },
+  {
+    "file": "output/episode-001/shorts/short_2.mp4",
+    "duration": 44.833333,
+    "size_mb": 4.7,
+    "video": {
+      "codec": "h264",
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "frames": 1345
+    },
+    "audio": {
+      "codec": "aac",
+      "sample_rate": 48000,
+      "channels": 2
+    },
+    "integrated_lufs": -16,
+    "true_peak_dbfs": -2.5,
+    "black_sections": 0,
+    "long_silences": 0,
+    "ok": true,
+    "problems": []
+  }
+]

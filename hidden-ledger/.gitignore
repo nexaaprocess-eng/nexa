@@ -14,7 +14,7 @@ output/**/audio/*/mix.wav
 output/**/audio/*/narration.wav
 output/**/audio/*/props.json
 output/**/audio/*/*_props.json
-output/**/full/*.mp4
+output/**/full/full_tmp.mp4
 output/**/full/*_video.mp4
 output/**/preview/*_video.mp4
 output/**/shorts/*_video.mp4

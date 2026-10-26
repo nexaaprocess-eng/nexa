@@ -36,7 +36,7 @@ macOS/Linux: identical commands (the scripts pick `.venv/bin/python` or `.venv\S
 Options (append after `--`): `--quality preview|hd`, `--concurrency N` (lower it on slow PCs), `--no-subs` (no burned-in subtitles; the `.srt` is always exported).
 Example: `npm run episode:001 -- --quality preview --concurrency 1`
 
-**Measured on this build machine (4 CPU threads, CPU only):** pilot 720p ≈ 1.5 min to render; full episode 720p ≈ 9 min, 1080p ≈ 35 min at concurrency 2. Kokoro narration for the whole script ≈ 4 min (cached afterwards).
+**Measured on this build machine (4 CPU threads, CPU only):** pilot 720p ≈ 1.5 min to render; full episode 1080p ≈ 26 min at concurrency 2, Shorts ≈ 3 min. Kokoro narration for the whole script ≈ 4 min (cached afterwards).
 
 ## Change the voice
 Edit `voice.voiceId` / `voice.speed` in `content/episode-001/episode.json` (or set `VOICE_ID`, e.g. `$env:VOICE_ID="am_adam"`), then rerun `npm run pilot` or `npm run episode:001`. Narration is cached per segment by a hash of text + voice + speed + model, so only what changed is re-synthesised.

@@ -65,13 +65,13 @@ one of shoppers, one of
 large American retailers.
 
 16
-00:00:46,283 --> 00:00:52,483
+00:00:46,283 --> 00:00:49,883
 Those retailers estimated that about 15.8
-percent of their sales would come back in
 
 17
-00:00:52,483 --> 00:00:53,583
-2025.
+00:00:49,883 --> 00:00:53,583
+percent of their sales
+would come back in 2025.
 
 18
 00:00:53,963 --> 00:00:55,903
