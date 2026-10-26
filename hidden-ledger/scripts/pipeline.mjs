@@ -81,10 +81,12 @@ function encodeForYouTube(silentVideo, mixWav, dest, bitrate = '8M') {
     '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-level', '4.2', '-r', '30', '-g', '15', '-keyint_min', '15', '-sc_threshold', '0', '-bf', '2',
     '-flags', '+cgop', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709'];
   const log = path.join(path.dirname(dest), 'x264_2pass');
+  // pad the audio to exactly the video length so no frame is trimmed (v1 lost 4 frames to -shortest)
+  const dur = ffprobeJson(silentVideo).format.duration;
   const nul = IS_WIN ? 'NUL' : '/dev/null';
   run('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', '-i', silentVideo, ...v, '-pass', '1', '-passlogfile', log, '-an', '-f', 'mp4', nul]);
   run('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', '-i', silentVideo, '-i', mixWav, '-map', '0:v:0', '-map', '1:a:0', ...v,
-    '-pass', '2', '-passlogfile', log, '-af', 'apad', '-c:a', 'aac', '-b:a', '384k', '-ar', '48000', '-ac', '2', '-shortest', '-movflags', '+faststart', dest]);
+    '-pass', '2', '-passlogfile', log, '-af', `apad=whole_dur=${dur}`, '-c:a', 'aac', '-b:a', '384k', '-ar', '48000', '-ac', '2', '-t', String(dur), '-movflags', '+faststart', dest]);
   for (const f of fs.readdirSync(path.dirname(dest))) if (f.startsWith('x264_2pass')) fs.rmSync(path.join(path.dirname(dest), f));
 }
 

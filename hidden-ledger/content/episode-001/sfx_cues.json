@@ -7,7 +7,7 @@
     {"segment": "s01-02", "word": "Thursday", "offset": 0.0, "sound": "tick", "gain_db": 0},
     {"segment": "s01-02", "word": "short", "offset": 0.0, "sound": "thump", "gain_db": 3},
     {"segment": "s01-03", "word": "free", "offset": 0.0, "sound": "thump", "gain_db": 3},
-    {"segment": "s01-03", "word": "refund", "offset": -0.7, "sound": "whoosh", "gain_db": -2},
+    {"segment": "s01-03", "word": "refund", "offset": 0.55, "sound": "whoosh", "gain_db": -2},
     {"segment": "s01-03", "word": "refund", "offset": 0.0, "sound": "pop", "gain_db": 0},
     {"segment": "s01-04", "word": "jacket", "offset": -0.25, "sound": "whoosh", "gain_db": 2},
     {"segment": "s01-05", "word": "scanned", "offset": 0.0, "sound": "tick", "gain_db": 0},

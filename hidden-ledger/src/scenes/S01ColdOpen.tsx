@@ -63,7 +63,7 @@ export const S01ColdOpen: React.FC = () => {
 
   // truck arrives (decelerating scroll), drops the parcel, leaves later
   const arrive = b.rampAt(fOnline, 1.4);
-  const leave = b.rampAt(fRefund - 10, 1.2);
+  const leave = b.rampAt(fRefund + 16, 1.2); // truck leaves after the refund toast
   const scroll = 2200 * (1 - Math.pow(1 - arrive, 3)) + 1800 * leave * leave + frame * 0.6;
   const truckX = interpolate(arrive, [0, 1], [2400, 1430]) - 1900 * leave * leave;
   const drop = b.rampAt(fTue - 8, 0.45);
@@ -76,7 +76,7 @@ export const S01ColdOpen: React.FC = () => {
   const stampShort = b.rampAt(fShort, 0.25);
   const repack = b.rampAt(fBack - 6, 0.5);
   const stampFree = b.rampAt(fFree, 0.25);
-  const pickup = b.rampAt(fRefund - 22, 0.4); // parcel hops into the truck
+  const pickup = b.rampAt(fRefund + 6, 0.4); // parcel hops into the truck (FREE RETURN stamp stays ~1.4 s)
   const refundT = b.popAt(fRefund);
 
   // ---- phase D: "for you it ends" -> whip pan to the warehouse + teaser figure
