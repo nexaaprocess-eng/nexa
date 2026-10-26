@@ -72,3 +72,8 @@ Delivered 2026-10-26. All values below were **measured on the exported file** `h
 npm run final:001          # chunked 1080p render from the compositions + two-pass 10 Mbps encode + A/V and stem checks
 ```
 (In this cloud session background jobs stop after 30 min, so the chunks, the two encode passes and the four patch windows were run as separate commands with the same settings.)
+
+## 9. Shareable copy (sent through the chat, which caps files at 400 MiB)
+`hidden_ledger_episode_001_FINAL_1080p_share.mp4`: same 17,806 original 1080p frames and the same audio mix, two-pass H.264 at **5.2 Mbps** + AAC 256 kbps, 385.6 MiB.
+Measured against the 10 Mbps master over the whole film: **SSIM 0.9996**, PSNR 58.7 dB average (48.4 dB worst frame), i.e. visually identical; loudness unchanged (−15.3 LUFS, −2.5 dBTP).
+The 10 Mbps master remains the recommended upload file (761 MB; it exceeds both the chat limit and GitHub's 100 MB limit, so it lives only in the session workspace or can be regenerated with `npm run final:001`).
