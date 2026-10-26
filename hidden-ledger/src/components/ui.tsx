@@ -59,7 +59,7 @@ export const Body: React.FC<{children: React.ReactNode; size?: number; color?: s
 }) => <div style={{fontFamily: FONT_BODY, fontSize: size, fontWeight: weight, color, lineHeight: 1.3, ...style}}>{children}</div>;
 
 export const Kicker: React.FC<{children: React.ReactNode; color?: string}> = ({children, color = C.orange}) => (
-  <div style={{fontFamily: FONT_TITLE, fontSize: 26, fontWeight: 700, color, letterSpacing: 4, textTransform: 'uppercase'}}>{children}</div>
+  <div style={{fontFamily: FONT_TITLE, fontSize: 32, fontWeight: 700, color, letterSpacing: 4, textTransform: 'uppercase'}}>{children}</div>
 );
 
 export const Chip: React.FC<{children: React.ReactNode; color?: string; bg?: string; size?: number}> = ({children, color = C.bg, bg = C.orange, size = 28}) => (
@@ -110,11 +110,11 @@ export const Source: React.FC<{children: React.ReactNode; o?: number}> = ({child
       position: 'absolute',
       right: 64,
       top: 112,
-      maxWidth: 820,
+      maxWidth: 900,
       textAlign: 'right',
       opacity: o,
       fontFamily: FONT_BODY,
-      fontSize: 21,
+      fontSize: 25,
       color: C.muted,
       lineHeight: 1.35,
     }}
@@ -132,9 +132,9 @@ export const Illustrative: React.FC<{o?: number}> = ({o = 1}) => (
         color: C.orange,
         fontFamily: FONT_TITLE,
         fontWeight: 700,
-        fontSize: 30,
+        fontSize: 38,
         letterSpacing: 2,
-        padding: '10px 28px',
+        padding: '12px 32px',
         borderRadius: 12,
         background: 'rgba(245,158,11,0.08)',
       }}
@@ -178,14 +178,14 @@ export const HBar: React.FC<{label: string; value: number; max: number; t: numbe
   h = 64,
 }) => (
   <div style={{width: w, marginBottom: 34}}>
-    <Body size={30} color={C.muted} style={{marginBottom: 10}}>
+    <Body size={38} color={C.muted} style={{marginBottom: 10}}>
       {label}
     </Body>
     <div style={{display: 'flex', alignItems: 'center', gap: 24}}>
       <div style={{flex: 1, height: h, background: C.bg2, borderRadius: 10, overflow: 'hidden', border: `2px solid ${C.line}`}}>
         <div style={{width: `${(value / max) * 100 * t}%`, height: '100%', background: color, borderRadius: 8}} />
       </div>
-      <div style={{width: 170, fontFamily: FONT_TITLE, fontSize: 54, fontWeight: 700, color: C.cream, opacity: t > 0.05 ? 1 : 0}}>{valueText}</div>
+      <div style={{width: 250, fontFamily: FONT_TITLE, fontSize: 88, fontWeight: 700, color: C.cream, opacity: t > 0.05 ? 1 : 0, transform: `scale(${0.8 + 0.2 * Math.min(1, t * 1.5)})`, transformOrigin: 'left center'}}>{valueText}</div>
     </div>
   </div>
 );
@@ -269,9 +269,9 @@ export const Hud: React.FC<{timeline: Timeline}> = ({timeline}) => {
     <AbsoluteFill style={{pointerEvents: 'none'}}>
       <div style={{position: 'absolute', left: 64, top: 48, display: 'flex', alignItems: 'center', gap: 18}}>
         <LedgerMark size={34} />
-        <div style={{fontFamily: FONT_TITLE, fontWeight: 700, fontSize: 24, letterSpacing: 4, color: C.cream}}>HIDDEN LEDGER</div>
+        <div style={{fontFamily: FONT_TITLE, fontWeight: 700, fontSize: 26, letterSpacing: 4, color: C.cream}}>HIDDEN LEDGER</div>
         <div style={{width: 2, height: 26, background: C.line}} />
-        <div style={{fontFamily: FONT_BODY, fontSize: 24, color: C.muted, opacity: labelO}}>
+        <div style={{fontFamily: FONT_BODY, fontSize: 28, color: C.muted, opacity: labelO}}>
           {String(idx + 1).padStart(2, '0')} · {sc.chapter}
         </div>
       </div>
@@ -300,15 +300,15 @@ export const Subtitles: React.FC<{cues: Cue[]}> = ({cues}) => {
   const cue = cues.find((c) => t >= c.start && t < c.end);
   if (!cue) return null;
   return (
-    <div style={{position: 'absolute', left: 0, right: 0, bottom: 54, display: 'flex', justifyContent: 'center'}}>
+    <div style={{position: 'absolute', left: 0, right: 0, bottom: 44, display: 'flex', justifyContent: 'center'}}>
       <div
         style={{
-          maxWidth: 1400,
-          background: 'rgba(10,12,15,0.82)',
+          maxWidth: 1560,
+          background: 'rgba(10,12,15,0.88)',
           color: C.cream,
           fontFamily: FONT_BODY,
           fontWeight: 600,
-          fontSize: 40,
+          fontSize: 50,
           lineHeight: 1.3,
           padding: '12px 28px',
           borderRadius: 12,
@@ -319,5 +319,23 @@ export const Subtitles: React.FC<{cues: Cue[]}> = ({cues}) => {
         {cue.text}
       </div>
     </div>
+  );
+};
+
+/** Scene-change wipe: a dark panel with an orange leading edge sweeps across, masking the cut (~0.7 s). */
+export const SceneWipe: React.FC<{dur: number}> = ({dur}) => {
+  const frame = useCurrentFrame();
+  const t = frame / dur;
+  const ease = (x: number) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  // panel enters from the left, covers, then exits to the right
+  const lead = interpolate(ease(Math.min(1, t * 1.6)), [0, 1], [-200, W + 200]);
+  const tail = interpolate(ease(Math.max(0, t * 1.6 - 0.6)), [0, 1], [-200, W + 200]);
+  return (
+    <AbsoluteFill style={{pointerEvents: 'none'}}>
+      <svg width={W} height={H} style={{position: 'absolute', inset: 0}}>
+        <path d={`M${tail - 160} 0 L${lead} 0 L${lead - 160} ${H} L${tail - 320} ${H} Z`} fill={C.bg} />
+        <path d={`M${lead} 0 L${lead + 18} 0 L${lead - 142} ${H} L${lead - 160} ${H} Z`} fill={C.orange} />
+      </svg>
+    </AbsoluteFill>
   );
 };

@@ -43,10 +43,22 @@ export const S06Destinations: React.FC = () => {
           const x = colX[d.col];
           const y = rowY(d.row);
           const fromX = ROOT.x + 110;
-          const path = d.col === 0 ? `M${fromX} ${ROOT.y} C ${fromX + 100} ${ROOT.y}, ${x - 120} ${y}, ${x - 30} ${y}` : `M${ROOT.x + 110} ${ROOT.y} C ${ROOT.x + 240} 200, ${x - 140} ${y - 60}, ${x - 30} ${y}`;
+          const P: [number, number][] =
+            d.col === 0
+              ? [[fromX, ROOT.y], [fromX + 100, ROOT.y], [x - 120, y], [x - 30, y]]
+              : [[fromX, ROOT.y], [ROOT.x + 240, 200], [x - 140, y - 60], [x - 30, y]];
+          const path = `M${P[0][0]} ${P[0][1]} C ${P[1][0]} ${P[1][1]}, ${P[2][0]} ${P[2][1]}, ${P[3][0]} ${P[3][1]}`;
+          // a parcel physically travels each new branch (cubic Bézier position)
+          const u = b.ramp(d.beat, d.off, 1.1);
+          const bez = (k: 0 | 1) => (1 - u) ** 3 * P[0][k] + 3 * (1 - u) ** 2 * u * P[1][k] + 3 * (1 - u) * u ** 2 * P[2][k] + u ** 3 * P[3][k];
           return (
             <g key={d.l} opacity={cardBeat && segIdx !== 7 ? 0.55 : 1}>
               <path d={path} fill="none" stroke={d.color} strokeWidth={5} strokeDasharray="2000" strokeDashoffset={2000 * (1 - t)} opacity={0.7} />
+              {u > 0 && u < 1 && (
+                <Place x={bez(0)} y={bez(1)} s={0.28}>
+                  <Box />
+                </Place>
+              )}
               <g opacity={t} transform={`translate(${x} ${y})`}>
                 <rect x={-30} y={-48} width={310} height={96} rx={16} fill={C.panel} stroke={d.color} strokeWidth={4} />
                 <g transform="translate(18 0) scale(0.3)">{d.icon}</g>
@@ -82,7 +94,7 @@ export const S06Destinations: React.FC = () => {
       <Abs x={1230} y={250} w={620} o={b.during(4, 4)}>
         <Card w={620} accent={C.orange}>
           <Kicker>Secondary markets</Kicker>
-          <Title size={110} color={C.orange} style={{marginTop: 8}}>
+          <Title size={150} color={C.orange} style={{marginTop: 8}}>
             $800B+
           </Title>
           <Body size={32} style={{marginTop: 8}}>

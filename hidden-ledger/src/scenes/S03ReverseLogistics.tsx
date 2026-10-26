@@ -1,6 +1,7 @@
 import React from 'react';
 import {interpolate} from 'remotion';
-import {Box, Calendar, Gear, House, Jacket, Mailbox, Magnifier, Pallet, Place, Scanner, Store, Tag, Truck, Warehouse} from '../components/icons';
+import {Box, Calendar, Gear, House, Jacket, Mailbox, Magnifier, Pallet, Place, Store, Tag, Truck, Warehouse} from '../components/icons';
+import {Conveyor, DockSet, SetWindow, StreetSet, WarehouseSet} from '../components/sets';
 import {SceneShell} from '../components/SceneShell';
 import {useBeats} from '../components/timeline';
 import {Abs, Body, Chip, DrawPath, HBar, Kicker, Source, Stage, Title} from '../components/ui';
@@ -71,26 +72,31 @@ export const S03ReverseLogistics: React.FC = () => {
         </Stage>
       </div>
 
-      {/* beat 1: hand-off options */}
+      {/* beat 1: hand-off options on a living street */}
       <div style={{position: 'absolute', inset: 0, opacity: b.during(1, 1)}}>
-        <Stage>
+        <SetWindow x={110} y={440} w={1700} h={440} view={[0, 420, 1920, 497]}>
+          <StreetSet scroll={frame * 3} />
           {[
-            {x: 520, icon: <Mailbox />, l: 'Mail it'},
-            {x: 960, icon: <Truck />, l: 'Leave it with a carrier'},
-            {x: 1400, icon: <Store />, l: 'Bring it to a counter'},
+            {x: 420, icon: <Mailbox />, s: 1.1},
+            {x: 980 + 40 * Math.sin(frame / 20), icon: <Truck wheel={frame * 6} />, s: 1.5},
+            {x: 1540, icon: <Store />, s: 1.25},
           ].map((o, i) => (
-            <g key={o.l}>
-              <Place x={o.x} y={600} s={0.95 * b.pop(1, 1.0 + i * 0.9)}>
-                {o.icon}
-              </Place>
-              <text x={o.x} y={760} textAnchor="middle" fill={C.cream} opacity={b.ramp(1, 1.2 + i * 0.9)} fontSize={34} fontFamily="Space Grotesk" fontWeight={600}>
-                {o.l}
-              </text>
-            </g>
+            <Place key={i} x={o.x} y={720} s={o.s * b.pop(1, 1.0 + i * 0.9)}>
+              {o.icon}
+            </Place>
           ))}
-        </Stage>
-        <Abs x={1220} y={790} w={360} align="center" o={b.ramp(1, 5.5)}>
-          <Chip size={24}>sometimes no box or label</Chip>
+        </SetWindow>
+        <Abs x={110} y={455} w={1700}>
+          <div style={{display: 'flex', justifyContent: 'space-around'}}>
+            {['Mail it', 'Leave it with a carrier', 'Bring it to a counter'].map((l, i) => (
+              <Chip key={l} size={34} bg="rgba(17,20,24,0.85)" color={C.cream}>
+                <span style={{opacity: b.ramp(1, 1.2 + i * 0.9)}}>{l}</span>
+              </Chip>
+            ))}
+          </div>
+        </Abs>
+        <Abs x={1240} y={810} w={520} align="center" o={b.ramp(1, 5.5)}>
+          <Chip size={30}>sometimes no box or label</Chip>
         </Abs>
       </div>
 
@@ -106,62 +112,32 @@ export const S03ReverseLogistics: React.FC = () => {
         </Abs>
       </div>
 
-      {/* beat 3: consolidation */}
+      {/* beat 3: consolidation at a loading dock */}
       <div style={{position: 'absolute', inset: 0, opacity: b.during(3, 3)}}>
-        <Stage>
-          {Array.from({length: 9}).map((_, i) => {
-            // single parcels appear one by one, then slide onto the pallet and merge
-            const appear = b.ramp(3, 0.2 + i * 0.12, 0.3);
-            const t = b.ramp(3, 2.0 + i * 0.1, 0.9);
-            const sx = 260 + (i % 3) * 110;
-            const sy = 500 + Math.floor(i / 3) * 100;
-            return (
-              <Place key={i} x={interpolate(t, [0, 1], [sx, 900 + (i % 3) * 30])} y={interpolate(t, [0, 1], [sy, 600])} s={0.4} o={appear * (1 - t)}>
-                <Box />
-              </Place>
-            );
-          })}
-          <Place x={960} y={640} s={1.1 * b.pop(3, 2.4)}>
-            <Pallet n={6} />
-          </Place>
-          <Place x={interpolate(b.ramp(3, 5.5, 2.5), [0, 1], [1450, 1650])} y={650} s={1.2 * b.pop(3, 4.5)}>
-            <Truck wheel={frame * 8} />
-          </Place>
-        </Stage>
-        <Abs x={200} y={800} w={600} o={b.ramp(3, 0.8)}>
-          <Body size={30} color={C.muted}>
+        <SetWindow x={110} y={440} w={1700} h={440} view={[0, 250, 1920, 497 * 1.13]}>
+          <DockSet t={(frame - b.at(3)) / 30} truckIn={b.ramp(3, 0.2, 2.0)} loaded={b.ramp(3, 2.2, 4.5)} />
+        </SetWindow>
+        <Abs x={150} y={460} w={800} o={b.ramp(3, 0.8)}>
+          <Chip size={34} bg="rgba(17,20,24,0.85)" color={C.cream}>
             one by one…
-          </Body>
+          </Chip>
         </Abs>
-        <Abs x={820} y={800} w={600} o={b.ramp(3, 3)}>
-          <Body size={30} color={C.cream} weight={700}>
-            …pooled and shipped in bulk
-          </Body>
+        <Abs x={1010} y={460} w={760} align="right" o={b.ramp(3, 3)}>
+          <Chip size={34}>…pooled and shipped in bulk</Chip>
         </Abs>
       </div>
 
-      {/* beat 4: returns center scan */}
+      {/* beat 4: returns center: conveyor through a scanner */}
       <div style={{position: 'absolute', inset: 0, opacity: b.during(4, 4)}}>
-        <Stage>
-          <Place x={620} y={630} s={1.3 * b.pop(4, 0.3)}>
-            <Warehouse />
-          </Place>
-          <Place x={1240} y={560} s={1.1}>
-            <Scanner beam={0.5 + 0.5 * Math.abs(Math.sin(frame / 6))} />
-          </Place>
-          <Place x={1240} y={720} s={0.7 * b.pop(4, 1.6)}>
-            <Box open={b.ramp(4, 2.4, 0.8)} />
-          </Place>
-          {/* barcode */}
-          <g opacity={b.ramp(4, 3.2)} transform="translate(1440 700)">
-            {[3, 7, 4, 2, 6, 3, 8, 2, 5, 3, 6, 2].map((w, i, arr) => (
-              <rect key={i} x={arr.slice(0, i).reduce((a, c) => a + c + 5, 0)} y={0} width={w} height={70} fill={C.cream} />
-            ))}
-            <text x={0} y={110} fill={C.red} fontSize={28} fontFamily="Space Grotesk" fontWeight={700}>
-              SCANNED
-            </text>
-          </g>
-        </Stage>
+        <SetWindow x={110} y={440} w={1700} h={440} view={[0, 330, 1920, 497 * 1.13]}>
+          <WarehouseSet t={frame / 30} />
+          <Conveyor y={820} t={(frame - b.at(4)) / 30} speed={300} gap={260} scale={0.62} scannerX={1100} />
+        </SetWindow>
+        <Abs x={1240} y={470} o={b.ramp(4, 1.6)}>
+          <Chip size={40} bg={C.red} color={C.cream}>
+            SCANNED
+          </Chip>
+        </Abs>
       </div>
 
       {/* beat 5: inspection checklist */}
@@ -227,7 +203,7 @@ export const S03ReverseLogistics: React.FC = () => {
         </Abs>
         <Abs x={360} y={640} w={1200} o={b.ramp(7, 3.2)}>
           <div style={{display: 'flex', alignItems: 'center', gap: 40}}>
-            <div style={{fontFamily: FONT_TITLE, fontSize: 130, fontWeight: 700, color: C.cream}}>~49%</div>
+            <div style={{fontFamily: FONT_TITLE, fontSize: 190, fontWeight: 700, color: C.cream}}>~49%</div>
             <Body size={36}>
               of retailers say it takes <b style={{color: C.orange}}>6–10 days</b> to get a returned item back in stock
             </Body>

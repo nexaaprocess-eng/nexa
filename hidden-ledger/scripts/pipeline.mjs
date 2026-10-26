@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // Hidden Ledger pipeline orchestrator (Windows PowerShell / macOS / Linux).
 // Usage: node scripts/pipeline.mjs <command> [--episode 001] [--quality preview|hd] [--no-subs] [--concurrency N]
+//        episode options: [--name full_video_v2] [--bitrate 8M]
 // Commands: setup | doctor | voices | narration | pilot | episode | shorts | thumbnails | verify
 import {spawnSync} from 'node:child_process';
 import fs from 'node:fs';
@@ -57,7 +58,7 @@ function timeline(name, scenes, until) {
   return {tl, props};
 }
 
-function renderVideo(name, props, destDir, {quality = opt('quality', 'preview'), composition = 'Episode', extraProps} = {}) {
+function renderVideo(name, props, destDir, {quality = opt('quality', 'preview'), composition = 'Episode', extraProps, crf = 20} = {}) {
   fs.mkdirSync(destDir, {recursive: true});
   const scale = quality === 'hd' ? '1' : '0.6666666667';
   const silent = path.join(destDir, `${name}_video.mp4`);
@@ -68,8 +69,23 @@ function renderVideo(name, props, destDir, {quality = opt('quality', 'preview'),
     fs.writeFileSync(propsFile, JSON.stringify({...JSON.parse(fs.readFileSync(props, 'utf8')), ...extraProps}));
   }
   run(NPX, ['remotion', 'render', composition, silent, `--props=${propsFile}`, `--scale=${scale}`, `--concurrency=${conc}`,
-    '--muted', '--codec=h264', '--crf=20', '--timeout=120000', '--log=error']);
+    '--muted', '--codec=h264', `--crf=${crf}`, '--timeout=120000', '--log=error']);
   return silent;
+}
+
+// YouTube delivery encode: two-pass H.264 High@4.2 at a target bitrate (default 8 Mbps), closed GOP of
+// half the frame rate, yuv420p, faststart; AAC-LC 384 kbps / 48 kHz encoded once from the lossless mix.
+function encodeForYouTube(silentVideo, mixWav, dest, bitrate = '8M') {
+  const kbps = parseInt(bitrate, 10) * (bitrate.toUpperCase().endsWith('M') ? 1000 : 1);
+  const v = ['-c:v', 'libx264', '-preset', 'slow', '-b:v', `${kbps}k`, '-maxrate', `${Math.round(kbps * 1.25)}k`, '-bufsize', `${kbps * 2}k`,
+    '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-level', '4.2', '-r', '30', '-g', '15', '-keyint_min', '15', '-sc_threshold', '0', '-bf', '2',
+    '-flags', '+cgop', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709'];
+  const log = path.join(path.dirname(dest), 'x264_2pass');
+  const nul = IS_WIN ? 'NUL' : '/dev/null';
+  run('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', '-i', silentVideo, ...v, '-pass', '1', '-passlogfile', log, '-an', '-f', 'mp4', nul]);
+  run('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', '-i', silentVideo, '-i', mixWav, '-map', '0:v:0', '-map', '1:a:0', ...v,
+    '-pass', '2', '-passlogfile', log, '-af', 'apad', '-c:a', 'aac', '-b:a', '384k', '-ar', '48000', '-ac', '2', '-shortest', '-movflags', '+faststart', dest]);
+  for (const f of fs.readdirSync(path.dirname(dest))) if (f.startsWith('x264_2pass')) fs.rmSync(path.join(path.dirname(dest), f));
 }
 
 function mux(silent, mixWav, dest, {from, to} = {}) {
@@ -175,14 +191,22 @@ const commands = {
     narration();
     const {tl, props} = timeline('full');
     const dest = path.join(OUT, 'full');
-    const silent = renderVideo('full_video', props, dest, {quality: opt('quality', 'hd')});
-    const file = path.join(dest, 'full_video.mp4');
-    mux(silent, path.join(AUDIO, 'full', 'mix.wav'), file);
-    fs.copyFileSync(path.join(AUDIO, 'full', 'full.srt'), path.join(dest, 'full_video.en.srt'));
+    const name = opt('name', 'full_video');
+    const bitrate = opt('bitrate'); // e.g. 8M -> two-pass delivery encode from a high-quality intermediate
+    const silent = renderVideo(name, props, dest, {quality: opt('quality', 'hd'), crf: bitrate ? 14 : 20});
+    const file = path.join(dest, `${name}.mp4`);
+    if (bitrate) {
+      encodeForYouTube(silent, path.join(AUDIO, 'full', 'mix.wav'), file, bitrate);
+      fs.rmSync(silent);
+    } else {
+      mux(silent, path.join(AUDIO, 'full', 'mix.wav'), file);
+    }
+    fs.copyFileSync(path.join(AUDIO, 'full', 'full.srt'), path.join(dest, `${name}.en.srt`));
+    py('av_check.py', ['--episode', EP, '--video', path.relative(ROOT, file)]);
     const times = tl.scenes.flatMap((s) => [s.start + 4, (s.start + s.end) / 2]);
-    const shots = screenshots(file, 'full', times);
+    const shots = screenshots(file, name, times);
     const v = validateVideo(file, {minDur: 400, maxDur: 660});
-    writeReport('full_report', {...v, screenshots: shots, chapters: tl.scenes.map((s) => ({start: s.start, title: s.chapter})),
+    writeReport(`${name}_report`, {...v, screenshots: shots, chapters: tl.scenes.map((s) => ({start: s.start, title: s.chapter})),
       audio_mix: JSON.parse(fs.readFileSync(path.join(AUDIO, 'full', 'audio_report.json'), 'utf8'))});
     py('write_docs.py', ['chapters', '--episode', EP]);
     console.log(JSON.stringify(v, null, 2));

@@ -1,6 +1,7 @@
 import React from 'react';
 import {interpolate} from 'remotion';
-import {Box, Doc, Place} from '../components/icons';
+import {Doc, Place} from '../components/icons';
+import {Conveyor, WarehouseSet} from '../components/sets';
 import {SceneShell} from '../components/SceneShell';
 import {useBeats} from '../components/timeline';
 import {Abs, Body, Card, Counter, DotGrid, HBar, Kicker, Source, Stage, Title} from '../components/ui';
@@ -22,25 +23,17 @@ export const S02Scale: React.FC = () => {
   const b = useBeats();
   const {frame} = b;
 
-  const many = b.ramp(0, 0.3, 1.6);
+  const many = b.ramp(0, 0.0, 1.3);
   return (
     <SceneShell drift={[0, -10]} zoom={0.02}>
-      {/* beat 0: one box becomes many */}
+      {/* beat 0: zoom out of one rack into a whole returns warehouse */}
       <div style={{position: 'absolute', inset: 0, opacity: b.during(0, 0)}}>
-        <Stage>
-          {Array.from({length: 120}).map((_, i) => {
-            const col = i % 15;
-            const row = Math.floor(i / 15);
-            const x = interpolate(many, [0, 1], [960, 300 + col * 94]);
-            const y = interpolate(many, [0, 1], [540, 230 + row * 82]);
-            const s = interpolate(many, [0, 1], [i === 0 ? 1.2 : 0, 0.32]);
-            return (
-              <Place key={i} x={x} y={y} s={s} o={i === 0 ? 1 : many}>
-                <Box />
-              </Place>
-            );
-          })}
-        </Stage>
+        <div style={{position: 'absolute', inset: 0, transform: `scale(${interpolate(many, [0, 1], [2.6, 1])})`, transformOrigin: '22% 45%'}}>
+          <Stage>
+            <WarehouseSet t={frame / 30} fill={0.35 + 0.65 * many} />
+            <Conveyor y={860} t={frame / 30} speed={380} gap={150} scale={0.38} />
+          </Stage>
+        </div>
       </div>
 
       {/* sources stay on screen while figures are shown */}
@@ -93,7 +86,7 @@ export const S02Scale: React.FC = () => {
           </g>
         </Stage>
         <Abs x={330} y={470} w={460} align="center">
-          <Counter value={15.8} decimals={1} suffix="%" t={b.ramp(2, 0.3, 1.2)} size={110} />
+          <Counter value={15.8} decimals={1} suffix="%" t={b.ramp(2, 0.3, 1.2)} size={128} />
         </Abs>
         <Abs x={960} y={380} w={820} o={b.ramp(2, 0.5)}>
           <Kicker>Retailers’ estimate</Kicker>
@@ -111,7 +104,7 @@ export const S02Scale: React.FC = () => {
         <Abs x={160} y={300} w={900}>
           <Kicker>Projected · U.S. · 2025</Kicker>
           <div style={{marginTop: 10}}>
-            <Counter value={849.9} decimals={1} prefix="$" suffix="B" t={b.ramp(3, 0.2, 2.2)} size={180} color={C.orange} />
+            <Counter value={849.9} decimals={1} prefix="$" suffix="B" t={b.ramp(3, 0.2, 2.2)} size={230} color={C.orange} />
           </div>
           <Body size={36} style={{marginTop: 10}}>
             worth of merchandise returned
@@ -184,18 +177,18 @@ export const S02Scale: React.FC = () => {
         {i: 7, n: 57, color: C.red, text: 'decided not to shop with a retailer after it started charging for returns'},
       ].map((d) => (
         <div key={d.i} style={{position: 'absolute', inset: 0, opacity: b.during(d.i, d.i)}}>
-          <Abs x={260} y={300}>
+          <Abs x={240} y={250}>
             <DotGrid n={d.n} t={b.ramp(d.i, 0.2, 1.4)} color={d.color} size={36} gap={14} />
           </Abs>
-          <Abs x={980} y={330} w={760}>
+          <Abs x={960} y={230} w={820}>
             <Kicker>Consumer survey · 2025</Kicker>
             <div style={{marginTop: 8}}>
-              <Counter value={d.n} suffix="%" t={b.ramp(d.i, 0.2, 1.4)} size={190} color={d.color} />
+              <Counter value={d.n} suffix="%" t={b.ramp(d.i, 0.2, 1.4)} size={260} color={d.color} />
             </div>
-            <Title size={50} weight={600} style={{marginTop: 8}}>
+            <Title size={48} weight={600} style={{marginTop: 4}}>
               {d.text}
             </Title>
-            <Body size={26} color={C.muted} style={{marginTop: 20}}>
+            <Body size={28} color={C.muted} style={{marginTop: 16}}>
               Base: 2,006 U.S. shoppers who had returned an online purchase in the past year
             </Body>
           </Abs>

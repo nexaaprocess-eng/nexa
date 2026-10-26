@@ -30,8 +30,8 @@ from music import render_cue  # noqa: E402
 
 SR = MIX_SR
 XFADE = 2.0
-MUSIC_UNDER_VOICE_DB = -21.0  # music level while narration is active, relative to voice RMS
-MUSIC_IN_GAPS_DB = -13.0      # music level in pauses
+MUSIC_UNDER_VOICE_DB = -23.0  # music level while narration is active, relative to voice RMS
+MUSIC_IN_GAPS_DB = -14.0      # music level in pauses
 EXTRA_DIP_DB = -5.0           # additional dip on key figures
 SFX_DB = -17.0                # SFX peak relative to voice peak
 STEP_SCENES = {"s03"}         # scenes whose segments are numbered process steps
@@ -100,6 +100,25 @@ def music_track(tl: dict, total_n: int, cache: Path) -> tuple[np.ndarray, str]:
     return out, "procedural (python/music.py)"
 
 
+def word_cues(tl: dict, episode: str) -> list[tuple[float, str, float]]:
+    """Word-anchored SFX from content/episode-XXX/sfx_cues.json (time = ASR word time + offset)."""
+    p = ROOT / "content" / f"episode-{episode}" / "sfx_cues.json"
+    if not p.exists():
+        return []
+    segs = {g["key"]: g for sc in tl["scenes"] for g in sc["segments"]}
+    out = []
+    for c in json.loads(p.read_text())["cues"]:
+        seg = segs.get(c["segment"])
+        if not seg:
+            continue  # segment not in this timeline (e.g. pilot cut)
+        hit = next((w for w in seg.get("words", []) if re.search(c["word"], w[1], re.I)), None)
+        if hit is None:
+            print(f"   warning: sfx cue word '{c['word']}' not found in {c['segment']}")
+            continue
+        out.append((hit[0] + c.get("offset", 0.0), c["sound"], c.get("gain_db", 0.0)))
+    return out
+
+
 def sfx_events(tl: dict) -> list[tuple[float, str]]:
     ev = []
     for i, sc in enumerate(tl["scenes"]):
@@ -154,14 +173,14 @@ def main():
     # sfx
     sfx = np.zeros((n, 2), dtype=np.float32)
     lib = {p.stem: sf.read(str(p), dtype="float32")[0] for p in (ROOT / "assets" / "sfx").glob("*.wav")}
-    events = sfx_events(tl)
-    for t, name in events:
+    events = [(t, n, 0.0) for t, n in sfx_events(tl)] + word_cues(tl, a.episode)
+    for t, name, gdb in events:
         s = lib.get(name)
         if s is None:
             continue
         if s.ndim == 1:
             s = np.stack([s, s], 1)
-        s = s * (voice_peak * 10 ** (SFX_DB / 20) / (np.max(np.abs(s)) or 1))
+        s = s * (voice_peak * 10 ** ((SFX_DB + gdb) / 20) / (np.max(np.abs(s)) or 1))
         i = int(max(0, t) * SR)
         j = min(n, i + len(s))
         sfx[i:j] += s[: j - i]

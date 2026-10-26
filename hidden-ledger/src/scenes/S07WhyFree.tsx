@@ -161,7 +161,7 @@ export const S07WhyFree: React.FC = () => {
                 </Title>
                 {col.items.map(([v, l], i) => (
                   <div key={l} style={{display: 'flex', alignItems: 'baseline', gap: 24, marginTop: 22, opacity: b.ramp(5, col.at + 0.6 + i * 0.8)}}>
-                    <div style={{fontFamily: FONT_TITLE, fontSize: 80, fontWeight: 700, color: C.cream, width: 200}}>{v}</div>
+                    <div style={{fontFamily: FONT_TITLE, fontSize: 104, fontWeight: 700, color: C.cream, width: 250}}>{v}</div>
                     <Body size={32}>{l}</Body>
                   </div>
                 ))}

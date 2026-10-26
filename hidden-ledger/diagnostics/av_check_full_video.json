@@ -1,0 +1,81 @@
+{
+  "video": "output/episode-001/full/full_video.mp4",
+  "problems": [
+    "frame count 17765 != timeline 17769",
+    "7 scene change(s) without a picture cut within ±0.5 s"
+  ],
+  "completeness": {
+    "video_frames": 17765,
+    "timeline_frames": 17769,
+    "video_duration": 592.166667,
+    "audio_duration": 592.149,
+    "timeline_duration": 592.278,
+    "video_start": 0.0,
+    "audio_start": 0.0
+  },
+  "audio_offset": [
+    {
+      "at_s": 5.0,
+      "offset_ms": 0.0,
+      "correlation": 0.965
+    },
+    {
+      "at_s": 296.1,
+      "offset_ms": 0.0,
+      "correlation": 0.96
+    },
+    {
+      "at_s": 567.3,
+      "offset_ms": 0.0,
+      "correlation": 0.966
+    }
+  ],
+  "scene_cuts": {
+    "detected": 0,
+    "matches": [
+      {
+        "scene": "s02",
+        "timeline_start": 28.46,
+        "nearest_cut": null,
+        "delta_s": null
+      },
+      {
+        "scene": "s03",
+        "timeline_start": 106.694,
+        "nearest_cut": null,
+        "delta_s": null
+      },
+      {
+        "scene": "s04",
+        "timeline_start": 181.08,
+        "nearest_cut": null,
+        "delta_s": null
+      },
+      {
+        "scene": "s05",
+        "timeline_start": 283.583,
+        "nearest_cut": null,
+        "delta_s": null
+      },
+      {
+        "scene": "s06",
+        "timeline_start": 379.883,
+        "nearest_cut": null,
+        "delta_s": null
+      },
+      {
+        "scene": "s07",
+        "timeline_start": 473.501,
+        "nearest_cut": null,
+        "delta_s": null
+      },
+      {
+        "scene": "s08",
+        "timeline_start": 544.881,
+        "nearest_cut": null,
+        "delta_s": null
+      }
+    ]
+  },
+  "ok": false
+}

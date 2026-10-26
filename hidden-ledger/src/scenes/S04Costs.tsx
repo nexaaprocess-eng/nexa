@@ -1,5 +1,6 @@
 import React from 'react';
-import {Box, Jacket, Place} from '../components/icons';
+import {Jacket} from '../components/icons';
+import {Conveyor, WarehouseSet, rnd} from '../components/sets';
 import {SceneShell} from '../components/SceneShell';
 import {useBeats} from '../components/timeline';
 import {Abs, Body, Card, Illustrative, Kicker, Source, Stage, Title} from '../components/ui';
@@ -176,31 +177,24 @@ export const S04Costs: React.FC = () => {
       <div style={{position: 'absolute', inset: 0, opacity: b.during(9, 9)}}>
         <Source>NRF & Happy Returns, 2025 Retail Returns Landscape · retailers that track fraud; excludes bracketing & wardrobing</Source>
         <Stage>
-          {Array.from({length: 100}).map((_, i) => {
-            const col = i % 10;
-            const row = Math.floor(i / 10);
-            const bad = [3, 17, 28, 41, 55, 62, 76, 84, 98].includes(i);
-            const t = b.ramp(9, 0.3 + (i / 100) * 1.2, 0.3);
-            return (
-              <g key={i} opacity={t}>
-                <Place x={250 + col * 64} y={240 + row * 62} s={0.26}>
-                  <Box fill={bad && b.frame > b.word(9, /^9/, 0.3) ? C.red : '#C8A675'} />
-                </Place>
-              </g>
-            );
-          })}
+          <WarehouseSet t={frame / 30} />
+          {/* parcels stream through a scanner; about 9 in 100 get flagged (illustration of the retailers' estimate) */}
+          <Conveyor y={860} t={(frame - b.at(9)) / 30} speed={330} gap={140} scale={0.4} scannerX={760} flag={(k) => rnd(k * 7 + 3) < 0.09 || k % 11 === 5} />
+          <rect x={0} y={0} width={1920} height={1080} fill="rgba(17,20,24,0.35)" />
         </Stage>
-        <Abs x={1000} y={270} w={760}>
+        <Abs x={1000} y={230} w={820}>
+          <div style={{background: 'rgba(14,17,20,0.85)', borderRadius: 28, padding: '28px 40px'}}>
           <Kicker color={C.red}>Return fraud, retailers’ estimate</Kicker>
-          <Title size={190} color={C.red} style={{marginTop: 6}}>
+          <Title size={250} color={C.red} style={{marginTop: 6}}>
             ~9%
           </Title>
           <Body size={36} style={{marginTop: 6}}>
             of returns, from empty boxes to swapped items
           </Body>
           <Body size={26} color={C.muted} style={{marginTop: 22, opacity: b.ramp(9, 6)}}>
-            Self-reported by retailers that track it · not audited · illustration shows 9 in 100
+            Self-reported by retailers that track it · not audited · illustration, not a count
           </Body>
+          </div>
         </Abs>
       </div>
     </SceneShell>

@@ -16,7 +16,8 @@
     "thumbnails:001": "node scripts/pipeline.mjs thumbnails --episode 001",
     "verify": "node scripts/pipeline.mjs verify",
     "studio": "remotion studio src/main.ts",
-    "typecheck": "tsc -p ."
+    "typecheck": "tsc -p .",
+    "episode:001:v2": "node scripts/pipeline.mjs episode --episode 001 --name full_video_v2 --bitrate 8M --concurrency 4"
   },
   "dependencies": {
     "@fontsource-variable/inter": "5.1.1",
