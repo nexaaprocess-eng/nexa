@@ -1,0 +1,4 @@
+{"episode": "000", "title": "placeholder", "name": "placeholder", "fps": 30, "duration": 10, "durationInFrames": 300,
+ "scenes": [{"id": "s01", "title": "Placeholder", "chapter": "Run npm run pilot", "music": "neutral", "start": 0, "end": 10,
+   "segments": [{"id": "01", "key": "s01-01", "text": "Render with --props to load a real timeline.", "start": 0.5, "end": 9, "duration": 8.5, "claims": [], "duck": false}]}],
+ "subtitles": []}

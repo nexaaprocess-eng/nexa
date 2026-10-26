@@ -1,0 +1,8 @@
+# Hidden Ledger Python side (CPU only). Tested with Python 3.13 on Linux; works on Windows with Python 3.10+.
+kokoro-onnx==0.6.1        # MIT, TTS runtime (pulls onnxruntime, phonemizer-fork, espeakng-loader)
+onnxruntime==1.31.0       # MIT, CPU inference
+numpy==2.5.4              # BSD
+soundfile==0.14.0         # BSD (bundles libsndfile on Windows/macOS wheels)
+faster-whisper==1.2.1     # MIT, QA only: intelligibility check + subtitle word anchors
+ctranslate2==4.8.4        # MIT
+jiwer==4.0.0              # Apache-2.0, word error rate

@@ -1,0 +1,278 @@
+{
+  "episode": "001",
+  "title": "Who Really Pays for Free Returns?",
+  "name": "pilot",
+  "fps": 30,
+  "duration": 82.773,
+  "durationInFrames": 2484,
+  "voice": "am_michael",
+  "scenes": [
+    {
+      "id": "s01",
+      "title": "Cold open",
+      "chapter": "A jacket goes back",
+      "music": "intro",
+      "start": 0.0,
+      "end": 28.46,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s01-01",
+          "text": "You order a jacket online. It arrives on a Tuesday.",
+          "start": 0.6,
+          "end": 3.97,
+          "duration": 3.37,
+          "claims": [],
+          "duck": false
+        },
+        {
+          "id": "02",
+          "key": "s01-02",
+          "text": "By Thursday, you've decided the sleeves are too short.",
+          "start": 4.35,
+          "end": 7.54,
+          "duration": 3.19,
+          "claims": [],
+          "duck": false
+        },
+        {
+          "id": "03",
+          "key": "s01-03",
+          "text": "So you send it back. The label is free. The refund shows up a few days later.",
+          "start": 7.92,
+          "end": 13.05,
+          "duration": 5.13,
+          "claims": [],
+          "duck": false
+        },
+        {
+          "id": "04",
+          "key": "s01-04",
+          "text": "For you, the story ends there. For the jacket, it's just getting started.",
+          "start": 13.43,
+          "end": 17.74,
+          "duration": 4.31,
+          "claims": [],
+          "duck": false
+        },
+        {
+          "id": "05",
+          "key": "s01-05",
+          "text": "It will be scanned, trucked, sorted, inspected, and judged. And every one of those steps costs somebody something.",
+          "start": 18.12,
+          "end": 25.31,
+          "duration": 7.19,
+          "claims": [],
+          "duck": false
+        },
+        {
+          "id": "06",
+          "key": "s01-06",
+          "text": "So who actually pays for a free return?",
+          "start": 25.69,
+          "end": 28.01,
+          "duration": 2.32,
+          "claims": [],
+          "duck": false
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "title": "Why it matters",
+      "chapter": "The scale of returns",
+      "music": "neutral",
+      "start": 28.46,
+      "end": 82.773,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s02-01",
+          "text": "Start with the scale.",
+          "start": 28.91,
+          "end": 30.12,
+          "duration": 1.21,
+          "claims": [],
+          "duck": false
+        },
+        {
+          "id": "02",
+          "key": "s02-02",
+          "text": "In October 2025, the National Retail Federation and Happy Returns, a returns company owned by UPS, published a report based on two surveys: one of shoppers, one of large American retailers.",
+          "start": 30.5,
+          "end": 45.903,
+          "duration": 15.403,
+          "claims": [
+            "C01"
+          ],
+          "duck": false
+        },
+        {
+          "id": "03",
+          "key": "s02-03",
+          "text": "Those retailers estimated that about 15.8 percent of their sales would come back in 2025.",
+          "start": 46.283,
+          "end": 53.583,
+          "duration": 7.3,
+          "claims": [
+            "C02"
+          ],
+          "duck": true
+        },
+        {
+          "id": "04",
+          "key": "s02-04",
+          "text": "Across the whole industry, the report projected $849.9 billion worth of returned merchandise.",
+          "start": 53.963,
+          "end": 62.583,
+          "duration": 8.62,
+          "claims": [
+            "C03"
+          ],
+          "duck": true
+        },
+        {
+          "id": "05",
+          "key": "s02-05",
+          "text": "Online, the estimate was higher: about 19.3 percent of online sales.",
+          "start": 62.963,
+          "end": 68.553,
+          "duration": 5.59,
+          "claims": [
+            "C04"
+          ],
+          "duck": true
+        },
+        {
+          "id": "06",
+          "key": "s02-06",
+          "text": "Keep in mind what those numbers are. They measure the value of goods sent back, not the cost of processing them. And they're projections for the United States, not a final count.",
+          "start": 68.933,
+          "end": 80.273,
+          "duration": 11.34,
+          "claims": [
+            "C03"
+          ],
+          "duck": false
+        }
+      ]
+    }
+  ],
+  "subtitles": [
+    {
+      "start": 0.6,
+      "end": 2.12,
+      "text": "You order a jacket online."
+    },
+    {
+      "start": 2.12,
+      "end": 3.97,
+      "text": "It arrives on a Tuesday."
+    },
+    {
+      "start": 4.35,
+      "end": 7.54,
+      "text": "By Thursday, you've decided\nthe sleeves are too short."
+    },
+    {
+      "start": 7.92,
+      "end": 9.06,
+      "text": "So you send it back."
+    },
+    {
+      "start": 9.06,
+      "end": 10.54,
+      "text": "The label is free."
+    },
+    {
+      "start": 10.54,
+      "end": 13.05,
+      "text": "The refund shows up a few days later."
+    },
+    {
+      "start": 13.43,
+      "end": 15.33,
+      "text": "For you, the story ends there."
+    },
+    {
+      "start": 15.33,
+      "end": 17.74,
+      "text": "For the jacket, it's just getting started."
+    },
+    {
+      "start": 18.12,
+      "end": 22.03,
+      "text": "It will be scanned, trucked,\nsorted, inspected, and judged."
+    },
+    {
+      "start": 22.03,
+      "end": 25.31,
+      "text": "And every one of those steps\ncosts somebody something."
+    },
+    {
+      "start": 25.69,
+      "end": 28.01,
+      "text": "So who actually pays for a free return?"
+    },
+    {
+      "start": 28.91,
+      "end": 30.12,
+      "text": "Start with the scale."
+    },
+    {
+      "start": 30.5,
+      "end": 35.71,
+      "text": "In October 2025, the National Retail\nFederation and Happy Returns,"
+    },
+    {
+      "start": 35.71,
+      "end": 41.87,
+      "text": "a returns company owned by UPS,\npublished a report based on two surveys:"
+    },
+    {
+      "start": 41.87,
+      "end": 45.903,
+      "text": "one of shoppers, one of\nlarge American retailers."
+    },
+    {
+      "start": 46.283,
+      "end": 52.483,
+      "text": "Those retailers estimated that about 15.8\npercent of their sales would come back in"
+    },
+    {
+      "start": 52.483,
+      "end": 53.583,
+      "text": "2025."
+    },
+    {
+      "start": 53.963,
+      "end": 55.903,
+      "text": "Across the whole industry,"
+    },
+    {
+      "start": 55.903,
+      "end": 62.583,
+      "text": "the report projected $849.9 billion\nworth of returned merchandise."
+    },
+    {
+      "start": 62.963,
+      "end": 68.553,
+      "text": "Online, the estimate was higher:\nabout 19.3 percent of online sales."
+    },
+    {
+      "start": 68.933,
+      "end": 71.163,
+      "text": "Keep in mind what those numbers are."
+    },
+    {
+      "start": 71.163,
+      "end": 76.043,
+      "text": "They measure the value of goods sent\nback, not the cost of processing them."
+    },
+    {
+      "start": 76.043,
+      "end": 80.273,
+      "text": "And they're projections for the\nUnited States, not a final count."
+    }
+  ]
+}

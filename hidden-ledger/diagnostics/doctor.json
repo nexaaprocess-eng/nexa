@@ -1,0 +1,43 @@
+{
+  "checks": {
+    "os": "Linux 6.18.44-fc-v153 (x86_64)",
+    "python": "3.13.17",
+    "node": "v22.22.0",
+    "npm": "10.9.4",
+    "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+    "ffprobe": "ffprobe version 6.1.1-3ubuntu5 Copyright (c) 2007-2023 the FFmpeg developers",
+    "cpu_threads": 4,
+    "ram_gb": 16.9,
+    "disk_free_gb": 29.3,
+    "python_packages": {
+      "kokoro_onnx": "installed",
+      "onnxruntime": "1.31.0",
+      "numpy": "2.5.4",
+      "soundfile": "0.14.0",
+      "faster_whisper": "1.2.1",
+      "jiwer": "installed"
+    },
+    "onnx_providers": [
+      "AzureExecutionProvider",
+      "CPUExecutionProvider"
+    ],
+    "model": {
+      "kokoro-v1.0.onnx": true,
+      "voices-v1.0.bin": true
+    },
+    "fonts": [
+      "Inter-Variable-latin.woff2",
+      "SpaceGrotesk-Variable-latin.woff2"
+    ],
+    "node_modules": true,
+    "output_writable": true,
+    "suggested": {
+      "render_concurrency": 2,
+      "pilot_quality": "preview (1280x720)",
+      "episode_quality": "hd (1920x1080)",
+      "note": "CPU only; CUDA is never required. Lower --concurrency if the machine becomes unresponsive."
+    }
+  },
+  "blockers": [],
+  "warnings": []
+}

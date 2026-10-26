@@ -1,0 +1,1059 @@
+{
+  "episode": "001",
+  "title": "Who Really Pays for Free Returns?",
+  "fps": 30,
+  "timing_source": "measured WAV durations (output/episode-XXX/audio/full/timeline.json)",
+  "duration": 592.278,
+  "scenes": [
+    {
+      "id": "s01",
+      "title": "Cold open",
+      "chapter": "A jacket goes back",
+      "music": "intro",
+      "start": 0.0,
+      "end": 28.46,
+      "duration": 28.46,
+      "component": "src/scenes (registry id s01)",
+      "beats": [
+        {
+          "segment": "s01-01",
+          "start": 0.6,
+          "end": 3.97,
+          "narration": "You order a jacket online. It arrives on a Tuesday.",
+          "visual": "Phone shows a jacket product card; 'Add to cart' turns to 'Ordered'; parcel arcs to a house; calendar pops: TUE",
+          "on_screen_text": [
+            "Field Jacket",
+            "Add to cart / Ordered ✓",
+            "TUE"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s01-02",
+          "start": 4.35,
+          "end": 7.54,
+          "narration": "By Thursday, you've decided the sleeves are too short.",
+          "visual": "Calendar flips to THU; large jacket with short sleeves and dashed measure lines",
+          "on_screen_text": [
+            "THU",
+            "sleeves too short"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s01-03",
+          "start": 7.92,
+          "end": 13.05,
+          "narration": "So you send it back. The label is free. The refund shows up a few days later.",
+          "visual": "Parcel gets a RETURN label and slides back; refund notification on the phone",
+          "on_screen_text": [
+            "FREE RETURN LABEL",
+            "Refund issued ✓"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s01-04",
+          "start": 13.43,
+          "end": 17.74,
+          "narration": "For you, the story ends there. For the jacket, it's just getting started.",
+          "visual": "'Done, for you' check; whole home layout slides out left, route line starts",
+          "on_screen_text": [
+            "✓ Done, for you"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s01-05",
+          "start": 18.12,
+          "end": 25.31,
+          "narration": "It will be scanned, trucked, sorted, inspected, and judged. And every one of those steps costs somebody something.",
+          "visual": "Parcel travels a 5-station route (scanner, truck, warehouse, magnifier, gear); qualitative red cost meter fills, NO amounts",
+          "on_screen_text": [
+            "scanned",
+            "trucked",
+            "sorted",
+            "inspected",
+            "judged",
+            "COST TO SOMEBODY",
+            "amount unknown, for now"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s01-06",
+          "start": 25.69,
+          "end": 28.01,
+          "narration": "So who actually pays for a free return?",
+          "visual": "Title card with tilted orange FREE badge",
+          "on_screen_text": [
+            "Who really pays for FREE returns?"
+          ],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "title": "Why it matters",
+      "chapter": "The scale of returns",
+      "music": "neutral",
+      "start": 28.46,
+      "end": 106.694,
+      "duration": 78.234,
+      "component": "src/scenes (registry id s02)",
+      "beats": [
+        {
+          "segment": "s02-01",
+          "start": 28.91,
+          "end": 30.12,
+          "narration": "Start with the scale.",
+          "visual": "One box multiplies into a 120-box grid (zoom-out metaphor)",
+          "on_screen_text": [],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s02-02",
+          "start": 30.5,
+          "end": 45.903,
+          "narration": "In October 2025, the National Retail Federation and Happy Returns, a returns company owned by UPS, published a report based on two surveys: one of shoppers, one of large American retailers.",
+          "visual": "Report document + two sample cards",
+          "on_screen_text": [
+            "THE SOURCE",
+            "2025 Retail Returns Landscape",
+            "National Retail Federation & Happy Returns (owned by UPS) · published Oct 15, 2025",
+            "2,006 U.S. consumers who had returned an online purchase in the past 12 months",
+            "358 e-commerce professionals at large U.S. retailers ($500M+ revenue)"
+          ],
+          "claims": [
+            "C01"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s02-03",
+          "start": 46.283,
+          "end": 53.583,
+          "narration": "Those retailers estimated that about 15.8 percent of their sales would come back in 2025.",
+          "visual": "Donut fills to 15.8%",
+          "on_screen_text": [
+            "15.8%",
+            "RETAILERS' ESTIMATE",
+            "of annual sales expected to be returned in 2025",
+            "Average estimate across surveyed retailers · projection, not a final count"
+          ],
+          "claims": [
+            "C02"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s02-04",
+          "start": 53.963,
+          "end": 62.583,
+          "narration": "Across the whole industry, the report projected $849.9 billion worth of returned merchandise.",
+          "visual": "Counter to $849.9B + NRF historical bars (2019-2025, 2023 omitted by NRF)",
+          "on_screen_text": [
+            "PROJECTED · U.S. · 2025",
+            "$849.9B",
+            "worth of merchandise returned",
+            "$309B 2019 · $428B 2020 · $760.8B 2021 · $816.8B 2022 · $890B 2024 · $849.9B 2025*",
+            "NRF series. 2023 omitted by NRF (different method). *2025 = projection."
+          ],
+          "claims": [
+            "C03"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s02-05",
+          "start": 62.963,
+          "end": 68.553,
+          "narration": "Online, the estimate was higher: about 19.3 percent of online sales.",
+          "visual": "Two horizontal bars: all retail vs online",
+          "on_screen_text": [
+            "Share of sales expected back, 2025",
+            "All retail sales 15.8%",
+            "Online sales 19.3%",
+            "Roughly one in five online purchases, by retailers' own estimates."
+          ],
+          "claims": [
+            "C04"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s02-06",
+          "start": 68.933,
+          "end": 80.273,
+          "narration": "Keep in mind what those numbers are. They measure the value of goods sent back, not the cost of processing them. And they're projections for the United States, not a final count.",
+          "visual": "Two cards separated by a red ≠; three caveat pills",
+          "on_screen_text": [
+            "Value of goods sent back",
+            "what the $849.9B measures",
+            "≠",
+            "Cost of processing them",
+            "not measured by this figure",
+            "Projection",
+            "United States",
+            "Not a final count"
+          ],
+          "claims": [
+            "C03"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s02-07",
+          "start": 80.653,
+          "end": 90.803,
+          "narration": "Shoppers are paying attention. In the same report, 82 percent of consumers said free returns are an important consideration when shopping online.",
+          "visual": "10x10 dot grid fills 82 dots",
+          "on_screen_text": [
+            "Consumer survey · 2025",
+            "82%",
+            "say free returns are an important consideration when shopping online",
+            "Base: 2,006 U.S. shoppers who had returned an online purchase in the past year"
+          ],
+          "claims": [
+            "C05"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s02-08",
+          "start": 91.183,
+          "end": 98.184,
+          "narration": "And 57 percent said they had decided not to shop with a retailer after it started charging for returns.",
+          "visual": "Dot grid fills 57 dots (red)",
+          "on_screen_text": [
+            "57%",
+            "decided not to shop with a retailer after it started charging for returns"
+          ],
+          "claims": [
+            "C06"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s02-09",
+          "start": 98.564,
+          "end": 106.244,
+          "narration": "So retailers are caught between two pressures. Returns are expensive, and making them harder can push customers away.",
+          "visual": "Balance beam rocking between two cards",
+          "on_screen_text": [
+            "Returns are expensive",
+            "Friction pushes customers away"
+          ],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "title": "Reverse logistics",
+      "chapter": "The trip back",
+      "music": "neutral",
+      "start": 106.694,
+      "end": 181.08,
+      "duration": 74.386,
+      "component": "src/scenes (registry id s03)",
+      "beats": [
+        {
+          "segment": "s03-01",
+          "start": 107.144,
+          "end": 112.384,
+          "narration": "Let's follow the jacket. What comes next is one common path, not the only one.",
+          "visual": "Persistent route map draws: Home → Hand-off → Consolidation → Returns center → Inspection → Decision; parcel at Home",
+          "on_screen_text": [
+            "ONE COMMON PATH — NOT THE ONLY ONE",
+            "Home",
+            "Hand-off",
+            "Consolidation",
+            "Returns center",
+            "Inspection",
+            "Decision"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s03-02",
+          "start": 112.764,
+          "end": 122.404,
+          "narration": "Step one: the hand-off. Depending on the store, you might mail it, leave it with a carrier, or bring it to a counter, sometimes without a box or a label.",
+          "visual": "Three hand-off options pop in",
+          "on_screen_text": [
+            "Mail it",
+            "Leave it with a carrier",
+            "Bring it to a counter",
+            "sometimes no box or label"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s03-03",
+          "start": 122.784,
+          "end": 130.884,
+          "narration": "In NRF's survey, more retailers offered box-free, label-free drop-offs in 2025 than a year earlier.",
+          "visual": "Bars 2024 vs 2025",
+          "on_screen_text": [
+            "Retailers offering no-box, no-label returns to carriers",
+            "2024 17%",
+            "2025 25%"
+          ],
+          "claims": [
+            "C07"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s03-04",
+          "start": 131.264,
+          "end": 140.834,
+          "narration": "Step two: consolidation. Instead of shipping every item back on its own, some return networks pool many returns together and ship them in bulk.",
+          "visual": "Nine single parcels slide onto a pallet; truck leaves",
+          "on_screen_text": [
+            "one by one…",
+            "…pooled and shipped in bulk"
+          ],
+          "claims": [
+            "C08"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s03-05",
+          "start": 141.214,
+          "end": 147.574,
+          "narration": "Step three: a warehouse or returns center, where someone opens the package and scans what's inside.",
+          "visual": "Warehouse; scanner beam over a parcel that opens; barcode",
+          "on_screen_text": [
+            "SCANNED"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s03-06",
+          "start": 147.954,
+          "end": 154.404,
+          "narration": "Step four: inspection. Is it the right item? Is it damaged? Has it been worn? Are the tags still on?",
+          "visual": "Magnifier over jacket; checklist ticks one by one",
+          "on_screen_text": [
+            "Right item?",
+            "Damaged?",
+            "Worn?",
+            "Tags still on?"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s03-07",
+          "start": 154.784,
+          "end": 160.294,
+          "narration": "Step five: a decision. Restock it, discount it, send it somewhere else, or write it off.",
+          "visual": "Decision gear forks into four outcome boxes",
+          "on_screen_text": [
+            "Restock",
+            "Discount",
+            "Send elsewhere",
+            "Write off"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s03-08",
+          "start": 160.674,
+          "end": 173.594,
+          "narration": "This backward journey has a name: reverse logistics. And it can be slow. About half of the retailers in the NRF survey said it takes six to ten days to get a returned item back in stock.",
+          "visual": "Term reveal + ~49% figure and 10-day strip",
+          "on_screen_text": [
+            "reverse logistics",
+            "~49% of retailers say it takes 6–10 days to get a returned item back in stock",
+            "day 1 … day 10"
+          ],
+          "claims": [
+            "C09"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s03-09",
+          "start": 173.974,
+          "end": 180.63,
+          "narration": "All that time, the jacket isn't for sale. And if it's seasonal, it can lose value every week it sits.",
+          "visual": "Jacket with NOT FOR SALE tag; week counter; qualitative value bar shrinking",
+          "on_screen_text": [
+            "NOT FOR SALE",
+            "W1…W6",
+            "resale value of a seasonal item",
+            "qualitative — the rate varies by product and season"
+          ],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "title": "The costs nobody sees",
+      "chapter": "The costs nobody sees",
+      "music": "neutral",
+      "start": 181.08,
+      "end": 283.583,
+      "duration": 102.503,
+      "component": "src/scenes (registry id s04)",
+      "beats": [
+        {
+          "segment": "s04-01",
+          "start": 181.53,
+          "end": 185.96,
+          "narration": "So where does the money go? It helps to split the costs into two piles.",
+          "visual": "Two empty piles appear",
+          "on_screen_text": [
+            "Operating costs",
+            "money spent moving & handling the item",
+            "Lost value",
+            "what the item is no longer worth"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s04-02",
+          "start": 186.34,
+          "end": 191.16,
+          "narration": "The first pile is operating costs: money spent moving and handling the item.",
+          "visual": "Operating-costs pile highlighted",
+          "on_screen_text": [],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s04-03",
+          "start": 191.54,
+          "end": 201.47,
+          "narration": "Return shipping. Labor to receive, open, and inspect. Cleaning, repacking, or re-tagging. Customer service time. Software and fraud checks.",
+          "visual": "Five red cost blocks drop into the pile in spoken order",
+          "on_screen_text": [
+            "Return shipping",
+            "Labor: receive · open · inspect",
+            "Cleaning · repacking · re-tagging",
+            "Customer service time",
+            "Software & fraud checks"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s04-04",
+          "start": 201.85,
+          "end": 206.7,
+          "narration": "The second pile is lost value: what the item itself is no longer worth.",
+          "visual": "Lost-value pile highlighted",
+          "on_screen_text": [],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s04-05",
+          "start": 207.08,
+          "end": 222.893,
+          "narration": "A jacket that comes back in perfect shape, while it's still in season, might be resold at full price. One that comes back late, missing tags, or slightly worn may have to be marked down, or sold off in bulk for a fraction of its price.",
+          "visual": "Two jacket outcomes inside the lost-value pile",
+          "on_screen_text": [
+            "Perfect, in season — may resell at full price",
+            "Late · no tags · worn — marked down, or sold off in bulk"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s04-06",
+          "start": 223.273,
+          "end": 229.073,
+          "narration": "Here's a simple way to picture it. This is an illustrative example, not industry data.",
+          "visual": "Dashed banner appears and stays for the whole example",
+          "on_screen_text": [
+            "ILLUSTRATIVE EXAMPLE — NOT INDUSTRY DATA",
+            "Hypothetical $100 jacket"
+          ],
+          "claims": [],
+          "music_dip": true
+        },
+        {
+          "segment": "s04-07",
+          "start": 229.453,
+          "end": 243.673,
+          "narration": "Imagine a jacket that sold for $100. Say the return shipping costs the seller $8, handling costs another $6, and because it's now out of season, it resells for $70.",
+          "visual": "Ledger rows light up exactly when each figure is spoken (ASR word anchors)",
+          "on_screen_text": [
+            "Jacket sold for $100",
+            "Return shipping (seller pays) − $8",
+            "Handling − $6",
+            "Resale value, out of season $70"
+          ],
+          "claims": [
+            "I01"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s04-08",
+          "start": 244.053,
+          "end": 257.073,
+          "narration": "The customer got a full refund. The seller spent $14 to get back an item now worth $30 less. In this example, the seller is down $44 on a single return.",
+          "visual": "Waterfall bars $14 + $30 = $44, synced to speech",
+          "on_screen_text": [
+            "The seller's side of this one return",
+            "$14 spent",
+            "$30 value lost",
+            "$44 total"
+          ],
+          "claims": [
+            "I01"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s04-09",
+          "start": 257.453,
+          "end": 267.013,
+          "narration": "Change any assumption and the answer changes. Real costs depend on the product, the carrier contract, the warehouse, and the condition of the item.",
+          "visual": "Four dials turning",
+          "on_screen_text": [
+            "Change an assumption, change the answer",
+            "Product",
+            "Carrier contract",
+            "Warehouse",
+            "Item condition"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s04-10",
+          "start": 267.393,
+          "end": 283.133,
+          "narration": "There's also fraud. In the NRF survey, retailers that track it estimated that about 9 percent of returns were fraudulent, from empty boxes to swapped items. That's the retailers' own estimate, not an audited number.",
+          "visual": "100 boxes, 9 turn red at the word 'nine'",
+          "on_screen_text": [
+            "Return fraud, retailers' estimate",
+            "~9%",
+            "of returns, from empty boxes to swapped items",
+            "Self-reported by retailers that track it · not audited · illustration shows 9 in 100"
+          ],
+          "claims": [
+            "C10"
+          ],
+          "music_dip": true
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "title": "Who absorbs the bill",
+      "chapter": "Who absorbs the bill",
+      "music": "neutral",
+      "start": 283.583,
+      "end": 379.883,
+      "duration": 96.3,
+      "component": "src/scenes (registry id s05)",
+      "beats": [
+        {
+          "segment": "s05-01",
+          "start": 284.033,
+          "end": 288.593,
+          "narration": "So, who pays? The honest answer is: it depends on who's in the chain.",
+          "visual": "Cost-flow diagram: RETURN box → Retailer / Marketplace seller / Logistics partner / Shopper",
+          "on_screen_text": [
+            "the cost of a free return",
+            "So, who pays?",
+            "It depends on who's in the chain."
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s05-02",
+          "start": 288.973,
+          "end": 298.563,
+          "narration": "Case one: a retailer selling its own products. Here, the retailer typically absorbs the cost of a free return directly, at least at first.",
+          "visual": "Thick flow to Retailer",
+          "on_screen_text": [
+            "CASE 1",
+            "A retailer selling its own products",
+            "typically absorbs the cost of a free return directly, at least at first"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s05-03",
+          "start": 298.943,
+          "end": 310.093,
+          "narration": "Case two: a marketplace with independent sellers. The platform's rules decide how costs are split, and some marketplaces charge sellers fees tied to returns.",
+          "visual": "Flows to retailer + seller; fee arrow seller→platform",
+          "on_screen_text": [
+            "CASE 2",
+            "A marketplace with independent sellers",
+            "platform rules split the cost; some charge sellers return-related fees",
+            "fees"
+          ],
+          "claims": [
+            "C11"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s05-04",
+          "start": 310.473,
+          "end": 322.673,
+          "narration": "Amazon, for example, has charged returns processing fees on some products sold through its fulfillment service, under rules that vary by category and have changed over time.",
+          "visual": "Same diagram, example card (no logo)",
+          "on_screen_text": [
+            "CASE 2 · EXAMPLE",
+            "Amazon's fulfillment service",
+            "has charged returns processing fees on some products; rules vary by category and have changed over time"
+          ],
+          "claims": [
+            "C11"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s05-05",
+          "start": 323.053,
+          "end": 335.123,
+          "narration": "Case three: logistics partners. Carriers and returns companies get paid for their work. They're not absorbing the cost; they're billing for it, under contracts the public rarely sees.",
+          "visual": "Invoice from logistics partner back to retailer",
+          "on_screen_text": [
+            "CASE 3",
+            "Logistics partners",
+            "carriers and returns companies are paid for their work: they bill for it, under contracts the public rarely sees"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s05-06",
+          "start": 335.503,
+          "end": 352.123,
+          "narration": "Case four: the shopper. Not always through a fee on that return, but potentially through prices, shipping charges, or memberships that help cover returns across all customers. How much that happens varies, and it's hard to measure from the outside.",
+          "visual": "Dashed, animated flow to Shopper",
+          "on_screen_text": [
+            "CASE 4",
+            "The shopper",
+            "not always via a fee on that return, but possibly via prices, shipping charges or memberships. Hard to measure from outside"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s05-07",
+          "start": 352.503,
+          "end": 367.673,
+          "narration": "And more retailers are charging shoppers directly. In the NRF survey, 72 percent of merchants said they had started charging for at least one return option in the past 12 months, up from 66 percent the year before.",
+          "visual": "Bars 66% → 72%, synced to the spoken numbers",
+          "on_screen_text": [
+            "Merchants that started charging for at least one return option (past 12 months)",
+            "2024 survey 66%",
+            "2025 survey 72%"
+          ],
+          "claims": [
+            "C12"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s05-08",
+          "start": 368.053,
+          "end": 379.433,
+          "narration": "That can mean a fee on one return method while another stays free, which nudges shoppers toward the option that's cheaper for the retailer. The cost doesn't vanish. It gets routed.",
+          "visual": "Shopper with two routes: mailbox (FEE) vs store (FREE); parcels flow to the free route",
+          "on_screen_text": [
+            "A fee on one method, another stays free",
+            "FEE",
+            "FREE",
+            "The cost doesn't vanish. It gets routed."
+          ],
+          "claims": [
+            "C13"
+          ],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "title": "Where the jacket goes",
+      "chapter": "Where the jacket goes",
+      "music": "neutral",
+      "start": 379.883,
+      "end": 473.501,
+      "duration": 93.618,
+      "component": "src/scenes (registry id s06)",
+      "beats": [
+        {
+          "segment": "s06-01",
+          "start": 380.333,
+          "end": 384.593,
+          "narration": "Back to the jacket. Once it's been inspected, where does it actually go?",
+          "visual": "Inspected jacket with magnifier",
+          "on_screen_text": [
+            "Where does it actually go?",
+            "Possible outcomes. Shares vary by retailer and product."
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s06-02",
+          "start": 384.973,
+          "end": 389.773,
+          "narration": "If it's in sellable condition, it can go back into stock and be sold as new.",
+          "visual": "Branch + large store icon",
+          "on_screen_text": [
+            "Sold as new"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s06-03",
+          "start": 390.153,
+          "end": 397.673,
+          "narration": "If it's been opened or isn't quite perfect, it may be resold as used or open-box, usually at a discount.",
+          "visual": "Branch + discount tag",
+          "on_screen_text": [
+            "Used / open-box",
+            "−%"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s06-04",
+          "start": 398.053,
+          "end": 406.553,
+          "narration": "Some items are repaired first. Others are sold in bulk to liquidators, who move them through discount stores and secondary markets.",
+          "visual": "Two branches: wrench, pallet",
+          "on_screen_text": [
+            "Repaired first",
+            "Liquidated in bulk"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s06-05",
+          "start": 406.933,
+          "end": 420.123,
+          "narration": "A 2025 study in the Journal of Business Logistics noted that more than $800 billion of returned and excess inventory passes through secondary market channels each year.",
+          "visual": "Fact card over dimmed tree",
+          "on_screen_text": [
+            "Secondary markets",
+            "$800B+",
+            "of returned and excess inventory passes through secondary-market channels each year",
+            "Rogers et al., Journal of Business Logistics, 2025"
+          ],
+          "claims": [
+            "C14"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s06-06",
+          "start": 420.503,
+          "end": 426.043,
+          "narration": "Items can also go back to the original seller, get donated, or be recycled.",
+          "visual": "Three more branches",
+          "on_screen_text": [
+            "Back to the seller",
+            "Donated",
+            "Recycled"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s06-07",
+          "start": 426.423,
+          "end": 442.093,
+          "narration": "Amazon, for one, says the vast majority of its returns are resold as new or used, and that items it can't resell may be donated or recycled. That's the company's own account, and it doesn't describe every retailer.",
+          "visual": "Company-statement card",
+          "on_screen_text": [
+            "One company's own account",
+            "Amazon says the vast majority of its returns are resold as new or used",
+            "Items it can't resell may be donated or recycled.",
+            "company statement, not an independent audit · not industry-wide"
+          ],
+          "claims": [
+            "C15"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s06-08",
+          "start": 442.473,
+          "end": 461.843,
+          "narration": "And some returns are destroyed. There's no single figure for the whole industry. A 2024 briefing by the European Environment Agency estimated that in Europe, between 22 and 43 percent of returned clothing bought online may end up destroyed, based on limited data.",
+          "visual": "Red 'Destroyed' branch + EEA range bar 22–43%",
+          "on_screen_text": [
+            "Destroyed",
+            "Europe · online clothing returns",
+            "Share estimated to end up destroyed",
+            "22% 43%",
+            "European Environment Agency briefing, Mar 2024 · estimate based on limited data · not U.S., not all products"
+          ],
+          "claims": [
+            "C16"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s06-09",
+          "start": 462.223,
+          "end": 473.051,
+          "narration": "Since July 2026, the European Union has banned large companies from destroying unsold clothing, accessories, and footwear, with some exceptions.",
+          "visual": "EU rule card",
+          "on_screen_text": [
+            "European Union · since 19 July 2026",
+            "Large companies may not destroy unsold clothing, accessories & footwear",
+            "with some exceptions (e.g. safety, damage)"
+          ],
+          "claims": [
+            "C17"
+          ],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "title": "Why free can still be good business",
+      "chapter": "Why free can still pay off",
+      "music": "neutral",
+      "start": 473.501,
+      "end": 544.881,
+      "duration": 71.38,
+      "component": "src/scenes (registry id s07)",
+      "beats": [
+        {
+          "segment": "s07-01",
+          "start": 473.951,
+          "end": 477.561,
+          "narration": "If returns cost this much, why offer them for free at all?",
+          "visual": "Rocking FREE tag",
+          "on_screen_text": [
+            "Why offer free returns at all?"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s07-02",
+          "start": 477.941,
+          "end": 495.921,
+          "narration": "Because a generous return policy can sell more than it costs. A 2016 review in the Journal of Retailing, which pooled results from 21 studies, found that more lenient return policies increased purchases. They increased returns too, but by less.",
+          "visual": "Two arrows grow when 'purchases' and 'returns' are spoken (qualitative heights)",
+          "on_screen_text": [
+            "Research review · 2016",
+            "More lenient return policies increased purchases",
+            "…and returns, but by less.",
+            "Arrow heights are qualitative, not effect sizes."
+          ],
+          "claims": [
+            "C18"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s07-03",
+          "start": 496.301,
+          "end": 505.321,
+          "narration": "Free returns lower the risk of buying something you can't touch or try on. That builds trust, and trust can turn browsers into buyers.",
+          "visual": "Phone with 'Free returns' + three-step chain",
+          "on_screen_text": [
+            "Risk ↓",
+            "Trust ↑",
+            "Buyers ↑"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s07-04",
+          "start": 505.701,
+          "end": 515.407,
+          "narration": "But there are trade-offs. Lenient policies can encourage bracketing, ordering several sizes and keeping one, and in some cases, outright abuse.",
+          "visual": "Three jacket sizes; S and L fly back",
+          "on_screen_text": [
+            "\"Bracketing\": order several sizes, keep one",
+            "S M L",
+            "…and in some cases, outright abuse"
+          ],
+          "claims": [
+            "C19"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s07-05",
+          "start": 515.787,
+          "end": 525.707,
+          "narration": "So retailers tune the dials: return windows, fees for some methods, exchanges instead of refunds, better size guides, and fraud screening.",
+          "visual": "Five sliders moving",
+          "on_screen_text": [
+            "Retailers tune the dials",
+            "Return window",
+            "Fees for some methods",
+            "Exchanges instead of refunds",
+            "Better size guides",
+            "Fraud screening"
+          ],
+          "claims": [
+            "C20"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s07-06",
+          "start": 526.087,
+          "end": 538.951,
+          "narration": "In the NRF survey, retailers that added return fees reported fewer returns and more exchanges. But many also reported more customer complaints, and some said they lost customers.",
+          "visual": "Upside / downside cards",
+          "on_screen_text": [
+            "Retailers that added return fees reported…",
+            "53% fewer returns overall",
+            "52% more exchanges",
+            "47% more customer complaints",
+            "37% lost customers over fees"
+          ],
+          "claims": [
+            "C21"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s07-07",
+          "start": 539.331,
+          "end": 544.431,
+          "narration": "There's no free lunch here. Just a business decision about which costs are worth paying.",
+          "visual": "Balance with COST and SALES tags",
+          "on_screen_text": [
+            "No free lunch. Just a business decision."
+          ],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "title": "Payoff",
+      "chapter": "So who pays?",
+      "music": "reveal",
+      "start": 544.881,
+      "end": 592.278,
+      "duration": 47.397,
+      "component": "src/scenes (registry id s08)",
+      "beats": [
+        {
+          "segment": "s08-01",
+          "start": 545.331,
+          "end": 547.678,
+          "narration": "So, who really pays for free returns?",
+          "visual": "Title",
+          "on_screen_text": [
+            "So, who really pays?"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s08-02",
+          "start": 548.058,
+          "end": 564.648,
+          "narration": "Sometimes the retailer, out of its margin. Sometimes the seller, through marketplace fees. Sometimes the shopper, through fees on certain return methods, or possibly through prices. And part of the cost shows up as lost value, or waste.",
+          "visual": "RETURN box splits into four payer cards that appear as each is named",
+          "on_screen_text": [
+            "Retailer — out of its margin",
+            "Seller — through marketplace fees",
+            "Shopper — fees on some methods, possibly prices",
+            "Lost value — or waste"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s08-03",
+          "start": 565.028,
+          "end": 573.128,
+          "narration": "What's almost never true is that the cost simply disappears. Someone decides how to absorb it, share it, or pass it along.",
+          "visual": "Flows thicken to all four",
+          "on_screen_text": [
+            "The cost doesn't disappear. Someone decides where it goes."
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s08-04",
+          "start": 573.508,
+          "end": 578.388,
+          "narration": "So the next time you see free returns, read it as: free for you, at that moment.",
+          "visual": "FREE badge gains an asterisk",
+          "on_screen_text": [
+            "FREE*",
+            "* for you, at that moment"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s08-05",
+          "start": 578.768,
+          "end": 585.058,
+          "narration": "What would you trade for an easier return: a higher price, a shorter window, or a trip to the store?",
+          "visual": "Three answer cards appear as spoken",
+          "on_screen_text": [
+            "What would you trade for an easier return?",
+            "A higher price",
+            "A shorter window",
+            "A trip to the store",
+            "Tell us in the comments."
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s08-06",
+          "start": 585.438,
+          "end": 589.778,
+          "narration": "This is Hidden Ledger. The sources for every number are in the description.",
+          "visual": "End card",
+          "on_screen_text": [
+            "HIDDEN LEDGER",
+            "The hidden economics of everyday life",
+            "Sources for every number → in the description"
+          ],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    }
+  ]
+}

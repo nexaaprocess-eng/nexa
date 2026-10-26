@@ -1,0 +1,159 @@
+{
+  "id": "001",
+  "slug": "who-really-pays-for-free-returns",
+  "title": "Who Really Pays for Free Returns?",
+  "channel": "Hidden Ledger",
+  "tagline": "The hidden economics of everyday life",
+  "language": "en-US",
+  "voice": {
+    "voiceId": "am_michael",
+    "speed": 1.0,
+    "lang": "en-us",
+    "pauseBetweenSegments": 0.38,
+    "pauseBetweenScenes": 0.9,
+    "leadIn": 0.6,
+    "tail": 2.5
+  },
+  "lexicon": {
+    "UPS": "U P S",
+    "NRF's": "N R F's",
+    "Hidden Ledger": "Hidden Ledger",
+    "re-tagging": "re-tagging",
+    "open-box": "open box"
+  },
+  "pilot": { "scenes": ["s01", "s02"], "until": "s02-06" },
+  "shorts": [
+    { "from": "s01-01", "to": "s01-06", "title": "Who pays for your free return?" },
+    { "from": "s04-06", "to": "s04-09", "title": "One $100 jacket, one return (illustrative)" }
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "title": "Cold open",
+      "chapter": "A jacket goes back",
+      "music": "intro",
+      "segments": [
+        { "id": "01", "text": "You order a jacket online. It arrives on a Tuesday." },
+        { "id": "02", "text": "By Thursday, you've decided the sleeves are too short." },
+        { "id": "03", "text": "So you send it back. The label is free. The refund shows up a few days later." },
+        { "id": "04", "text": "For you, the story ends there. For the jacket, it's just getting started." },
+        { "id": "05", "text": "It will be scanned, trucked, sorted, inspected, and judged. And every one of those steps costs somebody something." },
+        { "id": "06", "text": "So who actually pays for a free return?" }
+      ]
+    },
+    {
+      "id": "s02",
+      "title": "Why it matters",
+      "chapter": "The scale of returns",
+      "music": "neutral",
+      "segments": [
+        { "id": "01", "text": "Start with the scale." },
+        { "id": "02", "text": "In October 2025, the National Retail Federation and Happy Returns, a returns company owned by UPS, published a report based on two surveys: one of shoppers, one of large American retailers.", "claims": ["C01"] },
+        { "id": "03", "text": "Those retailers estimated that about 15.8 percent of their sales would come back in 2025.", "claims": ["C02"], "duck": true },
+        { "id": "04", "text": "Across the whole industry, the report projected $849.9 billion worth of returned merchandise.", "claims": ["C03"], "duck": true },
+        { "id": "05", "text": "Online, the estimate was higher: about 19.3 percent of online sales.", "claims": ["C04"], "duck": true },
+        { "id": "06", "text": "Keep in mind what those numbers are. They measure the value of goods sent back, not the cost of processing them. And they're projections for the United States, not a final count.", "claims": ["C03"] },
+        { "id": "07", "text": "Shoppers are paying attention. In the same report, 82 percent of consumers said free returns are an important consideration when shopping online.", "claims": ["C05"], "duck": true },
+        { "id": "08", "text": "And 57 percent said they had decided not to shop with a retailer after it started charging for returns.", "claims": ["C06"], "duck": true },
+        { "id": "09", "text": "So retailers are caught between two pressures. Returns are expensive, and making them harder can push customers away." }
+      ]
+    },
+    {
+      "id": "s03",
+      "title": "Reverse logistics",
+      "chapter": "The trip back",
+      "music": "neutral",
+      "segments": [
+        { "id": "01", "text": "Let's follow the jacket. What comes next is one common path, not the only one." },
+        { "id": "02", "text": "Step one: the hand-off. Depending on the store, you might mail it, leave it with a carrier, or bring it to a counter, sometimes without a box or a label." },
+        { "id": "03", "text": "In NRF's survey, more retailers offered box-free, label-free drop-offs in 2025 than a year earlier.", "claims": ["C07"] },
+        { "id": "04", "text": "Step two: consolidation. Instead of shipping every item back on its own, some return networks pool many returns together and ship them in bulk.", "claims": ["C08"] },
+        { "id": "05", "text": "Step three: a warehouse or returns center, where someone opens the package and scans what's inside." },
+        { "id": "06", "text": "Step four: inspection. Is it the right item? Is it damaged? Has it been worn? Are the tags still on?" },
+        { "id": "07", "text": "Step five: a decision. Restock it, discount it, send it somewhere else, or write it off." },
+        { "id": "08", "text": "This backward journey has a name: reverse logistics. And it can be slow. About half of the retailers in the NRF survey said it takes six to ten days to get a returned item back in stock.", "claims": ["C09"], "duck": true },
+        { "id": "09", "text": "All that time, the jacket isn't for sale. And if it's seasonal, it can lose value every week it sits." }
+      ]
+    },
+    {
+      "id": "s04",
+      "title": "The costs nobody sees",
+      "chapter": "The costs nobody sees",
+      "music": "neutral",
+      "segments": [
+        { "id": "01", "text": "So where does the money go? It helps to split the costs into two piles." },
+        { "id": "02", "text": "The first pile is operating costs: money spent moving and handling the item." },
+        { "id": "03", "text": "Return shipping. Labor to receive, open, and inspect. Cleaning, repacking, or re-tagging. Customer service time. Software and fraud checks." },
+        { "id": "04", "text": "The second pile is lost value: what the item itself is no longer worth." },
+        { "id": "05", "text": "A jacket that comes back in perfect shape, while it's still in season, might be resold at full price. One that comes back late, missing tags, or slightly worn may have to be marked down, or sold off in bulk for a fraction of its price." },
+        { "id": "06", "text": "Here's a simple way to picture it. This is an illustrative example, not industry data.", "duck": true },
+        { "id": "07", "text": "Imagine a jacket that sold for $100. Say the return shipping costs the seller $8, handling costs another $6, and because it's now out of season, it resells for $70.", "claims": ["I01"], "duck": true },
+        { "id": "08", "text": "The customer got a full refund. The seller spent $14 to get back an item now worth $30 less. In this example, the seller is down $44 on a single return.", "claims": ["I01"], "duck": true },
+        { "id": "09", "text": "Change any assumption and the answer changes. Real costs depend on the product, the carrier contract, the warehouse, and the condition of the item." },
+        { "id": "10", "text": "There's also fraud. In the NRF survey, retailers that track it estimated that about 9 percent of returns were fraudulent, from empty boxes to swapped items. That's the retailers' own estimate, not an audited number.", "claims": ["C10"], "duck": true }
+      ]
+    },
+    {
+      "id": "s05",
+      "title": "Who absorbs the bill",
+      "chapter": "Who absorbs the bill",
+      "music": "neutral",
+      "segments": [
+        { "id": "01", "text": "So, who pays? The honest answer is: it depends on who's in the chain." },
+        { "id": "02", "text": "Case one: a retailer selling its own products. Here, the retailer typically absorbs the cost of a free return directly, at least at first." },
+        { "id": "03", "text": "Case two: a marketplace with independent sellers. The platform's rules decide how costs are split, and some marketplaces charge sellers fees tied to returns.", "claims": ["C11"] },
+        { "id": "04", "text": "Amazon, for example, has charged returns processing fees on some products sold through its fulfillment service, under rules that vary by category and have changed over time.", "claims": ["C11"] },
+        { "id": "05", "text": "Case three: logistics partners. Carriers and returns companies get paid for their work. They're not absorbing the cost; they're billing for it, under contracts the public rarely sees." },
+        { "id": "06", "text": "Case four: the shopper. Not always through a fee on that return, but potentially through prices, shipping charges, or memberships that help cover returns across all customers. How much that happens varies, and it's hard to measure from the outside." },
+        { "id": "07", "text": "And more retailers are charging shoppers directly. In the NRF survey, 72 percent of merchants said they had started charging for at least one return option in the past 12 months, up from 66 percent the year before.", "claims": ["C12"], "duck": true },
+        { "id": "08", "text": "That can mean a fee on one return method while another stays free, which nudges shoppers toward the option that's cheaper for the retailer. The cost doesn't vanish. It gets routed.", "claims": ["C13"] }
+      ]
+    },
+    {
+      "id": "s06",
+      "title": "Where the jacket goes",
+      "chapter": "Where the jacket goes",
+      "music": "neutral",
+      "segments": [
+        { "id": "01", "text": "Back to the jacket. Once it's been inspected, where does it actually go?" },
+        { "id": "02", "text": "If it's in sellable condition, it can go back into stock and be sold as new." },
+        { "id": "03", "text": "If it's been opened or isn't quite perfect, it may be resold as used or open-box, usually at a discount." },
+        { "id": "04", "text": "Some items are repaired first. Others are sold in bulk to liquidators, who move them through discount stores and secondary markets." },
+        { "id": "05", "text": "A 2025 study in the Journal of Business Logistics noted that more than $800 billion of returned and excess inventory passes through secondary market channels each year.", "claims": ["C14"], "duck": true },
+        { "id": "06", "text": "Items can also go back to the original seller, get donated, or be recycled." },
+        { "id": "07", "text": "Amazon, for one, says the vast majority of its returns are resold as new or used, and that items it can't resell may be donated or recycled. That's the company's own account, and it doesn't describe every retailer.", "claims": ["C15"] },
+        { "id": "08", "text": "And some returns are destroyed. There's no single figure for the whole industry. A 2024 briefing by the European Environment Agency estimated that in Europe, between 22 and 43 percent of returned clothing bought online may end up destroyed, based on limited data.", "claims": ["C16"], "duck": true },
+        { "id": "09", "text": "Since July 2026, the European Union has banned large companies from destroying unsold clothing, accessories, and footwear, with some exceptions.", "claims": ["C17"] }
+      ]
+    },
+    {
+      "id": "s07",
+      "title": "Why free can still be good business",
+      "chapter": "Why free can still pay off",
+      "music": "neutral",
+      "segments": [
+        { "id": "01", "text": "If returns cost this much, why offer them for free at all?" },
+        { "id": "02", "text": "Because a generous return policy can sell more than it costs. A 2016 review in the Journal of Retailing, which pooled results from 21 studies, found that more lenient return policies increased purchases. They increased returns too, but by less.", "claims": ["C18"] },
+        { "id": "03", "text": "Free returns lower the risk of buying something you can't touch or try on. That builds trust, and trust can turn browsers into buyers." },
+        { "id": "04", "text": "But there are trade-offs. Lenient policies can encourage bracketing, ordering several sizes and keeping one, and in some cases, outright abuse.", "claims": ["C19"] },
+        { "id": "05", "text": "So retailers tune the dials: return windows, fees for some methods, exchanges instead of refunds, better size guides, and fraud screening.", "claims": ["C20"] },
+        { "id": "06", "text": "In the NRF survey, retailers that added return fees reported fewer returns and more exchanges. But many also reported more customer complaints, and some said they lost customers.", "claims": ["C21"] },
+        { "id": "07", "text": "There's no free lunch here. Just a business decision about which costs are worth paying." }
+      ]
+    },
+    {
+      "id": "s08",
+      "title": "Payoff",
+      "chapter": "So who pays?",
+      "music": "reveal",
+      "segments": [
+        { "id": "01", "text": "So, who really pays for free returns?" },
+        { "id": "02", "text": "Sometimes the retailer, out of its margin. Sometimes the seller, through marketplace fees. Sometimes the shopper, through fees on certain return methods, or possibly through prices. And part of the cost shows up as lost value, or waste." },
+        { "id": "03", "text": "What's almost never true is that the cost simply disappears. Someone decides how to absorb it, share it, or pass it along." },
+        { "id": "04", "text": "So the next time you see free returns, read it as: free for you, at that moment." },
+        { "id": "05", "text": "What would you trade for an easier return: a higher price, a shorter window, or a trip to the store?" },
+        { "id": "06", "text": "This is Hidden Ledger. The sources for every number are in the description." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7331 @@
+{
+  "episode": "001",
+  "title": "Who Really Pays for Free Returns?",
+  "name": "full",
+  "fps": 30,
+  "duration": 592.278,
+  "durationInFrames": 17769,
+  "voice": "am_michael",
+  "scenes": [
+    {
+      "id": "s01",
+      "title": "Cold open",
+      "chapter": "A jacket goes back",
+      "music": "intro",
+      "start": 0.0,
+      "end": 28.46,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s01-01",
+          "text": "You order a jacket online. It arrives on a Tuesday.",
+          "start": 0.6,
+          "end": 3.97,
+          "duration": 3.37,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              0.6,
+              "You"
+            ],
+            [
+              0.72,
+              "order"
+            ],
+            [
+              0.96,
+              "a"
+            ],
+            [
+              1.12,
+              "jacket"
+            ],
+            [
+              1.36,
+              "online."
+            ],
+            [
+              2.5,
+              "It"
+            ],
+            [
+              2.58,
+              "arrives"
+            ],
+            [
+              2.88,
+              "on"
+            ],
+            [
+              3.22,
+              "a"
+            ],
+            [
+              3.3,
+              "Tuesday."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s01-02",
+          "text": "By Thursday, you've decided the sleeves are too short.",
+          "start": 4.35,
+          "end": 7.54,
+          "duration": 3.19,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              4.35,
+              "By"
+            ],
+            [
+              4.47,
+              "Thursday,"
+            ],
+            [
+              5.29,
+              "you've"
+            ],
+            [
+              5.61,
+              "decided"
+            ],
+            [
+              6.07,
+              "the"
+            ],
+            [
+              6.25,
+              "sleeves"
+            ],
+            [
+              6.43,
+              "are"
+            ],
+            [
+              6.83,
+              "too"
+            ],
+            [
+              7.01,
+              "short."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s01-03",
+          "text": "So you send it back. The label is free. The refund shows up a few days later.",
+          "start": 7.92,
+          "end": 13.05,
+          "duration": 5.13,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              7.92,
+              "So"
+            ],
+            [
+              8.06,
+              "you"
+            ],
+            [
+              8.18,
+              "send"
+            ],
+            [
+              8.38,
+              "it"
+            ],
+            [
+              8.54,
+              "back."
+            ],
+            [
+              9.36,
+              "The"
+            ],
+            [
+              9.36,
+              "label"
+            ],
+            [
+              9.54,
+              "is"
+            ],
+            [
+              9.88,
+              "free."
+            ],
+            [
+              10.92,
+              "The"
+            ],
+            [
+              10.94,
+              "refund"
+            ],
+            [
+              11.12,
+              "shows"
+            ],
+            [
+              11.66,
+              "up"
+            ],
+            [
+              11.92,
+              "a"
+            ],
+            [
+              12.04,
+              "few"
+            ],
+            [
+              12.22,
+              "days"
+            ],
+            [
+              12.44,
+              "later."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s01-04",
+          "text": "For you, the story ends there. For the jacket, it's just getting started.",
+          "start": 13.43,
+          "end": 17.74,
+          "duration": 4.31,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              13.43,
+              "For"
+            ],
+            [
+              13.55,
+              "you,"
+            ],
+            [
+              13.97,
+              "the"
+            ],
+            [
+              14.01,
+              "story"
+            ],
+            [
+              14.35,
+              "ends"
+            ],
+            [
+              14.69,
+              "there."
+            ],
+            [
+              15.65,
+              "For"
+            ],
+            [
+              15.67,
+              "the"
+            ],
+            [
+              15.77,
+              "jacket,"
+            ],
+            [
+              16.13,
+              "it's"
+            ],
+            [
+              16.57,
+              "just"
+            ],
+            [
+              16.75,
+              "getting"
+            ],
+            [
+              16.95,
+              "started."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s01-05",
+          "text": "It will be scanned, trucked, sorted, inspected, and judged. And every one of those steps costs somebody something.",
+          "start": 18.12,
+          "end": 25.31,
+          "duration": 7.19,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              18.12,
+              "It"
+            ],
+            [
+              18.2,
+              "will"
+            ],
+            [
+              18.3,
+              "be"
+            ],
+            [
+              18.42,
+              "scanned,"
+            ],
+            [
+              19.22,
+              "trucked,"
+            ],
+            [
+              20.14,
+              "sorted,"
+            ],
+            [
+              20.56,
+              "inspected"
+            ],
+            [
+              20.92,
+              "and"
+            ],
+            [
+              21.34,
+              "judged,"
+            ],
+            [
+              22.44,
+              "and"
+            ],
+            [
+              22.58,
+              "every"
+            ],
+            [
+              22.86,
+              "one"
+            ],
+            [
+              23.08,
+              "of"
+            ],
+            [
+              23.16,
+              "those"
+            ],
+            [
+              23.32,
+              "steps"
+            ],
+            [
+              23.66,
+              "costs"
+            ],
+            [
+              24.0,
+              "somebody"
+            ],
+            [
+              24.48,
+              "something."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s01-06",
+          "text": "So who actually pays for a free return?",
+          "start": 25.69,
+          "end": 28.01,
+          "duration": 2.32,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              25.69,
+              "so"
+            ],
+            [
+              25.83,
+              "who"
+            ],
+            [
+              25.95,
+              "actually"
+            ],
+            [
+              26.27,
+              "pays"
+            ],
+            [
+              26.71,
+              "for"
+            ],
+            [
+              27.05,
+              "free"
+            ],
+            [
+              27.25,
+              "return."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "title": "Why it matters",
+      "chapter": "The scale of returns",
+      "music": "neutral",
+      "start": 28.46,
+      "end": 106.694,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s02-01",
+          "text": "Start with the scale.",
+          "start": 28.91,
+          "end": 30.12,
+          "duration": 1.21,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              28.91,
+              "Start"
+            ],
+            [
+              29.19,
+              "with"
+            ],
+            [
+              29.35,
+              "the"
+            ],
+            [
+              29.47,
+              "scale."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s02-02",
+          "text": "In October 2025, the National Retail Federation and Happy Returns, a returns company owned by UPS, published a report based on two surveys: one of shoppers, one of large American retailers.",
+          "start": 30.5,
+          "end": 45.903,
+          "duration": 15.403,
+          "claims": [
+            "C01"
+          ],
+          "duck": false,
+          "words": [
+            [
+              30.5,
+              "In"
+            ],
+            [
+              30.58,
+              "October"
+            ],
+            [
+              30.92,
+              "2025,"
+            ],
+            [
+              32.58,
+              "the"
+            ],
+            [
+              32.76,
+              "National"
+            ],
+            [
+              33.16,
+              "Retail"
+            ],
+            [
+              33.46,
+              "Federation"
+            ],
+            [
+              34.3,
+              "and"
+            ],
+            [
+              34.6,
+              "Happy"
+            ],
+            [
+              34.86,
+              "Returns,"
+            ],
+            [
+              36.1,
+              "a"
+            ],
+            [
+              36.34,
+              "returns"
+            ],
+            [
+              36.62,
+              "company"
+            ],
+            [
+              37.28,
+              "owned"
+            ],
+            [
+              37.6,
+              "by"
+            ],
+            [
+              37.9,
+              "UPS,"
+            ],
+            [
+              39.24,
+              "published"
+            ],
+            [
+              39.6,
+              "a"
+            ],
+            [
+              39.82,
+              "report"
+            ],
+            [
+              40.12,
+              "based"
+            ],
+            [
+              40.48,
+              "on"
+            ],
+            [
+              40.78,
+              "two"
+            ],
+            [
+              40.98,
+              "surveys,"
+            ],
+            [
+              42.28,
+              "one"
+            ],
+            [
+              42.42,
+              "of"
+            ],
+            [
+              42.54,
+              "shoppers,"
+            ],
+            [
+              43.58,
+              "one"
+            ],
+            [
+              43.72,
+              "of"
+            ],
+            [
+              43.84,
+              "large"
+            ],
+            [
+              44.12,
+              "American"
+            ],
+            [
+              44.88,
+              "retailers."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s02-03",
+          "text": "Those retailers estimated that about 15.8 percent of their sales would come back in 2025.",
+          "start": 46.283,
+          "end": 53.583,
+          "duration": 7.3,
+          "claims": [
+            "C02"
+          ],
+          "duck": true,
+          "words": [
+            [
+              46.283,
+              "Those"
+            ],
+            [
+              46.503,
+              "retailers"
+            ],
+            [
+              46.823,
+              "estimated"
+            ],
+            [
+              47.643,
+              "that"
+            ],
+            [
+              48.143,
+              "about"
+            ],
+            [
+              48.363,
+              "15"
+            ],
+            [
+              49.023,
+              ".8"
+            ],
+            [
+              49.883,
+              "%"
+            ],
+            [
+              50.263,
+              "of"
+            ],
+            [
+              50.463,
+              "their"
+            ],
+            [
+              50.583,
+              "sales"
+            ],
+            [
+              51.063,
+              "would"
+            ],
+            [
+              51.523,
+              "come"
+            ],
+            [
+              51.723,
+              "back"
+            ],
+            [
+              52.043,
+              "in"
+            ],
+            [
+              52.483,
+              "2025."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s02-04",
+          "text": "Across the whole industry, the report projected $849.9 billion worth of returned merchandise.",
+          "start": 53.963,
+          "end": 62.583,
+          "duration": 8.62,
+          "claims": [
+            "C03"
+          ],
+          "duck": true,
+          "words": [
+            [
+              53.963,
+              "Across"
+            ],
+            [
+              54.143,
+              "the"
+            ],
+            [
+              54.423,
+              "whole"
+            ],
+            [
+              54.583,
+              "industry,"
+            ],
+            [
+              55.883,
+              "the"
+            ],
+            [
+              55.903,
+              "report"
+            ],
+            [
+              56.203,
+              "projected"
+            ],
+            [
+              56.743,
+              "$849"
+            ],
+            [
+              57.943,
+              ".9"
+            ],
+            [
+              59.163,
+              "billion"
+            ],
+            [
+              59.543,
+              "worth"
+            ],
+            [
+              60.403,
+              "of"
+            ],
+            [
+              60.943,
+              "returned"
+            ],
+            [
+              61.303,
+              "merchandise."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s02-05",
+          "text": "Online, the estimate was higher: about 19.3 percent of online sales.",
+          "start": 62.963,
+          "end": 68.553,
+          "duration": 5.59,
+          "claims": [
+            "C04"
+          ],
+          "duck": true,
+          "words": [
+            [
+              62.963,
+              "Online"
+            ],
+            [
+              63.303,
+              "the"
+            ],
+            [
+              63.643,
+              "estimate"
+            ],
+            [
+              63.923,
+              "was"
+            ],
+            [
+              64.283,
+              "higher,"
+            ],
+            [
+              65.483,
+              "about"
+            ],
+            [
+              65.483,
+              "19"
+            ],
+            [
+              65.863,
+              ".3"
+            ],
+            [
+              66.783,
+              "%"
+            ],
+            [
+              67.163,
+              "of"
+            ],
+            [
+              67.323,
+              "online"
+            ],
+            [
+              67.523,
+              "sales."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s02-06",
+          "text": "Keep in mind what those numbers are. They measure the value of goods sent back, not the cost of processing them. And they're projections for the United States, not a final count.",
+          "start": 68.933,
+          "end": 80.273,
+          "duration": 11.34,
+          "claims": [
+            "C03"
+          ],
+          "duck": false,
+          "words": [
+            [
+              68.933,
+              "Keep"
+            ],
+            [
+              69.073,
+              "in"
+            ],
+            [
+              69.253,
+              "mind"
+            ],
+            [
+              69.493,
+              "what"
+            ],
+            [
+              69.853,
+              "those"
+            ],
+            [
+              70.093,
+              "numbers"
+            ],
+            [
+              70.473,
+              "are."
+            ],
+            [
+              71.513,
+              "They"
+            ],
+            [
+              71.553,
+              "measure"
+            ],
+            [
+              71.833,
+              "the"
+            ],
+            [
+              72.033,
+              "value"
+            ],
+            [
+              72.473,
+              "of"
+            ],
+            [
+              72.713,
+              "goods"
+            ],
+            [
+              72.973,
+              "sent"
+            ],
+            [
+              73.353,
+              "back,"
+            ],
+            [
+              74.133,
+              "not"
+            ],
+            [
+              74.273,
+              "the"
+            ],
+            [
+              74.433,
+              "cost"
+            ],
+            [
+              74.733,
+              "of"
+            ],
+            [
+              74.933,
+              "processing"
+            ],
+            [
+              75.453,
+              "them,"
+            ],
+            [
+              76.253,
+              "and"
+            ],
+            [
+              76.553,
+              "their"
+            ],
+            [
+              76.673,
+              "projections"
+            ],
+            [
+              77.153,
+              "for"
+            ],
+            [
+              77.633,
+              "the"
+            ],
+            [
+              77.753,
+              "United"
+            ],
+            [
+              78.013,
+              "States"
+            ],
+            [
+              78.493,
+              "not"
+            ],
+            [
+              79.013,
+              "a"
+            ],
+            [
+              79.153,
+              "final"
+            ],
+            [
+              79.493,
+              "count."
+            ]
+          ]
+        },
+        {
+          "id": "07",
+          "key": "s02-07",
+          "text": "Shoppers are paying attention. In the same report, 82 percent of consumers said free returns are an important consideration when shopping online.",
+          "start": 80.653,
+          "end": 90.803,
+          "duration": 10.15,
+          "claims": [
+            "C05"
+          ],
+          "duck": true,
+          "words": [
+            [
+              80.653,
+              "Shoppers"
+            ],
+            [
+              81.033,
+              "are"
+            ],
+            [
+              81.333,
+              "paying"
+            ],
+            [
+              81.633,
+              "attention."
+            ],
+            [
+              83.113,
+              "In"
+            ],
+            [
+              83.113,
+              "the"
+            ],
+            [
+              83.213,
+              "same"
+            ],
+            [
+              83.433,
+              "report,"
+            ],
+            [
+              84.333,
+              "82"
+            ],
+            [
+              84.733,
+              "%"
+            ],
+            [
+              85.293,
+              "of"
+            ],
+            [
+              85.433,
+              "consumers"
+            ],
+            [
+              85.793,
+              "said"
+            ],
+            [
+              86.273,
+              "free"
+            ],
+            [
+              86.533,
+              "returns"
+            ],
+            [
+              87.053,
+              "are"
+            ],
+            [
+              87.693,
+              "an"
+            ],
+            [
+              88.033,
+              "important"
+            ],
+            [
+              88.433,
+              "consideration"
+            ],
+            [
+              88.973,
+              "when"
+            ],
+            [
+              89.613,
+              "shopping"
+            ],
+            [
+              89.913,
+              "online."
+            ]
+          ]
+        },
+        {
+          "id": "08",
+          "key": "s02-08",
+          "text": "And 57 percent said they had decided not to shop with a retailer after it started charging for returns.",
+          "start": 91.183,
+          "end": 98.184,
+          "duration": 7.001,
+          "claims": [
+            "C06"
+          ],
+          "duck": true,
+          "words": [
+            [
+              91.183,
+              "and"
+            ],
+            [
+              91.283,
+              "57"
+            ],
+            [
+              91.583,
+              "%"
+            ],
+            [
+              92.383,
+              "said"
+            ],
+            [
+              92.723,
+              "they"
+            ],
+            [
+              92.923,
+              "had"
+            ],
+            [
+              93.083,
+              "decided"
+            ],
+            [
+              93.423,
+              "not"
+            ],
+            [
+              93.903,
+              "to"
+            ],
+            [
+              94.143,
+              "shop"
+            ],
+            [
+              94.363,
+              "with"
+            ],
+            [
+              94.643,
+              "a"
+            ],
+            [
+              94.723,
+              "retailer"
+            ],
+            [
+              95.143,
+              "after"
+            ],
+            [
+              96.043,
+              "it"
+            ],
+            [
+              96.183,
+              "started"
+            ],
+            [
+              96.383,
+              "charging"
+            ],
+            [
+              96.863,
+              "for"
+            ],
+            [
+              97.283,
+              "returns."
+            ]
+          ]
+        },
+        {
+          "id": "09",
+          "key": "s02-09",
+          "text": "So retailers are caught between two pressures. Returns are expensive, and making them harder can push customers away.",
+          "start": 98.564,
+          "end": 106.244,
+          "duration": 7.68,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              98.564,
+              "So"
+            ],
+            [
+              98.724,
+              "retailers"
+            ],
+            [
+              98.944,
+              "are"
+            ],
+            [
+              99.604,
+              "caught"
+            ],
+            [
+              99.824,
+              "between"
+            ],
+            [
+              100.204,
+              "two"
+            ],
+            [
+              100.544,
+              "pressures."
+            ],
+            [
+              101.964,
+              "Returns"
+            ],
+            [
+              101.964,
+              "are"
+            ],
+            [
+              102.404,
+              "expensive"
+            ],
+            [
+              102.844,
+              "and"
+            ],
+            [
+              103.664,
+              "making"
+            ],
+            [
+              103.864,
+              "them"
+            ],
+            [
+              104.124,
+              "harder"
+            ],
+            [
+              104.464,
+              "can"
+            ],
+            [
+              104.744,
+              "push"
+            ],
+            [
+              105.024,
+              "customers"
+            ],
+            [
+              105.404,
+              "away."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "title": "Reverse logistics",
+      "chapter": "The trip back",
+      "music": "neutral",
+      "start": 106.694,
+      "end": 181.08,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s03-01",
+          "text": "Let's follow the jacket. What comes next is one common path, not the only one.",
+          "start": 107.144,
+          "end": 112.384,
+          "duration": 5.24,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              107.144,
+              "Let's"
+            ],
+            [
+              107.384,
+              "follow"
+            ],
+            [
+              107.744,
+              "the"
+            ],
+            [
+              107.924,
+              "jacket."
+            ],
+            [
+              108.984,
+              "What"
+            ],
+            [
+              109.024,
+              "comes"
+            ],
+            [
+              109.204,
+              "next"
+            ],
+            [
+              109.564,
+              "is"
+            ],
+            [
+              109.844,
+              "one"
+            ],
+            [
+              110.124,
+              "common"
+            ],
+            [
+              110.444,
+              "path,"
+            ],
+            [
+              111.324,
+              "not"
+            ],
+            [
+              111.504,
+              "the"
+            ],
+            [
+              111.644,
+              "only"
+            ],
+            [
+              111.964,
+              "one."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s03-02",
+          "text": "Step one: the hand-off. Depending on the store, you might mail it, leave it with a carrier, or bring it to a counter, sometimes without a box or a label.",
+          "start": 112.764,
+          "end": 122.404,
+          "duration": 9.64,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              112.764,
+              "Step"
+            ],
+            [
+              113.004,
+              "1."
+            ],
+            [
+              113.424,
+              "The"
+            ],
+            [
+              113.464,
+              "Hand"
+            ],
+            [
+              113.684,
+              "Off."
+            ],
+            [
+              114.724,
+              "Depending"
+            ],
+            [
+              114.844,
+              "on"
+            ],
+            [
+              115.284,
+              "the"
+            ],
+            [
+              115.404,
+              "store,"
+            ],
+            [
+              115.924,
+              "you"
+            ],
+            [
+              115.984,
+              "might"
+            ],
+            [
+              116.164,
+              "mail"
+            ],
+            [
+              116.444,
+              "it,"
+            ],
+            [
+              117.044,
+              "leave"
+            ],
+            [
+              117.324,
+              "it"
+            ],
+            [
+              117.484,
+              "with"
+            ],
+            [
+              117.584,
+              "a"
+            ],
+            [
+              117.664,
+              "carrier,"
+            ],
+            [
+              118.464,
+              "or"
+            ],
+            [
+              118.564,
+              "bring"
+            ],
+            [
+              118.864,
+              "it"
+            ],
+            [
+              119.004,
+              "to"
+            ],
+            [
+              119.124,
+              "a"
+            ],
+            [
+              119.224,
+              "counter,"
+            ],
+            [
+              119.964,
+              "sometimes"
+            ],
+            [
+              120.404,
+              "without"
+            ],
+            [
+              120.864,
+              "a"
+            ],
+            [
+              121.084,
+              "box"
+            ],
+            [
+              121.404,
+              "or"
+            ],
+            [
+              121.744,
+              "a"
+            ],
+            [
+              121.864,
+              "label."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s03-03",
+          "text": "In NRF's survey, more retailers offered box-free, label-free drop-offs in 2025 than a year earlier.",
+          "start": 122.784,
+          "end": 130.884,
+          "duration": 8.1,
+          "claims": [
+            "C07"
+          ],
+          "duck": false,
+          "words": [
+            [
+              122.784,
+              "In"
+            ],
+            [
+              122.904,
+              "NRF"
+            ],
+            [
+              123.624,
+              "survey,"
+            ],
+            [
+              124.564,
+              "more"
+            ],
+            [
+              124.804,
+              "retailers"
+            ],
+            [
+              125.224,
+              "offered"
+            ],
+            [
+              125.864,
+              "box"
+            ],
+            [
+              126.144,
+              "-free,"
+            ],
+            [
+              126.844,
+              "label"
+            ],
+            [
+              127.104,
+              "-free"
+            ],
+            [
+              127.464,
+              "drop"
+            ],
+            [
+              127.724,
+              "-offs"
+            ],
+            [
+              128.164,
+              "in"
+            ],
+            [
+              128.404,
+              "2025"
+            ],
+            [
+              128.844,
+              "than"
+            ],
+            [
+              130.044,
+              "a"
+            ],
+            [
+              130.144,
+              "year"
+            ],
+            [
+              130.304,
+              "earlier."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s03-04",
+          "text": "Step two: consolidation. Instead of shipping every item back on its own, some return networks pool many returns together and ship them in bulk.",
+          "start": 131.264,
+          "end": 140.834,
+          "duration": 9.57,
+          "claims": [
+            "C08"
+          ],
+          "duck": false,
+          "words": [
+            [
+              131.264,
+              "Step"
+            ],
+            [
+              131.464,
+              "2."
+            ],
+            [
+              132.524,
+              "Consolidation."
+            ],
+            [
+              134.004,
+              "Instead"
+            ],
+            [
+              134.004,
+              "of"
+            ],
+            [
+              134.164,
+              "shipping"
+            ],
+            [
+              134.404,
+              "every"
+            ],
+            [
+              134.764,
+              "item"
+            ],
+            [
+              135.204,
+              "back"
+            ],
+            [
+              135.484,
+              "on"
+            ],
+            [
+              135.684,
+              "its"
+            ],
+            [
+              135.824,
+              "own,"
+            ],
+            [
+              136.564,
+              "some"
+            ],
+            [
+              136.824,
+              "return"
+            ],
+            [
+              137.184,
+              "networks"
+            ],
+            [
+              137.684,
+              "pool"
+            ],
+            [
+              138.084,
+              "many"
+            ],
+            [
+              138.384,
+              "returns"
+            ],
+            [
+              138.724,
+              "together"
+            ],
+            [
+              139.204,
+              "and"
+            ],
+            [
+              139.604,
+              "ship"
+            ],
+            [
+              139.864,
+              "them"
+            ],
+            [
+              140.124,
+              "in"
+            ],
+            [
+              140.264,
+              "bulk."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s03-05",
+          "text": "Step three: a warehouse or returns center, where someone opens the package and scans what's inside.",
+          "start": 141.214,
+          "end": 147.574,
+          "duration": 6.36,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              141.214,
+              "Step"
+            ],
+            [
+              141.374,
+              "3."
+            ],
+            [
+              142.334,
+              "A"
+            ],
+            [
+              142.354,
+              "warehouse"
+            ],
+            [
+              142.634,
+              "or"
+            ],
+            [
+              143.134,
+              "return"
+            ],
+            [
+              143.294,
+              "center,"
+            ],
+            [
+              144.434,
+              "where"
+            ],
+            [
+              144.574,
+              "someone"
+            ],
+            [
+              144.874,
+              "opens"
+            ],
+            [
+              145.314,
+              "the"
+            ],
+            [
+              145.554,
+              "package"
+            ],
+            [
+              145.874,
+              "and"
+            ],
+            [
+              146.194,
+              "scans"
+            ],
+            [
+              146.414,
+              "what's"
+            ],
+            [
+              146.954,
+              "inside."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s03-06",
+          "text": "Step four: inspection. Is it the right item? Is it damaged? Has it been worn? Are the tags still on?",
+          "start": 147.954,
+          "end": 154.404,
+          "duration": 6.45,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              147.954,
+              "Step"
+            ],
+            [
+              148.134,
+              "4"
+            ],
+            [
+              148.474,
+              "inspection"
+            ],
+            [
+              149.054,
+              "is"
+            ],
+            [
+              149.774,
+              "that"
+            ],
+            [
+              149.854,
+              "the"
+            ],
+            [
+              149.954,
+              "right"
+            ],
+            [
+              150.134,
+              "item"
+            ],
+            [
+              150.614,
+              "is"
+            ],
+            [
+              150.854,
+              "it"
+            ],
+            [
+              150.954,
+              "damaged?"
+            ],
+            [
+              152.094,
+              "Has"
+            ],
+            [
+              152.154,
+              "it"
+            ],
+            [
+              152.234,
+              "been"
+            ],
+            [
+              152.374,
+              "worn"
+            ],
+            [
+              152.714,
+              "or"
+            ],
+            [
+              153.114,
+              "the"
+            ],
+            [
+              153.214,
+              "tag"
+            ],
+            [
+              153.414,
+              "still"
+            ],
+            [
+              153.894,
+              "on?"
+            ]
+          ]
+        },
+        {
+          "id": "07",
+          "key": "s03-07",
+          "text": "Step five: a decision. Restock it, discount it, send it somewhere else, or write it off.",
+          "start": 154.784,
+          "end": 160.294,
+          "duration": 5.51,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              154.784,
+              "Step"
+            ],
+            [
+              154.944,
+              "5."
+            ],
+            [
+              155.524,
+              "A"
+            ],
+            [
+              155.544,
+              "decision."
+            ],
+            [
+              156.744,
+              "Restock"
+            ],
+            [
+              157.064,
+              "it,"
+            ],
+            [
+              157.284,
+              "discount"
+            ],
+            [
+              157.644,
+              "it,"
+            ],
+            [
+              158.224,
+              "send"
+            ],
+            [
+              158.324,
+              "it"
+            ],
+            [
+              158.464,
+              "somewhere"
+            ],
+            [
+              158.684,
+              "else"
+            ],
+            [
+              159.104,
+              "or"
+            ],
+            [
+              159.404,
+              "write"
+            ],
+            [
+              159.684,
+              "it"
+            ],
+            [
+              159.864,
+              "off."
+            ]
+          ]
+        },
+        {
+          "id": "08",
+          "key": "s03-08",
+          "text": "This backward journey has a name: reverse logistics. And it can be slow. About half of the retailers in the NRF survey said it takes six to ten days to get a returned item back in stock.",
+          "start": 160.674,
+          "end": 173.594,
+          "duration": 12.92,
+          "claims": [
+            "C09"
+          ],
+          "duck": true,
+          "words": [
+            [
+              160.674,
+              "This"
+            ],
+            [
+              160.794,
+              "backward"
+            ],
+            [
+              161.054,
+              "journey"
+            ],
+            [
+              161.574,
+              "has"
+            ],
+            [
+              161.954,
+              "a"
+            ],
+            [
+              162.094,
+              "name,"
+            ],
+            [
+              163.174,
+              "reverse"
+            ],
+            [
+              163.174,
+              "logistics,"
+            ],
+            [
+              164.614,
+              "and"
+            ],
+            [
+              164.714,
+              "it"
+            ],
+            [
+              164.814,
+              "can"
+            ],
+            [
+              164.934,
+              "be"
+            ],
+            [
+              165.114,
+              "slow."
+            ],
+            [
+              166.474,
+              "About"
+            ],
+            [
+              166.474,
+              "half"
+            ],
+            [
+              166.814,
+              "of"
+            ],
+            [
+              167.014,
+              "the"
+            ],
+            [
+              167.114,
+              "retailers"
+            ],
+            [
+              167.434,
+              "in"
+            ],
+            [
+              167.934,
+              "the"
+            ],
+            [
+              168.054,
+              "NRF"
+            ],
+            [
+              168.634,
+              "survey"
+            ],
+            [
+              168.954,
+              "said"
+            ],
+            [
+              169.414,
+              "it"
+            ],
+            [
+              169.554,
+              "takes"
+            ],
+            [
+              169.794,
+              "six"
+            ],
+            [
+              170.194,
+              "to"
+            ],
+            [
+              170.434,
+              "10"
+            ],
+            [
+              170.674,
+              "days"
+            ],
+            [
+              170.974,
+              "to"
+            ],
+            [
+              171.294,
+              "get"
+            ],
+            [
+              171.434,
+              "a"
+            ],
+            [
+              171.534,
+              "returned"
+            ],
+            [
+              171.854,
+              "item"
+            ],
+            [
+              172.294,
+              "back"
+            ],
+            [
+              172.674,
+              "in"
+            ],
+            [
+              172.914,
+              "stock."
+            ]
+          ]
+        },
+        {
+          "id": "09",
+          "key": "s03-09",
+          "text": "All that time, the jacket isn't for sale. And if it's seasonal, it can lose value every week it sits.",
+          "start": 173.974,
+          "end": 180.63,
+          "duration": 6.656,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              173.974,
+              "All"
+            ],
+            [
+              174.174,
+              "that"
+            ],
+            [
+              174.354,
+              "time"
+            ],
+            [
+              174.874,
+              "the"
+            ],
+            [
+              175.034,
+              "jacket"
+            ],
+            [
+              175.334,
+              "isn't"
+            ],
+            [
+              175.814,
+              "for"
+            ],
+            [
+              175.934,
+              "sale,"
+            ],
+            [
+              176.954,
+              "and"
+            ],
+            [
+              177.034,
+              "if"
+            ],
+            [
+              177.174,
+              "it's"
+            ],
+            [
+              177.354,
+              "seasonal,"
+            ],
+            [
+              178.294,
+              "it"
+            ],
+            [
+              178.354,
+              "can"
+            ],
+            [
+              178.474,
+              "lose"
+            ],
+            [
+              178.734,
+              "value"
+            ],
+            [
+              179.254,
+              "every"
+            ],
+            [
+              179.594,
+              "week"
+            ],
+            [
+              179.874,
+              "it"
+            ],
+            [
+              180.034,
+              "sits."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "title": "The costs nobody sees",
+      "chapter": "The costs nobody sees",
+      "music": "neutral",
+      "start": 181.08,
+      "end": 283.583,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s04-01",
+          "text": "So where does the money go? It helps to split the costs into two piles.",
+          "start": 181.53,
+          "end": 185.96,
+          "duration": 4.43,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              181.53,
+              "So"
+            ],
+            [
+              181.67,
+              "where"
+            ],
+            [
+              181.83,
+              "does"
+            ],
+            [
+              182.01,
+              "the"
+            ],
+            [
+              182.17,
+              "money"
+            ],
+            [
+              182.31,
+              "go?"
+            ],
+            [
+              183.33,
+              "It"
+            ],
+            [
+              183.35,
+              "helps"
+            ],
+            [
+              183.53,
+              "to"
+            ],
+            [
+              183.79,
+              "split"
+            ],
+            [
+              184.01,
+              "the"
+            ],
+            [
+              184.23,
+              "cost"
+            ],
+            [
+              184.53,
+              "into"
+            ],
+            [
+              184.87,
+              "two"
+            ],
+            [
+              185.09,
+              "piles."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s04-02",
+          "text": "The first pile is operating costs: money spent moving and handling the item.",
+          "start": 186.34,
+          "end": 191.16,
+          "duration": 4.82,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              186.34,
+              "The"
+            ],
+            [
+              186.42,
+              "first"
+            ],
+            [
+              186.64,
+              "pile"
+            ],
+            [
+              187.02,
+              "is"
+            ],
+            [
+              187.3,
+              "operating"
+            ],
+            [
+              187.74,
+              "costs,"
+            ],
+            [
+              188.86,
+              "money"
+            ],
+            [
+              189.1,
+              "spent"
+            ],
+            [
+              189.42,
+              "moving"
+            ],
+            [
+              189.9,
+              "and"
+            ],
+            [
+              190.08,
+              "handling"
+            ],
+            [
+              190.52,
+              "the"
+            ],
+            [
+              190.7,
+              "item."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s04-03",
+          "text": "Return shipping. Labor to receive, open, and inspect. Cleaning, repacking, or re-tagging. Customer service time. Software and fraud checks.",
+          "start": 191.54,
+          "end": 201.47,
+          "duration": 9.93,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              191.54,
+              "Return"
+            ],
+            [
+              191.82,
+              "shipping,"
+            ],
+            [
+              192.96,
+              "labor"
+            ],
+            [
+              193.04,
+              "to"
+            ],
+            [
+              193.28,
+              "receive,"
+            ],
+            [
+              193.7,
+              "open,"
+            ],
+            [
+              194.44,
+              "and"
+            ],
+            [
+              194.46,
+              "inspect,"
+            ],
+            [
+              195.32,
+              "cleaning,"
+            ],
+            [
+              196.1,
+              "repacking,"
+            ],
+            [
+              196.8,
+              "or"
+            ],
+            [
+              196.88,
+              "re"
+            ],
+            [
+              197.08,
+              "-tagging,"
+            ],
+            [
+              198.0,
+              "customer"
+            ],
+            [
+              198.3,
+              "service"
+            ],
+            [
+              198.78,
+              "time,"
+            ],
+            [
+              199.62,
+              "software,"
+            ],
+            [
+              200.4,
+              "and"
+            ],
+            [
+              200.44,
+              "fraud"
+            ],
+            [
+              200.66,
+              "checks."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s04-04",
+          "text": "The second pile is lost value: what the item itself is no longer worth.",
+          "start": 201.85,
+          "end": 206.7,
+          "duration": 4.85,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              201.85,
+              "The"
+            ],
+            [
+              201.93,
+              "second"
+            ],
+            [
+              202.23,
+              "pile"
+            ],
+            [
+              202.55,
+              "is"
+            ],
+            [
+              202.79,
+              "lost"
+            ],
+            [
+              203.01,
+              "value,"
+            ],
+            [
+              204.21,
+              "what"
+            ],
+            [
+              204.37,
+              "the"
+            ],
+            [
+              204.49,
+              "item"
+            ],
+            [
+              204.73,
+              "itself"
+            ],
+            [
+              205.25,
+              "is"
+            ],
+            [
+              205.55,
+              "no"
+            ],
+            [
+              205.77,
+              "longer"
+            ],
+            [
+              206.11,
+              "worth."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s04-05",
+          "text": "A jacket that comes back in perfect shape, while it's still in season, might be resold at full price. One that comes back late, missing tags, or slightly worn may have to be marked down, or sold off in bulk for a fraction of its price.",
+          "start": 207.08,
+          "end": 222.893,
+          "duration": 15.813,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              207.08,
+              "a"
+            ],
+            [
+              207.18,
+              "jacket"
+            ],
+            [
+              207.58,
+              "that"
+            ],
+            [
+              207.82,
+              "comes"
+            ],
+            [
+              208.06,
+              "back"
+            ],
+            [
+              208.34,
+              "in"
+            ],
+            [
+              208.52,
+              "perfect"
+            ],
+            [
+              208.78,
+              "shape"
+            ],
+            [
+              209.3,
+              "while"
+            ],
+            [
+              209.92,
+              "it's"
+            ],
+            [
+              210.12,
+              "still"
+            ],
+            [
+              210.32,
+              "in"
+            ],
+            [
+              210.48,
+              "season"
+            ],
+            [
+              210.9,
+              "might"
+            ],
+            [
+              211.48,
+              "be"
+            ],
+            [
+              211.66,
+              "resold"
+            ],
+            [
+              212.12,
+              "at"
+            ],
+            [
+              212.4,
+              "full"
+            ],
+            [
+              212.6,
+              "price."
+            ],
+            [
+              213.92,
+              "One"
+            ],
+            [
+              214.04,
+              "that"
+            ],
+            [
+              214.24,
+              "comes"
+            ],
+            [
+              214.48,
+              "back"
+            ],
+            [
+              214.78,
+              "late,"
+            ],
+            [
+              215.52,
+              "missing"
+            ],
+            [
+              215.72,
+              "tags"
+            ],
+            [
+              216.12,
+              "or"
+            ],
+            [
+              216.78,
+              "slightly"
+            ],
+            [
+              217.46,
+              "worn"
+            ],
+            [
+              217.96,
+              "may"
+            ],
+            [
+              218.26,
+              "have"
+            ],
+            [
+              218.44,
+              "to"
+            ],
+            [
+              218.56,
+              "be"
+            ],
+            [
+              218.66,
+              "marked"
+            ],
+            [
+              218.9,
+              "down"
+            ],
+            [
+              219.3,
+              "or"
+            ],
+            [
+              220.02,
+              "sold"
+            ],
+            [
+              220.34,
+              "off"
+            ],
+            [
+              220.66,
+              "in"
+            ],
+            [
+              220.84,
+              "bulk"
+            ],
+            [
+              221.1,
+              "for"
+            ],
+            [
+              221.38,
+              "a"
+            ],
+            [
+              221.46,
+              "fraction"
+            ],
+            [
+              221.76,
+              "of"
+            ],
+            [
+              222.04,
+              "its"
+            ],
+            [
+              222.16,
+              "price."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s04-06",
+          "text": "Here's a simple way to picture it. This is an illustrative example, not industry data.",
+          "start": 223.273,
+          "end": 229.073,
+          "duration": 5.8,
+          "claims": [],
+          "duck": true,
+          "words": [
+            [
+              223.273,
+              "Here's"
+            ],
+            [
+              223.513,
+              "a"
+            ],
+            [
+              223.613,
+              "simple"
+            ],
+            [
+              223.853,
+              "way"
+            ],
+            [
+              224.233,
+              "to"
+            ],
+            [
+              224.393,
+              "picture"
+            ],
+            [
+              224.713,
+              "it."
+            ],
+            [
+              225.573,
+              "This"
+            ],
+            [
+              225.693,
+              "is"
+            ],
+            [
+              225.873,
+              "an"
+            ],
+            [
+              226.033,
+              "illustrative"
+            ],
+            [
+              226.713,
+              "example,"
+            ],
+            [
+              227.713,
+              "not"
+            ],
+            [
+              227.853,
+              "industry"
+            ],
+            [
+              228.433,
+              "data."
+            ]
+          ]
+        },
+        {
+          "id": "07",
+          "key": "s04-07",
+          "text": "Imagine a jacket that sold for $100. Say the return shipping costs the seller $8, handling costs another $6, and because it's now out of season, it resells for $70.",
+          "start": 229.453,
+          "end": 243.673,
+          "duration": 14.22,
+          "claims": [
+            "I01"
+          ],
+          "duck": true,
+          "words": [
+            [
+              229.453,
+              "Imagine"
+            ],
+            [
+              229.893,
+              "a"
+            ],
+            [
+              230.073,
+              "jacket"
+            ],
+            [
+              230.513,
+              "that"
+            ],
+            [
+              230.813,
+              "sold"
+            ],
+            [
+              231.053,
+              "for"
+            ],
+            [
+              231.413,
+              "$100."
+            ],
+            [
+              232.993,
+              "Say"
+            ],
+            [
+              233.413,
+              "the"
+            ],
+            [
+              233.533,
+              "return"
+            ],
+            [
+              233.773,
+              "shipping"
+            ],
+            [
+              234.333,
+              "costs"
+            ],
+            [
+              234.713,
+              "the"
+            ],
+            [
+              235.033,
+              "seller"
+            ],
+            [
+              235.273,
+              "$8,"
+            ],
+            [
+              237.133,
+              "handling"
+            ],
+            [
+              237.133,
+              "costs"
+            ],
+            [
+              237.433,
+              "another"
+            ],
+            [
+              237.853,
+              "$6,"
+            ],
+            [
+              239.293,
+              "and"
+            ],
+            [
+              239.513,
+              "because"
+            ],
+            [
+              239.733,
+              "it's"
+            ],
+            [
+              240.033,
+              "now"
+            ],
+            [
+              240.253,
+              "out"
+            ],
+            [
+              240.553,
+              "of"
+            ],
+            [
+              240.633,
+              "season,"
+            ],
+            [
+              241.553,
+              "it"
+            ],
+            [
+              241.633,
+              "resells"
+            ],
+            [
+              242.313,
+              "for"
+            ],
+            [
+              242.453,
+              "$70."
+            ]
+          ]
+        },
+        {
+          "id": "08",
+          "key": "s04-08",
+          "text": "The customer got a full refund. The seller spent $14 to get back an item now worth $30 less. In this example, the seller is down $44 on a single return.",
+          "start": 244.053,
+          "end": 257.073,
+          "duration": 13.02,
+          "claims": [
+            "I01"
+          ],
+          "duck": true,
+          "words": [
+            [
+              244.053,
+              "The"
+            ],
+            [
+              244.133,
+              "customer"
+            ],
+            [
+              244.493,
+              "got"
+            ],
+            [
+              244.873,
+              "a"
+            ],
+            [
+              244.993,
+              "full"
+            ],
+            [
+              245.233,
+              "refund."
+            ],
+            [
+              246.613,
+              "The"
+            ],
+            [
+              246.653,
+              "seller"
+            ],
+            [
+              246.833,
+              "spent"
+            ],
+            [
+              247.233,
+              "$14"
+            ],
+            [
+              247.773,
+              "to"
+            ],
+            [
+              248.473,
+              "get"
+            ],
+            [
+              248.613,
+              "back"
+            ],
+            [
+              248.853,
+              "an"
+            ],
+            [
+              249.033,
+              "item"
+            ],
+            [
+              249.273,
+              "now"
+            ],
+            [
+              249.653,
+              "worth"
+            ],
+            [
+              250.013,
+              "$30"
+            ],
+            [
+              250.693,
+              "less."
+            ],
+            [
+              252.213,
+              "In"
+            ],
+            [
+              252.273,
+              "this"
+            ],
+            [
+              252.413,
+              "example,"
+            ],
+            [
+              253.413,
+              "the"
+            ],
+            [
+              253.513,
+              "seller"
+            ],
+            [
+              253.813,
+              "is"
+            ],
+            [
+              254.113,
+              "down"
+            ],
+            [
+              254.293,
+              "$44"
+            ],
+            [
+              254.973,
+              "on"
+            ],
+            [
+              255.933,
+              "a"
+            ],
+            [
+              256.033,
+              "single"
+            ],
+            [
+              256.253,
+              "return."
+            ]
+          ]
+        },
+        {
+          "id": "09",
+          "key": "s04-09",
+          "text": "Change any assumption and the answer changes. Real costs depend on the product, the carrier contract, the warehouse, and the condition of the item.",
+          "start": 257.453,
+          "end": 267.013,
+          "duration": 9.56,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              257.453,
+              "Change"
+            ],
+            [
+              257.633,
+              "any"
+            ],
+            [
+              257.953,
+              "assumption"
+            ],
+            [
+              258.413,
+              "and"
+            ],
+            [
+              258.773,
+              "the"
+            ],
+            [
+              258.893,
+              "answer"
+            ],
+            [
+              259.233,
+              "changes."
+            ],
+            [
+              260.553,
+              "Real"
+            ],
+            [
+              260.693,
+              "costs"
+            ],
+            [
+              261.173,
+              "depend"
+            ],
+            [
+              261.593,
+              "on"
+            ],
+            [
+              262.013,
+              "the"
+            ],
+            [
+              262.093,
+              "product,"
+            ],
+            [
+              262.993,
+              "the"
+            ],
+            [
+              263.013,
+              "carrier"
+            ],
+            [
+              263.333,
+              "contract,"
+            ],
+            [
+              264.433,
+              "the"
+            ],
+            [
+              264.493,
+              "warehouse,"
+            ],
+            [
+              265.373,
+              "and"
+            ],
+            [
+              265.573,
+              "the"
+            ],
+            [
+              265.693,
+              "condition"
+            ],
+            [
+              266.033,
+              "of"
+            ],
+            [
+              266.353,
+              "the"
+            ],
+            [
+              266.473,
+              "item."
+            ]
+          ]
+        },
+        {
+          "id": "10",
+          "key": "s04-10",
+          "text": "There's also fraud. In the NRF survey, retailers that track it estimated that about 9 percent of returns were fraudulent, from empty boxes to swapped items. That's the retailers' own estimate, not an audited number.",
+          "start": 267.393,
+          "end": 283.133,
+          "duration": 15.74,
+          "claims": [
+            "C10"
+          ],
+          "duck": true,
+          "words": [
+            [
+              267.393,
+              "There's"
+            ],
+            [
+              267.593,
+              "also"
+            ],
+            [
+              267.913,
+              "fraud."
+            ],
+            [
+              269.133,
+              "In"
+            ],
+            [
+              269.153,
+              "the"
+            ],
+            [
+              269.273,
+              "NRF"
+            ],
+            [
+              269.853,
+              "survey,"
+            ],
+            [
+              270.673,
+              "retailers"
+            ],
+            [
+              271.093,
+              "that"
+            ],
+            [
+              271.493,
+              "track"
+            ],
+            [
+              271.833,
+              "it"
+            ],
+            [
+              272.113,
+              "estimated"
+            ],
+            [
+              272.633,
+              "that"
+            ],
+            [
+              273.093,
+              "about"
+            ],
+            [
+              273.293,
+              "9"
+            ],
+            [
+              273.873,
+              "%"
+            ],
+            [
+              274.313,
+              "of"
+            ],
+            [
+              274.493,
+              "returns"
+            ],
+            [
+              274.813,
+              "were"
+            ],
+            [
+              275.253,
+              "fraudulent,"
+            ],
+            [
+              276.493,
+              "from"
+            ],
+            [
+              276.553,
+              "empty"
+            ],
+            [
+              276.913,
+              "boxes"
+            ],
+            [
+              277.453,
+              "to"
+            ],
+            [
+              277.733,
+              "swapped"
+            ],
+            [
+              278.033,
+              "items."
+            ],
+            [
+              279.413,
+              "That's"
+            ],
+            [
+              279.613,
+              "the"
+            ],
+            [
+              279.733,
+              "retailer's"
+            ],
+            [
+              280.453,
+              "own"
+            ],
+            [
+              280.653,
+              "estimate,"
+            ],
+            [
+              281.613,
+              "not"
+            ],
+            [
+              281.953,
+              "an"
+            ],
+            [
+              282.093,
+              "audited"
+            ],
+            [
+              282.573,
+              "number."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "title": "Who absorbs the bill",
+      "chapter": "Who absorbs the bill",
+      "music": "neutral",
+      "start": 283.583,
+      "end": 379.883,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s05-01",
+          "text": "So, who pays? The honest answer is: it depends on who's in the chain.",
+          "start": 284.033,
+          "end": 288.593,
+          "duration": 4.56,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              284.033,
+              "So"
+            ],
+            [
+              284.233,
+              "who"
+            ],
+            [
+              284.413,
+              "pays?"
+            ],
+            [
+              285.453,
+              "The"
+            ],
+            [
+              285.473,
+              "honest"
+            ],
+            [
+              285.693,
+              "answer"
+            ],
+            [
+              286.253,
+              "is,"
+            ],
+            [
+              286.753,
+              "it"
+            ],
+            [
+              286.893,
+              "depends"
+            ],
+            [
+              287.073,
+              "on"
+            ],
+            [
+              287.373,
+              "who's"
+            ],
+            [
+              287.773,
+              "in"
+            ],
+            [
+              287.893,
+              "the"
+            ],
+            [
+              287.973,
+              "chain."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s05-02",
+          "text": "Case one: a retailer selling its own products. Here, the retailer typically absorbs the cost of a free return directly, at least at first.",
+          "start": 288.973,
+          "end": 298.563,
+          "duration": 9.59,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              288.973,
+              "Case"
+            ],
+            [
+              289.113,
+              "1."
+            ],
+            [
+              289.853,
+              "A"
+            ],
+            [
+              290.073,
+              "retailer"
+            ],
+            [
+              290.393,
+              "selling"
+            ],
+            [
+              290.873,
+              "its"
+            ],
+            [
+              291.233,
+              "own"
+            ],
+            [
+              291.373,
+              "products."
+            ],
+            [
+              292.893,
+              "Here,"
+            ],
+            [
+              293.153,
+              "the"
+            ],
+            [
+              293.393,
+              "retailer"
+            ],
+            [
+              293.773,
+              "typically"
+            ],
+            [
+              294.333,
+              "absorbs"
+            ],
+            [
+              294.693,
+              "the"
+            ],
+            [
+              295.093,
+              "cost"
+            ],
+            [
+              295.413,
+              "of"
+            ],
+            [
+              295.633,
+              "a"
+            ],
+            [
+              295.693,
+              "free"
+            ],
+            [
+              295.913,
+              "return"
+            ],
+            [
+              296.353,
+              "directly,"
+            ],
+            [
+              297.493,
+              "at"
+            ],
+            [
+              297.573,
+              "least"
+            ],
+            [
+              297.733,
+              "at"
+            ],
+            [
+              297.953,
+              "first."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s05-03",
+          "text": "Case two: a marketplace with independent sellers. The platform's rules decide how costs are split, and some marketplaces charge sellers fees tied to returns.",
+          "start": 298.943,
+          "end": 310.093,
+          "duration": 11.15,
+          "claims": [
+            "C11"
+          ],
+          "duck": false,
+          "words": [
+            [
+              298.943,
+              "Case"
+            ],
+            [
+              299.083,
+              "two,"
+            ],
+            [
+              299.903,
+              "a"
+            ],
+            [
+              300.103,
+              "marketplace"
+            ],
+            [
+              300.403,
+              "with"
+            ],
+            [
+              300.943,
+              "independent"
+            ],
+            [
+              301.223,
+              "sellers."
+            ],
+            [
+              302.823,
+              "The"
+            ],
+            [
+              302.863,
+              "platform's"
+            ],
+            [
+              303.503,
+              "rules"
+            ],
+            [
+              303.763,
+              "decide"
+            ],
+            [
+              304.163,
+              "how"
+            ],
+            [
+              304.643,
+              "costs"
+            ],
+            [
+              304.903,
+              "are"
+            ],
+            [
+              305.263,
+              "split"
+            ],
+            [
+              305.783,
+              "and"
+            ],
+            [
+              306.163,
+              "some"
+            ],
+            [
+              306.343,
+              "marketplaces"
+            ],
+            [
+              307.123,
+              "charge"
+            ],
+            [
+              307.523,
+              "sellers'"
+            ],
+            [
+              308.383,
+              "fees"
+            ],
+            [
+              308.463,
+              "tied"
+            ],
+            [
+              308.923,
+              "to"
+            ],
+            [
+              309.223,
+              "returns."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s05-04",
+          "text": "Amazon, for example, has charged returns processing fees on some products sold through its fulfillment service, under rules that vary by category and have changed over time.",
+          "start": 310.473,
+          "end": 322.673,
+          "duration": 12.2,
+          "claims": [
+            "C11"
+          ],
+          "duck": false,
+          "words": [
+            [
+              310.473,
+              "Amazon,"
+            ],
+            [
+              311.213,
+              "for"
+            ],
+            [
+              311.333,
+              "example,"
+            ],
+            [
+              312.233,
+              "has"
+            ],
+            [
+              312.353,
+              "charged"
+            ],
+            [
+              312.813,
+              "returns"
+            ],
+            [
+              313.193,
+              "processing"
+            ],
+            [
+              314.093,
+              "fees"
+            ],
+            [
+              314.513,
+              "on"
+            ],
+            [
+              314.933,
+              "some"
+            ],
+            [
+              315.153,
+              "products"
+            ],
+            [
+              315.613,
+              "sold"
+            ],
+            [
+              316.013,
+              "through"
+            ],
+            [
+              316.413,
+              "its"
+            ],
+            [
+              316.633,
+              "fulfillment"
+            ],
+            [
+              316.973,
+              "service,"
+            ],
+            [
+              318.453,
+              "under"
+            ],
+            [
+              318.473,
+              "rules"
+            ],
+            [
+              318.933,
+              "that"
+            ],
+            [
+              319.273,
+              "vary"
+            ],
+            [
+              319.513,
+              "by"
+            ],
+            [
+              319.873,
+              "category"
+            ],
+            [
+              320.393,
+              "and"
+            ],
+            [
+              321.053,
+              "have"
+            ],
+            [
+              321.233,
+              "changed"
+            ],
+            [
+              321.653,
+              "over"
+            ],
+            [
+              322.073,
+              "time."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s05-05",
+          "text": "Case three: logistics partners. Carriers and returns companies get paid for their work. They're not absorbing the cost; they're billing for it, under contracts the public rarely sees.",
+          "start": 323.053,
+          "end": 335.123,
+          "duration": 12.07,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              323.053,
+              "Case"
+            ],
+            [
+              323.193,
+              "3,"
+            ],
+            [
+              324.353,
+              "logistics"
+            ],
+            [
+              324.353,
+              "partners."
+            ],
+            [
+              325.833,
+              "Carriers"
+            ],
+            [
+              326.313,
+              "and"
+            ],
+            [
+              326.553,
+              "returns"
+            ],
+            [
+              326.753,
+              "companies"
+            ],
+            [
+              327.473,
+              "get"
+            ],
+            [
+              327.913,
+              "paid"
+            ],
+            [
+              328.153,
+              "for"
+            ],
+            [
+              328.453,
+              "their"
+            ],
+            [
+              328.613,
+              "work."
+            ],
+            [
+              329.473,
+              "They're"
+            ],
+            [
+              329.633,
+              "not"
+            ],
+            [
+              329.813,
+              "absorbing"
+            ],
+            [
+              330.213,
+              "the"
+            ],
+            [
+              330.613,
+              "cost."
+            ],
+            [
+              331.553,
+              "They're"
+            ],
+            [
+              331.613,
+              "billing"
+            ],
+            [
+              331.893,
+              "for"
+            ],
+            [
+              332.293,
+              "it"
+            ],
+            [
+              332.453,
+              "under"
+            ],
+            [
+              332.633,
+              "contracts"
+            ],
+            [
+              333.193,
+              "the"
+            ],
+            [
+              333.553,
+              "public"
+            ],
+            [
+              333.813,
+              "rarely"
+            ],
+            [
+              334.173,
+              "sees."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s05-06",
+          "text": "Case four: the shopper. Not always through a fee on that return, but potentially through prices, shipping charges, or memberships that help cover returns across all customers. How much that happens varies, and it's hard to measure from the outside.",
+          "start": 335.503,
+          "end": 352.123,
+          "duration": 16.62,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              335.503,
+              "Case"
+            ],
+            [
+              335.663,
+              "four,"
+            ],
+            [
+              336.443,
+              "the"
+            ],
+            [
+              336.623,
+              "shopper."
+            ],
+            [
+              337.863,
+              "Not"
+            ],
+            [
+              337.863,
+              "always"
+            ],
+            [
+              338.283,
+              "through"
+            ],
+            [
+              338.583,
+              "a"
+            ],
+            [
+              338.743,
+              "fee"
+            ],
+            [
+              339.003,
+              "on"
+            ],
+            [
+              339.263,
+              "that"
+            ],
+            [
+              339.443,
+              "return,"
+            ],
+            [
+              340.163,
+              "but"
+            ],
+            [
+              340.203,
+              "potentially"
+            ],
+            [
+              340.623,
+              "through"
+            ],
+            [
+              341.103,
+              "prices,"
+            ],
+            [
+              342.263,
+              "shipping"
+            ],
+            [
+              342.543,
+              "charges,"
+            ],
+            [
+              343.563,
+              "or"
+            ],
+            [
+              343.603,
+              "memberships"
+            ],
+            [
+              344.363,
+              "that"
+            ],
+            [
+              344.603,
+              "help"
+            ],
+            [
+              344.783,
+              "cover"
+            ],
+            [
+              345.143,
+              "returns"
+            ],
+            [
+              345.763,
+              "across"
+            ],
+            [
+              346.103,
+              "all"
+            ],
+            [
+              346.523,
+              "customers."
+            ],
+            [
+              347.983,
+              "How"
+            ],
+            [
+              348.083,
+              "much"
+            ],
+            [
+              348.303,
+              "that"
+            ],
+            [
+              348.543,
+              "happens"
+            ],
+            [
+              348.883,
+              "varies,"
+            ],
+            [
+              349.663,
+              "and"
+            ],
+            [
+              350.003,
+              "it's"
+            ],
+            [
+              350.143,
+              "hard"
+            ],
+            [
+              350.443,
+              "to"
+            ],
+            [
+              350.643,
+              "measure"
+            ],
+            [
+              350.903,
+              "from"
+            ],
+            [
+              351.223,
+              "the"
+            ],
+            [
+              351.363,
+              "outside."
+            ]
+          ]
+        },
+        {
+          "id": "07",
+          "key": "s05-07",
+          "text": "And more retailers are charging shoppers directly. In the NRF survey, 72 percent of merchants said they had started charging for at least one return option in the past 12 months, up from 66 percent the year before.",
+          "start": 352.503,
+          "end": 367.673,
+          "duration": 15.17,
+          "claims": [
+            "C12"
+          ],
+          "duck": true,
+          "words": [
+            [
+              352.503,
+              "and"
+            ],
+            [
+              352.603,
+              "more"
+            ],
+            [
+              352.783,
+              "retailers"
+            ],
+            [
+              353.183,
+              "are"
+            ],
+            [
+              353.703,
+              "charging"
+            ],
+            [
+              354.163,
+              "shoppers"
+            ],
+            [
+              354.603,
+              "directly."
+            ],
+            [
+              356.323,
+              "In"
+            ],
+            [
+              356.323,
+              "the"
+            ],
+            [
+              356.423,
+              "NRF"
+            ],
+            [
+              357.023,
+              "survey,"
+            ],
+            [
+              357.863,
+              "72"
+            ],
+            [
+              358.443,
+              "%"
+            ],
+            [
+              358.963,
+              "of"
+            ],
+            [
+              359.143,
+              "merchants"
+            ],
+            [
+              359.343,
+              "said"
+            ],
+            [
+              359.883,
+              "they"
+            ],
+            [
+              360.103,
+              "had"
+            ],
+            [
+              360.243,
+              "started"
+            ],
+            [
+              360.503,
+              "charging"
+            ],
+            [
+              361.023,
+              "for"
+            ],
+            [
+              361.403,
+              "at"
+            ],
+            [
+              361.563,
+              "least"
+            ],
+            [
+              361.743,
+              "one"
+            ],
+            [
+              362.163,
+              "return"
+            ],
+            [
+              362.523,
+              "option"
+            ],
+            [
+              363.043,
+              "in"
+            ],
+            [
+              363.423,
+              "the"
+            ],
+            [
+              363.503,
+              "past"
+            ],
+            [
+              363.763,
+              "12"
+            ],
+            [
+              364.223,
+              "months,"
+            ],
+            [
+              365.143,
+              "up"
+            ],
+            [
+              365.283,
+              "from"
+            ],
+            [
+              365.503,
+              "66"
+            ],
+            [
+              365.883,
+              "%"
+            ],
+            [
+              366.623,
+              "the"
+            ],
+            [
+              366.863,
+              "year"
+            ],
+            [
+              367.043,
+              "before."
+            ]
+          ]
+        },
+        {
+          "id": "08",
+          "key": "s05-08",
+          "text": "That can mean a fee on one return method while another stays free, which nudges shoppers toward the option that's cheaper for the retailer. The cost doesn't vanish. It gets routed.",
+          "start": 368.053,
+          "end": 379.433,
+          "duration": 11.38,
+          "claims": [
+            "C13"
+          ],
+          "duck": false,
+          "words": [
+            [
+              368.053,
+              "That"
+            ],
+            [
+              368.173,
+              "can"
+            ],
+            [
+              368.333,
+              "mean"
+            ],
+            [
+              368.513,
+              "a"
+            ],
+            [
+              368.633,
+              "fee"
+            ],
+            [
+              368.913,
+              "on"
+            ],
+            [
+              369.253,
+              "one"
+            ],
+            [
+              369.493,
+              "return"
+            ],
+            [
+              369.713,
+              "method"
+            ],
+            [
+              370.373,
+              "while"
+            ],
+            [
+              370.613,
+              "another"
+            ],
+            [
+              370.913,
+              "stays"
+            ],
+            [
+              371.273,
+              "free,"
+            ],
+            [
+              372.253,
+              "which"
+            ],
+            [
+              372.393,
+              "nudges"
+            ],
+            [
+              372.873,
+              "shoppers"
+            ],
+            [
+              373.213,
+              "toward"
+            ],
+            [
+              373.753,
+              "the"
+            ],
+            [
+              374.013,
+              "option"
+            ],
+            [
+              374.333,
+              "that's"
+            ],
+            [
+              374.773,
+              "cheaper"
+            ],
+            [
+              375.013,
+              "for"
+            ],
+            [
+              375.393,
+              "the"
+            ],
+            [
+              375.473,
+              "retailer."
+            ],
+            [
+              376.713,
+              "The"
+            ],
+            [
+              376.773,
+              "cost"
+            ],
+            [
+              377.033,
+              "doesn't"
+            ],
+            [
+              377.573,
+              "vanish."
+            ],
+            [
+              378.573,
+              "It"
+            ],
+            [
+              378.653,
+              "gets"
+            ],
+            [
+              378.813,
+              "routed."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "title": "Where the jacket goes",
+      "chapter": "Where the jacket goes",
+      "music": "neutral",
+      "start": 379.883,
+      "end": 473.501,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s06-01",
+          "text": "Back to the jacket. Once it's been inspected, where does it actually go?",
+          "start": 380.333,
+          "end": 384.593,
+          "duration": 4.26,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              380.333,
+              "Back"
+            ],
+            [
+              380.493,
+              "to"
+            ],
+            [
+              380.653,
+              "the"
+            ],
+            [
+              380.753,
+              "jacket,"
+            ],
+            [
+              381.673,
+              "once"
+            ],
+            [
+              381.873,
+              "it's"
+            ],
+            [
+              382.133,
+              "been"
+            ],
+            [
+              382.273,
+              "inspected,"
+            ],
+            [
+              383.153,
+              "where"
+            ],
+            [
+              383.253,
+              "does"
+            ],
+            [
+              383.413,
+              "it"
+            ],
+            [
+              383.533,
+              "actually"
+            ],
+            [
+              383.853,
+              "go?"
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s06-02",
+          "text": "If it's in sellable condition, it can go back into stock and be sold as new.",
+          "start": 384.973,
+          "end": 389.773,
+          "duration": 4.8,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              384.973,
+              "If"
+            ],
+            [
+              385.133,
+              "it's"
+            ],
+            [
+              385.333,
+              "in"
+            ],
+            [
+              385.473,
+              "sellable"
+            ],
+            [
+              385.993,
+              "condition,"
+            ],
+            [
+              387.113,
+              "it"
+            ],
+            [
+              387.193,
+              "can"
+            ],
+            [
+              387.333,
+              "go"
+            ],
+            [
+              387.513,
+              "back"
+            ],
+            [
+              387.753,
+              "into"
+            ],
+            [
+              387.973,
+              "stock"
+            ],
+            [
+              388.393,
+              "and"
+            ],
+            [
+              388.713,
+              "be"
+            ],
+            [
+              388.813,
+              "sold"
+            ],
+            [
+              389.093,
+              "as"
+            ],
+            [
+              389.333,
+              "new."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s06-03",
+          "text": "If it's been opened or isn't quite perfect, it may be resold as used or open-box, usually at a discount.",
+          "start": 390.153,
+          "end": 397.673,
+          "duration": 7.52,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              390.153,
+              "If"
+            ],
+            [
+              390.273,
+              "it's"
+            ],
+            [
+              390.433,
+              "been"
+            ],
+            [
+              390.553,
+              "opened"
+            ],
+            [
+              390.873,
+              "or"
+            ],
+            [
+              391.253,
+              "isn't"
+            ],
+            [
+              391.573,
+              "quite"
+            ],
+            [
+              391.813,
+              "perfect,"
+            ],
+            [
+              392.953,
+              "it"
+            ],
+            [
+              393.013,
+              "may"
+            ],
+            [
+              393.133,
+              "be"
+            ],
+            [
+              393.273,
+              "resold"
+            ],
+            [
+              393.713,
+              "as"
+            ],
+            [
+              394.013,
+              "used"
+            ],
+            [
+              394.393,
+              "or"
+            ],
+            [
+              394.713,
+              "opened"
+            ],
+            [
+              395.113,
+              "box,"
+            ],
+            [
+              396.013,
+              "usually"
+            ],
+            [
+              396.553,
+              "at"
+            ],
+            [
+              396.893,
+              "a"
+            ],
+            [
+              396.973,
+              "discount."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s06-04",
+          "text": "Some items are repaired first. Others are sold in bulk to liquidators, who move them through discount stores and secondary markets.",
+          "start": 398.053,
+          "end": 406.553,
+          "duration": 8.5,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              398.053,
+              "Some"
+            ],
+            [
+              398.233,
+              "items"
+            ],
+            [
+              398.553,
+              "are"
+            ],
+            [
+              398.933,
+              "repaired"
+            ],
+            [
+              399.253,
+              "first,"
+            ],
+            [
+              400.453,
+              "others"
+            ],
+            [
+              400.713,
+              "are"
+            ],
+            [
+              400.953,
+              "sold"
+            ],
+            [
+              401.313,
+              "in"
+            ],
+            [
+              401.493,
+              "bulk"
+            ],
+            [
+              401.753,
+              "to"
+            ],
+            [
+              401.993,
+              "liquidators"
+            ],
+            [
+              402.573,
+              "who"
+            ],
+            [
+              403.253,
+              "move"
+            ],
+            [
+              403.453,
+              "them"
+            ],
+            [
+              403.733,
+              "through"
+            ],
+            [
+              403.993,
+              "discount"
+            ],
+            [
+              404.333,
+              "stores"
+            ],
+            [
+              404.933,
+              "and"
+            ],
+            [
+              405.253,
+              "secondary"
+            ],
+            [
+              405.613,
+              "markets."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s06-05",
+          "text": "A 2025 study in the Journal of Business Logistics noted that more than $800 billion of returned and excess inventory passes through secondary market channels each year.",
+          "start": 406.933,
+          "end": 420.123,
+          "duration": 13.19,
+          "claims": [
+            "C14"
+          ],
+          "duck": true,
+          "words": [
+            [
+              406.933,
+              "A"
+            ],
+            [
+              407.013,
+              "2025"
+            ],
+            [
+              407.373,
+              "study"
+            ],
+            [
+              408.413,
+              "in"
+            ],
+            [
+              408.793,
+              "the"
+            ],
+            [
+              408.893,
+              "Journal"
+            ],
+            [
+              409.233,
+              "of"
+            ],
+            [
+              409.533,
+              "Business"
+            ],
+            [
+              409.813,
+              "Logistics"
+            ],
+            [
+              410.513,
+              "noted"
+            ],
+            [
+              411.373,
+              "that"
+            ],
+            [
+              411.733,
+              "more"
+            ],
+            [
+              412.053,
+              "than"
+            ],
+            [
+              412.353,
+              "$800"
+            ],
+            [
+              412.773,
+              "billion"
+            ],
+            [
+              413.513,
+              "of"
+            ],
+            [
+              414.393,
+              "returned"
+            ],
+            [
+              414.793,
+              "and"
+            ],
+            [
+              415.193,
+              "excess"
+            ],
+            [
+              415.593,
+              "inventory"
+            ],
+            [
+              416.453,
+              "passes"
+            ],
+            [
+              417.353,
+              "through"
+            ],
+            [
+              417.793,
+              "secondary"
+            ],
+            [
+              418.233,
+              "market"
+            ],
+            [
+              418.713,
+              "channels"
+            ],
+            [
+              419.193,
+              "each"
+            ],
+            [
+              419.513,
+              "year."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s06-06",
+          "text": "Items can also go back to the original seller, get donated, or be recycled.",
+          "start": 420.503,
+          "end": 426.043,
+          "duration": 5.54,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              420.503,
+              "Items"
+            ],
+            [
+              420.803,
+              "can"
+            ],
+            [
+              421.083,
+              "also"
+            ],
+            [
+              421.463,
+              "go"
+            ],
+            [
+              421.723,
+              "back"
+            ],
+            [
+              421.983,
+              "to"
+            ],
+            [
+              422.183,
+              "the"
+            ],
+            [
+              422.303,
+              "original"
+            ],
+            [
+              422.543,
+              "seller,"
+            ],
+            [
+              423.723,
+              "get"
+            ],
+            [
+              423.803,
+              "donated,"
+            ],
+            [
+              424.763,
+              "or"
+            ],
+            [
+              425.003,
+              "be"
+            ],
+            [
+              425.183,
+              "recycled."
+            ]
+          ]
+        },
+        {
+          "id": "07",
+          "key": "s06-07",
+          "text": "Amazon, for one, says the vast majority of its returns are resold as new or used, and that items it can't resell may be donated or recycled. That's the company's own account, and it doesn't describe every retailer.",
+          "start": 426.423,
+          "end": 442.093,
+          "duration": 15.67,
+          "claims": [
+            "C15"
+          ],
+          "duck": false,
+          "words": [
+            [
+              426.423,
+              "Amazon,"
+            ],
+            [
+              427.203,
+              "for"
+            ],
+            [
+              427.343,
+              "one,"
+            ],
+            [
+              427.883,
+              "says"
+            ],
+            [
+              428.223,
+              "the"
+            ],
+            [
+              428.403,
+              "vast"
+            ],
+            [
+              428.643,
+              "majority"
+            ],
+            [
+              429.523,
+              "of"
+            ],
+            [
+              429.683,
+              "its"
+            ],
+            [
+              429.843,
+              "returns"
+            ],
+            [
+              430.303,
+              "are"
+            ],
+            [
+              430.643,
+              "resold"
+            ],
+            [
+              431.183,
+              "as"
+            ],
+            [
+              431.563,
+              "new"
+            ],
+            [
+              431.823,
+              "or"
+            ],
+            [
+              432.223,
+              "used,"
+            ],
+            [
+              433.383,
+              "and"
+            ],
+            [
+              433.463,
+              "that"
+            ],
+            [
+              433.583,
+              "items"
+            ],
+            [
+              433.903,
+              "it"
+            ],
+            [
+              434.223,
+              "can't"
+            ],
+            [
+              434.643,
+              "resell"
+            ],
+            [
+              435.203,
+              "may"
+            ],
+            [
+              435.363,
+              "be"
+            ],
+            [
+              435.483,
+              "donated"
+            ],
+            [
+              435.883,
+              "or"
+            ],
+            [
+              436.463,
+              "recycled."
+            ],
+            [
+              437.863,
+              "That's"
+            ],
+            [
+              438.103,
+              "the"
+            ],
+            [
+              438.203,
+              "company's"
+            ],
+            [
+              438.763,
+              "own"
+            ],
+            [
+              438.943,
+              "account,"
+            ],
+            [
+              439.863,
+              "and"
+            ],
+            [
+              440.003,
+              "it"
+            ],
+            [
+              440.083,
+              "doesn't"
+            ],
+            [
+              440.383,
+              "describe"
+            ],
+            [
+              440.683,
+              "every"
+            ],
+            [
+              441.263,
+              "retailer."
+            ]
+          ]
+        },
+        {
+          "id": "08",
+          "key": "s06-08",
+          "text": "And some returns are destroyed. There's no single figure for the whole industry. A 2024 briefing by the European Environment Agency estimated that in Europe, between 22 and 43 percent of returned clothing bought online may end up destroyed, based on limited data.",
+          "start": 442.473,
+          "end": 461.843,
+          "duration": 19.37,
+          "claims": [
+            "C16"
+          ],
+          "duck": true,
+          "words": [
+            [
+              442.473,
+              "and"
+            ],
+            [
+              442.573,
+              "some"
+            ],
+            [
+              442.753,
+              "returns"
+            ],
+            [
+              443.113,
+              "are"
+            ],
+            [
+              443.573,
+              "destroyed."
+            ],
+            [
+              444.953,
+              "There's"
+            ],
+            [
+              445.073,
+              "no"
+            ],
+            [
+              445.253,
+              "single"
+            ],
+            [
+              445.553,
+              "figure"
+            ],
+            [
+              446.113,
+              "for"
+            ],
+            [
+              446.353,
+              "the"
+            ],
+            [
+              446.453,
+              "whole"
+            ],
+            [
+              446.673,
+              "industry."
+            ],
+            [
+              448.153,
+              "A"
+            ],
+            [
+              448.173,
+              "2024"
+            ],
+            [
+              448.613,
+              "briefing"
+            ],
+            [
+              449.333,
+              "by"
+            ],
+            [
+              449.753,
+              "the"
+            ],
+            [
+              449.913,
+              "European"
+            ],
+            [
+              450.213,
+              "Environment"
+            ],
+            [
+              450.833,
+              "Agency"
+            ],
+            [
+              452.233,
+              "estimated"
+            ],
+            [
+              452.613,
+              "that"
+            ],
+            [
+              453.073,
+              "in"
+            ],
+            [
+              453.293,
+              "Europe,"
+            ],
+            [
+              454.253,
+              "between"
+            ],
+            [
+              454.453,
+              "22"
+            ],
+            [
+              455.013,
+              "and"
+            ],
+            [
+              455.473,
+              "43"
+            ],
+            [
+              455.773,
+              "%"
+            ],
+            [
+              456.513,
+              "of"
+            ],
+            [
+              456.693,
+              "returned"
+            ],
+            [
+              456.833,
+              "clothing"
+            ],
+            [
+              457.713,
+              "bought"
+            ],
+            [
+              457.933,
+              "online"
+            ],
+            [
+              458.333,
+              "may"
+            ],
+            [
+              458.813,
+              "end"
+            ],
+            [
+              459.073,
+              "up"
+            ],
+            [
+              459.233,
+              "destroyed"
+            ],
+            [
+              459.693,
+              "based"
+            ],
+            [
+              460.593,
+              "on"
+            ],
+            [
+              460.893,
+              "limited"
+            ],
+            [
+              461.213,
+              "data."
+            ]
+          ]
+        },
+        {
+          "id": "09",
+          "key": "s06-09",
+          "text": "Since July 2026, the European Union has banned large companies from destroying unsold clothing, accessories, and footwear, with some exceptions.",
+          "start": 462.223,
+          "end": 473.051,
+          "duration": 10.827,
+          "claims": [
+            "C17"
+          ],
+          "duck": false,
+          "words": [
+            [
+              462.223,
+              "Since"
+            ],
+            [
+              462.403,
+              "July"
+            ],
+            [
+              462.763,
+              "2026,"
+            ],
+            [
+              464.603,
+              "the"
+            ],
+            [
+              464.623,
+              "European"
+            ],
+            [
+              464.843,
+              "Union"
+            ],
+            [
+              465.563,
+              "has"
+            ],
+            [
+              465.843,
+              "banned"
+            ],
+            [
+              466.103,
+              "large"
+            ],
+            [
+              466.523,
+              "companies"
+            ],
+            [
+              467.203,
+              "from"
+            ],
+            [
+              467.603,
+              "destroying"
+            ],
+            [
+              468.043,
+              "unsold"
+            ],
+            [
+              468.923,
+              "clothing,"
+            ],
+            [
+              469.963,
+              "accessories"
+            ],
+            [
+              470.343,
+              "and"
+            ],
+            [
+              470.823,
+              "footwear,"
+            ],
+            [
+              471.763,
+              "with"
+            ],
+            [
+              471.963,
+              "some"
+            ],
+            [
+              472.163,
+              "exceptions."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "title": "Why free can still be good business",
+      "chapter": "Why free can still pay off",
+      "music": "neutral",
+      "start": 473.501,
+      "end": 544.881,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s07-01",
+          "text": "If returns cost this much, why offer them for free at all?",
+          "start": 473.951,
+          "end": 477.561,
+          "duration": 3.61,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              473.951,
+              "If"
+            ],
+            [
+              474.091,
+              "returns"
+            ],
+            [
+              474.251,
+              "cost"
+            ],
+            [
+              474.831,
+              "this"
+            ],
+            [
+              475.071,
+              "much,"
+            ],
+            [
+              475.851,
+              "why"
+            ],
+            [
+              476.011,
+              "offer"
+            ],
+            [
+              476.391,
+              "them"
+            ],
+            [
+              476.611,
+              "for"
+            ],
+            [
+              476.751,
+              "free"
+            ],
+            [
+              476.911,
+              "at"
+            ],
+            [
+              477.131,
+              "all?"
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s07-02",
+          "text": "Because a generous return policy can sell more than it costs. A 2016 review in the Journal of Retailing, which pooled results from 21 studies, found that more lenient return policies increased purchases. They increased returns too, but by less.",
+          "start": 477.941,
+          "end": 495.921,
+          "duration": 17.98,
+          "claims": [
+            "C18"
+          ],
+          "duck": false,
+          "words": [
+            [
+              477.941,
+              "Because"
+            ],
+            [
+              478.181,
+              "a"
+            ],
+            [
+              478.461,
+              "generous"
+            ],
+            [
+              478.861,
+              "return"
+            ],
+            [
+              479.181,
+              "policy"
+            ],
+            [
+              479.821,
+              "can"
+            ],
+            [
+              480.201,
+              "sell"
+            ],
+            [
+              480.481,
+              "more"
+            ],
+            [
+              480.861,
+              "than"
+            ],
+            [
+              481.101,
+              "it"
+            ],
+            [
+              481.201,
+              "costs,"
+            ],
+            [
+              482.421,
+              "a"
+            ],
+            [
+              482.501,
+              "2016"
+            ],
+            [
+              482.941,
+              "review"
+            ],
+            [
+              483.681,
+              "in"
+            ],
+            [
+              483.921,
+              "the"
+            ],
+            [
+              484.021,
+              "Journal"
+            ],
+            [
+              484.381,
+              "of"
+            ],
+            [
+              484.661,
+              "Retailing,"
+            ],
+            [
+              485.741,
+              "which"
+            ],
+            [
+              485.821,
+              "pooled"
+            ],
+            [
+              486.141,
+              "results"
+            ],
+            [
+              486.621,
+              "from"
+            ],
+            [
+              486.981,
+              "21"
+            ],
+            [
+              487.341,
+              "studies,"
+            ],
+            [
+              488.441,
+              "found"
+            ],
+            [
+              488.801,
+              "that"
+            ],
+            [
+              488.981,
+              "more"
+            ],
+            [
+              489.261,
+              "lenient"
+            ],
+            [
+              489.861,
+              "return"
+            ],
+            [
+              490.221,
+              "policies"
+            ],
+            [
+              490.861,
+              "increased"
+            ],
+            [
+              491.481,
+              "purchases."
+            ],
+            [
+              492.121,
+              "They"
+            ],
+            [
+              493.181,
+              "increased"
+            ],
+            [
+              493.541,
+              "returns"
+            ],
+            [
+              494.041,
+              "too,"
+            ],
+            [
+              495.001,
+              "but"
+            ],
+            [
+              495.081,
+              "by"
+            ],
+            [
+              495.281,
+              "less."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s07-03",
+          "text": "Free returns lower the risk of buying something you can't touch or try on. That builds trust, and trust can turn browsers into buyers.",
+          "start": 496.301,
+          "end": 505.321,
+          "duration": 9.02,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              496.301,
+              "Free"
+            ],
+            [
+              496.481,
+              "returns"
+            ],
+            [
+              496.841,
+              "lower"
+            ],
+            [
+              497.341,
+              "the"
+            ],
+            [
+              497.601,
+              "risk"
+            ],
+            [
+              497.901,
+              "of"
+            ],
+            [
+              498.041,
+              "buying"
+            ],
+            [
+              498.361,
+              "something"
+            ],
+            [
+              498.821,
+              "you"
+            ],
+            [
+              499.101,
+              "can't"
+            ],
+            [
+              499.441,
+              "touch"
+            ],
+            [
+              499.661,
+              "or"
+            ],
+            [
+              499.901,
+              "try"
+            ],
+            [
+              500.121,
+              "on."
+            ],
+            [
+              501.221,
+              "That"
+            ],
+            [
+              501.301,
+              "builds"
+            ],
+            [
+              501.541,
+              "trust,"
+            ],
+            [
+              502.581,
+              "and"
+            ],
+            [
+              502.741,
+              "trust"
+            ],
+            [
+              503.001,
+              "can"
+            ],
+            [
+              503.301,
+              "turn"
+            ],
+            [
+              503.601,
+              "browsers"
+            ],
+            [
+              503.881,
+              "into"
+            ],
+            [
+              504.521,
+              "buyers."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s07-04",
+          "text": "But there are trade-offs. Lenient policies can encourage bracketing, ordering several sizes and keeping one, and in some cases, outright abuse.",
+          "start": 505.701,
+          "end": 515.407,
+          "duration": 9.707,
+          "claims": [
+            "C19"
+          ],
+          "duck": false,
+          "words": [
+            [
+              505.701,
+              "but"
+            ],
+            [
+              505.781,
+              "there"
+            ],
+            [
+              505.921,
+              "are"
+            ],
+            [
+              506.041,
+              "trade"
+            ],
+            [
+              506.241,
+              "-offs."
+            ],
+            [
+              507.421,
+              "Linear"
+            ],
+            [
+              507.541,
+              "policies"
+            ],
+            [
+              508.261,
+              "can"
+            ],
+            [
+              508.641,
+              "encourage"
+            ],
+            [
+              509.101,
+              "bracketing,"
+            ],
+            [
+              510.201,
+              "ordering"
+            ],
+            [
+              510.641,
+              "several"
+            ],
+            [
+              510.981,
+              "sizes"
+            ],
+            [
+              511.661,
+              "and"
+            ],
+            [
+              511.921,
+              "keeping"
+            ],
+            [
+              512.161,
+              "one,"
+            ],
+            [
+              513.021,
+              "and"
+            ],
+            [
+              513.101,
+              "in"
+            ],
+            [
+              513.181,
+              "some"
+            ],
+            [
+              513.381,
+              "cases"
+            ],
+            [
+              513.741,
+              "outright"
+            ],
+            [
+              514.321,
+              "abuse."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s07-05",
+          "text": "So retailers tune the dials: return windows, fees for some methods, exchanges instead of refunds, better size guides, and fraud screening.",
+          "start": 515.787,
+          "end": 525.707,
+          "duration": 9.92,
+          "claims": [
+            "C20"
+          ],
+          "duck": false,
+          "words": [
+            [
+              515.787,
+              "So"
+            ],
+            [
+              515.947,
+              "retailers"
+            ],
+            [
+              516.167,
+              "tune"
+            ],
+            [
+              516.827,
+              "the"
+            ],
+            [
+              517.047,
+              "dials,"
+            ],
+            [
+              518.307,
+              "return"
+            ],
+            [
+              518.347,
+              "windows,"
+            ],
+            [
+              519.387,
+              "fees"
+            ],
+            [
+              519.467,
+              "for"
+            ],
+            [
+              519.827,
+              "some"
+            ],
+            [
+              520.047,
+              "methods,"
+            ],
+            [
+              521.027,
+              "exchanges"
+            ],
+            [
+              521.447,
+              "instead"
+            ],
+            [
+              522.167,
+              "of"
+            ],
+            [
+              522.307,
+              "refunds,"
+            ],
+            [
+              523.247,
+              "better"
+            ],
+            [
+              523.507,
+              "size"
+            ],
+            [
+              523.847,
+              "guides"
+            ],
+            [
+              524.207,
+              "and"
+            ],
+            [
+              524.667,
+              "fraud"
+            ],
+            [
+              524.927,
+              "screening."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s07-06",
+          "text": "In the NRF survey, retailers that added return fees reported fewer returns and more exchanges. But many also reported more customer complaints, and some said they lost customers.",
+          "start": 526.087,
+          "end": 538.951,
+          "duration": 12.864,
+          "claims": [
+            "C21"
+          ],
+          "duck": false,
+          "words": [
+            [
+              526.087,
+              "In"
+            ],
+            [
+              526.187,
+              "the"
+            ],
+            [
+              526.287,
+              "NRF"
+            ],
+            [
+              526.887,
+              "survey,"
+            ],
+            [
+              527.907,
+              "retailers"
+            ],
+            [
+              528.247,
+              "that"
+            ],
+            [
+              528.667,
+              "added"
+            ],
+            [
+              528.947,
+              "return"
+            ],
+            [
+              529.407,
+              "fees"
+            ],
+            [
+              529.907,
+              "reported"
+            ],
+            [
+              530.467,
+              "fewer"
+            ],
+            [
+              530.907,
+              "returns"
+            ],
+            [
+              531.527,
+              "and"
+            ],
+            [
+              531.947,
+              "more"
+            ],
+            [
+              532.127,
+              "exchanges."
+            ],
+            [
+              533.707,
+              "But"
+            ],
+            [
+              533.747,
+              "many"
+            ],
+            [
+              533.927,
+              "also"
+            ],
+            [
+              534.387,
+              "reported"
+            ],
+            [
+              534.747,
+              "more"
+            ],
+            [
+              535.167,
+              "customer"
+            ],
+            [
+              535.627,
+              "complaints,"
+            ],
+            [
+              536.847,
+              "and"
+            ],
+            [
+              536.907,
+              "some"
+            ],
+            [
+              537.107,
+              "said"
+            ],
+            [
+              537.427,
+              "they"
+            ],
+            [
+              537.667,
+              "lost"
+            ],
+            [
+              537.967,
+              "customers."
+            ]
+          ]
+        },
+        {
+          "id": "07",
+          "key": "s07-07",
+          "text": "There's no free lunch here. Just a business decision about which costs are worth paying.",
+          "start": 539.331,
+          "end": 544.431,
+          "duration": 5.1,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              539.331,
+              "There's"
+            ],
+            [
+              539.531,
+              "no"
+            ],
+            [
+              539.711,
+              "free"
+            ],
+            [
+              539.971,
+              "lunch"
+            ],
+            [
+              540.331,
+              "here."
+            ],
+            [
+              541.291,
+              "Just"
+            ],
+            [
+              541.331,
+              "a"
+            ],
+            [
+              541.531,
+              "business"
+            ],
+            [
+              541.791,
+              "decision"
+            ],
+            [
+              542.291,
+              "about"
+            ],
+            [
+              542.691,
+              "which"
+            ],
+            [
+              542.891,
+              "costs"
+            ],
+            [
+              543.191,
+              "are"
+            ],
+            [
+              543.591,
+              "worth"
+            ],
+            [
+              543.771,
+              "paying."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "title": "Payoff",
+      "chapter": "So who pays?",
+      "music": "reveal",
+      "start": 544.881,
+      "end": 592.278,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s08-01",
+          "text": "So, who really pays for free returns?",
+          "start": 545.331,
+          "end": 547.678,
+          "duration": 2.347,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              545.331,
+              "So,"
+            ],
+            [
+              545.731,
+              "who"
+            ],
+            [
+              545.811,
+              "really"
+            ],
+            [
+              545.991,
+              "pays"
+            ],
+            [
+              546.331,
+              "for"
+            ],
+            [
+              546.631,
+              "free"
+            ],
+            [
+              546.811,
+              "returns."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s08-02",
+          "text": "Sometimes the retailer, out of its margin. Sometimes the seller, through marketplace fees. Sometimes the shopper, through fees on certain return methods, or possibly through prices. And part of the cost shows up as lost value, or waste.",
+          "start": 548.058,
+          "end": 564.648,
+          "duration": 16.59,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              548.058,
+              "Sometimes"
+            ],
+            [
+              548.438,
+              "the"
+            ],
+            [
+              548.758,
+              "retailer"
+            ],
+            [
+              549.138,
+              "out"
+            ],
+            [
+              549.598,
+              "of"
+            ],
+            [
+              549.698,
+              "its"
+            ],
+            [
+              549.838,
+              "margin,"
+            ],
+            [
+              550.958,
+              "sometimes"
+            ],
+            [
+              551.378,
+              "the"
+            ],
+            [
+              551.718,
+              "seller"
+            ],
+            [
+              552.038,
+              "through"
+            ],
+            [
+              552.458,
+              "marketplace"
+            ],
+            [
+              552.898,
+              "fees,"
+            ],
+            [
+              554.158,
+              "sometimes"
+            ],
+            [
+              554.738,
+              "the"
+            ],
+            [
+              555.098,
+              "shopper"
+            ],
+            [
+              555.598,
+              "through"
+            ],
+            [
+              556.098,
+              "fees"
+            ],
+            [
+              556.538,
+              "on"
+            ],
+            [
+              556.798,
+              "certain"
+            ],
+            [
+              557.158,
+              "return"
+            ],
+            [
+              557.538,
+              "methods"
+            ],
+            [
+              558.078,
+              "or"
+            ],
+            [
+              558.698,
+              "possibly"
+            ],
+            [
+              559.398,
+              "through"
+            ],
+            [
+              559.858,
+              "prices,"
+            ],
+            [
+              560.898,
+              "and"
+            ],
+            [
+              561.218,
+              "part"
+            ],
+            [
+              561.418,
+              "of"
+            ],
+            [
+              561.558,
+              "the"
+            ],
+            [
+              561.658,
+              "cost"
+            ],
+            [
+              561.938,
+              "shows"
+            ],
+            [
+              562.318,
+              "up"
+            ],
+            [
+              562.598,
+              "as"
+            ],
+            [
+              562.818,
+              "lost"
+            ],
+            [
+              563.038,
+              "value"
+            ],
+            [
+              563.678,
+              "or"
+            ],
+            [
+              563.978,
+              "waste."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s08-03",
+          "text": "What's almost never true is that the cost simply disappears. Someone decides how to absorb it, share it, or pass it along.",
+          "start": 565.028,
+          "end": 573.128,
+          "duration": 8.1,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              565.028,
+              "What's"
+            ],
+            [
+              565.248,
+              "almost"
+            ],
+            [
+              565.528,
+              "never"
+            ],
+            [
+              565.848,
+              "true"
+            ],
+            [
+              566.248,
+              "is"
+            ],
+            [
+              566.528,
+              "that"
+            ],
+            [
+              566.688,
+              "the"
+            ],
+            [
+              566.808,
+              "cost"
+            ],
+            [
+              567.108,
+              "simply"
+            ],
+            [
+              567.488,
+              "disappears."
+            ],
+            [
+              569.008,
+              "Someone"
+            ],
+            [
+              569.248,
+              "decides"
+            ],
+            [
+              569.648,
+              "how"
+            ],
+            [
+              570.088,
+              "to"
+            ],
+            [
+              570.268,
+              "absorb"
+            ],
+            [
+              570.628,
+              "it,"
+            ],
+            [
+              571.208,
+              "share"
+            ],
+            [
+              571.428,
+              "it,"
+            ],
+            [
+              572.048,
+              "or"
+            ],
+            [
+              572.128,
+              "pass"
+            ],
+            [
+              572.348,
+              "it"
+            ],
+            [
+              572.648,
+              "along."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s08-04",
+          "text": "So the next time you see free returns, read it as: free for you, at that moment.",
+          "start": 573.508,
+          "end": 578.388,
+          "duration": 4.88,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              573.508,
+              "So"
+            ],
+            [
+              573.628,
+              "the"
+            ],
+            [
+              573.728,
+              "next"
+            ],
+            [
+              573.908,
+              "time"
+            ],
+            [
+              574.228,
+              "you"
+            ],
+            [
+              574.408,
+              "see"
+            ],
+            [
+              574.588,
+              "free"
+            ],
+            [
+              574.808,
+              "returns,"
+            ],
+            [
+              575.768,
+              "read"
+            ],
+            [
+              575.848,
+              "it"
+            ],
+            [
+              576.048,
+              "as,"
+            ],
+            [
+              576.868,
+              "free"
+            ],
+            [
+              577.028,
+              "for"
+            ],
+            [
+              577.268,
+              "you"
+            ],
+            [
+              577.508,
+              "at"
+            ],
+            [
+              577.708,
+              "that"
+            ],
+            [
+              577.828,
+              "moment."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s08-05",
+          "text": "What would you trade for an easier return: a higher price, a shorter window, or a trip to the store?",
+          "start": 578.768,
+          "end": 585.058,
+          "duration": 6.29,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              578.768,
+              "What"
+            ],
+            [
+              578.908,
+              "would"
+            ],
+            [
+              579.008,
+              "you"
+            ],
+            [
+              579.148,
+              "trade"
+            ],
+            [
+              579.408,
+              "for"
+            ],
+            [
+              579.728,
+              "an"
+            ],
+            [
+              579.868,
+              "easier"
+            ],
+            [
+              580.188,
+              "return?"
+            ],
+            [
+              581.508,
+              "A"
+            ],
+            [
+              581.508,
+              "higher"
+            ],
+            [
+              581.788,
+              "price,"
+            ],
+            [
+              582.828,
+              "a"
+            ],
+            [
+              582.908,
+              "shorter"
+            ],
+            [
+              583.188,
+              "window,"
+            ],
+            [
+              583.908,
+              "or"
+            ],
+            [
+              583.928,
+              "a"
+            ],
+            [
+              584.048,
+              "trip"
+            ],
+            [
+              584.248,
+              "to"
+            ],
+            [
+              584.428,
+              "the"
+            ],
+            [
+              584.528,
+              "store?"
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s08-06",
+          "text": "This is Hidden Ledger. The sources for every number are in the description.",
+          "start": 585.438,
+          "end": 589.778,
+          "duration": 4.34,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              585.438,
+              "This"
+            ],
+            [
+              585.638,
+              "is"
+            ],
+            [
+              585.818,
+              "Hidden"
+            ],
+            [
+              586.098,
+              "Ledger."
+            ],
+            [
+              587.238,
+              "The"
+            ],
+            [
+              587.258,
+              "sources"
+            ],
+            [
+              587.518,
+              "for"
+            ],
+            [
+              587.958,
+              "every"
+            ],
+            [
+              588.158,
+              "number"
+            ],
+            [
+              588.598,
+              "are"
+            ],
+            [
+              588.838,
+              "in"
+            ],
+            [
+              588.958,
+              "the"
+            ],
+            [
+              589.038,
+              "description."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "subtitles": [
+    {
+      "start": 0.6,
+      "end": 2.12,
+      "text": "You order a jacket online."
+    },
+    {
+      "start": 2.12,
+      "end": 3.97,
+      "text": "It arrives on a Tuesday."
+    },
+    {
+      "start": 4.35,
+      "end": 7.54,
+      "text": "By Thursday, you've decided\nthe sleeves are too short."
+    },
+    {
+      "start": 7.92,
+      "end": 9.06,
+      "text": "So you send it back."
+    },
+    {
+      "start": 9.06,
+      "end": 10.54,
+      "text": "The label is free."
+    },
+    {
+      "start": 10.54,
+      "end": 13.05,
+      "text": "The refund shows up a few days later."
+    },
+    {
+      "start": 13.43,
+      "end": 15.33,
+      "text": "For you, the story ends there."
+    },
+    {
+      "start": 15.33,
+      "end": 17.74,
+      "text": "For the jacket, it's just getting started."
+    },
+    {
+      "start": 18.12,
+      "end": 22.03,
+      "text": "It will be scanned, trucked,\nsorted, inspected, and judged."
+    },
+    {
+      "start": 22.03,
+      "end": 25.31,
+      "text": "And every one of those steps\ncosts somebody something."
+    },
+    {
+      "start": 25.69,
+      "end": 28.01,
+      "text": "So who actually pays for a free return?"
+    },
+    {
+      "start": 28.91,
+      "end": 30.12,
+      "text": "Start with the scale."
+    },
+    {
+      "start": 30.5,
+      "end": 35.71,
+      "text": "In October 2025, the National Retail\nFederation and Happy Returns,"
+    },
+    {
+      "start": 35.71,
+      "end": 41.87,
+      "text": "a returns company owned by UPS,\npublished a report based on two surveys:"
+    },
+    {
+      "start": 41.87,
+      "end": 45.903,
+      "text": "one of shoppers, one of\nlarge American retailers."
+    },
+    {
+      "start": 46.283,
+      "end": 49.883,
+      "text": "Those retailers estimated that about 15.8"
+    },
+    {
+      "start": 49.883,
+      "end": 53.583,
+      "text": "percent of their sales\nwould come back in 2025."
+    },
+    {
+      "start": 53.963,
+      "end": 55.903,
+      "text": "Across the whole industry,"
+    },
+    {
+      "start": 55.903,
+      "end": 62.583,
+      "text": "the report projected $849.9 billion\nworth of returned merchandise."
+    },
+    {
+      "start": 62.963,
+      "end": 68.553,
+      "text": "Online, the estimate was higher:\nabout 19.3 percent of online sales."
+    },
+    {
+      "start": 68.933,
+      "end": 71.163,
+      "text": "Keep in mind what those numbers are."
+    },
+    {
+      "start": 71.163,
+      "end": 76.043,
+      "text": "They measure the value of goods sent\nback, not the cost of processing them."
+    },
+    {
+      "start": 76.043,
+      "end": 80.273,
+      "text": "And they're projections for the\nUnited States, not a final count."
+    },
+    {
+      "start": 80.653,
+      "end": 82.633,
+      "text": "Shoppers are paying attention."
+    },
+    {
+      "start": 82.633,
+      "end": 84.113,
+      "text": "In the same report,"
+    },
+    {
+      "start": 84.113,
+      "end": 88.033,
+      "text": "82 percent of consumers\nsaid free returns are an"
+    },
+    {
+      "start": 88.033,
+      "end": 90.803,
+      "text": "important consideration\nwhen shopping online."
+    },
+    {
+      "start": 91.183,
+      "end": 94.723,
+      "text": "And 57 percent said they had\ndecided not to shop with a"
+    },
+    {
+      "start": 94.723,
+      "end": 98.184,
+      "text": "retailer after it started\ncharging for returns."
+    },
+    {
+      "start": 98.564,
+      "end": 101.434,
+      "text": "So retailers are caught\nbetween two pressures."
+    },
+    {
+      "start": 101.434,
+      "end": 106.244,
+      "text": "Returns are expensive, and making\nthem harder can push customers away."
+    },
+    {
+      "start": 107.144,
+      "end": 108.604,
+      "text": "Let's follow the jacket."
+    },
+    {
+      "start": 108.604,
+      "end": 112.384,
+      "text": "What comes next is one common\npath, not the only one."
+    },
+    {
+      "start": 112.764,
+      "end": 113.684,
+      "text": "Step one: the hand-off."
+    },
+    {
+      "start": 113.684,
+      "end": 118.254,
+      "text": "Depending on the store, you might\nmail it, leave it with a carrier,"
+    },
+    {
+      "start": 118.254,
+      "end": 122.404,
+      "text": "or bring it to a counter,\nsometimes without a box or a label."
+    },
+    {
+      "start": 122.784,
+      "end": 127.104,
+      "text": "In NRF's survey, more\nretailers offered box-free,"
+    },
+    {
+      "start": 127.104,
+      "end": 130.884,
+      "text": "label-free drop-offs in\n2025 than a year earlier."
+    },
+    {
+      "start": 131.264,
+      "end": 133.534,
+      "text": "Step two: consolidation."
+    },
+    {
+      "start": 133.534,
+      "end": 136.344,
+      "text": "Instead of shipping every\nitem back on its own,"
+    },
+    {
+      "start": 136.344,
+      "end": 140.834,
+      "text": "some return networks pool many returns\ntogether and ship them in bulk."
+    },
+    {
+      "start": 141.214,
+      "end": 144.224,
+      "text": "Step three: a warehouse or returns center,"
+    },
+    {
+      "start": 144.224,
+      "end": 147.574,
+      "text": "where someone opens the package\nand scans what's inside."
+    },
+    {
+      "start": 147.954,
+      "end": 149.054,
+      "text": "Step four: inspection."
+    },
+    {
+      "start": 149.054,
+      "end": 150.614,
+      "text": "Is it the right item?"
+    },
+    {
+      "start": 150.614,
+      "end": 151.664,
+      "text": "Is it damaged?"
+    },
+    {
+      "start": 151.664,
+      "end": 152.714,
+      "text": "Has it been worn?"
+    },
+    {
+      "start": 152.714,
+      "end": 154.404,
+      "text": "Are the tags still on?"
+    },
+    {
+      "start": 154.784,
+      "end": 156.274,
+      "text": "Step five: a decision."
+    },
+    {
+      "start": 156.274,
+      "end": 160.294,
+      "text": "Restock it, discount it, send it\nsomewhere else, or write it off."
+    },
+    {
+      "start": 160.674,
+      "end": 164.714,
+      "text": "This backward journey has\na name: reverse logistics."
+    },
+    {
+      "start": 164.714,
+      "end": 166.474,
+      "text": "And it can be slow."
+    },
+    {
+      "start": 166.474,
+      "end": 170.434,
+      "text": "About half of the retailers in\nthe NRF survey said it takes"
+    },
+    {
+      "start": 170.434,
+      "end": 173.594,
+      "text": "six to ten days to get a\nreturned item back in stock."
+    },
+    {
+      "start": 173.974,
+      "end": 176.604,
+      "text": "All that time, the jacket isn't for sale."
+    },
+    {
+      "start": 176.604,
+      "end": 180.63,
+      "text": "And if it's seasonal, it can\nlose value every week it sits."
+    },
+    {
+      "start": 181.53,
+      "end": 183.0,
+      "text": "So where does the money go?"
+    },
+    {
+      "start": 183.0,
+      "end": 185.96,
+      "text": "It helps to split the\ncosts into two piles."
+    },
+    {
+      "start": 186.34,
+      "end": 191.16,
+      "text": "The first pile is operating costs: money\nspent moving and handling the item."
+    },
+    {
+      "start": 191.54,
+      "end": 193.04,
+      "text": "Return shipping."
+    },
+    {
+      "start": 193.04,
+      "end": 195.93,
+      "text": "Labor to receive, open, and inspect."
+    },
+    {
+      "start": 195.93,
+      "end": 197.85,
+      "text": "Cleaning, repacking, or re-tagging."
+    },
+    {
+      "start": 197.85,
+      "end": 199.38,
+      "text": "Customer service time."
+    },
+    {
+      "start": 199.38,
+      "end": 201.47,
+      "text": "Software and fraud checks."
+    },
+    {
+      "start": 201.85,
+      "end": 206.7,
+      "text": "The second pile is lost value: what\nthe item itself is no longer worth."
+    },
+    {
+      "start": 207.08,
+      "end": 210.9,
+      "text": "A jacket that comes back in perfect\nshape, while it's still in season,"
+    },
+    {
+      "start": 210.9,
+      "end": 213.52,
+      "text": "might be resold at full price."
+    },
+    {
+      "start": 213.52,
+      "end": 219.3,
+      "text": "One that comes back late, missing tags, or\nslightly worn may have to be marked down,"
+    },
+    {
+      "start": 219.3,
+      "end": 222.893,
+      "text": "or sold off in bulk for\na fraction of its price."
+    },
+    {
+      "start": 223.273,
+      "end": 225.283,
+      "text": "Here's a simple way to picture it."
+    },
+    {
+      "start": 225.283,
+      "end": 229.073,
+      "text": "This is an illustrative\nexample, not industry data."
+    },
+    {
+      "start": 229.453,
+      "end": 232.493,
+      "text": "Imagine a jacket that sold for $100."
+    },
+    {
+      "start": 232.493,
+      "end": 238.843,
+      "text": "Say the return shipping costs the\nseller $8, handling costs another $6,"
+    },
+    {
+      "start": 238.843,
+      "end": 243.673,
+      "text": "and because it's now out of\nseason, it resells for $70."
+    },
+    {
+      "start": 244.053,
+      "end": 246.053,
+      "text": "The customer got a full refund."
+    },
+    {
+      "start": 246.053,
+      "end": 251.763,
+      "text": "The seller spent $14 to get back\nan item now worth $30 less."
+    },
+    {
+      "start": 251.763,
+      "end": 257.073,
+      "text": "In this example, the seller is\ndown $44 on a single return."
+    },
+    {
+      "start": 257.453,
+      "end": 260.113,
+      "text": "Change any assumption\nand the answer changes."
+    },
+    {
+      "start": 260.113,
+      "end": 265.043,
+      "text": "Real costs depend on the product,\nthe carrier contract, the warehouse,"
+    },
+    {
+      "start": 265.043,
+      "end": 267.013,
+      "text": "and the condition of the item."
+    },
+    {
+      "start": 267.393,
+      "end": 268.673,
+      "text": "There's also fraud."
+    },
+    {
+      "start": 268.673,
+      "end": 270.493,
+      "text": "In the NRF survey,"
+    },
+    {
+      "start": 270.493,
+      "end": 276.133,
+      "text": "retailers that track it estimated that\nabout 9 percent of returns were fraudulent,"
+    },
+    {
+      "start": 276.133,
+      "end": 278.913,
+      "text": "from empty boxes to swapped items."
+    },
+    {
+      "start": 278.913,
+      "end": 283.133,
+      "text": "That's the retailers' own\nestimate, not an audited number."
+    },
+    {
+      "start": 284.033,
+      "end": 285.083,
+      "text": "So, who pays?"
+    },
+    {
+      "start": 285.083,
+      "end": 288.593,
+      "text": "The honest answer is: it\ndepends on who's in the chain."
+    },
+    {
+      "start": 288.973,
+      "end": 292.333,
+      "text": "Case one: a retailer\nselling its own products."
+    },
+    {
+      "start": 292.333,
+      "end": 297.173,
+      "text": "Here, the retailer typically absorbs\nthe cost of a free return directly,"
+    },
+    {
+      "start": 297.173,
+      "end": 298.563,
+      "text": "at least at first."
+    },
+    {
+      "start": 298.943,
+      "end": 302.363,
+      "text": "Case two: a marketplace\nwith independent sellers."
+    },
+    {
+      "start": 302.363,
+      "end": 305.663,
+      "text": "The platform's rules decide\nhow costs are split,"
+    },
+    {
+      "start": 305.663,
+      "end": 310.093,
+      "text": "and some marketplaces charge\nsellers fees tied to returns."
+    },
+    {
+      "start": 310.473,
+      "end": 311.943,
+      "text": "Amazon, for example,"
+    },
+    {
+      "start": 311.943,
+      "end": 318.073,
+      "text": "has charged returns processing fees on some\nproducts sold through its fulfillment service,"
+    },
+    {
+      "start": 318.073,
+      "end": 322.673,
+      "text": "under rules that vary by category\nand have changed over time."
+    },
+    {
+      "start": 323.053,
+      "end": 325.473,
+      "text": "Case three: logistics partners."
+    },
+    {
+      "start": 325.473,
+      "end": 329.213,
+      "text": "Carriers and returns companies\nget paid for their work."
+    },
+    {
+      "start": 329.213,
+      "end": 332.453,
+      "text": "They're not absorbing the\ncost; they're billing for it,"
+    },
+    {
+      "start": 332.453,
+      "end": 335.123,
+      "text": "under contracts the public rarely sees."
+    },
+    {
+      "start": 335.503,
+      "end": 337.483,
+      "text": "Case four: the shopper."
+    },
+    {
+      "start": 337.483,
+      "end": 341.923,
+      "text": "Not always through a fee on that\nreturn, but potentially through prices,"
+    },
+    {
+      "start": 341.923,
+      "end": 347.493,
+      "text": "shipping charges, or memberships that\nhelp cover returns across all customers."
+    },
+    {
+      "start": 347.493,
+      "end": 352.123,
+      "text": "How much that happens varies, and it's\nhard to measure from the outside."
+    },
+    {
+      "start": 352.503,
+      "end": 355.793,
+      "text": "And more retailers are\ncharging shoppers directly."
+    },
+    {
+      "start": 355.793,
+      "end": 357.633,
+      "text": "In the NRF survey,"
+    },
+    {
+      "start": 357.633,
+      "end": 364.833,
+      "text": "72 percent of merchants said they had started charging\nfor at least one return option in the past 12 months,"
+    },
+    {
+      "start": 364.833,
+      "end": 367.673,
+      "text": "up from 66 percent the year before."
+    },
+    {
+      "start": 368.053,
+      "end": 371.983,
+      "text": "That can mean a fee on one return\nmethod while another stays free,"
+    },
+    {
+      "start": 371.983,
+      "end": 376.253,
+      "text": "which nudges shoppers toward the option\nthat's cheaper for the retailer."
+    },
+    {
+      "start": 376.253,
+      "end": 378.203,
+      "text": "The cost doesn't vanish."
+    },
+    {
+      "start": 378.203,
+      "end": 379.433,
+      "text": "It gets routed."
+    },
+    {
+      "start": 380.333,
+      "end": 381.383,
+      "text": "Back to the jacket."
+    },
+    {
+      "start": 381.383,
+      "end": 384.593,
+      "text": "Once it's been inspected,\nwhere does it actually go?"
+    },
+    {
+      "start": 384.973,
+      "end": 389.773,
+      "text": "If it's in sellable condition, it can\ngo back into stock and be sold as new."
+    },
+    {
+      "start": 390.153,
+      "end": 395.763,
+      "text": "If it's been opened or isn't quite perfect,\nit may be resold as used or open-box,"
+    },
+    {
+      "start": 395.763,
+      "end": 397.673,
+      "text": "usually at a discount."
+    },
+    {
+      "start": 398.053,
+      "end": 400.083,
+      "text": "Some items are repaired first."
+    },
+    {
+      "start": 400.083,
+      "end": 402.573,
+      "text": "Others are sold in bulk to liquidators,"
+    },
+    {
+      "start": 402.573,
+      "end": 406.553,
+      "text": "who move them through discount\nstores and secondary markets."
+    },
+    {
+      "start": 406.933,
+      "end": 414.393,
+      "text": "A 2025 study in the Journal of Business\nLogistics noted that more than $800 billion of"
+    },
+    {
+      "start": 414.393,
+      "end": 420.123,
+      "text": "returned and excess inventory passes\nthrough secondary market channels each year."
+    },
+    {
+      "start": 420.503,
+      "end": 426.043,
+      "text": "Items can also go back to the original\nseller, get donated, or be recycled."
+    },
+    {
+      "start": 426.423,
+      "end": 432.973,
+      "text": "Amazon, for one, says the vast majority\nof its returns are resold as new or used,"
+    },
+    {
+      "start": 432.973,
+      "end": 437.373,
+      "text": "and that items it can't resell\nmay be donated or recycled."
+    },
+    {
+      "start": 437.373,
+      "end": 442.093,
+      "text": "That's the company's own account, and\nit doesn't describe every retailer."
+    },
+    {
+      "start": 442.473,
+      "end": 444.453,
+      "text": "And some returns are destroyed."
+    },
+    {
+      "start": 444.453,
+      "end": 447.733,
+      "text": "There's no single figure\nfor the whole industry."
+    },
+    {
+      "start": 447.733,
+      "end": 453.963,
+      "text": "A 2024 briefing by the European Environment\nAgency estimated that in Europe,"
+    },
+    {
+      "start": 453.963,
+      "end": 459.693,
+      "text": "between 22 and 43 percent of returned\nclothing bought online may end up destroyed,"
+    },
+    {
+      "start": 459.693,
+      "end": 461.843,
+      "text": "based on limited data."
+    },
+    {
+      "start": 462.223,
+      "end": 464.243,
+      "text": "Since July 2026,"
+    },
+    {
+      "start": 464.243,
+      "end": 469.783,
+      "text": "the European Union has banned large\ncompanies from destroying unsold clothing,"
+    },
+    {
+      "start": 469.783,
+      "end": 473.051,
+      "text": "accessories, and footwear,\nwith some exceptions."
+    },
+    {
+      "start": 473.951,
+      "end": 477.561,
+      "text": "If returns cost this much, why\noffer them for free at all?"
+    },
+    {
+      "start": 477.941,
+      "end": 481.941,
+      "text": "Because a generous return policy\ncan sell more than it costs."
+    },
+    {
+      "start": 481.941,
+      "end": 488.171,
+      "text": "A 2016 review in the Journal of Retailing,\nwhich pooled results from 21 studies,"
+    },
+    {
+      "start": 488.171,
+      "end": 492.121,
+      "text": "found that more lenient return\npolicies increased purchases."
+    },
+    {
+      "start": 492.121,
+      "end": 495.921,
+      "text": "They increased returns too, but by less."
+    },
+    {
+      "start": 496.301,
+      "end": 500.861,
+      "text": "Free returns lower the risk of buying\nsomething you can't touch or try on."
+    },
+    {
+      "start": 500.861,
+      "end": 505.321,
+      "text": "That builds trust, and trust\ncan turn browsers into buyers."
+    },
+    {
+      "start": 505.701,
+      "end": 507.041,
+      "text": "But there are trade-offs."
+    },
+    {
+      "start": 507.041,
+      "end": 512.781,
+      "text": "Lenient policies can encourage bracketing,\nordering several sizes and keeping one,"
+    },
+    {
+      "start": 512.781,
+      "end": 515.407,
+      "text": "and in some cases, outright abuse."
+    },
+    {
+      "start": 515.787,
+      "end": 520.727,
+      "text": "So retailers tune the dials: return\nwindows, fees for some methods,"
+    },
+    {
+      "start": 520.727,
+      "end": 525.707,
+      "text": "exchanges instead of refunds, better\nsize guides, and fraud screening."
+    },
+    {
+      "start": 526.087,
+      "end": 527.627,
+      "text": "In the NRF survey,"
+    },
+    {
+      "start": 527.627,
+      "end": 533.107,
+      "text": "retailers that added return fees reported\nfewer returns and more exchanges."
+    },
+    {
+      "start": 533.107,
+      "end": 538.951,
+      "text": "But many also reported more customer\ncomplaints, and some said they lost customers."
+    },
+    {
+      "start": 539.331,
+      "end": 540.971,
+      "text": "There's no free lunch here."
+    },
+    {
+      "start": 540.971,
+      "end": 544.431,
+      "text": "Just a business decision about\nwhich costs are worth paying."
+    },
+    {
+      "start": 545.331,
+      "end": 547.678,
+      "text": "So, who really pays for free returns?"
+    },
+    {
+      "start": 548.058,
+      "end": 550.528,
+      "text": "Sometimes the retailer, out of its margin."
+    },
+    {
+      "start": 550.528,
+      "end": 553.808,
+      "text": "Sometimes the seller,\nthrough marketplace fees."
+    },
+    {
+      "start": 553.808,
+      "end": 558.078,
+      "text": "Sometimes the shopper, through\nfees on certain return methods,"
+    },
+    {
+      "start": 558.078,
+      "end": 560.598,
+      "text": "or possibly through prices."
+    },
+    {
+      "start": 560.598,
+      "end": 564.648,
+      "text": "And part of the cost shows\nup as lost value, or waste."
+    },
+    {
+      "start": 565.028,
+      "end": 568.518,
+      "text": "What's almost never true is that\nthe cost simply disappears."
+    },
+    {
+      "start": 568.518,
+      "end": 573.128,
+      "text": "Someone decides how to absorb\nit, share it, or pass it along."
+    },
+    {
+      "start": 573.508,
+      "end": 578.388,
+      "text": "So the next time you see free returns,\nread it as: free for you, at that moment."
+    },
+    {
+      "start": 578.768,
+      "end": 583.738,
+      "text": "What would you trade for an easier\nreturn: a higher price, a shorter window,"
+    },
+    {
+      "start": 583.738,
+      "end": 585.058,
+      "text": "or a trip to the store?"
+    },
+    {
+      "start": 585.438,
+      "end": 586.928,
+      "text": "This is Hidden Ledger."
+    },
+    {
+      "start": 586.928,
+      "end": 589.778,
+      "text": "The sources for every number\nare in the description."
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "_about": "Every factual claim in script_en.md, keyed by the ids used in episode.json (segments[].claims). type: fact | company_statement | illustrative. Sources are defined in fact_check.csv / sources.md.",
+  "claims": [
+    {
+      "id": "C01",
+      "type": "fact",
+      "script": "In October 2025, the National Retail Federation and Happy Returns, a returns company owned by UPS, published a report based on two surveys: one of shoppers, one of large American retailers.",
+      "segments": ["s02-02"],
+      "sources": ["NRF-REPORT-2025", "NRF-PR-2025"],
+      "evidence": "\"NRF and Happy Returns, a UPS company, conducted two surveys this summer\" (press release, Oct 15, 2025). Report background: \"Fielded August – September 2025 ... 2,006 consumers who have returned at least one online purchase in the past 12 months ... 358 professionals involved in ecommerce for large (revenue $500M+) merchants in the US\".",
+      "caveats": "Happy Returns is a returns-services provider: possible conflict of interest (disclosed on screen as 'owned by UPS')."
+    },
+    {
+      "id": "C02",
+      "type": "fact",
+      "script": "Those retailers estimated that about 15.8 percent of their sales would come back in 2025.",
+      "segments": ["s02-03"],
+      "sources": ["NRF-REPORT-2025"],
+      "evidence": "\"Retailers estimate 15.8% of total annual sales will be returned in 2025\"",
+      "caveats": "Retailer estimate / projection for the U.S.; not a measured final figure."
+    },
+    {
+      "id": "C03",
+      "type": "fact",
+      "script": "Across the whole industry, the report projected $849.9 billion worth of returned merchandise. ... They measure the value of goods sent back, not the cost of processing them. And they're projections for the United States, not a final count.",
+      "segments": ["s02-04", "s02-06"],
+      "sources": ["NRF-REPORT-2025", "NRF-PR-2025"],
+      "evidence": "\"total returns for the retail industry are projected to reach $849.9 billion in 2025\"; press release headline: \"Consumers Expected to Return Nearly $850 Billion in Merchandise in 2025\". Historical series on p.7: 2019 $309B, 2020 $428B, 2021 $760.8B, 2022 $816.8B, 2024 $890B; 2023 not comparable (different methodology).",
+      "caveats": "The report's chart labels the column 'Total cost of retail returns', but the figure is the value of merchandise returned (return rate x sales); the script deliberately does not call it a processing cost."
+    },
+    {
+      "id": "C04",
+      "type": "fact",
+      "script": "Online, the estimate was higher: about 19.3 percent of online sales.",
+      "segments": ["s02-05"],
+      "sources": ["NRF-REPORT-2025"],
+      "evidence": "\"An estimated 19.3% of online sales will be returned in 2025.\"",
+      "caveats": "Retailer estimate."
+    },
+    {
+      "id": "C05",
+      "type": "fact",
+      "script": "In the same report, 82 percent of consumers said free returns are an important consideration when shopping online.",
+      "segments": ["s02-07"],
+      "sources": ["NRF-REPORT-2025"],
+      "evidence": "\"82% say free returns are an important consideration when shopping online (up from 76% last year)\"",
+      "caveats": "Base: 2,006 U.S. consumers who had returned at least one online purchase in the past 12 months (shown on screen)."
+    },
+    {
+      "id": "C06",
+      "type": "fact",
+      "script": "And 57 percent said they had decided not to shop with a retailer after it started charging for returns.",
+      "segments": ["s02-08"],
+      "sources": ["NRF-REPORT-2025"],
+      "evidence": "\"57% of shoppers will not shop with a retailer after being charged for a return, a rate that has sharply increased from 40% in 2024.\" Survey question: \"Have you ever decided to not shop with a retailer after they started charging for returns?\"",
+      "caveats": "Self-reported behavior."
+    },
+    {
+      "id": "C07",
+      "type": "fact",
+      "script": "In NRF's survey, more retailers offered box-free, label-free drop-offs in 2025 than a year earlier.",
+      "segments": ["s03-03"],
+      "sources": ["NRF-REPORT-2025"],
+      "evidence": "\"Retailer adoption of no box, no label returns to carriers is up 8 percentage points\"; chart: 17% (2024) -> 25% (2025).",
+      "caveats": "Share of surveyed large retailers offering the method."
+    },
+    {
+      "id": "C08",
+      "type": "fact",
+      "script": "Some return networks pool many returns together and ship them in bulk.",
+      "segments": ["s03-04"],
+      "sources": ["NRF-REPORT-2025"],
+      "evidence": "About Happy Returns: \"Returns are consolidated, sorted in automated facilities, and bulk shipped back to retailers\".",
+      "caveats": "Described as 'some' networks; not universal."
+    },
+    {
+      "id": "C09",
+      "type": "fact",
+      "script": "About half of the retailers in the NRF survey said it takes six to ten days to get a returned item back in stock.",
+      "segments": ["s03-08"],
+      "sources": ["NRF-REPORT-2025"],
+      "evidence": "\"About half of retailers report that it takes 6-10 days to restock returned items\" (49%).",
+      "caveats": "Typical cycle time reported by large retailers."
+    },
+    {
+      "id": "I01",
+      "type": "illustrative",
+      "script": "Imagine a jacket that sold for $100. Say the return shipping costs the seller $8, handling costs another $6 ... it resells for $70 ... the seller is down $44 on a single return.",
+      "segments": ["s04-07", "s04-08"],
+      "sources": [],
+      "evidence": "Hypothetical numbers chosen for arithmetic clarity: 8 + 6 = 14 spent; 100 - 70 = 30 value lost; 14 + 30 = 44.",
+      "caveats": "Labelled on screen for the whole example: 'ILLUSTRATIVE EXAMPLE — NOT INDUSTRY DATA'. Narration says the same before the numbers."
+    },
+    {
+      "id": "C10",
+      "type": "fact",
+      "script": "In the NRF survey, retailers that track it estimated that about 9 percent of returns were fraudulent, from empty boxes to swapped items. That's the retailers' own estimate, not an audited number.",
+      "segments": ["s04-10"],
+      "sources": ["NRF-REPORT-2025"],
+      "evidence": "\"Among those that track these incidents, fraudulent returns — which exclude bracketing and wardrobing — are estimated to account for 9% of returns on average in 2025.\"",
+      "caveats": "Self-reported by merchants that track fraud."
+    },
+    {
+      "id": "C11",
+      "type": "company_policy",
+      "script": "Some marketplaces charge sellers fees tied to returns. Amazon, for example, has charged returns processing fees on some products sold through its fulfillment service, under rules that vary by category and have changed over time.",
+      "segments": ["s05-03", "s05-04"],
+      "sources": ["AMZ-SELLER-FEES"],
+      "evidence": "Amazon Seller Central announcements/forum threads (2024-2025) describe a returns processing fee for FBA products whose returns exceed category thresholds, and a separate per-unit returns fee for apparel and shoes.",
+      "caveats": "Secondary access only (Seller Central pages require login). Script stays deliberately general: 'some products', 'rules vary by category and have changed over time'. No fee amounts are stated."
+    },
+    {
+      "id": "C12",
+      "type": "fact",
+      "script": "72 percent of merchants said they had started charging for at least one return option in the past 12 months, up from 66 percent the year before.",
+      "segments": ["s05-07"],
+      "sources": ["NRF-REPORT-2025"],
+      "evidence": "\"72% of all merchants surveyed have started charging for at least one return option in the past 12 months. This is up from 66% in 2024.\"",
+      "caveats": "Large U.S. retailers ($500M+)."
+    },
+    {
+      "id": "C13",
+      "type": "fact",
+      "script": "That can mean a fee on one return method while another stays free, which nudges shoppers toward the option that's cheaper for the retailer.",
+      "segments": ["s05-08"],
+      "sources": ["NRF-REPORT-2025"],
+      "evidence": "Positive effects of fees reported by merchants: \"51% increase in shoppers choosing a different, free return method\"; reasons merchants charge include costs of operations and carrier shipping (40% each).",
+      "caveats": "'Cheaper for the retailer' is analysis inferred from the reported motives, phrased as 'can mean'."
+    },
+    {
+      "id": "C14",
+      "type": "fact",
+      "script": "A 2025 study in the Journal of Business Logistics noted that more than $800 billion of returned and excess inventory passes through secondary market channels each year.",
+      "segments": ["s06-05"],
+      "sources": ["JBL-2025"],
+      "evidence": "Abstract: \"with over $800 billion of returned and excess inventory (equivalent to 3% of the U.S. GDP) passing through secondary market channels each year\".",
+      "caveats": "Includes excess (never-sold) inventory, not only returns: stated in narration and on screen."
+    },
+    {
+      "id": "C15",
+      "type": "company_statement",
+      "script": "Amazon, for one, says the vast majority of its returns are resold as new or used, and that items it can't resell may be donated or recycled.",
+      "segments": ["s06-07"],
+      "sources": ["AMZ-RETURNS"],
+      "evidence": "\"The vast majority of returns are resold as new or used\"; donation via Good360; \"pursue recycling options where possible\".",
+      "caveats": "Company's own account; attributed explicitly and flagged as not describing every retailer."
+    },
+    {
+      "id": "C16",
+      "type": "fact",
+      "script": "A 2024 briefing by the European Environment Agency estimated that in Europe, between 22 and 43 percent of returned clothing bought online may end up destroyed, based on limited data.",
+      "segments": ["s06-08"],
+      "sources": ["EEA-2024"],
+      "evidence": "\"We estimate that 22-43%, or on average one third of all returned clothing bought online, ends up being destroyed.\" Also: \"Open data and transparency regarding the handling of returned and unsold textile products in Europe is currently lacking\".",
+      "caveats": "Europe, clothing only. Not extrapolated to the U.S. or other products."
+    },
+    {
+      "id": "C17",
+      "type": "fact",
+      "script": "Since July 2026, the European Union has banned large companies from destroying unsold clothing, accessories, and footwear, with some exceptions.",
+      "segments": ["s06-09"],
+      "sources": ["EU-ESPR-2026"],
+      "evidence": "European Circular Economy Stakeholder Platform (European Commission), 11 Feb 2026: the ban on destroying unsold apparel, clothing accessories and footwear applies to large companies from 19 July 2026, with derogations (e.g. safety, damage); medium-sized companies expected in 2030.",
+      "caveats": "Applies to unsold goods; the script does not claim it covers all returns."
+    },
+    {
+      "id": "C18",
+      "type": "fact",
+      "script": "A 2016 review in the Journal of Retailing, which pooled results from 21 studies, found that more lenient return policies increased purchases. They increased returns too, but by less.",
+      "segments": ["s07-02"],
+      "sources": ["JR-2016"],
+      "evidence": "UT Dallas news (Jan 19, 2016) on the study: \"Overall, lenient return policies led to increased purchases\"; \"a positive effect — smaller, but still significant — of policy leniency on returns\"; 21 research papers.",
+      "caveats": "Full text not accessed (paywall); claim limited to the summary findings. On-screen arrows are labelled as qualitative."
+    },
+    {
+      "id": "C19",
+      "type": "fact",
+      "script": "Lenient policies can encourage bracketing, ordering several sizes and keeping one, and in some cases, outright abuse.",
+      "segments": ["s07-04"],
+      "sources": ["NRF-REPORT-2025"],
+      "evidence": "Report defines bracketing (\"purchases multiple products with the intention of sending some or most of them back\") and returns abuse (e.g. wardrobing).",
+      "caveats": "Phrased as 'can'."
+    },
+    {
+      "id": "C20",
+      "type": "fact",
+      "script": "So retailers tune the dials: return windows, fees for some methods, exchanges instead of refunds, better size guides, and fraud screening.",
+      "segments": ["s07-05"],
+      "sources": ["NRF-REPORT-2025"],
+      "evidence": "Tactics listed in the report: shorten/extend return windows, charging for return shipping, incentivizing exchanges over refunds, more sizing information / AI fit tools, AI fraud detection (85% of merchants).",
+      "caveats": ""
+    },
+    {
+      "id": "C21",
+      "type": "fact",
+      "script": "Retailers that added return fees reported fewer returns and more exchanges. But many also reported more customer complaints, and some said they lost customers.",
+      "segments": ["s07-06"],
+      "sources": ["NRF-REPORT-2025"],
+      "evidence": "\"53% report a reduction in overall return rates\"; \"52% ... increase in exchange rates\"; \"47% report an increase in customer complaints\"; \"37% say that they've lost customers over return fees\".",
+      "caveats": "Among merchants implementing fees; percentages shown on screen."
+    }
+  ]
+}
