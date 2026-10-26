@@ -23,3 +23,8 @@ diagnostics/stills/
 # Remotion
 out/
 .remotion/
+
+# v2 delivery encode: ~590 MB at 8 Mbps (over GitHub's 100 MB limit) + encoder temp files
+output/**/full/full_video_v2.mp4
+output/**/full/s01_fix.mp4
+output/**/full/x264*
