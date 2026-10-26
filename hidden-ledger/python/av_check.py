@@ -3,7 +3,7 @@
 1. Completeness: video frame count / duration vs the timeline; audio duration vs video duration.
 2. Audio offset + drift: cross-correlation of the MP4's decoded audio against the lossless mix.wav
    at the start, middle and end (an offset that changes along the file = drift).
-3. Picture vs narration: scene cuts detected in the picture (ffmpeg scene score) vs timeline scene starts.
+3. Picture vs narration: the scene-change wipe is located in the picture (full-height orange edge) and compared with\n   the narration timeline's scene starts (tolerance ±0.2 s).
 4. Intelligibility through the final mix (optional --asr): Whisper WER on the MP4 audio vs the script.
 
 Usage: python python/av_check.py --episode 001 --video output/episode-001/full/full_video_v2.mp4 [--asr]
@@ -55,10 +55,16 @@ def xcorr_lag(a: np.ndarray, b: np.ndarray, sr: int, max_lag_s: float = 0.5) -> 
     return lag, norm
 
 
-def scene_cuts(p: Path, thresh: float = 0.25) -> list[float]:
-    r = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(p), "-vf", f"scale=480:-1,select='gt(scene,{thresh})',showinfo", "-an", "-f", "null", "-"],
-                       capture_output=True, text=True)
-    return [float(x) for x in re.findall(r"pts_time:([\d.]+)", r.stderr)]
+def wipe_frames(p: Path, t0: float, span: float = 0.8, w: int = 192, h: int = 108) -> list[tuple[float, float]]:
+    """For frames in [t0-span, t0+span], the fraction of pixel rows that contain the wipe's orange (#F59E0B) edge.
+    The SceneWipe draws a full-height orange diagonal, so a value near 1.0 marks the wipe in the picture."""
+    start = max(0.0, t0 - span)
+    r = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{start:.3f}", "-i", str(p), "-t", f"{2 * span:.3f}", "-vf", f"scale={w}:{h}",
+                        "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], capture_output=True)
+    fr = np.frombuffer(r.stdout, dtype=np.uint8).reshape(-1, h, w, 3).astype(np.int16)
+    orange = (np.abs(fr[..., 0] - 245) < 40) & (np.abs(fr[..., 1] - 158) < 45) & (fr[..., 2] < 90)
+    cover = orange.any(axis=2).mean(axis=1)
+    return [(start + i / FPS, float(c)) for i, c in enumerate(cover)]
 
 
 def main():
@@ -107,17 +113,22 @@ def main():
     if max(offs) - min(offs) > 10:
         rep["problems"].append(f"audio drift along the file: {offs} ms")
 
-    # 3. picture cuts vs narration timeline (scene wipes are centred on scene starts)
-    cuts = scene_cuts(video)
+    # 3. picture transitions vs narration timeline: locate the wipe (full-height orange edge) around each scene start
     match = []
     for sc in tl["scenes"][1:]:
-        near = min(cuts, key=lambda c: abs(c - sc["start"])) if cuts else None
-        d = None if near is None else round(near - sc["start"], 3)
-        match.append({"scene": sc["id"], "timeline_start": sc["start"], "nearest_cut": near, "delta_s": d})
-    rep["scene_cuts"] = {"detected": len(cuts), "matches": match}
-    bad = [m for m in match if m["delta_s"] is None or abs(m["delta_s"]) > 0.5]
+        cov = wipe_frames(video, sc["start"])
+        best_t, best_c = max(cov, key=lambda x: x[1]) if cov else (None, 0.0)
+        # centre of the run of frames where the edge spans >=80 % of rows (the HUD hides the top rows)
+        run = [t for t, c in cov if c >= 0.8]
+        baseline = min(c for _, c in cov) if cov else 0.0  # frames before/after the wipe
+        centre = (run[0] + run[-1]) / 2 if run else best_t
+        match.append({"scene": sc["id"], "timeline_start": sc["start"], "wipe_centre": None if centre is None else round(centre, 3),
+                      "delta_s": None if centre is None or best_c < 0.8 else round(centre - sc["start"], 3),
+                      "edge_row_coverage": round(best_c, 2), "baseline_coverage": round(baseline, 2)})
+    rep["scene_transitions"] = match
+    bad = [m for m in match if m["delta_s"] is None or abs(m["delta_s"]) > 0.2]
     if bad:
-        rep["problems"].append(f"{len(bad)} scene change(s) without a picture cut within ±0.5 s")
+        rep["problems"].append(f"{len(bad)} scene change(s) where the picture transition is not within ±0.2 s of the narration timeline")
 
     # 4. intelligibility through the final mix
     if a.asr:
@@ -134,8 +145,7 @@ def main():
 
     rep["ok"] = not rep["problems"]
     write_json(ROOT / "diagnostics" / f"av_check_{video.stem}.json", rep)
-    print(json.dumps({k: rep[k] for k in rep if k != "scene_cuts"}, indent=1))
-    print("scene cuts matched:", sum(1 for m in match if m["delta_s"] is not None and abs(m["delta_s"]) <= 0.5), "/", len(match))
+    print(json.dumps(rep, indent=1))
     sys.exit(0 if rep["ok"] else 3)
 
 
