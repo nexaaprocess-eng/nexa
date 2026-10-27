@@ -53,7 +53,7 @@ def check_claims(ep_id: str) -> list[str]:
         for s in c["sources"]:
             if s not in sources:
                 problems.append(f"{cid}: source {s} not in fact_check.csv")
-        if c["type"] != "illustrative" and not c["sources"]:
+        if c["type"] not in ("illustrative", "definition") and not c["sources"]:
             problems.append(f"{cid}: non-illustrative claim without source")
     return problems
 

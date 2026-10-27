@@ -186,7 +186,8 @@
    "type": "fact",
    "claim": "Walmart consolidated gross profit was 24.2% of net sales in fiscal 2026 (24.1% in fiscal 2025).",
    "segments": [
-    "s09-02"
+    "s09-02",
+    "s09-06"
    ],
    "sources": [
     "WMT-10K-FY2026"
@@ -239,7 +240,8 @@
    "type": "fact",
    "claim": "Costco gross margin percentage fiscal 2026: 11.09% of net sales (11.12% in fiscal 2025).",
    "segments": [
-    "s09-03"
+    "s09-03",
+    "s09-06"
    ],
    "sources": [
     "COST-10K-FY2026"
@@ -365,7 +367,7 @@
     "USDA-ERS-EIB121"
    ],
    "evidence": "\"Retail-level losses represented 10 percent (43 billion pounds) and consumer-level losses 21 percent (90 billion pounds) of the available food supply.\"",
-   "method_or_caveat": "Older (2010 data, published 2014) — said explicitly in narration."
+   "method_or_caveat": "Older (2010 data, published 2014) — said explicitly in narration. USDA footnote 11: some data users suggest the retail-level estimate is high; shown on screen."
   },
   {
    "id": "I01",

@@ -55,6 +55,13 @@ export const Ep002Thumbnail: React.FC<{variant: number}> = ({variant}) => {
             <rect x={-110} y={-560} width={220} height={560} rx={8} fill={C.orange} />
             <rect x={-110} y={-574} width={220} height={12} rx={4} fill={C.green} />
             <circle cx={0} cy={-568} r={36} fill="none" stroke={C.cream} strokeWidth={6} />
+            <text x={0} y={-250} textAnchor="middle" fontSize={64} fontWeight={700} fill={C.bg} fontFamily="Space Grotesk" letterSpacing={4}>
+              SALES
+            </text>
+            <path d="M40 -548 L140 -500" stroke={C.cream} strokeWidth={6} strokeLinecap="round" />
+            <text x={134} y={-458} fontSize={46} fontWeight={700} fill={C.green} fontFamily="Space Grotesk">
+              profit
+            </text>
           </g>
         </>,
       )}

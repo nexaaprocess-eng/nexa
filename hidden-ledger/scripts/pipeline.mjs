@@ -363,12 +363,21 @@ const commands = {
     const out = path.join(dest, `${name}.mp4`);
     const dur = (tl.durationInFrames / tl.fps).toFixed(4);
     const kbps = parseInt(opt('bitrate', '10M'), 10) * 1000;
-    twoPass(files, path.join(AUDIO, 'full', 'mix.wav'), out, kbps, dur);
-    // shareable copy that fits chat/upload limits (same frames, lower bitrate)
+    const mixWav = path.join(AUDIO, 'full', 'mix.wav');
+    // resume: an encode newer than every chunk and the mix, with the full frame count, is kept
+    const newest = Math.max(...[...files, mixWav].map((f) => fs.statSync(f).mtimeMs));
+    const fresh = (f) => fs.existsSync(f) && fs.statSync(f).mtimeMs > newest && frameCount(f) === tl.durationInFrames;
+    if (fresh(out)) console.log(`= ${path.relative(ROOT, out)} up to date`);
+    else twoPass(files, mixWav, out, kbps, dur);
+    // shareable copy that fits chat/upload limits (same frames, lower bitrate); --share-mib 0 skips it
     const shareMiB = Number(opt('share-mib', '380'));
     const audioMB = (256 * Number(dur)) / 8 / 1000;
     const shareKbps = Math.floor(((shareMiB * 1.048576 - audioMB - 2) * 8 * 1000) / Number(dur));
-    if (shareKbps < kbps) twoPass(files, path.join(AUDIO, 'full', 'mix.wav'), out.replace(/\.mp4$/, '_share.mp4'), shareKbps, dur);
+    const share = out.replace(/\.mp4$/, '_share.mp4');
+    if (shareMiB > 0 && shareKbps < kbps) {
+      if (fresh(share)) console.log(`= ${path.relative(ROOT, share)} up to date`);
+      else twoPass(files, mixWav, share, shareKbps, dur);
+    }
     fs.copyFileSync(path.join(AUDIO, 'full', 'full.srt'), path.join(dest, `hidden_ledger_episode_${EP}.srt`));
   },
   qa() {
@@ -378,10 +387,38 @@ const commands = {
     py('av_check.py', ['--episode', EP, '--video', path.relative(ROOT, out), '--asr'], {allowFail: true});
     py('stem_check.py', ['--episode', EP, '--name', 'full'], {allowFail: true});
     py('content_check.py', ['--video', path.relative(ROOT, out)], {allowFail: true});
+    py('final_scan.py', ['--video', path.relative(ROOT, out)], {allowFail: true});
     const rep = validateVideo(out, {minDur: 60, maxDur: 60 * 20});
     rep.expected_frames = tl.durationInFrames;
     writeReport(`${name}_report`, rep);
     console.log(JSON.stringify(rep, null, 2));
+  },
+  // Collect the delivery files in episode<EP>/ (videos hard-linked, not copied: the master is ~750 MB).
+  deliver() {
+    const dest = path.join(ROOT, `episode${EP}`);
+    fs.mkdirSync(dest, {recursive: true});
+    const fin = path.join(OUT, 'final');
+    const name = `hidden_ledger_episode_${EP}_FINAL_1080p`;
+    for (const f of [`${name}.mp4`, `${name}_share.mp4`]) {
+      const src = path.join(fin, f);
+      if (!fs.existsSync(src)) continue;
+      const to = path.join(dest, f);
+      if (fs.existsSync(to)) fs.rmSync(to);
+      try {
+        fs.linkSync(src, to);
+      } catch {
+        fs.copyFileSync(src, to);
+      }
+    }
+    const content = path.join(ROOT, 'content', `episode-${EP}`);
+    fs.copyFileSync(path.join(fin, `hidden_ledger_episode_${EP}.srt`), path.join(dest, `hidden_ledger_episode_${EP}.srt`));
+    for (const f of ['sources.md', 'fact_check.csv']) fs.copyFileSync(path.join(content, f), path.join(dest, f));
+    py('fact_table.py', ['--episode', EP, '--out', path.relative(ROOT, path.join(dest, 'fact_check.md'))]);
+    ['A', 'B', 'C'].forEach((letter, i) => {
+      const src = path.join(OUT, 'thumbnails', `thumbnail_${i + 1}.png`);
+      if (fs.existsSync(src)) fs.copyFileSync(src, path.join(dest, `thumbnail_option_${letter}.png`));
+    });
+    console.log(fs.readdirSync(dest).join('\n'));
   },
   shorts() {
     const ep = episode();

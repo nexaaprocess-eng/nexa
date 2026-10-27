@@ -126,7 +126,7 @@ export const S08Shrink: React.FC = () => {
           </Title>
           <Body size={36}>of the U.S. food supply was lost at the retail level in 2010</Body>
           <Body size={30} color={C.muted} style={{marginTop: 18}}>
-            (43 billion pounds) · an older estimate, shown for scale
+            (43 billion pounds) · an older estimate, shown for scale; USDA notes some data users consider it high
           </Body>
         </Abs>
       </div>

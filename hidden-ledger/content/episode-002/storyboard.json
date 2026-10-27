@@ -1,0 +1,1015 @@
+{
+  "episode": "002",
+  "title": "How Supermarkets Make Money on Tiny Margins",
+  "fps": 30,
+  "timing_source": "measured WAV durations (output/episode-XXX/audio/full/timeline.json)",
+  "duration": 599.501,
+  "scenes": [
+    {
+      "id": "s01",
+      "title": "Cold open",
+      "chapter": "A hundred dollars at the checkout",
+      "music": "intro",
+      "start": 0.0,
+      "end": 40.594,
+      "duration": 40.594,
+      "component": "src/scenes (registry id s01)",
+      "beats": [
+        {
+          "segment": "s01-01",
+          "start": 0.6,
+          "end": 3.02,
+          "narration": "You hand over a hundred dollars at the checkout.",
+          "visual": "Checkout lane already moving at frame 0; a generic $100 bill slides in; question band on screen",
+          "on_screen_text": [
+            "Of every $100 you spend at a supermarket… how much does the store keep?"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s01-02",
+          "start": 3.4,
+          "end": 11.76,
+          "narration": "Bread, coffee, a gallon of milk, a week of dinners. The scanner beeps, the receipt prints, and the money disappears into the register.",
+          "visual": "Bread, coffee, milk and a deli meal cross the scanner on the spoken words (beeps); register total climbs; receipt prints",
+          "on_screen_text": [
+            "register total"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s01-03",
+          "start": 12.14,
+          "end": 16.54,
+          "narration": "So how much of that hundred dollars does the supermarket actually keep?",
+          "visual": "Close-up on the bill with a question badge",
+          "on_screen_text": [
+            "How much does the supermarket keep?"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s01-04",
+          "start": 16.92,
+          "end": 28.85,
+          "narration": "At Kroger, which runs nearly 2,700 supermarkets across the United States, the answer for its latest fiscal year was about $1.28 in operating profit.",
+          "visual": "Bill shrinks to the left; 2,697 green squares fill in (one per supermarket); $1.28 counts up",
+          "on_screen_text": [
+            "≈2,700 Kroger supermarkets",
+            "2,697 at fiscal year-end · one square = one store",
+            "$1.28 operating profit per $100 of sales",
+            "SOURCE Kroger 10-K FY2025"
+          ],
+          "claims": [
+            "K01",
+            "K03"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s01-05",
+          "start": 29.23,
+          "end": 34.924,
+          "narration": "And yet the same company brought in more than $147 billion in sales.",
+          "visual": "$147.6B counter beside the tiny $1.28",
+          "on_screen_text": [
+            "Kroger sales, fiscal 2025",
+            "$147.6B",
+            "more than $147 billion"
+          ],
+          "claims": [
+            "K02"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s01-06",
+          "start": 35.304,
+          "end": 40.144,
+          "narration": "Tiny margins. Enormous numbers. How does that business actually work?",
+          "visual": "A tiny pulsing coin vs a growing stack of crates",
+          "on_screen_text": [
+            "Tiny margins.",
+            "Enormous numbers.",
+            "How does that business actually work?"
+          ],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "title": "Huge sales, thin profit",
+      "chapter": "Huge sales, thin profit",
+      "music": "neutral",
+      "start": 40.594,
+      "end": 115.474,
+      "duration": 74.88,
+      "component": "src/scenes (registry id s02)",
+      "beats": [
+        {
+          "segment": "s02-01",
+          "start": 41.044,
+          "end": 43.944,
+          "narration": "Start with the scale, because it changes everything.",
+          "visual": "Camera pulls back from one storefront to a grid of 49 stores",
+          "on_screen_text": [
+            "Start with the scale"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s02-02",
+          "start": 44.324,
+          "end": 60.473,
+          "narration": "In the fiscal year that ended in January 2026, Kroger reported $147.6 billion in sales. Its operating profit was $1.9 billion, or 1.28 percent of sales.",
+          "visual": "A $147.6B column of crates; a thin green sliver on top is circled",
+          "on_screen_text": [
+            "$147.6B sales",
+            "$1.9B operating profit = 1.28%"
+          ],
+          "claims": [
+            "K02",
+            "K03"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s02-03",
+          "start": 60.853,
+          "end": 73.292,
+          "narration": "That year included a $2.5 billion charge tied to its automated fulfillment network. The year before, operating profit was 2.62 percent of sales.",
+          "visual": "Red card for the charge; FY2025 vs FY2024 margin bars",
+          "on_screen_text": [
+            "Includes a $2.5B charge",
+            "1.28% FY2025",
+            "2.62% FY2024"
+          ],
+          "claims": [
+            "K04",
+            "K05"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s02-04",
+          "start": 73.672,
+          "end": 82.163,
+          "narration": "Either way, the pattern is the same: one or two cents of operating profit on each dollar, multiplied across a mountain of sales.",
+          "visual": "100-dot grid (cents in a dollar); two dots light green",
+          "on_screen_text": [
+            "1–2¢ of operating profit",
+            "…multiplied across a mountain of sales"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s02-05",
+          "start": 82.543,
+          "end": 89.043,
+          "narration": "Even one percent of nearly $150 billion is well over a billion dollars.",
+          "visual": "Equation builds term by term",
+          "on_screen_text": [
+            "1% × $147.6B = $1.48B"
+          ],
+          "claims": [
+            "X01"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s02-06",
+          "start": 89.423,
+          "end": 106.074,
+          "narration": "Scale works the same way at the top of the industry. Walmart's operating income was 4.2 percent of net sales in its latest fiscal year. On more than $700 billion of net sales, that came to nearly $30 billion.",
+          "visual": "Supercenter storefront; net-sales bar with a 4.2% green slice",
+          "on_screen_text": [
+            "$706B net sales",
+            "4.2% operating income",
+            "≈$30B"
+          ],
+          "claims": [
+            "W03",
+            "W05"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s02-07",
+          "start": 106.454,
+          "end": 115.024,
+          "narration": "That is the first secret of the supermarket. It is not built to earn a lot on each sale. It is built to make an enormous number of them.",
+          "visual": "Four checkout belts running at once",
+          "on_screen_text": [
+            "SECRET #1",
+            "Not a lot per sale. An enormous number of sales."
+          ],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "title": "Three kinds of margin",
+      "chapter": "Where the $100 goes",
+      "music": "process",
+      "start": 115.474,
+      "end": 190.481,
+      "duration": 75.007,
+      "component": "src/scenes (registry id s03)",
+      "beats": [
+        {
+          "segment": "s03-01",
+          "start": 115.924,
+          "end": 121.984,
+          "narration": "To see where the rest goes, follow a hundred dollars of Kroger's sales through its income statement.",
+          "visual": "100 one-dollar coins on the left; waterfall starts with the $100 sales bar",
+          "on_screen_text": [
+            "$100 of Kroger sales",
+            "Sales $100.00"
+          ],
+          "claims": [
+            "K06"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s03-02",
+          "start": 122.364,
+          "end": 132.904,
+          "narration": "First, the cost of the goods themselves, including advertising, warehousing and transportation. That takes about $77.14.",
+          "visual": "77 coins fly into the 'Cost of goods' row; red bar grows",
+          "on_screen_text": [
+            "Cost of goods −$77.14",
+            "includes advertising, warehousing and transportation"
+          ],
+          "claims": [
+            "K06"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s03-03",
+          "start": 133.284,
+          "end": 142.504,
+          "narration": "What remains is gross profit: $22.86. Kroger reports a gross margin of 22.9 percent.",
+          "visual": "Gross profit row appears",
+          "on_screen_text": [
+            "Gross profit $22.86",
+            "Gross margin 22.9%"
+          ],
+          "claims": [
+            "K06",
+            "K07"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s03-04",
+          "start": 142.884,
+          "end": 148.064,
+          "narration": "Gross margin is what survives the cost of the product. It is not profit yet.",
+          "visual": "Stamp on the gross-profit row",
+          "on_screen_text": [
+            "NOT PROFIT YET"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s03-05",
+          "start": 148.444,
+          "end": 162.791,
+          "narration": "Next comes the cost of running the business: wages and benefits, utilities, rent, depreciation, and that year's $2.5 billion charge. Together, about $21.58.",
+          "visual": "22 coins fly into 'Running the business'; cost chips appear on the spoken words",
+          "on_screen_text": [
+            "wages & benefits",
+            "utilities",
+            "rent",
+            "depreciation",
+            "$2.5B charge",
+            "−$21.58"
+          ],
+          "claims": [
+            "K04",
+            "K06"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s03-06",
+          "start": 163.171,
+          "end": 169.351,
+          "narration": "What's left is operating profit, what the business itself earned: $1.28.",
+          "visual": "Last coin pulses green; operating-profit sliver",
+          "on_screen_text": [
+            "Operating profit $1.28",
+            "Operating margin 1.28%"
+          ],
+          "claims": [
+            "K03",
+            "K06"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s03-07",
+          "start": 169.731,
+          "end": 178.091,
+          "narration": "Then interest, taxes and other items. Net earnings, the bottom line for shareholders, came to about 69 cents.",
+          "visual": "Interest/taxes row and net earnings",
+          "on_screen_text": [
+            "−$0.59",
+            "Net earnings $0.69",
+            "Net margin 0.69%"
+          ],
+          "claims": [
+            "K08"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s03-08",
+          "start": 178.471,
+          "end": 190.031,
+          "narration": "Gross margin, operating margin, net margin. Three different numbers that answer three different questions, and mixing them up is the easiest way to misread a supermarket.",
+          "visual": "Three cards land on the words gross / operating / net",
+          "on_screen_text": [
+            "Gross 22.9%",
+            "Operating 1.28%",
+            "Net 0.69%"
+          ],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "title": "The basket",
+      "chapter": "One basket, many margins",
+      "music": "lift",
+      "start": 190.481,
+      "end": 245.621,
+      "duration": 55.14,
+      "component": "src/scenes (registry id s04)",
+      "beats": [
+        {
+          "segment": "s04-01",
+          "start": 190.931,
+          "end": 202.511,
+          "narration": "Inside those averages, every product plays a different role. Here is a hypothetical basket. These prices and costs are illustrative, not data from any real store.",
+          "visual": "ILLUSTRATIVE banner; checkout scans the ten basket items",
+          "on_screen_text": [
+            "A hypothetical basket",
+            "Prices & costs are invented"
+          ],
+          "claims": [
+            "I01"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s04-02",
+          "start": 202.891,
+          "end": 205.981,
+          "narration": "Ten items, $54 at the register.",
+          "visual": "Receipt prints as the tenth item scans; register reads $54.00",
+          "on_screen_text": [
+            "10 items · $54.00"
+          ],
+          "claims": [
+            "I01"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s04-03",
+          "start": 206.361,
+          "end": 219.881,
+          "narration": "In this example, the milk earns almost nothing. Stores sometimes price staples like this aggressively, even as loss leaders, sold at a thin margin or below cost to bring shoppers through the door.",
+          "visual": "Milk close-up with a price-vs-cost bar",
+          "on_screen_text": [
+            "price $3.80 · cost $3.65 · kept $0.15 (4%)",
+            "Loss leader: a thin margin, or even below cost, to bring shoppers in"
+          ],
+          "claims": [
+            "I01",
+            "D01"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s04-04",
+          "start": 220.261,
+          "end": 227.931,
+          "narration": "The store-brand cereal earns more than the national brand sitting next to it. The prepared meal from the deli earns more still.",
+          "visual": "National vs store-brand cereal side by side on a shelf; deli meal pops in",
+          "on_screen_text": [
+            "National brand: kept $1.10 (20%)",
+            "Store brand: kept $1.40 (36%)",
+            "Deli meal: kept $3.40 (40%)"
+          ],
+          "claims": [
+            "I01"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s04-05",
+          "start": 228.311,
+          "end": 237.471,
+          "narration": "Add it up, and this basket's gross margin lands near 23 percent. We chose the numbers so it would roughly match Kroger's reported figure.",
+          "visual": "Basket profit waterfall built item by item; total column",
+          "on_screen_text": [
+            "23.2%",
+            "gross margin on $54.00: $12.55 after product costs",
+            "Numbers chosen to land near Kroger's reported 22.9%"
+          ],
+          "claims": [
+            "I01",
+            "K07"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s04-06",
+          "start": 237.851,
+          "end": 245.171,
+          "narration": "The point is that a supermarket does not need every item to be profitable. It needs the mix of what you buy to be.",
+          "visual": "High-margin items outlined in the waterfall",
+          "on_screen_text": [
+            "The mix has to be profitable, not every item"
+          ],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "title": "Speed",
+      "chapter": "The second secret: speed",
+      "music": "process",
+      "start": 245.621,
+      "end": 307.133,
+      "duration": 61.512,
+      "component": "src/scenes (registry id s05)",
+      "beats": [
+        {
+          "segment": "s05-01",
+          "start": 246.071,
+          "end": 247.731,
+          "narration": "The second secret is speed.",
+          "visual": "Speed streaks",
+          "on_screen_text": [
+            "SECRET #2",
+            "Speed"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s05-02",
+          "start": 248.111,
+          "end": 260.431,
+          "narration": "Much of what a grocery store sells can spoil, so it cannot sit for long. Trucks arrive, pallets move through the stockroom, shelves are refilled, and the same shelf space is emptied again.",
+          "visual": "Perishables with clocks, then one tracking shot: truck backs in → pallet through the stockroom → shelf refills → shoppers empty it",
+          "on_screen_text": [
+            "Perishable: it can't sit for long",
+            "Trucks arrive",
+            "Through the stockroom",
+            "Shelves refilled…",
+            "…and emptied again"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s05-03",
+          "start": 260.811,
+          "end": 269.869,
+          "narration": "One way to measure this is inventory turnover: the cost of the goods sold in a year, divided by the average inventory on hand.",
+          "visual": "Goods flow over a fraction bar; a small stock sits under it",
+          "on_screen_text": [
+            "Inventory turnover",
+            "cost of goods sold in a year",
+            "average inventory on hand"
+          ],
+          "claims": [
+            "D02"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s05-04",
+          "start": 270.249,
+          "end": 286.633,
+          "narration": "Using figures from their latest annual reports, Kroger's inventory turned over roughly twelve times, or about once a month. Costco's turned about fourteen times. Walmart's, with far more general merchandise, about nine times.",
+          "visual": "Three lanes count laps for one simulated year",
+          "on_screen_text": [
+            "Costco 14.1×",
+            "Kroger 12.0×",
+            "Walmart 9.3×"
+          ],
+          "claims": [
+            "X02"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s05-05",
+          "start": 287.013,
+          "end": 298.413,
+          "narration": "Twelve turns a year means the average item spends about a month between the delivery truck and the checkout. The faster that cycle runs, the less cash sits on the shelves at any moment.",
+          "visual": "30-day calendar lights up day by day from truck to scanner",
+          "on_screen_text": [
+            "12 turns a year ≈ about a month from truck to checkout",
+            "less cash sitting on the shelves"
+          ],
+          "claims": [
+            "X02"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s05-06",
+          "start": 298.793,
+          "end": 306.683,
+          "narration": "Every turn is another chance to earn that thin margin again, from the same shelf space and the same money tied up in stock.",
+          "visual": "A coin loops Truck → Shelf → Checkout; turn counter increments",
+          "on_screen_text": [
+            "+N turns, each one earning the thin margin again",
+            "Same shelf space. Same money tied up in stock."
+          ],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "title": "Suppliers",
+      "chapter": "Who finances the shelves",
+      "music": "neutral",
+      "start": 307.133,
+      "end": 370.851,
+      "duration": 63.718,
+      "component": "src/scenes (registry id s06)",
+      "beats": [
+        {
+          "segment": "s06-01",
+          "start": 307.583,
+          "end": 319.426,
+          "narration": "And this is where it gets interesting. At the end of their latest fiscal years, Walmart, Costco and Kroger each owed more in accounts payable than the value of the inventory on their books.",
+          "visual": "Three balance scales tip toward payables",
+          "on_screen_text": [
+            "Accounts payable > inventory",
+            "Walmart 107%",
+            "Costco 117%",
+            "Kroger 111%"
+          ],
+          "claims": [
+            "X03"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s06-02",
+          "start": 319.806,
+          "end": 330.272,
+          "narration": "Accounts payable are bills that haven't been paid yet. When goods sell before their invoices come due, suppliers are, in effect, helping to finance the shelves.",
+          "visual": "Stack of invoices stamped NOT YET PAID",
+          "on_screen_text": [
+            "Accounts payable = bills not paid yet",
+            "…suppliers are, in effect, helping finance the shelves"
+          ],
+          "claims": [
+            "D03"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s06-03",
+          "start": 330.652,
+          "end": 346.592,
+          "narration": "Here is a simple hypothetical. A case of pasta arrives on day one, sells out within three weeks, and the supplier's invoice is due on day thirty. For more than a week, the store holds the shoppers' money before it pays for the pasta.",
+          "visual": "ILLUSTRATIVE 30-day timeline: truck drops a pasta case on day 1, shelf empties by day 21, till fills, invoice paid on day 30",
+          "on_screen_text": [
+            "day 1 … day 30",
+            "9 days holding the cash"
+          ],
+          "claims": [
+            "I02"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s06-04",
+          "start": 346.972,
+          "end": 362.631,
+          "narration": "Money also flows the other way. Walmart's annual report describes payments from suppliers for volume incentives, warehouse allowances, markdowns and certain advertising, and records them as a reduction of its cost of sales.",
+          "visual": "Arrows from a supplier warehouse to a store, one per spoken payment type",
+          "on_screen_text": [
+            "volume incentives",
+            "warehouse allowances",
+            "markdowns",
+            "certain advertising",
+            "→ booked as a reduction of cost of sales"
+          ],
+          "claims": [
+            "W04"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s06-05",
+          "start": 363.011,
+          "end": 370.401,
+          "narration": "So the gross margin you see is shaped not only by shelf prices, but by negotiations most shoppers never see.",
+          "visual": "A shelf darkens to reveal two contracts behind it",
+          "on_screen_text": [
+            "The shelf price is only part of the story",
+            "Gross margin is also shaped by negotiations shoppers never see"
+          ],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "title": "Private label",
+      "chapter": "The store's own brand",
+      "music": "lift",
+      "start": 370.851,
+      "end": 411.337,
+      "duration": 40.486,
+      "component": "src/scenes (registry id s07)",
+      "beats": [
+        {
+          "segment": "s07-01",
+          "start": 371.301,
+          "end": 373.381,
+          "narration": "Then there is the store's own brand.",
+          "visual": "Dolly down a supermarket aisle",
+          "on_screen_text": [
+            "The store's own brand"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s07-02",
+          "start": 373.761,
+          "end": 388.267,
+          "narration": "Kroger says its Our Brands products made up more than $39 billion of its sales in fiscal 2025, and that its supermarkets stock, on average, more than 13,000 private label items.",
+          "visual": "Shelf with store-brand facings lit by a sweeping spotlight; counters",
+          "on_screen_text": [
+            "$39B+ of sales in fiscal 2025",
+            "13,000+ private-label items in an average Kroger supermarket"
+          ],
+          "claims": [
+            "K09",
+            "K10"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s07-03",
+          "start": 388.647,
+          "end": 391.067,
+          "narration": "That is roughly a quarter of all its sales.",
+          "visual": "Pie fills to 26.4%",
+          "on_screen_text": [
+            "≈ 1/4",
+            "$39B of $147.6B in sales = 26.4%"
+          ],
+          "claims": [
+            "X04"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s07-04",
+          "start": 391.447,
+          "end": 399.997,
+          "narration": "Costco says its Kirkland Signature products are generally priced lower than national brands, and generally earn higher margins.",
+          "visual": "Store-brand box; two verbatim Costco 10-K phrases slide in",
+          "on_screen_text": [
+            "“prices that are generally lower than national brands”",
+            "“generally earn higher margins”"
+          ],
+          "claims": [
+            "C04"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s07-05",
+          "start": 400.377,
+          "end": 410.887,
+          "narration": "Both can be true at once. When the retailer controls the product, the label and the price, it can charge the shopper less and still keep a larger share of each sale.",
+          "visual": "Conceptual stacked bars: national brand (product, brand owner, store) vs store brand (product, store)",
+          "on_screen_text": [
+            "How both can be true",
+            "Conceptual diagram: bar lengths are not data"
+          ],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "title": "Shrink",
+      "chapter": "The danger: shrink and waste",
+      "music": "tension",
+      "start": 411.337,
+      "end": 477.899,
+      "duration": 66.562,
+      "component": "src/scenes (registry id s08)",
+      "beats": [
+        {
+          "segment": "s08-01",
+          "start": 411.787,
+          "end": 416.599,
+          "narration": "Now the danger. In a business this thin, small losses are big problems.",
+          "visual": "Aisle under a pulsing red alert",
+          "on_screen_text": [
+            "THE DANGER",
+            "In a business this thin, small losses are big problems"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s08-02",
+          "start": 416.979,
+          "end": 427.069,
+          "narration": "Retailers call it shrink: products that were paid for but never sold, because they spoiled, were damaged, were stolen, or simply went missing in the records.",
+          "visual": "Four panels acted out on the words: banana browns, box crushes, coffee vanishes, records mismatch",
+          "on_screen_text": [
+            "Shrink: paid for, but never sold",
+            "Spoiled",
+            "Damaged",
+            "Stolen",
+            "Missing in the records"
+          ],
+          "claims": [
+            "D04"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s08-03",
+          "start": 427.449,
+          "end": 445.629,
+          "narration": "Groceries carry extra risk because so much of the store is perishable. The U.S. Department of Agriculture estimated that food losses at the retail level equaled 10 percent of the available food supply in 2010. It is an older estimate, but it shows the scale.",
+          "visual": "Ten produce crates; one turns red",
+          "on_screen_text": [
+            "10% of the U.S. food supply was lost at the retail level in 2010",
+            "(43 billion pounds) · older estimate; USDA notes some users consider it high"
+          ],
+          "claims": [
+            "U01"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s08-04",
+          "start": 446.009,
+          "end": 458.089,
+          "narration": "That is also why perishables get marked down near the end of their shelf life. A bag of salad sold at half price still recovers part of its cost. One thrown away recovers nothing.",
+          "visual": "Salad marked 50% returns coins; a spoiled one drops into a bin",
+          "on_screen_text": [
+            "Marked down",
+            "Thrown away",
+            "recovers part of its cost",
+            "$0"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s08-05",
+          "start": 458.469,
+          "end": 471.059,
+          "narration": "Here is why it matters so much. Imagine a store with a 2 percent operating margin. To make up for one dollar of product lost to shrink, it needs about fifty dollars of new sales.",
+          "visual": "ILLUSTRATIVE: a $1 hole fills as 50 one-dollar sales ring up",
+          "on_screen_text": [
+            "Imagine a 2% operating margin",
+            "$50 of new sales",
+            "$1 lost ÷ 2¢ of profit per $1 of sales = $50 of sales"
+          ],
+          "claims": [
+            "X05"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s08-06",
+          "start": 471.439,
+          "end": 477.449,
+          "narration": "That is why Kroger listed lower shrink among the reasons its gross margin improved last year.",
+          "visual": "Kroger's reasons list with 'lower shrink' highlighted beside a shelf",
+          "on_screen_text": [
+            "Why Kroger's gross margin rose to 22.9%",
+            "lower shrink"
+          ],
+          "claims": [
+            "K11"
+          ],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "title": "Three business models",
+      "chapter": "Supermarket, supercenter, warehouse club",
+      "music": "neutral",
+      "start": 477.899,
+      "end": 551.391,
+      "duration": 73.492,
+      "component": "src/scenes (registry id s09)",
+      "beats": [
+        {
+          "segment": "s09-01",
+          "start": 478.349,
+          "end": 481.899,
+          "narration": "Not every company that sells groceries plays the same game.",
+          "visual": "Three storefronts drop in",
+          "on_screen_text": [
+            "Supermarket",
+            "Supercenter",
+            "Warehouse club"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s09-02",
+          "start": 482.279,
+          "end": 501.519,
+          "narration": "Walmart is a general merchandise giant. In its latest fiscal year, grocery was about 59 percent of Walmart U.S. sales. Its consolidated gross profit was 24.2 percent of net sales, and operating income was 4.2 percent.",
+          "visual": "Supercenter; grocery pie 59%; figures on the words",
+          "on_screen_text": [
+            "59% of Walmart U.S. sales were grocery",
+            "24.2% gross profit rate",
+            "4.2% operating income"
+          ],
+          "claims": [
+            "W01",
+            "W02",
+            "W03"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s09-03",
+          "start": 501.899,
+          "end": 515.467,
+          "narration": "Costco runs membership warehouse clubs. Its gross margin on net sales was just 11.09 percent. But it also collected $5.9 billion in membership fees.",
+          "visual": "Warehouse club; membership card flies in",
+          "on_screen_text": [
+            "11.09% gross margin on net sales",
+            "$5.9B membership fees"
+          ],
+          "claims": [
+            "C01",
+            "C02"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s09-04",
+          "start": 515.847,
+          "end": 526.557,
+          "narration": "Those fees were equal to about half of Costco's operating income for the year. Its model pairs very thin margins on goods with a fee that members pay to shop.",
+          "visual": "Fees bar inside the operating-income bar",
+          "on_screen_text": [
+            "Operating income $11.7B",
+            "fees $5.9B",
+            "≈ half (50.6%)"
+          ],
+          "claims": [
+            "X06"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s09-05",
+          "start": 526.937,
+          "end": 537.377,
+          "narration": "A traditional supermarket chain like Kroger leans on fresh food, its own brands, pharmacy, fuel and growing side businesses such as advertising.",
+          "visual": "Supermarket storefront; chips appear on the spoken words",
+          "on_screen_text": [
+            "Fresh food",
+            "Own brands",
+            "Pharmacy",
+            "Fuel",
+            "Advertising & other side businesses"
+          ],
+          "claims": [
+            "K12"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s09-06",
+          "start": 537.757,
+          "end": 550.941,
+          "narration": "So these numbers are not interchangeable. A 24 percent gross margin at Walmart and an 11 percent gross margin at Costco describe different businesses, not better or worse ones.",
+          "visual": "Two pies (24% vs 11%) with ≠",
+          "on_screen_text": [
+            "24% Walmart gross margin",
+            "11% Costco gross margin",
+            "Different businesses, not better or worse ones"
+          ],
+          "claims": [
+            "W02",
+            "C01"
+          ],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "Payoff",
+      "chapter": "So how do they make money?",
+      "music": "reveal",
+      "start": 551.391,
+      "end": 599.501,
+      "duration": 48.11,
+      "component": "src/scenes (registry id s10)",
+      "beats": [
+        {
+          "segment": "s10-01",
+          "start": 551.841,
+          "end": 555.521,
+          "narration": "So, how do supermarkets make money on tiny margins?",
+          "visual": "Back at the checkout",
+          "on_screen_text": [
+            "So how do supermarkets make money on tiny margins?"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s10-02",
+          "start": 555.901,
+          "end": 575.631,
+          "narration": "By selling an enormous volume. By turning their inventory over again and again. By using supplier credit to help finance their shelves. By leaning on their own brands. By fighting shrink, one damaged box at a time. And, in some models, by charging for membership or selling advertising.",
+          "visual": "Six lever tiles tick green on the spoken words",
+          "on_screen_text": [
+            "Enormous volume",
+            "Fast inventory turns",
+            "Supplier credit",
+            "Own brands",
+            "Fighting shrink",
+            "Membership & advertising"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s10-03",
+          "start": 576.011,
+          "end": 592.061,
+          "narration": "The next time you hand over that hundred dollars, remember: at a chain like Kroger, the company keeps only about one to three dollars as operating profit. The rest pays for the food, the people, the buildings and the trucks that make a supermarket work.",
+          "visual": "The $100 bill splits into a bar: food / people · stores · trucks / kept",
+          "on_screen_text": [
+            "$1–3 kept as operating profit at a chain like Kroger"
+          ],
+          "claims": [
+            "K03",
+            "K05"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s10-04",
+          "start": 592.441,
+          "end": 597.001,
+          "narration": "This is Hidden Ledger. Every number in this video is sourced in the description.",
+          "visual": "End card",
+          "on_screen_text": [
+            "HIDDEN LEDGER",
+            "Every number in this video is sourced in the description"
+          ],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    }
+  ]
+}

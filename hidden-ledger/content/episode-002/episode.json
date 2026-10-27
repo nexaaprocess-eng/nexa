@@ -451,7 +451,11 @@
         },
         {
           "id": "06",
-          "text": "So these numbers are not interchangeable. A 24 percent gross margin at Walmart and an 11 percent gross margin at Costco describe different businesses, not better or worse ones."
+          "text": "So these numbers are not interchangeable. A 24 percent gross margin at Walmart and an 11 percent gross margin at Costco describe different businesses, not better or worse ones.",
+          "claims": [
+            "W02",
+            "C01"
+          ]
         }
       ]
     },

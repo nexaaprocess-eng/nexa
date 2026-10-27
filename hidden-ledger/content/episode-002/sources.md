@@ -40,6 +40,36 @@ Kroger is used as the main **supermarket** example. Walmart (supercenters + Sam'
 - **Pasta case timing** (arrives day 1, sells within 3 weeks, invoice due day 30) — no real payment terms claimed.
 - **Shrink arithmetic** — at a hypothetical 2% operating margin, $1 of loss needs ≈ $50 of sales (1/0.02).
 
+## Figures shown on screen but not spoken (same sources, checked)
+| On screen | Scene | Source / method |
+|---|---|---|
+| "2,697 at fiscal year-end · one square = one store" (2,697 squares drawn) | s01 | Kroger 10-K, Item 2 Properties |
+| Operating profit $1,890M on sales $147,642M | s01, s02 | Kroger 10-K, Consolidated Statements of Operations |
+| "$1.9B … operating profit = 1.28%"; FY2024 2.62% bar | s02 | Kroger 10-K MD&A |
+| "$2.5B charge … impairment and related charges tied to its automated fulfillment network" | s02 | Kroger 10-K: "$2.5 billion of fulfillment network impairment and related charges"; closures of three "automated fulfillment" facilities |
+| "1% × $147.6B = $1.48B" | s02 | calculation (calculations.json `one_pct_of_sales_musd` = 1,476) |
+| Walmart "$706B net sales", "$29.8B", "4.2%" | s02 | Walmart 10-K FY2026: net sales $706,413M, operating income $29,825M |
+| Waterfall rows $100.00 / −$77.14 / $22.86 / −$21.58 / $1.28 / −$0.59 / $0.69 | s03 | calculations.json `kroger_per_100` |
+| Turnover counters 14.1× / 12.0× / 9.3× (animated count-up) | s05 | calculations.json `turnover` |
+| Scales: Walmart $63.1B vs $58.9B (107%), Costco $22.6B vs $19.3B (117%), Kroger $10.5B vs $9.4B FIFO (111%) | s06 | 10-K balance sheets at fiscal year-end; calculations.json `payables_vs_inventory_pct` |
+| "9 days holding the cash" | s06 | hypothetical pasta example: sold out by day 21, invoice paid day 30 |
+| Kroger "$39B+", "13,000+" | s07 | Kroger 10-K Item 1 ("over $39 billion"; "over 13,000 private label items") |
+| "≈ 1/4 … 26.4%" (lower bound) | s07 | 39,000 / 147,642 |
+| Costco quotes "prices that are generally lower than national brands", "generally earn higher margins" | s07 | Costco 10-K FY2026 Item 1 (verbatim) |
+| National vs store brand split bars | s07 | conceptual diagram, labelled "bar lengths are not data" |
+| "10% … (43 billion pounds) … 2010" | s08 | USDA ERS EIB-121, p. iii/summary |
+| "$1 lost ÷ 2¢ … = $50 of sales" | s08 | hypothetical 2% margin, labelled ILLUSTRATIVE |
+| Kroger gross margin 22.9% (2025) vs 22.3% (2024); reasons list (pharmacy business sale, sourcing, lower shrink, supply chain, fuel; partly offset) | s08 | Kroger 10-K MD&A "Gross Margin" (verbatim reasons, abbreviated) |
+| Walmart U.S. grocery $285.5B of $483.0B (59%); gross profit rate 24.2% | s09 | Walmart 10-K FY2026 segment disclosure and MD&A |
+| Costco net sales $297,247M; 11.09%; fees $5,907M; operating income $11,685M; "≈ half (50.6%)" | s09 | Costco 10-K FY2026; calculations.json |
+| Kroger 2,250 pharmacies, 1,731 fuel centers; third-party media revenue | s09 | Kroger 10-K Item 1 |
+| "$1–3 kept as operating profit" | s10 | Kroger operating margin 1.28% (FY2025) and 2.62% (FY2024) |
+
+## Verification status
+- Every company figure was read in the 10-K HTML and cross-checked against SEC XBRL company facts (same values). No figure comes from a press release, a news article or a secondary database.
+- The USDA figure is dated (2010 data, published 2014) and is presented as an older estimate, for scale only. The report itself (footnote 11) notes that "some data users have suggested that the total retail-level loss estimates of 10 percent and 43 billion pounds are high" given modern packaging, cold chain and inventory tracking; the video shows this caveat on screen.
+- Not independently verifiable here: what any individual store earns on any individual product. The video therefore never states store-level or product-level margins as facts; all such numbers are labelled hypothetical.
+
 ## Checked and not used
 - Industry-wide shrink percentages (NRF National Retail Security Survey): cover all retail, not grocery specifically → not used.
 - Store-level or "national average" grocery margins from trade blogs: no primary methodology → not used.

@@ -31,6 +31,13 @@ macOS/Linux: identical commands (the scripts pick `.venv/bin/python` or `.venv\S
 | `npm run episode:001:v2` | full episode, 1080p, **YouTube delivery encode**: two-pass H.264 High@4.2 at 8 Mbps, GOP 15, AAC 384 kbps, then A/V sync check | `output/episode-001/full/full_video_v2.mp4`, `diagnostics/av_check_full_video_v2.json` |
 | `npm run shorts:001` | two 9:16 Shorts reusing the full render (needs the episode first) | `output/episode-001/shorts/` |
 | `npm run thumbnails:001` | three 1280×720 PNG thumbnails | `output/episode-001/thumbnails/` |
+| `npm run final:002` | final delivery = `audio` → `render` → `encode` → `qa` (each also runs alone, see below) | `output/episode-002/final/hidden_ledger_episode_002_FINAL_1080p.mp4` (+ `_share.mp4` under 380 MiB, `.srt`, report) |
+| `node scripts/pipeline.mjs render --episode 002` | 1080p render, **one chunk per scene cached by content hash**: re-running skips every scene whose code, timing and settings are unchanged and resumes after an interruption (chunks are written atomically and frame-counted) | `output/episode-002/final/parts/sNN_<hash>.mp4` + `manifest.json` |
+| `node scripts/pipeline.mjs encode --episode 002` | two-pass H.264 High@4.2 (10 Mbps, GOP 15) + AAC 256 kbps 48 kHz from the chunks; refuses to run if any chunk is missing or stale | final MP4 + share copy |
+| `node scripts/pipeline.mjs qa --episode 002` | A/V offset & drift, wipe/cut timing, ASR through the final mix, stems, near-empty-frame scan | `diagnostics/av_check_*.json`, `stem_check_ep002_full.json`, `content_check_*.json` |
+| `node scripts/pipeline.mjs deliver --episode 002` | collects MP4 (hard link), SRT, thumbnails, sources and fact-check table | `episode002/` |
+| `npm run thumbnails:002` | two 1280×720 thumbnails (designs per episode in `src/scenes/epXXX/Thumbnail.tsx`) | `output/episode-002/thumbnails/` |
+| `npm run lint:text` | flags HTML text under 26 px (phone readability) | console |
 | `npm run verify` | probes every deliverable (duration, codecs, resolution, loudness, files, licences) + contact sheets | `diagnostics/verify.json` |
 | `npm run studio` | Remotion Studio to preview/scrub scenes in the browser | — |
 
@@ -62,6 +69,7 @@ output/episode-XXX/{preview,full,shorts,thumbnails}
 ```
 
 - `src/components/sets.tsx` reusable animated environments: `StreetSet` (3-layer parallax street), `Conveyor` (moving belt, rollers, scanner arch, flagged parcels), `WarehouseSet` (racks, lights, floor), `DockSet` (truck backing into a loading dock while a conveyor loads it), `SetWindow` (frames any set in a panel under a persistent header).
+- `src/components/grocery.tsx` grocery kit (episode 002+): generic unbranded `Product`s (milk, eggs, bananas, bread, national vs STORE BRAND cereal, coffee, deli, pasta, detergent, salad; with `spoil`/`crush`), `ShelfUnit` (per-facing stock for restocking/selling out), `AisleSet` (perspective aisle with dolly), `CheckoutSet` (belt, scanner flash, register total, receipt), `StockroomSet`, `Semi` truck, `Bill`, `StoreFront` (supermarket / supercenter / warehouse club), `MemberCard`, `Cart`, `Receipt`.
 - `src/components/` reusable building blocks: icons (original SVG), charts (counters, bars, dot grids), cards, source labels, the "Illustrative example" banner, HUD, subtitles, timing hooks (`useBeats`: `at(i)`, `during(a,b)`, `word(i, /regex/)` to sync to spoken words).
 - `src/scenes/` episode-specific scenes + `index.ts` registry. `GenericScene` renders any scene without a custom component.
 - `src/themes/` brand colours and local fonts.
