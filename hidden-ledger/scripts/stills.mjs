@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Render many review stills with a single bundle.
-// Usage: node scripts/stills.mjs <props.json> <outDir> <scale> <t1> <t2> ...   (times in seconds)
+// Usage: node scripts/stills.mjs <props.json> <outDir> <scale> <t1> <t2> ...   (times in seconds, or f<frame>)
 import {bundle} from '@remotion/bundler';
 import {renderStill, selectComposition} from '@remotion/renderer';
 import fs from 'node:fs';
@@ -18,8 +18,9 @@ fs.mkdirSync(outDir, {recursive: true});
 const serveUrl = await bundle({entryPoint: path.join(ROOT, 'src', 'main.ts'), publicDir: path.join(ROOT, 'assets')});
 const composition = await selectComposition({serveUrl, id: 'Episode', inputProps});
 for (const t of times) {
-  const frame = Math.min(composition.durationInFrames - 1, Math.round(Number(t) * composition.fps));
-  const output = path.join(outDir, `t${String(Number(t).toFixed(1)).padStart(6, '0')}.jpg`);
+  // "f1234" = exact frame number; otherwise seconds
+  const frame = Math.min(composition.durationInFrames - 1, t.startsWith('f') ? Number(t.slice(1)) : Math.round(Number(t) * composition.fps));
+  const output = path.join(outDir, t.startsWith('f') ? `f${String(frame).padStart(6, '0')}.jpg` : `t${String(Number(t).toFixed(1)).padStart(6, '0')}.jpg`);
   await renderStill({composition, serveUrl, output, frame, inputProps, imageFormat: 'jpeg', jpegQuality: 85, scale: Number(scaleArg) || 0.5, timeoutInMilliseconds: 120000});
   console.log(output);
 }

@@ -1,0 +1,109 @@
+{
+  "video": "output/episode-002/final/hidden_ledger_episode_002_FINAL_1080p.mp4",
+  "problems": [],
+  "completeness": {
+    "video_frames": 17986,
+    "timeline_frames": 17986,
+    "video_duration": 599.533333,
+    "audio_duration": 599.533,
+    "timeline_duration": 599.501,
+    "video_start": 0.0,
+    "audio_start": 0.0
+  },
+  "audio_offset": [
+    {
+      "at_s": 5.0,
+      "offset_ms": 0.0,
+      "correlation": 0.957
+    },
+    {
+      "at_s": 299.8,
+      "offset_ms": 0.0,
+      "correlation": 0.959
+    },
+    {
+      "at_s": 574.5,
+      "offset_ms": 0.0,
+      "correlation": 0.968
+    }
+  ],
+  "scene_transitions": [
+    {
+      "scene": "s02",
+      "timeline_start": 40.594,
+      "wipe_centre": 40.461,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.88,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s03",
+      "timeline_start": 115.474,
+      "wipe_centre": 115.341,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.89,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s04",
+      "timeline_start": 190.481,
+      "wipe_centre": 190.348,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.88,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s05",
+      "timeline_start": 245.621,
+      "wipe_centre": 245.488,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.88,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s06",
+      "timeline_start": 307.133,
+      "wipe_centre": 307.0,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.88,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s07",
+      "timeline_start": 370.851,
+      "wipe_centre": 370.718,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.89,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s08",
+      "timeline_start": 411.337,
+      "wipe_centre": 411.204,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.89,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s09",
+      "timeline_start": 477.899,
+      "wipe_centre": 477.766,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.89,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s10",
+      "timeline_start": 551.391,
+      "wipe_centre": 551.258,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.89,
+      "baseline_coverage": 0.0
+    }
+  ],
+  "intelligibility": {
+    "wer_final_mix": 0.014,
+    "weighted_wer_dry_narration": 0.0102
+  },
+  "ok": true
+}

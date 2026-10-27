@@ -131,25 +131,31 @@ export const S01ColdOpen: React.FC = () => {
       {/* --- beat 5: tiny margins, enormous numbers --- */}
       <div style={{position: 'absolute', inset: 0, opacity: fin}}>
         <Stage>
-          <Place x={520} y={560} s={0.32 + 0.05 * Math.sin(frame / 8)}>
+          {/* left: one small coin on a big empty plate */}
+          <circle cx={520} cy={470} r={190} fill={C.panel} stroke={C.line} strokeWidth={6} />
+          <Place x={520} y={470} s={0.45 + 0.05 * Math.sin(frame / 8)}>
             <circle r={60} fill={C.green} stroke={C.cream} strokeWidth={8} />
           </Place>
+          {/* right: the stack is outlined from the start and fills on "Enormous" */}
           {Array.from({length: 60}).map((_, i) => {
             const col = i % 10;
             const row = Math.floor(i / 10);
             const o = b.ramp(5, 1.0 + i * 0.025, 0.25);
-            return <rect key={i} x={1060 + col * 70} y={700 - row * 70 - 20 * (1 - o)} width={60} height={60} rx={6} fill={C.orange} opacity={o} stroke={C.cream} strokeWidth={3} />;
+            return <rect key={i} x={1060 + col * 70} y={700 - row * 70 - 20 * (1 - o)} width={60} height={60} rx={6} fill={C.orange} fillOpacity={o} stroke={o > 0.5 ? C.cream : C.line} strokeWidth={3} />;
           })}
         </Stage>
-        <Abs x={320} y={680} w={400} align="center" o={b.ramp(5, 0)}>
-          <Title size={80} color={C.green}>
+        <Abs x={170} y={690} w={700} align="center" o={b.ramp(5, 0)}>
+          <Title size={96} color={C.green}>
             Tiny margins.
           </Title>
+          <Body size={34} color={C.muted} style={{marginTop: 6}}>
+            $1.28 of operating profit per $100
+          </Body>
         </Abs>
         <Abs x={1040} y={200} w={760} align="center" o={b.ramp(5, 1.0)}>
           <Title size={80}>Enormous numbers.</Title>
         </Abs>
-        <Abs x={0} y={800} w={1920} align="center" o={b.ramp(5, 2.4)}>
+        <Abs x={0} y={830} w={1920} align="center" o={b.ramp(5, 2.4)}>
           <Body size={44} color={C.cream} weight={600} style={{fontFamily: FONT_TITLE}}>
             How does that business actually work?
           </Body>

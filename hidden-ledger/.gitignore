@@ -37,3 +37,4 @@ output/**/final/x264*
 # episode 002: raw review stills (contact sheets in diagnostics/ep002_sheets* are kept) + delivery video
 diagnostics/ep002_stills*/
 episode002/*.mp4
+output/**/final/*_x264*

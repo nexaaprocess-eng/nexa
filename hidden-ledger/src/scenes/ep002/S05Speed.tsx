@@ -122,34 +122,44 @@ export const S05Speed: React.FC = () => {
 
       {/* beat 2: inventory turnover as a flow */}
       <div style={{position: 'absolute', inset: 0, opacity: b.during(2, 2)}}>
-        <Abs x={0} y={150} w={1920} align="center" o={b.ramp(2, 0)}>
-          <Kicker>Inventory turnover</Kicker>
+        <Abs x={0} y={140} w={1920} align="center" o={b.ramp(2, 0)}>
+          <Title size={76}>Inventory turnover</Title>
         </Abs>
         <Stage>
           {/* a year's worth of goods flowing out (numerator) */}
           {Array.from({length: 24}).map((_, i) => {
             const x = ((t * 260 + i * 80) % 1920) - 40;
             return (
-              <g key={i} transform={`translate(${x} 390) scale(0.28)`} opacity={b.rampAt(b.word(2, /cost/i, 0.3), 0.4)}>
+              <g key={i} transform={`translate(${x} 410) scale(0.28)`} opacity={0.3 + 0.7 * b.rampAt(b.word(2, /cost/i, 0.3), 0.4)}>
                 <Product kind={(['cereal', 'milk', 'coffee', 'bread', 'pasta', 'eggs'] as const)[i % 6]} />
               </g>
             );
           })}
-          <line x1={560} y1={520} x2={1360} y2={520} stroke={C.cream} strokeWidth={8} opacity={b.rampAt(b.word(2, /divided/i, 0.6), 0.3)} />
+          {/* the fraction is drawn from the start; its parts light up on the spoken words */}
+          <rect x={360} y={330} width={1200} height={150} rx={18} fill="none" stroke={C.line} strokeWidth={4} strokeDasharray="14 12" opacity={b.ramp(2, 0.1)} />
+          <rect x={660} y={580} width={600} height={130} rx={18} fill="none" stroke={C.line} strokeWidth={4} strokeDasharray="14 12" opacity={b.ramp(2, 0.3)} />
+          <line x1={560} y1={530} x2={1360} y2={530} stroke={C.cream} strokeWidth={8} opacity={0.35 + 0.65 * b.rampAt(b.word(2, /divided/i, 0.6), 0.3)} />
+          <text x={1420} y={548} fontSize={56} fontWeight={700} fill={C.orange} fontFamily="Space Grotesk" opacity={b.ramp(2, 0.4)}>
+            = turns
+          </text>
           {/* the average stock on hand (denominator) */}
           <g opacity={b.rampAt(b.word(2, /average|inventory/i, 0.8, 1), 0.4)}>
             {Array.from({length: 4}).map((_, i) => (
-              <g key={i} transform={`translate(${880 + i * 55} 640) scale(0.3)`}>
+              <g key={i} transform={`translate(${880 + i * 55} 660) scale(0.3)`}>
                 <Product kind={(['cereal', 'milk', 'coffee', 'bread'] as const)[i]} />
               </g>
             ))}
           </g>
         </Stage>
-        <Abs x={0} y={250} w={1920} align="center" o={b.rampAt(b.word(2, /cost/i, 0.3), 0.4)}>
-          <Title size={50}>cost of goods sold in a year</Title>
+        <Abs x={0} y={256} w={1920} align="center" o={b.ramp(2, 0.2)}>
+          <Title size={50} color={b.rampAt(b.word(2, /cost/i, 0.3), 0.3) > 0.5 ? C.cream : C.muted}>
+            {b.rampAt(b.word(2, /cost/i, 0.3), 0.3) > 0.5 ? 'cost of goods sold in a year' : 'what flows out in a year'}
+          </Title>
         </Abs>
-        <Abs x={0} y={720} w={1920} align="center" o={b.rampAt(b.word(2, /average|inventory/i, 0.8, 1), 0.4)}>
-          <Title size={50}>average inventory on hand</Title>
+        <Abs x={0} y={730} w={1920} align="center" o={b.ramp(2, 0.4)}>
+          <Title size={50} color={b.rampAt(b.word(2, /average|inventory/i, 0.8, 1), 0.3) > 0.5 ? C.cream : C.muted}>
+            {b.rampAt(b.word(2, /average|inventory/i, 0.8, 1), 0.3) > 0.5 ? 'average inventory on hand' : 'what sits on the shelves'}
+          </Title>
         </Abs>
       </div>
 
@@ -248,8 +258,8 @@ export const S05Speed: React.FC = () => {
           </g>
         </Stage>
         <Abs x={1320} y={380} w={520}>
-          <div style={{fontFamily: FONT_TITLE, fontWeight: 700, fontSize: 120, color: C.green}}>+{Math.floor(loopP)}</div>
-          <Body size={34}>turns, each one earning the thin margin again</Body>
+          <div style={{fontFamily: FONT_TITLE, fontWeight: 700, fontSize: 110, color: C.green}}>Turn {Math.floor(loopP) + 1}</div>
+          <Body size={34}>each one earns the thin margin again</Body>
         </Abs>
         <Abs x={80} y={430} w={520}>
           <Body size={34} color={C.muted}>

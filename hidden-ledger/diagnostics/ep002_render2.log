@@ -1,0 +1,76 @@
+
+$ npx remotion render Episode /home/user/nexa/hidden-ledger/output/episode-002/final/parts/s01_43408275b9fd.partial.mp4 --props=/home/user/nexa/hidden-ledger/output/episode-002/audio/full/props.json --frames=0-1217 --concurrency=4 --muted --codec=h264 --crf=14 --timeout=120000 --log=error
+Bundling 6%
+Bundling 24%
+Bundling 63%
+Bundling 69%
+Bundling 74%
+Bundling 80%
+Bundling 85%
+Bundling 90%
+Bundling 95%
+Bundling 100%
+Copying public dir 11.6 MB
+Copying public dir 23.1 MB
+Copying public dir 34.6 MB
+Copying public dir 34.7 MB
+Getting compositions
+Getting compositions
+Rendered 0/1218
+Rendered 1/1218, time remaining: 11m 10s
+Rendered 2/1218, time remaining: 11m 44s
+Rendered 3/1218, time remaining: 12m 52s
+Rendered 4/1218, time remaining: 13m 41s
+Rendered 5/1218, time remaining: 12m 21s
+Rendered 6/1218, time remaining: 11m 26s
+Rendered 7/1218, time remaining: 10m 26s
+Rendered 8/1218, time remaining: 9m 49s
+Rendered 9/1218, time remaining: 9m 12s
+Rendered 10/1218, time remaining: 8m 53s
+Rendered 11/1218, time remaining: 8m 31s
+Rendered 12/1218, time remaining: 8m 5s
+Rendered 13/1218, time remaining: 7m 39s
+Rendered 14/1218, time remaining: 7m 25s
+Rendered 15/1218, time remaining: 7m 16s
+Rendered 16/1218, time remaining: 7m 12s
+Rendered 17/1218, time remaining: 6m 59s
+Rendered 18/1218, time remaining: 6m 48s
+Rendered 19/1218, time remaining: 6m 45s
+Rendered 20/1218, time remaining: 6m 50s
+Rendered 21/1218, time remaining: 6m 50s
+Rendered 22/1218, time remaining: 6m 41s
+Rendered 23/1218, time remaining: 6m 33s
+Rendered 24/1218, time remaining: 6m 33s
+Rendered 25/1218, time remaining: 6m 29s
+Rendered 26/1218, time remaining: 6m 21s
+Rendered 27/1218, time remaining: 6m 15s
+Rendered 28/1218, time remaining: 6m 10s
+Rendered 29/1218, time remaining: 6m 9s
+Rendered 30/1218, time remaining: 6m 9s
+Rendered 31/1218, time remaining: 6m 7s
+Rendered 32/1218, time remaining: 6m 3s
+Rendered 33/1218, time remaining: 5m 57s
+Rendered 34/1218, time remaining: 5m 54s
+Rendered 35/1218, time remaining: 5m 51s
+Rendered 36/1218, time remaining: 5m 48s
+Rendered 37/1218, time remaining: 5m 45s
+Rendered 38/1218, time remaining: 5m 43s
+Rendered 39/1218, time remaining: 5m 44s
+Rendered 40/1218, time remaining: 5m 52s
+Rendered 41/1218, time remaining: 5m 56s
+Rendered 41/1218, time remaining: 5m 56s
+Rendered 42/1218, time remaining: 6m 6s
+Rendered 43/1218, time remaining: 6m 19s
+Rendered 44/1218, time remaining: 6m 22s
+Rendered 44/1218, time remaining: 6m 22s
+Rendered 45/1218, time remaining: 6m 31s
+Rendered 46/1218, time remaining: 6m 31s
+Rendered 47/1218, time remaining: 6m 35s
+Rendered 48/1218, time remaining: 6m 38s
+Rendered 49/1218, time remaining: 6m 38s
+Rendered 49/1218, time remaining: 6m 38s
+Rendered 50/1218, time remaining: 6m 40s
+Rendered 51/1218, time remaining: 6m 36s
+Rendered 52/1218, time remaining: 6m 31s
+Rendered 53/1218, time remaining: 6m 34s
+Rendered 54/1218, time remaining: 6m 35s

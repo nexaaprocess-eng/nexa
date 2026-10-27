@@ -1,0 +1,222 @@
+
+$ python python/av_check.py --episode 002 --video output/episode-002/final/hidden_ledger_episode_002_FINAL_1080p.mp4 --asr
+{
+ "video": "output/episode-002/final/hidden_ledger_episode_002_FINAL_1080p.mp4",
+ "problems": [],
+ "completeness": {
+  "video_frames": 17986,
+  "timeline_frames": 17986,
+  "video_duration": 599.533333,
+  "audio_duration": 599.533,
+  "timeline_duration": 599.501,
+  "video_start": 0.0,
+  "audio_start": 0.0
+ },
+ "audio_offset": [
+  {
+   "at_s": 5.0,
+   "offset_ms": 0.0,
+   "correlation": 0.957
+  },
+  {
+   "at_s": 299.8,
+   "offset_ms": 0.0,
+   "correlation": 0.959
+  },
+  {
+   "at_s": 574.5,
+   "offset_ms": 0.0,
+   "correlation": 0.968
+  }
+ ],
+ "scene_transitions": [
+  {
+   "scene": "s02",
+   "timeline_start": 40.594,
+   "wipe_centre": 40.461,
+   "delta_s": -0.133,
+   "edge_row_coverage": 0.88,
+   "baseline_coverage": 0.0
+  },
+  {
+   "scene": "s03",
+   "timeline_start": 115.474,
+   "wipe_centre": 115.341,
+   "delta_s": -0.133,
+   "edge_row_coverage": 0.89,
+   "baseline_coverage": 0.0
+  },
+  {
+   "scene": "s04",
+   "timeline_start": 190.481,
+   "wipe_centre": 190.348,
+   "delta_s": -0.133,
+   "edge_row_coverage": 0.88,
+   "baseline_coverage": 0.0
+  },
+  {
+   "scene": "s05",
+   "timeline_start": 245.621,
+   "wipe_centre": 245.488,
+   "delta_s": -0.133,
+   "edge_row_coverage": 0.88,
+   "baseline_coverage": 0.0
+  },
+  {
+   "scene": "s06",
+   "timeline_start": 307.133,
+   "wipe_centre": 307.0,
+   "delta_s": -0.133,
+   "edge_row_coverage": 0.88,
+   "baseline_coverage": 0.0
+  },
+  {
+   "scene": "s07",
+   "timeline_start": 370.851,
+   "wipe_centre": 370.718,
+   "delta_s": -0.133,
+   "edge_row_coverage": 0.89,
+   "baseline_coverage": 0.0
+  },
+  {
+   "scene": "s08",
+   "timeline_start": 411.337,
+   "wipe_centre": 411.204,
+   "delta_s": -0.133,
+   "edge_row_coverage": 0.89,
+   "baseline_coverage": 0.0
+  },
+  {
+   "scene": "s09",
+   "timeline_start": 477.899,
+   "wipe_centre": 477.766,
+   "delta_s": -0.133,
+   "edge_row_coverage": 0.89,
+   "baseline_coverage": 0.0
+  },
+  {
+   "scene": "s10",
+   "timeline_start": 551.391,
+   "wipe_centre": 551.258,
+   "delta_s": -0.133,
+   "edge_row_coverage": 0.89,
+   "baseline_coverage": 0.0
+  }
+ ],
+ "intelligibility": {
+  "wer_final_mix": 0.014,
+  "weighted_wer_dry_narration": 0.0102
+ },
+ "ok": true
+}
+
+$ python python/stem_check.py --episode 002 --name full
+{
+ "voice": {
+  "segments": 59,
+  "possible_cutoffs": [],
+  "clipped_segments": [],
+  "pause_min_s": 0.38,
+  "pause_max_s": 0.9,
+  "configured_pauses_s": [
+   0.38,
+   0.9
+  ],
+  "unexpected_gaps": []
+ },
+ "music": {
+  "speech_windows": 4422,
+  "voice_over_music_db_median": 26.0,
+  "voice_over_music_db_p5": 16.3,
+  "voice_over_music_db_min": 9.0,
+  "worst_windows": [
+   {
+    "t": 481.1,
+    "voice_over_music_db": 9.0
+   },
+   {
+    "t": 536.7,
+    "voice_over_music_db": 9.2
+   },
+   {
+    "t": 554.3,
+    "voice_over_music_db": 9.9
+   },
+   {
+    "t": 401.9,
+    "voice_over_music_db": 10.1
+   },
+   {
+    "t": 399.5,
+    "voice_over_music_db": 10.1
+   }
+  ],
+  "per_scene_music_db": {
+   "s01": -50.5,
+   "s02": -49.8,
+   "s03": -52.0,
+   "s04": -49.5,
+   "s05": -49.4,
+   "s06": -48.9,
+   "s07": -49.3,
+   "s08": -49.5,
+   "s09": -49.8,
+   "s10": -47.6
+  }
+ },
+ "sfx": {
+  "peak_relative_to_voice_peak_db": -13.5
+ },
+ "issues": []
+}
+
+$ python python/content_check.py --video output/episode-002/final/hidden_ledger_episode_002_FINAL_1080p.mp4
+{"samples": 1199, "median_content_fraction": 0.1022, "p5_content_fraction": 0.0281, "pass": false} 1 near-empty run(s)
+   near-empty 260.5–264.5 s (4.0 s)
+
+$ python python/final_scan.py --video output/episode-002/final/hidden_ledger_episode_002_FINAL_1080p.mp4
+{
+ "video": "output/episode-002/final/hidden_ledger_episode_002_FINAL_1080p.mp4",
+ "ffmpeg_exit": 0,
+ "decode_error_count": 0,
+ "black_windows": [
+  {
+   "start": 35.3,
+   "end": 36.3667,
+   "seconds": 1.07
+  }
+ ],
+ "freeze_starts": [],
+ "silences": [],
+ "integrated_lufs": -15.3,
+ "lra_lu": 3.2,
+ "true_peak_dbtp": -2.3,
+ "sample_peak_db": -2.35026,
+ "clipping": false,
+ "pass": true
+}
+{
+  "file": "output/episode-002/final/hidden_ledger_episode_002_FINAL_1080p.mp4",
+  "duration": 599.533333,
+  "size_mb": 672.2,
+  "video": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "frames": 17986
+  },
+  "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  "integrated_lufs": -15.3,
+  "true_peak_dbfs": -2.3,
+  "black_sections": 0,
+  "long_silences": 0,
+  "ok": true,
+  "problems": [],
+  "expected_frames": 17986
+}
+EXIT 0
