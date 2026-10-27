@@ -171,21 +171,14 @@ $ python python/stem_check.py --episode 002 --name full
 }
 
 $ python python/content_check.py --video output/episode-002/final/hidden_ledger_episode_002_FINAL_1080p.mp4
-{"samples": 1199, "median_content_fraction": 0.1022, "p5_content_fraction": 0.0281, "pass": false} 1 near-empty run(s)
-   near-empty 260.5–264.5 s (4.0 s)
+{"samples": 1199, "median_content_fraction": 0.1022, "p5_content_fraction": 0.0292, "pass": true} 0 near-empty run(s)
 
 $ python python/final_scan.py --video output/episode-002/final/hidden_ledger_episode_002_FINAL_1080p.mp4
 {
  "video": "output/episode-002/final/hidden_ledger_episode_002_FINAL_1080p.mp4",
  "ffmpeg_exit": 0,
  "decode_error_count": 0,
- "black_windows": [
-  {
-   "start": 35.3,
-   "end": 36.3667,
-   "seconds": 1.07
-  }
- ],
+ "black_windows": [],
  "freeze_starts": [],
  "silences": [],
  "integrated_lufs": -15.3,
@@ -198,7 +191,7 @@ $ python python/final_scan.py --video output/episode-002/final/hidden_ledger_epi
 {
   "file": "output/episode-002/final/hidden_ledger_episode_002_FINAL_1080p.mp4",
   "duration": 599.533333,
-  "size_mb": 672.2,
+  "size_mb": 678.8,
   "video": {
     "codec": "h264",
     "width": 1920,

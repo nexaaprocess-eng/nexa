@@ -1,0 +1,691 @@
+1
+00:00:00,600 --> 00:00:03,020
+You hand over a hundred
+dollars at the checkout.
+
+2
+00:00:03,400 --> 00:00:07,000
+Bread, coffee, a gallon of
+milk, a week of dinners.
+
+3
+00:00:07,000 --> 00:00:11,760
+The scanner beeps, the receipt prints, and
+the money disappears into the register.
+
+4
+00:00:12,140 --> 00:00:16,540
+So how much of that hundred dollars
+does the supermarket actually keep?
+
+5
+00:00:16,920 --> 00:00:22,780
+At Kroger, which runs nearly 2,700
+supermarkets across the United States,
+
+6
+00:00:22,780 --> 00:00:28,850
+the answer for its latest fiscal year
+was about $1.28 in operating profit.
+
+7
+00:00:29,230 --> 00:00:34,924
+And yet the same company brought in
+more than $147 billion in sales.
+
+8
+00:00:35,304 --> 00:00:36,284
+Tiny margins.
+
+9
+00:00:36,284 --> 00:00:37,894
+Enormous numbers.
+
+10
+00:00:37,894 --> 00:00:40,144
+How does that business actually work?
+
+11
+00:00:41,044 --> 00:00:43,944
+Start with the scale, because
+it changes everything.
+
+12
+00:00:44,324 --> 00:00:48,444
+In the fiscal year that
+ended in January 2026,
+
+13
+00:00:48,444 --> 00:00:53,724
+Kroger reported $147.6 billion in sales.
+
+14
+00:00:53,724 --> 00:01:00,473
+Its operating profit was $1.9
+billion, or 1.28 percent of sales.
+
+15
+00:01:00,853 --> 00:01:08,233
+That year included a $2.5 billion charge
+tied to its automated fulfillment network.
+
+16
+00:01:08,233 --> 00:01:13,292
+The year before, operating profit
+was 2.62 percent of sales.
+
+17
+00:01:13,672 --> 00:01:15,892
+Either way, the pattern is the same:
+
+18
+00:01:15,892 --> 00:01:19,072
+one or two cents of operating
+profit on each dollar,
+
+19
+00:01:19,072 --> 00:01:22,163
+multiplied across a mountain of sales.
+
+20
+00:01:22,543 --> 00:01:29,043
+Even one percent of nearly $150
+billion is well over a billion dollars.
+
+21
+00:01:29,423 --> 00:01:33,443
+Scale works the same way at
+the top of the industry.
+
+22
+00:01:33,443 --> 00:01:39,233
+Walmart's operating income was 4.2 percent
+of net sales in its latest fiscal year.
+
+23
+00:01:39,233 --> 00:01:46,074
+On more than $700 billion of net sales,
+that came to nearly $30 billion.
+
+24
+00:01:46,454 --> 00:01:48,914
+That is the first secret
+of the supermarket.
+
+25
+00:01:48,914 --> 00:01:51,994
+It is not built to earn
+a lot on each sale.
+
+26
+00:01:51,994 --> 00:01:55,024
+It is built to make an
+enormous number of them.
+
+27
+00:01:55,924 --> 00:01:58,024
+To see where the rest goes,
+
+28
+00:01:58,024 --> 00:02:01,984
+follow a hundred dollars of Kroger's
+sales through its income statement.
+
+29
+00:02:02,364 --> 00:02:07,564
+First, the cost of the goods
+themselves, including advertising,
+
+30
+00:02:07,564 --> 00:02:09,504
+warehousing and transportation.
+
+31
+00:02:09,504 --> 00:02:12,904
+That takes about $77.14.
+
+32
+00:02:13,284 --> 00:02:17,904
+What remains is gross profit: $22.86.
+
+33
+00:02:17,904 --> 00:02:22,504
+Kroger reports a gross
+margin of 22.9 percent.
+
+34
+00:02:22,884 --> 00:02:26,334
+Gross margin is what survives
+the cost of the product.
+
+35
+00:02:26,334 --> 00:02:28,064
+It is not profit yet.
+
+36
+00:02:28,444 --> 00:02:35,064
+Next comes the cost of running the business:
+wages and benefits, utilities, rent,
+
+37
+00:02:35,064 --> 00:02:39,874
+depreciation, and that
+year's $2.5 billion charge.
+
+38
+00:02:39,874 --> 00:02:42,791
+Together, about $21.58.
+
+39
+00:02:43,171 --> 00:02:49,351
+What's left is operating profit, what
+the business itself earned: $1.28.
+
+40
+00:02:49,731 --> 00:02:52,711
+Then interest, taxes and other items.
+
+41
+00:02:52,711 --> 00:02:58,091
+Net earnings, the bottom line for
+shareholders, came to about 69 cents.
+
+42
+00:02:58,471 --> 00:03:02,161
+Gross margin, operating
+margin, net margin.
+
+43
+00:03:02,161 --> 00:03:05,411
+Three different numbers that
+answer three different questions,
+
+44
+00:03:05,411 --> 00:03:10,031
+and mixing them up is the easiest
+way to misread a supermarket.
+
+45
+00:03:10,931 --> 00:03:14,851
+Inside those averages, every
+product plays a different role.
+
+46
+00:03:14,851 --> 00:03:17,271
+Here is a hypothetical basket.
+
+47
+00:03:17,271 --> 00:03:22,511
+These prices and costs are illustrative,
+not data from any real store.
+
+48
+00:03:22,891 --> 00:03:25,981
+Ten items, $54 at the register.
+
+49
+00:03:26,361 --> 00:03:29,381
+In this example, the milk
+earns almost nothing.
+
+50
+00:03:29,381 --> 00:03:35,001
+Stores sometimes price staples like this
+aggressively, even as loss leaders,
+
+51
+00:03:35,001 --> 00:03:39,881
+sold at a thin margin or below cost
+to bring shoppers through the door.
+
+52
+00:03:40,261 --> 00:03:44,801
+The store-brand cereal earns more than
+the national brand sitting next to it.
+
+53
+00:03:44,801 --> 00:03:47,931
+The prepared meal from
+the deli earns more still.
+
+54
+00:03:48,311 --> 00:03:53,591
+Add it up, and this basket's gross
+margin lands near 23 percent.
+
+55
+00:03:53,591 --> 00:03:57,471
+We chose the numbers so it would
+roughly match Kroger's reported figure.
+
+56
+00:03:57,851 --> 00:04:02,541
+The point is that a supermarket does
+not need every item to be profitable.
+
+57
+00:04:02,541 --> 00:04:05,171
+It needs the mix of what you buy to be.
+
+58
+00:04:06,071 --> 00:04:07,731
+The second secret is speed.
+
+59
+00:04:08,111 --> 00:04:12,541
+Much of what a grocery store sells
+can spoil, so it cannot sit for long.
+
+60
+00:04:12,541 --> 00:04:17,691
+Trucks arrive, pallets move through
+the stockroom, shelves are refilled,
+
+61
+00:04:17,691 --> 00:04:20,431
+and the same shelf space is emptied again.
+
+62
+00:04:20,811 --> 00:04:26,491
+One way to measure this is inventory turnover:
+the cost of the goods sold in a year,
+
+63
+00:04:26,491 --> 00:04:29,869
+divided by the average inventory on hand.
+
+64
+00:04:30,249 --> 00:04:34,229
+Using figures from their
+latest annual reports,
+
+65
+00:04:34,229 --> 00:04:39,469
+Kroger's inventory turned over roughly
+twelve times, or about once a month.
+
+66
+00:04:39,469 --> 00:04:41,709
+Costco's turned about fourteen times.
+
+67
+00:04:41,709 --> 00:04:46,633
+Walmart's, with far more general
+merchandise, about nine times.
+
+68
+00:04:47,013 --> 00:04:50,333
+Twelve turns a year means the
+average item spends about a
+
+69
+00:04:50,333 --> 00:04:53,063
+month between the delivery
+truck and the checkout.
+
+70
+00:04:53,063 --> 00:04:58,413
+The faster that cycle runs, the less
+cash sits on the shelves at any moment.
+
+71
+00:04:58,793 --> 00:05:02,433
+Every turn is another chance to
+earn that thin margin again,
+
+72
+00:05:02,433 --> 00:05:06,683
+from the same shelf space and
+the same money tied up in stock.
+
+73
+00:05:07,583 --> 00:05:09,403
+And this is where it gets interesting.
+
+74
+00:05:09,403 --> 00:05:13,023
+At the end of their latest
+fiscal years, Walmart,
+
+75
+00:05:13,023 --> 00:05:16,503
+Costco and Kroger each owed
+more in accounts payable
+
+76
+00:05:16,503 --> 00:05:19,426
+than the value of the
+inventory on their books.
+
+77
+00:05:19,806 --> 00:05:23,086
+Accounts payable are bills
+that haven't been paid yet.
+
+78
+00:05:23,086 --> 00:05:28,026
+When goods sell before their invoices
+come due, suppliers are, in effect,
+
+79
+00:05:28,026 --> 00:05:30,272
+helping to finance the shelves.
+
+80
+00:05:30,652 --> 00:05:33,092
+Here is a simple hypothetical.
+
+81
+00:05:33,092 --> 00:05:38,032
+A case of pasta arrives on day
+one, sells out within three weeks,
+
+82
+00:05:38,032 --> 00:05:41,112
+and the supplier's invoice
+is due on day thirty.
+
+83
+00:05:41,112 --> 00:05:42,622
+For more than a week,
+
+84
+00:05:42,622 --> 00:05:46,592
+the store holds the shoppers'
+money before it pays for the pasta.
+
+85
+00:05:46,972 --> 00:05:49,282
+Money also flows the other way.
+
+86
+00:05:49,282 --> 00:05:54,592
+Walmart's annual report describes payments
+from suppliers for volume incentives,
+
+87
+00:05:54,592 --> 00:05:58,932
+warehouse allowances, markdowns
+and certain advertising,
+
+88
+00:05:58,932 --> 00:06:02,631
+and records them as a
+reduction of its cost of sales.
+
+89
+00:06:03,011 --> 00:06:06,851
+So the gross margin you see is
+shaped not only by shelf prices,
+
+90
+00:06:06,851 --> 00:06:10,401
+but by negotiations most
+shoppers never see.
+
+91
+00:06:11,301 --> 00:06:13,381
+Then there is the store's own brand.
+
+92
+00:06:13,761 --> 00:06:21,941
+Kroger says its Our Brands products made up more
+than $39 billion of its sales in fiscal 2025,
+
+93
+00:06:21,941 --> 00:06:28,267
+and that its supermarkets stock, on average,
+more than 13,000 private label items.
+
+94
+00:06:28,647 --> 00:06:31,067
+That is roughly a
+quarter of all its sales.
+
+95
+00:06:31,447 --> 00:06:37,287
+Costco says its Kirkland Signature products are
+generally priced lower than national brands,
+
+96
+00:06:37,287 --> 00:06:39,997
+and generally earn higher margins.
+
+97
+00:06:40,377 --> 00:06:42,597
+Both can be true at once.
+
+98
+00:06:42,597 --> 00:06:46,517
+When the retailer controls the
+product, the label and the price,
+
+99
+00:06:46,517 --> 00:06:50,887
+it can charge the shopper less and
+still keep a larger share of each sale.
+
+100
+00:06:51,787 --> 00:06:52,967
+Now the danger.
+
+101
+00:06:52,967 --> 00:06:56,599
+In a business this thin,
+small losses are big problems.
+
+102
+00:06:56,979 --> 00:07:01,059
+Retailers call it shrink: products
+that were paid for but never sold,
+
+103
+00:07:01,059 --> 00:07:04,339
+because they spoiled, were
+damaged, were stolen,
+
+104
+00:07:04,339 --> 00:07:07,069
+or simply went missing in the records.
+
+105
+00:07:07,449 --> 00:07:12,709
+Groceries carry extra risk because
+so much of the store is perishable.
+
+106
+00:07:12,709 --> 00:07:13,509
+The U.S.
+
+107
+00:07:13,509 --> 00:07:17,529
+Department of Agriculture estimated
+that food losses at the retail
+
+108
+00:07:17,529 --> 00:07:22,039
+level equaled 10 percent of the
+available food supply in 2010.
+
+109
+00:07:22,039 --> 00:07:25,629
+It is an older estimate,
+but it shows the scale.
+
+110
+00:07:26,009 --> 00:07:30,439
+That is also why perishables get marked
+down near the end of their shelf life.
+
+111
+00:07:30,439 --> 00:07:35,379
+A bag of salad sold at half price
+still recovers part of its cost.
+
+112
+00:07:35,379 --> 00:07:38,089
+One thrown away recovers nothing.
+
+113
+00:07:38,469 --> 00:07:41,369
+Here is why it matters so much.
+
+114
+00:07:41,369 --> 00:07:44,929
+Imagine a store with a 2
+percent operating margin.
+
+115
+00:07:44,929 --> 00:07:48,289
+To make up for one dollar
+of product lost to shrink,
+
+116
+00:07:48,289 --> 00:07:51,059
+it needs about fifty dollars of new sales.
+
+117
+00:07:51,439 --> 00:07:53,899
+That is why Kroger listed
+lower shrink among the
+
+118
+00:07:53,899 --> 00:07:57,449
+reasons its gross margin
+improved last year.
+
+119
+00:07:58,349 --> 00:08:01,899
+Not every company that sells
+groceries plays the same game.
+
+120
+00:08:02,279 --> 00:08:05,599
+Walmart is a general merchandise giant.
+
+121
+00:08:05,599 --> 00:08:11,839
+In its latest fiscal year, grocery
+was about 59 percent of Walmart U.S.
+
+122
+00:08:11,839 --> 00:08:13,259
+sales.
+
+123
+00:08:13,259 --> 00:08:18,159
+Its consolidated gross profit
+was 24.2 percent of net sales,
+
+124
+00:08:18,159 --> 00:08:21,519
+and operating income was 4.2 percent.
+
+125
+00:08:21,899 --> 00:08:25,119
+Costco runs membership warehouse clubs.
+
+126
+00:08:25,119 --> 00:08:30,819
+Its gross margin on net
+sales was just 11.09 percent.
+
+127
+00:08:30,819 --> 00:08:35,467
+But it also collected $5.9
+billion in membership fees.
+
+128
+00:08:35,847 --> 00:08:40,887
+Those fees were equal to about half of
+Costco's operating income for the year.
+
+129
+00:08:40,887 --> 00:08:46,557
+Its model pairs very thin margins on
+goods with a fee that members pay to shop.
+
+130
+00:08:46,937 --> 00:08:52,487
+A traditional supermarket chain like Kroger
+leans on fresh food, its own brands,
+
+131
+00:08:52,487 --> 00:08:57,377
+pharmacy, fuel and growing side
+businesses such as advertising.
+
+132
+00:08:57,757 --> 00:09:00,177
+So these numbers are not interchangeable.
+
+133
+00:09:00,177 --> 00:09:08,607
+A 24 percent gross margin at Walmart and an 11 percent
+gross margin at Costco describe different businesses,
+
+134
+00:09:08,607 --> 00:09:10,941
+not better or worse ones.
+
+135
+00:09:11,841 --> 00:09:15,521
+So, how do supermarkets
+make money on tiny margins?
+
+136
+00:09:15,901 --> 00:09:17,901
+By selling an enormous volume.
+
+137
+00:09:17,901 --> 00:09:21,091
+By turning their inventory
+over again and again.
+
+138
+00:09:21,091 --> 00:09:24,771
+By using supplier credit to
+help finance their shelves.
+
+139
+00:09:24,771 --> 00:09:26,891
+By leaning on their own brands.
+
+140
+00:09:26,891 --> 00:09:30,861
+By fighting shrink, one
+damaged box at a time.
+
+141
+00:09:30,861 --> 00:09:35,631
+And, in some models, by charging for
+membership or selling advertising.
+
+142
+00:09:36,011 --> 00:09:40,531
+The next time you hand over that hundred
+dollars, remember: at a chain like Kroger,
+
+143
+00:09:40,531 --> 00:09:44,871
+the company keeps only about one to
+three dollars as operating profit.
+
+144
+00:09:44,871 --> 00:09:48,761
+The rest pays for the food, the people,
+
+145
+00:09:48,761 --> 00:09:52,061
+the buildings and the trucks
+that make a supermarket work.
+
+146
+00:09:52,441 --> 00:09:54,001
+This is Hidden Ledger.
+
+147
+00:09:54,001 --> 00:09:57,001
+Every number in this video is
+sourced in the description.
+
