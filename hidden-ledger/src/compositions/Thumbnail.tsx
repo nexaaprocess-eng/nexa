@@ -4,13 +4,14 @@ import {Box, House, Invoice, Place, Tag, Truck, Warehouse} from '../components/i
 import {LedgerMark} from '../components/ui';
 import {C, FONT_TITLE} from '../themes/theme';
 import {loadFonts} from '../themes/fonts';
+import {Ep002Thumbnail} from '../scenes/ep002/Thumbnail';
 
 loadFonts();
 
-export type ThumbProps = {variant: number};
+export type ThumbProps = {variant: number; episode?: string};
 
 // 1280x720 thumbnails. Text is short and large so it survives a phone-sized preview. No figures or promises.
-const Frame: React.FC<{children: React.ReactNode}> = ({children}) => (
+export const Frame: React.FC<{children: React.ReactNode}> = ({children}) => (
   <AbsoluteFill style={{background: C.bg}}>
     <AbsoluteFill style={{background: 'radial-gradient(ellipse at 35% 50%, #1F252D 0%, #111418 70%)'}} />
     {children}
@@ -21,13 +22,13 @@ const Frame: React.FC<{children: React.ReactNode}> = ({children}) => (
   </AbsoluteFill>
 );
 
-const svg = (children: React.ReactNode) => (
+export const svg = (children: React.ReactNode) => (
   <svg viewBox="0 0 1280 720" width={1280} height={720} style={{position: 'absolute', inset: 0}}>
     {children}
   </svg>
 );
 
-export const Thumbnail: React.FC<ThumbProps> = ({variant}) => {
+const Ep001Thumbnail: React.FC<{variant: number}> = ({variant}) => {
   if (variant === 1) {
     // Big box, label "FREE?"
     return (
@@ -112,4 +113,12 @@ export const Thumbnail: React.FC<ThumbProps> = ({variant}) => {
       </div>
     </Frame>
   );
+};
+
+// Thumbnail designs per episode (pipeline: `thumbnails --episode XXX` renders each variant at 1280x720).
+const THUMBS: Record<string, React.FC<{variant: number}>> = {'001': Ep001Thumbnail, '002': Ep002Thumbnail};
+
+export const Thumbnail: React.FC<ThumbProps> = ({variant, episode = '001'}) => {
+  const T = THUMBS[episode] ?? Ep001Thumbnail;
+  return <T variant={variant} />;
 };

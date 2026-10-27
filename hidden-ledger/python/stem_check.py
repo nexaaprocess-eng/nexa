@@ -4,7 +4,7 @@
 * music: level relative to the voice in 400 ms windows while the narrator speaks (worst cases listed), level variation per scene
 * sfx: peak relative to voice peak, events overlapping speech onsets
 
-Usage: python python/stem_check.py --episode 001 --name full    -> diagnostics/stem_check_<name>.json
+Usage: python python/stem_check.py --episode 001 --name full    -> diagnostics/stem_check_ep<episode>_<name>.json
 """
 from __future__ import annotations
 
@@ -95,7 +95,7 @@ def main():
         rep["issues"].append("an SFX peak is within 6 dB of the voice peak")
     if cut:
         rep["issues"].append(f"{len(cut)} segment(s) end loudly (check for cut-offs)")
-    write_json(ROOT / "diagnostics" / f"stem_check_{a.name}.json", rep)
+    write_json(ROOT / "diagnostics" / f"stem_check_ep{a.episode}_{a.name}.json", rep)
     print(json.dumps(rep, indent=1))
 
 

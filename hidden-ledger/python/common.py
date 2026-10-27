@@ -73,6 +73,13 @@ def normalize_for_tts(text: str, lexicon: dict[str, str] | None = None) -> str:
     s = text
     for k, v in (lexicon or {}).items():
         s = re.sub(rf"(?<![\w']){re.escape(k)}(?![\w])", v, s)
+    # $1.28 / $77.14 (prices with cents, no scale word) -> "1 dollar and 28 cents" (Ep001 needed manual overrides)
+    def _cents(m):
+        d, c = int(m.group(1).replace(",", "")), int(m.group(2))
+        dollars = f"{int_words(d)} dollar{'s' if d != 1 else ''}" if d else ""
+        cents = f"{int_words(c)} cent{'s' if c != 1 else ''}" if c else ""
+        return " and ".join(x for x in (dollars, cents) if x) or "zero dollars"
+    s = re.sub(r"\$(\d{1,3}(?:,\d{3})*)\.(\d{2})\b(?!\s+(?:billion|million|trillion|thousand))", _cents, s)
     # $849.9 billion -> 849.9 billion dollars ; $100 -> 100 dollars
     s = re.sub(r"\$(\d+(?:,\d{3})*(?:\.\d+)?)(\s+(?:billion|million|trillion|thousand))?",
                lambda m: f"{m.group(1)}{m.group(2) or ''} dollars", s)

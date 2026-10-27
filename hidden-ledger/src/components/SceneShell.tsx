@@ -8,16 +8,17 @@ import {useScene} from './timeline';
  *  - a gentle "beat camera": at each narration segment the frame eases to a new framing
  *    (≈2% push + alternating small pan). Springs are overdamped, so it reads as editing rhythm, not shake.
  */
-export const SceneShell: React.FC<{children: React.ReactNode; drift?: [number, number]; zoom?: number; beatCamera?: boolean}> = ({
+export const SceneShell: React.FC<{children: React.ReactNode; drift?: [number, number]; zoom?: number; beatCamera?: boolean; fadeIn?: boolean}> = ({
   children,
   drift = [0, 0],
   zoom = 0.035,
   beatCamera = true,
+  fadeIn = true, // false for an episode's first scene: frame 0 must already show content
 }) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const {durationInFrames, segStart} = useScene();
-  const o = interpolate(frame, [0, 12, durationInFrames - 12, durationInFrames], [0, 1, 1, 0], {
+  const o = interpolate(frame, [0, fadeIn ? 12 : 0.001, durationInFrames - 12, durationInFrames], [fadeIn ? 0 : 1, 1, 1, 0], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });

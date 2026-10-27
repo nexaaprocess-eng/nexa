@@ -2,8 +2,9 @@
 // Hidden Ledger pipeline orchestrator (Windows PowerShell / macOS / Linux).
 // Usage: node scripts/pipeline.mjs <command> [--episode 001] [--quality preview|hd] [--no-subs] [--concurrency N]
 //        episode options: [--name full_video_v2] [--bitrate 8M]
-// Commands: setup | doctor | voices | narration | pilot | episode | shorts | thumbnails | verify
+// Commands: setup | doctor | voices | narration | pilot | episode | shorts | thumbnails | verify | final (= audio | render | encode | qa)
 import {spawnSync} from 'node:child_process';
+import crypto from 'node:crypto';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -154,6 +155,92 @@ function writeReport(name, data) {
   fs.writeFileSync(path.join(DIAG, `${name}.json`), JSON.stringify(data, null, 2) + '\n');
 }
 
+
+// ------------------------------------------------------------------ final-render helpers
+function loadFull() {
+  const tlPath = path.join(AUDIO, 'full', 'timeline.json');
+  if (!fs.existsSync(tlPath)) commands.audio();
+  const tl = JSON.parse(fs.readFileSync(tlPath, 'utf8'));
+  const props = path.join(AUDIO, 'full', 'props.json');
+  return {tl, props};
+}
+
+function frameCount(f) {
+  if (!fs.existsSync(f)) return -1;
+  const r = run('ffprobe', ['-v', 'error', '-count_packets', '-select_streams', 'v:0', '-show_entries', 'stream=nb_read_packets', '-of', 'csv=p=0', f], {quiet: true, allowFail: true});
+  return parseInt(String(r.stdout).trim(), 10);
+}
+
+function hashFiles(h, files) {
+  for (const f of files.sort()) {
+    h.update(path.relative(ROOT, f));
+    h.update(fs.readFileSync(f));
+  }
+}
+
+function listFiles(dir, re = /\.(tsx?|json|woff2)$/) {
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir, {withFileTypes: true}).flatMap((d) => {
+    const p = path.join(dir, d.name);
+    return d.isDirectory() ? listFiles(p, re) : re.test(d.name) ? [p] : [];
+  });
+}
+
+/** One chunk per scene; hash = shared code + this scene's source files + its props slice + render settings. */
+function renderPlan(tl, crf) {
+  const shared = [
+    ...listFiles(path.join(ROOT, 'src', 'components')),
+    ...listFiles(path.join(ROOT, 'src', 'themes')),
+    ...listFiles(path.join(ROOT, 'src', 'compositions')),
+    path.join(ROOT, 'src', 'main.ts'),
+    path.join(ROOT, 'src', 'scenes', 'index.ts'),
+    path.join(ROOT, 'src', 'scenes', 'GenericScene.tsx'),
+    ...listFiles(path.join(ROOT, 'assets', 'fonts')),
+  ];
+  // Episode scene files live in src/scenes/epXXX/SNN*.tsx (episode 001 predates that and keeps them in src/scenes/).
+  const epDir = fs.existsSync(path.join(ROOT, 'src', 'scenes', `ep${EP}`)) ? path.join(ROOT, 'src', 'scenes', `ep${EP}`) : path.join(ROOT, 'src', 'scenes');
+  const isScene = (f) => /^S\d\d/.test(path.basename(f));
+  const epShared = listFiles(epDir).filter((f) => !isScene(f) && !shared.includes(f));
+  // thumbnails are stills, not part of the episode render
+  const sharedHash = crypto.createHash('sha256');
+  hashFiles(sharedHash, [...shared, ...epShared].filter((f) => !/Thumbnail/.test(path.basename(f))));
+  const boundaries = tl.scenes.map((s) => [s.id, s.start, s.end, s.chapter]);
+  const fps = tl.fps;
+  const filesOf = (id) => (id ? listFiles(epDir).filter((f) => isScene(f) && path.basename(f).startsWith(`S${id.slice(1)}`)) : []);
+  return tl.scenes.map((sc, i) => {
+    const from = i === 0 ? 0 : Math.round(sc.start * fps);
+    const to = i === tl.scenes.length - 1 ? tl.durationInFrames - 1 : Math.round(tl.scenes[i + 1].start * fps) - 1;
+    // the next scene's file too: the wipe into it starts a few frames before its start, inside this chunk
+    const sceneFiles = [...filesOf(sc.id), ...filesOf(tl.scenes[i + 1]?.id)];
+    const h = crypto.createHash('sha256');
+    h.update(sharedHash.copy().digest('hex'));
+    hashFiles(h, sceneFiles);
+    const t0 = from / fps;
+    const t1 = (to + 1) / fps;
+    h.update(JSON.stringify({sc, boundaries, total: tl.durationInFrames, fps, crf, from, to,
+      subs: tl.subtitles.filter((c) => c.end > t0 && c.start < t1)}));
+    const hash = h.digest('hex').slice(0, 12);
+    return {scene: sc.id, from, to, frames: to - from + 1, hash, file: `${sc.id}_${hash}.mp4`};
+  });
+}
+
+function twoPass(files, mixWav, out, kbps, dur) {
+  const inputs = files.flatMap((f) => ['-i', f]);
+  const fc = files.map((_, i) => `[${i}:v]`).join('') + `concat=n=${files.length}:v=1:a=0[v]`;
+  const v = ['-c:v', 'libx264', '-preset', 'slow', '-b:v', `${kbps}k`, '-maxrate', `${Math.round(kbps * 1.25)}k`, '-bufsize', `${kbps * 2}k`,
+    '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-level', '4.2', '-r', '30', '-g', '15', '-keyint_min', '15', '-sc_threshold', '0', '-bf', '2',
+    '-flags', '+cgop', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709'];
+  const log = out.replace(/\.mp4$/, '_x264');
+  const tmp = out.replace(/\.mp4$/, '.partial.mp4');
+  run('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', ...inputs, '-filter_complex', fc, '-map', '[v]', ...v, '-pass', '1', '-passlogfile', log, '-an', '-f', 'mp4', IS_WIN ? 'NUL' : '/dev/null']);
+  run('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', ...inputs, '-i', mixWav,
+    '-filter_complex', `${fc};[${files.length}:a]apad=whole_dur=${dur}[a]`, '-map', '[v]', '-map', '[a]', ...v, '-pass', '2', '-passlogfile', log,
+    '-c:a', 'aac', '-b:a', opt('audio-bitrate', '256k'), '-ar', '48000', '-ac', '2', '-t', dur, '-movflags', '+faststart', '-f', 'mp4', tmp]);
+  fs.renameSync(tmp, out);
+  for (const f of fs.readdirSync(path.dirname(out))) if (f.startsWith(path.basename(log))) fs.rmSync(path.join(path.dirname(out), f));
+  console.log(`✔ ${path.relative(ROOT, out)} (${kbps} kbps video)`);
+}
+
 // ------------------------------------------------------------------ commands
 const commands = {
   setup() {
@@ -214,48 +301,85 @@ const commands = {
     console.log(JSON.stringify(v, null, 2));
     if (!v.ok) process.exit(2);
   },
-  // Final delivery: render the episode in N chunks from the original compositions (robust on small machines),
-  // join them losslessly inside a two-pass H.264 encode, mux the lossless mix as AAC, then verify.
+  // ---------------------------------------------------------------- final delivery (resumable stages)
+  // `final` = audio + render + encode + qa. Each stage can be run alone and re-running resumes:
+  //  * render: one chunk per scene, cached by a content hash (shared source + the scene's own file + its props slice
+  //    + render settings). Chunks are written atomically and verified by frame count, so an interrupted render
+  //    (container restart, background time limit) only redoes the unfinished scenes.
+  //  * encode: two-pass H.264 delivery file + a shareable copy under --share-mib (default 380 MiB).
   final() {
+    commands.audio();
+    commands.render();
+    commands.encode();
+    commands.qa();
+  },
+  audio() {
     py('music.py', ['all']);
     narration();
-    const {tl, props} = timeline('full');
+    timeline('full');
+  },
+  render() {
+    const {tl, props} = loadFull();
+    const parts = path.join(OUT, 'final', 'parts');
+    fs.mkdirSync(parts, {recursive: true});
+    const conc = opt('concurrency', String(defaultConcurrency()));
+    const crf = opt('crf', '14');
+    const only = opt('only');
+    const manifest = renderPlan(tl, crf);
+    for (const c of manifest) {
+      if (only && !only.split(',').includes(c.scene)) continue;
+      const f = path.join(parts, c.file);
+      if (fs.existsSync(f) && frameCount(f) === c.frames) {
+        console.log(`= ${c.scene} cached (${c.frames} frames, ${c.hash})`);
+        continue;
+      }
+      for (const old of fs.readdirSync(parts)) if (old.startsWith(`${c.scene}_`) && old !== c.file) fs.rmSync(path.join(parts, old));
+      const tmp = f.replace(/\.mp4$/, '.partial.mp4');
+      const t0 = Date.now();
+      run(NPX, ['remotion', 'render', 'Episode', tmp, `--props=${props}`, `--frames=${c.from}-${c.to}`, `--concurrency=${conc}`,
+        '--muted', '--codec=h264', `--crf=${crf}`, '--timeout=120000', '--log=error']);
+      const n = frameCount(tmp);
+      if (n !== c.frames) {
+        console.error(`✖ ${c.scene}: rendered ${n} frames, expected ${c.frames}`);
+        process.exit(3);
+      }
+      fs.renameSync(tmp, f);
+      console.log(`+ ${c.scene} rendered ${n} frames in ${((Date.now() - t0) / 1000).toFixed(0)} s`);
+    }
+    fs.writeFileSync(path.join(parts, 'manifest.json'), JSON.stringify(manifest, null, 2));
+  },
+  encode() {
+    const {tl} = loadFull();
     const dest = path.join(OUT, 'final');
     const parts = path.join(dest, 'parts');
-    fs.mkdirSync(parts, {recursive: true});
-    const chunks = Number(opt('chunks', '3'));
-    const per = Math.ceil(tl.durationInFrames / chunks);
-    const conc = opt('concurrency', String(defaultConcurrency()));
-    const files = [];
-    for (let i = 0; i < chunks; i++) {
-      const from = i * per;
-      const to = Math.min(tl.durationInFrames - 1, (i + 1) * per - 1);
-      const f = path.join(parts, `part${i + 1}.mp4`);
-      if (!flag('reuse-parts') || !fs.existsSync(f)) {
-        run(NPX, ['remotion', 'render', 'Episode', f, `--props=${props}`, `--frames=${from}-${to}`, `--concurrency=${conc}`,
-          '--muted', '--codec=h264', '--crf=14', '--timeout=120000', '--log=error']);
-      }
-      files.push(f);
+    const manifest = renderPlan(tl, opt('crf', '14'));
+    const files = manifest.map((c) => path.join(parts, c.file));
+    const missing = manifest.filter((c, i) => !fs.existsSync(files[i]) || frameCount(files[i]) !== c.frames);
+    if (missing.length) {
+      console.error(`✖ missing or stale scene chunks: ${missing.map((c) => c.scene).join(', ')} — run: node scripts/pipeline.mjs render --episode ${EP}`);
+      process.exit(3);
     }
     const name = opt('name', `hidden_ledger_episode_${EP}_FINAL_1080p`);
     const out = path.join(dest, `${name}.mp4`);
-    const kbps = parseInt(opt('bitrate', '10M'), 10) * 1000;
     const dur = (tl.durationInFrames / tl.fps).toFixed(4);
-    const inputs = files.flatMap((f) => ['-i', f]);
-    const fc = files.map((_, i) => `[${i}:v]`).join('') + `concat=n=${files.length}:v=1:a=0[v]`;
-    const v = ['-c:v', 'libx264', '-preset', 'slow', '-b:v', `${kbps}k`, '-maxrate', `${Math.round(kbps * 1.25)}k`, '-bufsize', `${kbps * 2}k`,
-      '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-level', '4.2', '-r', '30', '-g', '15', '-keyint_min', '15', '-sc_threshold', '0', '-bf', '2',
-      '-flags', '+cgop', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709'];
-    const log = path.join(dest, 'x264_final');
-    run('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', ...inputs, '-filter_complex', fc, '-map', '[v]', ...v, '-pass', '1', '-passlogfile', log, '-an', '-f', 'mp4', IS_WIN ? 'NUL' : '/dev/null']);
-    run('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', ...inputs, '-i', path.join(AUDIO, 'full', 'mix.wav'),
-      '-filter_complex', `${fc};[${files.length}:a]apad=whole_dur=${dur}[a]`, '-map', '[v]', '-map', '[a]', ...v, '-pass', '2', '-passlogfile', log,
-      '-c:a', 'aac', '-b:a', opt('audio-bitrate', '256k'), '-ar', '48000', '-ac', '2', '-t', dur, '-movflags', '+faststart', out]);
-    for (const f of fs.readdirSync(dest)) if (f.startsWith('x264_final')) fs.rmSync(path.join(dest, f));
+    const kbps = parseInt(opt('bitrate', '10M'), 10) * 1000;
+    twoPass(files, path.join(AUDIO, 'full', 'mix.wav'), out, kbps, dur);
+    // shareable copy that fits chat/upload limits (same frames, lower bitrate)
+    const shareMiB = Number(opt('share-mib', '380'));
+    const audioMB = (256 * Number(dur)) / 8 / 1000;
+    const shareKbps = Math.floor(((shareMiB * 1.048576 - audioMB - 2) * 8 * 1000) / Number(dur));
+    if (shareKbps < kbps) twoPass(files, path.join(AUDIO, 'full', 'mix.wav'), out.replace(/\.mp4$/, '_share.mp4'), shareKbps, dur);
     fs.copyFileSync(path.join(AUDIO, 'full', 'full.srt'), path.join(dest, `hidden_ledger_episode_${EP}.srt`));
+  },
+  qa() {
+    const {tl} = loadFull();
+    const name = opt('name', `hidden_ledger_episode_${EP}_FINAL_1080p`);
+    const out = path.join(OUT, 'final', `${name}.mp4`);
     py('av_check.py', ['--episode', EP, '--video', path.relative(ROOT, out), '--asr'], {allowFail: true});
     py('stem_check.py', ['--episode', EP, '--name', 'full'], {allowFail: true});
-    const rep = validateVideo(out, {minDur: 400, maxDur: 660});
+    py('content_check.py', ['--video', path.relative(ROOT, out)], {allowFail: true});
+    const rep = validateVideo(out, {minDur: 60, maxDur: 60 * 20});
+    rep.expected_frames = tl.durationInFrames;
     writeReport(`${name}_report`, rep);
     console.log(JSON.stringify(rep, null, 2));
   },
@@ -285,9 +409,9 @@ const commands = {
   thumbnails() {
     const dest = path.join(OUT, 'thumbnails');
     fs.mkdirSync(dest, {recursive: true});
-    for (const v of [1, 2, 3]) {
+    for (const v of opt('variants', EP === '001' ? '1,2,3' : '1,2').split(',').map(Number)) {
       const f = path.join(dest, `thumbnail_${v}.png`);
-      run(NPX, ['remotion', 'still', 'Thumbnail', f, `--props=${JSON.stringify({variant: v})}`, '--image-format=png', '--log=error']);
+      run(NPX, ['remotion', 'still', 'Thumbnail', f, `--props=${JSON.stringify({variant: v, episode: EP})}`, '--image-format=png', '--log=error']);
     }
   },
   verify() {

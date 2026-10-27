@@ -254,6 +254,10 @@ def sfx_set(rng) -> dict[str, np.ndarray]:
     a = mallet(880, 0.3)
     p[: len(a)] += a
     out["pop"] = p
+    # beep: checkout scanner (soft-edged 1.9 kHz tone, 0.11 s); register: drawer clack + small bell
+    tb = np.arange(int(0.11 * SR)) / SR
+    out["beep"] = np.sin(2 * np.pi * 1900 * tb) * np.minimum(1, np.minimum(tb, tb[-1] - tb) / 0.008) * 0.8
+    out["register"] = add(noise_burst(rng, 0.06, 140, hp=True) * 0.8, np.concatenate([np.zeros(int(0.07 * SR)), mallet(2637, 0.5) * 0.5]))
     for k, v in out.items():
         out[k] = (v / (np.max(np.abs(v)) or 1) * 0.7).astype(np.float32)
     return out

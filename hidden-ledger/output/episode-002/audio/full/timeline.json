@@ -1,0 +1,7194 @@
+{
+  "episode": "002",
+  "title": "How Supermarkets Make Money on Tiny Margins",
+  "name": "full",
+  "fps": 30,
+  "duration": 599.501,
+  "durationInFrames": 17986,
+  "voice": "am_michael",
+  "scenes": [
+    {
+      "id": "s01",
+      "title": "Cold open",
+      "chapter": "A hundred dollars at the checkout",
+      "music": "intro",
+      "start": 0.0,
+      "end": 40.594,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s01-01",
+          "text": "You hand over a hundred dollars at the checkout.",
+          "start": 0.6,
+          "end": 3.02,
+          "duration": 2.42,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              0.6,
+              "You"
+            ],
+            [
+              0.72,
+              "hand"
+            ],
+            [
+              0.92,
+              "over"
+            ],
+            [
+              1.2,
+              "$100"
+            ],
+            [
+              1.68,
+              "at"
+            ],
+            [
+              2.32,
+              "the"
+            ],
+            [
+              2.42,
+              "checkout."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s01-02",
+          "text": "Bread, coffee, a gallon of milk, a week of dinners. The scanner beeps, the receipt prints, and the money disappears into the register.",
+          "start": 3.4,
+          "end": 11.76,
+          "duration": 8.36,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              3.4,
+              "Bread"
+            ],
+            [
+              3.56,
+              "coffee,"
+            ],
+            [
+              4.5,
+              "a"
+            ],
+            [
+              4.56,
+              "gallon"
+            ],
+            [
+              4.82,
+              "of"
+            ],
+            [
+              5.08,
+              "milk,"
+            ],
+            [
+              5.76,
+              "a"
+            ],
+            [
+              5.88,
+              "week"
+            ],
+            [
+              6.08,
+              "of"
+            ],
+            [
+              6.26,
+              "dinners."
+            ],
+            [
+              7.48,
+              "The"
+            ],
+            [
+              7.48,
+              "scanner"
+            ],
+            [
+              7.8,
+              "beeps,"
+            ],
+            [
+              8.58,
+              "the"
+            ],
+            [
+              8.6,
+              "receipt"
+            ],
+            [
+              8.88,
+              "prints,"
+            ],
+            [
+              9.56,
+              "and"
+            ],
+            [
+              9.6,
+              "the"
+            ],
+            [
+              9.7,
+              "money"
+            ],
+            [
+              9.96,
+              "disappears"
+            ],
+            [
+              10.32,
+              "into"
+            ],
+            [
+              10.9,
+              "the"
+            ],
+            [
+              11.04,
+              "register."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s01-03",
+          "text": "So how much of that hundred dollars does the supermarket actually keep?",
+          "start": 12.14,
+          "end": 16.54,
+          "duration": 4.4,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              12.14,
+              "So"
+            ],
+            [
+              12.3,
+              "how"
+            ],
+            [
+              12.48,
+              "much"
+            ],
+            [
+              12.76,
+              "of"
+            ],
+            [
+              12.96,
+              "that"
+            ],
+            [
+              13.1,
+              "hundred"
+            ],
+            [
+              13.38,
+              "dollars"
+            ],
+            [
+              14.0,
+              "does"
+            ],
+            [
+              14.62,
+              "the"
+            ],
+            [
+              14.78,
+              "supermarket"
+            ],
+            [
+              15.22,
+              "actually"
+            ],
+            [
+              16.02,
+              "keep?"
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s01-04",
+          "text": "At Kroger, which runs nearly 2,700 supermarkets across the United States, the answer for its latest fiscal year was about $1.28 in operating profit.",
+          "start": 16.92,
+          "end": 28.85,
+          "duration": 11.93,
+          "claims": [
+            "K01",
+            "K03"
+          ],
+          "duck": true,
+          "words": [
+            [
+              16.92,
+              "At"
+            ],
+            [
+              17.04,
+              "Kroger,"
+            ],
+            [
+              17.82,
+              "which"
+            ],
+            [
+              18.02,
+              "runs"
+            ],
+            [
+              18.24,
+              "nearly"
+            ],
+            [
+              18.68,
+              "2"
+            ],
+            [
+              19.04,
+              ",700"
+            ],
+            [
+              19.54,
+              "supermarkets"
+            ],
+            [
+              20.36,
+              "across"
+            ],
+            [
+              21.0,
+              "the"
+            ],
+            [
+              21.28,
+              "United"
+            ],
+            [
+              21.54,
+              "States,"
+            ],
+            [
+              22.7,
+              "the"
+            ],
+            [
+              22.78,
+              "answer"
+            ],
+            [
+              23.14,
+              "for"
+            ],
+            [
+              23.44,
+              "its"
+            ],
+            [
+              23.6,
+              "latest"
+            ],
+            [
+              24.0,
+              "fiscal"
+            ],
+            [
+              24.28,
+              "year"
+            ],
+            [
+              24.78,
+              "was"
+            ],
+            [
+              25.04,
+              "about"
+            ],
+            [
+              25.28,
+              "a"
+            ],
+            [
+              25.28,
+              "dollar"
+            ],
+            [
+              25.88,
+              "and"
+            ],
+            [
+              26.48,
+              "28"
+            ],
+            [
+              26.88,
+              "cents"
+            ],
+            [
+              27.4,
+              "in"
+            ],
+            [
+              27.68,
+              "operating"
+            ],
+            [
+              28.08,
+              "profit."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s01-05",
+          "text": "And yet the same company brought in more than $147 billion in sales.",
+          "start": 29.23,
+          "end": 34.924,
+          "duration": 5.694,
+          "claims": [
+            "K02"
+          ],
+          "duck": true,
+          "words": [
+            [
+              29.23,
+              "and"
+            ],
+            [
+              29.33,
+              "yet"
+            ],
+            [
+              29.49,
+              "the"
+            ],
+            [
+              29.67,
+              "same"
+            ],
+            [
+              29.95,
+              "company"
+            ],
+            [
+              30.45,
+              "brought"
+            ],
+            [
+              30.81,
+              "in"
+            ],
+            [
+              31.11,
+              "more"
+            ],
+            [
+              31.37,
+              "than"
+            ],
+            [
+              31.61,
+              "$147"
+            ],
+            [
+              32.57,
+              "billion"
+            ],
+            [
+              33.33,
+              "in"
+            ],
+            [
+              34.17,
+              "sales."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s01-06",
+          "text": "Tiny margins. Enormous numbers. How does that business actually work?",
+          "start": 35.304,
+          "end": 40.144,
+          "duration": 4.84,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              35.304,
+              "Tiny"
+            ],
+            [
+              35.544,
+              "margins,"
+            ],
+            [
+              36.644,
+              "enormous"
+            ],
+            [
+              36.904,
+              "numbers,"
+            ],
+            [
+              38.224,
+              "how"
+            ],
+            [
+              38.284,
+              "does"
+            ],
+            [
+              38.404,
+              "that"
+            ],
+            [
+              38.584,
+              "business"
+            ],
+            [
+              38.904,
+              "actually"
+            ],
+            [
+              39.484,
+              "work?"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "title": "Huge sales, thin profit",
+      "chapter": "Huge sales, thin profit",
+      "music": "neutral",
+      "start": 40.594,
+      "end": 115.474,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s02-01",
+          "text": "Start with the scale, because it changes everything.",
+          "start": 41.044,
+          "end": 43.944,
+          "duration": 2.9,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              41.044,
+              "Start"
+            ],
+            [
+              41.324,
+              "with"
+            ],
+            [
+              41.544,
+              "the"
+            ],
+            [
+              41.664,
+              "scale"
+            ],
+            [
+              41.964,
+              "because"
+            ],
+            [
+              42.524,
+              "it"
+            ],
+            [
+              42.664,
+              "changes"
+            ],
+            [
+              43.024,
+              "everything."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s02-02",
+          "text": "In the fiscal year that ended in January 2026, Kroger reported $147.6 billion in sales. Its operating profit was $1.9 billion, or 1.28 percent of sales.",
+          "start": 44.324,
+          "end": 60.473,
+          "duration": 16.149,
+          "claims": [
+            "K02",
+            "K03"
+          ],
+          "duck": true,
+          "words": [
+            [
+              44.324,
+              "In"
+            ],
+            [
+              44.404,
+              "the"
+            ],
+            [
+              44.504,
+              "fiscal"
+            ],
+            [
+              44.724,
+              "year"
+            ],
+            [
+              45.144,
+              "that"
+            ],
+            [
+              45.384,
+              "ended"
+            ],
+            [
+              45.704,
+              "in"
+            ],
+            [
+              45.944,
+              "January"
+            ],
+            [
+              46.344,
+              "2026,"
+            ],
+            [
+              48.224,
+              "Kroger"
+            ],
+            [
+              48.444,
+              "reported"
+            ],
+            [
+              49.024,
+              "$147"
+            ],
+            [
+              49.404,
+              ".6"
+            ],
+            [
+              51.244,
+              "billion"
+            ],
+            [
+              51.624,
+              "in"
+            ],
+            [
+              52.344,
+              "sales."
+            ],
+            [
+              53.644,
+              "Its"
+            ],
+            [
+              53.724,
+              "operating"
+            ],
+            [
+              54.104,
+              "profit"
+            ],
+            [
+              54.684,
+              "was"
+            ],
+            [
+              55.004,
+              "$1"
+            ],
+            [
+              55.384,
+              ".9"
+            ],
+            [
+              56.184,
+              "billion,"
+            ],
+            [
+              57.664,
+              "or"
+            ],
+            [
+              57.804,
+              "1"
+            ],
+            [
+              58.144,
+              ".28"
+            ],
+            [
+              58.944,
+              "%"
+            ],
+            [
+              59.424,
+              "of"
+            ],
+            [
+              59.744,
+              "sales."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s02-03",
+          "text": "That year included a $2.5 billion charge tied to its automated fulfillment network. The year before, operating profit was 2.62 percent of sales.",
+          "start": 60.853,
+          "end": 73.292,
+          "duration": 12.439,
+          "claims": [
+            "K04",
+            "K05"
+          ],
+          "duck": true,
+          "words": [
+            [
+              60.853,
+              "that"
+            ],
+            [
+              61.013,
+              "year"
+            ],
+            [
+              61.153,
+              "included"
+            ],
+            [
+              61.473,
+              "a"
+            ],
+            [
+              61.873,
+              "$2"
+            ],
+            [
+              62.153,
+              ".5"
+            ],
+            [
+              63.013,
+              "billion"
+            ],
+            [
+              63.413,
+              "charge"
+            ],
+            [
+              64.213,
+              "tied"
+            ],
+            [
+              65.013,
+              "to"
+            ],
+            [
+              65.513,
+              "its"
+            ],
+            [
+              65.673,
+              "automated"
+            ],
+            [
+              66.113,
+              "fulfillment"
+            ],
+            [
+              66.793,
+              "network."
+            ],
+            [
+              68.153,
+              "The"
+            ],
+            [
+              68.233,
+              "year"
+            ],
+            [
+              68.413,
+              "before,"
+            ],
+            [
+              69.273,
+              "operating"
+            ],
+            [
+              69.813,
+              "profit"
+            ],
+            [
+              70.333,
+              "was"
+            ],
+            [
+              70.653,
+              "2"
+            ],
+            [
+              70.933,
+              ".62"
+            ],
+            [
+              71.733,
+              "%"
+            ],
+            [
+              72.293,
+              "of"
+            ],
+            [
+              72.553,
+              "sales."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s02-04",
+          "text": "Either way, the pattern is the same: one or two cents of operating profit on each dollar, multiplied across a mountain of sales.",
+          "start": 73.672,
+          "end": 82.163,
+          "duration": 8.491,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              73.672,
+              "Either"
+            ],
+            [
+              73.892,
+              "way,"
+            ],
+            [
+              74.332,
+              "the"
+            ],
+            [
+              74.452,
+              "pattern"
+            ],
+            [
+              74.832,
+              "is"
+            ],
+            [
+              75.052,
+              "the"
+            ],
+            [
+              75.192,
+              "same."
+            ],
+            [
+              76.272,
+              "One"
+            ],
+            [
+              76.292,
+              "or"
+            ],
+            [
+              76.412,
+              "two"
+            ],
+            [
+              76.612,
+              "cents"
+            ],
+            [
+              76.872,
+              "of"
+            ],
+            [
+              77.112,
+              "operating"
+            ],
+            [
+              77.592,
+              "profit"
+            ],
+            [
+              78.032,
+              "on"
+            ],
+            [
+              78.412,
+              "each"
+            ],
+            [
+              78.592,
+              "dollar"
+            ],
+            [
+              79.072,
+              "multiplied"
+            ],
+            [
+              79.832,
+              "across"
+            ],
+            [
+              80.512,
+              "a"
+            ],
+            [
+              80.732,
+              "mountain"
+            ],
+            [
+              80.972,
+              "of"
+            ],
+            [
+              81.392,
+              "sales."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s02-05",
+          "text": "Even one percent of nearly $150 billion is well over a billion dollars.",
+          "start": 82.543,
+          "end": 89.043,
+          "duration": 6.5,
+          "claims": [
+            "X01"
+          ],
+          "duck": false,
+          "words": [
+            [
+              82.543,
+              "Even"
+            ],
+            [
+              82.763,
+              "1"
+            ],
+            [
+              83.003,
+              "%"
+            ],
+            [
+              83.523,
+              "of"
+            ],
+            [
+              83.823,
+              "nearly"
+            ],
+            [
+              84.083,
+              "$150"
+            ],
+            [
+              84.943,
+              "billion"
+            ],
+            [
+              85.803,
+              "is"
+            ],
+            [
+              86.983,
+              "well"
+            ],
+            [
+              87.243,
+              "over"
+            ],
+            [
+              87.703,
+              "a"
+            ],
+            [
+              87.823,
+              "billion"
+            ],
+            [
+              88.143,
+              "dollars."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s02-06",
+          "text": "Scale works the same way at the top of the industry. Walmart's operating income was 4.2 percent of net sales in its latest fiscal year. On more than $700 billion of net sales, that came to nearly $30 billion.",
+          "start": 89.423,
+          "end": 106.074,
+          "duration": 16.651,
+          "claims": [
+            "W03",
+            "W05"
+          ],
+          "duck": true,
+          "words": [
+            [
+              89.423,
+              "Scale"
+            ],
+            [
+              89.683,
+              "works"
+            ],
+            [
+              90.023,
+              "the"
+            ],
+            [
+              90.303,
+              "same"
+            ],
+            [
+              90.543,
+              "way"
+            ],
+            [
+              90.803,
+              "at"
+            ],
+            [
+              91.003,
+              "the"
+            ],
+            [
+              91.103,
+              "top"
+            ],
+            [
+              91.363,
+              "of"
+            ],
+            [
+              91.523,
+              "the"
+            ],
+            [
+              91.643,
+              "industry."
+            ],
+            [
+              93.083,
+              "Walmart's"
+            ],
+            [
+              93.443,
+              "operating"
+            ],
+            [
+              93.843,
+              "income"
+            ],
+            [
+              94.463,
+              "was"
+            ],
+            [
+              94.923,
+              "4"
+            ],
+            [
+              95.323,
+              ".2"
+            ],
+            [
+              96.043,
+              "%"
+            ],
+            [
+              96.383,
+              "of"
+            ],
+            [
+              96.583,
+              "net"
+            ],
+            [
+              96.743,
+              "sales"
+            ],
+            [
+              97.043,
+              "in"
+            ],
+            [
+              97.463,
+              "its"
+            ],
+            [
+              97.603,
+              "latest"
+            ],
+            [
+              98.023,
+              "fiscal"
+            ],
+            [
+              98.343,
+              "year."
+            ],
+            [
+              99.583,
+              "On"
+            ],
+            [
+              99.683,
+              "more"
+            ],
+            [
+              99.903,
+              "than"
+            ],
+            [
+              100.123,
+              "$700"
+            ],
+            [
+              100.623,
+              "billion"
+            ],
+            [
+              101.303,
+              "of"
+            ],
+            [
+              102.083,
+              "net"
+            ],
+            [
+              102.263,
+              "sales,"
+            ],
+            [
+              103.343,
+              "that"
+            ],
+            [
+              103.423,
+              "came"
+            ],
+            [
+              103.643,
+              "to"
+            ],
+            [
+              103.863,
+              "nearly"
+            ],
+            [
+              104.103,
+              "$30"
+            ],
+            [
+              104.683,
+              "billion."
+            ]
+          ]
+        },
+        {
+          "id": "07",
+          "key": "s02-07",
+          "text": "That is the first secret of the supermarket. It is not built to earn a lot on each sale. It is built to make an enormous number of them.",
+          "start": 106.454,
+          "end": 115.024,
+          "duration": 8.57,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              106.454,
+              "That"
+            ],
+            [
+              106.634,
+              "is"
+            ],
+            [
+              106.774,
+              "the"
+            ],
+            [
+              106.934,
+              "first"
+            ],
+            [
+              107.254,
+              "secret"
+            ],
+            [
+              107.694,
+              "of"
+            ],
+            [
+              108.014,
+              "the"
+            ],
+            [
+              108.114,
+              "supermarket."
+            ],
+            [
+              109.394,
+              "It"
+            ],
+            [
+              109.434,
+              "is"
+            ],
+            [
+              109.554,
+              "not"
+            ],
+            [
+              109.754,
+              "built"
+            ],
+            [
+              110.094,
+              "to"
+            ],
+            [
+              110.294,
+              "earn"
+            ],
+            [
+              110.474,
+              "a"
+            ],
+            [
+              110.594,
+              "lot"
+            ],
+            [
+              110.854,
+              "on"
+            ],
+            [
+              111.114,
+              "each"
+            ],
+            [
+              111.314,
+              "sale."
+            ],
+            [
+              112.294,
+              "It"
+            ],
+            [
+              112.414,
+              "is"
+            ],
+            [
+              112.534,
+              "built"
+            ],
+            [
+              112.794,
+              "to"
+            ],
+            [
+              112.994,
+              "make"
+            ],
+            [
+              113.194,
+              "an"
+            ],
+            [
+              113.434,
+              "enormous"
+            ],
+            [
+              113.814,
+              "number"
+            ],
+            [
+              114.434,
+              "of"
+            ],
+            [
+              114.694,
+              "them."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "title": "Three kinds of margin",
+      "chapter": "Where the $100 goes",
+      "music": "process",
+      "start": 115.474,
+      "end": 190.481,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s03-01",
+          "text": "To see where the rest goes, follow a hundred dollars of Kroger's sales through its income statement.",
+          "start": 115.924,
+          "end": 121.984,
+          "duration": 6.06,
+          "claims": [
+            "K06"
+          ],
+          "duck": false,
+          "words": [
+            [
+              115.924,
+              "to"
+            ],
+            [
+              116.024,
+              "see"
+            ],
+            [
+              116.204,
+              "where"
+            ],
+            [
+              116.484,
+              "the"
+            ],
+            [
+              116.624,
+              "rest"
+            ],
+            [
+              116.784,
+              "goes,"
+            ],
+            [
+              117.824,
+              "follow"
+            ],
+            [
+              118.024,
+              "$100"
+            ],
+            [
+              118.644,
+              "of"
+            ],
+            [
+              119.304,
+              "Kroger's"
+            ],
+            [
+              119.844,
+              "sales"
+            ],
+            [
+              120.084,
+              "through"
+            ],
+            [
+              120.664,
+              "its"
+            ],
+            [
+              120.884,
+              "income"
+            ],
+            [
+              121.104,
+              "statement."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s03-02",
+          "text": "First, the cost of the goods themselves, including advertising, warehousing and transportation. That takes about $77.14.",
+          "start": 122.364,
+          "end": 132.904,
+          "duration": 10.54,
+          "claims": [
+            "K06"
+          ],
+          "duck": true,
+          "words": [
+            [
+              122.364,
+              "First,"
+            ],
+            [
+              122.824,
+              "the"
+            ],
+            [
+              122.944,
+              "cost"
+            ],
+            [
+              123.184,
+              "of"
+            ],
+            [
+              123.424,
+              "the"
+            ],
+            [
+              123.504,
+              "goods"
+            ],
+            [
+              123.724,
+              "themselves,"
+            ],
+            [
+              124.984,
+              "including"
+            ],
+            [
+              125.304,
+              "advertising,"
+            ],
+            [
+              126.744,
+              "warehousing,"
+            ],
+            [
+              127.724,
+              "and"
+            ],
+            [
+              127.764,
+              "transportation."
+            ],
+            [
+              129.324,
+              "That"
+            ],
+            [
+              129.504,
+              "takes"
+            ],
+            [
+              129.744,
+              "about"
+            ],
+            [
+              130.104,
+              "$77"
+            ],
+            [
+              130.804,
+              ".14."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s03-03",
+          "text": "What remains is gross profit: $22.86. Kroger reports a gross margin of 22.9 percent.",
+          "start": 133.284,
+          "end": 142.504,
+          "duration": 9.22,
+          "claims": [
+            "K06",
+            "K07"
+          ],
+          "duck": true,
+          "words": [
+            [
+              133.284,
+              "What"
+            ],
+            [
+              133.424,
+              "remains"
+            ],
+            [
+              133.684,
+              "is"
+            ],
+            [
+              134.164,
+              "gross"
+            ],
+            [
+              134.424,
+              "profit,"
+            ],
+            [
+              135.564,
+              "$22"
+            ],
+            [
+              135.984,
+              ".86."
+            ],
+            [
+              138.404,
+              "Kroger"
+            ],
+            [
+              138.884,
+              "reports"
+            ],
+            [
+              139.224,
+              "a"
+            ],
+            [
+              139.504,
+              "gross"
+            ],
+            [
+              139.764,
+              "margin"
+            ],
+            [
+              140.364,
+              "of"
+            ],
+            [
+              140.584,
+              "22"
+            ],
+            [
+              140.864,
+              ".9%."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s03-04",
+          "text": "Gross margin is what survives the cost of the product. It is not profit yet.",
+          "start": 142.884,
+          "end": 148.064,
+          "duration": 5.18,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              142.884,
+              "Gross"
+            ],
+            [
+              143.104,
+              "margin"
+            ],
+            [
+              143.624,
+              "is"
+            ],
+            [
+              144.004,
+              "what"
+            ],
+            [
+              144.184,
+              "survives"
+            ],
+            [
+              144.564,
+              "the"
+            ],
+            [
+              145.004,
+              "cost"
+            ],
+            [
+              145.224,
+              "of"
+            ],
+            [
+              145.524,
+              "the"
+            ],
+            [
+              145.604,
+              "product."
+            ],
+            [
+              146.684,
+              "It"
+            ],
+            [
+              146.764,
+              "is"
+            ],
+            [
+              146.864,
+              "not"
+            ],
+            [
+              147.104,
+              "profit"
+            ],
+            [
+              147.584,
+              "yet."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s03-05",
+          "text": "Next comes the cost of running the business: wages and benefits, utilities, rent, depreciation, and that year's $2.5 billion charge. Together, about $21.58.",
+          "start": 148.444,
+          "end": 162.791,
+          "duration": 14.347,
+          "claims": [
+            "K04",
+            "K06"
+          ],
+          "duck": true,
+          "words": [
+            [
+              148.444,
+              "Next"
+            ],
+            [
+              148.604,
+              "comes"
+            ],
+            [
+              148.924,
+              "the"
+            ],
+            [
+              149.144,
+              "cost"
+            ],
+            [
+              149.464,
+              "of"
+            ],
+            [
+              149.664,
+              "running"
+            ],
+            [
+              149.884,
+              "the"
+            ],
+            [
+              150.064,
+              "business."
+            ],
+            [
+              151.184,
+              "Wages"
+            ],
+            [
+              151.444,
+              "and"
+            ],
+            [
+              151.764,
+              "benefits,"
+            ],
+            [
+              152.584,
+              "utilities,"
+            ],
+            [
+              153.684,
+              "rent,"
+            ],
+            [
+              154.624,
+              "depreciation,"
+            ],
+            [
+              155.504,
+              "and"
+            ],
+            [
+              155.524,
+              "that"
+            ],
+            [
+              155.644,
+              "year's"
+            ],
+            [
+              156.004,
+              "$2"
+            ],
+            [
+              156.264,
+              ".5"
+            ],
+            [
+              157.184,
+              "billion"
+            ],
+            [
+              157.584,
+              "charge."
+            ],
+            [
+              159.324,
+              "Together,"
+            ],
+            [
+              160.184,
+              "about"
+            ],
+            [
+              160.184,
+              "$21"
+            ],
+            [
+              160.804,
+              ".58."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s03-06",
+          "text": "What's left is operating profit, what the business itself earned: $1.28.",
+          "start": 163.171,
+          "end": 169.351,
+          "duration": 6.18,
+          "claims": [
+            "K03",
+            "K06"
+          ],
+          "duck": true,
+          "words": [
+            [
+              163.171,
+              "What's"
+            ],
+            [
+              163.411,
+              "left"
+            ],
+            [
+              163.591,
+              "is"
+            ],
+            [
+              163.871,
+              "operating"
+            ],
+            [
+              164.311,
+              "profit,"
+            ],
+            [
+              165.351,
+              "what"
+            ],
+            [
+              165.471,
+              "the"
+            ],
+            [
+              165.611,
+              "business"
+            ],
+            [
+              165.911,
+              "itself"
+            ],
+            [
+              166.271,
+              "earned,"
+            ],
+            [
+              167.391,
+              "a"
+            ],
+            [
+              167.511,
+              "dollar"
+            ],
+            [
+              167.891,
+              "and"
+            ],
+            [
+              168.111,
+              "28"
+            ],
+            [
+              168.471,
+              "cents."
+            ]
+          ]
+        },
+        {
+          "id": "07",
+          "key": "s03-07",
+          "text": "Then interest, taxes and other items. Net earnings, the bottom line for shareholders, came to about 69 cents.",
+          "start": 169.731,
+          "end": 178.091,
+          "duration": 8.36,
+          "claims": [
+            "K08"
+          ],
+          "duck": true,
+          "words": [
+            [
+              169.731,
+              "then"
+            ],
+            [
+              169.911,
+              "interest,"
+            ],
+            [
+              170.771,
+              "taxes"
+            ],
+            [
+              171.251,
+              "and"
+            ],
+            [
+              171.591,
+              "other"
+            ],
+            [
+              171.751,
+              "items."
+            ],
+            [
+              173.191,
+              "Net"
+            ],
+            [
+              173.191,
+              "earnings,"
+            ],
+            [
+              173.811,
+              "the"
+            ],
+            [
+              173.891,
+              "bottom"
+            ],
+            [
+              174.071,
+              "line"
+            ],
+            [
+              174.491,
+              "for"
+            ],
+            [
+              174.771,
+              "shareholders,"
+            ],
+            [
+              175.951,
+              "came"
+            ],
+            [
+              176.051,
+              "to"
+            ],
+            [
+              176.291,
+              "about"
+            ],
+            [
+              176.531,
+              "69"
+            ],
+            [
+              177.011,
+              "cents."
+            ]
+          ]
+        },
+        {
+          "id": "08",
+          "key": "s03-08",
+          "text": "Gross margin, operating margin, net margin. Three different numbers that answer three different questions, and mixing them up is the easiest way to misread a supermarket.",
+          "start": 178.471,
+          "end": 190.031,
+          "duration": 11.56,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              178.471,
+              "Gross"
+            ],
+            [
+              178.711,
+              "margin,"
+            ],
+            [
+              179.891,
+              "operating"
+            ],
+            [
+              180.211,
+              "margin,"
+            ],
+            [
+              181.371,
+              "net"
+            ],
+            [
+              181.411,
+              "margin,"
+            ],
+            [
+              182.451,
+              "three"
+            ],
+            [
+              182.851,
+              "different"
+            ],
+            [
+              183.231,
+              "numbers"
+            ],
+            [
+              183.651,
+              "that"
+            ],
+            [
+              183.891,
+              "answer"
+            ],
+            [
+              184.111,
+              "three"
+            ],
+            [
+              184.651,
+              "different"
+            ],
+            [
+              184.931,
+              "questions"
+            ],
+            [
+              185.411,
+              "and"
+            ],
+            [
+              186.111,
+              "mixing"
+            ],
+            [
+              186.291,
+              "them"
+            ],
+            [
+              186.671,
+              "up"
+            ],
+            [
+              186.911,
+              "is"
+            ],
+            [
+              187.231,
+              "the"
+            ],
+            [
+              187.391,
+              "easiest"
+            ],
+            [
+              187.831,
+              "way"
+            ],
+            [
+              188.231,
+              "to"
+            ],
+            [
+              188.451,
+              "misread"
+            ],
+            [
+              188.871,
+              "a"
+            ],
+            [
+              189.151,
+              "supermarket."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "title": "The basket",
+      "chapter": "One basket, many margins",
+      "music": "lift",
+      "start": 190.481,
+      "end": 245.621,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s04-01",
+          "text": "Inside those averages, every product plays a different role. Here is a hypothetical basket. These prices and costs are illustrative, not data from any real store.",
+          "start": 190.931,
+          "end": 202.511,
+          "duration": 11.58,
+          "claims": [
+            "I01"
+          ],
+          "duck": false,
+          "words": [
+            [
+              190.931,
+              "Inside"
+            ],
+            [
+              191.331,
+              "those"
+            ],
+            [
+              191.691,
+              "averages,"
+            ],
+            [
+              192.651,
+              "every"
+            ],
+            [
+              192.891,
+              "product"
+            ],
+            [
+              193.391,
+              "plays"
+            ],
+            [
+              193.771,
+              "a"
+            ],
+            [
+              193.911,
+              "different"
+            ],
+            [
+              194.111,
+              "role."
+            ],
+            [
+              195.191,
+              "Here"
+            ],
+            [
+              195.391,
+              "is"
+            ],
+            [
+              195.591,
+              "a"
+            ],
+            [
+              195.691,
+              "hypothetical"
+            ],
+            [
+              196.031,
+              "basket."
+            ],
+            [
+              197.671,
+              "These"
+            ],
+            [
+              197.751,
+              "prices"
+            ],
+            [
+              198.051,
+              "and"
+            ],
+            [
+              198.551,
+              "costs"
+            ],
+            [
+              198.871,
+              "are"
+            ],
+            [
+              199.251,
+              "illustrative,"
+            ],
+            [
+              200.451,
+              "not"
+            ],
+            [
+              200.591,
+              "data"
+            ],
+            [
+              200.931,
+              "from"
+            ],
+            [
+              201.271,
+              "any"
+            ],
+            [
+              201.491,
+              "real"
+            ],
+            [
+              201.731,
+              "store."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s04-02",
+          "text": "Ten items, $54 at the register.",
+          "start": 202.891,
+          "end": 205.981,
+          "duration": 3.09,
+          "claims": [
+            "I01"
+          ],
+          "duck": true,
+          "words": [
+            [
+              202.891,
+              "Ten"
+            ],
+            [
+              203.071,
+              "items,"
+            ],
+            [
+              203.891,
+              "fifty"
+            ],
+            [
+              204.171,
+              "-four"
+            ],
+            [
+              204.551,
+              "dollars"
+            ],
+            [
+              204.931,
+              "at"
+            ],
+            [
+              205.191,
+              "the"
+            ],
+            [
+              205.271,
+              "register."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s04-03",
+          "text": "In this example, the milk earns almost nothing. Stores sometimes price staples like this aggressively, even as loss leaders, sold at a thin margin or below cost to bring shoppers through the door.",
+          "start": 206.361,
+          "end": 219.881,
+          "duration": 13.52,
+          "claims": [
+            "I01",
+            "D01"
+          ],
+          "duck": false,
+          "words": [
+            [
+              206.361,
+              "In"
+            ],
+            [
+              206.441,
+              "this"
+            ],
+            [
+              206.561,
+              "example,"
+            ],
+            [
+              207.441,
+              "the"
+            ],
+            [
+              207.521,
+              "milk"
+            ],
+            [
+              207.701,
+              "earns"
+            ],
+            [
+              208.001,
+              "almost"
+            ],
+            [
+              208.361,
+              "nothing."
+            ],
+            [
+              209.781,
+              "Stores"
+            ],
+            [
+              209.921,
+              "sometimes"
+            ],
+            [
+              210.641,
+              "price"
+            ],
+            [
+              211.041,
+              "staples"
+            ],
+            [
+              211.541,
+              "like"
+            ],
+            [
+              212.021,
+              "this"
+            ],
+            [
+              212.241,
+              "aggressively,"
+            ],
+            [
+              213.501,
+              "even"
+            ],
+            [
+              213.681,
+              "as"
+            ],
+            [
+              213.901,
+              "lost"
+            ],
+            [
+              214.101,
+              "leaders,"
+            ],
+            [
+              215.361,
+              "sold"
+            ],
+            [
+              215.461,
+              "at"
+            ],
+            [
+              215.781,
+              "a"
+            ],
+            [
+              215.861,
+              "thin"
+            ],
+            [
+              216.121,
+              "margin"
+            ],
+            [
+              216.661,
+              "or"
+            ],
+            [
+              217.041,
+              "below"
+            ],
+            [
+              217.281,
+              "cost"
+            ],
+            [
+              217.781,
+              "to"
+            ],
+            [
+              218.121,
+              "bring"
+            ],
+            [
+              218.321,
+              "shoppers"
+            ],
+            [
+              218.701,
+              "through"
+            ],
+            [
+              219.181,
+              "the"
+            ],
+            [
+              219.381,
+              "door."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s04-04",
+          "text": "The store-brand cereal earns more than the national brand sitting next to it. The prepared meal from the deli earns more still.",
+          "start": 220.261,
+          "end": 227.931,
+          "duration": 7.67,
+          "claims": [
+            "I01"
+          ],
+          "duck": false,
+          "words": [
+            [
+              220.261,
+              "The"
+            ],
+            [
+              220.341,
+              "store"
+            ],
+            [
+              220.541,
+              "brand"
+            ],
+            [
+              220.961,
+              "cereal"
+            ],
+            [
+              221.301,
+              "earns"
+            ],
+            [
+              222.021,
+              "more"
+            ],
+            [
+              222.341,
+              "than"
+            ],
+            [
+              222.521,
+              "the"
+            ],
+            [
+              222.641,
+              "national"
+            ],
+            [
+              222.901,
+              "brand"
+            ],
+            [
+              223.321,
+              "sitting"
+            ],
+            [
+              223.741,
+              "next"
+            ],
+            [
+              224.141,
+              "to"
+            ],
+            [
+              224.361,
+              "it."
+            ],
+            [
+              225.121,
+              "The"
+            ],
+            [
+              225.161,
+              "prepared"
+            ],
+            [
+              225.461,
+              "meal"
+            ],
+            [
+              225.901,
+              "from"
+            ],
+            [
+              226.221,
+              "the"
+            ],
+            [
+              226.341,
+              "deli"
+            ],
+            [
+              226.741,
+              "earns"
+            ],
+            [
+              227.041,
+              "more"
+            ],
+            [
+              227.361,
+              "still."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s04-05",
+          "text": "Add it up, and this basket's gross margin lands near 23 percent. We chose the numbers so it would roughly match Kroger's reported figure.",
+          "start": 228.311,
+          "end": 237.471,
+          "duration": 9.16,
+          "claims": [
+            "I01",
+            "K07"
+          ],
+          "duck": true,
+          "words": [
+            [
+              228.311,
+              "added"
+            ],
+            [
+              228.531,
+              "up,"
+            ],
+            [
+              229.071,
+              "and"
+            ],
+            [
+              229.251,
+              "this"
+            ],
+            [
+              229.391,
+              "basket's"
+            ],
+            [
+              230.091,
+              "gross"
+            ],
+            [
+              230.311,
+              "margin"
+            ],
+            [
+              230.671,
+              "lands"
+            ],
+            [
+              231.251,
+              "near"
+            ],
+            [
+              231.691,
+              "23%."
+            ],
+            [
+              232.971,
+              "We"
+            ],
+            [
+              233.591,
+              "chose"
+            ],
+            [
+              233.791,
+              "the"
+            ],
+            [
+              234.091,
+              "numbers"
+            ],
+            [
+              234.371,
+              "so"
+            ],
+            [
+              234.731,
+              "it"
+            ],
+            [
+              234.851,
+              "would"
+            ],
+            [
+              234.951,
+              "roughly"
+            ],
+            [
+              235.271,
+              "match"
+            ],
+            [
+              235.771,
+              "Kroger's"
+            ],
+            [
+              236.471,
+              "reported"
+            ],
+            [
+              236.731,
+              "figure."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s04-06",
+          "text": "The point is that a supermarket does not need every item to be profitable. It needs the mix of what you buy to be.",
+          "start": 237.851,
+          "end": 245.171,
+          "duration": 7.32,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              237.851,
+              "The"
+            ],
+            [
+              237.931,
+              "point"
+            ],
+            [
+              238.211,
+              "is"
+            ],
+            [
+              238.511,
+              "that"
+            ],
+            [
+              238.751,
+              "a"
+            ],
+            [
+              238.871,
+              "supermarket"
+            ],
+            [
+              239.391,
+              "does"
+            ],
+            [
+              239.951,
+              "not"
+            ],
+            [
+              240.171,
+              "need"
+            ],
+            [
+              240.491,
+              "every"
+            ],
+            [
+              240.791,
+              "item"
+            ],
+            [
+              241.291,
+              "to"
+            ],
+            [
+              241.511,
+              "be"
+            ],
+            [
+              241.611,
+              "profitable."
+            ],
+            [
+              243.011,
+              "It"
+            ],
+            [
+              243.051,
+              "needs"
+            ],
+            [
+              243.231,
+              "the"
+            ],
+            [
+              243.491,
+              "mix"
+            ],
+            [
+              243.691,
+              "of"
+            ],
+            [
+              243.951,
+              "what"
+            ],
+            [
+              244.131,
+              "you"
+            ],
+            [
+              244.291,
+              "buy"
+            ],
+            [
+              244.491,
+              "to"
+            ],
+            [
+              244.791,
+              "be."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "title": "Speed",
+      "chapter": "The second secret: speed",
+      "music": "process",
+      "start": 245.621,
+      "end": 307.133,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s05-01",
+          "text": "The second secret is speed.",
+          "start": 246.071,
+          "end": 247.731,
+          "duration": 1.66,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              246.071,
+              "The"
+            ],
+            [
+              246.171,
+              "second"
+            ],
+            [
+              246.451,
+              "secret"
+            ],
+            [
+              246.771,
+              "is"
+            ],
+            [
+              247.051,
+              "speed."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s05-02",
+          "text": "Much of what a grocery store sells can spoil, so it cannot sit for long. Trucks arrive, pallets move through the stockroom, shelves are refilled, and the same shelf space is emptied again.",
+          "start": 248.111,
+          "end": 260.431,
+          "duration": 12.32,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              248.111,
+              "Much"
+            ],
+            [
+              248.251,
+              "of"
+            ],
+            [
+              248.411,
+              "what"
+            ],
+            [
+              248.551,
+              "a"
+            ],
+            [
+              248.631,
+              "grocery"
+            ],
+            [
+              248.811,
+              "store"
+            ],
+            [
+              249.451,
+              "sells"
+            ],
+            [
+              249.891,
+              "can"
+            ],
+            [
+              250.091,
+              "spoil"
+            ],
+            [
+              250.411,
+              "so"
+            ],
+            [
+              250.911,
+              "it"
+            ],
+            [
+              251.031,
+              "cannot"
+            ],
+            [
+              251.171,
+              "sit"
+            ],
+            [
+              251.611,
+              "for"
+            ],
+            [
+              251.811,
+              "long."
+            ],
+            [
+              252.911,
+              "Trucks"
+            ],
+            [
+              253.211,
+              "arrive,"
+            ],
+            [
+              254.171,
+              "pallets"
+            ],
+            [
+              254.571,
+              "move"
+            ],
+            [
+              254.811,
+              "through"
+            ],
+            [
+              255.091,
+              "the"
+            ],
+            [
+              255.251,
+              "stockroom,"
+            ],
+            [
+              256.371,
+              "shelves"
+            ],
+            [
+              256.471,
+              "are"
+            ],
+            [
+              256.931,
+              "refilled,"
+            ],
+            [
+              258.011,
+              "and"
+            ],
+            [
+              258.051,
+              "the"
+            ],
+            [
+              258.151,
+              "same"
+            ],
+            [
+              258.391,
+              "shelf"
+            ],
+            [
+              258.771,
+              "space"
+            ],
+            [
+              259.111,
+              "is"
+            ],
+            [
+              259.471,
+              "emptied"
+            ],
+            [
+              259.711,
+              "again."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s05-03",
+          "text": "One way to measure this is inventory turnover: the cost of the goods sold in a year, divided by the average inventory on hand.",
+          "start": 260.811,
+          "end": 269.869,
+          "duration": 9.058,
+          "claims": [
+            "D02"
+          ],
+          "duck": false,
+          "words": [
+            [
+              260.811,
+              "One"
+            ],
+            [
+              260.951,
+              "way"
+            ],
+            [
+              261.211,
+              "to"
+            ],
+            [
+              261.391,
+              "measure"
+            ],
+            [
+              261.631,
+              "this"
+            ],
+            [
+              262.011,
+              "is"
+            ],
+            [
+              262.271,
+              "inventory"
+            ],
+            [
+              262.771,
+              "turnover."
+            ],
+            [
+              264.411,
+              "The"
+            ],
+            [
+              264.471,
+              "cost"
+            ],
+            [
+              264.751,
+              "of"
+            ],
+            [
+              264.991,
+              "the"
+            ],
+            [
+              265.091,
+              "goods"
+            ],
+            [
+              265.351,
+              "sold"
+            ],
+            [
+              265.771,
+              "in"
+            ],
+            [
+              266.071,
+              "a"
+            ],
+            [
+              266.171,
+              "year"
+            ],
+            [
+              266.491,
+              "divided"
+            ],
+            [
+              267.091,
+              "by"
+            ],
+            [
+              267.671,
+              "the"
+            ],
+            [
+              267.791,
+              "average"
+            ],
+            [
+              268.091,
+              "inventory"
+            ],
+            [
+              268.831,
+              "on"
+            ],
+            [
+              269.191,
+              "hand."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s05-04",
+          "text": "Using figures from their latest annual reports, Kroger's inventory turned over roughly twelve times, or about once a month. Costco's turned about fourteen times. Walmart's, with far more general merchandise, about nine times.",
+          "start": 270.249,
+          "end": 286.633,
+          "duration": 16.384,
+          "claims": [
+            "X02"
+          ],
+          "duck": true,
+          "words": [
+            [
+              270.249,
+              "Using"
+            ],
+            [
+              270.509,
+              "figures"
+            ],
+            [
+              270.829,
+              "from"
+            ],
+            [
+              271.269,
+              "their"
+            ],
+            [
+              271.449,
+              "latest"
+            ],
+            [
+              271.809,
+              "annual"
+            ],
+            [
+              272.189,
+              "reports,"
+            ],
+            [
+              273.569,
+              "Kroger's"
+            ],
+            [
+              273.929,
+              "inventory"
+            ],
+            [
+              274.229,
+              "turned"
+            ],
+            [
+              274.869,
+              "over"
+            ],
+            [
+              275.229,
+              "roughly"
+            ],
+            [
+              275.509,
+              "12"
+            ],
+            [
+              275.889,
+              "times,"
+            ],
+            [
+              276.869,
+              "or"
+            ],
+            [
+              276.969,
+              "about"
+            ],
+            [
+              277.409,
+              "once"
+            ],
+            [
+              277.729,
+              "a"
+            ],
+            [
+              277.949,
+              "month."
+            ],
+            [
+              278.989,
+              "Costcos"
+            ],
+            [
+              279.469,
+              "turned"
+            ],
+            [
+              279.869,
+              "about"
+            ],
+            [
+              280.229,
+              "14"
+            ],
+            [
+              280.629,
+              "times,"
+            ],
+            [
+              282.189,
+              "Walmarts"
+            ],
+            [
+              282.569,
+              "with"
+            ],
+            [
+              282.849,
+              "far"
+            ],
+            [
+              283.129,
+              "more"
+            ],
+            [
+              283.429,
+              "general"
+            ],
+            [
+              283.809,
+              "merchandise"
+            ],
+            [
+              284.269,
+              "about"
+            ],
+            [
+              285.309,
+              "9"
+            ],
+            [
+              285.629,
+              "times."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s05-05",
+          "text": "Twelve turns a year means the average item spends about a month between the delivery truck and the checkout. The faster that cycle runs, the less cash sits on the shelves at any moment.",
+          "start": 287.013,
+          "end": 298.413,
+          "duration": 11.4,
+          "claims": [
+            "X02"
+          ],
+          "duck": false,
+          "words": [
+            [
+              287.013,
+              "12"
+            ],
+            [
+              287.193,
+              "turns"
+            ],
+            [
+              287.553,
+              "a"
+            ],
+            [
+              287.873,
+              "year"
+            ],
+            [
+              288.133,
+              "means"
+            ],
+            [
+              288.493,
+              "the"
+            ],
+            [
+              288.753,
+              "average"
+            ],
+            [
+              289.033,
+              "item"
+            ],
+            [
+              289.613,
+              "spends"
+            ],
+            [
+              289.913,
+              "about"
+            ],
+            [
+              290.333,
+              "a"
+            ],
+            [
+              290.433,
+              "month"
+            ],
+            [
+              290.673,
+              "between"
+            ],
+            [
+              291.073,
+              "the"
+            ],
+            [
+              291.233,
+              "delivery"
+            ],
+            [
+              291.573,
+              "truck"
+            ],
+            [
+              291.933,
+              "and"
+            ],
+            [
+              292.193,
+              "the"
+            ],
+            [
+              292.293,
+              "checkout."
+            ],
+            [
+              293.573,
+              "The"
+            ],
+            [
+              293.613,
+              "faster"
+            ],
+            [
+              293.873,
+              "that"
+            ],
+            [
+              294.273,
+              "cycle"
+            ],
+            [
+              294.633,
+              "runs,"
+            ],
+            [
+              295.813,
+              "the"
+            ],
+            [
+              295.853,
+              "less"
+            ],
+            [
+              296.013,
+              "cash"
+            ],
+            [
+              296.293,
+              "sits"
+            ],
+            [
+              296.773,
+              "on"
+            ],
+            [
+              296.993,
+              "the"
+            ],
+            [
+              297.113,
+              "shelves"
+            ],
+            [
+              297.353,
+              "at"
+            ],
+            [
+              297.753,
+              "any"
+            ],
+            [
+              297.853,
+              "moment."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s05-06",
+          "text": "Every turn is another chance to earn that thin margin again, from the same shelf space and the same money tied up in stock.",
+          "start": 298.793,
+          "end": 306.683,
+          "duration": 7.89,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              298.793,
+              "Every"
+            ],
+            [
+              299.013,
+              "turn"
+            ],
+            [
+              299.313,
+              "is"
+            ],
+            [
+              299.613,
+              "another"
+            ],
+            [
+              299.853,
+              "chance"
+            ],
+            [
+              300.213,
+              "to"
+            ],
+            [
+              300.533,
+              "earn"
+            ],
+            [
+              300.733,
+              "that"
+            ],
+            [
+              300.953,
+              "thin"
+            ],
+            [
+              301.253,
+              "margin"
+            ],
+            [
+              301.713,
+              "again,"
+            ],
+            [
+              302.813,
+              "from"
+            ],
+            [
+              302.833,
+              "the"
+            ],
+            [
+              302.973,
+              "same"
+            ],
+            [
+              303.213,
+              "shelf"
+            ],
+            [
+              303.493,
+              "space"
+            ],
+            [
+              303.873,
+              "and"
+            ],
+            [
+              304.593,
+              "the"
+            ],
+            [
+              304.693,
+              "same"
+            ],
+            [
+              304.913,
+              "money"
+            ],
+            [
+              305.253,
+              "tied"
+            ],
+            [
+              305.593,
+              "up"
+            ],
+            [
+              305.833,
+              "in"
+            ],
+            [
+              305.993,
+              "stock."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "title": "Suppliers",
+      "chapter": "Who finances the shelves",
+      "music": "neutral",
+      "start": 307.133,
+      "end": 370.851,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s06-01",
+          "text": "And this is where it gets interesting. At the end of their latest fiscal years, Walmart, Costco and Kroger each owed more in accounts payable than the value of the inventory on their books.",
+          "start": 307.583,
+          "end": 319.426,
+          "duration": 11.843,
+          "claims": [
+            "X03"
+          ],
+          "duck": true,
+          "words": [
+            [
+              307.583,
+              "and"
+            ],
+            [
+              307.723,
+              "this"
+            ],
+            [
+              307.883,
+              "is"
+            ],
+            [
+              308.043,
+              "where"
+            ],
+            [
+              308.263,
+              "it"
+            ],
+            [
+              308.363,
+              "gets"
+            ],
+            [
+              308.503,
+              "interesting."
+            ],
+            [
+              309.983,
+              "At"
+            ],
+            [
+              310.003,
+              "the"
+            ],
+            [
+              310.123,
+              "end"
+            ],
+            [
+              310.363,
+              "of"
+            ],
+            [
+              310.503,
+              "their"
+            ],
+            [
+              310.623,
+              "latest"
+            ],
+            [
+              311.003,
+              "fiscal"
+            ],
+            [
+              311.283,
+              "years,"
+            ],
+            [
+              312.423,
+              "Walmart,"
+            ],
+            [
+              313.403,
+              "Costco,"
+            ],
+            [
+              314.103,
+              "and"
+            ],
+            [
+              314.103,
+              "Kroger"
+            ],
+            [
+              314.543,
+              "each"
+            ],
+            [
+              314.963,
+              "owed"
+            ],
+            [
+              315.223,
+              "more"
+            ],
+            [
+              315.583,
+              "in"
+            ],
+            [
+              315.783,
+              "accounts"
+            ],
+            [
+              316.003,
+              "payable"
+            ],
+            [
+              316.503,
+              "than"
+            ],
+            [
+              316.983,
+              "the"
+            ],
+            [
+              317.043,
+              "value"
+            ],
+            [
+              317.403,
+              "of"
+            ],
+            [
+              317.663,
+              "the"
+            ],
+            [
+              317.763,
+              "inventory"
+            ],
+            [
+              318.043,
+              "on"
+            ],
+            [
+              318.643,
+              "their"
+            ],
+            [
+              318.783,
+              "books."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s06-02",
+          "text": "Accounts payable are bills that haven't been paid yet. When goods sell before their invoices come due, suppliers are, in effect, helping to finance the shelves.",
+          "start": 319.806,
+          "end": 330.272,
+          "duration": 10.466,
+          "claims": [
+            "D03"
+          ],
+          "duck": false,
+          "words": [
+            [
+              319.806,
+              "Accounts"
+            ],
+            [
+              320.066,
+              "payable"
+            ],
+            [
+              320.486,
+              "are"
+            ],
+            [
+              320.886,
+              "bills"
+            ],
+            [
+              321.166,
+              "that"
+            ],
+            [
+              321.546,
+              "haven't"
+            ],
+            [
+              321.886,
+              "been"
+            ],
+            [
+              322.006,
+              "paid"
+            ],
+            [
+              322.326,
+              "yet."
+            ],
+            [
+              323.486,
+              "When"
+            ],
+            [
+              323.506,
+              "goods"
+            ],
+            [
+              323.706,
+              "sell"
+            ],
+            [
+              324.086,
+              "before"
+            ],
+            [
+              324.366,
+              "their"
+            ],
+            [
+              324.646,
+              "invoices"
+            ],
+            [
+              325.246,
+              "come"
+            ],
+            [
+              325.526,
+              "due,"
+            ],
+            [
+              326.326,
+              "suppliers"
+            ],
+            [
+              326.686,
+              "are,"
+            ],
+            [
+              327.486,
+              "in"
+            ],
+            [
+              327.486,
+              "effect,"
+            ],
+            [
+              328.246,
+              "helping"
+            ],
+            [
+              328.506,
+              "to"
+            ],
+            [
+              328.806,
+              "finance"
+            ],
+            [
+              329.186,
+              "the"
+            ],
+            [
+              329.506,
+              "shelves."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s06-03",
+          "text": "Here is a simple hypothetical. A case of pasta arrives on day one, sells out within three weeks, and the supplier's invoice is due on day thirty. For more than a week, the store holds the shoppers' money before it pays for the pasta.",
+          "start": 330.652,
+          "end": 346.592,
+          "duration": 15.94,
+          "claims": [
+            "I02"
+          ],
+          "duck": false,
+          "words": [
+            [
+              330.652,
+              "Here"
+            ],
+            [
+              330.852,
+              "is"
+            ],
+            [
+              331.032,
+              "a"
+            ],
+            [
+              331.172,
+              "simple"
+            ],
+            [
+              331.492,
+              "hypothetical."
+            ],
+            [
+              333.072,
+              "A"
+            ],
+            [
+              333.092,
+              "case"
+            ],
+            [
+              333.312,
+              "of"
+            ],
+            [
+              333.512,
+              "pasta"
+            ],
+            [
+              333.812,
+              "arrives"
+            ],
+            [
+              334.412,
+              "on"
+            ],
+            [
+              334.812,
+              "day"
+            ],
+            [
+              335.032,
+              "one,"
+            ],
+            [
+              335.812,
+              "sells"
+            ],
+            [
+              336.032,
+              "out"
+            ],
+            [
+              336.432,
+              "within"
+            ],
+            [
+              336.692,
+              "three"
+            ],
+            [
+              337.052,
+              "weeks,"
+            ],
+            [
+              337.952,
+              "and"
+            ],
+            [
+              338.032,
+              "the"
+            ],
+            [
+              338.132,
+              "supplier's"
+            ],
+            [
+              338.792,
+              "invoice"
+            ],
+            [
+              339.032,
+              "is"
+            ],
+            [
+              339.512,
+              "due"
+            ],
+            [
+              339.752,
+              "on"
+            ],
+            [
+              340.092,
+              "day"
+            ],
+            [
+              340.332,
+              "30."
+            ],
+            [
+              341.492,
+              "For"
+            ],
+            [
+              341.632,
+              "more"
+            ],
+            [
+              341.792,
+              "than"
+            ],
+            [
+              342.072,
+              "a"
+            ],
+            [
+              342.172,
+              "week,"
+            ],
+            [
+              342.832,
+              "the"
+            ],
+            [
+              342.912,
+              "store"
+            ],
+            [
+              343.152,
+              "holds"
+            ],
+            [
+              343.652,
+              "the"
+            ],
+            [
+              343.872,
+              "shopper's"
+            ],
+            [
+              344.432,
+              "money"
+            ],
+            [
+              344.652,
+              "before"
+            ],
+            [
+              345.072,
+              "it"
+            ],
+            [
+              345.252,
+              "pays"
+            ],
+            [
+              345.472,
+              "for"
+            ],
+            [
+              345.872,
+              "the"
+            ],
+            [
+              345.952,
+              "pasta."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s06-04",
+          "text": "Money also flows the other way. Walmart's annual report describes payments from suppliers for volume incentives, warehouse allowances, markdowns and certain advertising, and records them as a reduction of its cost of sales.",
+          "start": 346.972,
+          "end": 362.631,
+          "duration": 15.659,
+          "claims": [
+            "W04"
+          ],
+          "duck": false,
+          "words": [
+            [
+              346.972,
+              "Money"
+            ],
+            [
+              347.192,
+              "also"
+            ],
+            [
+              347.632,
+              "flows"
+            ],
+            [
+              347.952,
+              "the"
+            ],
+            [
+              348.312,
+              "other"
+            ],
+            [
+              348.532,
+              "way."
+            ],
+            [
+              349.792,
+              "Walmart's"
+            ],
+            [
+              350.152,
+              "annual"
+            ],
+            [
+              350.492,
+              "report"
+            ],
+            [
+              350.972,
+              "describes"
+            ],
+            [
+              351.472,
+              "payments"
+            ],
+            [
+              352.072,
+              "from"
+            ],
+            [
+              352.372,
+              "suppliers"
+            ],
+            [
+              352.792,
+              "for"
+            ],
+            [
+              353.272,
+              "volume"
+            ],
+            [
+              353.692,
+              "incentives,"
+            ],
+            [
+              355.032,
+              "warehouse"
+            ],
+            [
+              355.192,
+              "allowances,"
+            ],
+            [
+              356.732,
+              "markdowns,"
+            ],
+            [
+              357.612,
+              "and"
+            ],
+            [
+              357.652,
+              "certain"
+            ],
+            [
+              357.912,
+              "advertising,"
+            ],
+            [
+              359.232,
+              "and"
+            ],
+            [
+              359.432,
+              "records"
+            ],
+            [
+              359.672,
+              "them"
+            ],
+            [
+              360.112,
+              "as"
+            ],
+            [
+              360.392,
+              "a"
+            ],
+            [
+              360.512,
+              "reduction"
+            ],
+            [
+              360.832,
+              "of"
+            ],
+            [
+              361.272,
+              "its"
+            ],
+            [
+              361.372,
+              "cost"
+            ],
+            [
+              361.652,
+              "of"
+            ],
+            [
+              361.892,
+              "sales."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s06-05",
+          "text": "So the gross margin you see is shaped not only by shelf prices, but by negotiations most shoppers never see.",
+          "start": 363.011,
+          "end": 370.401,
+          "duration": 7.39,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              363.011,
+              "So"
+            ],
+            [
+              363.131,
+              "the"
+            ],
+            [
+              363.231,
+              "gross"
+            ],
+            [
+              363.471,
+              "margin"
+            ],
+            [
+              363.911,
+              "you"
+            ],
+            [
+              364.231,
+              "see"
+            ],
+            [
+              364.471,
+              "is"
+            ],
+            [
+              364.711,
+              "shaped"
+            ],
+            [
+              364.991,
+              "not"
+            ],
+            [
+              365.371,
+              "only"
+            ],
+            [
+              365.571,
+              "by"
+            ],
+            [
+              365.831,
+              "shelf"
+            ],
+            [
+              366.111,
+              "prices,"
+            ],
+            [
+              367.231,
+              "but"
+            ],
+            [
+              367.411,
+              "by"
+            ],
+            [
+              367.591,
+              "negotiations"
+            ],
+            [
+              367.931,
+              "most"
+            ],
+            [
+              368.951,
+              "shoppers"
+            ],
+            [
+              369.371,
+              "never"
+            ],
+            [
+              369.911,
+              "see."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "title": "Private label",
+      "chapter": "The store's own brand",
+      "music": "lift",
+      "start": 370.851,
+      "end": 411.337,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s07-01",
+          "text": "Then there is the store's own brand.",
+          "start": 371.301,
+          "end": 373.381,
+          "duration": 2.08,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              371.301,
+              "Then"
+            ],
+            [
+              371.501,
+              "there"
+            ],
+            [
+              371.701,
+              "is"
+            ],
+            [
+              371.921,
+              "the"
+            ],
+            [
+              372.061,
+              "store's"
+            ],
+            [
+              372.521,
+              "own"
+            ],
+            [
+              372.701,
+              "brand."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s07-02",
+          "text": "Kroger says its Our Brands products made up more than $39 billion of its sales in fiscal 2025, and that its supermarkets stock, on average, more than 13,000 private label items.",
+          "start": 373.761,
+          "end": 388.267,
+          "duration": 14.507,
+          "claims": [
+            "K09",
+            "K10"
+          ],
+          "duck": true,
+          "words": [
+            [
+              373.761,
+              "Kroger"
+            ],
+            [
+              374.101,
+              "says"
+            ],
+            [
+              374.301,
+              "it's"
+            ],
+            [
+              374.641,
+              "our"
+            ],
+            [
+              374.721,
+              "brand's"
+            ],
+            [
+              375.201,
+              "products"
+            ],
+            [
+              375.601,
+              "made"
+            ],
+            [
+              375.941,
+              "up"
+            ],
+            [
+              376.141,
+              "more"
+            ],
+            [
+              376.421,
+              "than"
+            ],
+            [
+              376.621,
+              "$39"
+            ],
+            [
+              377.201,
+              "billion"
+            ],
+            [
+              377.821,
+              "of"
+            ],
+            [
+              378.641,
+              "its"
+            ],
+            [
+              378.741,
+              "sales"
+            ],
+            [
+              379.141,
+              "in"
+            ],
+            [
+              379.701,
+              "fiscal"
+            ],
+            [
+              379.961,
+              "2025"
+            ],
+            [
+              381.561,
+              "and"
+            ],
+            [
+              381.941,
+              "that"
+            ],
+            [
+              382.061,
+              "it's"
+            ],
+            [
+              382.261,
+              "supermarket"
+            ],
+            [
+              382.601,
+              "stock"
+            ],
+            [
+              383.341,
+              "on"
+            ],
+            [
+              384.041,
+              "average"
+            ],
+            [
+              384.941,
+              "more"
+            ],
+            [
+              385.321,
+              "than"
+            ],
+            [
+              385.541,
+              "13"
+            ],
+            [
+              385.921,
+              ",000"
+            ],
+            [
+              386.661,
+              "private"
+            ],
+            [
+              386.981,
+              "label"
+            ],
+            [
+              387.361,
+              "items."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s07-03",
+          "text": "That is roughly a quarter of all its sales.",
+          "start": 388.647,
+          "end": 391.067,
+          "duration": 2.42,
+          "claims": [
+            "X04"
+          ],
+          "duck": false,
+          "words": [
+            [
+              388.647,
+              "That"
+            ],
+            [
+              388.807,
+              "is"
+            ],
+            [
+              388.907,
+              "roughly"
+            ],
+            [
+              389.267,
+              "a"
+            ],
+            [
+              389.467,
+              "quarter"
+            ],
+            [
+              389.807,
+              "of"
+            ],
+            [
+              389.987,
+              "all"
+            ],
+            [
+              390.187,
+              "its"
+            ],
+            [
+              390.347,
+              "sales."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s07-04",
+          "text": "Costco says its Kirkland Signature products are generally priced lower than national brands, and generally earn higher margins.",
+          "start": 391.447,
+          "end": 399.997,
+          "duration": 8.55,
+          "claims": [
+            "C04"
+          ],
+          "duck": false,
+          "words": [
+            [
+              391.447,
+              "Costco"
+            ],
+            [
+              391.927,
+              "says"
+            ],
+            [
+              392.287,
+              "its"
+            ],
+            [
+              392.507,
+              "Kirkland"
+            ],
+            [
+              393.007,
+              "signature"
+            ],
+            [
+              393.527,
+              "products"
+            ],
+            [
+              394.007,
+              "are"
+            ],
+            [
+              394.647,
+              "generally"
+            ],
+            [
+              395.127,
+              "priced"
+            ],
+            [
+              395.467,
+              "lower"
+            ],
+            [
+              395.927,
+              "than"
+            ],
+            [
+              396.287,
+              "national"
+            ],
+            [
+              396.667,
+              "brands"
+            ],
+            [
+              397.527,
+              "and"
+            ],
+            [
+              397.947,
+              "generally"
+            ],
+            [
+              398.307,
+              "earn"
+            ],
+            [
+              398.667,
+              "higher"
+            ],
+            [
+              399.087,
+              "margins."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s07-05",
+          "text": "Both can be true at once. When the retailer controls the product, the label and the price, it can charge the shopper less and still keep a larger share of each sale.",
+          "start": 400.377,
+          "end": 410.887,
+          "duration": 10.51,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              400.377,
+              "Both"
+            ],
+            [
+              400.637,
+              "can"
+            ],
+            [
+              400.897,
+              "be"
+            ],
+            [
+              401.037,
+              "true"
+            ],
+            [
+              401.257,
+              "at"
+            ],
+            [
+              401.457,
+              "once."
+            ],
+            [
+              402.597,
+              "When"
+            ],
+            [
+              402.597,
+              "the"
+            ],
+            [
+              402.677,
+              "retailer"
+            ],
+            [
+              403.017,
+              "controls"
+            ],
+            [
+              403.757,
+              "the"
+            ],
+            [
+              403.937,
+              "product,"
+            ],
+            [
+              404.777,
+              "the"
+            ],
+            [
+              404.817,
+              "label,"
+            ],
+            [
+              405.357,
+              "and"
+            ],
+            [
+              405.397,
+              "the"
+            ],
+            [
+              405.517,
+              "price,"
+            ],
+            [
+              406.277,
+              "it"
+            ],
+            [
+              406.517,
+              "can"
+            ],
+            [
+              406.657,
+              "charge"
+            ],
+            [
+              407.037,
+              "the"
+            ],
+            [
+              407.337,
+              "shop"
+            ],
+            [
+              407.557,
+              "or"
+            ],
+            [
+              407.797,
+              "less"
+            ],
+            [
+              408.017,
+              "and"
+            ],
+            [
+              408.317,
+              "still"
+            ],
+            [
+              408.577,
+              "keep"
+            ],
+            [
+              408.857,
+              "a"
+            ],
+            [
+              409.037,
+              "larger"
+            ],
+            [
+              409.377,
+              "share"
+            ],
+            [
+              409.817,
+              "of"
+            ],
+            [
+              410.117,
+              "each"
+            ],
+            [
+              410.277,
+              "sale."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "title": "Shrink",
+      "chapter": "The danger: shrink and waste",
+      "music": "tension",
+      "start": 411.337,
+      "end": 477.899,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s08-01",
+          "text": "Now the danger. In a business this thin, small losses are big problems.",
+          "start": 411.787,
+          "end": 416.599,
+          "duration": 4.811,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              411.787,
+              "Now"
+            ],
+            [
+              411.987,
+              "the"
+            ],
+            [
+              412.187,
+              "danger."
+            ],
+            [
+              413.367,
+              "In"
+            ],
+            [
+              413.367,
+              "a"
+            ],
+            [
+              413.427,
+              "business"
+            ],
+            [
+              413.707,
+              "this"
+            ],
+            [
+              414.007,
+              "thin,"
+            ],
+            [
+              414.527,
+              "small"
+            ],
+            [
+              414.767,
+              "losses"
+            ],
+            [
+              415.247,
+              "are"
+            ],
+            [
+              415.527,
+              "big"
+            ],
+            [
+              415.747,
+              "problems."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s08-02",
+          "text": "Retailers call it shrink: products that were paid for but never sold, because they spoiled, were damaged, were stolen, or simply went missing in the records.",
+          "start": 416.979,
+          "end": 427.069,
+          "duration": 10.09,
+          "claims": [
+            "D04"
+          ],
+          "duck": false,
+          "words": [
+            [
+              416.979,
+              "Retailers"
+            ],
+            [
+              417.579,
+              "call"
+            ],
+            [
+              417.799,
+              "it"
+            ],
+            [
+              417.999,
+              "shrink."
+            ],
+            [
+              419.339,
+              "Products"
+            ],
+            [
+              419.339,
+              "that"
+            ],
+            [
+              419.559,
+              "were"
+            ],
+            [
+              419.679,
+              "paid"
+            ],
+            [
+              419.899,
+              "for"
+            ],
+            [
+              420.179,
+              "but"
+            ],
+            [
+              420.399,
+              "never"
+            ],
+            [
+              420.599,
+              "sold"
+            ],
+            [
+              421.059,
+              "because"
+            ],
+            [
+              421.459,
+              "they"
+            ],
+            [
+              421.679,
+              "spoiled"
+            ],
+            [
+              422.059,
+              "were"
+            ],
+            [
+              422.519,
+              "damaged,"
+            ],
+            [
+              423.539,
+              "were"
+            ],
+            [
+              423.599,
+              "stolen,"
+            ],
+            [
+              424.659,
+              "or"
+            ],
+            [
+              424.799,
+              "simply"
+            ],
+            [
+              425.259,
+              "went"
+            ],
+            [
+              425.619,
+              "missing"
+            ],
+            [
+              425.879,
+              "in"
+            ],
+            [
+              426.239,
+              "the"
+            ],
+            [
+              426.359,
+              "records."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s08-03",
+          "text": "Groceries carry extra risk because so much of the store is perishable. The U.S. Department of Agriculture estimated that food losses at the retail level equaled 10 percent of the available food supply in 2010. It is an older estimate, but it shows the scale.",
+          "start": 427.449,
+          "end": 445.629,
+          "duration": 18.18,
+          "claims": [
+            "U01"
+          ],
+          "duck": true,
+          "words": [
+            [
+              427.449,
+              "Groceries"
+            ],
+            [
+              428.009,
+              "carry"
+            ],
+            [
+              428.249,
+              "extra"
+            ],
+            [
+              428.829,
+              "risk"
+            ],
+            [
+              429.229,
+              "because"
+            ],
+            [
+              429.589,
+              "so"
+            ],
+            [
+              430.149,
+              "much"
+            ],
+            [
+              430.389,
+              "of"
+            ],
+            [
+              430.569,
+              "the"
+            ],
+            [
+              430.669,
+              "store"
+            ],
+            [
+              430.949,
+              "is"
+            ],
+            [
+              431.249,
+              "perishable."
+            ],
+            [
+              432.689,
+              "The"
+            ],
+            [
+              432.709,
+              "U"
+            ],
+            [
+              432.909,
+              ".S."
+            ],
+            [
+              433.809,
+              "Department"
+            ],
+            [
+              433.849,
+              "of"
+            ],
+            [
+              434.089,
+              "Agriculture"
+            ],
+            [
+              434.429,
+              "estimated"
+            ],
+            [
+              435.549,
+              "that"
+            ],
+            [
+              436.029,
+              "food"
+            ],
+            [
+              436.329,
+              "losses"
+            ],
+            [
+              436.749,
+              "at"
+            ],
+            [
+              437.069,
+              "the"
+            ],
+            [
+              437.169,
+              "retail"
+            ],
+            [
+              437.529,
+              "level"
+            ],
+            [
+              437.949,
+              "equaled"
+            ],
+            [
+              438.549,
+              "10"
+            ],
+            [
+              438.869,
+              "%"
+            ],
+            [
+              439.289,
+              "of"
+            ],
+            [
+              439.569,
+              "the"
+            ],
+            [
+              439.689,
+              "available"
+            ],
+            [
+              440.029,
+              "food"
+            ],
+            [
+              440.589,
+              "supply"
+            ],
+            [
+              440.929,
+              "in"
+            ],
+            [
+              441.349,
+              "2010."
+            ],
+            [
+              442.309,
+              "It"
+            ],
+            [
+              442.809,
+              "is"
+            ],
+            [
+              442.949,
+              "an"
+            ],
+            [
+              443.089,
+              "older"
+            ],
+            [
+              443.389,
+              "estimate,"
+            ],
+            [
+              444.349,
+              "but"
+            ],
+            [
+              444.489,
+              "it"
+            ],
+            [
+              444.589,
+              "shows"
+            ],
+            [
+              444.829,
+              "the"
+            ],
+            [
+              445.109,
+              "scale."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s08-04",
+          "text": "That is also why perishables get marked down near the end of their shelf life. A bag of salad sold at half price still recovers part of its cost. One thrown away recovers nothing.",
+          "start": 446.009,
+          "end": 458.089,
+          "duration": 12.08,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              446.009,
+              "That"
+            ],
+            [
+              446.129,
+              "is"
+            ],
+            [
+              446.249,
+              "also"
+            ],
+            [
+              446.589,
+              "why"
+            ],
+            [
+              446.969,
+              "perishables"
+            ],
+            [
+              447.549,
+              "get"
+            ],
+            [
+              447.789,
+              "marked"
+            ],
+            [
+              448.009,
+              "down"
+            ],
+            [
+              448.489,
+              "near"
+            ],
+            [
+              448.829,
+              "the"
+            ],
+            [
+              448.969,
+              "end"
+            ],
+            [
+              449.189,
+              "of"
+            ],
+            [
+              449.329,
+              "their"
+            ],
+            [
+              449.469,
+              "shelf"
+            ],
+            [
+              449.729,
+              "life."
+            ],
+            [
+              450.849,
+              "A"
+            ],
+            [
+              450.909,
+              "bag"
+            ],
+            [
+              451.109,
+              "of"
+            ],
+            [
+              451.289,
+              "salad"
+            ],
+            [
+              451.689,
+              "sold"
+            ],
+            [
+              452.049,
+              "at"
+            ],
+            [
+              452.289,
+              "half"
+            ],
+            [
+              452.489,
+              "price"
+            ],
+            [
+              452.869,
+              "still"
+            ],
+            [
+              453.469,
+              "recovers"
+            ],
+            [
+              453.909,
+              "part"
+            ],
+            [
+              454.329,
+              "of"
+            ],
+            [
+              454.489,
+              "its"
+            ],
+            [
+              454.609,
+              "cost."
+            ],
+            [
+              455.889,
+              "One"
+            ],
+            [
+              455.969,
+              "throne"
+            ],
+            [
+              456.369,
+              "away"
+            ],
+            [
+              456.849,
+              "recovers"
+            ],
+            [
+              457.409,
+              "nothing."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s08-05",
+          "text": "Here is why it matters so much. Imagine a store with a 2 percent operating margin. To make up for one dollar of product lost to shrink, it needs about fifty dollars of new sales.",
+          "start": 458.469,
+          "end": 471.059,
+          "duration": 12.59,
+          "claims": [
+            "X05"
+          ],
+          "duck": true,
+          "words": [
+            [
+              458.469,
+              "Here"
+            ],
+            [
+              458.689,
+              "is"
+            ],
+            [
+              458.829,
+              "why"
+            ],
+            [
+              459.089,
+              "it"
+            ],
+            [
+              459.269,
+              "matters"
+            ],
+            [
+              459.569,
+              "so"
+            ],
+            [
+              459.969,
+              "much."
+            ],
+            [
+              461.369,
+              "Imagine"
+            ],
+            [
+              461.369,
+              "a"
+            ],
+            [
+              461.569,
+              "store"
+            ],
+            [
+              461.889,
+              "with"
+            ],
+            [
+              462.209,
+              "a"
+            ],
+            [
+              462.269,
+              "2"
+            ],
+            [
+              462.509,
+              "%"
+            ],
+            [
+              462.929,
+              "operating"
+            ],
+            [
+              463.489,
+              "margin."
+            ],
+            [
+              464.729,
+              "To"
+            ],
+            [
+              464.929,
+              "make"
+            ],
+            [
+              465.069,
+              "up"
+            ],
+            [
+              465.309,
+              "for"
+            ],
+            [
+              465.489,
+              "$1"
+            ],
+            [
+              465.809,
+              "of"
+            ],
+            [
+              466.289,
+              "product"
+            ],
+            [
+              466.649,
+              "lost"
+            ],
+            [
+              467.029,
+              "to"
+            ],
+            [
+              467.329,
+              "shrink,"
+            ],
+            [
+              468.189,
+              "it"
+            ],
+            [
+              468.289,
+              "needs"
+            ],
+            [
+              468.469,
+              "about"
+            ],
+            [
+              468.849,
+              "$50"
+            ],
+            [
+              469.449,
+              "of"
+            ],
+            [
+              470.069,
+              "new"
+            ],
+            [
+              470.189,
+              "sales."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s08-06",
+          "text": "That is why Kroger listed lower shrink among the reasons its gross margin improved last year.",
+          "start": 471.439,
+          "end": 477.449,
+          "duration": 6.01,
+          "claims": [
+            "K11"
+          ],
+          "duck": false,
+          "words": [
+            [
+              471.439,
+              "That"
+            ],
+            [
+              471.559,
+              "is"
+            ],
+            [
+              471.679,
+              "why"
+            ],
+            [
+              471.919,
+              "Kroger"
+            ],
+            [
+              472.359,
+              "listed"
+            ],
+            [
+              472.659,
+              "lower"
+            ],
+            [
+              472.959,
+              "shrink"
+            ],
+            [
+              473.359,
+              "among"
+            ],
+            [
+              473.719,
+              "the"
+            ],
+            [
+              473.899,
+              "reasons."
+            ],
+            [
+              474.939,
+              "It's"
+            ],
+            [
+              475.039,
+              "gross"
+            ],
+            [
+              475.279,
+              "margin"
+            ],
+            [
+              475.919,
+              "improved"
+            ],
+            [
+              476.399,
+              "last"
+            ],
+            [
+              476.899,
+              "year."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "title": "Three business models",
+      "chapter": "Supermarket, supercenter, warehouse club",
+      "music": "neutral",
+      "start": 477.899,
+      "end": 551.391,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s09-01",
+          "text": "Not every company that sells groceries plays the same game.",
+          "start": 478.349,
+          "end": 481.899,
+          "duration": 3.55,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              478.349,
+              "Not"
+            ],
+            [
+              478.509,
+              "every"
+            ],
+            [
+              478.729,
+              "company"
+            ],
+            [
+              479.189,
+              "that"
+            ],
+            [
+              479.469,
+              "sells"
+            ],
+            [
+              479.789,
+              "groceries"
+            ],
+            [
+              480.129,
+              "plays"
+            ],
+            [
+              480.929,
+              "the"
+            ],
+            [
+              481.169,
+              "same"
+            ],
+            [
+              481.409,
+              "game."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s09-02",
+          "text": "Walmart is a general merchandise giant. In its latest fiscal year, grocery was about 59 percent of Walmart U.S. sales. Its consolidated gross profit was 24.2 percent of net sales, and operating income was 4.2 percent.",
+          "start": 482.279,
+          "end": 501.519,
+          "duration": 19.24,
+          "claims": [
+            "W01",
+            "W02",
+            "W03"
+          ],
+          "duck": true,
+          "words": [
+            [
+              482.279,
+              "Walmart"
+            ],
+            [
+              482.499,
+              "is"
+            ],
+            [
+              482.959,
+              "a"
+            ],
+            [
+              483.059,
+              "general"
+            ],
+            [
+              483.439,
+              "merchandise"
+            ],
+            [
+              483.919,
+              "giant."
+            ],
+            [
+              485.599,
+              "In"
+            ],
+            [
+              485.599,
+              "its"
+            ],
+            [
+              485.739,
+              "latest"
+            ],
+            [
+              486.099,
+              "fiscal"
+            ],
+            [
+              486.399,
+              "year,"
+            ],
+            [
+              487.599,
+              "grocery"
+            ],
+            [
+              487.599,
+              "was"
+            ],
+            [
+              488.059,
+              "about"
+            ],
+            [
+              488.279,
+              "59"
+            ],
+            [
+              488.779,
+              "%"
+            ],
+            [
+              489.479,
+              "of"
+            ],
+            [
+              489.679,
+              "Walmart"
+            ],
+            [
+              490.039,
+              "U,"
+            ],
+            [
+              491.019,
+              "S,"
+            ],
+            [
+              492.359,
+              "sales."
+            ],
+            [
+              493.119,
+              "Its"
+            ],
+            [
+              493.259,
+              "consolidated"
+            ],
+            [
+              493.919,
+              "gross"
+            ],
+            [
+              494.499,
+              "profit"
+            ],
+            [
+              495.119,
+              "was"
+            ],
+            [
+              495.319,
+              "24"
+            ],
+            [
+              495.699,
+              ".2"
+            ],
+            [
+              496.699,
+              "%"
+            ],
+            [
+              497.059,
+              "of"
+            ],
+            [
+              497.259,
+              "net"
+            ],
+            [
+              497.379,
+              "sales,"
+            ],
+            [
+              498.479,
+              "and"
+            ],
+            [
+              498.519,
+              "operating"
+            ],
+            [
+              498.879,
+              "income"
+            ],
+            [
+              499.519,
+              "was"
+            ],
+            [
+              499.819,
+              "4"
+            ],
+            [
+              500.219,
+              ".2%."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s09-03",
+          "text": "Costco runs membership warehouse clubs. Its gross margin on net sales was just 11.09 percent. But it also collected $5.9 billion in membership fees.",
+          "start": 501.899,
+          "end": 515.467,
+          "duration": 13.568,
+          "claims": [
+            "C01",
+            "C02"
+          ],
+          "duck": true,
+          "words": [
+            [
+              501.899,
+              "Costco"
+            ],
+            [
+              502.099,
+              "runs"
+            ],
+            [
+              502.719,
+              "membership"
+            ],
+            [
+              503.459,
+              "warehouse"
+            ],
+            [
+              503.679,
+              "clubs."
+            ],
+            [
+              505.079,
+              "Its"
+            ],
+            [
+              505.119,
+              "gross"
+            ],
+            [
+              505.359,
+              "margin"
+            ],
+            [
+              505.979,
+              "on"
+            ],
+            [
+              506.259,
+              "net"
+            ],
+            [
+              506.459,
+              "sales"
+            ],
+            [
+              506.879,
+              "was"
+            ],
+            [
+              507.159,
+              "just"
+            ],
+            [
+              507.419,
+              "11"
+            ],
+            [
+              508.079,
+              ".09%,"
+            ],
+            [
+              510.399,
+              "but"
+            ],
+            [
+              510.819,
+              "it"
+            ],
+            [
+              510.899,
+              "also"
+            ],
+            [
+              511.059,
+              "collected"
+            ],
+            [
+              511.599,
+              "$5"
+            ],
+            [
+              512.259,
+              ".9"
+            ],
+            [
+              513.139,
+              "billion"
+            ],
+            [
+              513.439,
+              "in"
+            ],
+            [
+              514.279,
+              "membership"
+            ],
+            [
+              514.619,
+              "fees."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s09-04",
+          "text": "Those fees were equal to about half of Costco's operating income for the year. Its model pairs very thin margins on goods with a fee that members pay to shop.",
+          "start": 515.847,
+          "end": 526.557,
+          "duration": 10.71,
+          "claims": [
+            "X06"
+          ],
+          "duck": true,
+          "words": [
+            [
+              515.847,
+              "Those"
+            ],
+            [
+              516.067,
+              "fees"
+            ],
+            [
+              516.287,
+              "were"
+            ],
+            [
+              516.627,
+              "equal"
+            ],
+            [
+              516.987,
+              "to"
+            ],
+            [
+              517.207,
+              "about"
+            ],
+            [
+              517.467,
+              "half"
+            ],
+            [
+              517.947,
+              "of"
+            ],
+            [
+              518.147,
+              "Costco's"
+            ],
+            [
+              518.947,
+              "operating"
+            ],
+            [
+              519.327,
+              "income"
+            ],
+            [
+              519.867,
+              "for"
+            ],
+            [
+              520.147,
+              "the"
+            ],
+            [
+              520.227,
+              "year."
+            ],
+            [
+              521.267,
+              "Its"
+            ],
+            [
+              521.307,
+              "model"
+            ],
+            [
+              521.587,
+              "pairs"
+            ],
+            [
+              522.047,
+              "very"
+            ],
+            [
+              522.587,
+              "thin"
+            ],
+            [
+              522.947,
+              "margins"
+            ],
+            [
+              523.447,
+              "on"
+            ],
+            [
+              523.907,
+              "goods"
+            ],
+            [
+              524.187,
+              "with"
+            ],
+            [
+              524.607,
+              "a"
+            ],
+            [
+              524.687,
+              "fee"
+            ],
+            [
+              524.967,
+              "that"
+            ],
+            [
+              525.307,
+              "members"
+            ],
+            [
+              525.667,
+              "pay"
+            ],
+            [
+              525.927,
+              "to"
+            ],
+            [
+              526.147,
+              "shop."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s09-05",
+          "text": "A traditional supermarket chain like Kroger leans on fresh food, its own brands, pharmacy, fuel and growing side businesses such as advertising.",
+          "start": 526.937,
+          "end": 537.377,
+          "duration": 10.44,
+          "claims": [
+            "K12"
+          ],
+          "duck": false,
+          "words": [
+            [
+              526.937,
+              "A"
+            ],
+            [
+              527.017,
+              "traditional"
+            ],
+            [
+              527.377,
+              "supermarket"
+            ],
+            [
+              528.057,
+              "chain"
+            ],
+            [
+              528.657,
+              "like"
+            ],
+            [
+              528.977,
+              "Kroger"
+            ],
+            [
+              529.477,
+              "Leens"
+            ],
+            [
+              529.917,
+              "on"
+            ],
+            [
+              530.077,
+              "fresh"
+            ],
+            [
+              530.317,
+              "food,"
+            ],
+            [
+              531.397,
+              "its"
+            ],
+            [
+              531.577,
+              "own"
+            ],
+            [
+              531.757,
+              "brands,"
+            ],
+            [
+              532.797,
+              "pharmacy,"
+            ],
+            [
+              533.917,
+              "fuel"
+            ],
+            [
+              534.217,
+              "and"
+            ],
+            [
+              534.537,
+              "growing"
+            ],
+            [
+              534.777,
+              "side"
+            ],
+            [
+              535.277,
+              "businesses"
+            ],
+            [
+              535.737,
+              "such"
+            ],
+            [
+              536.197,
+              "as"
+            ],
+            [
+              536.417,
+              "advertising."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s09-06",
+          "text": "So these numbers are not interchangeable. A 24 percent gross margin at Walmart and an 11 percent gross margin at Costco describe different businesses, not better or worse ones.",
+          "start": 537.757,
+          "end": 550.941,
+          "duration": 13.184,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              537.757,
+              "So"
+            ],
+            [
+              537.897,
+              "these"
+            ],
+            [
+              538.037,
+              "numbers"
+            ],
+            [
+              538.397,
+              "are"
+            ],
+            [
+              538.737,
+              "not"
+            ],
+            [
+              538.997,
+              "interchangeable."
+            ],
+            [
+              540.697,
+              "A"
+            ],
+            [
+              540.697,
+              "24"
+            ],
+            [
+              541.037,
+              "%"
+            ],
+            [
+              541.837,
+              "gross"
+            ],
+            [
+              542.117,
+              "margin"
+            ],
+            [
+              542.797,
+              "at"
+            ],
+            [
+              542.997,
+              "Walmart"
+            ],
+            [
+              543.257,
+              "and"
+            ],
+            [
+              544.077,
+              "an"
+            ],
+            [
+              544.157,
+              "11"
+            ],
+            [
+              544.477,
+              "%"
+            ],
+            [
+              544.957,
+              "gross"
+            ],
+            [
+              545.277,
+              "margin"
+            ],
+            [
+              545.977,
+              "at"
+            ],
+            [
+              546.157,
+              "Costco"
+            ],
+            [
+              546.437,
+              "describe"
+            ],
+            [
+              547.157,
+              "different"
+            ],
+            [
+              547.777,
+              "businesses,"
+            ],
+            [
+              548.957,
+              "not"
+            ],
+            [
+              549.157,
+              "better"
+            ],
+            [
+              549.577,
+              "or"
+            ],
+            [
+              550.017,
+              "worse"
+            ],
+            [
+              550.277,
+              "ones."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "Payoff",
+      "chapter": "So how do they make money?",
+      "music": "reveal",
+      "start": 551.391,
+      "end": 599.501,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s10-01",
+          "text": "So, how do supermarkets make money on tiny margins?",
+          "start": 551.841,
+          "end": 555.521,
+          "duration": 3.68,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              551.841,
+              "So,"
+            ],
+            [
+              552.261,
+              "how"
+            ],
+            [
+              552.401,
+              "do"
+            ],
+            [
+              552.601,
+              "supermarkets"
+            ],
+            [
+              553.061,
+              "make"
+            ],
+            [
+              553.621,
+              "money"
+            ],
+            [
+              553.921,
+              "on"
+            ],
+            [
+              554.221,
+              "tiny"
+            ],
+            [
+              554.501,
+              "margins?"
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s10-02",
+          "text": "By selling an enormous volume. By turning their inventory over again and again. By using supplier credit to help finance their shelves. By leaning on their own brands. By fighting shrink, one damaged box at a time. And, in some models, by charging for membership or selling advertising.",
+          "start": 555.901,
+          "end": 575.631,
+          "duration": 19.73,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              555.901,
+              "by"
+            ],
+            [
+              556.001,
+              "selling"
+            ],
+            [
+              556.341,
+              "an"
+            ],
+            [
+              556.561,
+              "enormous"
+            ],
+            [
+              556.961,
+              "volume,"
+            ],
+            [
+              558.261,
+              "by"
+            ],
+            [
+              558.461,
+              "turning"
+            ],
+            [
+              558.741,
+              "their"
+            ],
+            [
+              559.001,
+              "inventory"
+            ],
+            [
+              559.381,
+              "over"
+            ],
+            [
+              560.001,
+              "again"
+            ],
+            [
+              560.341,
+              "and"
+            ],
+            [
+              560.501,
+              "again,"
+            ],
+            [
+              561.401,
+              "by"
+            ],
+            [
+              561.661,
+              "using"
+            ],
+            [
+              561.941,
+              "supplier"
+            ],
+            [
+              562.401,
+              "credit"
+            ],
+            [
+              562.821,
+              "to"
+            ],
+            [
+              563.101,
+              "help"
+            ],
+            [
+              563.261,
+              "finance"
+            ],
+            [
+              563.761,
+              "their"
+            ],
+            [
+              564.061,
+              "shelves,"
+            ],
+            [
+              565.081,
+              "by"
+            ],
+            [
+              565.281,
+              "leaning"
+            ],
+            [
+              565.561,
+              "on"
+            ],
+            [
+              565.881,
+              "their"
+            ],
+            [
+              566.021,
+              "own"
+            ],
+            [
+              566.221,
+              "brands,"
+            ],
+            [
+              567.221,
+              "by"
+            ],
+            [
+              567.481,
+              "fighting"
+            ],
+            [
+              567.901,
+              "shrink"
+            ],
+            [
+              568.241,
+              "one"
+            ],
+            [
+              568.901,
+              "damaged"
+            ],
+            [
+              569.281,
+              "box"
+            ],
+            [
+              569.761,
+              "at"
+            ],
+            [
+              570.081,
+              "a"
+            ],
+            [
+              570.161,
+              "time,"
+            ],
+            [
+              571.141,
+              "and"
+            ],
+            [
+              571.261,
+              "in"
+            ],
+            [
+              571.341,
+              "some"
+            ],
+            [
+              571.581,
+              "models"
+            ],
+            [
+              572.021,
+              "by"
+            ],
+            [
+              572.381,
+              "charging"
+            ],
+            [
+              572.821,
+              "for"
+            ],
+            [
+              573.161,
+              "membership"
+            ],
+            [
+              573.601,
+              "or"
+            ],
+            [
+              574.041,
+              "selling"
+            ],
+            [
+              574.601,
+              "advertising."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s10-03",
+          "text": "The next time you hand over that hundred dollars, remember: at a chain like Kroger, the company keeps only about one to three dollars as operating profit. The rest pays for the food, the people, the buildings and the trucks that make a supermarket work.",
+          "start": 576.011,
+          "end": 592.061,
+          "duration": 16.05,
+          "claims": [
+            "K03",
+            "K05"
+          ],
+          "duck": false,
+          "words": [
+            [
+              576.011,
+              "The"
+            ],
+            [
+              576.091,
+              "next"
+            ],
+            [
+              576.211,
+              "time"
+            ],
+            [
+              576.531,
+              "you"
+            ],
+            [
+              576.711,
+              "hand"
+            ],
+            [
+              576.971,
+              "over"
+            ],
+            [
+              577.271,
+              "that"
+            ],
+            [
+              577.451,
+              "$100,"
+            ],
+            [
+              578.611,
+              "remember,"
+            ],
+            [
+              579.711,
+              "at"
+            ],
+            [
+              579.831,
+              "a"
+            ],
+            [
+              579.911,
+              "chain"
+            ],
+            [
+              580.191,
+              "like"
+            ],
+            [
+              580.531,
+              "Kroger,"
+            ],
+            [
+              581.471,
+              "the"
+            ],
+            [
+              581.571,
+              "company"
+            ],
+            [
+              581.911,
+              "keeps"
+            ],
+            [
+              582.291,
+              "only"
+            ],
+            [
+              582.771,
+              "about"
+            ],
+            [
+              582.991,
+              "$1"
+            ],
+            [
+              583.351,
+              "to"
+            ],
+            [
+              583.511,
+              "$3"
+            ],
+            [
+              583.971,
+              "as"
+            ],
+            [
+              584.431,
+              "operating"
+            ],
+            [
+              584.871,
+              "profit."
+            ],
+            [
+              586.291,
+              "The"
+            ],
+            [
+              586.371,
+              "rest"
+            ],
+            [
+              586.571,
+              "pays"
+            ],
+            [
+              586.951,
+              "for"
+            ],
+            [
+              587.271,
+              "the"
+            ],
+            [
+              587.351,
+              "food,"
+            ],
+            [
+              588.091,
+              "the"
+            ],
+            [
+              588.151,
+              "people,"
+            ],
+            [
+              588.991,
+              "the"
+            ],
+            [
+              589.091,
+              "buildings,"
+            ],
+            [
+              589.491,
+              "and"
+            ],
+            [
+              589.811,
+              "the"
+            ],
+            [
+              589.931,
+              "trucks"
+            ],
+            [
+              590.151,
+              "that"
+            ],
+            [
+              590.491,
+              "make"
+            ],
+            [
+              590.691,
+              "a"
+            ],
+            [
+              590.811,
+              "supermarket"
+            ],
+            [
+              591.111,
+              "work."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s10-04",
+          "text": "This is Hidden Ledger. Every number in this video is sourced in the description.",
+          "start": 592.441,
+          "end": 597.001,
+          "duration": 4.56,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              592.441,
+              "This"
+            ],
+            [
+              592.641,
+              "is"
+            ],
+            [
+              592.821,
+              "Hidden"
+            ],
+            [
+              593.101,
+              "Ledger."
+            ],
+            [
+              594.381,
+              "Every"
+            ],
+            [
+              594.381,
+              "number"
+            ],
+            [
+              594.701,
+              "in"
+            ],
+            [
+              594.881,
+              "this"
+            ],
+            [
+              595.001,
+              "video"
+            ],
+            [
+              595.321,
+              "is"
+            ],
+            [
+              595.581,
+              "sourced"
+            ],
+            [
+              595.841,
+              "in"
+            ],
+            [
+              596.161,
+              "the"
+            ],
+            [
+              596.281,
+              "description."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "subtitles": [
+    {
+      "start": 0.6,
+      "end": 3.02,
+      "text": "You hand over a hundred\ndollars at the checkout."
+    },
+    {
+      "start": 3.4,
+      "end": 7.0,
+      "text": "Bread, coffee, a gallon of\nmilk, a week of dinners."
+    },
+    {
+      "start": 7.0,
+      "end": 11.76,
+      "text": "The scanner beeps, the receipt prints, and\nthe money disappears into the register."
+    },
+    {
+      "start": 12.14,
+      "end": 16.54,
+      "text": "So how much of that hundred dollars\ndoes the supermarket actually keep?"
+    },
+    {
+      "start": 16.92,
+      "end": 22.78,
+      "text": "At Kroger, which runs nearly 2,700\nsupermarkets across the United States,"
+    },
+    {
+      "start": 22.78,
+      "end": 28.85,
+      "text": "the answer for its latest fiscal year\nwas about $1.28 in operating profit."
+    },
+    {
+      "start": 29.23,
+      "end": 34.924,
+      "text": "And yet the same company brought in\nmore than $147 billion in sales."
+    },
+    {
+      "start": 35.304,
+      "end": 36.284,
+      "text": "Tiny margins."
+    },
+    {
+      "start": 36.284,
+      "end": 37.894,
+      "text": "Enormous numbers."
+    },
+    {
+      "start": 37.894,
+      "end": 40.144,
+      "text": "How does that business actually work?"
+    },
+    {
+      "start": 41.044,
+      "end": 43.944,
+      "text": "Start with the scale, because\nit changes everything."
+    },
+    {
+      "start": 44.324,
+      "end": 48.444,
+      "text": "In the fiscal year that\nended in January 2026,"
+    },
+    {
+      "start": 48.444,
+      "end": 53.724,
+      "text": "Kroger reported $147.6 billion in sales."
+    },
+    {
+      "start": 53.724,
+      "end": 60.473,
+      "text": "Its operating profit was $1.9\nbillion, or 1.28 percent of sales."
+    },
+    {
+      "start": 60.853,
+      "end": 68.233,
+      "text": "That year included a $2.5 billion charge\ntied to its automated fulfillment network."
+    },
+    {
+      "start": 68.233,
+      "end": 73.292,
+      "text": "The year before, operating profit\nwas 2.62 percent of sales."
+    },
+    {
+      "start": 73.672,
+      "end": 75.892,
+      "text": "Either way, the pattern is the same:"
+    },
+    {
+      "start": 75.892,
+      "end": 79.072,
+      "text": "one or two cents of operating\nprofit on each dollar,"
+    },
+    {
+      "start": 79.072,
+      "end": 82.163,
+      "text": "multiplied across a mountain of sales."
+    },
+    {
+      "start": 82.543,
+      "end": 89.043,
+      "text": "Even one percent of nearly $150\nbillion is well over a billion dollars."
+    },
+    {
+      "start": 89.423,
+      "end": 93.443,
+      "text": "Scale works the same way at\nthe top of the industry."
+    },
+    {
+      "start": 93.443,
+      "end": 99.233,
+      "text": "Walmart's operating income was 4.2 percent\nof net sales in its latest fiscal year."
+    },
+    {
+      "start": 99.233,
+      "end": 106.074,
+      "text": "On more than $700 billion of net sales,\nthat came to nearly $30 billion."
+    },
+    {
+      "start": 106.454,
+      "end": 108.914,
+      "text": "That is the first secret\nof the supermarket."
+    },
+    {
+      "start": 108.914,
+      "end": 111.994,
+      "text": "It is not built to earn\na lot on each sale."
+    },
+    {
+      "start": 111.994,
+      "end": 115.024,
+      "text": "It is built to make an\nenormous number of them."
+    },
+    {
+      "start": 115.924,
+      "end": 118.024,
+      "text": "To see where the rest goes,"
+    },
+    {
+      "start": 118.024,
+      "end": 121.984,
+      "text": "follow a hundred dollars of Kroger's\nsales through its income statement."
+    },
+    {
+      "start": 122.364,
+      "end": 127.564,
+      "text": "First, the cost of the goods\nthemselves, including advertising,"
+    },
+    {
+      "start": 127.564,
+      "end": 129.504,
+      "text": "warehousing and transportation."
+    },
+    {
+      "start": 129.504,
+      "end": 132.904,
+      "text": "That takes about $77.14."
+    },
+    {
+      "start": 133.284,
+      "end": 137.904,
+      "text": "What remains is gross profit: $22.86."
+    },
+    {
+      "start": 137.904,
+      "end": 142.504,
+      "text": "Kroger reports a gross\nmargin of 22.9 percent."
+    },
+    {
+      "start": 142.884,
+      "end": 146.334,
+      "text": "Gross margin is what survives\nthe cost of the product."
+    },
+    {
+      "start": 146.334,
+      "end": 148.064,
+      "text": "It is not profit yet."
+    },
+    {
+      "start": 148.444,
+      "end": 155.064,
+      "text": "Next comes the cost of running the business:\nwages and benefits, utilities, rent,"
+    },
+    {
+      "start": 155.064,
+      "end": 159.874,
+      "text": "depreciation, and that\nyear's $2.5 billion charge."
+    },
+    {
+      "start": 159.874,
+      "end": 162.791,
+      "text": "Together, about $21.58."
+    },
+    {
+      "start": 163.171,
+      "end": 169.351,
+      "text": "What's left is operating profit, what\nthe business itself earned: $1.28."
+    },
+    {
+      "start": 169.731,
+      "end": 172.711,
+      "text": "Then interest, taxes and other items."
+    },
+    {
+      "start": 172.711,
+      "end": 178.091,
+      "text": "Net earnings, the bottom line for\nshareholders, came to about 69 cents."
+    },
+    {
+      "start": 178.471,
+      "end": 182.161,
+      "text": "Gross margin, operating\nmargin, net margin."
+    },
+    {
+      "start": 182.161,
+      "end": 185.411,
+      "text": "Three different numbers that\nanswer three different questions,"
+    },
+    {
+      "start": 185.411,
+      "end": 190.031,
+      "text": "and mixing them up is the easiest\nway to misread a supermarket."
+    },
+    {
+      "start": 190.931,
+      "end": 194.851,
+      "text": "Inside those averages, every\nproduct plays a different role."
+    },
+    {
+      "start": 194.851,
+      "end": 197.271,
+      "text": "Here is a hypothetical basket."
+    },
+    {
+      "start": 197.271,
+      "end": 202.511,
+      "text": "These prices and costs are illustrative,\nnot data from any real store."
+    },
+    {
+      "start": 202.891,
+      "end": 205.981,
+      "text": "Ten items, $54 at the register."
+    },
+    {
+      "start": 206.361,
+      "end": 209.381,
+      "text": "In this example, the milk\nearns almost nothing."
+    },
+    {
+      "start": 209.381,
+      "end": 215.001,
+      "text": "Stores sometimes price staples like this\naggressively, even as loss leaders,"
+    },
+    {
+      "start": 215.001,
+      "end": 219.881,
+      "text": "sold at a thin margin or below cost\nto bring shoppers through the door."
+    },
+    {
+      "start": 220.261,
+      "end": 224.801,
+      "text": "The store-brand cereal earns more than\nthe national brand sitting next to it."
+    },
+    {
+      "start": 224.801,
+      "end": 227.931,
+      "text": "The prepared meal from\nthe deli earns more still."
+    },
+    {
+      "start": 228.311,
+      "end": 233.591,
+      "text": "Add it up, and this basket's gross\nmargin lands near 23 percent."
+    },
+    {
+      "start": 233.591,
+      "end": 237.471,
+      "text": "We chose the numbers so it would\nroughly match Kroger's reported figure."
+    },
+    {
+      "start": 237.851,
+      "end": 242.541,
+      "text": "The point is that a supermarket does\nnot need every item to be profitable."
+    },
+    {
+      "start": 242.541,
+      "end": 245.171,
+      "text": "It needs the mix of what you buy to be."
+    },
+    {
+      "start": 246.071,
+      "end": 247.731,
+      "text": "The second secret is speed."
+    },
+    {
+      "start": 248.111,
+      "end": 252.541,
+      "text": "Much of what a grocery store sells\ncan spoil, so it cannot sit for long."
+    },
+    {
+      "start": 252.541,
+      "end": 257.691,
+      "text": "Trucks arrive, pallets move through\nthe stockroom, shelves are refilled,"
+    },
+    {
+      "start": 257.691,
+      "end": 260.431,
+      "text": "and the same shelf space is emptied again."
+    },
+    {
+      "start": 260.811,
+      "end": 266.491,
+      "text": "One way to measure this is inventory turnover:\nthe cost of the goods sold in a year,"
+    },
+    {
+      "start": 266.491,
+      "end": 269.869,
+      "text": "divided by the average inventory on hand."
+    },
+    {
+      "start": 270.249,
+      "end": 274.229,
+      "text": "Using figures from their\nlatest annual reports,"
+    },
+    {
+      "start": 274.229,
+      "end": 279.469,
+      "text": "Kroger's inventory turned over roughly\ntwelve times, or about once a month."
+    },
+    {
+      "start": 279.469,
+      "end": 281.709,
+      "text": "Costco's turned about fourteen times."
+    },
+    {
+      "start": 281.709,
+      "end": 286.633,
+      "text": "Walmart's, with far more general\nmerchandise, about nine times."
+    },
+    {
+      "start": 287.013,
+      "end": 290.333,
+      "text": "Twelve turns a year means the\naverage item spends about a"
+    },
+    {
+      "start": 290.333,
+      "end": 293.063,
+      "text": "month between the delivery\ntruck and the checkout."
+    },
+    {
+      "start": 293.063,
+      "end": 298.413,
+      "text": "The faster that cycle runs, the less\ncash sits on the shelves at any moment."
+    },
+    {
+      "start": 298.793,
+      "end": 302.433,
+      "text": "Every turn is another chance to\nearn that thin margin again,"
+    },
+    {
+      "start": 302.433,
+      "end": 306.683,
+      "text": "from the same shelf space and\nthe same money tied up in stock."
+    },
+    {
+      "start": 307.583,
+      "end": 309.403,
+      "text": "And this is where it gets interesting."
+    },
+    {
+      "start": 309.403,
+      "end": 313.023,
+      "text": "At the end of their latest\nfiscal years, Walmart,"
+    },
+    {
+      "start": 313.023,
+      "end": 316.503,
+      "text": "Costco and Kroger each owed\nmore in accounts payable"
+    },
+    {
+      "start": 316.503,
+      "end": 319.426,
+      "text": "than the value of the\ninventory on their books."
+    },
+    {
+      "start": 319.806,
+      "end": 323.086,
+      "text": "Accounts payable are bills\nthat haven't been paid yet."
+    },
+    {
+      "start": 323.086,
+      "end": 328.026,
+      "text": "When goods sell before their invoices\ncome due, suppliers are, in effect,"
+    },
+    {
+      "start": 328.026,
+      "end": 330.272,
+      "text": "helping to finance the shelves."
+    },
+    {
+      "start": 330.652,
+      "end": 333.092,
+      "text": "Here is a simple hypothetical."
+    },
+    {
+      "start": 333.092,
+      "end": 338.032,
+      "text": "A case of pasta arrives on day\none, sells out within three weeks,"
+    },
+    {
+      "start": 338.032,
+      "end": 341.112,
+      "text": "and the supplier's invoice\nis due on day thirty."
+    },
+    {
+      "start": 341.112,
+      "end": 342.622,
+      "text": "For more than a week,"
+    },
+    {
+      "start": 342.622,
+      "end": 346.592,
+      "text": "the store holds the shoppers'\nmoney before it pays for the pasta."
+    },
+    {
+      "start": 346.972,
+      "end": 349.282,
+      "text": "Money also flows the other way."
+    },
+    {
+      "start": 349.282,
+      "end": 354.592,
+      "text": "Walmart's annual report describes payments\nfrom suppliers for volume incentives,"
+    },
+    {
+      "start": 354.592,
+      "end": 358.932,
+      "text": "warehouse allowances, markdowns\nand certain advertising,"
+    },
+    {
+      "start": 358.932,
+      "end": 362.631,
+      "text": "and records them as a\nreduction of its cost of sales."
+    },
+    {
+      "start": 363.011,
+      "end": 366.851,
+      "text": "So the gross margin you see is\nshaped not only by shelf prices,"
+    },
+    {
+      "start": 366.851,
+      "end": 370.401,
+      "text": "but by negotiations most\nshoppers never see."
+    },
+    {
+      "start": 371.301,
+      "end": 373.381,
+      "text": "Then there is the store's own brand."
+    },
+    {
+      "start": 373.761,
+      "end": 381.941,
+      "text": "Kroger says its Our Brands products made up more\nthan $39 billion of its sales in fiscal 2025,"
+    },
+    {
+      "start": 381.941,
+      "end": 388.267,
+      "text": "and that its supermarkets stock, on average,\nmore than 13,000 private label items."
+    },
+    {
+      "start": 388.647,
+      "end": 391.067,
+      "text": "That is roughly a\nquarter of all its sales."
+    },
+    {
+      "start": 391.447,
+      "end": 397.287,
+      "text": "Costco says its Kirkland Signature products are\ngenerally priced lower than national brands,"
+    },
+    {
+      "start": 397.287,
+      "end": 399.997,
+      "text": "and generally earn higher margins."
+    },
+    {
+      "start": 400.377,
+      "end": 402.597,
+      "text": "Both can be true at once."
+    },
+    {
+      "start": 402.597,
+      "end": 406.517,
+      "text": "When the retailer controls the\nproduct, the label and the price,"
+    },
+    {
+      "start": 406.517,
+      "end": 410.887,
+      "text": "it can charge the shopper less and\nstill keep a larger share of each sale."
+    },
+    {
+      "start": 411.787,
+      "end": 412.967,
+      "text": "Now the danger."
+    },
+    {
+      "start": 412.967,
+      "end": 416.599,
+      "text": "In a business this thin,\nsmall losses are big problems."
+    },
+    {
+      "start": 416.979,
+      "end": 421.059,
+      "text": "Retailers call it shrink: products\nthat were paid for but never sold,"
+    },
+    {
+      "start": 421.059,
+      "end": 424.339,
+      "text": "because they spoiled, were\ndamaged, were stolen,"
+    },
+    {
+      "start": 424.339,
+      "end": 427.069,
+      "text": "or simply went missing in the records."
+    },
+    {
+      "start": 427.449,
+      "end": 432.709,
+      "text": "Groceries carry extra risk because\nso much of the store is perishable."
+    },
+    {
+      "start": 432.709,
+      "end": 433.509,
+      "text": "The U.S."
+    },
+    {
+      "start": 433.509,
+      "end": 437.529,
+      "text": "Department of Agriculture estimated\nthat food losses at the retail"
+    },
+    {
+      "start": 437.529,
+      "end": 442.039,
+      "text": "level equaled 10 percent of the\navailable food supply in 2010."
+    },
+    {
+      "start": 442.039,
+      "end": 445.629,
+      "text": "It is an older estimate,\nbut it shows the scale."
+    },
+    {
+      "start": 446.009,
+      "end": 450.439,
+      "text": "That is also why perishables get marked\ndown near the end of their shelf life."
+    },
+    {
+      "start": 450.439,
+      "end": 455.379,
+      "text": "A bag of salad sold at half price\nstill recovers part of its cost."
+    },
+    {
+      "start": 455.379,
+      "end": 458.089,
+      "text": "One thrown away recovers nothing."
+    },
+    {
+      "start": 458.469,
+      "end": 461.369,
+      "text": "Here is why it matters so much."
+    },
+    {
+      "start": 461.369,
+      "end": 464.929,
+      "text": "Imagine a store with a 2\npercent operating margin."
+    },
+    {
+      "start": 464.929,
+      "end": 468.289,
+      "text": "To make up for one dollar\nof product lost to shrink,"
+    },
+    {
+      "start": 468.289,
+      "end": 471.059,
+      "text": "it needs about fifty dollars of new sales."
+    },
+    {
+      "start": 471.439,
+      "end": 473.899,
+      "text": "That is why Kroger listed\nlower shrink among the"
+    },
+    {
+      "start": 473.899,
+      "end": 477.449,
+      "text": "reasons its gross margin\nimproved last year."
+    },
+    {
+      "start": 478.349,
+      "end": 481.899,
+      "text": "Not every company that sells\ngroceries plays the same game."
+    },
+    {
+      "start": 482.279,
+      "end": 485.599,
+      "text": "Walmart is a general merchandise giant."
+    },
+    {
+      "start": 485.599,
+      "end": 491.839,
+      "text": "In its latest fiscal year, grocery\nwas about 59 percent of Walmart U.S."
+    },
+    {
+      "start": 491.839,
+      "end": 493.259,
+      "text": "sales."
+    },
+    {
+      "start": 493.259,
+      "end": 498.159,
+      "text": "Its consolidated gross profit\nwas 24.2 percent of net sales,"
+    },
+    {
+      "start": 498.159,
+      "end": 501.519,
+      "text": "and operating income was 4.2 percent."
+    },
+    {
+      "start": 501.899,
+      "end": 505.119,
+      "text": "Costco runs membership warehouse clubs."
+    },
+    {
+      "start": 505.119,
+      "end": 510.819,
+      "text": "Its gross margin on net\nsales was just 11.09 percent."
+    },
+    {
+      "start": 510.819,
+      "end": 515.467,
+      "text": "But it also collected $5.9\nbillion in membership fees."
+    },
+    {
+      "start": 515.847,
+      "end": 520.887,
+      "text": "Those fees were equal to about half of\nCostco's operating income for the year."
+    },
+    {
+      "start": 520.887,
+      "end": 526.557,
+      "text": "Its model pairs very thin margins on\ngoods with a fee that members pay to shop."
+    },
+    {
+      "start": 526.937,
+      "end": 532.487,
+      "text": "A traditional supermarket chain like Kroger\nleans on fresh food, its own brands,"
+    },
+    {
+      "start": 532.487,
+      "end": 537.377,
+      "text": "pharmacy, fuel and growing side\nbusinesses such as advertising."
+    },
+    {
+      "start": 537.757,
+      "end": 540.177,
+      "text": "So these numbers are not interchangeable."
+    },
+    {
+      "start": 540.177,
+      "end": 548.607,
+      "text": "A 24 percent gross margin at Walmart and an 11 percent\ngross margin at Costco describe different businesses,"
+    },
+    {
+      "start": 548.607,
+      "end": 550.941,
+      "text": "not better or worse ones."
+    },
+    {
+      "start": 551.841,
+      "end": 555.521,
+      "text": "So, how do supermarkets\nmake money on tiny margins?"
+    },
+    {
+      "start": 555.901,
+      "end": 557.901,
+      "text": "By selling an enormous volume."
+    },
+    {
+      "start": 557.901,
+      "end": 561.091,
+      "text": "By turning their inventory\nover again and again."
+    },
+    {
+      "start": 561.091,
+      "end": 564.771,
+      "text": "By using supplier credit to\nhelp finance their shelves."
+    },
+    {
+      "start": 564.771,
+      "end": 566.891,
+      "text": "By leaning on their own brands."
+    },
+    {
+      "start": 566.891,
+      "end": 570.861,
+      "text": "By fighting shrink, one\ndamaged box at a time."
+    },
+    {
+      "start": 570.861,
+      "end": 575.631,
+      "text": "And, in some models, by charging for\nmembership or selling advertising."
+    },
+    {
+      "start": 576.011,
+      "end": 580.531,
+      "text": "The next time you hand over that hundred\ndollars, remember: at a chain like Kroger,"
+    },
+    {
+      "start": 580.531,
+      "end": 584.871,
+      "text": "the company keeps only about one to\nthree dollars as operating profit."
+    },
+    {
+      "start": 584.871,
+      "end": 588.761,
+      "text": "The rest pays for the food, the people,"
+    },
+    {
+      "start": 588.761,
+      "end": 592.061,
+      "text": "the buildings and the trucks\nthat make a supermarket work."
+    },
+    {
+      "start": 592.441,
+      "end": 594.001,
+      "text": "This is Hidden Ledger."
+    },
+    {
+      "start": 594.001,
+      "end": 597.001,
+      "text": "Every number in this video is\nsourced in the description."
+    }
+  ]
+}

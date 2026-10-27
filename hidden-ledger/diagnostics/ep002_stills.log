@@ -1,0 +1,469 @@
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019998.05 MB
+Memory reported by /proc/meminfo: 15286.59 MB
+Memory reported by Node: 15286.59 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019857.59 MB
+Memory reported by /proc/meminfo: 15192.08 MB
+Memory reported by Node: 15192.08 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0000.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019848.78 MB
+Memory reported by /proc/meminfo: 15203.49 MB
+Memory reported by Node: 15203.49 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0001.5.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019840.06 MB
+Memory reported by /proc/meminfo: 15266.72 MB
+Memory reported by Node: 15266.72 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0006.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019840.89 MB
+Memory reported by /proc/meminfo: 15176.46 MB
+Memory reported by Node: 15176.46 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0010.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019837.33 MB
+Memory reported by /proc/meminfo: 15192.43 MB
+Memory reported by Node: 15192.43 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0014.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019833.88 MB
+Memory reported by /proc/meminfo: 15193.54 MB
+Memory reported by Node: 15193.54 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0020.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019827.25 MB
+Memory reported by /proc/meminfo: 15177.85 MB
+Memory reported by Node: 15177.85 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0025.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019836.86 MB
+Memory reported by /proc/meminfo: 15178.02 MB
+Memory reported by Node: 15178.02 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0031.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019940.45 MB
+Memory reported by /proc/meminfo: 15262.85 MB
+Memory reported by Node: 15262.85 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0037.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019937.82 MB
+Memory reported by /proc/meminfo: 15293.93 MB
+Memory reported by Node: 15293.93 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0042.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019934.16 MB
+Memory reported by /proc/meminfo: 15277.30 MB
+Memory reported by Node: 15277.30 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0052.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019932.82 MB
+Memory reported by /proc/meminfo: 15271.41 MB
+Memory reported by Node: 15270.74 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0066.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019930.36 MB
+Memory reported by /proc/meminfo: 15341.20 MB
+Memory reported by Node: 15341.20 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0077.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019931.02 MB
+Memory reported by /proc/meminfo: 15296.09 MB
+Memory reported by Node: 15296.09 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0085.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019927.37 MB
+Memory reported by /proc/meminfo: 15276.43 MB
+Memory reported by Node: 15276.43 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0095.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019924.12 MB
+Memory reported by /proc/meminfo: 15269.55 MB
+Memory reported by Node: 15269.55 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0109.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019908.68 MB
+Memory reported by /proc/meminfo: 15271.94 MB
+Memory reported by Node: 15271.94 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0118.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019912.70 MB
+Memory reported by /proc/meminfo: 15272.60 MB
+Memory reported by Node: 15272.60 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0127.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019908.32 MB
+Memory reported by /proc/meminfo: 15278.30 MB
+Memory reported by Node: 15278.30 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0138.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019911.63 MB
+Memory reported by /proc/meminfo: 15311.17 MB
+Memory reported by Node: 15311.17 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0145.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019907.85 MB
+Memory reported by /proc/meminfo: 15294.11 MB
+Memory reported by Node: 15294.11 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0155.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019909.55 MB
+Memory reported by /proc/meminfo: 15307.13 MB
+Memory reported by Node: 15307.13 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0166.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019907.09 MB
+Memory reported by /proc/meminfo: 15312.16 MB
+Memory reported by Node: 15312.16 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0172.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019913.29 MB
+Memory reported by /proc/meminfo: 15273.34 MB
+Memory reported by Node: 15272.67 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0183.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019909.45 MB
+Memory reported by /proc/meminfo: 15285.79 MB
+Memory reported by Node: 15285.79 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0195.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019903.47 MB
+Memory reported by /proc/meminfo: 15276.17 MB
+Memory reported by Node: 15276.17 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0204.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019898.73 MB
+Memory reported by /proc/meminfo: 15251.00 MB
+Memory reported by Node: 15251.00 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0212.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019906.22 MB
+Memory reported by /proc/meminfo: 15270.09 MB
+Memory reported by Node: 15270.09 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0224.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019905.64 MB
+Memory reported by /proc/meminfo: 15296.45 MB
+Memory reported by Node: 15296.45 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0232.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019901.82 MB
+Memory reported by /proc/meminfo: 15249.75 MB
+Memory reported by Node: 15249.75 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0240.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019906.75 MB
+Memory reported by /proc/meminfo: 15289.95 MB
+Memory reported by Node: 15289.95 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0247.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019902.51 MB
+Memory reported by /proc/meminfo: 15271.90 MB
+Memory reported by Node: 15271.06 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0252.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019921.55 MB
+Memory reported by /proc/meminfo: 15267.70 MB
+Memory reported by Node: 15267.70 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0256.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019923.18 MB
+Memory reported by /proc/meminfo: 15274.69 MB
+Memory reported by Node: 15274.18 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0263.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019919.27 MB
+Memory reported by /proc/meminfo: 15326.43 MB
+Memory reported by Node: 15326.43 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0278.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019916.06 MB
+Memory reported by /proc/meminfo: 15275.24 MB
+Memory reported by Node: 15275.24 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0290.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019912.21 MB
+Memory reported by /proc/meminfo: 15284.88 MB
+Memory reported by Node: 15284.88 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0302.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019922.63 MB
+Memory reported by /proc/meminfo: 15286.61 MB
+Memory reported by Node: 15286.61 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0312.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019920.73 MB
+Memory reported by /proc/meminfo: 15321.78 MB
+Memory reported by Node: 15321.78 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0325.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019918.90 MB
+Memory reported by /proc/meminfo: 15278.70 MB
+Memory reported by Node: 15277.86 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0336.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019914.79 MB
+Memory reported by /proc/meminfo: 15297.32 MB
+Memory reported by Node: 15297.32 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0342.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019911.16 MB
+Memory reported by /proc/meminfo: 15289.39 MB
+Memory reported by Node: 15289.39 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0352.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019921.69 MB
+Memory reported by /proc/meminfo: 15296.40 MB
+Memory reported by Node: 15296.40 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0366.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019921.67 MB
+Memory reported by /proc/meminfo: 15284.23 MB
+Memory reported by Node: 15284.23 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0372.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019920.17 MB
+Memory reported by /proc/meminfo: 15322.23 MB
+Memory reported by Node: 15322.23 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0380.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019917.27 MB
+Memory reported by /proc/meminfo: 15337.93 MB
+Memory reported by Node: 15337.93 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0390.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019914.03 MB
+Memory reported by /proc/meminfo: 15328.52 MB
+Memory reported by Node: 15328.52 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0395.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019922.39 MB
+Memory reported by /proc/meminfo: 15296.05 MB
+Memory reported by Node: 15296.05 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0405.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019924.30 MB
+Memory reported by /proc/meminfo: 15310.41 MB
+Memory reported by Node: 15310.41 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0414.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019919.41 MB
+Memory reported by /proc/meminfo: 15332.38 MB
+Memory reported by Node: 15332.38 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0420.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019917.01 MB
+Memory reported by /proc/meminfo: 15299.37 MB
+Memory reported by Node: 15299.37 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0425.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019913.96 MB
+Memory reported by /proc/meminfo: 15293.02 MB
+Memory reported by Node: 15293.02 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0435.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019922.55 MB
+Memory reported by /proc/meminfo: 15254.11 MB
+Memory reported by Node: 15254.11 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0450.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019924.23 MB
+Memory reported by /proc/meminfo: 15287.65 MB
+Memory reported by Node: 15287.65 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0462.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019920.18 MB
+Memory reported by /proc/meminfo: 15254.77 MB
+Memory reported by Node: 15254.77 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0474.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019916.65 MB
+Memory reported by /proc/meminfo: 15290.00 MB
+Memory reported by Node: 15288.99 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0480.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019913.67 MB
+Memory reported by /proc/meminfo: 15271.11 MB
+Memory reported by Node: 15271.11 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0490.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019923.10 MB
+Memory reported by /proc/meminfo: 15277.69 MB
+Memory reported by Node: 15277.69 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0505.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019923.84 MB
+Memory reported by /proc/meminfo: 15271.50 MB
+Memory reported by Node: 15271.50 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0520.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019920.00 MB
+Memory reported by /proc/meminfo: 15273.14 MB
+Memory reported by Node: 15273.14 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0530.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019916.78 MB
+Memory reported by /proc/meminfo: 15307.29 MB
+Memory reported by Node: 15307.29 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0545.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019913.67 MB
+Memory reported by /proc/meminfo: 15310.64 MB
+Memory reported by Node: 15310.64 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0553.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019923.17 MB
+Memory reported by /proc/meminfo: 15343.53 MB
+Memory reported by Node: 15343.53 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0565.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019916.92 MB
+Memory reported by /proc/meminfo: 15287.63 MB
+Memory reported by Node: 15287.63 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0580.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019911.50 MB
+Memory reported by /proc/meminfo: 15314.67 MB
+Memory reported by Node: 15314.67 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0590.0.jpg
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093019905.83 MB
+Memory reported by /proc/meminfo: 15281.94 MB
+Memory reported by Node: 15281.94 MB
+You might have inadvertenly set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+diagnostics/ep002_stills/t0596.0.jpg
+EXIT 0
