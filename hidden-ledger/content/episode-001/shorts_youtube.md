@@ -8,7 +8,7 @@ After uploading, link each Short to the full episode with **"Related video"** in
 
 ---
 
-## Short 1: the hook (0:00–0:29 of the episode)
+## Short 1: the hook (0:00–0:28 of the episode, 28 s)
 **On-screen title:** Who pays for your free return?
 
 **YouTube title:** Who actually pays for your "free" return? #Shorts
@@ -22,7 +22,7 @@ Full episode: Who Really Pays for Free Returns? (linked above)
 #Shorts #returns #ecommerce #economics
 ```
 
-## Short 2: the $100 jacket (3:44–4:28 of the episode)
+## Short 2: the $100 jacket (3:44–4:28 of the episode, 44 s)
 **On-screen title:** A $100 jacket comes back. What does it cost?
 
 **YouTube title:** A $100 jacket gets returned. The seller loses $44 (example) #Shorts
@@ -37,7 +37,7 @@ Full episode: Who Really Pays for Free Returns? (linked above)
 ```
 Keep "(example)" in the title: the narration and the on-screen label both say the numbers are illustrative.
 
-## Short 3: where returns go (6:21–7:07 of the episode)
+## Short 3: where returns go (6:21–7:07 of the episode, 46 s)
 **On-screen title:** Where does your returned jacket go?
 
 **YouTube title:** Where does your returned jacket actually go? #Shorts
