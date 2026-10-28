@@ -438,9 +438,14 @@ const commands = {
       const from = Math.max(0, seg(s.from).start - 0.3);
       const to = Math.min(tl.duration, seg(s.to).end + 0.8);
       const name = `short_${i + 1}`;
-      const silent = renderVideo(name, fullProps, dest, {quality: 'hd', composition: 'Short', extraProps: {from, to, title: s.title}});
+      const silent = renderVideo(name, fullProps, dest, {quality: 'hd', composition: 'Short', extraProps: {from, to, title: s.title}, crf: 16});
       const file = path.join(dest, `${name}.mp4`);
-      mux(silent, path.join(AUDIO, 'full', 'mix.wav'), file, {from, to});
+      // exact length (no -shortest, which can drop the last frames) + short fades so the music never cuts hard
+      const dur = (Math.round((to - from) * tl.fps) / tl.fps).toFixed(4);
+      run('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', '-i', silent, '-ss', String(from), '-t', dur, '-i', path.join(AUDIO, 'full', 'mix.wav'),
+        '-map', '0:v:0', '-map', '1:a:0', '-c:v', 'copy', '-af', `afade=t=in:d=0.15,afade=t=out:st=${(Number(dur) - 0.7).toFixed(3)}:d=0.7,apad`,
+        '-c:a', 'aac', '-b:a', '256k', '-ar', '48000', '-ac', '2', '-t', dur, '-movflags', '+faststart', file]);
+      fs.rmSync(silent);
       report.push(validateVideo(file, {minDur: 15, maxDur: 60}));
     }
     writeReport('shorts_report', report);

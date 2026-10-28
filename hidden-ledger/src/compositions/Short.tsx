@@ -8,7 +8,8 @@ import {Episode} from './Episode';
 export type ShortProps = {timeline: Timeline; subtitles: boolean; from: number; to: number; title: string};
 
 // 9:16 cut-down: reuses the episode render (same scenes, same timing) in a letterboxed band,
-// with a title on top and larger subtitles below. Audio is cut from the same mix by the pipeline.
+// with a title on top and larger subtitles right below it (kept above the bottom ~400 px that
+// the Shorts player covers with the channel name and caption). Audio is cut from the same mix by the pipeline.
 export const Short: React.FC<ShortProps> = ({timeline, from, title, subtitles}) => {
   const offset = Math.round(from * timeline.fps);
   const scale = 1080 / 1920;
@@ -28,7 +29,7 @@ export const Short: React.FC<ShortProps> = ({timeline, from, title, subtitles}) 
         </Sequence>
       </div>
       {subtitles && (
-        <div style={{position: 'absolute', left: 0, right: 0, top: 1300, height: 420, transform: 'scale(1.25)', transformOrigin: 'top center'}}>
+        <div style={{position: 'absolute', left: 0, right: 0, top: 1270, height: 220, transform: 'scale(1.25)', transformOrigin: 'top center'}}>
           <Sequence from={-offset}>
             <Subtitles cues={timeline.subtitles} />
           </Sequence>
