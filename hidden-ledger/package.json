@@ -22,7 +22,9 @@
     "final:002": "node scripts/pipeline.mjs final --episode 002 --bitrate 10M --concurrency 4",
     "render:002": "node scripts/pipeline.mjs render --episode 002 --concurrency 4",
     "thumbnails:002": "node scripts/pipeline.mjs thumbnails --episode 002",
-    "lint:text": "python python/text_lint.py"
+    "lint:text": "python python/text_lint.py",
+    "final:003": "node scripts/pipeline.mjs final --episode 003 --bitrate 10M --concurrency 4",
+    "thumbnails:003": "node scripts/pipeline.mjs thumbnails --episode 003"
   },
   "dependencies": {
     "@fontsource-variable/inter": "5.1.1",

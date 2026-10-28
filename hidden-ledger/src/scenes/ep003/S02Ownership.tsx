@@ -32,7 +32,7 @@ export const S02Ownership: React.FC = () => {
   const b = useBeats();
   const {frame} = b;
   return (
-    <SceneShell drift={[0, 0]} zoom={0.012} beatCamera={false}>
+    <SceneShell drift={[0, -10]} zoom={0.025} beatCamera={false}>
       <PaperBackdrop />
 
       {/* beat 0: a shelf with books and software boxes */}
@@ -142,7 +142,7 @@ export const S02Ownership: React.FC = () => {
           const flip = b.ramp(4, 1.0 + i * 0.35, 0.3);
           const last = i === 3;
           return (
-            <div key={y} style={{position: 'absolute', left: 710, top: 250, width: 500, height: 520, background: '#fff', border: `6px solid ${INK}`, borderRadius: 18, overflow: 'hidden', transform: `rotateX(${last ? 0 : flip * 95}deg)`, transformOrigin: 'top', opacity: last ? b.ramp(4, 1.9, 0.2) : 1 - (flip > 0.98 ? 1 : 0), zIndex: 10 - i, boxShadow: '0 20px 40px rgba(0,0,0,0.2)'}}>
+            <div key={y} style={{position: 'absolute', left: 710, top: 250, width: 500, height: 520, background: '#fff', border: `6px solid ${INK}`, borderRadius: 18, overflow: 'hidden', transform: `rotateX(${last ? 0 : flip * 95}deg) rotate(${last ? Math.sin(frame / 28) * 1.5 : 0}deg)`, transformOrigin: 'top', opacity: last ? b.ramp(4, 1.9, 0.2) : 1 - (flip > 0.98 ? 1 : 0), zIndex: 10 - i, boxShadow: '0 20px 40px rgba(0,0,0,0.2)'}}>
               <div style={{height: 120, background: last ? C.red : '#6A665F', color: '#fff', fontFamily: FONT_TITLE, fontWeight: 700, fontSize: 64, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{last ? 'MAY' : 'JAN'}</div>
               <div style={{fontFamily: FONT_TITLE, fontWeight: 700, fontSize: 190, color: INK, textAlign: 'center', marginTop: 50}}>{y}</div>
             </div>

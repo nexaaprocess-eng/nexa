@@ -266,7 +266,7 @@ export const INK = '#1B1F25';
  * Keyframed camera over a large canvas: keys = [frame, x, y, zoom]; the canvas point (x, y) is centred.
  * Eased (smoothstep) between keys. Children are laid out in canvas coordinates.
  */
-export const Camera: React.FC<{frame: number; keys: [number, number, number, number][]; children: React.ReactNode}> = ({frame, keys, children}) => {
+export const Camera: React.FC<{frame: number; keys: [number, number, number, number][]; sway?: number; children: React.ReactNode}> = ({frame, keys, sway = 0, children}) => {
   const ks = [...keys].sort((a, b) => a[0] - b[0]);
   let x = ks[0][1];
   let y = ks[0][2];
@@ -289,6 +289,9 @@ export const Camera: React.FC<{frame: number; keys: [number, number, number, num
     }
     break;
   }
+  // optional slow hand-held drift so camera holds never become frozen frames
+  x += Math.sin(frame / 70) * sway;
+  y += Math.cos(frame / 95) * sway * 0.5;
   return (
     <div style={{position: 'absolute', inset: 0, overflow: 'hidden'}}>
       <div style={{position: 'absolute', left: 0, top: 0, width: 1920, height: 1080, transform: `translate(960px, 540px) scale(${z}) translate(${-x}px, ${-y}px)`, transformOrigin: '0 0'}}>{children}</div>

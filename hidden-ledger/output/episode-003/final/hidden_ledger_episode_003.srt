@@ -1,0 +1,828 @@
+1
+00:00:00,600 --> 00:00:05,430
+Open the settings on almost any phone,
+and you can find a list like this one.
+
+2
+00:00:05,810 --> 00:00:09,280
+Music, about twelve dollars a month.
+
+3
+00:00:09,280 --> 00:00:09,790
+Streaming, fifteen.
+
+4
+00:00:09,790 --> 00:00:11,830
+Extra cloud storage, three.
+
+5
+00:00:11,830 --> 00:00:13,670
+A fitness app, thirteen.
+
+6
+00:00:13,670 --> 00:00:15,180
+A productivity app, ten.
+
+7
+00:00:15,180 --> 00:00:17,550
+And an AI assistant, twenty.
+
+8
+00:00:17,930 --> 00:00:20,530
+None of them feels expensive on its own.
+
+9
+00:00:20,530 --> 00:00:23,710
+Together, that is about
+seventy-three dollars a month,
+
+10
+00:00:23,710 --> 00:00:27,330
+or roughly eight hundred
+and eighty dollars a year.
+
+11
+00:00:27,710 --> 00:00:31,810
+This bundle is a made-up
+example, not anyone's real bill.
+
+12
+00:00:31,810 --> 00:00:34,110
+But the shift behind it is real.
+
+13
+00:00:34,490 --> 00:00:41,370
+In January 2022, about 2,000 new subscription
+apps launched in a single month.
+
+14
+00:00:41,370 --> 00:00:46,380
+By January 2026, it was
+more than 14,700 a month.
+
+15
+00:00:46,760 --> 00:00:50,210
+So why does every app suddenly
+want a monthly payment?
+
+16
+00:00:50,210 --> 00:00:52,230
+And who actually comes out ahead?
+
+17
+00:00:53,130 --> 00:00:56,900
+Not long ago, buying software
+looked a lot like buying a book.
+
+18
+00:00:57,280 --> 00:01:02,000
+You paid once, you got a box
+with a disc, or a download code,
+
+19
+00:01:02,000 --> 00:01:06,780
+and that version was yours to keep using
+for as long as your computer could run it.
+
+20
+00:01:07,160 --> 00:01:08,820
+When a new version came out,
+
+21
+00:01:08,820 --> 00:01:12,400
+you decided whether the new features
+were worth paying for again.
+
+22
+00:01:12,780 --> 00:01:14,770
+That was never the whole story.
+
+23
+00:01:14,770 --> 00:01:18,930
+Businesses often paid yearly
+fees for support and updates.
+
+24
+00:01:18,930 --> 00:01:20,490
+Oracle, for example,
+
+25
+00:01:20,490 --> 00:01:24,340
+says that substantially all
+of its customers buy and
+
+26
+00:01:24,340 --> 00:01:27,400
+renew their software support
+contracts every year.
+
+27
+00:01:27,780 --> 00:01:32,240
+But for many everyday products,
+one purchase was the deal.
+
+28
+00:01:32,240 --> 00:01:37,529
+Then, in May 2013, one of the best-known
+software makers changed the rules.
+
+29
+00:01:37,909 --> 00:01:44,479
+Adobe announced that new features for its creative
+tools would go only to Creative Cloud subscribers,
+
+30
+00:01:44,479 --> 00:01:47,969
+and that Creative Suite
+6 would be the last major
+
+31
+00:01:47,969 --> 00:01:51,379
+update for people who had
+bought perpetual licenses.
+
+32
+00:01:52,279 --> 00:01:54,049
+In the short run, the switch hurt.
+
+33
+00:01:54,429 --> 00:01:59,989
+In fiscal 2012, subscriptions were
+15 percent of Adobe's revenue.
+
+34
+00:01:59,989 --> 00:02:05,709
+A year later they were 28 percent, and
+total revenue fell about 8 percent,
+
+35
+00:02:05,709 --> 00:02:10,149
+from $4.4 billion to $4.06 billion.
+
+36
+00:02:10,529 --> 00:02:16,379
+Net income fell from $833
+million to $290 million.
+
+37
+00:02:16,759 --> 00:02:17,929
+Why accept that?
+
+38
+00:02:17,929 --> 00:02:22,889
+Because a box is sold once, but a
+subscription is billed again and again.
+
+39
+00:02:22,889 --> 00:02:27,949
+Revenue that used to arrive in one
+burst is spread across months and years.
+
+40
+00:02:28,329 --> 00:02:33,369
+By fiscal 2014, subscriptions
+were half of Adobe's revenue.
+
+41
+00:02:33,369 --> 00:02:39,711
+In fiscal 2025, they were 96
+percent of $23.8 billion.
+
+42
+00:02:40,091 --> 00:02:43,651
+Not all of that growth came from
+the subscription switch alone.
+
+43
+00:02:43,651 --> 00:02:48,681
+But almost all of Adobe's revenue now
+comes from customers who keep paying.
+
+44
+00:02:49,581 --> 00:02:52,931
+To see why, imagine two
+small software companies.
+
+45
+00:02:52,931 --> 00:02:54,661
+Both are hypothetical.
+
+46
+00:02:55,041 --> 00:02:59,611
+The first sells a photo
+editor for $120, once.
+
+47
+00:02:59,611 --> 00:03:03,361
+The second sells a similar
+app for $10 a month.
+
+48
+00:03:03,741 --> 00:03:07,241
+In month one, the first
+company looks like the winner.
+
+49
+00:03:07,241 --> 00:03:12,361
+A thousand customers
+bring in $120,000 at once.
+
+50
+00:03:12,361 --> 00:03:14,641
+The second company collects $10,000.
+
+51
+00:03:15,021 --> 00:03:19,371
+But next month, the first company
+has to find a thousand new buyers.
+
+52
+00:03:19,371 --> 00:03:23,405
+The second starts the month with
+the customers it already has.
+
+53
+00:03:23,785 --> 00:03:27,315
+If all of them stay for a year,
+the second company catches up.
+
+54
+00:03:27,315 --> 00:03:30,595
+And it knows, roughly, what
+next month will bring.
+
+55
+00:03:30,975 --> 00:03:33,395
+That is the attraction: predictability.
+
+56
+00:03:33,395 --> 00:03:37,385
+Recurring revenue is easier to
+forecast and to plan around,
+
+57
+00:03:37,385 --> 00:03:42,975
+and it can pay for work that never really
+ends: fixing bugs, supporting new phones,
+
+58
+00:03:42,975 --> 00:03:44,275
+running servers.
+
+59
+00:03:44,655 --> 00:03:48,365
+Some products also cost money
+every time you use them.
+
+60
+00:03:48,365 --> 00:03:50,605
+Files have to be stored somewhere.
+
+61
+00:03:50,605 --> 00:03:53,485
+An AI answer has to be computed.
+
+62
+00:03:53,485 --> 00:03:57,295
+A single payment does not cover
+a cost that keeps coming back.
+
+63
+00:03:57,675 --> 00:04:00,595
+But notice the catch in
+the second company's plan.
+
+64
+00:04:00,595 --> 00:04:03,215
+It only works if those customers stay.
+
+65
+00:04:04,115 --> 00:04:08,815
+Subscription businesses live by a
+handful of numbers, and they all connect.
+
+66
+00:04:09,195 --> 00:04:12,495
+Monthly recurring revenue
+is what the company expects
+
+67
+00:04:12,495 --> 00:04:15,553
+to bill each month from
+its active subscribers.
+
+68
+00:04:15,933 --> 00:04:19,613
+Churn is the share of subscribers
+who leave in a given period.
+
+69
+00:04:19,613 --> 00:04:23,493
+Retention is the opposite: the
+share who are still paying.
+
+70
+00:04:23,873 --> 00:04:28,573
+Customer acquisition cost is what the
+company spends, on ads and promotion,
+
+71
+00:04:28,573 --> 00:04:31,453
+to win one paying customer.
+
+72
+00:04:31,453 --> 00:04:34,393
+And lifetime value is
+what that customer is
+
+73
+00:04:34,393 --> 00:04:36,893
+worth over all the
+months they keep paying.
+
+74
+00:04:37,273 --> 00:04:39,553
+Let's put hypothetical
+numbers on our ten-dollar app.
+
+75
+00:04:39,553 --> 00:04:42,453
+If it sells through Apple's App Store,
+
+76
+00:04:42,453 --> 00:04:48,983
+Apple's terms give the developer 70 percent of
+each payment during a subscriber's first year,
+
+77
+00:04:48,983 --> 00:04:51,853
+and 85 percent after that.
+
+78
+00:04:51,853 --> 00:04:57,223
+Developers in Apple's Small Business
+Program get 85 percent from the start.
+
+79
+00:04:57,603 --> 00:05:01,023
+So the developer keeps about $7 a month.
+
+80
+00:05:01,023 --> 00:05:04,543
+If 10 percent of subscribers
+cancel every month,
+
+81
+00:05:04,543 --> 00:05:09,503
+the average subscriber stays about
+ten months, and brings in roughly $70.
+
+82
+00:05:09,883 --> 00:05:13,953
+If winning each subscriber
+costs $40 in advertising,
+
+83
+00:05:13,953 --> 00:05:16,069
+that looks like a healthy business.
+
+84
+00:05:16,449 --> 00:05:18,989
+But if churn doubles
+to 20 percent a month,
+
+85
+00:05:18,989 --> 00:05:22,519
+the average subscriber
+brings in about $35.
+
+86
+00:05:22,519 --> 00:05:25,739
+That is less than it cost to win them.
+
+87
+00:05:25,739 --> 00:05:30,609
+Same app, same price, and now
+every new customer loses money.
+
+88
+00:05:30,989 --> 00:05:34,009
+That is why the people who
+run subscription apps watch
+
+89
+00:05:34,009 --> 00:05:37,089
+churn more closely than
+almost anything else.
+
+90
+00:05:37,989 --> 00:05:41,809
+So how do real subscription
+apps actually do?
+
+91
+00:05:41,809 --> 00:05:44,729
+One of the largest data
+sets comes from RevenueCat,
+
+92
+00:05:44,729 --> 00:05:50,289
+a company that sells the software many
+apps use to manage their subscriptions.
+
+93
+00:05:50,669 --> 00:05:58,929
+Its 2026 report covers more than 115,000
+apps and more than $16 billion in revenue.
+
+94
+00:05:58,929 --> 00:06:03,909
+It is not every app in the world, only
+apps that use RevenueCat's tools.
+
+95
+00:06:03,909 --> 00:06:05,819
+But the picture is striking.
+
+96
+00:06:06,199 --> 00:06:11,879
+One year after launch, the median
+app earned about $72 a month.
+
+97
+00:06:11,879 --> 00:06:15,799
+The top 10 percent earned
+more than $2,500 a month.
+
+98
+00:06:16,179 --> 00:06:19,639
+Only 4.6 percent of newly
+launched apps reached
+
+99
+00:06:19,639 --> 00:06:23,039
+$10,000 in monthly
+revenue within two years.
+
+100
+00:06:23,039 --> 00:06:27,999
+And apps launched before
+2020 still generate 69
+
+101
+00:06:27,999 --> 00:06:31,399
+percent of all subscription
+revenue in the data.
+
+102
+00:06:31,779 --> 00:06:34,119
+Keeping subscribers is even harder.
+
+103
+00:06:34,119 --> 00:06:37,279
+For subscriptions that started in 2024,
+
+104
+00:06:37,279 --> 00:06:42,744
+the median share still active a year later
+was about 8 percent on monthly plans,
+
+105
+00:06:42,744 --> 00:06:45,809
+and 28 percent on yearly plans.
+
+106
+00:06:46,189 --> 00:06:50,275
+Nearly half of monthly subscribers
+do not renew even once.
+
+107
+00:06:50,655 --> 00:06:55,415
+Those figures count subscriptions,
+not people, and payments, not use.
+
+108
+00:06:55,415 --> 00:06:58,745
+Someone can cancel and
+keep using a free version.
+
+109
+00:06:58,745 --> 00:07:02,153
+Someone else can keep paying
+and barely open the app.
+
+110
+00:07:03,053 --> 00:07:05,203
+Now look at it from the customer's side.
+
+111
+00:07:05,583 --> 00:07:08,403
+A household's monthly budget is finite.
+
+112
+00:07:08,403 --> 00:07:13,823
+Every new subscription has to find room in
+it, often by pushing something else out.
+
+113
+00:07:14,203 --> 00:07:17,523
+So apps are not only
+competing with similar apps.
+
+114
+00:07:17,523 --> 00:07:20,823
+A meditation app competes
+with a streaming service,
+
+115
+00:07:20,823 --> 00:07:24,833
+and an AI assistant competes
+with extra cloud storage,
+
+116
+00:07:24,833 --> 00:07:27,213
+for the same few dollars each month.
+
+117
+00:07:27,593 --> 00:07:32,113
+That is why so much effort goes into
+the first moments: free trials,
+
+118
+00:07:32,113 --> 00:07:35,603
+discounted first months,
+cheaper yearly plans.
+
+119
+00:07:35,603 --> 00:07:40,093
+Each is a way to get onto the list,
+and to survive the first renewal.
+
+120
+00:07:40,473 --> 00:07:45,303
+RevenueCat found that apps asking for
+payment upfront, behind a hard paywall,
+
+121
+00:07:45,303 --> 00:07:51,873
+turned about five times as many downloads
+into paying customers as freemium apps did:
+
+122
+00:07:51,873 --> 00:07:56,673
+10.7 percent versus 2.1
+percent within 35 days.
+
+123
+00:07:56,673 --> 00:08:00,593
+Yet a year later, retention
+was nearly the same.
+
+124
+00:08:00,973 --> 00:08:04,253
+Meanwhile, small payments add up quietly.
+
+125
+00:08:04,253 --> 00:08:08,613
+Our hypothetical bundle costs
+less than three dollars a day.
+
+126
+00:08:08,613 --> 00:08:11,023
+Over a year, it comes
+to nearly nine hundred.
+
+127
+00:08:11,403 --> 00:08:14,783
+Not every app takes the
+pure subscription road.
+
+128
+00:08:14,783 --> 00:08:16,123
+In RevenueCat's data,
+
+129
+00:08:16,123 --> 00:08:18,623
+nearly a quarter of the apps pair their
+
+130
+00:08:18,623 --> 00:08:20,563
+subscriptions with a one-time lifetime
+
+131
+00:08:20,563 --> 00:08:21,729
+purchase.
+
+132
+00:08:22,629 --> 00:08:24,699
+Recurring revenue sounds safe.
+
+133
+00:08:24,699 --> 00:08:28,559
+It is not guaranteed, and it
+is not the same as profit.
+
+134
+00:08:28,939 --> 00:08:30,619
+Payments fail.
+
+135
+00:08:30,619 --> 00:08:32,139
+Cards expire.
+
+136
+00:08:32,139 --> 00:08:34,139
+Banks decline charges.
+
+137
+00:08:34,139 --> 00:08:35,439
+In RevenueCat's data,
+
+138
+00:08:35,439 --> 00:08:41,719
+involuntary billing failures caused about 31 percent
+of subscription cancellations on Google Play,
+
+139
+00:08:41,719 --> 00:08:44,929
+compared with 14 percent on the App Store.
+
+140
+00:08:45,309 --> 00:08:46,949
+Hype fades.
+
+141
+00:08:46,949 --> 00:08:51,789
+AI-powered apps in the report earned
+41 percent more revenue per payer,
+
+142
+00:08:51,789 --> 00:08:55,379
+but their subscribers churned
+about 30 percent faster.
+
+143
+00:08:55,759 --> 00:09:01,259
+Some companies try a shortcut: make
+it easy to sign up and hard to leave.
+
+144
+00:09:01,259 --> 00:09:02,899
+That can backfire.
+
+145
+00:09:02,899 --> 00:09:05,059
+In September 2025,
+
+146
+00:09:05,059 --> 00:09:10,519
+Amazon agreed to pay $2.5 billion to settle
+Federal Trade Commission claims that it
+
+147
+00:09:10,519 --> 00:09:15,729
+enrolled customers in Prime without their
+consent and made cancelling difficult.
+
+148
+00:09:16,109 --> 00:09:19,009
+And revenue is not profit.
+
+149
+00:09:19,009 --> 00:09:22,589
+Spotify, a streaming service
+rather than a typical app,
+
+150
+00:09:22,589 --> 00:09:30,609
+ended 2025 with 290 million premium
+subscribers and €17.2 billion in revenue.
+
+151
+00:09:30,989 --> 00:09:33,869
+Most of that money goes straight back out,
+
+152
+00:09:33,869 --> 00:09:37,029
+mainly as royalties
+and distribution costs.
+
+153
+00:09:37,029 --> 00:09:40,049
+Its gross margin was 32 percent,
+
+154
+00:09:40,049 --> 00:09:47,373
+and as recently as 2023 it reported
+an operating loss of €446 million.
+
+155
+00:09:47,753 --> 00:09:52,233
+In 2025, its operating
+income was €2.2 billion.
+
+156
+00:09:52,233 --> 00:09:56,293
+Subscriptions can become very profitable,
+
+157
+00:09:56,293 --> 00:09:59,653
+but only when the costs behind
+them are under control.
+
+158
+00:10:00,553 --> 00:10:03,033
+So why does every app want a subscription?
+
+159
+00:10:03,413 --> 00:10:07,513
+Because a subscription turns a
+single sale into a relationship:
+
+160
+00:10:07,513 --> 00:10:10,423
+one that pays every
+month, can be forecast,
+
+161
+00:10:10,423 --> 00:10:13,513
+and can fund the work of
+keeping a product alive.
+
+162
+00:10:13,893 --> 00:10:16,113
+For customers, that can be a good deal.
+
+163
+00:10:16,113 --> 00:10:19,663
+You pay less upfront, you
+get updates and new features,
+
+164
+00:10:19,663 --> 00:10:22,693
+and you can leave when the
+product stops being worth it.
+
+165
+00:10:23,073 --> 00:10:25,313
+It can also be a worse deal.
+
+166
+00:10:25,313 --> 00:10:30,273
+If you use a tool rarely, or would
+happily keep an older version forever,
+
+167
+00:10:30,273 --> 00:10:33,313
+owning it outright can cost far less.
+
+168
+00:10:33,313 --> 00:10:36,523
+That is why one-time purchases
+have not disappeared.
+
+169
+00:10:36,523 --> 00:10:40,993
+Even Adobe still licenses perpetual
+versions of some products.
+
+170
+00:10:41,373 --> 00:10:43,983
+The data points to something easy to miss.
+
+171
+00:10:43,983 --> 00:10:46,413
+Most subscriptions do not last.
+
+172
+00:10:46,413 --> 00:10:48,823
+Most apps never make much money.
+
+173
+00:10:48,823 --> 00:10:52,573
+The few that win are the ones
+people decide, month after month,
+
+174
+00:10:52,573 --> 00:10:54,463
+are still worth paying for.
+
+175
+00:10:54,843 --> 00:10:57,543
+Companies would like that
+payment to be automatic.
+
+176
+00:10:57,543 --> 00:11:01,453
+The best ones still have to
+earn it, every single month.
+
+177
+00:11:01,833 --> 00:11:03,393
+This is Hidden Ledger.
+
+178
+00:11:03,393 --> 00:11:06,393
+Every number in this video is
+sourced in the description.
+

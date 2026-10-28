@@ -59,10 +59,10 @@ export const S03Switch: React.FC = () => {
   ];
   const crack = b.rampAt(b.word(1, /fell/i, 0.7), 0.5);
   return (
-    <SceneShell drift={[0, 0]} zoom={0} beatCamera={false}>
+    <SceneShell drift={[-14, 0]} zoom={0.03} beatCamera={false}>
       {/* towers on a camera canvas */}
       <div style={{position: 'absolute', inset: 0, opacity: towersO}}>
-        <Camera frame={frame} keys={keys}>
+        <Camera frame={frame} keys={keys} sway={10}>
           <svg width={1920} height={1080} viewBox="0 0 1920 1080" style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
             <line x1={-400} y1={BASE} x2={2400} y2={BASE} stroke={C.line} strokeWidth={6} />
             {YEARS.map((y, i) => (
@@ -122,7 +122,7 @@ export const S03Switch: React.FC = () => {
             return (
               <g key={c.label}>
                 {Array.from({length: Math.floor(n * t)}).map((_, i) => (
-                  <ellipse key={i} cx={c.x + (i % 2 ? 4 : -4)} cy={820 - i * 17} rx={110} ry={26} fill={i === Math.floor(n * t) - 1 ? '#F7C55A' : C.orange} stroke={C.bg} strokeWidth={3} />
+                  <ellipse key={i} cx={c.x + (i % 2 ? 4 : -4) + Math.sin(frame / 18 + i * 0.4) * 2} cy={820 - i * 17} rx={110} ry={26} fill={i === Math.floor(n * t) - 1 ? (Math.sin(frame / 6) > 0 ? '#F7C55A' : '#FFD97A') : C.orange} stroke={C.bg} strokeWidth={3} />
                 ))}
                 <text x={c.x} y={900} textAnchor="middle" fontSize={44} fontWeight={700} fill={C.cream} fontFamily="Space Grotesk">
                   {c.label}
@@ -149,7 +149,7 @@ export const S03Switch: React.FC = () => {
             </text>
           ))}
           {/* one burst in month 1 */}
-          <rect x={200} y={760 - 300 * b.ramp(3, 0.4, 0.4)} width={80} height={300 * b.ramp(3, 0.4, 0.4)} rx={8} fill="#8C949F" />
+          <rect x={200} y={760 - 300 * b.ramp(3, -0.2, 0.4)} width={80} height={300 * b.ramp(3, -0.2, 0.4)} rx={8} fill="#8C949F" />
           {/* running total of the monthly payments */}
           <polyline
             points={Array.from({length: 13}).map((_, m) => `${220 + m * 130},${760 - 25 * Math.min(m, 12 * b.rampAt(b.word(3, /again/i, 0.5), 2.0))}`).join(' ')}
@@ -166,7 +166,7 @@ export const S03Switch: React.FC = () => {
             return <rect key={m} x={240 + m * 130 - 20} y={760 - 25 * o} width={40} height={25 * o} rx={6} fill={C.orange} opacity={o} />;
           })}
         </svg>
-        <Abs x={160} y={250} w={700} o={b.ramp(3, 0.4)}>
+        <Abs x={160} y={250} w={700} o={b.ramp(3, -0.2)}>
           <Title size={56} color="#B5BCC6">
             A box: sold once
           </Title>

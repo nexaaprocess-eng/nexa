@@ -1,0 +1,12 @@
+{
+ "method": "boundary frames from the scene chunks vs the same frames rendered fresh (scripts/stills.mjs f<frame>, JPEG q85); PSNR via ffmpeg. A one-frame shift reads ~26 dB.",
+ "boundaries": [
+  {"frame": 5073, "chunk": "s03 last", "psnr_same_db": 47.7, "psnr_neighbour_db": 25.9},
+  {"frame": 5074, "chunk": "s04 first", "psnr_same_db": 49.0, "psnr_neighbour_db": 25.8},
+  {"frame": 12677, "chunk": "s06 last", "psnr_same_db": 47.6, "psnr_neighbour_db": 26.2},
+  {"frame": 12678, "chunk": "s07 first", "psnr_same_db": 48.3, "psnr_neighbour_db": 26.1},
+  {"frame": 18002, "chunk": "s08 last", "psnr_same_db": 47.4, "psnr_neighbour_db": 26.2},
+  {"frame": 18003, "chunk": "s09 first", "psnr_same_db": 48.1, "psnr_neighbour_db": 26.1}
+ ],
+ "result": "frame-exact splices"
+}

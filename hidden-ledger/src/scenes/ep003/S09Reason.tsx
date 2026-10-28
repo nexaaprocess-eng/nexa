@@ -53,12 +53,12 @@ export const S09Reason: React.FC = () => {
         <svg width={1920} height={1080} style={{position: 'absolute', inset: 0}}>
           {months.map((m, i) => {
             const a = (i / 12) * Math.PI * 2 - Math.PI / 2;
-            const t = b.ramp(1, 0.4 + i * 0.18, 0.35);
+            const t = b.ramp(1, -0.15 + i * 0.15, 0.35);
             return <Link key={m} x={960 + Math.cos(a) * 340} y={540 + Math.sin(a) * 270} t={t} label={m} />;
           })}
           <circle cx={960 + Math.cos(frame / 20 - Math.PI / 2) * 340} cy={540 + Math.sin(frame / 20 - Math.PI / 2) * 270} r={22} fill={C.green} opacity={b.ramp(1, 2.6, 0.4)} />
         </svg>
-        <Abs x={760} y={480} w={400} align="center" o={b.ramp(1, 0.2)}>
+        <Abs x={760} y={480} w={400} align="center" o={b.ramp(1, -0.2)}>
           <Title size={58}>a sale</Title>
           <Body size={36} color={C.orange} weight={700} style={{opacity: b.ramp(1, 1.5)}}>
             → a relationship
@@ -144,9 +144,12 @@ export const S09Reason: React.FC = () => {
             );
           })}
         </svg>
+        <Abs x={160} y={140} w={1600} o={b.ramp(4, -0.2)}>
+          <div style={{fontFamily: FONT_TITLE, fontWeight: 700, fontSize: 32, letterSpacing: 4, color: C.orange}}>EASY TO MISS</div>
+        </Abs>
         <Abs x={160} y={200} w={1600}>
           {['Most subscriptions don’t last.', 'Most apps never make much money.'].map((t, i) => (
-            <div key={t} style={{fontFamily: FONT_TITLE, fontWeight: 700, fontSize: 60, color: C.cream, opacity: b.rampAt(b.word(4, [/last/i, /money/i][i], 0.3 + i * 0.2), 0.4)}}>
+            <div key={t} style={{fontFamily: FONT_TITLE, fontWeight: 700, fontSize: 60, color: C.cream, opacity: b.rampAt(b.word(4, [/subscriptions/i, /apps/i][i], 0.3 + i * 0.2), 0.4)}}>
               {t}
             </div>
           ))}

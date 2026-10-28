@@ -42,7 +42,7 @@ export const S06Data: React.FC = () => {
             const x = 60 + rnd(i) * 1800;
             const y = 150 + rnd(i + 999) * 760;
             const inside = Math.hypot(x - 1300, y - 540) < 330;
-            const o = inside ? b.ramp(0, 0.5 + rnd(i + 7) * 2, 0.4) : 0.35 * b.ramp(0, rnd(i + 5) * 1.5, 0.4) * (1 - 0.6 * b.ramp(1, 2, 0.6));
+            const o = inside ? b.ramp(0, -0.3 + rnd(i + 7) * 1.6, 0.4) : 0.35 * b.ramp(0, -0.4 + rnd(i + 5) * 1.2, 0.4) * (1 - 0.6 * b.ramp(1, 2, 0.6));
             return <circle key={i} cx={x} cy={y} r={inside ? 7 : 5} fill={inside ? C.orange : C.muted} opacity={o} />;
           })}
           <circle cx={1300} cy={540} r={340} fill="none" stroke={C.orange} strokeWidth={6} strokeDasharray="20 14" opacity={b.ramp(1, 1.5, 0.5)} />
