@@ -6,8 +6,9 @@ import {lerp, useClock, VStage, VText} from '../kit';
 
 // Short 3 (s06-01..s06-06): where an inspected return goes. One full-screen panel per destination,
 // stacked vertically and pushed up as the narration moves on, each with one large animated subject.
-// The $800B panel quotes the study's abstract with both caveats (includes never-sold excess stock;
-// a background figure the study cites, not one it measured).
+// The $800B panel shows the figure as stated (no count-up through made-up intermediate values)
+// and quotes the study's abstract with both caveats (includes never-sold excess stock; a
+// background figure the study cites, not one it measured).
 
 const Panel: React.FC<{a: number; b: number; children: React.ReactNode}> = ({a, b, children}) => {
   const {ramp} = useClock();
@@ -99,7 +100,6 @@ export const Destinations: React.FC = () => {
   const secondary = pop(tSecondary - 0.1);
 
   // 5 $800B
-  const count = ramp(t800 - 0.05, 0.9);
   const big = pop(t800 - 0.1);
   const paper = pop(tStudy - 0.45) * (1 - ramp(t800 - 0.6, 0.45));
   const sourceLine = ramp(t800 - 0.45, 0.4);
@@ -144,7 +144,7 @@ export const Destinations: React.FC = () => {
             </g>
           ))}
           <g transform={`translate(${lerp(1400, 540, slideIn)} 0)`}>
-            <Place x={0} y={480 + 198 * 1.75} s={1.75}>
+            <Place x={0} y={480 + 198 * 1.75} s={1.75} r={Math.sin((t - tCondition) * 1.8) * 4 * (1 - slideIn * 0.4)}>
               <g transform="translate(0 -128)">
                 <path d="M0 -40 L-90 20 L90 20 Z M0 -40 Q0 -70 20 -70" fill="none" stroke={C.cream} strokeWidth={6} />
               </g>
@@ -172,9 +172,9 @@ export const Destinations: React.FC = () => {
         <Heading n="2">USED · OPEN-BOX</Heading>
         <VStage>
           <Place x={540} y={880} s={2.5}>
-            <g transform={`translate(0 ${lerp(-40, -150, opened)})`} opacity={opened}>
+            <g transform={`translate(0 ${lerp(-40, -150, opened) + Math.sin((t - tOpened) * 2.2) * 6}) rotate(${Math.sin((t - tOpened) * 1.3) * 2})`} opacity={opened}>
               <Jacket />
-              {flaw > 0.01 && <circle cx={-40} cy={50} r={20 * Math.min(1.1, flaw)} fill="none" stroke={C.red} strokeWidth={6} />}
+              {flaw > 0.01 && <circle cx={-40} cy={50} r={20 * Math.min(1.1, flaw) * (1 + 0.15 * Math.sin((t - tPerfect) * 6))} fill="none" stroke={C.red} strokeWidth={6} />}
             </g>
             <Box open={opened} />
           </Place>
@@ -294,7 +294,7 @@ export const Destinations: React.FC = () => {
           </div>
         </div>
         <VText y={330} size={250} color={C.orange} s={lerp(0.7, 1, Math.min(1, big))} o={Math.min(1, big * 2)} style={{letterSpacing: -8, fontVariantNumeric: 'tabular-nums'}}>
-          ${Math.round(800 * count)}B+
+          $800B+
         </VText>
         <VText y={612} size={58} o={ramp(tReturned - 0.2, 0.4)}>
           of returned <span style={{color: C.orange, opacity: 0.15 + 0.85 * ramp(tExcess - 0.1, 0.3)}}>+ excess</span> inventory

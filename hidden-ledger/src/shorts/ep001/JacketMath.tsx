@@ -42,7 +42,8 @@ const Slider: React.FC<{label: string; value: number; min: number; max: number; 
   );
 };
 
-const Tile: React.FC<{x: number; y: number; k: number; label: string; children: React.ReactNode}> = ({x, y, k, label, children}) => (
+// dim slot from the moment the list is introduced, lit when its item is named
+const Tile: React.FC<{x: number; y: number; k: number; o: number; label: string; children: React.ReactNode}> = ({x, y, k, o, label, children}) => (
   <div
     style={{
       position: 'absolute',
@@ -52,14 +53,14 @@ const Tile: React.FC<{x: number; y: number; k: number; label: string; children: 
       height: 360,
       borderRadius: 28,
       background: C.panel,
-      border: `4px solid ${C.line}`,
+      border: `4px solid ${Math.min(1, k) > 0.5 ? C.orange : C.line}`,
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
       gap: 16,
-      opacity: Math.min(1, k * 2),
-      transform: `scale(${lerp(0.6, 1, Math.min(1.05, k))})`,
+      opacity: o * (0.25 + 0.75 * Math.min(1, k)),
+      transform: `scale(${lerp(0.92, 1, Math.min(1.05, k))})`,
     }}
   >
     <Icon size={210}>{children}</Icon>
@@ -100,8 +101,10 @@ export const JacketMath: React.FC = () => {
   // ---- jacket + price tag
   const jacketIn = pop(tHere - 0.6);
   const toResult = ramp(t44 - 0.45, 0.4);
-  const jacketY = lerp(680, 520, park);
-  const jacketS = lerp(2.6, 1.75, park);
+  // the jacket stays the hero until the receipt starts, then makes room for it
+  const shrink = ramp(tShipping - 0.6, 0.5);
+  const jacketY = lerp(lerp(680, 700, park), 520, shrink);
+  const jacketS = lerp(lerp(2.6, 2.4, park), 1.75, shrink);
   const jacketO = Math.min(1, jacketIn * 2) * (1 - toResult);
   const tagIn = pop(t100 - 0.1);
   const resale = t >= t70 + 0.3;
@@ -130,7 +133,7 @@ export const JacketMath: React.FC = () => {
       <VStage>
         {jacketO > 0.01 && (
           <g opacity={jacketO}>
-            <Place x={540} y={jacketY} s={jacketS}>
+            <Place x={540} y={jacketY} s={jacketS} r={Math.sin((t - tHere) * 1.4) * 3.5}>
               <g transform="translate(0 -128)" opacity={1 - park}>
                 <Hanger />
               </g>
@@ -236,16 +239,16 @@ export const JacketMath: React.FC = () => {
           <VText y={330} size={60} color={C.orange} o={grid}>
             REAL COSTS DEPEND ON
           </VText>
-          <Tile x={295} y={460} k={pop(tProduct - 0.1)} label="THE PRODUCT">
+          <Tile x={295} y={460} k={pop(tProduct - 0.1)} o={grid} label="THE PRODUCT">
             <Jacket />
           </Tile>
-          <Tile x={750} y={460} k={pop(tCarrier - 0.1)} label="CARRIER CONTRACT">
+          <Tile x={750} y={460} k={pop(tCarrier - 0.1)} o={grid} label="CARRIER CONTRACT">
             <Truck />
           </Tile>
-          <Tile x={295} y={860} k={pop(tWarehouse - 0.1)} label="THE WAREHOUSE">
+          <Tile x={295} y={860} k={pop(tWarehouse - 0.1)} o={grid} label="THE WAREHOUSE">
             <Warehouse />
           </Tile>
-          <Tile x={750} y={860} k={pop(tCondition - 0.1)} label="ITEM CONDITION">
+          <Tile x={750} y={860} k={pop(tCondition - 0.1)} o={grid} label="ITEM CONDITION">
             <Magnifier />
           </Tile>
         </>

@@ -2,7 +2,7 @@
   {
     "file": "output/episode-001/shorts/short_1.mp4",
     "duration": 28.367,
-    "size_mb": 7.3,
+    "size_mb": 5.9,
     "video": {
       "codec": "h264",
       "width": 1080,
@@ -25,7 +25,7 @@
   {
     "file": "output/episode-001/shorts/short_2.mp4",
     "duration": 44.333333,
-    "size_mb": 8.5,
+    "size_mb": 10.7,
     "video": {
       "codec": "h264",
       "width": 1080,
@@ -48,7 +48,7 @@
   {
     "file": "output/episode-001/shorts/short_3.mp4",
     "duration": 46.3,
-    "size_mb": 10.7,
+    "size_mb": 10.2,
     "video": {
       "codec": "h264",
       "width": 1080,
