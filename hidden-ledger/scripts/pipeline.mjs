@@ -411,8 +411,11 @@ const commands = {
       }
     }
     const content = path.join(ROOT, 'content', `episode-${EP}`);
-    fs.copyFileSync(path.join(fin, `hidden_ledger_episode_${EP}.srt`), path.join(dest, `hidden_ledger_episode_${EP}.srt`));
-    for (const f of ['sources.md', 'fact_check.csv']) fs.copyFileSync(path.join(content, f), path.join(dest, f));
+    // file names follow the delivery convention used since episode 003
+    fs.copyFileSync(path.join(fin, `hidden_ledger_episode_${EP}.srt`), path.join(dest, `episode_${EP}_subtitles.srt`));
+    fs.copyFileSync(path.join(content, 'sources.md'), path.join(dest, `episode_${EP}_sources.md`));
+    fs.copyFileSync(path.join(content, 'fact_check.csv'), path.join(dest, 'fact_check.csv'));
+    if (fs.existsSync(path.join(content, 'script_en.md'))) fs.copyFileSync(path.join(content, 'script_en.md'), path.join(dest, `episode_${EP}_script.md`));
     py('fact_table.py', ['--episode', EP, '--out', path.relative(ROOT, path.join(dest, 'fact_check.md'))]);
     ['A', 'B', 'C'].forEach((letter, i) => {
       const src = path.join(OUT, 'thumbnails', `thumbnail_${i + 1}.png`);
