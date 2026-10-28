@@ -443,7 +443,7 @@ const commands = {
       // end before the next sentence starts and before the wipe into the next scene (11 frames ahead of it, see Episode.tsx)
       const to = Math.min(tl.duration, last.end + 0.8, next ? next.start - 0.08 : Infinity, nextScene ? nextScene.start - 12 / tl.fps : Infinity);
       const name = `short_${i + 1}`;
-      const silent = renderVideo(name, fullProps, dest, {quality: 'hd', composition: 'Short', extraProps: {from, to, title: s.title}, crf: 16});
+      const silent = renderVideo(name, fullProps, dest, {quality: 'hd', composition: 'Short', extraProps: {from, to, title: s.title, layout: s.layout ?? ''}, crf: 16});
       const file = path.join(dest, `${name}.mp4`);
       // exact length (no -shortest, which can drop the last frames) + fades so the music never cuts hard;
       // the fade-out starts once the last word has been spoken

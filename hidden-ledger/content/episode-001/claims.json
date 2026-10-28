@@ -134,7 +134,7 @@
       "segments": ["s06-05"],
       "sources": ["JBL-2025"],
       "evidence": "Abstract: \"with over $800 billion of returned and excess inventory (equivalent to 3% of the U.S. GDP) passing through secondary market channels each year\".",
-      "caveats": "Includes excess (never-sold) inventory, not only returns: stated in narration and on screen."
+      "caveats": "Includes excess (never-sold) inventory, not only returns: stated in narration and on screen. Background figure in the abstract, not a result the study measured (narration says \"noted\"); no source is given in the abstract. Geography is not settled: the sentence speaks of supply chains worldwide and only compares the figure with U.S. GDP, so the \"U.S. context\" label on the episode card overstates it (the Shorts drop it). Checked against the abstract on 2026-10-28 (Wiley full text returned 403)."
     },
     {
       "id": "C15",

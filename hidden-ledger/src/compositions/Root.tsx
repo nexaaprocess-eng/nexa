@@ -28,7 +28,7 @@ export const RemotionRoot: React.FC = () => (
       height={1920}
       fps={30}
       durationInFrames={300}
-      defaultProps={{timeline: empty, subtitles: true, from: 0, to: 10, title: ''} satisfies ShortProps}
+      defaultProps={{timeline: empty, subtitles: true, from: 0, to: 10, title: '', layout: ''} satisfies ShortProps}
       calculateMetadata={({props}) => ({durationInFrames: Math.max(1, Math.round((props.to - props.from) * props.timeline.fps))})}
     />
     <Still id="Thumbnail" component={Thumbnail} width={1280} height={720} defaultProps={{variant: 1} satisfies ThumbProps} />

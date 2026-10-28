@@ -32,17 +32,20 @@
     {
       "from": "s01-01",
       "to": "s01-06",
-      "title": "Who pays for your free return?"
+      "title": "Who pays for your free return?",
+      "layout": "ep001-return-journey"
     },
     {
       "from": "s04-06",
       "to": "s04-09",
-      "title": "A $100 jacket comes back. What does it cost?"
+      "title": "A $100 jacket comes back. What does it cost?",
+      "layout": "ep001-jacket-math"
     },
     {
       "from": "s06-01",
       "to": "s06-06",
-      "title": "Where does your returned jacket go?"
+      "title": "Where does your returned jacket go?",
+      "layout": "ep001-destinations"
     }
   ],
   "scenes": [
