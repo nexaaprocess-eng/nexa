@@ -1,0 +1,18 @@
+{
+ "bundle_monthly_usd": 73.45,
+ "bundle_yearly_usd": 881.4,
+ "bundle_per_day_usd": 2.41,
+ "adobe_revenue_change_fy12_fy13_pct": -7.9,
+ "adobe_net_income_change_fy12_fy13_pct": -65.2,
+ "adobe_subscription_share_fy25_pct": 96.4,
+ "adobe_revenue_fy25_vs_fy12_x": 5.4,
+ "spotify_cost_of_revenue_share_2025_pct": 68.0,
+ "spotify_gross_margin_2025_pct": 32.0,
+ "company_a_month1_usd": 120000,
+ "company_b_month1_usd": 10000,
+ "company_b_12_months_no_churn_usd": 120000,
+ "dev_net_per_month_usd": 7.0,
+ "ltv_at_10pct_churn_usd": 70.0,
+ "ltv_at_20pct_churn_usd": 35.0,
+ "cac_usd": 40
+}

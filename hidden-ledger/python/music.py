@@ -258,6 +258,14 @@ def sfx_set(rng) -> dict[str, np.ndarray]:
     tb = np.arange(int(0.11 * SR)) / SR
     out["beep"] = np.sin(2 * np.pi * 1900 * tb) * np.minimum(1, np.minimum(tb, tb[-1] - tb) / 0.008) * 0.8
     out["register"] = add(noise_burst(rng, 0.06, 140, hp=True) * 0.8, np.concatenate([np.zeros(int(0.07 * SR)), mallet(2637, 0.5) * 0.5]))
+    # chime: soft two-note notification; buzz: phone vibration (low, filtered); decline: two low falling blips
+    out["chime"] = add(mallet(1318.5, 0.35) * 0.6, np.concatenate([np.zeros(int(0.09 * SR)), mallet(1975.5, 0.45) * 0.5]))
+    tz = np.arange(int(0.42 * SR)) / SR
+    gate = (np.sin(2 * np.pi * 7 * tz) > -0.2).astype(float)
+    out["buzz"] = np.sin(2 * np.pi * 150 * tz) * (0.6 + 0.4 * np.sin(2 * np.pi * 300 * tz)) * gate * np.minimum(1, tz / 0.02) * np.minimum(1, (tz[-1] - tz) / 0.05) * 0.5
+    td = np.arange(int(0.13 * SR)) / SR
+    blip = lambda f: np.sin(2 * np.pi * f * td) * np.minimum(1, np.minimum(td, td[-1] - td) / 0.01)
+    out["decline"] = np.concatenate([blip(440), np.zeros(int(0.05 * SR)), blip(311)]) * 0.7
     for k, v in out.items():
         out[k] = (v / (np.max(np.abs(v)) or 1) * 0.7).astype(np.float32)
     return out
