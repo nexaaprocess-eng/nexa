@@ -434,16 +434,23 @@ const commands = {
     const dest = path.join(OUT, 'shorts');
     const report = [];
     for (const [i, s] of (ep.shorts || []).entries()) {
-      const seg = (k) => tl.scenes.flatMap((x) => x.segments).find((g) => g.key === k);
+      const segs = tl.scenes.flatMap((x) => x.segments);
+      const seg = (k) => segs.find((g) => g.key === k);
+      const last = seg(s.to);
+      const next = segs[segs.indexOf(last) + 1];
+      const nextScene = tl.scenes.find((x) => x.start > last.start);
       const from = Math.max(0, seg(s.from).start - 0.3);
-      const to = Math.min(tl.duration, seg(s.to).end + 0.8);
+      // end before the next sentence starts and before the wipe into the next scene (11 frames ahead of it, see Episode.tsx)
+      const to = Math.min(tl.duration, last.end + 0.8, next ? next.start - 0.08 : Infinity, nextScene ? nextScene.start - 12 / tl.fps : Infinity);
       const name = `short_${i + 1}`;
       const silent = renderVideo(name, fullProps, dest, {quality: 'hd', composition: 'Short', extraProps: {from, to, title: s.title}, crf: 16});
       const file = path.join(dest, `${name}.mp4`);
-      // exact length (no -shortest, which can drop the last frames) + short fades so the music never cuts hard
+      // exact length (no -shortest, which can drop the last frames) + fades so the music never cuts hard;
+      // the fade-out starts once the last word has been spoken
       const dur = (Math.round((to - from) * tl.fps) / tl.fps).toFixed(4);
+      const fadeAt = Math.min(last.end - from + 0.02, Number(dur) - 0.05);
       run('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', '-i', silent, '-ss', String(from), '-t', dur, '-i', path.join(AUDIO, 'full', 'mix.wav'),
-        '-map', '0:v:0', '-map', '1:a:0', '-c:v', 'copy', '-af', `afade=t=in:d=0.15,afade=t=out:st=${(Number(dur) - 0.7).toFixed(3)}:d=0.7,apad`,
+        '-map', '0:v:0', '-map', '1:a:0', '-c:v', 'copy', '-af', `afade=t=in:d=0.15,afade=t=out:st=${fadeAt.toFixed(3)}:d=${(Number(dur) - fadeAt).toFixed(3)},apad`,
         '-c:a', 'aac', '-b:a', '256k', '-ar', '48000', '-ac', '2', '-t', dur, '-movflags', '+faststart', file]);
       fs.rmSync(silent);
       report.push(validateVideo(file, {minDur: 15, maxDur: 60}));
