@@ -22,7 +22,7 @@ export const Ep004Thumbnail: React.FC<{variant: number}> = ({variant}) => {
         <div style={{position: 'absolute', right: 50, top: 120, width: 560, textAlign: 'right'}}>
           <div style={{fontFamily: FONT_TITLE, fontWeight: 700, fontSize: 210, lineHeight: 0.9, color: K.orange, letterSpacing: -6, textShadow: '0 8px 40px rgba(0,0,0,0.6)'}}>$20</div>
           <div style={{fontFamily: FONT_TITLE, fontWeight: 700, fontSize: 92, lineHeight: 0.95, color: K.ivory, letterSpacing: -2, textShadow: '0 6px 30px rgba(0,0,0,0.7)'}}>FLIGHT?</div>
-          <div style={{fontFamily: FONT_TITLE, fontWeight: 700, fontSize: 40, color: K.ivory, marginTop: 22, opacity: 0.92}}>Who's really paying</div>
+          <div style={{fontFamily: FONT_TITLE, fontWeight: 700, fontSize: 40, color: K.ivory, marginTop: 22, opacity: 0.92}}>Who's really paying?</div>
         </div>
         <Mark />
       </AbsoluteFill>
