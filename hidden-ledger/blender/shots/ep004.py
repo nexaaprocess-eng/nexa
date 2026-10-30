@@ -241,7 +241,7 @@ def sh09(ctx):
     return R.camera((24.0, -30.0, 5.5), (6.0, -3.0, 4.5), lens=30)
 
 
-@shot("sh10", "s02", "s02-05", uses=["stage_setup"])
+@shot("sh10", "s02", "s02-06", uses=["stage_setup"])
 def sh10(ctx):
     """A balance: the fare on one side, the cost on the other. It tips the wrong way."""
     stage_setup(ctx)
@@ -263,12 +263,12 @@ def sh10(ctx):
     h.pose(0, "think")
     h.expr(0, "thinking")
     h.look(0, (-1.7, 0.8, 1.9))
-    h.look(ctx.word("s02-05", r"counts|bag"), (1.7, 0.8, 1.7), ease=14)
-    h.pose(ctx.at("s02-06"), "shrug", ease=12)
-    h.expr(ctx.at("s02-06"), "confused")
-    h.look(ctx.at("s02-06"), (0, -7, 1.6), ease=12)
-    h.pose(ctx.word("s02-06", r"secrets|three"), "stand", ease=12)
-    h.expr(ctx.word("s02-06", r"secrets|three"), "curious")
+    h.look(ctx.word("s02-06", r"counts|bag"), (1.7, 0.8, 1.7), ease=14)
+    h.pose(ctx.at("s02-07"), "shrug", ease=12)
+    h.expr(ctx.at("s02-07"), "confused")
+    h.look(ctx.at("s02-07"), (0, -7, 1.6), ease=12)
+    h.pose(ctx.word("s02-07", r"secrets|three"), "stand", ease=12)
+    h.expr(ctx.word("s02-07", r"secrets|three"), "curious")
     return R.camera((-0.6, -7.6, 1.75), (-0.6, 0.4, 1.45), lens=34)
 
 
@@ -361,7 +361,7 @@ def sh16(ctx):
     return R.camera((0.2, -6.5, 1.55), (4.6, 3.6, 2.7), lens=30)
 
 
-@shot("sh17", "s04", "s04-03", uses=["stage_setup"])
+@shot("sh17", "s04", "s04-04", uses=["stage_setup"])
 def sh17(ctx):
     """A staircase made of airline seats: each step up costs more. The passenger stands on the bottom one."""
     stage_setup(ctx)
@@ -375,14 +375,14 @@ def sh17(ctx):
     h.pose(0, "stand")
     h.expr(0, "happy")
     h.look(0, (-4, -6, 1.8))
-    up = ctx.word("s04-03", r"bottom|rung", off=-0.4)
+    up = ctx.word("s04-04", r"bottom|rung", off=-0.4)
     h.look(up, (2.0, 0.6, 3.8), ease=24)
     h.expr(up + 8, "surprised")
     h.place(up, (-3.6, 0.15), yaw=-50, z=0.42)
     return R.camera((-1.2, -8.6, 1.8), (0.4, 0.4, 2.0), lens=30)
 
 
-@shot("sh18", "s04", "s04-04", uses=["cabin_setup", "seat_in_cabin"])
+@shot("sh18", "s04", "s04-05", uses=["cabin_setup", "seat_in_cabin"])
 def sh18(ctx):
     """Same flight, different prices: the passenger turns to the neighbour (Remotion price tags)."""
     seats = cabin_setup(ctx)
@@ -402,7 +402,7 @@ def sh18(ctx):
     return R.camera((0.45, 0.15, 1.6), (-2.4, 1.0, 1.2), lens=30)
 
 
-@shot("sh18b", "s04", "s04-05", uses=["apartment_setup", "seated_at_desk"])
+@shot("sh18b", "s04", "s04-06", uses=["apartment_setup", "seated_at_desk"])
 def sh18b(ctx):
     """Back at the laptop: on every price comparison the cheap fare sits at the top (screen content from Remotion)."""
     apartment_setup(ctx)
@@ -411,11 +411,11 @@ def sh18b(ctx):
     h.expr(0, "curious")
     h.look(0, (0, 0.94, 0.9))
     h.gesture(ctx.sec(1.2), ctx.sec(1.8), {"forearm.R": (10, 0, 0)})
-    h.expr(ctx.word("s04-05", r"website"), "happy")
+    h.expr(ctx.word("s04-06", r"website"), "happy")
     return R.camera((0.9, -1.1, 1.55), (-0.03, 0.94, 0.94), lens=34)
 
 
-@shot("sh19", "s04", "s04-06", uses=["terminal_setup"])
+@shot("sh19", "s04", "s04-07", uses=["terminal_setup"])
 def sh19(ctx):
     """By the glass: planes outside; 'fill the plane first' — the passenger sits, watching the apron."""
     terminal_setup(ctx, board=False)
@@ -424,8 +424,8 @@ def sh19(ctx):
     h.pose(0, "sit")
     h.expr(0, "thinking")
     h.look(0, (8, 34, 4))
-    h.look(ctx.at("s04-07"), (-6.5, 30, 2), ease=20)
-    h.expr(ctx.at("s04-07"), "skeptical")
+    h.look(ctx.at("s04-08"), (-6.5, 30, 2), ease=20)
+    h.expr(ctx.at("s04-08"), "skeptical")
     return R.camera((-9.5, -1.6, 1.4), (-2.0, 12.0, 2.4), lens=30)
 
 

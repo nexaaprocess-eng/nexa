@@ -34,8 +34,8 @@
    "type": "illustrative",
    "claim": "Fare ladder: few cheap seats sold early; prices rise as the flight fills and departure nears; last seats can cost many times the first.",
    "segments": [
-    "s04-03",
-    "s04-04"
+    "s04-04",
+    "s04-05"
    ],
    "sources": [
     "HL-HYPO",
@@ -133,7 +133,7 @@
    "segments": [
     "s02-03",
     "s02-04",
-    "s02-05",
+    "s02-06",
     "s05-04"
    ],
    "sources": [
@@ -147,7 +147,8 @@
    "type": "fact",
    "claim": "Ryanair FY26 operating cost per passenger: fuel €26.01, staff €8.91, airport & handling €8.46, depreciation €6.59, route charges €6.33, marketing/distribution/other €4.26, maintenance €2.65; fuel ~41% of total operating expenses.",
    "segments": [
-    "s02-04"
+    "s02-04",
+    "s02-05"
    ],
    "sources": [
     "RYA-20F-FY26"
@@ -160,7 +161,7 @@
    "type": "fact",
    "claim": "Ryanair's scheduled (fare) revenue includes baggage fees and change fees.",
    "segments": [
-    "s02-05"
+    "s02-06"
    ],
    "sources": [
     "RYA-20F-FY26"
@@ -243,8 +244,8 @@
    "claim": "Ryanair fares vary with advance booking, seat availability and demand; 'load factor active – yield passive'; promotional fares may reduce yield and revenue on routes while they run; used to stimulate demand in quieter periods.",
    "segments": [
     "s04-02",
-    "s04-06",
-    "s04-07"
+    "s04-07",
+    "s04-08"
    ],
    "sources": [
     "RYA-20F-FY26"
@@ -291,6 +292,33 @@
    ],
    "evidence": "\"achieves quick turn-around times, thus reducing fuel burn and emissions when aircraft are on the ground\"",
    "method_or_caveat": "No specific minute figure is claimed (none is given in the filing)."
+  },
+  {
+   "id": "R16",
+   "type": "fact",
+   "claim": "About 80% of Ryanair's FY27 (year to March 2027) jet fuel requirements hedged (jet fuel forward swaps at ~$668/t, ~$67/bbl); unhedged competitors less able to compete.",
+   "segments": [
+    "s07-07"
+   ],
+   "sources": [
+    "RYA-20F-FY26",
+    "RYA-FY26-RESULTS"
+   ],
+   "evidence": "20-F: \"entered into jet fuel forward swap contracts covering approximately 80% of its estimated requirements for FY27 at prices equivalent to approximately U.S.$668 per metric ton\"; results: \"unprofitable airlines (further hit by high jet-fuel prices) have recently withdrawn capacity due to unhedged fuel costs which leaves them less able to compete with Ryanair's much lower costs.\"",
+   "method_or_caveat": "'Weaker rivals often do not have' paraphrases Ryanair's statement about unhedged competitors."
+  },
+  {
+   "id": "R17",
+   "type": "fact",
+   "claim": "Ryanair sells seats on a one-way basis.",
+   "segments": [
+    "s04-03"
+   ],
+   "sources": [
+    "RYA-20F-FY26"
+   ],
+   "evidence": "\"Ryanair sells seats on a one-way basis, thus removing minimum stay requirements from all travel on Ryanair scheduled services.\"",
+   "method_or_caveat": "'each seat on each flight can carry its own price' is the consequence explained in the narration, together with R09."
   },
   {
    "id": "R12",

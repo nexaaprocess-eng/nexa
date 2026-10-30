@@ -69,13 +69,19 @@
   ]
  },
  "s02-05": {
+  "visual": "sh09 · Hold on the apron; the fuel callout stays lit",
+  "onScreen": [
+   "Fuel ≈ 41% of the bill"
+  ]
+ },
+ "s02-06": {
   "visual": "sh10 · A balance scale on the stage: the fare pan rides higher than the cost pan; the passenger looks from one to the other",
   "onScreen": [
    "Fare €50.66 incl. bag & change fees",
    "Cost €63.21"
   ]
  },
- "s02-06": {
+ "s02-07": {
   "visual": "sh10 · The passenger shrugs, then looks up: three secrets",
   "onScreen": [
    "On the fare alone −€12.55 per passenger",
@@ -144,13 +150,19 @@
   ]
  },
  "s04-03": {
+  "visual": "sh16 · Board keeps changing: one-way pricing",
+  "onScreen": [
+   "Sold one way: every seat, its own price"
+  ]
+ },
+ "s04-04": {
   "visual": "sh17 · A staircase of airline seats; the passenger on the bottom step, price tags rising up the stairs",
   "onScreen": [
    "ILLUSTRATIVE FARES",
    "$20 … $189"
   ]
  },
- "s04-04": {
+ "s04-05": {
   "visual": "sh18 · Cabin two-shot: the passenger turns to the neighbour; price tags over their heads",
   "onScreen": [
    "$20 booked weeks ahead",
@@ -158,7 +170,7 @@
    "ILLUSTRATIVE FARES"
   ]
  },
- "s04-05": {
+ "s04-06": {
   "visual": "sh18b · Back at the laptop: a comparison site with the budget fare on top",
   "onScreen": [
    "fills the plane early",
@@ -166,14 +178,14 @@
    "brings you to its website"
   ]
  },
- "s04-06": {
+ "s04-07": {
   "visual": "sh19 · By the glass, sitting, watching aircraft outside",
   "onScreen": [
    "“load factor active – yield passive”",
    "Fill the plane first. Worry about the price of each seat second."
   ]
  },
- "s04-07": {
+ "s04-08": {
   "visual": "sh19 · Skeptical look",
   "onScreen": [
    "Promotional fares: lower revenue, fuller planes"
@@ -337,6 +349,12 @@
   "onScreen": []
  },
  "s07-07": {
+  "visual": "sh31 · Night, the passenger on the bench; a fuel-hedge note",
+  "onScreen": [
+   "Ryanair: ~80% of fuel for the year to March 2027 already hedged"
+  ]
+ },
+ "s07-08": {
   "visual": "sh31 · Hold",
   "onScreen": []
  },

@@ -120,6 +120,17 @@ def main():
     mpath = root / "manifest.json"
     manifest = json.loads(mpath.read_text()) if mpath.exists() else {}
     only = set(a.only.split(",")) if a.only else None
+    # takes are reusable by content: when segments are renumbered (a line inserted), unchanged text is not re-generated
+    import shutil
+    snap = root / "_prev_takes"
+    shutil.rmtree(snap, ignore_errors=True)
+    snap.mkdir(parents=True, exist_ok=True)
+    by_hash = {}
+    for k, v in manifest.items():
+        if (root / v["file"]).exists():
+            dst = snap / f"{v['hash']}.wav"
+            shutil.copyfile(root / v["file"], dst)
+            by_hash[v["hash"]] = (k, v, dst)
     out, failures, rendered, cached = {}, [], 0, 0
     for scene in ep["scenes"]:
         for seg in scene["segments"]:
@@ -130,6 +141,13 @@ def main():
             prev = manifest.get(key)
             if prev and path.exists() and ((prev.get("hash") == h and not a.force) or (only and key not in only)):
                 out[key] = prev
+                cached += 1
+                continue
+            if h in by_hash and not a.force:
+                _, prev, src = by_hash[h]
+                path.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(src, path)
+                out[key] = {**prev, "file": str(path.relative_to(root))}
                 cached += 1
                 continue
             print(f"-> {key}: {text[:72]}...", flush=True)
@@ -162,6 +180,7 @@ def main():
                 failures.append({"segment": key, "problems": probs, "asr": hyp})
             rendered += 1
             write_json(mpath, {**manifest, **out})  # checkpoint: an interrupted run resumes here
+    shutil.rmtree(snap, ignore_errors=True)
     write_json(mpath, out)
     print(f"narration: {rendered} rendered, {cached} cached, {len(failures)} still flagged (engine={ENGINE})")
     if failures:

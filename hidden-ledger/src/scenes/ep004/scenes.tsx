@@ -104,7 +104,8 @@ export const E4S02: React.FC = () => {
         hud={() => (
           <>
             <SourceNote at={b.at(3)} frame={f}>{SRC_RYA} · cost per passenger</SourceNote>
-            <Figure x={1340} y={760} kicker="+ sales, maintenance, other" value="€6.91" size={70} at={w(/sales|everything/i, 0.9)} frame={f} w={520} align="right" />
+            <Figure x={1340} y={760} kicker="+ sales, maintenance, other" value="€6.91" size={70} at={w(/sales|everything/i, 0.9)} frame={f} w={520} align="right" until={b.at(4) - 4} />
+            <Figure x={1220} y={720} kicker="Fuel" value="≈ 41%" note="of all Ryanair's operating costs" size={110} at={b.at(4)} frame={f} w={640} align="right" accent={K.orange} />
           </>
         )}
       >
@@ -123,16 +124,16 @@ export const E4S02: React.FC = () => {
         move={{from: [960, 540, 1.0], to: [960, 520, 1.06]}}
         hud={() => (
           <>
-            <SourceNote at={b.at(4)} frame={f}>{SRC_RYA}</SourceNote>
-            <Figure x={1160} y={720} kicker="On the fare alone" value="−€12.55" note="per passenger" size={110} at={b.at(5)} frame={f} w={700} accent={K.red} until={b.word(5, /secrets|three/i, 0.85) - 4} />
-            <Figure x={1160} y={760} kicker="" value="Three secrets." size={96} at={b.word(5, /secrets|three/i, 0.85)} frame={f} w={700} />
+            <SourceNote at={b.at(5)} frame={f}>{SRC_RYA}</SourceNote>
+            <Figure x={1160} y={720} kicker="On the fare alone" value="−€12.55" note="per passenger" size={110} at={b.at(6)} frame={f} w={700} accent={K.red} until={b.word(6, /secrets|three/i, 0.85) - 4} />
+            <Figure x={1160} y={760} kicker="" value="Three secrets." size={96} at={b.word(6, /secrets|three/i, 0.85)} frame={f} w={700} />
           </>
         )}
       >
         {(s) => (
           <>
-            <PriceTag p={s.a('fare_pan')} text="Fare €50.66" sub="incl. bag & change fees" at={b.word(4, /fifty|50|ticket/i, 0.35)} frame={f} size={42} />
-            <PriceTag p={s.a('cost_pan')} text="Cost €63.21" at={b.word(4, /fifty|50|ticket/i, 0.35) + 10} frame={f} size={42} color="#DCE6EC" />
+            <PriceTag p={s.a('fare_pan')} text="Fare €50.66" sub="incl. bag & change fees" at={b.word(5, /fifty|50|ticket/i, 0.35)} frame={f} size={42} />
+            <PriceTag p={s.a('cost_pan')} text="Cost €63.21" at={b.word(5, /fifty|50|ticket/i, 0.35) + 10} frame={f} size={42} color="#DCE6EC" />
           </>
         )}
       </Shot>
@@ -223,23 +224,32 @@ export const E4S04: React.FC = () => {
   return (
     <AbsoluteFill>
       <Missing />
-      <Shot id="sh16" move={{from: [960, 560, 1.0], to: [1020, 500, 1.1]}} hud={() => <Quote x={70} y={170} w={1000} size={40} text="Prices generally varying on the basis of advance booking, seat availability and demand." who={SRC_RYA} at={b.word(1, /vary|fares/i, 0.4)} frame={f} />}>
+      <Shot
+        id="sh16"
+        move={{from: [960, 560, 1.0], to: [1020, 500, 1.1]}}
+        hud={() => (
+          <>
+            <Quote x={70} y={170} w={1000} size={40} text="Prices generally varying on the basis of advance booking, seat availability and demand." who={SRC_RYA} at={b.word(1, /vary|fares/i, 0.4)} frame={f} />
+            <Chips x={70} y={480} frame={f} size={42} items={[{t: 'sold one way: every seat, its own price', at: b.word(2, /one|way/i, 0.3)}]} />
+          </>
+        )}
+      >
         {(s) => <OnScreen quad={s.quad('board')} w={1280} h={700}><Board frame={f} mode="fares" at={b.at(0)} /></OnScreen>}
       </Shot>
-      <Shot id="sh17" move={{from: [900, 600, 1.0], to: [1100, 420, 1.06]}} hud={() => <IllustrativeTag at={b.at(2)} frame={f} text="ILLUSTRATIVE FARES" />}>
+      <Shot id="sh17" move={{from: [900, 600, 1.0], to: [1100, 420, 1.06]}} hud={() => <IllustrativeTag at={b.at(3)} frame={f} text="ILLUSTRATIVE FARES" />}>
         {(s) => (
           <>
             {prices.map((p, i) => (
-              <PriceTag key={i} p={s.a(`step${i}`)} text={p} at={b.at(2) + 10 + i * 9} frame={f} size={40} dy={-30} color={i === 0 ? '#FFE3CC' : K.ivory} />
+              <PriceTag key={i} p={s.a(`step${i}`)} text={p} at={b.at(3) + 10 + i * 9} frame={f} size={40} dy={-30} color={i === 0 ? '#FFE3CC' : K.ivory} />
             ))}
           </>
         )}
       </Shot>
-      <Shot id="sh18" move={{from: [960, 540, 1.0], to: [960, 540, 1.06]}} hud={() => <IllustrativeTag at={b.at(3)} frame={f} text="ILLUSTRATIVE FARES" />}>
+      <Shot id="sh18" move={{from: [960, 540, 1.0], to: [960, 540, 1.06]}} hud={() => <IllustrativeTag at={b.at(4)} frame={f} text="ILLUSTRATIVE FARES" />}>
         {(s) => (
           <>
-            <PriceTag p={s.a('hero_tag')} text="$20" sub="booked weeks ahead" at={b.at(3) + 6} frame={f} size={44} color="#FFE3CC" />
-            <PriceTag p={s.a('neighbour_tag')} text="$160" sub="booked yesterday" at={b.word(3, /yesterday|paid/i, 0.5)} frame={f} size={44} />
+            <PriceTag p={s.a('hero_tag')} text="$20" sub="booked weeks ahead" at={b.at(4) + 6} frame={f} size={44} color="#FFE3CC" />
+            <PriceTag p={s.a('neighbour_tag')} text="$160" sub="booked yesterday" at={b.word(4, /yesterday|paid/i, 0.5)} frame={f} size={44} />
           </>
         )}
       </Shot>
@@ -247,19 +257,19 @@ export const E4S04: React.FC = () => {
         id="sh18b"
         move={{from: [980, 540, 1.04], to: [1040, 520, 1.1]}}
         hud={() => (
-          <Chips x={1180} y={240} frame={f} size={40} items={[{t: 'fills the plane early', at: b.word(4, /fill/i, 0.3)}, {t: 'tops every price comparison', at: b.word(4, /top|comparison/i, 0.55)}, {t: 'brings you to its website', at: b.word(4, /website|bring/i, 0.8)}]} />
+          <Chips x={1180} y={240} frame={f} size={40} items={[{t: 'fills the plane early', at: b.word(5, /fill/i, 0.3)}, {t: 'tops every price comparison', at: b.word(5, /top|comparison/i, 0.55)}, {t: 'brings you to its website', at: b.word(5, /website|bring/i, 0.8)}]} />
         )}
       >
-        {(s) => <OnScreen quad={s.quad('laptop')}><Comparison frame={f} at={b.at(4)} /></OnScreen>}
+        {(s) => <OnScreen quad={s.quad('laptop')}><Comparison frame={f} at={b.at(5)} /></OnScreen>}
       </Shot>
       <Shot
         id="sh19"
         move={{from: [960, 540, 1.0], to: [1000, 560, 1.08]}}
         hud={() => (
           <>
-            <Quote x={70} y={170} w={940} size={52} text="load factor active – yield passive" who={SRC_RYA} at={b.word(5, /load|factor/i, 0.35)} frame={f} />
-            <Figure x={80} y={440} kicker="In plain words" value="Fill the plane first." note="Worry about the price of each seat second." size={80} at={b.word(5, /plain/i, 0.6)} frame={f} w={1000} until={b.at(6) - 4} />
-            <Figure x={80} y={440} kicker="Promotional fares" value="Lower revenue, fuller planes" note="Ryanair says it keeps running them to fill quiet periods." size={70} at={b.at(6)} frame={f} w={1000} />
+            <Quote x={70} y={170} w={940} size={52} text="load factor active – yield passive" who={SRC_RYA} at={b.word(6, /load|factor/i, 0.35)} frame={f} />
+            <Figure x={80} y={440} kicker="In plain words" value="Fill the plane first." note="Worry about the price of each seat second." size={80} at={b.word(6, /plain/i, 0.6)} frame={f} w={1000} until={b.at(7) - 4} />
+            <Figure x={80} y={440} kicker="Promotional fares" value="Lower revenue, fuller planes" note="Ryanair says it keeps running them to fill quiet periods." size={70} at={b.at(7)} frame={f} w={1000} />
           </>
         )}
       />
@@ -458,7 +468,16 @@ export const E4S07: React.FC = () => {
       )}>
         {(s) => <OnScreen quad={s.quad('board')} w={1280} h={700}><Board frame={f} mode="cancelled" at={b.word(4, /cancelled/i, 0.6)} /></OnScreen>}
       </Shot>
-      <Shot id="sh31" move={{from: [960, 540, 1.0], to: [940, 560, 1.07]}} />
+      <Shot
+        id="sh31"
+        move={{from: [960, 540, 1.0], to: [940, 560, 1.07]}}
+        hud={() => (
+          <>
+            <SourceNote at={b.at(6)} frame={f}>{SRC_RYA} · jet fuel swaps for FY27</SourceNote>
+            <Figure x={70} y={170} kicker="Ryanair, year to March 2027" value="≈ 80%" note="of its fuel already hedged" size={120} at={b.word(6, /eighty|80|percent/i, 0.4)} frame={f} w={900} />
+          </>
+        )}
+      />
     </AbsoluteFill>
   );
 };

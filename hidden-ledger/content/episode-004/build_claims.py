@@ -19,7 +19,7 @@ claim("I02", "illustrative", "One 197-seat aircraft at Ryanair's FY26 fleet-aver
       ["s03-08"], ["HL-HYPO", "RYA-20F-FY26"], "calculations.json be_seats_197, sold_seats_197_at_94pct, profit_seats_197.",
       "Illustrative: the load factors are fleet averages and cost is not identical per flight; labelled ILLUSTRATIVE on screen.")
 claim("I03", "illustrative", "Fare ladder: few cheap seats sold early; prices rise as the flight fills and departure nears; last seats can cost many times the first.",
-      ["s04-03", "s04-04"], ["HL-HYPO", "RYA-20F-FY26"],
+      ["s04-04", "s04-05"], ["HL-HYPO", "RYA-20F-FY26"],
       "Ryanair: \"prices generally varying on the basis of advance booking, seat availability and demand.\" Ladder steps on screen are hypothetical.",
       "Shape illustrative; no airline's actual fare buckets are shown.")
 claim("F01", "fact", "Frontier 2025: fare revenue per passenger $44.60; non-fare passenger revenue per passenger $63.79.",
@@ -43,14 +43,14 @@ claim("F05", "fact", "Frontier 2025: operating expenses $3,873m / 33.2m passenge
 claim("R01", "fact", "Ryanair FY26 (year to 31 March 2026): 208 million passengers; Europe's largest budget airline (Ryanair: world's largest low fare airline by passenger traffic).", ["s02-02"], ["RYA-20F-FY26", "RYA-FY26-RESULTS", "RYA-AR-FY25"],
       "20-F: \"Revenue Passengers Booked (millions) 208\"; results: \"Traffic grew 4% to 208.4m\"; AR FY25: \"We are now the world's largest low fare airline by passenger traffic, having overtaken our great mentor Southwest Airlines.\"", "")
 claim("R02", "fact", "Ryanair FY26 per booked passenger: average fare €50.66; ancillary €23.94; total revenue €74.60; cost €63.21.",
-      ["s02-03", "s02-04", "s02-05", "s05-04"], ["RYA-20F-FY26"],
+      ["s02-03", "s02-04", "s02-06", "s05-04"], ["RYA-20F-FY26"],
       "Selected Operating Data: \"Average Booked Passenger Fare (€) 50.66\"; \"Ancillary Rev. per Booked Passenger (€) 23.94\"; \"Total Rev. per Booked Passenger (€) 74.60\"; \"Cost Per Booked Passenger (€) 63.21\".",
       "Per booked passenger, fleet-wide average.")
 claim("R03", "fact", "Ryanair FY26 operating cost per passenger: fuel €26.01, staff €8.91, airport & handling €8.46, depreciation €6.59, route charges €6.33, marketing/distribution/other €4.26, maintenance €2.65; fuel ~41% of total operating expenses.",
-      ["s02-04"], ["RYA-20F-FY26"],
+      ["s02-04", "s02-05"], ["RYA-20F-FY26"],
       "Per-passenger table: \"Fuel and oil 26.01 ... Staff costs 8.91 ... Airport and handling charges 8.46 ... Depreciation 6.59 ... Route charges 6.33 ... Marketing, distribution and other 4.26 ... Maintenance, materials and repairs 2.65 ... Total operating expenses 63.21\"; \"fuel accounted for approximately 41% of total operating expenses in FY26\".",
       "Narration rounds; 'aircraft themselves' = depreciation; 'air traffic control charges' = route charges (Eurocontrol en-route navigation charges).")
-claim("R04", "fact", "Ryanair's scheduled (fare) revenue includes baggage fees and change fees.", ["s02-05"], ["RYA-20F-FY26"],
+claim("R04", "fact", "Ryanair's scheduled (fare) revenue includes baggage fees and change fees.", ["s02-06"], ["RYA-20F-FY26"],
       "\"Scheduled revenues relate to the sale of flight seats and associated direct flight fees, including baggage fares and change fees.\"",
       "So the €50.66 'fare' is not a seat-only price.")
 claim("R05", "fact", "Ryanair: operating costs of each flight do not vary significantly with passengers flown.", ["s03-02"], ["RYA-20F-FY26"],
@@ -69,7 +69,7 @@ claim("R08", "fact", "Ryanair: 197 seats on Boeing 737-8200, 189 on 737-800NG; t
       "20-F FY26: \"...each having 197 seats, 410 Boeing 737-800 'Next Generation' ('NG') aircraft, each having 189 seats\"; AR FY25: \"high-seat density of 189 seats on the Boeing 737-800NGs and 197 on the Boeing 737-8200 aircraft. This is in contrast to the 162 seats and two-class configuration of the Boeing 737-800 aircraft used by traditional network airlines\".",
       "162 is Ryanair's description of a typical legacy configuration.")
 claim("R09", "fact", "Ryanair fares vary with advance booking, seat availability and demand; 'load factor active – yield passive'; promotional fares may reduce yield and revenue on routes while they run; used to stimulate demand in quieter periods.",
-      ["s04-02", "s04-06", "s04-07"], ["RYA-20F-FY26"],
+      ["s04-02", "s04-07", "s04-08"], ["RYA-20F-FY26"],
       "\"Ryanair offers low fares, with prices generally varying on the basis of advance booking, seat availability and demand.\" \"Ryanair's discounted fares are driven by Ryanair's 'load factor active – yield passive' strategy whereby seats are priced to ensure that high load factor targets are achieved.\" \"Promotional fares may have the effect of increasing load factors and reducing Ryanair's yield and passenger revenues on the relevant routes during the periods they are in effect. Ryanair expects to continue to offer significant fare promotions to stimulate demand in periods of lower activity or during off-peak times\".", "")
 claim("R10", "fact", "Ryanair FY26 ancillary revenue €4.99bn (≈€24 per passenger), ~32% of total operating revenue; includes priority boarding, reserved seating, in-flight sales.",
       ["s05-03"], ["RYA-20F-FY26", "RYA-FY26-RESULTS"],
@@ -80,6 +80,12 @@ claim("R11", "fact", "Ryanair FY26 average daily flight hour utilization 9.48 ho
 claim("R15", "fact", "Ryanair achieves quick turnaround times between flights.", ["s06-05"], ["RYA-20F-FY26"],
       "\"achieves quick turn-around times, thus reducing fuel burn and emissions when aircraft are on the ground\"",
       "No specific minute figure is claimed (none is given in the filing).")
+claim("R16", "fact", "About 80% of Ryanair's FY27 (year to March 2027) jet fuel requirements hedged (jet fuel forward swaps at ~$668/t, ~$67/bbl); unhedged competitors less able to compete.", ["s07-07"], ["RYA-20F-FY26", "RYA-FY26-RESULTS"],
+      "20-F: \"entered into jet fuel forward swap contracts covering approximately 80% of its estimated requirements for FY27 at prices equivalent to approximately U.S.$668 per metric ton\"; results: \"unprofitable airlines (further hit by high jet-fuel prices) have recently withdrawn capacity due to unhedged fuel costs which leaves them less able to compete with Ryanair's much lower costs.\"",
+      "'Weaker rivals often do not have' paraphrases Ryanair's statement about unhedged competitors.")
+claim("R17", "fact", "Ryanair sells seats on a one-way basis.", ["s04-03"], ["RYA-20F-FY26"],
+      "\"Ryanair sells seats on a one-way basis, thus removing minimum stay requirements from all travel on Ryanair scheduled services.\"",
+      "'each seat on each flight can carry its own price' is the consequence explained in the narration, together with R09.")
 claim("R12", "fact", "Ryanair fleet at 31 March 2026: 621 Boeing 737 and 26 Airbus A320 (Lauda).", ["s06-06"], ["RYA-FY26-RESULTS"],
       "\"At March 31, 2026 the Group had an operating fleet of 621 (2025: 587) Boeing 737 and 26 (2025: 26) Airbus A320 aircraft.\"",
       "Hence 'almost the whole fleet' (96%).")
