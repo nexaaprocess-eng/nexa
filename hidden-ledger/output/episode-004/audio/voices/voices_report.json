@@ -1,0 +1,91 @@
+{
+  "text": "Meet our passenger. The airline's website says the flight costs twenty dollars. So they book it. Then the checkout keeps going. A cabin bag: $25. A window seat: $12. Here's the thing. Once the door closes, an empty seat can never be sold again. So for the airline, a cheap seat beats an empty one. But who is really paying for it?",
+  "tts_text": "Meet our passenger. The airline's website says the flight costs twenty dollars. So they book it. Then the checkout keeps going. A cabin bag: 25 dollars. A window seat: 12 dollars. Here's the thing. Once the door closes, an empty seat can never be sold again. So for the airline, a cheap seat beats an empty one. But who is really paying for it?",
+  "speed": 0.96,
+  "results": [
+    {
+      "duration": 21.84,
+      "peak_db": -3.0,
+      "rms_db": -20.8,
+      "silence_ratio": 0.212,
+      "longest_silence": 0.52,
+      "clipped_samples": 0,
+      "voice": "af_heart",
+      "ok": true,
+      "file": "output/episode-004/audio/voices/voice_af_heart.wav",
+      "ffprobe_duration": 21.84,
+      "render_seconds": 9.7,
+      "wpm": 170.3
+    },
+    {
+      "duration": 22.08,
+      "peak_db": -3.0,
+      "rms_db": -21.87,
+      "silence_ratio": 0.209,
+      "longest_silence": 0.54,
+      "clipped_samples": 0,
+      "voice": "af_bella",
+      "ok": true,
+      "file": "output/episode-004/audio/voices/voice_af_bella.wav",
+      "ffprobe_duration": 22.08,
+      "render_seconds": 6.1,
+      "wpm": 168.5
+    },
+    {
+      "duration": 23.15,
+      "peak_db": -3.0,
+      "rms_db": -24.18,
+      "silence_ratio": 0.198,
+      "longest_silence": 0.58,
+      "clipped_samples": 0,
+      "voice": "am_michael",
+      "ok": true,
+      "file": "output/episode-004/audio/voices/voice_am_michael.wav",
+      "ffprobe_duration": 23.15,
+      "render_seconds": 6.2,
+      "wpm": 160.7
+    },
+    {
+      "duration": 18.539,
+      "peak_db": -3.0,
+      "rms_db": -23.45,
+      "silence_ratio": 0.139,
+      "longest_silence": 0.32,
+      "clipped_samples": 0,
+      "voice": "am_fenrir",
+      "ok": true,
+      "file": "output/episode-004/audio/voices/voice_am_fenrir.wav",
+      "ffprobe_duration": 18.538667,
+      "render_seconds": 5.1,
+      "wpm": 200.7
+    },
+    {
+      "duration": 17.55,
+      "peak_db": -3.0,
+      "rms_db": -22.25,
+      "silence_ratio": 0.097,
+      "longest_silence": 0.26,
+      "clipped_samples": 0,
+      "voice": "am_puck",
+      "ok": true,
+      "file": "output/episode-004/audio/voices/voice_am_puck.wav",
+      "ffprobe_duration": 17.55,
+      "render_seconds": 4.7,
+      "wpm": 212.0
+    },
+    {
+      "duration": 22.0,
+      "peak_db": -3.0,
+      "rms_db": -18.73,
+      "silence_ratio": 0.177,
+      "longest_silence": 0.46,
+      "clipped_samples": 0,
+      "voice": "bm_george",
+      "ok": true,
+      "file": "output/episode-004/audio/voices/voice_bm_george.wav",
+      "ffprobe_duration": 22.0,
+      "render_seconds": 5.5,
+      "wpm": 169.1
+    }
+  ]
+}

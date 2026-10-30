@@ -1,0 +1,362 @@
+{
+ "_about": "Every factual claim in Episode 004, with the narration segments that use it. Sources: fact_check.csv / sources.md. Calculations: calculations.py.",
+ "claims": [
+  {
+   "id": "I01",
+   "type": "illustrative",
+   "claim": "Hypothetical checkout: $20 fare + $25 cabin bag + $12 window seat + $35 checked suitcase = $92.",
+   "segments": [
+    "s01-03",
+    "s01-04"
+   ],
+   "sources": [
+    "HL-HYPO"
+   ],
+   "evidence": "calculations.json checkout_total_usd.",
+   "method_or_caveat": "Labelled MADE-UP EXAMPLE on screen and in narration. Not the prices of any named airline."
+  },
+  {
+   "id": "I02",
+   "type": "illustrative",
+   "claim": "One 197-seat aircraft at Ryanair's FY26 fleet-average break-even load factor (80%) needs ~158 passengers; at the 94% actual load factor ~185, i.e. ~27 seats above break-even.",
+   "segments": [
+    "s03-08"
+   ],
+   "sources": [
+    "HL-HYPO",
+    "RYA-20F-FY26"
+   ],
+   "evidence": "calculations.json be_seats_197, sold_seats_197_at_94pct, profit_seats_197.",
+   "method_or_caveat": "Illustrative: the load factors are fleet averages and cost is not identical per flight; labelled ILLUSTRATIVE on screen."
+  },
+  {
+   "id": "I03",
+   "type": "illustrative",
+   "claim": "Fare ladder: few cheap seats sold early; prices rise as the flight fills and departure nears; last seats can cost many times the first.",
+   "segments": [
+    "s04-03",
+    "s04-04"
+   ],
+   "sources": [
+    "HL-HYPO",
+    "RYA-20F-FY26"
+   ],
+   "evidence": "Ryanair: \"prices generally varying on the basis of advance booking, seat availability and demand.\" Ladder steps on screen are hypothetical.",
+   "method_or_caveat": "Shape illustrative; no airline's actual fare buckets are shown."
+  },
+  {
+   "id": "F01",
+   "type": "fact",
+   "claim": "Frontier 2025: fare revenue per passenger $44.60; non-fare passenger revenue per passenger $63.79.",
+   "segments": [
+    "s01-05",
+    "s05-05"
+   ],
+   "sources": [
+    "FRONTIER-10K-2025"
+   ],
+   "evidence": "Comparative Operating Statistics: \"Fare revenue per passenger ($) | 44.60 | 43.09\"; \"Non-fare passenger revenue per passenger ($) | 63.79 | 67.50\".",
+   "method_or_caveat": "Non-fare passenger revenue = bags, seats, changes, bundles etc. Excludes 'other revenue' ($3.78)."
+  },
+  {
+   "id": "F02",
+   "type": "fact",
+   "claim": "Frontier ancillary revenue per passenger rose from $60.55 (2021) to $67.57 (2025).",
+   "segments": [
+    "s05-06"
+   ],
+   "sources": [
+    "FRONTIER-10K-2025"
+   ],
+   "evidence": "\"these offerings have helped increase our ancillary revenues from $60.55 per passenger in 2021 to $67.57 per passenger in 2025.\"",
+   "method_or_caveat": "Frontier's 'total ancillary' = non-fare passenger revenue + other revenue."
+  },
+  {
+   "id": "F03",
+   "type": "fact",
+   "claim": "Budget fares unbundle: bags, seat selection, priority boarding, changes, onboard sales sold separately.",
+   "segments": [
+    "s05-02"
+   ],
+   "sources": [
+    "FRONTIER-10K-2025",
+    "RYA-20F-FY26"
+   ],
+   "evidence": "Frontier: \"Such additional options include carry-on and checked baggage, advance seat selection, ... and ticket changes and cancellations... We also promote and sell products in-flight\". Ryanair: ancillary \"including priority boarding, reserved seating and in-flight sales of merchandise\".",
+   "method_or_caveat": "Exact allowances vary by airline and fare type; narration says 'usually'."
+  },
+  {
+   "id": "F04",
+   "type": "fact",
+   "claim": "Frontier 2025 load factor 78.4%.",
+   "segments": [
+    "s07-02"
+   ],
+   "sources": [
+    "FRONTIER-10K-2025"
+   ],
+   "evidence": "\"Load factor | 78.4 | % | 76.8 | %\"",
+   "method_or_caveat": "Frontier defines load factor as RPMs/ASMs; Ryanair's is seats sold/seats flown. Close but not identical definitions."
+  },
+  {
+   "id": "F05",
+   "type": "fact",
+   "claim": "Frontier 2025: operating expenses $3,873m / 33.2m passengers = ~$116.66 per passenger vs total revenue per passenger $112.17; net loss $137m.",
+   "segments": [
+    "s07-03"
+   ],
+   "sources": [
+    "FRONTIER-10K-2025"
+   ],
+   "evidence": "\"Total operating expenses | $ | 3,873\"; \"Passengers (thousands) | 33,200\"; \"Total revenue per passenger ($) | 112.17\"; \"We generated a net loss of $137 million during the year ended December 31, 2025\".",
+   "method_or_caveat": "Cost per passenger derived (calculations.json frontier_cost_per_pax_usd)."
+  },
+  {
+   "id": "R01",
+   "type": "fact",
+   "claim": "Ryanair FY26 (year to 31 March 2026): 208 million passengers; Europe's largest budget airline (Ryanair: world's largest low fare airline by passenger traffic).",
+   "segments": [
+    "s02-02"
+   ],
+   "sources": [
+    "RYA-20F-FY26",
+    "RYA-FY26-RESULTS",
+    "RYA-AR-FY25"
+   ],
+   "evidence": "20-F: \"Revenue Passengers Booked (millions) 208\"; results: \"Traffic grew 4% to 208.4m\"; AR FY25: \"We are now the world's largest low fare airline by passenger traffic, having overtaken our great mentor Southwest Airlines.\"",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "R02",
+   "type": "fact",
+   "claim": "Ryanair FY26 per booked passenger: average fare €50.66; ancillary €23.94; total revenue €74.60; cost €63.21.",
+   "segments": [
+    "s02-03",
+    "s02-04",
+    "s02-05",
+    "s05-04"
+   ],
+   "sources": [
+    "RYA-20F-FY26"
+   ],
+   "evidence": "Selected Operating Data: \"Average Booked Passenger Fare (€) 50.66\"; \"Ancillary Rev. per Booked Passenger (€) 23.94\"; \"Total Rev. per Booked Passenger (€) 74.60\"; \"Cost Per Booked Passenger (€) 63.21\".",
+   "method_or_caveat": "Per booked passenger, fleet-wide average."
+  },
+  {
+   "id": "R03",
+   "type": "fact",
+   "claim": "Ryanair FY26 operating cost per passenger: fuel €26.01, staff €8.91, airport & handling €8.46, depreciation €6.59, route charges €6.33, marketing/distribution/other €4.26, maintenance €2.65; fuel ~41% of total operating expenses.",
+   "segments": [
+    "s02-04"
+   ],
+   "sources": [
+    "RYA-20F-FY26"
+   ],
+   "evidence": "Per-passenger table: \"Fuel and oil 26.01 ... Staff costs 8.91 ... Airport and handling charges 8.46 ... Depreciation 6.59 ... Route charges 6.33 ... Marketing, distribution and other 4.26 ... Maintenance, materials and repairs 2.65 ... Total operating expenses 63.21\"; \"fuel accounted for approximately 41% of total operating expenses in FY26\".",
+   "method_or_caveat": "Narration rounds; 'aircraft themselves' = depreciation; 'air traffic control charges' = route charges (Eurocontrol en-route navigation charges)."
+  },
+  {
+   "id": "R04",
+   "type": "fact",
+   "claim": "Ryanair's scheduled (fare) revenue includes baggage fees and change fees.",
+   "segments": [
+    "s02-05"
+   ],
+   "sources": [
+    "RYA-20F-FY26"
+   ],
+   "evidence": "\"Scheduled revenues relate to the sale of flight seats and associated direct flight fees, including baggage fares and change fees.\"",
+   "method_or_caveat": "So the €50.66 'fare' is not a seat-only price."
+  },
+  {
+   "id": "R05",
+   "type": "fact",
+   "claim": "Ryanair: operating costs of each flight do not vary significantly with passengers flown.",
+   "segments": [
+    "s03-02"
+   ],
+   "sources": [
+    "RYA-20F-FY26"
+   ],
+   "evidence": "\"The operating costs of each flight do not vary significantly with the number of passengers flown, and therefore, a relatively small change in the number of passengers, fare pricing, or traffic mix could have a disproportionate effect on operating and financial results.\"",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "C01",
+   "type": "derived",
+   "claim": "Ryanair FY26 average flight: total operating expenses €13,170.1m / 1,151.8k sectors ≈ €11,434 per flight; 208.4m passengers / 1,151.8k sectors ≈ 181 passengers per flight.",
+   "segments": [
+    "s03-03"
+   ],
+   "sources": [
+    "RYA-20F-FY26",
+    "RYA-FY26-RESULTS"
+   ],
+   "evidence": "20-F: \"Sectors Flown ('000) 1,151.8\"; results: \"Total operating expenses ... 13,170.1\"; \"208.4m\" passengers.",
+   "method_or_caveat": "Derived average across all routes (calculations.json). Includes €85m exceptional charge."
+  },
+  {
+   "id": "C02",
+   "type": "derived",
+   "claim": "Ryanair FY26 revenue per passenger minus cost per passenger: €74.60 − €63.21 = €11.39.",
+   "segments": [
+    "s05-04"
+   ],
+   "sources": [
+    "RYA-20F-FY26"
+   ],
+   "evidence": "See R02.",
+   "method_or_caveat": "Operating margin per passenger, before interest and tax."
+  },
+  {
+   "id": "R06",
+   "type": "fact",
+   "claim": "Ryanair FY26 break-even load factor 80%; booked passenger load factor 94%.",
+   "segments": [
+    "s03-07",
+    "s07-02"
+   ],
+   "sources": [
+    "RYA-20F-FY26"
+   ],
+   "evidence": "\"Break-even Load Factor 80%\"; \"Booked Passenger Load Factor 94%\" (FY2026 column).",
+   "method_or_caveat": "Ryanair definition: \"the average percent of seats that must be filled on an average flight at current average fares for the revenue to break even with the operating costs\". FY25 was 84%."
+  },
+  {
+   "id": "R08",
+   "type": "fact",
+   "claim": "Ryanair: 197 seats on Boeing 737-8200, 189 on 737-800NG; traditional network airlines' two-class 737-800 has 162 seats.",
+   "segments": [
+    "s03-08",
+    "s06-02"
+   ],
+   "sources": [
+    "RYA-20F-FY26",
+    "RYA-AR-FY25"
+   ],
+   "evidence": "20-F FY26: \"...each having 197 seats, 410 Boeing 737-800 'Next Generation' ('NG') aircraft, each having 189 seats\"; AR FY25: \"high-seat density of 189 seats on the Boeing 737-800NGs and 197 on the Boeing 737-8200 aircraft. This is in contrast to the 162 seats and two-class configuration of the Boeing 737-800 aircraft used by traditional network airlines\".",
+   "method_or_caveat": "162 is Ryanair's description of a typical legacy configuration."
+  },
+  {
+   "id": "R09",
+   "type": "fact",
+   "claim": "Ryanair fares vary with advance booking, seat availability and demand; 'load factor active – yield passive'; promotional fares may reduce yield and revenue on routes while they run; used to stimulate demand in quieter periods.",
+   "segments": [
+    "s04-02",
+    "s04-06",
+    "s04-07"
+   ],
+   "sources": [
+    "RYA-20F-FY26"
+   ],
+   "evidence": "\"Ryanair offers low fares, with prices generally varying on the basis of advance booking, seat availability and demand.\" \"Ryanair's discounted fares are driven by Ryanair's 'load factor active – yield passive' strategy whereby seats are priced to ensure that high load factor targets are achieved.\" \"Promotional fares may have the effect of increasing load factors and reducing Ryanair's yield and passenger revenues on the relevant routes during the periods they are in effect. Ryanair expects to continue to offer significant fare promotions to stimulate demand in periods of lower activity or during off-peak times\".",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "R10",
+   "type": "fact",
+   "claim": "Ryanair FY26 ancillary revenue €4.99bn (≈€24 per passenger), ~32% of total operating revenue; includes priority boarding, reserved seating, in-flight sales.",
+   "segments": [
+    "s05-03"
+   ],
+   "sources": [
+    "RYA-20F-FY26",
+    "RYA-FY26-RESULTS"
+   ],
+   "evidence": "Results: \"Ancillary revenue was solid, rising 6% to €4.99BN (€24 per passenger)\"; 20-F: \"Ancillary Revenues accounted for approximately 32% of Ryanair's total operating revenues in FY26\"; \"Ancillary revenues relate to activities connected with the flight service, including priority boarding, reserved seating and in-flight sales of merchandise.\"",
+   "method_or_caveat": "'Last year' = Ryanair FY26 (to March 2026). Checked bags are NOT in ancillary at Ryanair (they are in fares, see R04)."
+  },
+  {
+   "id": "R11",
+   "type": "fact",
+   "claim": "Ryanair FY26 average daily flight hour utilization 9.48 hours.",
+   "segments": [
+    "s06-04"
+   ],
+   "sources": [
+    "RYA-20F-FY26"
+   ],
+   "evidence": "\"Average Daily Flight Hour Utilization (hours) 9.48\"",
+   "method_or_caveat": "Narration: 'about nine and a half hours'."
+  },
+  {
+   "id": "R15",
+   "type": "fact",
+   "claim": "Ryanair achieves quick turnaround times between flights.",
+   "segments": [
+    "s06-05"
+   ],
+   "sources": [
+    "RYA-20F-FY26"
+   ],
+   "evidence": "\"achieves quick turn-around times, thus reducing fuel burn and emissions when aircraft are on the ground\"",
+   "method_or_caveat": "No specific minute figure is claimed (none is given in the filing)."
+  },
+  {
+   "id": "R12",
+   "type": "fact",
+   "claim": "Ryanair fleet at 31 March 2026: 621 Boeing 737 and 26 Airbus A320 (Lauda).",
+   "segments": [
+    "s06-06"
+   ],
+   "sources": [
+    "RYA-FY26-RESULTS"
+   ],
+   "evidence": "\"At March 31, 2026 the Group had an operating fleet of 621 (2025: 587) Boeing 737 and 26 (2025: 26) Airbus A320 aircraft.\"",
+   "method_or_caveat": "Hence 'almost the whole fleet' (96%)."
+  },
+  {
+   "id": "R13",
+   "type": "fact",
+   "claim": "Ryanair prioritises airports with competitive prices, uses cheaper gates and outdoor boarding stairs rather than jetways, requires online check-in.",
+   "segments": [
+    "s06-07"
+   ],
+   "sources": [
+    "RYA-20F-FY26"
+   ],
+   "evidence": "\"Ryanair prioritizes airports that offer competitive prices.\" \"Ryanair endeavors to reduce its airport charges by opting, when practicable, for less expensive gate locations as well as outdoor boarding stairs, rather than jetways\" \"Ryanair requires all passengers to check-in on the Internet\".",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "R14",
+   "type": "fact",
+   "claim": "Unit cost ex fuel per passenger (Ryanair's comparison, latest FY results): Ryanair €36, Wizz €62, easyJet €90, Southwest €147, IAG €178, Lufthansa €178, Air France-KLM €253.",
+   "segments": [
+    "s06-08"
+   ],
+   "sources": [
+    "RYA-FY26-PRES"
+   ],
+   "evidence": "Slide 'Europe's Lowest Costs – Gap Widens': \"Unit cost ex fuel 36 62 90 147 178 178 253\" (RYA, WIZ, EZJ, LUV, IAG, LUF, AFKLM); \"Source: latest FY Results\".",
+   "method_or_caveat": "Ryanair's own investor-presentation comparison; competitors' fiscal years and definitions differ. Attributed as 'Ryanair puts...' in narration and on screen."
+  },
+  {
+   "id": "S01",
+   "type": "fact",
+   "claim": "Spirit Airlines filed chapter 11 on 18 Nov 2024 (emerged 12 Mar 2025) and again on 29 Aug 2025.",
+   "segments": [
+    "s07-04"
+   ],
+   "sources": [
+    "SPIRIT-10K-2025",
+    "SPIRIT-8K-AUG25"
+   ],
+   "evidence": "10-K: \"On November 18, 2024, Spirit Airlines ... commenced a voluntary case under chapter 11\"; \"On March 12, 2025 ... we emerged\"; 8-K: \"On August 29, 2025, Spirit Aviation Holdings ... Voluntary Petition for Reorganization\". Press release: \"For more than 30 years, Spirit Airlines has played a pioneering role in making travel more accessible\".",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "S02",
+   "type": "fact",
+   "claim": "On 2 May 2026 Spirit began an orderly wind-down, cancelled all flights, citing the material increase in oil prices.",
+   "segments": [
+    "s07-05"
+   ],
+   "sources": [
+    "SPIRIT-8K-MAY26"
+   ],
+   "evidence": "Exhibit 99.1, May 2, 2026: \"the Company has started an orderly wind-down of operations, effective immediately. All Spirit flights have been cancelled\"; \"the recent material increase in oil prices and other pressures on the business have significantly impacted Spirit's financial outlook\".",
+   "method_or_caveat": ""
+  }
+ ]
+}

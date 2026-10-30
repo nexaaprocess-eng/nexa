@@ -1,0 +1,15 @@
+{
+ "checkout_total_usd": 92,
+ "ryanair_cost_per_flight_eur": 11434,
+ "ryanair_pax_per_flight": 180.9,
+ "ryanair_revenue_per_flight_eur": 13496,
+ "ryanair_margin_per_pax_eur": 11.39,
+ "ryanair_fare_minus_cost_per_pax_eur": -12.55,
+ "ryanair_ancillary_share_pct": 32.1,
+ "be_seats_197": 157.6,
+ "sold_seats_197_at_94pct": 185.2,
+ "profit_seats_197": 27.6,
+ "frontier_cost_per_pax_usd": 116.66,
+ "frontier_loss_per_pax_usd": 4.49,
+ "frontier_nonfare_vs_fare_x": 1.43
+}

@@ -84,9 +84,12 @@ def cmd_voices(args):
     ep = load_episode(args.episode)
     out = output_dir(args.episode) / "audio" / "voices"
     out.mkdir(parents=True, exist_ok=True)
-    text = normalize_for_tts(TEST_TEXT, ep.get("lexicon"))
+    # an episode can override the comparison set: "voiceTest": {"voices": [...], "text": "..."}
+    vt = ep.get("voiceTest", {})
+    test_text, test_voices = vt.get("text", TEST_TEXT), vt.get("voices", TEST_VOICES)
+    text = normalize_for_tts(test_text, ep.get("lexicon"))
     rows = []
-    for v in TEST_VOICES:
+    for v in test_voices:
         t0 = time.time()
         try:
             x = peak_normalize(synth(text, v, args.speed or 0.96, "en-us"))
@@ -95,12 +98,12 @@ def cmd_voices(args):
             a = analyze(x, SR)
             a.update(voice=v, ok=True, file=str(path.relative_to(out.parent.parent.parent.parent)),
                      ffprobe_duration=ffprobe_duration(path), render_seconds=round(time.time() - t0, 1),
-                     wpm=round(len(TEST_TEXT.split()) / a["duration"] * 60, 1))
+                     wpm=round(len(test_text.split()) / a["duration"] * 60, 1))
         except Exception as e:  # noqa: BLE001
             a = {"voice": v, "ok": False, "error": str(e)}
         print(json.dumps(a))
         rows.append(a)
-    write_json(out / "voices_report.json", {"text": TEST_TEXT, "tts_text": text, "speed": args.speed or 0.96, "results": rows})
+    write_json(out / "voices_report.json", {"text": test_text, "tts_text": text, "speed": args.speed or 0.96, "results": rows})
 
 
 def seg_hash(text: str, voice: str, speed: float, lang: str) -> str:

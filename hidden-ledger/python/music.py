@@ -266,6 +266,14 @@ def sfx_set(rng) -> dict[str, np.ndarray]:
     td = np.arange(int(0.13 * SR)) / SR
     blip = lambda f: np.sin(2 * np.pi * f * td) * np.minimum(1, np.minimum(td, td[-1] - td) / 0.01)
     out["decline"] = np.concatenate([blip(440), np.zeros(int(0.05 * SR)), blip(311)]) * 0.7
+    # episode 004+: jet = distant engine swell (low band-limited noise, 3.2 s); stamp = rubber-stamp hit
+    nj = int(3.2 * SR)
+    tj = np.arange(nj) / SR
+    rumble = np.convolve(rng.standard_normal(nj), np.ones(60) / 60, mode="same")
+    hiss = rng.standard_normal(nj) - np.convolve(rng.standard_normal(nj), np.ones(8) / 8, mode="same")
+    envj = np.sin(np.pi * np.clip(tj / 3.2, 0, 1)) ** 1.5
+    out["jet"] = (rumble * 1.0 + hiss * 0.08) * envj
+    out["stamp"] = add(thump(0.35, 160, 70) * 0.9, noise_burst(rng, 0.04, 120, hp=True) * 0.5)
     for k, v in out.items():
         out[k] = (v / (np.max(np.abs(v)) or 1) * 0.7).astype(np.float32)
     return out

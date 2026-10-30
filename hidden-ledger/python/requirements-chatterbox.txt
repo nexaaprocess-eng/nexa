@@ -1,0 +1,5 @@
+# Episode 004+ narration engine (CPU). Install torch first from the CPU index (see `node scripts/pipeline.mjs setup-chatterbox`).
+chatterbox-tts==0.1.7     # MIT (Resemble AI); outputs carry Resemble's inaudible "Perth" provenance watermark
+faster-whisper==1.2.1     # MIT, per-take intelligibility check
+jiwer==4.0.0              # Apache-2.0
+soundfile==0.14.0         # BSD

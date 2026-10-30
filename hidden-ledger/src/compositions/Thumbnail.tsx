@@ -6,6 +6,7 @@ import {C, FONT_TITLE} from '../themes/theme';
 import {loadFonts} from '../themes/fonts';
 import {Ep002Thumbnail} from '../scenes/ep002/Thumbnail';
 import {Ep003Thumbnail} from '../scenes/ep003/Thumbnail';
+import {Ep004Thumbnail} from '../scenes/ep004/Thumbnail';
 
 loadFonts();
 
@@ -117,7 +118,7 @@ const Ep001Thumbnail: React.FC<{variant: number}> = ({variant}) => {
 };
 
 // Thumbnail designs per episode (pipeline: `thumbnails --episode XXX` renders each variant at 1280x720).
-const THUMBS: Record<string, React.FC<{variant: number}>> = {'001': Ep001Thumbnail, '002': Ep002Thumbnail, '003': Ep003Thumbnail};
+const THUMBS: Record<string, React.FC<{variant: number}>> = {'001': Ep001Thumbnail, '002': Ep002Thumbnail, '003': Ep003Thumbnail, '004': Ep004Thumbnail};
 
 export const Thumbnail: React.FC<ThumbProps> = ({variant, episode = '001'}) => {
   const T = THUMBS[episode] ?? Ep001Thumbnail;

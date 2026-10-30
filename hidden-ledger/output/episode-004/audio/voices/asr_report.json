@@ -1,0 +1,32 @@
+[
+  {
+    "voice": "af_heart",
+    "wer": 0.0,
+    "transcript": "Meet our passenger. The airline's website says the flight costs $20, so they book it. Then the checkout keeps going. A cabin bag, $25. A window seat, $12. Here's the thing. Once the door closes, an empty seat can never be sold again. So for the airline, a cheap seat beats an empty one, but who is really paying for it?"
+  },
+  {
+    "voice": "af_bella",
+    "wer": 0.0,
+    "transcript": "Meet our passenger. The airline's website says the flight costs $20 so they book it. Then the checkout keeps going. A cabin bag, $25. A window seat, $12, here's the thing. Once the door closes, an empty seat can never be sold again. So for the airline, a cheap seat beats an empty one. But who is really paying for it?"
+  },
+  {
+    "voice": "am_michael",
+    "wer": 0.0,
+    "transcript": "Meet our passenger. The airline's website says the flight costs $20 so they book it. Then the checkout keeps going. A cabin bag, $25. A window seat, $12. Here's the thing. Once the door closes, an empty seat can never be sold again. So for the airline, a cheap seat beats an empty one. But who is really paying for it?"
+  },
+  {
+    "voice": "am_fenrir",
+    "wer": 0.0,
+    "transcript": "Meet our passenger. The airline's website says the flight costs $20 so they book it. Then the checkout keeps going. A cabin bag $25. A window seat $12. Here's the thing. Once the door closes, an empty seat can never be sold again. So for the airline, a cheap seat beats an empty one. But who is really paying for it?"
+  },
+  {
+    "voice": "am_puck",
+    "wer": 0.0,
+    "transcript": "Meet our passenger. The airline's website says the flight costs $20, so they book it. Then the checkout keeps going. A cabin bag $25, a window seat $12, here's the thing. Once the door closes, an empty seat can never be sold again. So for the airline, a cheap seat beats an empty one, but who is really paying for it?"
+  },
+  {
+    "voice": "bm_george",
+    "wer": 0.0,
+    "transcript": "Meet our passenger. The airline's website says the flight costs $20 so they book it. Then the checkout keeps going. A cabin bag, $25. A window seat, $12. Here's the thing. Once the door closes, an empty seat can never be sold again. So for the airline, a cheap seat beats an empty one. But who is really paying for it?"
+  }
+]

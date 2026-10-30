@@ -3,7 +3,7 @@
 // Usage: node scripts/pipeline.mjs <command> [--episode 001] [--quality preview|hd] [--no-subs] [--concurrency N]
 //        episode options: [--name full_video_v2] [--bitrate 8M]
 // Commands: setup | doctor | voices | narration | pilot | episode | shorts | thumbnails | verify | final (= audio | render | encode | qa)
-import {spawnSync} from 'node:child_process';
+import {spawn, spawnSync} from 'node:child_process';
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import os from 'node:os';
@@ -43,8 +43,11 @@ const ffprobeJson = (file) =>
   JSON.parse(run('ffprobe', ['-v', 'error', '-show_entries', 'format=duration,size,bit_rate:stream=codec_type,codec_name,width,height,r_frame_rate,sample_rate,channels,nb_frames', '-of', 'json', file], {quiet: true}).stdout);
 
 // ------------------------------------------------------------------ steps
+// Chatterbox (episode 004+) runs in its own venv (torch CPU); Kokoro episodes use the main .venv.
+const CBX_PY = process.env.HL_CHATTERBOX_PY || (IS_WIN ? path.join(ROOT, '.venv-cbx', 'Scripts', 'python.exe') : path.join(ROOT, '.venv-cbx', 'bin', 'python'));
 function narration() {
-  py('generate_voice.py', ['narration', '--episode', EP]);
+  if (episode().voice.engine === 'chatterbox') run(CBX_PY, [path.join('python', 'chatterbox_narration.py'), '--episode', EP]);
+  else py('generate_voice.py', ['narration', '--episode', EP]);
 }
 
 function timeline(name, scenes, until) {
@@ -55,9 +58,38 @@ function timeline(name, scenes, until) {
   py('mix.py', ['--episode', EP, '--name', name]);
   const tl = JSON.parse(fs.readFileSync(path.join(AUDIO, name, 'timeline.json'), 'utf8'));
   const props = path.join(AUDIO, name, 'props.json');
-  fs.writeFileSync(props, JSON.stringify({timeline: tl, subtitles: !flag('no-subs')}));
+  fs.writeFileSync(props, JSON.stringify({timeline: tl, subtitles: !flag('no-subs'), ...cineProps()}));
   return {tl, props};
 }
+
+// ------------------------------------------------------------------ cinematic episodes (004+): Blender shots
+const ASSET_PORT = 8766;
+const BLENDER = process.env.BLENDER || 'blender';
+function cineProps() {
+  if (episode().style !== 'cine') return {};
+  const mf = path.join(OUT, 'shots', 'manifest.json');
+  const shots = fs.existsSync(mf) ? JSON.parse(fs.readFileSync(mf, 'utf8')) : {};
+  return {cine: {shots, assetBase: `http://127.0.0.1:${ASSET_PORT}/`}};
+}
+function refreshProps(name = 'full') {
+  const props = path.join(AUDIO, name, 'props.json');
+  if (!fs.existsSync(props)) return;
+  const p = JSON.parse(fs.readFileSync(props, 'utf8'));
+  fs.writeFileSync(props, JSON.stringify({...p, ...cineProps()}));
+}
+function shotIds() {
+  const f = path.join(ROOT, 'blender', 'shots', `ep${EP}.py`);
+  return [...fs.readFileSync(f, 'utf8').matchAll(/@shot\("(sh\d+b?)"/g)].map((m) => m[1]);
+}
+// Serves the project folder to the Remotion renderer (shot videos are fetched over HTTP instead of being copied
+// into every bundle). Returns a stop() function.
+function assetServer() {
+  if (episode().style !== 'cine') return () => {};
+  const srv = spawn(PY, ['-m', 'http.server', String(ASSET_PORT), '--bind', '127.0.0.1', '--directory', ROOT], {stdio: 'ignore'});
+  spawnSync(IS_WIN ? 'timeout' : 'sleep', ['1']);
+  return () => srv.kill();
+}
+
 
 function renderVideo(name, props, destDir, {quality = opt('quality', 'preview'), composition = 'Episode', extraProps, crf = 20} = {}) {
   fs.mkdirSync(destDir, {recursive: true});
@@ -217,8 +249,10 @@ function renderPlan(tl, crf) {
     hashFiles(h, sceneFiles);
     const t0 = from / fps;
     const t1 = (to + 1) / fps;
+    const cine = cineProps().cine;
+    const shotHashes = cine ? Object.values(cine.shots).filter((m) => m.t1 > t0 && m.t0 < t1).map((m) => [m.id, m.hash, fs.existsSync(path.join(ROOT, m.file)) ? fs.statSync(path.join(ROOT, m.file)).mtimeMs : 0]) : [];
     h.update(JSON.stringify({sc, boundaries, total: tl.durationInFrames, fps, crf, from, to,
-      subs: tl.subtitles.filter((c) => c.end > t0 && c.start < t1)}));
+      subs: tl.subtitles.filter((c) => c.end > t0 && c.start < t1), shotHashes}));
     const hash = h.digest('hex').slice(0, 12);
     return {scene: sc.id, from, to, frames: to - from + 1, hash, file: `${sc.id}_${hash}.mp4`};
   });
@@ -247,6 +281,11 @@ const commands = {
     if (!fs.existsSync(PY)) run(IS_WIN ? 'python' : 'python3', ['-m', 'venv', '.venv']);
     run(PY, ['-m', 'pip', 'install', '-r', path.join('python', 'requirements.txt')]);
     py('download_model.py', []);
+  },
+  'setup-chatterbox'() {
+    if (!fs.existsSync(CBX_PY)) run(IS_WIN ? 'python' : 'python3.11', ['-m', 'venv', '.venv-cbx']);
+    run(CBX_PY, ['-m', 'pip', 'install', 'torch==2.6.0', 'torchaudio==2.6.0', '--index-url', 'https://download.pytorch.org/whl/cpu']);
+    run(CBX_PY, ['-m', 'pip', 'install', '-r', path.join('python', 'requirements-chatterbox.txt')]);
   },
   doctor() {
     py('doctor.py', ['--episode', EP], {allowFail: true});
@@ -318,7 +357,20 @@ const commands = {
     narration();
     timeline('full');
   },
+  // 3D shots: render (resumable, cached per shot) + composite + manifest. --only sh01,sh02 limits the set.
+  shots() {
+    const only = opt('only');
+    for (const id of shotIds()) {
+      if (only && !only.split(',').includes(id)) continue;
+      run(BLENDER, ['-b', '--factory-startup', '--python', path.join('blender', 'render_shot.py'), '--', '--episode', EP, '--shot', id, '--mode', opt('mode', 'all')]);
+    }
+    py('composite_shots.py', ['--episode', EP, ...(only ? ['--only', only] : [])]);
+    refreshProps();
+  },
   render() {
+    const stopServer = assetServer();
+    process.on('exit', stopServer);
+    refreshProps();
     const {tl, props} = loadFull();
     const parts = path.join(OUT, 'final', 'parts');
     fs.mkdirSync(parts, {recursive: true});

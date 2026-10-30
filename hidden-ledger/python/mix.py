@@ -119,10 +119,10 @@ def word_cues(tl: dict, episode: str) -> list[tuple[float, str, float]]:
     return out
 
 
-def sfx_events(tl: dict) -> list[tuple[float, str]]:
+def sfx_events(tl: dict, transitions: str = "wipe") -> list[tuple[float, str]]:
     ev = []
     for i, sc in enumerate(tl["scenes"]):
-        if i:
+        if i and transitions == "wipe":  # episodes with cinematic cuts ("transitions": "cut") get no whoosh
             ev.append((sc["start"] - 0.35, "whoosh"))
         for j, seg in enumerate(sc["segments"]):
             if seg["duck"]:
@@ -176,7 +176,8 @@ def main():
     # sfx
     sfx = np.zeros((n, 2), dtype=np.float32)
     lib = {p.stem: sf.read(str(p), dtype="float32")[0] for p in (ROOT / "assets" / "sfx").glob("*.wav")}
-    events = [(t, n, 0.0) for t, n in sfx_events(tl)] + word_cues(tl, a.episode)
+    from common import load_episode
+    events = [(t, n, 0.0) for t, n in sfx_events(tl, load_episode(a.episode).get("transitions", "wipe"))] + word_cues(tl, a.episode)
     for t, name, gdb in events:
         s = lib.get(name)
         if s is None:
