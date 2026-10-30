@@ -20,6 +20,7 @@ import importlib
 import inspect
 import json
 import math
+import os
 import sys
 import time
 from pathlib import Path
@@ -40,6 +41,8 @@ import hl_sets as S  # noqa: E402
 
 FPS = 30
 W, H = 1920, 1080
+PLATE_SPP = 40  # static plate, OIDN-denoised
+CHAR_SPP = 6    # character layer: 6 spp + fast OIDN (the denoiser's quality mode was 15 s/frame on this CPU)
 
 
 class ShotCtx:
@@ -51,8 +54,8 @@ class ShotCtx:
         self.segs = {g["key"]: g for sc in tl["scenes"] for g in sc["segments"]}
         self.actors: list[hl_anim.Acting] = []
         self.step = 2
-        self.char_samples = 10
-        self.plate_samples = 40  # static plate: OIDN-denoised, 40 spp is clean
+        self.char_samples = int(os.environ.get("HL_CHAR_SPP", CHAR_SPP))
+        self.plate_samples = PLATE_SPP
         self.margin = 0.05
         self.shadow_dir = None
         self.chars_pct = 100
@@ -180,12 +183,16 @@ def char_crop(ctx, cam, frames):
 def source_hash(shot, mod, t0, t1, tl):
     """(plate_hash, full_hash): the plate depends on code only; the character layer also on the narration timing."""
     h = hashlib.sha256()
-    for f in ("hl_char.py", "hl_anim.py", "hl_sets.py", "hl_render.py", "render_shot.py"):
+    # plate: what the static image depends on (not the character-pass settings in this file)
+    for f in ("hl_char.py", "hl_sets.py", "hl_render.py"):
         h.update((HERE / f).read_bytes())
     h.update(inspect.getsource(shot["build"]).encode())
     for nm in shot.get("uses", []):
         h.update(inspect.getsource(getattr(mod, nm)).encode())
+    h.update(f"plate_spp={PLATE_SPP}".encode())
     plate = h.hexdigest()[:12]
+    for f in ("hl_anim.py", "render_shot.py"):
+        h.update((HERE / f).read_bytes())
     segs = [g for sc in tl["scenes"] for g in sc["segments"] if g["end"] > t0 and g["start"] < t1]
     h.update(json.dumps([round(t0, 3), round(t1, 3), [(g["key"], g["start"], g["end"], g.get("words")) for g in segs]]).encode())
     return plate, h.hexdigest()[:12]
@@ -264,9 +271,37 @@ def main():
     if a.mode in ("chars", "all") and ctx.actors:
         crop = char_crop(ctx, cam, frames)
         if crop:
+            # Character pass, fast path: the set only masks and catches shadows; it is not path-traced again.
+            #  * floors/grounds: shadow catchers (contact shadows), invisible to bounce rays
+            #  * everything else static: holdout (occludes the characters where it is in front), casts shadows,
+            #    but takes no part in indirect light (the shot's fill lights stand in for the room bounce)
+            catch = ("Floor", "Tarmac", "Cyclorama", "Ground", "Street", "Rim")
             for o in S.col(S.STATIC).all_objects:
-                if o.type == "MESH":
+                if o.type not in ("MESH", "CURVE"):
+                    continue
+                o.visible_diffuse = o.visible_glossy = o.visible_transmission = o.visible_volume_scatter = False
+                if any(k in o.name for k in catch):
                     o.is_shadow_catcher = True
+                else:
+                    o.is_holdout = True
+            # emissive set pieces (city windows, screens, strip lights) stop being sampled as lights here: the
+            # characters are lit by the shot's lamps + sky, and light-tree sampling of hundreds of emitters was the
+            # dominant per-ray cost
+            for m in bpy.data.materials:
+                if m.name.startswith("E_"):
+                    m.cycles.emission_sampling = "NONE"
+            sc.cycles.max_bounces = 4
+            sc.cycles.diffuse_bounces = 2
+            sc.cycles.glossy_bounces = 2
+            # stand-in for the room's warm bounce light (the set no longer bounces light in this pass)
+            dyn = [o for o in S.col(S.DYNAMIC).all_objects if o.type == "ARMATURE"]
+            if dyn:
+                tgt = sum((o.matrix_world.translation for o in dyn), Vector()) / len(dyn) + Vector((0, 0, 1.0))
+                cpos = cam.matrix_world.translation
+                bpos = tgt + (cpos - tgt).normalized() * 2.5 + Vector((0, 0, -0.6))
+                R.area_light("BounceFill", tuple(bpos), tuple(tgt), power=110, size=3.0, color=(1.0, 0.72, 0.48))
+            sc.cycles.denoising_quality = "FAST"
+            sc.cycles.denoising_prefilter = "FAST"
             sc.render.film_transparent = True
             sc.render.image_settings.color_mode = "RGBA"
             sc.cycles.samples = ctx.char_samples
@@ -288,7 +323,12 @@ def main():
             sc.render.use_placeholder = True
             sc.render.filepath = str(cdir / "####")
             t = time.time()
+            if os.environ.get("HL_PROBE"):
+                exec(open(os.environ["HL_PROBE"]).read())
             if todo:
+                lim = int(os.environ.get("HL_MAX_FRAMES", "0"))
+                if lim:  # timing tests: render only the first `lim` frames
+                    sc.frame_end = min(sc.frame_end, todo[0] + (lim - 1) * ctx.step)
                 bpy.ops.render.render(animation=True)
             print(f"CHARS {a.shot} done in {time.time() - t:.0f}s ({(time.time() - t) / max(1, len(todo)):.1f}s/frame)", flush=True)
     meta_path.write_text(json.dumps(meta, indent=1))
