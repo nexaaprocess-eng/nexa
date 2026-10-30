@@ -44,12 +44,14 @@ def tarmac_setup(ctx, az=40, elev=4.5, stairs=True, plane=True):
     if stairs:
         S.boarding_stairs("Stairs", (13.0, -7.4, 0), yaw=90, height=2.2)
     S.airliner("FarPlane", (-60, 70, 0), yaw=160, simple=True, door_anchor=False)
+    crisp_tail()
     sun = R.golden(az=az, elev=elev, sun_power=3.4, sky_strength=0.45, lamp_elev=elev + 4)
     ctx.shadow_dir = R.sun_dir(sun)
 
 
 def terminal_setup(ctx, night=False, board=True):
     S.terminal(board=board, night=night)
+    crisp_tail()
     if night:
         sun = R.dusk_night()
         R.area_light("HallFill", (0, -6, 8), (0, 0, 0), power=5000, size=14, color=(1.0, 0.82, 0.62))
@@ -187,7 +189,7 @@ def sh05(ctx):
     return R.camera((0.0, -6.8, 1.7), (0, 0.2, 1.35), lens=38)
 
 
-@shot("sh06", "s01", "s01-06", uses=["tarmac_setup"])
+@shot("sh06", "s01", "s01-06", uses=["tarmac_setup", "crisp_tail"])
 def sh06(ctx):
     """Golden-hour apron: the passenger, backpack on, looks up at the aircraft. The question."""
     tarmac_setup(ctx, az=60, elev=3.5, stairs=False)
@@ -201,7 +203,7 @@ def sh06(ctx):
 
 
 # ================================================================== S02 · What one passenger costs
-@shot("sh07", "s02", uses=["tarmac_setup"])
+@shot("sh07", "s02", uses=["tarmac_setup", "crisp_tail"])
 def sh07(ctx):
     """Wide side view: the passenger crosses the apron and climbs the outdoor stairs."""
     tarmac_setup(ctx, az=55, elev=4.0)
@@ -232,7 +234,6 @@ def sh08(ctx):
 def sh09(ctx):
     """The cost of a flight, attached to the things that cost money: fuel, crew, airport, aircraft, air traffic control."""
     tarmac_setup(ctx, az=300, elev=5.0)
-    crisp_tail()
     # fuel truck under the wing, control tower and terminal in the distance
     S.box("FuelTruck", (6.5, 2.4, 2.6), (1.5, -10.5, 1.5), S.M("fueltruck", (0.85, 0.84, 0.8, 1), rough=0.4), bevel=0.15)
     S.box("FuelCab", (2.2, 2.4, 2.2), (5.5, -10.5, 1.3), S.M("fuelcab", S.ORANGE, rough=0.4), bevel=0.15)
@@ -304,7 +305,6 @@ def sh11(ctx):
 def sh12(ctx):
     """Wide: the aircraft at the stand in the low sun — one flight, one bill (plate only + Remotion camera move)."""
     tarmac_setup(ctx, az=80, elev=3.0, stairs=True)
-    crisp_tail()
     return R.camera((-34, -40, 3.4), (-1, 0, 3.6), lens=40)
 
 
@@ -360,7 +360,7 @@ def sh15(ctx):
 
 
 # ================================================================== S04 · Secret two: the price ladder
-@shot("sh16", "s04", uses=["terminal_setup"])
+@shot("sh16", "s04", uses=["terminal_setup", "crisp_tail"])
 def sh16(ctx):
     """Departure hall at golden hour: the passenger watches a fares board that keeps changing."""
     terminal_setup(ctx)
@@ -433,7 +433,6 @@ def sh18b(ctx):
 def sh19(ctx):
     """By the glass: planes outside; 'fill the plane first' — the passenger sits, watching the apron."""
     terminal_setup(ctx, board=False)
-    crisp_tail()
     ctx.floor_shadows = False  # seated behind a bench: no visible floor shadow, and the lounge ceiling would darken the catcher
     h = ctx.hero()
     h.place(0, (-6.5, 2.4), yaw=180, z=-0.12)  # forward on the seat: the backpack clears the seat back
@@ -580,7 +579,7 @@ def sh24(ctx):
     return cam
 
 
-@shot("sh25", "s06", "s06-04", uses=["tarmac_setup"])
+@shot("sh25", "s06", "s06-04", uses=["tarmac_setup", "crisp_tail"])
 def sh25(ctx):
     """The turnaround: passengers off down the stairs while the next ones wait; the clock is running."""
     tarmac_setup(ctx, az=300, elev=5.0)
@@ -601,7 +600,7 @@ def sh25(ctx):
     return R.camera((28.0, -26.0, 4.0), (9.0, -6.0, 2.6), lens=36)
 
 
-@shot("sh26", "s06", "s06-06", uses=["tarmac_setup"])
+@shot("sh26", "s06", "s06-06", uses=["tarmac_setup", "crisp_tail"])
 def sh26(ctx):
     """A row of identical aircraft on the apron; outdoor stairs, no jet bridges."""
     tarmac_setup(ctx, az=70, elev=3.5, plane=True)
@@ -684,7 +683,7 @@ def sh29(ctx):
     return R.camera((0.4, -7.6, 1.8), (0, 0.5, 1.6), lens=36)
 
 
-@shot("sh30", "s07", "s07-04", uses=["terminal_setup"])
+@shot("sh30", "s07", "s07-04", uses=["terminal_setup", "crisp_tail"])
 def sh30(ctx):
     """Night. The departures board fills with CANCELLED (Remotion). The passenger, suitcase in hand, stands still."""
     terminal_setup(ctx, night=True)
@@ -701,7 +700,7 @@ def sh30(ctx):
     return R.camera((0.6, -5.6, 1.5), (4.8, 3.6, 2.6), lens=30)
 
 
-@shot("sh31", "s07", "s07-06", uses=["terminal_setup"])
+@shot("sh31", "s07", "s07-06", uses=["terminal_setup", "crisp_tail"])
 def sh31(ctx):
     """Night, wide: the passenger alone on a bench in an empty hall."""
     terminal_setup(ctx, night=True, board=False)
@@ -716,7 +715,7 @@ def sh31(ctx):
 
 
 # ================================================================== S08 · Who pays for the twenty-dollar seat
-@shot("sh32", "s08", uses=["terminal_setup"])
+@shot("sh32", "s08", uses=["terminal_setup", "crisp_tail"])
 def sh32(ctx):
     """Golden hour again: the passenger walks the hall towards the gate (Remotion: the four answers)."""
     terminal_setup(ctx)
@@ -729,7 +728,7 @@ def sh32(ctx):
     return R.camera((-2.0, -7.5, 1.4), (-1.0, 3.0, 1.6), lens=24)
 
 
-@shot("sh33", "s08", "s08-06", uses=["tarmac_setup"])
+@shot("sh33", "s08", "s08-06", uses=["tarmac_setup", "crisp_tail"])
 def sh33(ctx):
     """The answer: up the stairs with one small backpack. At the top, a look back and a smile."""
     tarmac_setup(ctx, az=55, elev=3.0)
