@@ -705,8 +705,9 @@ def sh31(ctx):
     """Night, wide: the passenger alone on a bench in an empty hall."""
     terminal_setup(ctx, night=True, board=False)
     S.suitcase("HeroCase2", (-5.6, 1.6, 0), color=S.SLATE, rot=(0, 0, math.radians(200)))
+    ctx.floor_shadows = False  # seated on a bench under the lounge ceiling (see sh19)
     h = ctx.hero()
-    h.place(0, (-6.5, 2.2), yaw=180, z=-0.12)
+    h.place(0, (-6.5, 2.4), yaw=180, z=-0.12)  # forward on the seat: the backpack clears the seat back
     h.pose(0, "sit")
     h.pose(ctx.sec(0.8), {**__import__("hl_char").POSES["sit"], "spine": (12, 0, 0), "chest": (10, 0, 0), "head": (16, 0, 0)}, ease=20)
     h.expr(0, "sad")

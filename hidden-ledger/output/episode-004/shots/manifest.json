@@ -3949,5 +3949,130 @@
   "char_pct": 100,
   "composited_hash": "604b2cad28d5",
   "file": "output/episode-004/shots/sh27/shot.mp4"
+ },
+ "sh28": {
+  "id": "sh28",
+  "scene": "s07",
+  "t0": 372.41,
+  "t1": 386.23,
+  "frames": 415,
+  "step": 2,
+  "anchors": {
+   "beam": [
+    1050.6,
+    782.4,
+    7.39
+   ],
+   "below": [
+    1799.0,
+    1037.8,
+    7.185
+   ]
+  },
+  "screens": {},
+  "hash": "8a535cd53a6b",
+  "plate_hash": "d7d678e08c3e",
+  "crop": [
+   26,
+   0,
+   1442,
+   1080
+  ],
+  "char_pct": 67,
+  "composited_hash": "8a535cd53a6b",
+  "file": "output/episode-004/shots/sh28/shot.mp4"
+ },
+ "sh29": {
+  "id": "sh29",
+  "scene": "s07",
+  "t0": 386.23,
+  "t1": 397.15,
+  "frames": 328,
+  "step": 2,
+  "anchors": {
+   "cost_top": [
+    1191.8,
+    303.0,
+    8.437
+   ],
+   "rev_top": [
+    739.8,
+    325.4,
+    8.538
+   ]
+  },
+  "screens": {},
+  "hash": "11799e6b2cb4",
+  "plate_hash": "d122e8a32330",
+  "crop": [
+   216,
+   0,
+   1468,
+   1080
+  ],
+  "char_pct": 67,
+  "composited_hash": "11799e6b2cb4",
+  "file": "output/episode-004/shots/sh29/shot.mp4"
+ },
+ "sh30": {
+  "id": "sh30",
+  "scene": "s07",
+  "t0": 397.15,
+  "t1": 412.75,
+  "frames": 468,
+  "step": 2,
+  "anchors": {},
+  "screens": {
+   "board": [
+    [
+     661.8,
+     197.8
+    ],
+    [
+     1212.7,
+     272.2
+    ],
+    [
+     1218.1,
+     577.6
+    ],
+    [
+     654.4,
+     554.1
+    ]
+   ]
+  },
+  "hash": "2d3a099d2dc6",
+  "plate_hash": "a5e02277f274",
+  "crop": [
+   186,
+   182,
+   1658,
+   898
+  ],
+  "char_pct": 67,
+  "composited_hash": "2d3a099d2dc6",
+  "file": "output/episode-004/shots/sh30/shot.mp4"
+ },
+ "sh31": {
+  "id": "sh31",
+  "scene": "s07",
+  "t0": 412.75,
+  "t1": 436.35,
+  "frames": 708,
+  "step": 2,
+  "anchors": {},
+  "screens": {},
+  "hash": "925b522e1aba",
+  "plate_hash": "e3e0b457e578",
+  "crop": [
+   400,
+   0,
+   1130,
+   894
+  ],
+  "char_pct": 67,
+  "composited_hash": "925b522e1aba",
+  "file": "output/episode-004/shots/sh31/shot.mp4"
  }
 }
