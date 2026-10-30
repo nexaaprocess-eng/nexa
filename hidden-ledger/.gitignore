@@ -53,3 +53,4 @@ output/**/audio/narration_kokoro_michael/
 blender/**/__pycache__/
 output/**/shots/*/plate.png
 output/**/shots/render.log
+output/**/shots/*/meta.json
