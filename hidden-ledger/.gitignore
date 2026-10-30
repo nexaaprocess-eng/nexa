@@ -51,3 +51,5 @@ output/**/shots/*/still_*.png
 output/**/shots/*/char_list.txt
 output/**/audio/narration_kokoro_michael/
 blender/**/__pycache__/
+output/**/shots/*/plate.png
+output/**/shots/render.log
