@@ -51,8 +51,8 @@ export const E4S01: React.FC = () => {
         move={{from: [960, 540, 1.0], to: [960, 520, 1.07]}}
         hud={() => (
           <>
-            <Figure x={1220} y={250} kicker="New total" value="$92" size={200} at={b.word(3, /ninety|92/i, 0.3)} frame={f} w={560} />
-            <Stamp x={1480} y={620} text="MADE-UP EXAMPLE" at={b.word(3, /made/i, 0.55)} frame={f} />
+            <Figure x={1380} y={230} kicker="New total" value="$92" size={190} at={b.word(3, /ninety|92/i, 0.3)} frame={f} w={480} />
+            <Stamp x={1620} y={600} text="MADE-UP EXAMPLE" at={b.word(3, /made/i, 0.55)} frame={f} size={40} />
           </>
         )}
       />
@@ -68,8 +68,8 @@ export const E4S01: React.FC = () => {
       >
         {(s) => (
           <>
-            <PriceTag p={s.a('fare_top')} text="$44.60" sub="fares" at={b.word(4, /fares/i, 0.55)} frame={f} />
-            <PriceTag p={s.a('extra_top')} text="$63.79" sub="other charges" at={b.word(4, /another|other/i, 0.8)} frame={f} color="#FFE3CC" />
+            <Callout p={s.a('fare_top')} dx={-180} dy={60} title="Fares" value="$44.60" at={b.word(4, /fares/i, 0.55)} frame={f} w={260} />
+            <Callout p={s.a('extra_top')} dx={170} dy={90} title="Other charges" value="$63.79" at={b.word(4, /another|other/i, 0.8)} frame={f} w={290} />
           </>
         )}
       </Shot>
@@ -335,8 +335,8 @@ export const E4S05: React.FC = () => {
       )}>
         {(s) => (
           <>
-            <PriceTag p={s.a('ticket_top')} text="$44.60" sub="fares" at={b.word(4, /fares|tickets/i, 0.85)} frame={f} />
-            <PriceTag p={s.a('nonfare_top')} text="$63.79" sub="non-fare charges" at={b.word(4, /non|charges/i, 0.6)} frame={f} color="#FFE3CC" />
+            <Callout p={s.a('ticket_top')} dx={-180} dy={60} title="Fares" value="$44.60" at={b.word(4, /fares|tickets/i, 0.85)} frame={f} w={260} />
+            <Callout p={s.a('nonfare_top')} dx={170} dy={90} title="Non-fare charges" value="$63.79" at={b.word(4, /non|charges/i, 0.6)} frame={f} w={320} />
           </>
         )}
       </Shot>

@@ -110,11 +110,11 @@ def sh02(ctx):
     h = ctx.hero()
     seated_at_desk(h)
     h.expr(0, "surprised")
-    h.look(0, (0, 0.94, 0.95))
+    h.look(0, (0, 0.94, 1.25))  # aim above the screen: the head stays up and the face readable
     book = ctx.word("s01-02", r"book", off=-0.15)
     h.expr(ctx.sec(0.7), "excited", ease=8)
     h.look(ctx.sec(0.5), (1.3, 1.75, 1.3), ease=10)  # a quick glance to camera: can you believe it?
-    h.look(book - 10, (0, 0.94, 0.85), ease=8)
+    h.look(book - 10, (0, 0.94, 1.15), ease=8)
     h.gesture(book - 4, book + 10, {"forearm.R": (16, 0, 0), "hand.R": (-15, 0, 0), "spine": (6, 0, 0)})
     h.expr(book + 6, "happy")
     return R.camera((1.25, 2.2, 1.45), (0.0, 0.2, 1.25), lens=32)
@@ -143,9 +143,10 @@ def sh04(ctx):
     h = ctx.hero()
     seated_at_desk(h)
     h.expr(0, "worried")
-    h.look(0, (0, 0.94, 0.9))
+    h.look(0, (0, 0.94, 1.2))
     f92 = ctx.word("s01-04", r"ninety|92")
-    h.pose(f92, "slump", ease=14)
+    # a slump that keeps the face to camera: shoulders and arms drop, the head stays almost level
+    h.pose(f92, {**__import__("hl_char").POSES["slump"], "head": (-4, 0, 0), "chest": (6, 0, 0), "spine": (6, 0, 0)}, ease=14)
     h.place(f92, (0, 0.18), yaw=180, z=-0.25)
     h.expr(f92, "sad")
     real = ctx.word("s01-04", r"real")
