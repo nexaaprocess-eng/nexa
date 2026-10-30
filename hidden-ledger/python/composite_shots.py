@@ -28,6 +28,8 @@ def composite(d: Path, meta: dict) -> Path:
     out = d / "shot.mp4"
     plate = d / "plate.png"
     chars = sorted((d / "char").glob("*.png")) if (d / "char").exists() else []
+    if out.exists() and meta.get("composited_hash") == meta.get("hash"):
+        return out  # verified earlier; its character frames may already be deleted to save disk
     if out.exists() and out.stat().st_mtime > newest([plate, d / "meta.json", *chars]):
         return out
     n, step, fps = meta["frames"], meta["step"], 30
@@ -62,6 +64,11 @@ def composite(d: Path, meta: dict) -> Path:
         raise SystemExit(f"{d.name}: composited {got} frames, expected {n}")
     tmp.replace(out)
     print(f"composited {d.name}: {n} frames")
+    # mark done (same hash as the rendered layer) and free the disk: ~1.2 MB per character frame
+    meta["composited_hash"] = meta.get("hash")
+    (d / "meta.json").write_text(json.dumps(meta, indent=1))
+    for p in chars:
+        p.unlink()
     return out
 
 

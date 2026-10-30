@@ -275,7 +275,10 @@ def main():
         print(f"PLATE {a.shot} {time.time() - t:.0f}s", flush=True)
         S.col(S.DYNAMIC).hide_render = False
 
-    if a.mode in ("chars", "all") and ctx.actors:
+    done = meta.get("composited_hash") == hsh and (out / "shot.mp4").exists()
+    if done and a.mode in ("chars", "all"):
+        print(f"CHARS {a.shot}: already composited with this hash, skipped", flush=True)
+    if a.mode in ("chars", "all") and ctx.actors and not done:
         crop = char_crop(ctx, cam, frames)
         if crop:
             # Character pass, fast path: the set only masks and catches shadows; it is not path-traced again.
