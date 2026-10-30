@@ -86,8 +86,10 @@ def composite(d: Path, meta: dict) -> Path:
                # edges (a dark fringe around the character); overlay then treats the layer as premultiplied
                # (multiplying all four premultiplied channels by the feather mask is an exact fade)
                "-filter_complex", f"[1:v]fps=30,format=rgba,premultiply=inplace=1,scale={cw}:{ch}:flags=lanczos[s];"
-                                  f"[2:v]format=gray,format=rgba,colorchannelmixer=aa=0:ar=1[m];"
-                                  f"[s][m]blend=all_mode=multiply:shortest=1[c];"
+                                  f"[2:v]format=gray,format=gbrap,colorchannelmixer=aa=0:ar=1[m];"
+                                  # gbrap (planar RGB) on both blend inputs: left to negotiate, blend picks a YUV
+                                  # format where black is 16, not 0, and the multiply darkens the whole crop
+                                  f"[s]format=gbrap[sp];[sp][m]blend=all_mode=multiply:shortest=1,format=rgba[c];"
                                   f"[0:v][c]overlay={x}:{y}:alpha=premultiplied:eof_action=repeat:format=auto,format=yuv420p[v]",
                "-map", "[v]", *enc, str(tmp)]
     else:
