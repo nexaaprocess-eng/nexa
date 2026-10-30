@@ -28,7 +28,7 @@
     ]
    ]
   },
-  "hash": "10f8ba7cc921",
+  "hash": "b10e4597fd33",
   "crop": [
    0,
    0,
@@ -36,6 +36,7 @@
    1080
   ],
   "char_pct": 67,
+  "composited_hash": "b10e4597fd33",
   "file": "output/episode-004/shots/sh01/shot.mp4"
  },
  "sh02": {
@@ -733,6 +734,7 @@
    458
   ],
   "char_pct": 100,
+  "composited_hash": "825a8de8f7ab",
   "file": "output/episode-004/shots/sh09/shot.mp4"
  },
  "sh10": {
