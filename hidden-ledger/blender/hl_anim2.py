@@ -142,20 +142,21 @@ EXPR = {
     "happy": {"browL": 0.3, "browR": 0.3, "open": 0.9, "squint": 0.2, "curve": 0.85, "width": 1.12},
     "polite": {"browL": 0.2, "browR": 0.2, "angL": 0.15, "angR": 0.15, "curve": 0.4},
     "sorry": {"browL": 0.3, "browR": 0.3, "angL": 0.8, "angR": 0.8, "open": 0.95, "curve": -0.2, "width": 0.9},
+    "thinking": {"browL": 0.2, "browR": -0.12, "angL": 0.25, "open": 0.9, "squint": 0.15, "curve": -0.05, "width": 0.9, "shift": 0.2},
     "focused": {"browL": -0.2, "browR": -0.2, "angL": -0.15, "angR": -0.15, "open": 0.95, "squint": 0.15},
 }
 
 # spring settings per channel: (omega, zeta, delay frames) -> overlap: hips lead, extremities follow
 CH = {
     "spine": (13.0, 1.0, 0), "chest": (11.0, 0.95, 1), "neck": (10.0, 0.9, 2), "head": (9.0, 0.85, 3),
-    "hand": (10.5, 0.78, 3), "pole": (8.0, 1.0, 3), "face": (17.0, 1.0, 0), "com": (16.0, 0.95, 0),
+    "hand": (9.0, 0.8, 3), "pole": (8.0, 1.0, 3), "face": (17.0, 1.0, 0), "com": (16.0, 0.95, 0),
 }
 
 STEP_LEN = 0.47
 STEP_W = 0.095      # half distance between the feet
 WALK_SPEED = 1.0    # m/s
-TOE = Vector((0, -0.15, -0.055))   # toe contact relative to the ankle (foot frame, yaw 0)
-HEEL = Vector((0, 0.045, -0.085))  # heel contact
+TOE = Vector((0, -0.15, -0.08))    # toe contact (sole level) relative to the ankle (foot frame, yaw 0)
+HEEL = Vector((0, 0.05, -0.085))   # heel contact (sole level)
 
 
 class Foot:
@@ -180,9 +181,10 @@ class Foot:
                 c = cycloid(u)
                 pp = p.lerp(tp, c)
                 yy = y + wrap(ty - y) * ease_io(u)
-                h = clr * math.sin(math.pi * clamp(u * 1.08, 0, 1)) ** 0.8
+                h = clr * max(0.0, math.sin(math.pi * clamp(u * 1.08, 0, 1))) ** 0.8
                 pitch = 22 * (1 - u) ** 2 - 12 * clamp((u - 0.55) / 0.45, 0, 1)
-                return pp, yy, pitch, "ankle", h, "swing"
+                # roll about the toe while the heel is up, about the heel once the toe lifts: the sole never dips
+                return pp, yy, pitch, ("toe" if pitch > 0 else "heel"), h, "swing"
             p, y, last_land = tp.copy(), ty, land
         heel = clamp((f - last_land) / 4.0, 0, 1)
         pitch = -10 * (1 - ease_io(heel)) if last_land > -999 else 0.0
@@ -405,7 +407,7 @@ class Actor:
             back = k[3] if len(k) > 3 else False
             nxt = ks[i + 1][0] if i + 1 < len(ks) else None
             if f < f0 + ease and (nxt is None or f < nxt):
-                t = (f - f0) / max(1, ease)
+                t = (f - f0 + 1) / max(1, ease)  # a key at f0 with ease 1 is fully there on f0 itself
                 return prev, v, (ease_back(t, 0.6) if back else ease_io(t))
             if nxt is None or f < nxt:
                 return v, v, 0.0
@@ -426,7 +428,7 @@ class Actor:
                     w = math.sin(u * 2 * math.pi * 1.5) * (1 - u) ** 1.2
                 else:
                     # anticipation (small opposite), main hit, settle
-                    w = -0.18 * math.sin(clamp(u / 0.18, 0, 1) * math.pi) if u < 0.18 else math.sin(math.pi * (u - 0.18) / 0.82) ** 1.3
+                    w = -0.18 * math.sin(clamp(u / 0.18, 0, 1) * math.pi) if u < 0.18 else max(0.0, math.sin(math.pi * (u - 0.18) / 0.82)) ** 1.3
                 d = offs[ch]
                 for i in range(3):
                     out[i] += d[i] * w
@@ -461,6 +463,7 @@ class Actor:
         head_yaw_prev = 0.0
         com_s = None
         held = {}
+        hand_l_prev = None
         for f in range(n):
             # ---------------- feet
             fs = {s: self.feet[s].pose_at(f) for s in ("L", "R")}
@@ -569,6 +572,8 @@ class Actor:
             # ---------------- gaze: eyes jump, head follows
             la, lb, lt = self._keyed([(k[0], k[1], 1) for k in self.looks], f, None)
             tgt = lb if lt > 0 or la is None else la
+            if tgt == "phone":  # whatever the left hand holds
+                tgt = tuple(hand_l_prev) if hand_l_prev is not None else None
             if tgt is None and getattr(self, "look_ahead", None):
                 for a0, a1 in self.look_ahead:
                     if a0 <= f <= a1:
@@ -578,7 +583,10 @@ class Actor:
                 gyaw, gpitch = 0.0, 0.0
             else:
                 dv = Vector(tgt) - head_pos
-                gyaw = clamp(wrap(yaw_of(dv) - facing), -110, 110)
+                raw = wrap(yaw_of(dv) - facing)
+                if prev_gaze is not None and abs(raw) > 100 and raw * prev_gaze[0] < 0:
+                    raw = math.copysign(abs(raw), prev_gaze[0])  # target behind: keep turning the same way, no flip
+                gyaw = clamp(raw, -110, 110)
                 gpitch = clamp(math.degrees(math.atan2(dv.z, Vector((dv.x, dv.y)).length)), -35, 30)
             if prev_gaze is not None and math.hypot(gyaw - prev_gaze[0], gpitch - prev_gaze[1]) > 25:
                 gaze_jump.append(f)
@@ -629,7 +637,7 @@ class Actor:
                 for f0p, f1p, sidep, _case, _st in self.suitcases:
                     if sidep == s and f0p - 8 <= f <= f1p:
                         k = clamp((f - (f0p - 8)) / 8.0, 0, 1) * clamp((f1p - f) / 6.0, 0, 1)
-                        off = off.lerp(Vector((0.10, -0.14, -0.475)), ease_io(k))
+                        off = off.lerp(Vector((0.10, -0.15, -0.43)), ease_io(k))
                 off.z += 0.004 * br
                 sh = Vector(C.J[f"shoulder.{s}"])
                 body = Vector((sg * off.x, -off.y, off.z))
@@ -707,6 +715,7 @@ class Actor:
                 case.matrix_world = Matrix.Translation(w) @ Matrix.Rotation(math.radians(st["yaw"]), 4, "Z") @ Matrix.Rotation(math.radians(tl), 4, "X")
                 case.keyframe_insert("location", frame=f)
                 case.keyframe_insert("rotation_euler", frame=f)
+            hand_l_prev = (rig.matrix_world @ pbs["hand.L"].matrix) @ Vector((0, 0.07, 0))
             # ---------------- validation records
             self.log.append({
                 "f": f, "feet": {s: (tuple(round(v, 4) for v in pbs[f"foot.{s}"].tail), ground[s][3]) for s in ("L", "R")},

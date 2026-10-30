@@ -27,6 +27,7 @@ import {S07Wallet as E3S07} from './ep003/S07Wallet';
 import {S08Breaks as E3S08} from './ep003/S08Breaks';
 import {S09Reason as E3S09} from './ep003/S09Reason';
 import {E4S01, E4S02, E4S03, E4S04, E4S05, E4S06, E4S07, E4S08} from './ep004/scenes';
+import {E5S01, E5S02, E5S03, E5S04, E5S05, E5S06, E5S07} from './ep005/scenes';
 
 // Scene registry per episode: scene id (content/episode-XXX/episode.json) -> component.
 // Scenes without an entry render with GenericScene, so a new episode works from data alone.
@@ -65,4 +66,5 @@ export const EPISODE_SCENES: Record<string, Record<string, React.FC>> = {
     s09: E3S09,
   },
   '004': {s01: E4S01, s02: E4S02, s03: E4S03, s04: E4S04, s05: E4S05, s06: E4S06, s07: E4S07, s08: E4S08},
+  '005': {s01: E5S01, s02: E5S02, s03: E5S03, s04: E5S04, s05: E5S05, s06: E5S06, s07: E5S07},
 };

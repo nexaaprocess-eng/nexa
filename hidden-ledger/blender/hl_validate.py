@@ -35,7 +35,9 @@ def run(ctx, out):
     actors = [a for a in ctx.actors if isinstance(a, hl_anim2.Actor)]
     if not actors:
         return
-    statics = [o for o in S.col(S.STATIC).all_objects if o.type == "MESH" and not any(k in o.name for k in ("Floor", "Street", "Ground", "Cyclorama", "Rug", "Runner"))]
+    statics = [o for o in S.col(S.STATIC).all_objects if o.type == "MESH" and not any(k in o.name for k in ("Floor", "Street", "Ground", "Cyclorama", "Rug", "Runner",
+                                                                       # seats: sitting means touching (cushions give)
+                                                                       "Sofa", "Mattress", "Duvet", "Seat"))]
     res = {}
     prev = {}
     dg = bpy.context.evaluated_depsgraph_get()
@@ -58,8 +60,11 @@ def run(ctx, out):
                 foot, ik = pbs[f"foot.{s}"], pbs[f"ik_foot.{s}"]
                 r["ik_miss_mm"] = max(r["ik_miss_mm"], round((foot.head - ik.head).length * 1000, 2))
                 toe, heel = rig.matrix_world @ foot.tail, rig.matrix_world @ foot.head
-                lo = min(toe.z, heel.z - 0.085)
-                r["floor_mm"] = min(r["floor_mm"], round(lo * 1000, 1))
+                fo = a.parts["col"].all_objects.get(f"{a.rig.name[:-3]}_foot.{s}")
+                if fo:  # real lowest vertex (a rotated bounding box would dip below the floor on its own)
+                    mw = fo.matrix_world
+                    lo = min((mw @ v.co).z for v in fo.data.vertices)
+                    r["floor_mm"] = min(r["floor_mm"], round(lo * 1000, 1))
                 phase = a.log[f]["feet"][s][1] if f < len(a.log) else "stance"
                 k = (a.rig.name, s)
                 if k in prev and phase == "stance" and prev[k][2] == "stance" and min(toe.z, heel.z) < 0.06:
@@ -74,6 +79,7 @@ def run(ctx, out):
                 kk = (a.rig.name, b.name)
                 if kk in prev:
                     d = math.degrees(prev[kk].rotation_difference(q).angle)
+                    d = min(d, 360.0 - d)  # q and -q are the same rotation
                     if d > r["snap_deg"]:
                         r["snap_deg"], r["snap_bone"] = round(d, 2), f"{b.name}@{f}"
                 prev[kk] = q

@@ -86,23 +86,23 @@ def lobby(collection=STATIC, variant="main"):
     box("DeskSideL", (0.08, 0.8, 1.02), (-1.66, 1.25, 0.51), wood, collection=collection)
     box("DeskSideR", (0.08, 0.8, 1.02), (1.66, 1.25, 0.51), wood, collection=collection)
     box("DeskTop", (3.5, 0.42, 0.05), (0, 0.98, 1.06), top, bevel=0.012, collection=collection)
-    box("DeskWork", (3.3, 0.55, 0.04), (0, 1.38, 0.80), top, collection=collection)
+    box("DeskWork", (3.3, 0.42, 0.04), (0, 1.30, 0.80), top, collection=collection)
     box("DeskStrip", (3.3, 0.02, 0.03), (0, 0.845, 0.25), emissive("deskstrip", (1.0, 0.7, 0.4, 1), 5.0), collection=collection)
     # monitor on the working shelf, facing the clerk (+Y); screen drawn by Remotion
     dark = M("monitor", (0.04, 0.04, 0.045, 1), rough=0.35)
     box("MonitorBody", (0.56, 0.035, 0.36), (0.45, 1.20, 1.18), dark, bevel=0.008, collection=collection)
     box("MonitorStand", (0.05, 0.05, 0.22), (0.45, 1.24, 0.92), dark, collection=collection)
     screen("desk", 0.52, 0.32, (0.45, 1.222, 1.18), rot=(math.radians(-90), 0, 0), color=(0.10, 0.16, 0.24, 1), strength=1.4, collection=collection)
-    box("Keyboard", (0.42, 0.14, 0.02), (0.45, 1.45, 0.83), dark, bevel=0.005, collection=collection)
+    box("Keyboard", (0.42, 0.14, 0.02), (0.45, 1.40, 0.83), dark, bevel=0.005, collection=collection)
     # bell + key-card tray on the counter (guest side)
     brass = M("brass", (0.80, 0.60, 0.30, 1), rough=0.25, metal=1.0)
-    sphere("Bell", 0.05, (-0.95, 0.97, 1.10), brass, scale=(1, 1, 0.7), collection=collection)
-    cyl("BellBase", 0.06, 0.015, (-0.95, 0.97, 1.09), dark, collection=collection)
-    box("CardTray", (0.22, 0.14, 0.03), (0.95, 0.98, 1.095), dark, bevel=0.005, collection=collection)
-    box("Lamp", (0.08, 0.08, 0.4), (-1.45, 1.0, 1.28), brass, collection=collection)
-    sphere("LampShade", 0.13, (-1.45, 1.0, 1.55), emissive("lampshade", (1.0, 0.82, 0.6, 1), 6.0), scale=(1, 1, 0.8), collection=collection)
+    sphere("Bell", 0.05, (0.62, 0.97, 1.10), brass, scale=(1, 1, 0.7), collection=collection)
+    cyl("BellBase", 0.06, 0.015, (0.62, 0.97, 1.09), dark, collection=collection)
+    box("CardTray", (0.22, 0.14, 0.03), (-0.75, 0.98, 1.095), dark, bevel=0.005, collection=collection)
+    box("Lamp", (0.08, 0.08, 0.4), (1.45, 1.0, 1.28), brass, collection=collection)
+    sphere("LampShade", 0.13, (1.45, 1.0, 1.55), emissive("lampshade", (1.0, 0.82, 0.6, 1), 6.0), scale=(1, 1, 0.8), collection=collection)
     anchor("desk_screen", (0.45, 1.20, 1.18), collection=collection)
-    anchor("bell", (-0.95, 0.97, 1.15), collection=collection)
+    anchor("bell", (0.62, 0.97, 1.15), collection=collection)
     # lounge
     sofa = M("sofa" + variant, (0.18, 0.30, 0.36, 1) if not alt else (0.42, 0.24, 0.16, 1), rough=0.8)
     box("SofaBase", (2.2, 0.85, 0.42), (3.8, -3.4, 0.21), sofa, bevel=0.06, collection=collection)
@@ -182,7 +182,7 @@ def street(collection=STATIC, lit=None, seed=3, cols=10, floors=10, facade_x=0.0
             box(f"Win{i}", (0.95, 0.06, 1.55), (x, 0.06, z), on if i in lit else dark, collection=collection)
             anchor(f"win_{i}", (x, 0.0, z), collection=collection)
     # lobby floor: glass + canopy + sign
-    glass = M("lobbywin", (0.9, 0.62, 0.36, 1), rough=0.2, emit=(1.0, 0.70, 0.42, 1), emit_strength=2.2)
+    glass = M("lobbywin", (0.5, 0.36, 0.22, 1), rough=0.2, emit=(1.0, 0.70, 0.42, 1), emit_strength=0.9)
     box("LobbyGlass", (W - 3, 0.08, 3.0), (facade_x, 0.08, 1.6), glass, collection=collection)
     for i in range(7):
         box(f"LobbyMull{i}", (0.1, 0.12, 3.2), (facade_x - (W - 3) / 2 + i * (W - 3) / 6, 0.05, 1.6), frame, collection=collection)
@@ -191,7 +191,7 @@ def street(collection=STATIC, lit=None, seed=3, cols=10, floors=10, facade_x=0.0
     box("CanopyStrip", (4.3, 0.04, 0.05), (facade_x, -2.38, 3.32), emissive("canopystrip", (1.0, 0.78, 0.5, 1), 7.0), collection=collection)
     gold = emissive("streetsign", (1.0, 0.76, 0.42, 1), 6.0)
     text("FacadeSign", "HOTEL", (facade_x, -2.42, 3.62), size=0.5, mat=gold, extrude=0.03, collection=collection)
-    box("Door", (2.0, 0.1, 2.6), (facade_x, 0.02, 1.3), M("doorglass", (0.95, 0.75, 0.5, 1), rough=0.1, emit=(1.0, 0.75, 0.48, 1), emit_strength=3.0), collection=collection)
+    box("Door", (2.0, 0.1, 2.6), (facade_x, 0.02, 1.3), M("doorglass", (0.6, 0.45, 0.3, 1), rough=0.1, emit=(1.0, 0.75, 0.48, 1), emit_strength=1.3), collection=collection)
     anchor("hotel_door", (facade_x, -0.2, 1.2), collection=collection)
     anchor("facade_top", (facade_x, 0, H), collection=collection)
     # neighbours, lamps, trees
@@ -283,12 +283,12 @@ def guest_room(collection=STATIC):
     """Room 4 x 5 m: door wall at y = -2.5, window wall at y = 2.5 (city at night), bed against the right wall."""
     floor = M("roomwood", (0.36, 0.24, 0.15, 1), rough=0.5, coat=0.2)
     plane("Floor", (4.2, 5.2), (0, 0, 0), floor, collection=collection)
-    wall = M("roomwall2", (0.74, 0.68, 0.60, 1), rough=0.85)
+    wall = M("roomwall2", (0.42, 0.36, 0.30, 1), rough=0.85)
     box("WallBack", (4.4, 0.15, 2.9), (0, 2.6, 1.45), wall, collection=collection)
     box("WallL", (0.15, 5.2, 2.9), (-2.15, 0, 1.45), wall, collection=collection)
     box("WallR", (0.15, 5.2, 2.9), (2.15, 0, 1.45), wall, collection=collection)
     box("WallFront", (4.4, 0.15, 2.9), (0, -2.6, 1.45), wall, collection=collection)
-    box("Ceiling", (4.4, 5.4, 0.15), (0, 0, 2.95), M("roomceil", (0.7, 0.66, 0.6, 1), rough=0.9), collection=collection)
+    box("Ceiling", (4.4, 5.4, 0.15), (0, 0, 2.95), M("roomceil", (0.45, 0.41, 0.37, 1), rough=0.9), collection=collection)
     win = M("citywin", (0.03, 0.05, 0.10, 1), rough=0.05, emit=(0.06, 0.09, 0.16, 1), emit_strength=1.0)
     box("Window", (2.2, 0.05, 1.6), (-0.6, 2.52, 1.55), win, collection=collection)
     r = random.Random(9)
@@ -317,7 +317,7 @@ def guest_room_lights():
     from hl_render import area_light, flat_world
     flat_world((0.02, 0.03, 0.05), 0.3)
     area_light("RoomLamp", (0.1, 1.2, 1.3), (0.6, 0.2, 0.6), power=160, size=0.6, color=(1.0, 0.75, 0.5))
-    area_light("RoomCeil", (0, -0.3, 2.8), (0.4, 0.2, 0.3), power=320, size=2.0, color=(1.0, 0.85, 0.65))
+    area_light("RoomCeil", (0, -0.3, 2.8), (0.4, 0.2, 0.3), power=150, size=2.0, color=(1.0, 0.85, 0.65))
     area_light("WindowCool", (-0.6, 2.3, 1.6), (0.4, 0, 0.8), power=90, size=2.0, color=(0.55, 0.65, 1.0))
 
 
