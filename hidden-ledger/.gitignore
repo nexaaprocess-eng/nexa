@@ -54,3 +54,4 @@ blender/**/__pycache__/
 output/**/shots/*/plate.png
 output/**/shots/render.log
 output/**/shots/*/meta.json
+output/**/shots/manifest.json  # changes after every composited shot; final version is force-added at delivery
