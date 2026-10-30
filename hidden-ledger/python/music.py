@@ -274,8 +274,49 @@ def sfx_set(rng) -> dict[str, np.ndarray]:
     envj = np.sin(np.pi * np.clip(tj / 3.2, 0, 1)) ** 1.5
     out["jet"] = (rumble * 1.0 + hiss * 0.08) * envj
     out["stamp"] = add(thump(0.35, 160, 70) * 0.9, noise_burst(rng, 0.04, 120, hp=True) * 0.5)
+    # episode 005+: hotel sounds (all synthesised; mono unless noted)
+    #   bell: desk bell (bright strike + inharmonic partials, long ring); keys: a burst of keyboard taps (1.2 s);
+    #   keycard: reader beep + latch; door: latch click + low swing; wheels: suitcase rolling (2.5 s, loopable feel);
+    #   ding: elevator two-tone; paper: short rustle
+    out["bell"] = add(mallet(2730, 1.6) * 0.8, mallet(4105, 0.9) * 0.35, mallet(6620, 0.4) * 0.15, noise_burst(rng, 0.01, 260, hp=True) * 0.4)
+    nk = int(1.2 * SR)
+    keys = np.zeros(nk)
+    tpos = 0.0
+    while tpos < 1.1:
+        i0 = int(tpos * SR)
+        k = add(noise_burst(rng, 0.018, 200, hp=True) * rng.uniform(0.5, 1.0), mallet(rng.uniform(2200, 3200), 0.02) * 0.15)
+        keys[i0:i0 + len(k)] += k[: max(0, min(len(k), nk - i0))]
+        tpos += rng.uniform(0.07, 0.16)
+    out["keys"] = keys
+    tk = np.arange(int(0.16 * SR)) / SR
+    out["keycard"] = add(np.sin(2 * np.pi * 2350 * tk) * np.minimum(1, np.minimum(tk, tk[-1] - tk) / 0.006) * 0.6,
+                         np.concatenate([np.zeros(int(0.2 * SR)), noise_burst(rng, 0.03, 150, hp=True) * 0.7, thump(0.12, 220, 140) * 0.4]))
+    nd = int(1.4 * SR)
+    td2 = np.arange(nd) / SR
+    swing = np.convolve(rng.standard_normal(nd), np.ones(90) / 90, mode="same") * np.sin(np.pi * np.clip(td2 / 1.4, 0, 1)) ** 2
+    out["door"] = add(noise_burst(rng, 0.03, 160, hp=True) * 0.9, thump(0.15, 180, 120) * 0.4, swing * 2.5)
+    nw = int(2.5 * SR)
+    tw = np.arange(nw) / SR
+    roll = np.convolve(rng.standard_normal(nw), np.ones(40) / 40, mode="same")
+    clicks = (np.sin(2 * np.pi * 9 * tw) > 0.985).astype(float) * rng.uniform(0.3, 1.0, nw)
+    out["wheels"] = (roll * 1.2 + np.convolve(clicks, np.ones(30) / 30, mode="same") * 0.6) * np.minimum(1, np.minimum(tw, tw[-1] - tw) / 0.25)
+    out["ding"] = add(mallet(1046.5, 1.0) * 0.6, np.concatenate([np.zeros(int(0.32 * SR)), mallet(784.0, 1.2) * 0.55]))
+    out["paper"] = noise_burst(rng, 0.35, 90, hp=True) * np.linspace(1, 0.2, int(0.35 * SR))[: len(noise_burst(rng, 0.35, 90, hp=True))]
     for k, v in out.items():
         out[k] = (v / (np.max(np.abs(v)) or 1) * 0.7).astype(np.float32)
+    # ambience beds (looped by mix.py under the shots that ask for them; level set there)
+    for name, (lp, mod, sec) in {"bed_lobby": (30, 0.25, 8.0), "bed_street": (120, 0.35, 8.0), "bed_corridor": (220, 0.05, 8.0)}.items():
+        nb = int(sec * SR)
+        tb2 = np.arange(nb) / SR
+        base = np.convolve(rng.standard_normal(nb), np.ones(lp) / lp, mode="same")
+        if name == "bed_lobby":  # faint, unintelligible room murmur: band noise with syllable-rate swells
+            murmur = np.convolve(rng.standard_normal(nb), np.ones(6) / 6, mode="same") - np.convolve(rng.standard_normal(nb), np.ones(40) / 40, mode="same")
+            base = base + murmur * 0.25 * (0.5 + 0.5 * np.sin(2 * np.pi * 3.1 * tb2 + 2 * np.sin(2 * np.pi * 0.37 * tb2)))
+        if name == "bed_corridor":  # HVAC hum
+            base = base + 0.3 * np.sin(2 * np.pi * 60 * tb2) + 0.12 * np.sin(2 * np.pi * 120 * tb2)
+        base *= 1 + mod * np.sin(2 * np.pi * 0.11 * tb2)
+        fade = np.minimum(1, np.minimum(tb2, tb2[-1] - tb2) / 0.5)
+        out[name] = (base / (np.max(np.abs(base)) or 1) * 0.7 * fade).astype(np.float32)
     return out
 
 

@@ -111,6 +111,9 @@ def music_track(tl: dict, total_n: int, cache: Path) -> tuple[np.ndarray, str]:
     return out, "procedural (python/music.py)"
 
 
+BED_DB = -38.0  # ambience beds sit far under the voice (relative to the voice peak)
+
+
 def word_cues(tl: dict, episode: str) -> list[tuple[float, str, float]]:
     """Word-anchored SFX from content/episode-XXX/sfx_cues.json (time = ASR word time + offset)."""
     p = ROOT / "content" / f"episode-{episode}" / "sfx_cues.json"
@@ -189,6 +192,25 @@ def main():
     lib = {p.stem: sf.read(str(p), dtype="float32")[0] for p in (ROOT / "assets" / "sfx").glob("*.wav")}
     from common import load_episode
     events = [(t, n, 0.0) for t, n in sfx_events(tl, load_episode(a.episode).get("transitions", "wipe"))] + word_cues(tl, a.episode)
+    # episode 005+: sounds anchored to animation frames by the shot functions (meta.json "sfx": [frame, sound, gain])
+    # and ambience beds under whole shots ("bed": name), from the shot manifest
+    man = output_dir(a.episode) / "shots" / "manifest.json"
+    beds = []
+    if man.exists():
+        for m in json.loads(man.read_text()).values():
+            for fr, name, gdb in m.get("sfx", []):
+                events.append((m["t0"] + fr / 30.0, name, gdb))
+            if m.get("bed"):
+                beds.append((m["t0"], m["t1"], m["bed"], m.get("bed_db", 0.0)))
+    for t0, t1, name, gdb in beds:
+        s = lib.get(name)
+        if s is None:
+            continue
+        i0, i1 = int(t0 * SR), min(n, int(t1 * SR))
+        loop = np.resize(s, i1 - i0) if s.ndim == 1 else np.resize(s.mean(axis=1), i1 - i0)
+        ramp = np.minimum(1, np.minimum(np.arange(i1 - i0), (i1 - i0) - np.arange(i1 - i0)) / (0.08 * SR))
+        lvl = voice_peak * 10 ** ((BED_DB + gdb) / 20)
+        sfx[i0:i1] += (np.stack([loop, loop], 1) * (ramp * lvl)[:, None]).astype(np.float32)
     for t, name, gdb in events:
         s = lib.get(name)
         if s is None:

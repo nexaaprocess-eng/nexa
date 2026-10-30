@@ -69,6 +69,15 @@ class ShotCtx:
         self.static_shadows = None
         self.chars_pct = 100
         self.v2 = False  # episode 005+: V2 character, rendered on ones (set from the shot module's CHARACTER)
+        self.sounds = []  # [shot-local frame, sound name, gain dB] -> meta.json "sfx" (placed by python/mix.py)
+        self.bed = None   # ambience bed under the whole shot (assets/sfx/<name>.wav, looped)
+        self.bed_db = 0.0
+
+    def sfx(self, frame, name, gain_db=0.0):
+        self.sounds.append([int(frame), name, float(gain_db)])
+
+    def ambience(self, name, gain_db=0.0):
+        self.bed, self.bed_db = name, gain_db
 
     # ---- timing (shot-local frames)
     def at(self, key, off=0.0):
@@ -285,6 +294,8 @@ def main():
     anchors, screens = export_anchors(cam)
     meta.update({"id": a.shot, "scene": shot["scene"], "t0": round(t0, 4), "t1": round(t1, 4), "frames": ctx.n, "step": ctx.step,
                  "anchors": anchors, "screens": screens, "hash": hsh, "plate_hash": plate_hsh})
+    if ctx.sounds or ctx.bed:
+        meta.update({"sfx": ctx.sounds, "bed": ctx.bed, "bed_db": ctx.bed_db})
 
     if a.mode == "still":
         # quick review frame: full composite (plate + characters), no transparency

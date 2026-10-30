@@ -39,6 +39,7 @@ COUNTER = (0.0, 0.86, 1.09)
 def lobby_setup(ctx, variant="main", key=0.5):
     H.lobby(variant=variant)
     H.lobby_lights(key)
+    ctx.ambience("bed_lobby")
 
 
 def clerk(ctx, name="Clerk", look_screen=True, seed=5):
@@ -51,9 +52,12 @@ def clerk(ctx, name="Clerk", look_screen=True, seed=5):
     return c
 
 
-def typing(a, f0, f1, fast=False):
+def typing(a, f0, f1, fast=False, ctx=None):
     """Both hands on the keyboard, fingers tapping (small, uneven vertical beats), then back."""
     spd = 1.6 if fast else 1.0
+    if ctx is not None:
+        for k in range(max(0, f0 + 10), max(0, f1 - 10), 36):
+            ctx.sfx(k, "keys", -9 if not fast else -6)
     for s, (base, ph) in zip(("L", "R"), ((KEYS[0], 0.0), (KEYS[1], 1.7))):
         def tgt(f, base=base, ph=ph):
             u = f * 0.55 * spd + ph
@@ -63,7 +67,7 @@ def typing(a, f0, f1, fast=False):
     a.pose(f0, {"chest": (6, 0, 0), "head": (4, 0, 0)}, ease=12)
 
 
-def ring_bell(a, f, side="L"):
+def ring_bell(a, f, side="L", ctx=None):
     """Reach, two quick taps on the desk bell, hand back."""
     bell = (0.62, 0.97, 1.21)
     def tap(ff, f0=f + 10):
@@ -72,6 +76,8 @@ def ring_bell(a, f, side="L"):
         return (bell[0] + 0.02, bell[1], bell[2] + dz)
     a.reach(f, side, tap, ease=10)
     a.reach(f + 26, side, None, ease=14)
+    if ctx is not None:
+        ctx.sfx(f + 10 + 7, "bell", -4)
 
 
 # phone in the left hand: screen towards whoever the character shows it to
@@ -93,6 +99,7 @@ def sh01(ctx):
     """Night street. The traveller pulls a suitcase along the sidewalk, slows, turns to the hotel and looks up at the sign."""
     H.street(lit=0.72)
     H.street_lights()
+    ctx.ambience("bed_street")
     h = ctx.hero()
     case = H.suitcase(loc=(-6.3, -3.5, 0))
     h.place((-6.0, -3.3), yaw=90)
@@ -100,6 +107,8 @@ def sh01(ctx):
     h.pose(0, "tired", ease=1)
     end = h.walk(2, [(-3.0, -3.15), (-0.9, -2.95)], speed=0.85, end_yaw=150)
     h.pull(0, end - 2, "R", case)
+    for k in range(6, end - 10, 70):
+        ctx.sfx(k, "wheels", -12)
     h.look(end - 20, (0.0, -2.4, 3.7))  # the HOTEL sign
     h.expr(end - 10, "relief", ease=10)
     h.nod(end + 6, amount=6, dur=18)
@@ -111,9 +120,10 @@ def sh02(ctx):
     """Lobby, wide from behind the desk: walks up, parks the suitcase, rings the bell, shows the booking on the phone."""
     lobby_setup(ctx)
     c = clerk(ctx)
-    typing(c, 0, ctx.sec(1.2))
+    typing(c, 0, ctx.sec(1.2), ctx=ctx)
     h = ctx.hero()
     case = H.suitcase(loc=(-2.9, -1.5, 0))
+    ctx.sfx(2, "wheels", -12)
     ph = H.phone()
     h.place((-2.6, -1.3), yaw=150)
     h.expr(0, "tired")
@@ -121,7 +131,7 @@ def sh02(ctx):
     end = h.walk(0, [(-1.2, -0.3), DESK_XY], speed=0.95, end_yaw=180)
     h.pull(0, end - 3, "R", case)
     h.look(end - 12, (0.4, 1.7, 1.5))
-    ring_bell(h, end + 2, side="R")
+    ring_bell(h, end + 2, side="R", ctx=ctx)
     c.look(ctx.sec(1.0), (DESK_XY[0], DESK_XY[1], 1.5))
     c.expr(ctx.sec(1.0), "polite")
     c.nod(ctx.sec(1.4))
@@ -138,11 +148,11 @@ def sh03(ctx):
     c = clerk(ctx)
     t_pause = ctx.word("s01-03", r"Pauses", frac=0.4)
     t_again = ctx.word("s01-03", r"again", frac=0.7) - 6
-    typing(c, 0, t_pause)
+    typing(c, 0, t_pause, ctx=ctx)
     c.expr(t_pause, "worried", ease=8)
     c.look(t_pause, (0.45, 1.2, 1.2))
     c.gesture(t_pause, t_pause + 18, {"head": (-4, 0, 6)})
-    typing(c, t_again, ctx.n + 30, fast=True)
+    typing(c, t_again, ctx.n + 30, fast=True, ctx=ctx)
     h = ctx.hero()
     ph = H.phone()
     h.place(DESK_XY, yaw=180)
@@ -221,6 +231,7 @@ def sh07(ctx):
     """Back outside, wide: the facade is the inventory — one window, one night for sale."""
     H.street(lit=0.86)
     H.street_lights()
+    ctx.ambience("bed_street")
     h = ctx.hero()
     case = H.suitcase(loc=(-0.95, -3.35, 0))
     h.place((-0.6, -3.6), yaw=-160)
@@ -237,6 +248,7 @@ def sh08(ctx):
     """Corridor: the traveller passes an open, dark room, stops, looks in. Tonight it earns nothing; tomorrow it's gone."""
     hinge = H.corridor(open_door=2)
     H.corridor_lights()
+    ctx.ambience("bed_corridor", -3)
     hinge.rotation_euler.z = math.radians(80)
     hinge.keyframe_insert("rotation_euler", frame=0)
     h = ctx.hero()
@@ -275,6 +287,7 @@ def sh09(ctx):
     gt = g.turn(t - 20, -60)
     end = g.walk(gt, [(-2.5, -1.5), (-5.8, -2.5)], speed=1.1)
     g.pull(gt + 4, ctx.n + 60, "L", case)
+    ctx.sfx(gt + 8, "wheels", -16)
     g.nod(t - 30)
     h.look(t, (-3.0, -1.6, 1.3))
     h.expr(t, "curious")
@@ -319,12 +332,12 @@ def sh12(ctx):
     """Behind the desk, earlier that week: the clerk accepts booking after booking past 100 (screen by Remotion)."""
     lobby_setup(ctx)
     c = clerk(ctx)
-    typing(c, 0, ctx.sec(2.2))
+    typing(c, 0, ctx.sec(2.2), ctx=ctx)
     c.expr(0, "focused")
     t = ctx.at("s03-02")
     c.pose(ctx.sec(2.4), "chin", ease=16)
     c.expr(ctx.sec(2.4), "thinking")
-    typing(c, t + 10, ctx.n + 40)
+    typing(c, t + 10, ctx.n + 40, ctx=ctx)
     c.expr(t + 10, "polite")
     return R.camera((1.25, 2.85, 1.72), (0.45, 1.2, 1.12), lens=38)
 
@@ -431,6 +444,7 @@ def sh16(ctx):
         a = g.walk(st, [(-1.6, -0.3), (-0.62, 0.40)], speed=1.15, end_yaw=180)
         g.reach(a + 2, "L", (-0.75, 0.98, 1.12), ease=10)
         g.hold(a + 12, "L", card)
+        ctx.sfx(a + 12, "click", -10)
         g.reach(a + 16, "L", None, ease=12)
         g.walk(a + 20, [(1.2, -0.2), (3.0, 0.2), (6.2, 1.6)], speed=1.15)
         c.look(a - 6, (-0.62, 0.4, 1.5))
@@ -442,6 +456,7 @@ def sh16(ctx):
     t = ctx.at("s04-03") + ctx.sec(1.2)
     e = h.walk(t, [(-4.0, -2.0), (-2.2, -1.2)], speed=0.9)
     h.pull(t, ctx.n + 60, "R", case)
+    ctx.sfx(t + 4, "wheels", -13)
     h.look(t + 10, (0.0, 1.0, 1.5))
     return R.camera((3.9, -4.6, 2.3), (-1.0, 0.0, 0.9), lens=26)
 
@@ -451,6 +466,8 @@ def sh17(ctx):
     """Outside again: every window lit. He reaches the door; on about one night in seven, someone gets this reception."""
     H.street(lit=1.0, seed=5)
     H.street_lights()
+    ctx.ambience("bed_street")
+    ctx.sfx(4, "wheels", -12)
     h = ctx.hero()
     case = H.suitcase(loc=(-2.6, -3.7, 0))
     h.place((-2.4, -3.5), yaw=115)
@@ -565,6 +582,8 @@ def sh20(ctx):
     h.reach(drop, "R", (1.0, 0.95, 1.12), ease=14)
     h.holds[-1] = (tB + 8, "R", token, drop + 14, place, None)
     h.reach(drop + 18, "R", None, ease=14)
+    ctx.sfx(drop + 14, "click", -6)
+    ctx.sfx(drop + 22, "thump", -14)
     h.expr(drop + 18, "satisfied")
     t4 = ctx.at("s05-04")
     h.look(t4, (0.0, -6.0, 1.6))
@@ -661,6 +680,7 @@ def sh24(ctx):
     h.reach(t - 6, "L", (meet[0] - 0.02, meet[1] - 0.06, meet[2]), ease=12)
     c.holds[-1] = (0, "R", card, t + 6, None, Matrix.Translation((0.0, 0.07, -0.02)))
     h.hold(t + 6, "L", card)
+    ctx.sfx(t + 6, "paper", -10)
     c.reach(t + 10, "R", None, ease=14)
     h.reach(t + 12, "L", None, ease=16)
     h.look(t + 4, (0.2, 0.9, 1.15))
@@ -676,7 +696,7 @@ def sh25(ctx):
     lobby_setup(ctx)
     c = clerk(ctx)
     c.look(0, (0.45, 1.2, 1.15))
-    typing(c, 0, ctx.n + 30)
+    typing(c, 0, ctx.n + 30, ctx=ctx)
     receipt = S.box("Receipt", (0.12, 0.17, 0.003), (-0.05, 0.92, 1.087), S.M("paper", (0.92, 0.91, 0.88, 1), rough=0.7))
     h = ctx.hero()
     ph = H.phone()
@@ -685,6 +705,7 @@ def sh25(ctx):
     h.expr(0, "focused")
     h.look(0, (-0.05, 0.92, 1.09))
     h.pose(2, {"handL": (-0.02, 0.36, -0.06), "poleL": (0.6, -0.1, -0.7), "chest": (10, 0, 0), "head": (10, 0, 0)}, ease=16)
+    ctx.sfx(30, "click", -6)
     t = ctx.at("s06-07")
     h.pose(t, READ_PHONE, ease=14)
     h.look(t, "phone")
@@ -717,6 +738,7 @@ def sh26(ctx):
     h.reach(t - 6, "R", (meet[0] - 0.02, meet[1] - 0.06, meet[2]), ease=12)
     c.holds[-1] = (0, "R", card, t + 6, None, Matrix.Translation((0.0, 0.07, -0.02)))
     h.hold(t + 6, "R", card)
+    ctx.sfx(t + 6, "click", -10)
     c.reach(t + 10, "R", None, ease=14)
     h.reach(t + 12, "R", None, ease=16)
     h.expr(t + 8, "relief", ease=12)
@@ -730,6 +752,7 @@ def sh27(ctx):
     """Corridor: walks to the door, taps the key card on the reader, pushes the door open and goes in."""
     hinge = H.corridor(open_door=2)
     H.corridor_lights()
+    ctx.ambience("bed_corridor", -3)
     h = ctx.hero()
     card = H.keycard("RoomCard")
     case = H.suitcase(loc=(0.15, 1.2, 0))
@@ -742,9 +765,12 @@ def sh27(ctx):
     reader = (hx + 0.04, hy + 0.86, 1.22)
     h.look(e - 10, reader)
     h.reach(e + 2, "L", (reader[0] + 0.05, reader[1], reader[2]), ease=12)
+    ctx.sfx(e + 13, "keycard", -5)
+    ctx.sfx(4, "wheels", -13)
     h.reach(e + 22, "L", None, ease=12)
     h.expr(e + 14, "relief")
     t_open = e + 30
+    ctx.sfx(t_open - 2, "door", -6)
 
     def ang(f):
         return 70.0 * (0.5 - 0.5 * math.cos(math.pi * min(1.0, max(0.0, (f - t_open) / 24))))
