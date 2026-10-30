@@ -681,7 +681,7 @@ def sh30(ctx):
     h.look(0, (5, 4.2, 3.6))
     h.expr(ctx.word("s07-04", r"bankruptcy"), "worried")
     h.expr(ctx.at("s07-05"), "sad")
-    h.pose(ctx.word("s07-05", r"cancelled"), "slump", ease=16)
+    h.pose(ctx.word("s07-05", r"cancel"), "slump", ease=16)
     return R.camera((0.6, -5.6, 1.5), (4.8, 3.6, 2.6), lens=30)
 
 

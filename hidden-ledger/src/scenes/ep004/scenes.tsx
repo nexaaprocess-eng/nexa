@@ -466,7 +466,7 @@ export const E4S07: React.FC = () => {
           </div>
         </>
       )}>
-        {(s) => <OnScreen quad={s.quad('board')} w={1280} h={700}><Board frame={f} mode="cancelled" at={b.word(4, /cancelled/i, 0.6)} /></OnScreen>}
+        {(s) => <OnScreen quad={s.quad('board')} w={1280} h={700}><Board frame={f} mode="cancelled" at={b.word(4, /cancel/i, 0.6)} /></OnScreen>}
       </Shot>
       <Shot
         id="sh31"

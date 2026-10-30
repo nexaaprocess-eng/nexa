@@ -77,7 +77,7 @@ C = [
     ("s01-04", r"ninety", 0.1, "decline", -2), ("s01-04", r"made", 0.0, "stamp", 0),
     ("s01-06", r"So", -1.5, "jet", -8), ("s02-01", r"follow", 0.0, "jet", -9), ("s02-04", r"fuel", 0.0, "tick", -2),
     ("s03-04", r"door", -0.1, "thump", -6), ("s03-07", r"break", 0.0, "tick", -3), ("s04-02", r"change", 0.0, "tick", -4),
-    ("s05-02", r"gate", 0.0, "chime", -8), ("s06-05", r"clock", 0.0, "tick", -2), ("s07-05", r"cancelled", 0.0, "decline", -3),
+    ("s05-02", r"gate", 0.0, "chime", -8), ("s06-05", r"clock", 0.0, "tick", -2), ("s07-05", r"cancel", 0.0, "decline", -3),
     ("s08-06", r"travel", 0.0, "chime", -8), ("s08-07", r"Hidden", -0.3, "jet", -10),
 ]
 cues = {"_about": "Word-anchored sound effects for python/mix.py (episode 004). Sparse: registers on the checkout, a stamp, a door thump, distant jets on the apron.",

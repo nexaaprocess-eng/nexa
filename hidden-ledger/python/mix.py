@@ -51,6 +51,17 @@ def load_resampled(path: Path) -> np.ndarray:
     return x
 
 
+def moving_average_same(x: np.ndarray, k: int) -> np.ndarray:
+    """Same result as np.convolve(x, np.ones(k) / k, mode="same"), in O(n) via a cumulative sum
+    (the direct convolution took tens of minutes on an 8-minute episode)."""
+    n = len(x)
+    c = np.concatenate([[0.0], np.cumsum(x, dtype=np.float64)])
+    j = np.arange(n) + (k - 1) // 2  # index into the full convolution
+    hi = np.minimum(j + 1, n)
+    lo = np.maximum(j - k + 1, 0)
+    return (c[hi] - c[lo]) / k
+
+
 def smooth_env(x: np.ndarray, attack: float, release: float, hop: int = 240) -> np.ndarray:
     """Peak-ish envelope at hop resolution with asymmetric attack/release, upsampled to SR."""
     n = len(x) // hop
@@ -167,7 +178,7 @@ def main():
             if seg["duck"]:
                 s0, s1 = int((seg["start"] - 0.3) * SR), int((seg["end"] + 0.4) * SR)
                 dip[max(0, s0):min(n, s1)] = 1
-    dip = np.convolve(dip, np.ones(int(0.3 * SR)) / int(0.3 * SR), mode="same")  # smooth ramps
+    dip = moving_average_same(dip, int(0.3 * SR))  # smooth ramps
     gain_db += EXTRA_DIP_DB * dip
     # first and last seconds: let music breathe (intro before voice, outro after)
     g = 10 ** ((gain_db + voice_rms - music_rms) / 20)
