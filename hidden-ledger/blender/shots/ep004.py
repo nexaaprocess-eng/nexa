@@ -62,6 +62,7 @@ def terminal_setup(ctx, night=False, board=True):
 
 def gate_setup(ctx):
     S.gate()
+    crisp_tail()
     sun = R.golden(az=15, elev=5, sun_power=3.6, sky_strength=0.4, fill=False)
     R.area_light("HallFill", (-2, -8, 7), (1, 1, 0.5), power=10000, size=14, color=(0.85, 0.88, 1.0))
     R.area_light("GateKey", (3, -2, 4), (0.5, 1.5, 1), power=500, size=3, color=(1.0, 0.8, 0.6))
@@ -445,7 +446,7 @@ def sh19(ctx):
 
 
 # ================================================================== S05 · Secret three: everything else is extra
-@shot("sh20", "s05", uses=["gate_setup"])
+@shot("sh20", "s05", uses=["gate_setup", "crisp_tail"])
 def sh20(ctx):
     """At the gate: the bag sizer, a suitcase that won't fit, and price tags for everything else."""
     gate_setup(ctx)
@@ -518,7 +519,7 @@ def sh22(ctx):
     return R.camera((-0.4, -7.4, 1.6), (0, 0.5, 1.4), lens=36)
 
 
-@shot("sh23", "s05", "s05-07", uses=["gate_setup"])
+@shot("sh23", "s05", "s05-07", uses=["gate_setup", "crisp_tail"])
 def sh23(ctx):
     """Travel light, pay little: the passenger strolls past a family hauling suitcases to the desk."""
     gate_setup(ctx)

@@ -28,7 +28,7 @@
     ]
    ]
   },
-  "hash": "b10e4597fd33",
+  "hash": "71b163015d0f",
   "crop": [
    0,
    0,
@@ -36,7 +36,7 @@
    1080
   ],
   "char_pct": 67,
-  "composited_hash": "b10e4597fd33",
+  "composited_hash": "71b163015d0f",
   "file": "output/episode-004/shots/sh01/shot.mp4"
  },
  "sh02": {
@@ -67,7 +67,7 @@
     ]
    ]
   },
-  "hash": "b9cf4a9f6f1d",
+  "hash": "7b7bd721cd85",
   "plate_hash": "68ad65e23872",
   "crop": [
    0,
@@ -76,7 +76,7 @@
    1080
   ],
   "char_pct": 67,
-  "composited_hash": "b9cf4a9f6f1d",
+  "composited_hash": "7b7bd721cd85",
   "file": "output/episode-004/shots/sh02/shot.mp4"
  },
  "sh03": {
@@ -108,7 +108,7 @@
     ]
    ]
   },
-  "hash": "e8cdd1e25934",
+  "hash": "e22f1392aad1",
   "crop": [
    0,
    0,
@@ -116,7 +116,7 @@
    1080
   ],
   "char_pct": 67,
-  "composited_hash": "e8cdd1e25934",
+  "composited_hash": "e22f1392aad1",
   "file": "output/episode-004/shots/sh03/shot.mp4"
  },
  "sh04": {
@@ -147,7 +147,7 @@
     ]
    ]
   },
-  "hash": "e728be886752",
+  "hash": "3e6077ccc0ba",
   "plate_hash": "b2666a31a524",
   "crop": [
    0,
@@ -156,7 +156,7 @@
    1080
   ],
   "char_pct": 67,
-  "composited_hash": "e728be886752",
+  "composited_hash": "3e6077ccc0ba",
   "file": "output/episode-004/shots/sh04/shot.mp4"
  },
  "sh05": {
@@ -1146,7 +1146,7 @@
    ]
   },
   "screens": {},
-  "hash": "662a2d98fa41",
+  "hash": "ff0a0812837f",
   "plate_hash": "818369996c64",
   "crop": [
    392,
@@ -1155,7 +1155,7 @@
    1022
   ],
   "char_pct": 67,
-  "composited_hash": "662a2d98fa41",
+  "composited_hash": "ff0a0812837f",
   "file": "output/episode-004/shots/sh11/shot.mp4"
  },
  "sh13": {
@@ -1528,7 +1528,7 @@
    ]
   },
   "screens": {},
-  "hash": "684ef65e13b5",
+  "hash": "622bda78f214",
   "plate_hash": "ccf5957d8854",
   "crop": [
    0,
@@ -1537,7 +1537,7 @@
    1080
   ],
   "char_pct": 67,
-  "composited_hash": "684ef65e13b5",
+  "composited_hash": "622bda78f214",
   "file": "output/episode-004/shots/sh13/shot.mp4"
  },
  "sh14": {
@@ -1910,7 +1910,7 @@
    ]
   },
   "screens": {},
-  "hash": "738e4193ee61",
+  "hash": "d7ec2c4bfb04",
   "plate_hash": "35720ab9efaf",
   "crop": [
    268,
@@ -1919,7 +1919,7 @@
    1080
   ],
   "char_pct": 67,
-  "composited_hash": "738e4193ee61",
+  "composited_hash": "d7ec2c4bfb04",
   "file": "output/episode-004/shots/sh14/shot.mp4"
  },
  "sh15": {
@@ -2955,7 +2955,7 @@
     ]
    ]
   },
-  "hash": "92c5f50c5075",
+  "hash": "216204c99f66",
   "plate_hash": "f2fb1056d97c",
   "crop": [
    0,
@@ -2964,7 +2964,7 @@
    1080
   ],
   "char_pct": 67,
-  "composited_hash": "92c5f50c5075",
+  "composited_hash": "216204c99f66",
   "file": "output/episode-004/shots/sh16/shot.mp4"
  },
  "sh17": {
@@ -3414,7 +3414,7 @@
    ]
   },
   "screens": {},
-  "hash": "1f87af6d9339",
+  "hash": "b13194ef3dc5",
   "plate_hash": "fe0955ab7648",
   "crop": [
    0,
@@ -3423,7 +3423,7 @@
    1080
   ],
   "char_pct": 67,
-  "composited_hash": "1f87af6d9339",
+  "composited_hash": "b13194ef3dc5",
   "file": "output/episode-004/shots/sh18/shot.mp4"
  },
  "sh18b": {
@@ -3454,7 +3454,7 @@
     ]
    ]
   },
-  "hash": "51d25200cc06",
+  "hash": "d9232d3de6f6",
   "plate_hash": "2c5ee963a4e1",
   "crop": [
    0,
@@ -3463,7 +3463,7 @@
    1080
   ],
   "char_pct": 67,
-  "composited_hash": "51d25200cc06",
+  "composited_hash": "d9232d3de6f6",
   "file": "output/episode-004/shots/sh18b/shot.mp4"
  },
  "sh19": {
@@ -3486,5 +3486,91 @@
   "char_pct": 67,
   "composited_hash": "a1892ae9b59f",
   "file": "output/episode-004/shots/sh19/shot.mp4"
+ },
+ "sh20": {
+  "id": "sh20",
+  "scene": "s05",
+  "t0": 222.03,
+  "t1": 240.46,
+  "frames": 553,
+  "step": 2,
+  "anchors": {
+   "case": [
+    725.0,
+    475.6,
+    5.195
+   ],
+   "desk": [
+    1267.3,
+    366.2,
+    8.255
+   ],
+   "GatePlane_body": [
+    249.9,
+    188.9,
+    25.117
+   ],
+   "GatePlane_cockpit": [
+    -1232.8,
+    129.8,
+    17.02
+   ],
+   "GatePlane_door": [
+    -765.8,
+    315.5,
+    19.637
+   ],
+   "GatePlane_engine": [
+    93.5,
+    407.7,
+    27.58
+   ],
+   "GatePlane_fuel": [
+    303.2,
+    326.3,
+    32.356
+   ],
+   "GatePlane_tail": [
+    1209.0,
+    -32.7,
+    31.623
+   ],
+   "sizer": [
+    1009.5,
+    566.0,
+    5.885
+   ]
+  },
+  "screens": {
+   "gate": [
+    [
+     1061.7,
+     79.4
+    ],
+    [
+     1326.2,
+     108.5
+    ],
+    [
+     1322.6,
+     284.4
+    ],
+    [
+     1060.6,
+     274.4
+    ]
+   ]
+  },
+  "hash": "dfba7269efed",
+  "plate_hash": "4ee638c9f3d6",
+  "crop": [
+   0,
+   0,
+   1920,
+   1080
+  ],
+  "char_pct": 67,
+  "composited_hash": "dfba7269efed",
+  "file": "output/episode-004/shots/sh20/shot.mp4"
  }
 }
