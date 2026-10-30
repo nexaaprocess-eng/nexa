@@ -407,8 +407,10 @@ export const E4S06: React.FC = () => {
           <>
             {vals.map(([k, nm, v], i) => (
               <React.Fragment key={k}>
-                <PriceTag p={s.a(`p_${k}`)} text={`€${v}`} at={b.word(7, i === 0 ? /thirty|36/i : i === 1 ? /Wiz|sixty/i : i === 2 ? /easy|ninety/i : /network|hundred/i, 0.5) + (i > 2 ? (i - 3) * 6 : 0)} frame={f} size={40} dy={-20} color={i === 0 ? '#FFE3CC' : K.ivory} tilt={0} />
-                <div style={{position: 'absolute', left: s.a(`b_${k}`)[0], top: s.a(`b_${k}`)[1] + 18, transform: 'translateX(-50%)', fontFamily: FONT_BODY, fontWeight: 700, fontSize: 28, color: K.ivory, opacity: ramp(f, b.at(7) + 6, 10), whiteSpace: 'nowrap', textShadow: '0 2px 10px rgba(0,0,0,0.9)'}}>{nm}</div>
+                {/* the tallest bar's top is above the frame once the camera pushes in: its tag is pinned to the bar face */}
+                <PriceTag p={i === 5 ? [s.a(`p_${k}`)[0], s.a(`p_${k}`)[1] + 150, 0] : s.a(`p_${k}`)} text={`€${v}`} at={b.word(7, i === 0 ? /thirty|36/i : i === 1 ? /Wiz|sixty/i : i === 2 ? /easy|ninety/i : /network|hundred/i, 0.5) + (i > 2 ? (i - 3) * 6 : 0)} frame={f} size={40} dy={-20} color={i === 0 ? '#FFE3CC' : K.ivory} tilt={0} />
+                {/* names on the bars' lower faces, clear of the subtitle box */}
+                <div style={{position: 'absolute', left: s.a(`b_${k}`)[0], top: s.a(`b_${k}`)[1] - 56, transform: 'translateX(-50%)', fontFamily: FONT_BODY, fontWeight: 700, fontSize: 28, color: K.ivory, opacity: ramp(f, b.at(7) + 6, 10), whiteSpace: 'nowrap', textShadow: '0 2px 10px rgba(0,0,0,0.9)'}}>{nm}</div>
               </React.Fragment>
             ))}
           </>
@@ -426,7 +428,7 @@ export const E4S07: React.FC = () => {
     ['Nov 2024', 'Chapter 11 bankruptcy', b.word(3, /November/i, 0.55)],
     ['Mar 2025', 'emerges', b.word(3, /November/i, 0.6) + 12],
     ['Aug 2025', 'Chapter 11 again', b.word(3, /August/i, 0.85)],
-    ['2 May 2026', 'all flights cancelled · wind-down', b.word(4, /May/i, 0.1)],
+    ['2 May 2026', 'all flights cancelled, wind-down', b.word(4, /May/i, 0.1)],
   ];
   return (
     <AbsoluteFill>
@@ -455,12 +457,13 @@ export const E4S07: React.FC = () => {
       <Shot id="sh30" move={{from: [960, 560, 1.0], to: [1000, 520, 1.08]}} hud={() => (
         <>
           <SourceNote at={b.at(3)} frame={f}>{SRC_SPIRIT}</SourceNote>
-          <div style={{position: 'absolute', left: 70, top: 160, display: 'flex', flexDirection: 'column', gap: 14}}>
-            <div style={{fontFamily: FONT_TITLE, fontWeight: 700, fontSize: 40, color: '#F5D27A', letterSpacing: 3, opacity: ramp(f, b.at(3), 10), textShadow: '0 2px 12px rgba(0,0,0,0.8)'}}>SPIRIT AIRLINES</div>
+          {/* compact panel left of the departures board (date above event, so no line reaches the board) */}
+          <div style={{position: 'absolute', left: 56, top: 150, width: 430, padding: '20px 26px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: 12, background: 'rgba(20,17,15,0.82)', borderRadius: 16, borderLeft: `6px solid ${K.red}`, opacity: ramp(f, b.at(3), 10)}}>
+            <div style={{fontFamily: FONT_TITLE, fontWeight: 700, fontSize: 36, color: '#F5D27A', letterSpacing: 3}}>SPIRIT AIRLINES</div>
             {events.map(([d, t, at], i) => (
-              <div key={i} style={{display: 'flex', gap: 20, alignItems: 'baseline', opacity: ramp(f, at, 10), transform: `translateX(${(1 - ramp(f, at, 10)) * -20}px)`}}>
-                <div style={{width: 240, fontFamily: FONT_TITLE, fontWeight: 700, fontSize: 40, color: i === 3 ? K.red : K.ivory, textShadow: '0 2px 12px rgba(0,0,0,0.8)'}}>{d}</div>
-                <div style={{fontFamily: FONT_BODY, fontWeight: 600, fontSize: 36, color: K.ivory, textShadow: '0 2px 12px rgba(0,0,0,0.8)'}}>{t}</div>
+              <div key={i} style={{opacity: ramp(f, at, 10), transform: `translateX(${(1 - ramp(f, at, 10)) * -20}px)`}}>
+                <div style={{fontFamily: FONT_TITLE, fontWeight: 700, fontSize: 30, color: i === 3 ? K.red : K.taupe, letterSpacing: 1}}>{d}</div>
+                <div style={{fontFamily: FONT_BODY, fontWeight: 600, fontSize: 34, lineHeight: 1.15, color: K.ivory}}>{t}</div>
               </div>
             ))}
           </div>

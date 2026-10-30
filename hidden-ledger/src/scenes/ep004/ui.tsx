@@ -145,7 +145,7 @@ export const Board: React.FC<{frame: number; mode: 'fares' | 'cancelled'; at?: n
         const cancelled = mode === 'cancelled' && frame >= at + i * 10;
         return (
           <div key={d} style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: 52, padding: '12px 0', borderTop: '2px solid #1E2733', letterSpacing: 2}}>
-            <span style={{width: 150, color: '#9FB0C2'}}>{`${String(6 + i * 2).padStart(2, '0')}:${i % 2 ? '45' : '10'}`}</span>
+            <span style={{width: 200, color: '#9FB0C2'}}>{`${String(6 + i * 2).padStart(2, '0')}:${i % 2 ? '45' : '10'}`}</span>
             <span style={{flex: 1, color: '#FFFFFF'}}>{d}</span>
             {mode === 'fares' ? <span style={{color: fare > base ? K.orange : '#F5D27A'}}>${fare}</span> : <span style={{color: cancelled ? '#FF6B5E' : '#F5D27A'}}>{cancelled ? 'CANCELLED' : 'ON TIME'}</span>}
           </div>
