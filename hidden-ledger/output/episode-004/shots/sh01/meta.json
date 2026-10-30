@@ -2,8 +2,8 @@
  "id": "sh01",
  "scene": "s01",
  "t0": 0.0,
- "t1": 8.878,
- "frames": 266,
+ "t1": 6.68,
+ "frames": 200,
  "step": 2,
  "anchors": {},
  "screens": {
@@ -26,6 +26,12 @@
    ]
   ]
  },
- "hash": "682fb8fa16d1",
- "plate_hash": "f28173aca30c"
+ "hash": "6797e466fb31",
+ "plate_hash": "a10b61693575",
+ "crop": [
+  0,
+  0,
+  1920,
+  1080
+ ]
 }
