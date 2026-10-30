@@ -1,0 +1,15 @@
+{
+  "video": "output/episode-004/final/hidden_ledger_episode_004_FINAL_1080p.mp4",
+  "ffmpeg_exit": 0,
+  "decode_errors": [],
+  "decode_error_count": 0,
+  "black_windows": [],
+  "freeze_starts": [],
+  "silences": [],
+  "integrated_lufs": -15.0,
+  "lra_lu": 2.8,
+  "true_peak_dbtp": -2.4,
+  "sample_peak_db": -2.388391,
+  "clipping": false,
+  "pass": true
+}

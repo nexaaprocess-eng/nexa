@@ -1,0 +1,32 @@
+{
+ "kroger_per_100": {
+  "cost_of_goods": 77.14,
+  "gross_profit": 22.86,
+  "operating_costs": 21.58,
+  "operating_profit": 1.28,
+  "interest_taxes_other": 0.59,
+  "net_earnings": 0.69,
+  "charge_2_5bn": 1.69
+ },
+ "kroger_our_brands_share_pct": 26.42,
+ "one_pct_of_sales_musd": 1476,
+ "turnover": {
+  "kroger_x": 11.99,
+  "costco_x": 14.12,
+  "walmart_x": 9.29
+ },
+ "payables_vs_inventory_pct": {
+  "kroger_ap_over_lifo_inventory": 152.18,
+  "kroger_ap_over_fifo_inventory": 111.04,
+  "costco": 116.91,
+  "walmart": 107.15
+ },
+ "walmart_us_grocery_share_pct": 59.11,
+ "costco_fees_over_operating_income_pct": 50.55,
+ "shrink_example_sales_to_replace_1usd_at_2pct": 50,
+ "turnover_days": {
+  "kroger_days": 30.4,
+  "costco_days": 25.8,
+  "walmart_days": 39.3
+ }
+}

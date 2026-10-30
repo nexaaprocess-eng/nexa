@@ -1,0 +1,222 @@
+{
+ "_about": "Word-anchored sound effects for python/mix.py (see content/episode-001/sfx_cues.json). Scanner beeps and the register sound are tied to the matching on-screen actions.",
+ "cues": [
+  {
+   "segment": "s01-01",
+   "word": "hand",
+   "offset": 0.1,
+   "sound": "click",
+   "gain_db": 2
+  },
+  {
+   "segment": "s01-01",
+   "word": "checkout",
+   "offset": 0.0,
+   "sound": "thump",
+   "gain_db": 1
+  },
+  {
+   "segment": "s01-02",
+   "word": "Bread",
+   "offset": 0.0,
+   "sound": "beep",
+   "gain_db": -2
+  },
+  {
+   "segment": "s01-02",
+   "word": "coffee",
+   "offset": 0.0,
+   "sound": "beep",
+   "gain_db": -2
+  },
+  {
+   "segment": "s01-02",
+   "word": "milk",
+   "offset": 0.0,
+   "sound": "beep",
+   "gain_db": -2
+  },
+  {
+   "segment": "s01-02",
+   "word": "dinners",
+   "offset": 0.0,
+   "sound": "beep",
+   "gain_db": -2
+  },
+  {
+   "segment": "s01-02",
+   "word": "beeps",
+   "offset": -0.05,
+   "sound": "beep",
+   "gain_db": -1
+  },
+  {
+   "segment": "s01-02",
+   "word": "prints",
+   "offset": 0.0,
+   "sound": "click",
+   "gain_db": 0
+  },
+  {
+   "segment": "s01-02",
+   "word": "register",
+   "offset": 0.0,
+   "sound": "register",
+   "gain_db": -1
+  },
+  {
+   "segment": "s01-03",
+   "word": "keep",
+   "offset": 0.1,
+   "sound": "pop",
+   "gain_db": 0
+  },
+  {
+   "segment": "s01-06",
+   "word": "Tiny",
+   "offset": 0.0,
+   "sound": "thump",
+   "gain_db": 2
+  },
+  {
+   "segment": "s01-06",
+   "word": "Enormous",
+   "offset": 0.0,
+   "sound": "thump",
+   "gain_db": 3
+  },
+  {
+   "segment": "s02-07",
+   "word": "enormous",
+   "offset": -0.2,
+   "sound": "whoosh",
+   "gain_db": -1
+  },
+  {
+   "segment": "s04-02",
+   "word": "Ten",
+   "offset": 0.0,
+   "sound": "beep",
+   "gain_db": -3
+  },
+  {
+   "segment": "s04-02",
+   "word": "items",
+   "offset": 0.0,
+   "sound": "beep",
+   "gain_db": -3
+  },
+  {
+   "segment": "s04-02",
+   "word": "register",
+   "offset": 0.0,
+   "sound": "register",
+   "gain_db": -2
+  },
+  {
+   "segment": "s05-02",
+   "word": "Trucks",
+   "offset": -0.2,
+   "sound": "whoosh",
+   "gain_db": -1
+  },
+  {
+   "segment": "s05-02",
+   "word": "refilled",
+   "offset": 0.0,
+   "sound": "click",
+   "gain_db": 0
+  },
+  {
+   "segment": "s06-03",
+   "word": "arrives",
+   "offset": 0.0,
+   "sound": "thump",
+   "gain_db": 0
+  },
+  {
+   "segment": "s06-03",
+   "word": "sells",
+   "offset": 0.0,
+   "sound": "beep",
+   "gain_db": -3
+  },
+  {
+   "segment": "s06-03",
+   "word": "thirty|30",
+   "offset": 0.0,
+   "sound": "click",
+   "gain_db": 1
+  },
+  {
+   "segment": "s08-04",
+   "word": "half",
+   "offset": 0.0,
+   "sound": "pop",
+   "gain_db": 0
+  },
+  {
+   "segment": "s08-04",
+   "word": "thrown|throne",
+   "offset": 0.0,
+   "sound": "thump",
+   "gain_db": 1
+  },
+  {
+   "segment": "s08-05",
+   "word": "fifty|50",
+   "offset": 0.1,
+   "sound": "register",
+   "gain_db": -2
+  },
+  {
+   "segment": "s09-03",
+   "word": "membership",
+   "offset": 0.0,
+   "sound": "pop",
+   "gain_db": 0
+  },
+  {
+   "segment": "s10-02",
+   "word": "volume",
+   "offset": 0.0,
+   "sound": "click",
+   "gain_db": 1
+  },
+  {
+   "segment": "s10-02",
+   "word": "turning",
+   "offset": 0.0,
+   "sound": "click",
+   "gain_db": 1
+  },
+  {
+   "segment": "s10-02",
+   "word": "supplier",
+   "offset": 0.0,
+   "sound": "click",
+   "gain_db": 1
+  },
+  {
+   "segment": "s10-02",
+   "word": "brands",
+   "offset": 0.0,
+   "sound": "click",
+   "gain_db": 1
+  },
+  {
+   "segment": "s10-02",
+   "word": "shrink",
+   "offset": 0.0,
+   "sound": "click",
+   "gain_db": 1
+  },
+  {
+   "segment": "s10-02",
+   "word": "membership",
+   "offset": 0.0,
+   "sound": "click",
+   "gain_db": 1
+  }
+ ]
+}

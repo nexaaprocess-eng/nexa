@@ -1,0 +1,32 @@
+{
+  "name": "pilot",
+  "duration": 82.773,
+  "sample_rate": 48000,
+  "channels": 2,
+  "integrated_lufs": -16.2,
+  "true_peak_dbtp": -2.6,
+  "lra": 3.9,
+  "clipped_samples": 0,
+  "music_source": "procedural (python/music.py)",
+  "sfx_events": 5,
+  "audits": [
+    {
+      "from": 0,
+      "to": 30,
+      "voice_db": -22.6,
+      "music_db": -44.0,
+      "voice_over_music_db": 21.4
+    },
+    {
+      "from": 24.46,
+      "to": 32.46,
+      "voice_db": -22.6,
+      "music_db": -44.6,
+      "voice_over_music_db": 22.0
+    }
+  ],
+  "targets": {
+    "integrated_lufs": -16,
+    "true_peak_max": -1.5
+  }
+}

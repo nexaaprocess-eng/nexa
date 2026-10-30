@@ -1,0 +1,9 @@
+{
+  "video": "output/episode-002/final/hidden_ledger_episode_002_FINAL_1080p.mp4",
+  "samples": 1199,
+  "fps": 2.0,
+  "median_content_fraction": 0.1022,
+  "p5_content_fraction": 0.0292,
+  "near_empty_runs": [],
+  "pass": true
+}

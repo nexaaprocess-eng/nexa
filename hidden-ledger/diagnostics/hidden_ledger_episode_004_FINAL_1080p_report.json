@@ -1,0 +1,24 @@
+{
+  "file": "output/episode-004/final/hidden_ledger_episode_004_FINAL_1080p.mp4",
+  "duration": 482.2,
+  "size_mb": 616.9,
+  "video": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "frames": 14466
+  },
+  "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  "integrated_lufs": -15,
+  "true_peak_dbfs": -2.4,
+  "black_sections": 0,
+  "long_silences": 0,
+  "ok": true,
+  "problems": [],
+  "expected_frames": 14466
+}

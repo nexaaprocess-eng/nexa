@@ -1,0 +1,104 @@
+
+$ python python/music.py all
+sfx whoosh 0.9 s
+sfx click 0.05 s
+sfx tick 0.08 s
+sfx thump 0.6 s
+sfx pop 0.35 s
+sfx beep 0.11 s
+sfx register 0.57 s
+sfx chime 0.54 s
+sfx buzz 0.42 s
+sfx decline 0.31 s
+music 1_intro.wav 60 s
+music 2_neutral.wav 60 s
+music 3_reveal.wav 60 s
+
+$ python python/generate_voice.py narration --episode 003
+narration: 0 rendered, 63 cached, 0 failed (voice=am_michael, speed=1.0)
+
+$ python python/build_timeline.py --episode 003 --name full
+full: 9 scenes, 668.89s total, 1553 words, 146 wpm while speaking, 178 subtitle cues
+  s01    0.00 ->   52.68  Cold open
+  s02   52.68 ->  111.83  When you owned your software
+  s03  111.83 ->  169.13  Adobe's switch
+  s04  169.13 ->  243.66  Two companies
+  s05  243.66 ->  337.54  Subscription math
+  s06  337.54 ->  422.60  What the data shows
+  s07  422.60 ->  502.18  Your wallet
+  s08  502.18 ->  600.10  Where it breaks
+  s09  600.10 ->  668.89  The real reason
+
+$ python python/mix.py --episode 003 --name full
+   music cue s01 intro 53.68s
+   music cue s02 neutral 61.15s
+   music cue s03 tension 59.3s
+   music cue s04 lift 76.53s
+   music cue s05 process 95.87s
+   music cue s06 neutral 87.06s
+   music cue s07 lift 81.58s
+   music cue s08 tension 99.92s
+   music cue s09 reveal 69.79s
+{"duration": 668.893, "integrated_lufs": -15.3, "true_peak_dbtp": -2.5, "lra": 3.3, "clipped_samples": 0, "music_source": "procedural (python/music.py)", "sfx_events": 66}
+  audit {'from': 0, 'to': 30, 'voice_db': -24.0, 'music_db': -48.1, 'voice_over_music_db': 24.1}
+  audit {'from': 48.68, 'to': 56.68, 'voice_db': -22.2, 'music_db': -45.1, 'voice_over_music_db': 22.9}
+  audit {'from': 107.83, 'to': 115.83, 'voice_db': -23.4, 'music_db': -48.0, 'voice_over_music_db': 24.7}
+  audit {'from': 165.13, 'to': 173.13, 'voice_db': -26.0, 'music_db': -46.2, 'voice_over_music_db': 20.2}
+{
+ "voice": {
+  "segments": 63,
+  "possible_cutoffs": [],
+  "clipped_segments": [],
+  "pause_min_s": 0.38,
+  "pause_max_s": 0.9,
+  "configured_pauses_s": [
+   0.38,
+   0.9
+  ],
+  "unexpected_gaps": []
+ },
+ "music": {
+  "speech_windows": 4942,
+  "voice_over_music_db_median": 26.0,
+  "voice_over_music_db_p5": 16.3,
+  "voice_over_music_db_min": 8.3,
+  "worst_windows": [
+   {
+    "t": 413.5,
+    "voice_over_music_db": 8.3
+   },
+   {
+    "t": 414.3,
+    "voice_over_music_db": 10.4
+   },
+   {
+    "t": 616.4,
+    "voice_over_music_db": 10.5
+   },
+   {
+    "t": 90.0,
+    "voice_over_music_db": 10.6
+   },
+   {
+    "t": 409.3,
+    "voice_over_music_db": 10.8
+   }
+  ],
+  "per_scene_music_db": {
+   "s01": -50.3,
+   "s02": -47.7,
+   "s03": -50.8,
+   "s04": -49.1,
+   "s05": -51.0,
+   "s06": -50.5,
+   "s07": -48.5,
+   "s08": -53.8,
+   "s09": -48.4
+  }
+ },
+ "sfx": {
+  "peak_relative_to_voice_peak_db": -14.8
+ },
+ "issues": []
+}
+EXIT 0

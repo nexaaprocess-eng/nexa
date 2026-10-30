@@ -1,0 +1,491 @@
+{
+  "id": "002",
+  "slug": "how-supermarkets-make-money-on-tiny-margins",
+  "title": "How Supermarkets Make Money on Tiny Margins",
+  "channel": "Hidden Ledger",
+  "tagline": "The hidden economics of everyday life",
+  "language": "en-US",
+  "voice": {
+    "voiceId": "am_michael",
+    "speed": 1.0,
+    "lang": "en-us",
+    "pauseBetweenSegments": 0.38,
+    "pauseBetweenScenes": 0.9,
+    "leadIn": 0.6,
+    "tail": 2.5
+  },
+  "lexicon": {
+    "UPS": "U P S"
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "title": "Cold open",
+      "chapter": "A hundred dollars at the checkout",
+      "music": "intro",
+      "segments": [
+        {
+          "id": "01",
+          "text": "You hand over a hundred dollars at the checkout."
+        },
+        {
+          "id": "02",
+          "text": "Bread, coffee, a gallon of milk, a week of dinners. The scanner beeps, the receipt prints, and the money disappears into the register."
+        },
+        {
+          "id": "03",
+          "text": "So how much of that hundred dollars does the supermarket actually keep?"
+        },
+        {
+          "id": "04",
+          "text": "At Kroger, which runs nearly 2,700 supermarkets across the United States, the answer for its latest fiscal year was about $1.28 in operating profit.",
+          "say": "At Kroger, which runs nearly twenty-seven hundred supermarkets across the United States, the answer for its latest fiscal year was about a dollar and twenty-eight cents in operating profit.",
+          "claims": [
+            "K01",
+            "K03"
+          ],
+          "duck": true
+        },
+        {
+          "id": "05",
+          "text": "And yet the same company brought in more than $147 billion in sales.",
+          "claims": [
+            "K02"
+          ],
+          "duck": true
+        },
+        {
+          "id": "06",
+          "text": "Tiny margins. Enormous numbers. How does that business actually work?"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "title": "Huge sales, thin profit",
+      "chapter": "Huge sales, thin profit",
+      "music": "neutral",
+      "segments": [
+        {
+          "id": "01",
+          "text": "Start with the scale, because it changes everything."
+        },
+        {
+          "id": "02",
+          "text": "In the fiscal year that ended in January 2026, Kroger reported $147.6 billion in sales. Its operating profit was $1.9 billion, or 1.28 percent of sales.",
+          "claims": [
+            "K02",
+            "K03"
+          ],
+          "duck": true
+        },
+        {
+          "id": "03",
+          "text": "That year included a $2.5 billion charge tied to its automated fulfillment network. The year before, operating profit was 2.62 percent of sales.",
+          "claims": [
+            "K04",
+            "K05"
+          ],
+          "duck": true
+        },
+        {
+          "id": "04",
+          "text": "Either way, the pattern is the same: one or two cents of operating profit on each dollar, multiplied across a mountain of sales."
+        },
+        {
+          "id": "05",
+          "text": "Even one percent of nearly $150 billion is well over a billion dollars.",
+          "claims": [
+            "X01"
+          ]
+        },
+        {
+          "id": "06",
+          "text": "Scale works the same way at the top of the industry. Walmart's operating income was 4.2 percent of net sales in its latest fiscal year. On more than $700 billion of net sales, that came to nearly $30 billion.",
+          "claims": [
+            "W03",
+            "W05"
+          ],
+          "duck": true
+        },
+        {
+          "id": "07",
+          "text": "That is the first secret of the supermarket. It is not built to earn a lot on each sale. It is built to make an enormous number of them."
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "title": "Three kinds of margin",
+      "chapter": "Where the $100 goes",
+      "music": "process",
+      "segments": [
+        {
+          "id": "01",
+          "text": "To see where the rest goes, follow a hundred dollars of Kroger's sales through its income statement.",
+          "claims": [
+            "K06"
+          ]
+        },
+        {
+          "id": "02",
+          "text": "First, the cost of the goods themselves, including advertising, warehousing and transportation. That takes about $77.14.",
+          "say": "First, the cost of the goods themselves, including advertising, warehousing and transportation. That takes about seventy-seven dollars and fourteen cents.",
+          "claims": [
+            "K06"
+          ],
+          "duck": true
+        },
+        {
+          "id": "03",
+          "text": "What remains is gross profit: $22.86. Kroger reports a gross margin of 22.9 percent.",
+          "say": "What remains is gross profit: twenty-two dollars and eighty-six cents. Kroger reports a gross margin of 22.9 percent.",
+          "claims": [
+            "K06",
+            "K07"
+          ],
+          "duck": true
+        },
+        {
+          "id": "04",
+          "text": "Gross margin is what survives the cost of the product. It is not profit yet."
+        },
+        {
+          "id": "05",
+          "text": "Next comes the cost of running the business: wages and benefits, utilities, rent, depreciation, and that year's $2.5 billion charge. Together, about $21.58.",
+          "say": "Next comes the cost of running the business: wages and benefits, utilities, rent, depreciation, and that year's 2.5 billion dollar charge. Together, about twenty-one dollars and fifty-eight cents.",
+          "claims": [
+            "K04",
+            "K06"
+          ],
+          "duck": true
+        },
+        {
+          "id": "06",
+          "text": "What's left is operating profit, what the business itself earned: $1.28.",
+          "say": "What's left is operating profit, what the business itself earned: a dollar and twenty-eight cents.",
+          "claims": [
+            "K03",
+            "K06"
+          ],
+          "duck": true
+        },
+        {
+          "id": "07",
+          "text": "Then interest, taxes and other items. Net earnings, the bottom line for shareholders, came to about 69 cents.",
+          "say": "Then interest, taxes and other items. Net earnings, the bottom line for shareholders, came to about sixty-nine cents.",
+          "claims": [
+            "K08"
+          ],
+          "duck": true
+        },
+        {
+          "id": "08",
+          "text": "Gross margin, operating margin, net margin. Three different numbers that answer three different questions, and mixing them up is the easiest way to misread a supermarket."
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "title": "The basket",
+      "chapter": "One basket, many margins",
+      "music": "lift",
+      "segments": [
+        {
+          "id": "01",
+          "text": "Inside those averages, every product plays a different role. Here is a hypothetical basket. These prices and costs are illustrative, not data from any real store.",
+          "claims": [
+            "I01"
+          ]
+        },
+        {
+          "id": "02",
+          "text": "Ten items, $54 at the register.",
+          "say": "Ten items, fifty-four dollars at the register.",
+          "claims": [
+            "I01"
+          ],
+          "duck": true
+        },
+        {
+          "id": "03",
+          "text": "In this example, the milk earns almost nothing. Stores sometimes price staples like this aggressively, even as loss leaders, sold at a thin margin or below cost to bring shoppers through the door.",
+          "claims": [
+            "I01",
+            "D01"
+          ]
+        },
+        {
+          "id": "04",
+          "text": "The store-brand cereal earns more than the national brand sitting next to it. The prepared meal from the deli earns more still.",
+          "claims": [
+            "I01"
+          ]
+        },
+        {
+          "id": "05",
+          "text": "Add it up, and this basket's gross margin lands near 23 percent. We chose the numbers so it would roughly match Kroger's reported figure.",
+          "claims": [
+            "I01",
+            "K07"
+          ],
+          "duck": true
+        },
+        {
+          "id": "06",
+          "text": "The point is that a supermarket does not need every item to be profitable. It needs the mix of what you buy to be."
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "title": "Speed",
+      "chapter": "The second secret: speed",
+      "music": "process",
+      "segments": [
+        {
+          "id": "01",
+          "text": "The second secret is speed."
+        },
+        {
+          "id": "02",
+          "text": "Much of what a grocery store sells can spoil, so it cannot sit for long. Trucks arrive, pallets move through the stockroom, shelves are refilled, and the same shelf space is emptied again."
+        },
+        {
+          "id": "03",
+          "text": "One way to measure this is inventory turnover: the cost of the goods sold in a year, divided by the average inventory on hand.",
+          "claims": [
+            "D02"
+          ]
+        },
+        {
+          "id": "04",
+          "text": "Using figures from their latest annual reports, Kroger's inventory turned over roughly twelve times, or about once a month. Costco's turned about fourteen times. Walmart's, with far more general merchandise, about nine times.",
+          "claims": [
+            "X02"
+          ],
+          "duck": true
+        },
+        {
+          "id": "05",
+          "text": "Twelve turns a year means the average item spends about a month between the delivery truck and the checkout. The faster that cycle runs, the less cash sits on the shelves at any moment.",
+          "claims": [
+            "X02"
+          ]
+        },
+        {
+          "id": "06",
+          "text": "Every turn is another chance to earn that thin margin again, from the same shelf space and the same money tied up in stock."
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "title": "Suppliers",
+      "chapter": "Who finances the shelves",
+      "music": "neutral",
+      "segments": [
+        {
+          "id": "01",
+          "text": "And this is where it gets interesting. At the end of their latest fiscal years, Walmart, Costco and Kroger each owed more in accounts payable than the value of the inventory on their books.",
+          "claims": [
+            "X03"
+          ],
+          "duck": true
+        },
+        {
+          "id": "02",
+          "text": "Accounts payable are bills that haven't been paid yet. When goods sell before their invoices come due, suppliers are, in effect, helping to finance the shelves.",
+          "claims": [
+            "D03"
+          ]
+        },
+        {
+          "id": "03",
+          "text": "Here is a simple hypothetical. A case of pasta arrives on day one, sells out within three weeks, and the supplier's invoice is due on day thirty. For more than a week, the store holds the shoppers' money before it pays for the pasta.",
+          "claims": [
+            "I02"
+          ]
+        },
+        {
+          "id": "04",
+          "text": "Money also flows the other way. Walmart's annual report describes payments from suppliers for volume incentives, warehouse allowances, markdowns and certain advertising, and records them as a reduction of its cost of sales.",
+          "claims": [
+            "W04"
+          ]
+        },
+        {
+          "id": "05",
+          "text": "So the gross margin you see is shaped not only by shelf prices, but by negotiations most shoppers never see."
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "title": "Private label",
+      "chapter": "The store's own brand",
+      "music": "lift",
+      "segments": [
+        {
+          "id": "01",
+          "text": "Then there is the store's own brand."
+        },
+        {
+          "id": "02",
+          "text": "Kroger says its Our Brands products made up more than $39 billion of its sales in fiscal 2025, and that its supermarkets stock, on average, more than 13,000 private label items.",
+          "claims": [
+            "K09",
+            "K10"
+          ],
+          "duck": true
+        },
+        {
+          "id": "03",
+          "text": "That is roughly a quarter of all its sales.",
+          "claims": [
+            "X04"
+          ]
+        },
+        {
+          "id": "04",
+          "text": "Costco says its Kirkland Signature products are generally priced lower than national brands, and generally earn higher margins.",
+          "claims": [
+            "C04"
+          ]
+        },
+        {
+          "id": "05",
+          "text": "Both can be true at once. When the retailer controls the product, the label and the price, it can charge the shopper less and still keep a larger share of each sale."
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "title": "Shrink",
+      "chapter": "The danger: shrink and waste",
+      "music": "tension",
+      "segments": [
+        {
+          "id": "01",
+          "text": "Now the danger. In a business this thin, small losses are big problems."
+        },
+        {
+          "id": "02",
+          "text": "Retailers call it shrink: products that were paid for but never sold, because they spoiled, were damaged, were stolen, or simply went missing in the records.",
+          "claims": [
+            "D04"
+          ]
+        },
+        {
+          "id": "03",
+          "text": "Groceries carry extra risk because so much of the store is perishable. The U.S. Department of Agriculture estimated that food losses at the retail level equaled 10 percent of the available food supply in 2010. It is an older estimate, but it shows the scale.",
+          "claims": [
+            "U01"
+          ],
+          "duck": true
+        },
+        {
+          "id": "04",
+          "text": "That is also why perishables get marked down near the end of their shelf life. A bag of salad sold at half price still recovers part of its cost. One thrown away recovers nothing."
+        },
+        {
+          "id": "05",
+          "text": "Here is why it matters so much. Imagine a store with a 2 percent operating margin. To make up for one dollar of product lost to shrink, it needs about fifty dollars of new sales.",
+          "claims": [
+            "X05"
+          ],
+          "duck": true
+        },
+        {
+          "id": "06",
+          "text": "That is why Kroger listed lower shrink among the reasons its gross margin improved last year.",
+          "claims": [
+            "K11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "title": "Three business models",
+      "chapter": "Supermarket, supercenter, warehouse club",
+      "music": "neutral",
+      "segments": [
+        {
+          "id": "01",
+          "text": "Not every company that sells groceries plays the same game."
+        },
+        {
+          "id": "02",
+          "text": "Walmart is a general merchandise giant. In its latest fiscal year, grocery was about 59 percent of Walmart U.S. sales. Its consolidated gross profit was 24.2 percent of net sales, and operating income was 4.2 percent.",
+          "claims": [
+            "W01",
+            "W02",
+            "W03"
+          ],
+          "duck": true
+        },
+        {
+          "id": "03",
+          "text": "Costco runs membership warehouse clubs. Its gross margin on net sales was just 11.09 percent. But it also collected $5.9 billion in membership fees.",
+          "claims": [
+            "C01",
+            "C02"
+          ],
+          "duck": true
+        },
+        {
+          "id": "04",
+          "text": "Those fees were equal to about half of Costco's operating income for the year. Its model pairs very thin margins on goods with a fee that members pay to shop.",
+          "claims": [
+            "X06"
+          ],
+          "duck": true
+        },
+        {
+          "id": "05",
+          "text": "A traditional supermarket chain like Kroger leans on fresh food, its own brands, pharmacy, fuel and growing side businesses such as advertising.",
+          "claims": [
+            "K12"
+          ]
+        },
+        {
+          "id": "06",
+          "text": "So these numbers are not interchangeable. A 24 percent gross margin at Walmart and an 11 percent gross margin at Costco describe different businesses, not better or worse ones.",
+          "claims": [
+            "W02",
+            "C01"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "Payoff",
+      "chapter": "So how do they make money?",
+      "music": "reveal",
+      "segments": [
+        {
+          "id": "01",
+          "text": "So, how do supermarkets make money on tiny margins?"
+        },
+        {
+          "id": "02",
+          "text": "By selling an enormous volume. By turning their inventory over again and again. By using supplier credit to help finance their shelves. By leaning on their own brands. By fighting shrink, one damaged box at a time. And, in some models, by charging for membership or selling advertising."
+        },
+        {
+          "id": "03",
+          "text": "The next time you hand over that hundred dollars, remember: at a chain like Kroger, the company keeps only about one to three dollars as operating profit. The rest pays for the food, the people, the buildings and the trucks that make a supermarket work.",
+          "claims": [
+            "K03",
+            "K05"
+          ]
+        },
+        {
+          "id": "04",
+          "text": "This is Hidden Ledger. Every number in this video is sourced in the description."
+        }
+      ]
+    }
+  ]
+}

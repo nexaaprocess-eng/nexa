@@ -1,0 +1,498 @@
+{
+  "id": "003",
+  "slug": "why-every-app-wants-a-subscription",
+  "title": "Why Every App Wants a Subscription",
+  "channel": "Hidden Ledger",
+  "tagline": "The hidden economics of everyday life",
+  "language": "en-US",
+  "voice": {
+    "voiceId": "am_michael",
+    "speed": 1.0,
+    "lang": "en-us",
+    "pauseBetweenSegments": 0.38,
+    "pauseBetweenScenes": 0.9,
+    "leadIn": 0.6,
+    "tail": 2.5
+  },
+  "lexicon": {
+    "RevenueCat": "Revenue Cat",
+    "RevenueCat's": "Revenue Cat's"
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "title": "Cold open",
+      "chapter": "The monthly total",
+      "music": "intro",
+      "segments": [
+        {
+          "id": "01",
+          "text": "Open the settings on almost any phone, and you can find a list like this one."
+        },
+        {
+          "id": "02",
+          "text": "Music, about twelve dollars a month. Streaming, fifteen. Extra cloud storage, three. A fitness app, thirteen. A productivity app, ten. And an AI assistant, twenty.",
+          "claims": [
+            "I01"
+          ]
+        },
+        {
+          "id": "03",
+          "text": "None of them feels expensive on its own. Together, that is about seventy-three dollars a month, or roughly eight hundred and eighty dollars a year.",
+          "claims": [
+            "I01"
+          ],
+          "duck": true
+        },
+        {
+          "id": "04",
+          "text": "This bundle is a made-up example, not anyone's real bill. But the shift behind it is real."
+        },
+        {
+          "id": "05",
+          "text": "In January 2022, about 2,000 new subscription apps launched in a single month. By January 2026, it was more than 14,700 a month.",
+          "say": "In January twenty twenty-two, about two thousand new subscription apps launched in a single month. By January twenty twenty-six, it was more than fourteen thousand seven hundred a month.",
+          "claims": [
+            "R01"
+          ],
+          "duck": true
+        },
+        {
+          "id": "06",
+          "text": "So why does every app suddenly want a monthly payment? And who actually comes out ahead?"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "title": "When you owned your software",
+      "chapter": "When software was something you owned",
+      "music": "neutral",
+      "segments": [
+        {
+          "id": "01",
+          "text": "Not long ago, buying software looked a lot like buying a book."
+        },
+        {
+          "id": "02",
+          "text": "You paid once, you got a box with a disc, or a download code, and that version was yours to keep using for as long as your computer could run it."
+        },
+        {
+          "id": "03",
+          "text": "When a new version came out, you decided whether the new features were worth paying for again."
+        },
+        {
+          "id": "04",
+          "text": "That was never the whole story. Businesses often paid yearly fees for support and updates. Oracle, for example, says that substantially all of its customers buy and renew their software support contracts every year.",
+          "claims": [
+            "O01"
+          ]
+        },
+        {
+          "id": "05",
+          "text": "But for many everyday products, one purchase was the deal. Then, in May 2013, one of the best-known software makers changed the rules.",
+          "say": "But for many everyday products, one purchase was the deal. Then, in May twenty thirteen, one of the best-known software makers changed the rules.",
+          "claims": [
+            "A01"
+          ]
+        },
+        {
+          "id": "06",
+          "text": "Adobe announced that new features for its creative tools would go only to Creative Cloud subscribers, and that Creative Suite 6 would be the last major update for people who had bought perpetual licenses.",
+          "say": "Adobe announced that new features for its creative tools would go only to Creative Cloud subscribers, and that Creative Suite six would be the last major update for people who had bought perpetual licenses.",
+          "claims": [
+            "A01"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "title": "Adobe's switch",
+      "chapter": "The switch that hurt, then paid",
+      "music": "tension",
+      "segments": [
+        {
+          "id": "01",
+          "text": "In the short run, the switch hurt."
+        },
+        {
+          "id": "02",
+          "text": "In fiscal 2012, subscriptions were 15 percent of Adobe's revenue. A year later they were 28 percent, and total revenue fell about 8 percent, from $4.4 billion to $4.06 billion.",
+          "say": "In fiscal twenty twelve, subscriptions were fifteen percent of Adobe's revenue. A year later they were twenty-eight percent, and total revenue fell about eight percent, from four point four billion dollars to four point zero six billion.",
+          "claims": [
+            "A02",
+            "A03"
+          ],
+          "duck": true
+        },
+        {
+          "id": "03",
+          "text": "Net income fell from $833 million to $290 million.",
+          "say": "Net income fell from eight hundred and thirty-three million dollars to two hundred and ninety million.",
+          "claims": [
+            "A04"
+          ],
+          "duck": true
+        },
+        {
+          "id": "04",
+          "text": "Why accept that? Because a box is sold once, but a subscription is billed again and again. Revenue that used to arrive in one burst is spread across months and years."
+        },
+        {
+          "id": "05",
+          "text": "By fiscal 2014, subscriptions were half of Adobe's revenue. In fiscal 2025, they were 96 percent of $23.8 billion.",
+          "say": "By fiscal twenty fourteen, subscriptions were half of Adobe's revenue. In fiscal twenty twenty-five, they were ninety-six percent of twenty-three point eight billion dollars.",
+          "claims": [
+            "A05",
+            "A06"
+          ],
+          "duck": true
+        },
+        {
+          "id": "06",
+          "text": "Not all of that growth came from the subscription switch alone. But almost all of Adobe's revenue now comes from customers who keep paying."
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "title": "Two companies",
+      "chapter": "Why companies love recurring revenue",
+      "music": "lift",
+      "segments": [
+        {
+          "id": "01",
+          "text": "To see why, imagine two small software companies. Both are hypothetical."
+        },
+        {
+          "id": "02",
+          "text": "The first sells a photo editor for $120, once. The second sells a similar app for $10 a month.",
+          "say": "The first sells a photo editor for a hundred and twenty dollars, once. The second sells a similar app for ten dollars a month.",
+          "claims": [
+            "I02"
+          ]
+        },
+        {
+          "id": "03",
+          "text": "In month one, the first company looks like the winner. A thousand customers bring in $120,000 at once. The second company collects $10,000.",
+          "say": "In month one, the first company looks like the winner. A thousand customers bring in a hundred and twenty thousand dollars at once. The second company collects ten thousand.",
+          "claims": [
+            "I02"
+          ],
+          "duck": true
+        },
+        {
+          "id": "04",
+          "text": "But next month, the first company has to find a thousand new buyers. The second starts the month with the customers it already has."
+        },
+        {
+          "id": "05",
+          "text": "If all of them stay for a year, the second company catches up. And it knows, roughly, what next month will bring.",
+          "claims": [
+            "I02"
+          ]
+        },
+        {
+          "id": "06",
+          "text": "That is the attraction: predictability. Recurring revenue is easier to forecast and to plan around, and it can pay for work that never really ends: fixing bugs, supporting new phones, running servers."
+        },
+        {
+          "id": "07",
+          "text": "Some products also cost money every time you use them. Files have to be stored somewhere. An AI answer has to be computed. A single payment does not cover a cost that keeps coming back."
+        },
+        {
+          "id": "08",
+          "text": "But notice the catch in the second company's plan. It only works if those customers stay."
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "title": "Subscription math",
+      "chapter": "The subscription math",
+      "music": "process",
+      "segments": [
+        {
+          "id": "01",
+          "text": "Subscription businesses live by a handful of numbers, and they all connect."
+        },
+        {
+          "id": "02",
+          "text": "Monthly recurring revenue is what the company expects to bill each month from its active subscribers."
+        },
+        {
+          "id": "03",
+          "text": "Churn is the share of subscribers who leave in a given period. Retention is the opposite: the share who are still paying."
+        },
+        {
+          "id": "04",
+          "text": "Customer acquisition cost is what the company spends, on ads and promotion, to win one paying customer. And lifetime value is what that customer is worth over all the months they keep paying."
+        },
+        {
+          "id": "05",
+          "text": "Let's put hypothetical numbers on our ten-dollar app. If it sells through Apple's App Store, Apple's terms give the developer 70 percent of each payment during a subscriber's first year, and 85 percent after that. Developers in Apple's Small Business Program get 85 percent from the start.",
+          "say": "Let's put hypothetical numbers on our ten-dollar app. If it sells through Apple's App Store, Apple's terms give the developer seventy percent of each payment during a subscriber's first year, and eighty-five percent after that. Developers in Apple's Small Business Program get eighty-five percent from the start.",
+          "claims": [
+            "P01",
+            "P02"
+          ],
+          "duck": true
+        },
+        {
+          "id": "06",
+          "text": "So the developer keeps about $7 a month. If 10 percent of subscribers cancel every month, the average subscriber stays about ten months, and brings in roughly $70.",
+          "say": "So the developer keeps about seven dollars a month. If ten percent of subscribers cancel every month, the average subscriber stays about ten months, and brings in roughly seventy dollars.",
+          "claims": [
+            "I03"
+          ],
+          "duck": true
+        },
+        {
+          "id": "07",
+          "text": "If winning each subscriber costs $40 in advertising, that looks like a healthy business.",
+          "say": "If winning each subscriber costs forty dollars in advertising, that looks like a healthy business.",
+          "claims": [
+            "I03"
+          ]
+        },
+        {
+          "id": "08",
+          "text": "But if churn doubles to 20 percent a month, the average subscriber brings in about $35. That is less than it cost to win them. Same app, same price, and now every new customer loses money.",
+          "say": "But if churn doubles to twenty percent a month, the average subscriber brings in about thirty-five dollars. That is less than it cost to win them. Same app, same price, and now every new customer loses money.",
+          "claims": [
+            "I03"
+          ],
+          "duck": true
+        },
+        {
+          "id": "09",
+          "text": "That is why the people who run subscription apps watch churn more closely than almost anything else."
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "title": "What the data shows",
+      "chapter": "What the data shows",
+      "music": "neutral",
+      "segments": [
+        {
+          "id": "01",
+          "text": "So how do real subscription apps actually do? One of the largest data sets comes from RevenueCat, a company that sells the software many apps use to manage their subscriptions.",
+          "claims": [
+            "R00"
+          ]
+        },
+        {
+          "id": "02",
+          "text": "Its 2026 report covers more than 115,000 apps and more than $16 billion in revenue. It is not every app in the world, only apps that use RevenueCat's tools. But the picture is striking.",
+          "say": "Its twenty twenty-six report covers more than a hundred and fifteen thousand apps and more than sixteen billion dollars in revenue. It is not every app in the world, only apps that use RevenueCat's tools. But the picture is striking.",
+          "claims": [
+            "R00"
+          ],
+          "duck": true
+        },
+        {
+          "id": "03",
+          "text": "One year after launch, the median app earned about $72 a month. The top 10 percent earned more than $2,500 a month.",
+          "say": "One year after launch, the median app earned about seventy-two dollars a month. The top ten percent earned more than twenty-five hundred dollars a month.",
+          "claims": [
+            "R02"
+          ],
+          "duck": true
+        },
+        {
+          "id": "04",
+          "text": "Only 4.6 percent of newly launched apps reached $10,000 in monthly revenue within two years. And apps launched before 2020 still generate 69 percent of all subscription revenue in the data.",
+          "say": "Only four point six percent of newly launched apps reached ten thousand dollars in monthly revenue within two years. And apps launched before twenty twenty still generate sixty-nine percent of all subscription revenue in the data.",
+          "claims": [
+            "R03",
+            "R04"
+          ],
+          "duck": true
+        },
+        {
+          "id": "05",
+          "text": "Keeping subscribers is even harder. For subscriptions that started in 2024, the median share still active a year later was about 8 percent on monthly plans, and 28 percent on yearly plans.",
+          "say": "Keeping subscribers is even harder. For subscriptions that started in twenty twenty-four, the median share still active a year later was about eight percent on monthly plans, and twenty-eight percent on yearly plans.",
+          "claims": [
+            "R05"
+          ],
+          "duck": true
+        },
+        {
+          "id": "06",
+          "text": "Nearly half of monthly subscribers do not renew even once.",
+          "claims": [
+            "R06"
+          ]
+        },
+        {
+          "id": "07",
+          "text": "Those figures count subscriptions, not people, and payments, not use. Someone can cancel and keep using a free version. Someone else can keep paying and barely open the app.",
+          "claims": [
+            "R05"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "title": "Your wallet",
+      "chapter": "The competition for your wallet",
+      "music": "lift",
+      "segments": [
+        {
+          "id": "01",
+          "text": "Now look at it from the customer's side."
+        },
+        {
+          "id": "02",
+          "text": "A household's monthly budget is finite. Every new subscription has to find room in it, often by pushing something else out."
+        },
+        {
+          "id": "03",
+          "text": "So apps are not only competing with similar apps. A meditation app competes with a streaming service, and an AI assistant competes with extra cloud storage, for the same few dollars each month."
+        },
+        {
+          "id": "04",
+          "text": "That is why so much effort goes into the first moments: free trials, discounted first months, cheaper yearly plans. Each is a way to get onto the list, and to survive the first renewal."
+        },
+        {
+          "id": "05",
+          "text": "RevenueCat found that apps asking for payment upfront, behind a hard paywall, turned about five times as many downloads into paying customers as freemium apps did: 10.7 percent versus 2.1 percent within 35 days. Yet a year later, retention was nearly the same.",
+          "say": "RevenueCat found that apps asking for payment upfront, behind a hard paywall, turned about five times as many downloads into paying customers as freemium apps did: ten point seven percent versus two point one percent within thirty-five days. Yet a year later, retention was nearly the same.",
+          "claims": [
+            "R07"
+          ],
+          "duck": true
+        },
+        {
+          "id": "06",
+          "text": "Meanwhile, small payments add up quietly. Our hypothetical bundle costs less than three dollars a day. Over a year, it comes to nearly nine hundred.",
+          "claims": [
+            "I01"
+          ]
+        },
+        {
+          "id": "07",
+          "text": "Not every app takes the pure subscription road. In RevenueCat's data, nearly a quarter of the apps pair their subscriptions with a one-time lifetime purchase.",
+          "claims": [
+            "R08"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "title": "Where it breaks",
+      "chapter": "Where the model breaks",
+      "music": "tension",
+      "segments": [
+        {
+          "id": "01",
+          "text": "Recurring revenue sounds safe. It is not guaranteed, and it is not the same as profit."
+        },
+        {
+          "id": "02",
+          "text": "Payments fail. Cards expire. Banks decline charges. In RevenueCat's data, involuntary billing failures caused about 31 percent of subscription cancellations on Google Play, compared with 14 percent on the App Store.",
+          "say": "Payments fail. Cards expire. Banks decline charges. In RevenueCat's data, involuntary billing failures caused about thirty-one percent of subscription cancellations on Google Play, compared with fourteen percent on the App Store.",
+          "claims": [
+            "R09"
+          ],
+          "duck": true
+        },
+        {
+          "id": "03",
+          "text": "Hype fades. AI-powered apps in the report earned 41 percent more revenue per payer, but their subscribers churned about 30 percent faster.",
+          "say": "Hype fades. AI-powered apps in the report earned forty-one percent more revenue per payer, but their subscribers churned about thirty percent faster.",
+          "claims": [
+            "R10"
+          ],
+          "duck": true
+        },
+        {
+          "id": "04",
+          "text": "Some companies try a shortcut: make it easy to sign up and hard to leave. That can backfire. In September 2025, Amazon agreed to pay $2.5 billion to settle Federal Trade Commission claims that it enrolled customers in Prime without their consent and made cancelling difficult.",
+          "say": "Some companies try a shortcut: make it easy to sign up and hard to leave. That can backfire. In September twenty twenty-five, Amazon agreed to pay two and a half billion dollars to settle Federal Trade Commission claims that it enrolled customers in Prime without their consent and made cancelling difficult.",
+          "claims": [
+            "F01"
+          ],
+          "duck": true
+        },
+        {
+          "id": "05",
+          "text": "And revenue is not profit. Spotify, a streaming service rather than a typical app, ended 2025 with 290 million premium subscribers and €17.2 billion in revenue.",
+          "say": "And revenue is not profit. Spotify, a streaming service rather than a typical app, ended twenty twenty-five with two hundred and ninety million premium subscribers and seventeen point two billion euros in revenue.",
+          "claims": [
+            "S01"
+          ],
+          "duck": true
+        },
+        {
+          "id": "06",
+          "text": "Most of that money goes straight back out, mainly as royalties and distribution costs. Its gross margin was 32 percent, and as recently as 2023 it reported an operating loss of €446 million.",
+          "say": "Most of that money goes straight back out, mainly as royalties and distribution costs. Its gross margin was thirty-two percent, and as recently as twenty twenty-three it reported an operating loss of four hundred and forty-six million euros.",
+          "claims": [
+            "S02",
+            "S03"
+          ],
+          "duck": true
+        },
+        {
+          "id": "07",
+          "text": "In 2025, its operating income was €2.2 billion. Subscriptions can become very profitable, but only when the costs behind them are under control.",
+          "say": "In twenty twenty-five, its operating income was two point two billion euros. Subscriptions can become very profitable, but only when the costs behind them are under control.",
+          "claims": [
+            "S04"
+          ],
+          "duck": true
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "title": "The real reason",
+      "chapter": "The real reason",
+      "music": "reveal",
+      "segments": [
+        {
+          "id": "01",
+          "text": "So why does every app want a subscription?"
+        },
+        {
+          "id": "02",
+          "text": "Because a subscription turns a single sale into a relationship: one that pays every month, can be forecast, and can fund the work of keeping a product alive."
+        },
+        {
+          "id": "03",
+          "text": "For customers, that can be a good deal. You pay less upfront, you get updates and new features, and you can leave when the product stops being worth it."
+        },
+        {
+          "id": "04",
+          "text": "It can also be a worse deal. If you use a tool rarely, or would happily keep an older version forever, owning it outright can cost far less. That is why one-time purchases have not disappeared. Even Adobe still licenses perpetual versions of some products.",
+          "claims": [
+            "A07"
+          ]
+        },
+        {
+          "id": "05",
+          "text": "The data points to something easy to miss. Most subscriptions do not last. Most apps never make much money. The few that win are the ones people decide, month after month, are still worth paying for.",
+          "claims": [
+            "R02",
+            "R05"
+          ]
+        },
+        {
+          "id": "06",
+          "text": "Companies would like that payment to be automatic. The best ones still have to earn it, every single month."
+        },
+        {
+          "id": "07",
+          "text": "This is Hidden Ledger. Every number in this video is sourced in the description."
+        }
+      ]
+    }
+  ]
+}

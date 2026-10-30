@@ -1,0 +1,1009 @@
+{
+  "episode": "003",
+  "title": "Why Every App Wants a Subscription",
+  "fps": 30,
+  "timing_source": "measured WAV durations (output/episode-XXX/audio/full/timeline.json)",
+  "duration": 668.893,
+  "scenes": [
+    {
+      "id": "s01",
+      "title": "Cold open",
+      "chapter": "The monthly total",
+      "music": "intro",
+      "start": 0.0,
+      "end": 52.68,
+      "duration": 52.68,
+      "component": "src/scenes (registry id s01)",
+      "beats": [
+        {
+          "segment": "s01-01",
+          "start": 0.6,
+          "end": 5.43,
+          "narration": "Open the settings on almost any phone, and you can find a list like this one.",
+          "visual": "Frame 0: a phone buzzes while six renewal notifications slide in; 'this month so far' counter climbs",
+          "on_screen_text": [
+            "Wavebox renewed · $11.99 charged",
+            "This month so far $73.45"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s01-02",
+          "start": 5.81,
+          "end": 17.55,
+          "narration": "Music, about twelve dollars a month. Streaming, fifteen. Extra cloud storage, three. A fitness app, thirteen. A productivity app, ten. And an AI assistant, twenty.",
+          "visual": "The phone's Settings > Subscriptions list fills row by row on each spoken category; monthly total counts up",
+          "on_screen_text": [
+            "HYPOTHETICAL BUNDLE",
+            "Monthly total"
+          ],
+          "claims": [
+            "I01"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s01-03",
+          "start": 17.93,
+          "end": 27.33,
+          "narration": "None of them feels expensive on its own. Together, that is about seventy-three dollars a month, or roughly eight hundred and eighty dollars a year.",
+          "visual": "Twelve month tiles fill; yearly counter",
+          "on_screen_text": [
+            "$73.45",
+            "$881.40 a year"
+          ],
+          "claims": [
+            "I01"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s01-04",
+          "start": 27.71,
+          "end": 34.11,
+          "narration": "This bundle is a made-up example, not anyone's real bill. But the shift behind it is real.",
+          "visual": "Stamp over the phone",
+          "on_screen_text": [
+            "MADE-UP EXAMPLE"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s01-05",
+          "start": 34.49,
+          "end": 46.38,
+          "narration": "In January 2022, about 2,000 new subscription apps launched in a single month. By January 2026, it was more than 14,700 a month.",
+          "visual": "App icons multiply: 20 icons (Jan 2022) vs 147 icons (Jan 2026), one icon = 100 launches",
+          "on_screen_text": [
+            "~2,000",
+            "14,700+",
+            "launched per month · one icon = 100 apps"
+          ],
+          "claims": [
+            "R01"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s01-06",
+          "start": 46.76,
+          "end": 52.23,
+          "narration": "So why does every app suddenly want a monthly payment? And who actually comes out ahead?",
+          "visual": "Paywall phone; title question",
+          "on_screen_text": [
+            "Why does every app want a monthly payment?",
+            "And who actually comes out ahead?"
+          ],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "title": "When you owned your software",
+      "chapter": "When software was something you owned",
+      "music": "neutral",
+      "start": 52.68,
+      "end": 111.829,
+      "duration": 59.149,
+      "component": "src/scenes (registry id s02)",
+      "beats": [
+        {
+          "segment": "s02-01",
+          "start": 53.13,
+          "end": 56.9,
+          "narration": "Not long ago, buying software looked a lot like buying a book.",
+          "visual": "Cream paper look: a shelf with books and boxed software",
+          "on_screen_text": [
+            "Buying software was like buying a book"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s02-02",
+          "start": 57.28,
+          "end": 66.78,
+          "narration": "You paid once, you got a box with a disc, or a download code, and that version was yours to keep using for as long as your computer could run it.",
+          "visual": "Box, spinning disc, PAID ONCE receipt, a monitor still running the app as years tick by",
+          "on_screen_text": [
+            "RECEIPT · PAID ONCE ✓",
+            "still yours, still working"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s02-03",
+          "start": 67.16,
+          "end": 72.4,
+          "narration": "When a new version came out, you decided whether the new features were worth paying for again.",
+          "visual": "v5/v6/v7 boxes; two choice buttons",
+          "on_screen_text": [
+            "Version 7 is out.",
+            "Pay for the upgrade",
+            "Keep using version 6"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s02-04",
+          "start": 72.78,
+          "end": 87.4,
+          "narration": "That was never the whole story. Businesses often paid yearly fees for support and updates. Oracle, for example, says that substantially all of its customers buy and renew their software support contracts every year.",
+          "visual": "Server rack; four yearly support contracts stamped RENEWED; Oracle quote",
+          "on_screen_text": [
+            "“Substantially all of our customers elect to purchase and renew their software support contracts annually.”"
+          ],
+          "claims": [
+            "O01"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s02-05",
+          "start": 87.78,
+          "end": 97.529,
+          "narration": "But for many everyday products, one purchase was the deal. Then, in May 2013, one of the best-known software makers changed the rules.",
+          "visual": "Calendar pages flip 2010 → MAY 2013",
+          "on_screen_text": [
+            "MAY 2013"
+          ],
+          "claims": [
+            "A01"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s02-06",
+          "start": 97.909,
+          "end": 111.379,
+          "narration": "Adobe announced that new features for its creative tools would go only to Creative Cloud subscribers, and that Creative Suite 6 would be the last major update for people who had bought perpetual licenses.",
+          "visual": "CREATIVE SUITE 6 box stamped LAST MAJOR UPDATE; feature stars fly to a Creative Cloud cloud",
+          "on_screen_text": [
+            "LAST MAJOR UPDATE",
+            "new features: subscribers only"
+          ],
+          "claims": [
+            "A01"
+          ],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "title": "Adobe's switch",
+      "chapter": "The switch that hurt, then paid",
+      "music": "tension",
+      "start": 111.829,
+      "end": 169.131,
+      "duration": 57.302,
+      "component": "src/scenes (registry id s03)",
+      "beats": [
+        {
+          "segment": "s03-01",
+          "start": 112.279,
+          "end": 114.049,
+          "narration": "In the short run, the switch hurt.",
+          "visual": "Revenue towers of blocks (orange = subscriptions); FY2012 tower builds",
+          "on_screen_text": [
+            "In the short run, the switch hurt.",
+            "15%"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s03-02",
+          "start": 114.429,
+          "end": 130.149,
+          "narration": "In fiscal 2012, subscriptions were 15 percent of Adobe's revenue. A year later they were 28 percent, and total revenue fell about 8 percent, from $4.4 billion to $4.06 billion.",
+          "visual": "FY2013 tower builds lower; red −8% arc",
+          "on_screen_text": [
+            "$4.40B",
+            "$4.06B",
+            "28%",
+            "−8%"
+          ],
+          "claims": [
+            "A02",
+            "A03"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s03-03",
+          "start": 130.529,
+          "end": 136.379,
+          "narration": "Net income fell from $833 million to $290 million.",
+          "visual": "Coin stacks shrink from $833M to $290M",
+          "on_screen_text": [
+            "Adobe net income",
+            "$833M",
+            "$290M",
+            "−65%"
+          ],
+          "claims": [
+            "A04"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s03-04",
+          "start": 136.759,
+          "end": 147.949,
+          "narration": "Why accept that? Because a box is sold once, but a subscription is billed again and again. Revenue that used to arrive in one burst is spread across months and years.",
+          "visual": "One grey burst in January vs twelve orange monthly payments and a running-total line",
+          "on_screen_text": [
+            "A box: sold once",
+            "A subscription: billed again and again"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s03-05",
+          "start": 148.329,
+          "end": 159.711,
+          "narration": "By fiscal 2014, subscriptions were half of Adobe's revenue. In fiscal 2025, they were 96 percent of $23.8 billion.",
+          "visual": "FY2014 tower; camera pulls back to reveal the FY2025 tower, 5.4x taller",
+          "on_screen_text": [
+            "50%",
+            "$23.8B · FY2025 · 96% subscriptions"
+          ],
+          "claims": [
+            "A05",
+            "A06"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s03-06",
+          "start": 160.091,
+          "end": 168.681,
+          "narration": "Not all of that growth came from the subscription switch alone. But almost all of Adobe's revenue now comes from customers who keep paying.",
+          "visual": "Wide shot of all towers",
+          "on_screen_text": [
+            "Not all of that growth came from the switch."
+          ],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "title": "Two companies",
+      "chapter": "Why companies love recurring revenue",
+      "music": "lift",
+      "start": 169.131,
+      "end": 243.665,
+      "duration": 74.534,
+      "component": "src/scenes (registry id s04)",
+      "beats": [
+        {
+          "segment": "s04-01",
+          "start": 169.581,
+          "end": 174.661,
+          "narration": "To see why, imagine two small software companies. Both are hypothetical.",
+          "visual": "ILLUSTRATIVE banner; two phones: PhotoOnce vs PhotoLoop",
+          "on_screen_text": [
+            "Two software companies"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s04-02",
+          "start": 175.041,
+          "end": 183.361,
+          "narration": "The first sells a photo editor for $120, once. The second sells a similar app for $10 a month.",
+          "visual": "Offer buttons appear",
+          "on_screen_text": [
+            "Buy · $120 once",
+            "Subscribe · $10/mo"
+          ],
+          "claims": [
+            "I02"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s04-03",
+          "start": 183.741,
+          "end": 194.641,
+          "narration": "In month one, the first company looks like the winner. A thousand customers bring in $120,000 at once. The second company collects $10,000.",
+          "visual": "Customer crowds pour in; coin bursts; counters race",
+          "on_screen_text": [
+            "$120,000",
+            "$10,000"
+          ],
+          "claims": [
+            "I02"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s04-04",
+          "start": 195.021,
+          "end": 203.405,
+          "narration": "But next month, the first company has to find a thousand new buyers. The second starts the month with the customers it already has.",
+          "visual": "Month two: company A's crowd walks away; B's stays",
+          "on_screen_text": [
+            "$0 · needs 1,000 new buyers",
+            "$10,000 · the same customers pay again"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s04-05",
+          "start": 203.785,
+          "end": 210.595,
+          "narration": "If all of them stay for a year, the second company catches up. And it knows, roughly, what next month will bring.",
+          "visual": "Twelve-month cumulative race; forecast dashes",
+          "on_screen_text": [
+            "A: $120,000 in month one",
+            "B: $120,000 by month 12",
+            "next month: predictable"
+          ],
+          "claims": [
+            "I02"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s04-06",
+          "start": 210.975,
+          "end": 224.275,
+          "narration": "That is the attraction: predictability. Recurring revenue is easier to forecast and to plan around, and it can pay for work that never really ends: fixing bugs, supporting new phones, running servers.",
+          "visual": "Cards light up on the words: bugs, new phones, servers",
+          "on_screen_text": [
+            "Recurring revenue pays for recurring work"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s04-07",
+          "start": 224.655,
+          "end": 237.295,
+          "narration": "Some products also cost money every time you use them. Files have to be stored somewhere. An AI answer has to be computed. A single payment does not cover a cost that keeps coming back.",
+          "visual": "Cost-per-use cards pulse red; use counter ticks",
+          "on_screen_text": [
+            "storing files",
+            "computing AI answers",
+            "Costs that come back every time you use it"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s04-08",
+          "start": 237.675,
+          "end": 243.215,
+          "narration": "But notice the catch in the second company's plan. It only works if those customers stay.",
+          "visual": "Part of the crowd walks out through a CANCEL door",
+          "on_screen_text": [
+            "The catch: it only works if customers stay"
+          ],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "title": "Subscription math",
+      "chapter": "The subscription math",
+      "music": "process",
+      "start": 243.665,
+      "end": 337.539,
+      "duration": 93.874,
+      "component": "src/scenes (registry id s05)",
+      "beats": [
+        {
+          "segment": "s05-01",
+          "start": 244.115,
+          "end": 248.815,
+          "narration": "Subscription businesses live by a handful of numbers, and they all connect.",
+          "visual": "Leaky bucket appears with the five-term legend",
+          "on_screen_text": [
+            "A handful of numbers, all connected",
+            "MRR · Churn · Retention · CAC · LTV"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s05-02",
+          "start": 249.195,
+          "end": 255.553,
+          "narration": "Monthly recurring revenue is what the company expects to bill each month from its active subscribers.",
+          "visual": "Bucket fills: water level = MRR",
+          "on_screen_text": [
+            "MRR: the water in the bucket"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s05-03",
+          "start": 255.933,
+          "end": 263.493,
+          "narration": "Churn is the share of subscribers who leave in a given period. Retention is the opposite: the share who are still paying.",
+          "visual": "Holes open and drops leak: churn; the water that stays: retention",
+          "on_screen_text": [
+            "Churn: the holes",
+            "Retention: the water that stays"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s05-04",
+          "start": 263.873,
+          "end": 276.893,
+          "narration": "Customer acquisition cost is what the company spends, on ads and promotion, to win one paying customer. And lifetime value is what that customer is worth over all the months they keep paying.",
+          "visual": "A tap pours new customers with a CAC price tag; LTV row",
+          "on_screen_text": [
+            "CAC",
+            "LTV"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s05-05",
+          "start": 277.273,
+          "end": 297.223,
+          "narration": "Let's put hypothetical numbers on our ten-dollar app. If it sells through Apple's App Store, Apple's terms give the developer 70 percent of each payment during a subscriber's first year, and 85 percent after that. Developers in Apple's Small Business Program get 85 percent from the start.",
+          "visual": "Three split bars of a $10 payment (Apple terms)",
+          "on_screen_text": [
+            "developer $7.00 · store $3.00",
+            "developer $8.50 · store $1.50"
+          ],
+          "claims": [
+            "P01",
+            "P02"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s05-06",
+          "start": 297.603,
+          "end": 309.503,
+          "narration": "So the developer keeps about $7 a month. If 10 percent of subscribers cancel every month, the average subscriber stays about ten months, and brings in roughly $70.",
+          "visual": "Ten $7 coins appear month by month; LTV bar $70",
+          "on_screen_text": [
+            "Churn 10% a month → ~10 months",
+            "LTV $70"
+          ],
+          "claims": [
+            "I03"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s05-07",
+          "start": 309.883,
+          "end": 316.069,
+          "narration": "If winning each subscriber costs $40 in advertising, that looks like a healthy business.",
+          "visual": "CAC bar $40 next to LTV $70",
+          "on_screen_text": [
+            "$70 in, $40 out: a healthy customer"
+          ],
+          "claims": [
+            "I03"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s05-08",
+          "start": 316.449,
+          "end": 330.609,
+          "narration": "But if churn doubles to 20 percent a month, the average subscriber brings in about $35. That is less than it cost to win them. Same app, same price, and now every new customer loses money.",
+          "visual": "Half the coins vanish; LTV shrinks to $35 and turns red",
+          "on_screen_text": [
+            "Churn 20% a month → ~5 months",
+            "$35 in, $40 out"
+          ],
+          "claims": [
+            "I03"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s05-09",
+          "start": 330.989,
+          "end": 337.089,
+          "narration": "That is why the people who run subscription apps watch churn more closely than almost anything else.",
+          "visual": "Churn gauge needle swings into the red",
+          "on_screen_text": [
+            "CHURN"
+          ],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "title": "What the data shows",
+      "chapter": "What the data shows",
+      "music": "neutral",
+      "start": 337.539,
+      "end": 422.603,
+      "duration": 85.064,
+      "component": "src/scenes (registry id s06)",
+      "beats": [
+        {
+          "segment": "s06-01",
+          "start": 337.989,
+          "end": 350.289,
+          "narration": "So how do real subscription apps actually do? One of the largest data sets comes from RevenueCat, a company that sells the software many apps use to manage their subscriptions.",
+          "visual": "Dot field of apps; RevenueCat's sample highlighted",
+          "on_screen_text": [
+            "The largest data set we could verify"
+          ],
+          "claims": [
+            "R00"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s06-02",
+          "start": 350.669,
+          "end": 365.819,
+          "narration": "Its 2026 report covers more than 115,000 apps and more than $16 billion in revenue. It is not every app in the world, only apps that use RevenueCat's tools. But the picture is striking.",
+          "visual": "Dashed boundary drawn around the sample",
+          "on_screen_text": [
+            "115,000+",
+            "$16B+",
+            "only apps that use RevenueCat's tools"
+          ],
+          "claims": [
+            "R00"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s06-03",
+          "start": 366.199,
+          "end": 375.799,
+          "narration": "One year after launch, the median app earned about $72 a month. The top 10 percent earned more than $2,500 a month.",
+          "visual": "Camera pans along a skyline of app earnings, then pulls back to the towering top 10%",
+          "on_screen_text": [
+            "median ~$72/mo",
+            "top 10%: $2,574+/mo"
+          ],
+          "claims": [
+            "R02"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s06-04",
+          "start": 376.179,
+          "end": 391.399,
+          "narration": "Only 4.6 percent of newly launched apps reached $10,000 in monthly revenue within two years. And apps launched before 2020 still generate 69 percent of all subscription revenue in the data.",
+          "visual": "1,000 squares, 46 lit; donut 69%",
+          "on_screen_text": [
+            "4.6%",
+            "69% … before 2020"
+          ],
+          "claims": [
+            "R03",
+            "R04"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s06-05",
+          "start": 391.779,
+          "end": 405.809,
+          "narration": "Keeping subscribers is even harder. For subscriptions that started in 2024, the median share still active a year later was about 8 percent on monthly plans, and 28 percent on yearly plans.",
+          "visual": "Two lanes of 100 subscriber figures walking a year; most drop out",
+          "on_screen_text": [
+            "8% still active after a year",
+            "28% still active after a year"
+          ],
+          "claims": [
+            "R05"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s06-06",
+          "start": 406.189,
+          "end": 410.275,
+          "narration": "Nearly half of monthly subscribers do not renew even once.",
+          "visual": "First-renewal drop-outs",
+          "on_screen_text": [
+            "Nearly half of monthly subscribers never renew even once"
+          ],
+          "claims": [
+            "R06"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s06-07",
+          "start": 410.655,
+          "end": 422.153,
+          "narration": "Those figures count subscriptions, not people, and payments, not use. Someone can cancel and keep using a free version. Someone else can keep paying and barely open the app.",
+          "visual": "Two phones: cancelled but using the free plan; paying but idle",
+          "on_screen_text": [
+            "Subscriptions, not people. Payments, not use."
+          ],
+          "claims": [
+            "R05"
+          ],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "title": "Your wallet",
+      "chapter": "The competition for your wallet",
+      "music": "lift",
+      "start": 422.603,
+      "end": 502.179,
+      "duration": 79.576,
+      "component": "src/scenes (registry id s07)",
+      "beats": [
+        {
+          "segment": "s07-01",
+          "start": 423.053,
+          "end": 425.203,
+          "narration": "Now look at it from the customer's side.",
+          "visual": "A personal budget app on a phone",
+          "on_screen_text": [
+            "Now, the customer's side"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s07-02",
+          "start": 425.583,
+          "end": 433.823,
+          "narration": "A household's monthly budget is finite. Every new subscription has to find room in it, often by pushing something else out.",
+          "visual": "Fixed-width monthly budget bar fills with app tiles; a newcomer knocks one out",
+          "on_screen_text": [
+            "A monthly budget for apps (hypothetical: $80)",
+            "A new subscription has to push something else out"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s07-03",
+          "start": 434.203,
+          "end": 447.213,
+          "narration": "So apps are not only competing with similar apps. A meditation app competes with a streaming service, and an AI assistant competes with extra cloud storage, for the same few dollars each month.",
+          "visual": "Cross-category rivals face off",
+          "on_screen_text": [
+            "meditation vs streaming",
+            "AI assistant vs cloud storage"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s07-04",
+          "start": 447.593,
+          "end": 460.093,
+          "narration": "That is why so much effort goes into the first moments: free trials, discounted first months, cheaper yearly plans. Each is a way to get onto the list, and to survive the first renewal.",
+          "visual": "Paywall with trial / intro / yearly options; tap; 'Then: the first renewal'",
+          "on_screen_text": [
+            "Free trials",
+            "Discounted first months",
+            "Cheaper yearly plans"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s07-05",
+          "start": 460.473,
+          "end": 480.593,
+          "narration": "RevenueCat found that apps asking for payment upfront, behind a hard paywall, turned about five times as many downloads into paying customers as freemium apps did: 10.7 percent versus 2.1 percent within 35 days. Yet a year later, retention was nearly the same.",
+          "visual": "Two funnels of 1,000 downloads: paying dots collect at the spout",
+          "on_screen_text": [
+            "Hard paywall 10.7%",
+            "Freemium 2.1%",
+            "a year later: retention nearly the same"
+          ],
+          "claims": [
+            "R07"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s07-06",
+          "start": 480.973,
+          "end": 491.023,
+          "narration": "Meanwhile, small payments add up quietly. Our hypothetical bundle costs less than three dollars a day. Over a year, it comes to nearly nine hundred.",
+          "visual": "A coin drops into a jar every day for a year",
+          "on_screen_text": [
+            "$2.41 a day",
+            "day 365 · $881"
+          ],
+          "claims": [
+            "I01"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s07-07",
+          "start": 491.403,
+          "end": 501.729,
+          "narration": "Not every app takes the pure subscription road. In RevenueCat's data, nearly a quarter of the apps pair their subscriptions with a one-time lifetime purchase.",
+          "visual": "Paywall with a Lifetime option; 23 of 100 squares lit",
+          "on_screen_text": [
+            "23% of apps pair subscriptions with a lifetime purchase"
+          ],
+          "claims": [
+            "R08"
+          ],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "title": "Where it breaks",
+      "chapter": "Where the model breaks",
+      "music": "tension",
+      "start": 502.179,
+      "end": 600.103,
+      "duration": 97.924,
+      "component": "src/scenes (registry id s08)",
+      "beats": [
+        {
+          "segment": "s08-01",
+          "start": 502.629,
+          "end": 508.559,
+          "narration": "Recurring revenue sounds safe. It is not guaranteed, and it is not the same as profit.",
+          "visual": "Coins stream past; two red stamps",
+          "on_screen_text": [
+            "≠ guaranteed",
+            "≠ profit"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s08-02",
+          "start": 508.939,
+          "end": 524.929,
+          "narration": "Payments fail. Cards expire. Banks decline charges. In RevenueCat's data, involuntary billing failures caused about 31 percent of subscription cancellations on Google Play, compared with 14 percent on the App Store.",
+          "visual": "Card shakes and is DECLINED; bars for Google Play vs App Store",
+          "on_screen_text": [
+            "31%",
+            "14%",
+            "of cancellations: billing failures"
+          ],
+          "claims": [
+            "R09"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s08-03",
+          "start": 525.309,
+          "end": 535.379,
+          "narration": "Hype fades. AI-powered apps in the report earned 41 percent more revenue per payer, but their subscribers churned about 30 percent faster.",
+          "visual": "AI app icon; two subscriber-decay curves",
+          "on_screen_text": [
+            "+41% revenue per payer",
+            "~30% faster churn"
+          ],
+          "claims": [
+            "R10"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s08-04",
+          "start": 535.759,
+          "end": 555.729,
+          "narration": "Some companies try a shortcut: make it easy to sign up and hard to leave. That can backfire. In September 2025, Amazon agreed to pay $2.5 billion to settle Federal Trade Commission claims that it enrolled customers in Prime without their consent and made cancelling difficult.",
+          "visual": "A cursor wanders a cancellation maze of pop-ups; FTC settlement panel",
+          "on_screen_text": [
+            "Easy to sign up, hard to leave",
+            "$2.5B · $1B civil penalty + $1.5B in refunds"
+          ],
+          "claims": [
+            "F01"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s08-05",
+          "start": 556.109,
+          "end": 570.609,
+          "narration": "And revenue is not profit. Spotify, a streaming service rather than a typical app, ended 2025 with 290 million premium subscribers and €17.2 billion in revenue.",
+          "visual": "Spotify revenue as an orange river",
+          "on_screen_text": [
+            "Revenue €17.2B",
+            "290 million premium subscribers"
+          ],
+          "claims": [
+            "S01"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s08-06",
+          "start": 570.989,
+          "end": 587.373,
+          "narration": "Most of that money goes straight back out, mainly as royalties and distribution costs. Its gross margin was 32 percent, and as recently as 2023 it reported an operating loss of €446 million.",
+          "visual": "River splits: red 68% cost of revenue, green 32% gross margin",
+          "on_screen_text": [
+            "mainly royalties & distribution costs",
+            "2023: operating loss of €446 million"
+          ],
+          "claims": [
+            "S02",
+            "S03"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s08-07",
+          "start": 587.753,
+          "end": 599.653,
+          "narration": "In 2025, its operating income was €2.2 billion. Subscriptions can become very profitable, but only when the costs behind them are under control.",
+          "visual": "Operating income bars 2023–2025",
+          "on_screen_text": [
+            "−€446M",
+            "€1.4B",
+            "€2.2B"
+          ],
+          "claims": [
+            "S04"
+          ],
+          "music_dip": true
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "title": "The real reason",
+      "chapter": "The real reason",
+      "music": "reveal",
+      "start": 600.103,
+      "end": 668.893,
+      "duration": 68.79,
+      "component": "src/scenes (registry id s09)",
+      "beats": [
+        {
+          "segment": "s09-01",
+          "start": 600.553,
+          "end": 603.033,
+          "narration": "So why does every app want a subscription?",
+          "visual": "A wall of app icons, each with a /mo badge",
+          "on_screen_text": [
+            "So why does every app want a subscription?"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s09-02",
+          "start": 603.413,
+          "end": 613.513,
+          "narration": "Because a subscription turns a single sale into a relationship: one that pays every month, can be forecast, and can fund the work of keeping a product alive.",
+          "visual": "A ring of twelve monthly links: a sale becomes a relationship",
+          "on_screen_text": [
+            "pays every month",
+            "can be forecast",
+            "funds the work"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s09-03",
+          "start": 613.893,
+          "end": 622.693,
+          "narration": "For customers, that can be a good deal. You pay less upfront, you get updates and new features, and you can leave when the product stops being worth it.",
+          "visual": "A balance tips to 'good deal'",
+          "on_screen_text": [
+            "less to pay upfront",
+            "updates & new features",
+            "leave when it's not worth it"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s09-04",
+          "start": 623.073,
+          "end": 640.993,
+          "narration": "It can also be a worse deal. If you use a tool rarely, or would happily keep an older version forever, owning it outright can cost far less. That is why one-time purchases have not disappeared. Even Adobe still licenses perpetual versions of some products.",
+          "visual": "The balance tips back; the v6 box returns",
+          "on_screen_text": [
+            "you rarely use it",
+            "an older version would do",
+            "Adobe still licenses perpetual versions of some products"
+          ],
+          "claims": [
+            "A07"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s09-05",
+          "start": 641.373,
+          "end": 654.463,
+          "narration": "The data points to something easy to miss. Most subscriptions do not last. Most apps never make much money. The few that win are the ones people decide, month after month, are still worth paying for.",
+          "visual": "The retention road again: only a few figures reach the end",
+          "on_screen_text": [
+            "Most subscriptions don't last.",
+            "Most apps never make much money."
+          ],
+          "claims": [
+            "R02",
+            "R05"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s09-06",
+          "start": 654.843,
+          "end": 661.453,
+          "narration": "Companies would like that payment to be automatic. The best ones still have to earn it, every single month.",
+          "visual": "A renewal screen; the cursor hesitates between Keep and Cancel",
+          "on_screen_text": [
+            "Companies want it automatic.",
+            "The best still earn it, every month."
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s09-07",
+          "start": 661.833,
+          "end": 666.393,
+          "narration": "This is Hidden Ledger. Every number in this video is sourced in the description.",
+          "visual": "End card",
+          "on_screen_text": [
+            "HIDDEN LEDGER",
+            "Every number in this video is sourced in the description"
+          ],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    }
+  ]
+}

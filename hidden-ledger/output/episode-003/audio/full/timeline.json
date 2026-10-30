@@ -1,0 +1,8119 @@
+{
+  "episode": "003",
+  "title": "Why Every App Wants a Subscription",
+  "name": "full",
+  "fps": 30,
+  "duration": 668.893,
+  "durationInFrames": 20067,
+  "voice": "am_michael",
+  "scenes": [
+    {
+      "id": "s01",
+      "title": "Cold open",
+      "chapter": "The monthly total",
+      "music": "intro",
+      "start": 0.0,
+      "end": 52.68,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s01-01",
+          "text": "Open the settings on almost any phone, and you can find a list like this one.",
+          "start": 0.6,
+          "end": 5.43,
+          "duration": 4.83,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              0.6,
+              "Open"
+            ],
+            [
+              0.88,
+              "the"
+            ],
+            [
+              1.0,
+              "settings"
+            ],
+            [
+              1.34,
+              "on"
+            ],
+            [
+              1.68,
+              "almost"
+            ],
+            [
+              2.1,
+              "any"
+            ],
+            [
+              2.4,
+              "phone,"
+            ],
+            [
+              3.4,
+              "and"
+            ],
+            [
+              3.5,
+              "you"
+            ],
+            [
+              3.62,
+              "can"
+            ],
+            [
+              3.76,
+              "find"
+            ],
+            [
+              4.04,
+              "a"
+            ],
+            [
+              4.2,
+              "list"
+            ],
+            [
+              4.44,
+              "like"
+            ],
+            [
+              4.76,
+              "this"
+            ],
+            [
+              5.02,
+              "one."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s01-02",
+          "text": "Music, about twelve dollars a month. Streaming, fifteen. Extra cloud storage, three. A fitness app, thirteen. A productivity app, ten. And an AI assistant, twenty.",
+          "start": 5.81,
+          "end": 17.55,
+          "duration": 11.74,
+          "claims": [
+            "I01"
+          ],
+          "duck": false,
+          "words": [
+            [
+              5.81,
+              "Music"
+            ],
+            [
+              6.11,
+              "about"
+            ],
+            [
+              6.35,
+              "$12"
+            ],
+            [
+              6.77,
+              "a"
+            ],
+            [
+              7.29,
+              "month,"
+            ],
+            [
+              7.95,
+              "streaming"
+            ],
+            [
+              8.11,
+              "15,"
+            ],
+            [
+              9.79,
+              "extra"
+            ],
+            [
+              9.79,
+              "cloud"
+            ],
+            [
+              10.09,
+              "storage"
+            ],
+            [
+              10.55,
+              "3,"
+            ],
+            [
+              11.83,
+              "a"
+            ],
+            [
+              11.83,
+              "fitness"
+            ],
+            [
+              12.09,
+              "app"
+            ],
+            [
+              12.47,
+              "13,"
+            ],
+            [
+              13.61,
+              "a"
+            ],
+            [
+              13.67,
+              "productivity"
+            ],
+            [
+              14.01,
+              "app"
+            ],
+            [
+              14.63,
+              "10,"
+            ],
+            [
+              15.37,
+              "and"
+            ],
+            [
+              15.61,
+              "an"
+            ],
+            [
+              15.67,
+              "AI"
+            ],
+            [
+              16.03,
+              "assistant"
+            ],
+            [
+              16.61,
+              "20."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s01-03",
+          "text": "None of them feels expensive on its own. Together, that is about seventy-three dollars a month, or roughly eight hundred and eighty dollars a year.",
+          "start": 17.93,
+          "end": 27.33,
+          "duration": 9.4,
+          "claims": [
+            "I01"
+          ],
+          "duck": true,
+          "words": [
+            [
+              17.93,
+              "None"
+            ],
+            [
+              18.09,
+              "of"
+            ],
+            [
+              18.25,
+              "them"
+            ],
+            [
+              18.39,
+              "feels"
+            ],
+            [
+              18.67,
+              "expensive"
+            ],
+            [
+              19.19,
+              "on"
+            ],
+            [
+              19.61,
+              "its"
+            ],
+            [
+              19.75,
+              "own."
+            ],
+            [
+              20.99,
+              "Together,"
+            ],
+            [
+              21.51,
+              "that"
+            ],
+            [
+              21.79,
+              "is"
+            ],
+            [
+              21.93,
+              "about"
+            ],
+            [
+              22.17,
+              "$73"
+            ],
+            [
+              22.87,
+              "a"
+            ],
+            [
+              23.71,
+              "month,"
+            ],
+            [
+              24.41,
+              "or"
+            ],
+            [
+              24.53,
+              "roughly"
+            ],
+            [
+              24.89,
+              "$880"
+            ],
+            [
+              25.51,
+              "a"
+            ],
+            [
+              26.87,
+              "year."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s01-04",
+          "text": "This bundle is a made-up example, not anyone's real bill. But the shift behind it is real.",
+          "start": 27.71,
+          "end": 34.11,
+          "duration": 6.4,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              27.71,
+              "This"
+            ],
+            [
+              27.87,
+              "bundle"
+            ],
+            [
+              28.11,
+              "is"
+            ],
+            [
+              28.53,
+              "a"
+            ],
+            [
+              28.63,
+              "made"
+            ],
+            [
+              28.81,
+              "-up"
+            ],
+            [
+              29.07,
+              "example,"
+            ],
+            [
+              30.01,
+              "not"
+            ],
+            [
+              30.21,
+              "anyone's"
+            ],
+            [
+              30.83,
+              "real"
+            ],
+            [
+              31.05,
+              "bill,"
+            ],
+            [
+              32.15,
+              "but"
+            ],
+            [
+              32.23,
+              "the"
+            ],
+            [
+              32.37,
+              "shift"
+            ],
+            [
+              32.59,
+              "behind"
+            ],
+            [
+              33.01,
+              "it"
+            ],
+            [
+              33.33,
+              "is"
+            ],
+            [
+              33.53,
+              "real."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s01-05",
+          "text": "In January 2022, about 2,000 new subscription apps launched in a single month. By January 2026, it was more than 14,700 a month.",
+          "start": 34.49,
+          "end": 46.38,
+          "duration": 11.89,
+          "claims": [
+            "R01"
+          ],
+          "duck": true,
+          "words": [
+            [
+              34.49,
+              "In"
+            ],
+            [
+              34.61,
+              "January"
+            ],
+            [
+              34.81,
+              "2022,"
+            ],
+            [
+              36.45,
+              "about"
+            ],
+            [
+              36.75,
+              "2"
+            ],
+            [
+              37.19,
+              ",000"
+            ],
+            [
+              37.73,
+              "new"
+            ],
+            [
+              37.97,
+              "subscription"
+            ],
+            [
+              38.45,
+              "apps"
+            ],
+            [
+              38.91,
+              "launched"
+            ],
+            [
+              39.35,
+              "in"
+            ],
+            [
+              39.69,
+              "a"
+            ],
+            [
+              39.77,
+              "single"
+            ],
+            [
+              39.97,
+              "month."
+            ],
+            [
+              41.19,
+              "By"
+            ],
+            [
+              41.37,
+              "January"
+            ],
+            [
+              41.79,
+              "2026,"
+            ],
+            [
+              43.39,
+              "it"
+            ],
+            [
+              43.53,
+              "was"
+            ],
+            [
+              43.61,
+              "more"
+            ],
+            [
+              43.89,
+              "than"
+            ],
+            [
+              44.11,
+              "14"
+            ],
+            [
+              44.77,
+              ",700"
+            ],
+            [
+              45.61,
+              "a"
+            ],
+            [
+              46.05,
+              "month."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s01-06",
+          "text": "So why does every app suddenly want a monthly payment? And who actually comes out ahead?",
+          "start": 46.76,
+          "end": 52.23,
+          "duration": 5.47,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              46.76,
+              "So"
+            ],
+            [
+              46.92,
+              "why"
+            ],
+            [
+              47.12,
+              "does"
+            ],
+            [
+              47.36,
+              "every"
+            ],
+            [
+              47.7,
+              "app"
+            ],
+            [
+              48.12,
+              "suddenly"
+            ],
+            [
+              48.52,
+              "want"
+            ],
+            [
+              48.88,
+              "a"
+            ],
+            [
+              49.06,
+              "monthly"
+            ],
+            [
+              49.3,
+              "payment,"
+            ],
+            [
+              50.56,
+              "and"
+            ],
+            [
+              50.68,
+              "who"
+            ],
+            [
+              50.8,
+              "actually"
+            ],
+            [
+              51.14,
+              "comes"
+            ],
+            [
+              51.54,
+              "out"
+            ],
+            [
+              51.74,
+              "ahead?"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "title": "When you owned your software",
+      "chapter": "When software was something you owned",
+      "music": "neutral",
+      "start": 52.68,
+      "end": 111.829,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s02-01",
+          "text": "Not long ago, buying software looked a lot like buying a book.",
+          "start": 53.13,
+          "end": 56.9,
+          "duration": 3.77,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              53.13,
+              "Not"
+            ],
+            [
+              53.27,
+              "long"
+            ],
+            [
+              53.47,
+              "ago,"
+            ],
+            [
+              54.17,
+              "buying"
+            ],
+            [
+              54.47,
+              "software"
+            ],
+            [
+              54.95,
+              "looked"
+            ],
+            [
+              55.31,
+              "a"
+            ],
+            [
+              55.47,
+              "lot"
+            ],
+            [
+              55.67,
+              "like"
+            ],
+            [
+              55.91,
+              "buying"
+            ],
+            [
+              56.29,
+              "a"
+            ],
+            [
+              56.45,
+              "book."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s02-02",
+          "text": "You paid once, you got a box with a disc, or a download code, and that version was yours to keep using for as long as your computer could run it.",
+          "start": 57.28,
+          "end": 66.78,
+          "duration": 9.5,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              57.28,
+              "You"
+            ],
+            [
+              57.38,
+              "paid"
+            ],
+            [
+              57.6,
+              "once,"
+            ],
+            [
+              58.72,
+              "you"
+            ],
+            [
+              58.78,
+              "got"
+            ],
+            [
+              58.96,
+              "a"
+            ],
+            [
+              59.04,
+              "box"
+            ],
+            [
+              59.36,
+              "with"
+            ],
+            [
+              59.6,
+              "a"
+            ],
+            [
+              59.68,
+              "disk,"
+            ],
+            [
+              60.42,
+              "or"
+            ],
+            [
+              60.58,
+              "a"
+            ],
+            [
+              60.86,
+              "download"
+            ],
+            [
+              61.2,
+              "code,"
+            ],
+            [
+              62.3,
+              "and"
+            ],
+            [
+              62.54,
+              "that"
+            ],
+            [
+              62.7,
+              "version"
+            ],
+            [
+              63.1,
+              "was"
+            ],
+            [
+              63.4,
+              "yours"
+            ],
+            [
+              63.7,
+              "to"
+            ],
+            [
+              64.02,
+              "keep"
+            ],
+            [
+              64.22,
+              "using"
+            ],
+            [
+              64.6,
+              "for"
+            ],
+            [
+              64.88,
+              "as"
+            ],
+            [
+              65.02,
+              "long"
+            ],
+            [
+              65.24,
+              "as"
+            ],
+            [
+              65.42,
+              "your"
+            ],
+            [
+              65.52,
+              "computer"
+            ],
+            [
+              65.9,
+              "could"
+            ],
+            [
+              66.28,
+              "run"
+            ],
+            [
+              66.54,
+              "it."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s02-03",
+          "text": "When a new version came out, you decided whether the new features were worth paying for again.",
+          "start": 67.16,
+          "end": 72.4,
+          "duration": 5.24,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              67.16,
+              "When"
+            ],
+            [
+              67.28,
+              "a"
+            ],
+            [
+              67.36,
+              "new"
+            ],
+            [
+              67.48,
+              "version"
+            ],
+            [
+              67.86,
+              "came"
+            ],
+            [
+              68.2,
+              "out,"
+            ],
+            [
+              69.08,
+              "you"
+            ],
+            [
+              69.14,
+              "decided"
+            ],
+            [
+              69.52,
+              "whether"
+            ],
+            [
+              69.88,
+              "the"
+            ],
+            [
+              70.12,
+              "new"
+            ],
+            [
+              70.28,
+              "features"
+            ],
+            [
+              70.7,
+              "were"
+            ],
+            [
+              71.04,
+              "worth"
+            ],
+            [
+              71.26,
+              "paying"
+            ],
+            [
+              71.54,
+              "for"
+            ],
+            [
+              71.92,
+              "again."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s02-04",
+          "text": "That was never the whole story. Businesses often paid yearly fees for support and updates. Oracle, for example, says that substantially all of its customers buy and renew their software support contracts every year.",
+          "start": 72.78,
+          "end": 87.4,
+          "duration": 14.62,
+          "claims": [
+            "O01"
+          ],
+          "duck": false,
+          "words": [
+            [
+              72.78,
+              "That"
+            ],
+            [
+              72.9,
+              "was"
+            ],
+            [
+              73.04,
+              "never"
+            ],
+            [
+              73.3,
+              "the"
+            ],
+            [
+              73.52,
+              "whole"
+            ],
+            [
+              73.7,
+              "story."
+            ],
+            [
+              75.18,
+              "Businesses"
+            ],
+            [
+              75.44,
+              "often"
+            ],
+            [
+              75.66,
+              "paid"
+            ],
+            [
+              76.12,
+              "yearly"
+            ],
+            [
+              76.44,
+              "fees"
+            ],
+            [
+              76.88,
+              "for"
+            ],
+            [
+              77.3,
+              "support"
+            ],
+            [
+              77.84,
+              "and"
+            ],
+            [
+              78.0,
+              "updates."
+            ],
+            [
+              79.46,
+              "Oracle,"
+            ],
+            [
+              79.74,
+              "for"
+            ],
+            [
+              79.88,
+              "example,"
+            ],
+            [
+              80.78,
+              "says"
+            ],
+            [
+              80.88,
+              "that"
+            ],
+            [
+              81.16,
+              "substantially"
+            ],
+            [
+              81.82,
+              "all"
+            ],
+            [
+              82.44,
+              "of"
+            ],
+            [
+              82.64,
+              "its"
+            ],
+            [
+              82.76,
+              "customers"
+            ],
+            [
+              83.18,
+              "buy"
+            ],
+            [
+              83.66,
+              "and"
+            ],
+            [
+              84.34,
+              "renew"
+            ],
+            [
+              84.54,
+              "their"
+            ],
+            [
+              84.9,
+              "software"
+            ],
+            [
+              85.32,
+              "support"
+            ],
+            [
+              85.78,
+              "contracts"
+            ],
+            [
+              86.3,
+              "every"
+            ],
+            [
+              86.78,
+              "year."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s02-05",
+          "text": "But for many everyday products, one purchase was the deal. Then, in May 2013, one of the best-known software makers changed the rules.",
+          "start": 87.78,
+          "end": 97.529,
+          "duration": 9.749,
+          "claims": [
+            "A01"
+          ],
+          "duck": false,
+          "words": [
+            [
+              87.78,
+              "But"
+            ],
+            [
+              87.88,
+              "for"
+            ],
+            [
+              88.02,
+              "many"
+            ],
+            [
+              88.26,
+              "everyday"
+            ],
+            [
+              88.58,
+              "products,"
+            ],
+            [
+              89.78,
+              "one"
+            ],
+            [
+              89.86,
+              "purchase"
+            ],
+            [
+              90.34,
+              "was"
+            ],
+            [
+              90.62,
+              "the"
+            ],
+            [
+              90.78,
+              "deal."
+            ],
+            [
+              92.08,
+              "Then,"
+            ],
+            [
+              92.4,
+              "in"
+            ],
+            [
+              92.7,
+              "May"
+            ],
+            [
+              92.88,
+              "2013,"
+            ],
+            [
+              94.18,
+              "one"
+            ],
+            [
+              94.4,
+              "of"
+            ],
+            [
+              94.52,
+              "the"
+            ],
+            [
+              94.62,
+              "best"
+            ],
+            [
+              94.86,
+              "-known"
+            ],
+            [
+              95.22,
+              "software"
+            ],
+            [
+              95.66,
+              "makers"
+            ],
+            [
+              96.12,
+              "changed"
+            ],
+            [
+              96.5,
+              "the"
+            ],
+            [
+              96.84,
+              "rules."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s02-06",
+          "text": "Adobe announced that new features for its creative tools would go only to Creative Cloud subscribers, and that Creative Suite 6 would be the last major update for people who had bought perpetual licenses.",
+          "start": 97.909,
+          "end": 111.379,
+          "duration": 13.47,
+          "claims": [
+            "A01"
+          ],
+          "duck": false,
+          "words": [
+            [
+              97.909,
+              "Adobe"
+            ],
+            [
+              98.149,
+              "announced"
+            ],
+            [
+              98.669,
+              "that"
+            ],
+            [
+              99.089,
+              "new"
+            ],
+            [
+              99.309,
+              "features"
+            ],
+            [
+              99.789,
+              "for"
+            ],
+            [
+              100.169,
+              "its"
+            ],
+            [
+              100.289,
+              "creative"
+            ],
+            [
+              100.689,
+              "tools"
+            ],
+            [
+              101.109,
+              "would"
+            ],
+            [
+              101.769,
+              "go"
+            ],
+            [
+              101.929,
+              "only"
+            ],
+            [
+              102.309,
+              "to"
+            ],
+            [
+              102.509,
+              "creative"
+            ],
+            [
+              102.869,
+              "cloud"
+            ],
+            [
+              103.289,
+              "subscribers,"
+            ],
+            [
+              104.989,
+              "and"
+            ],
+            [
+              105.149,
+              "that"
+            ],
+            [
+              105.269,
+              "creative"
+            ],
+            [
+              105.649,
+              "Suite"
+            ],
+            [
+              106.089,
+              "6"
+            ],
+            [
+              106.589,
+              "would"
+            ],
+            [
+              107.069,
+              "be"
+            ],
+            [
+              107.209,
+              "the"
+            ],
+            [
+              107.329,
+              "last"
+            ],
+            [
+              107.629,
+              "major"
+            ],
+            [
+              107.969,
+              "update"
+            ],
+            [
+              108.529,
+              "for"
+            ],
+            [
+              108.869,
+              "people"
+            ],
+            [
+              109.189,
+              "who"
+            ],
+            [
+              109.429,
+              "had"
+            ],
+            [
+              109.529,
+              "bought"
+            ],
+            [
+              109.789,
+              "perpetual"
+            ],
+            [
+              110.149,
+              "licenses."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "title": "Adobe's switch",
+      "chapter": "The switch that hurt, then paid",
+      "music": "tension",
+      "start": 111.829,
+      "end": 169.131,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s03-01",
+          "text": "In the short run, the switch hurt.",
+          "start": 112.279,
+          "end": 114.049,
+          "duration": 1.77,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              112.279,
+              "In"
+            ],
+            [
+              112.379,
+              "the"
+            ],
+            [
+              112.479,
+              "short"
+            ],
+            [
+              112.719,
+              "run,"
+            ],
+            [
+              113.279,
+              "the"
+            ],
+            [
+              113.359,
+              "switch"
+            ],
+            [
+              113.579,
+              "hurt."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s03-02",
+          "text": "In fiscal 2012, subscriptions were 15 percent of Adobe's revenue. A year later they were 28 percent, and total revenue fell about 8 percent, from $4.4 billion to $4.06 billion.",
+          "start": 114.429,
+          "end": 130.149,
+          "duration": 15.72,
+          "claims": [
+            "A02",
+            "A03"
+          ],
+          "duck": true,
+          "words": [
+            [
+              114.429,
+              "In"
+            ],
+            [
+              114.549,
+              "fiscal"
+            ],
+            [
+              114.749,
+              "2012,"
+            ],
+            [
+              115.629,
+              "subscriptions"
+            ],
+            [
+              116.569,
+              "were"
+            ],
+            [
+              117.109,
+              "15"
+            ],
+            [
+              117.409,
+              "%"
+            ],
+            [
+              118.029,
+              "of"
+            ],
+            [
+              118.229,
+              "Adobe's"
+            ],
+            [
+              118.769,
+              "revenue."
+            ],
+            [
+              119.889,
+              "A"
+            ],
+            [
+              119.989,
+              "year"
+            ],
+            [
+              120.169,
+              "later"
+            ],
+            [
+              120.509,
+              "they"
+            ],
+            [
+              120.729,
+              "were"
+            ],
+            [
+              120.829,
+              "28"
+            ],
+            [
+              121.169,
+              "%"
+            ],
+            [
+              121.849,
+              "and"
+            ],
+            [
+              122.549,
+              "total"
+            ],
+            [
+              122.749,
+              "revenue"
+            ],
+            [
+              123.269,
+              "fell"
+            ],
+            [
+              123.569,
+              "about"
+            ],
+            [
+              123.809,
+              "8"
+            ],
+            [
+              124.149,
+              "%"
+            ],
+            [
+              124.649,
+              "from"
+            ],
+            [
+              125.309,
+              "$4"
+            ],
+            [
+              125.709,
+              ".4"
+            ],
+            [
+              126.469,
+              "billion"
+            ],
+            [
+              126.809,
+              "to"
+            ],
+            [
+              127.889,
+              "$4"
+            ],
+            [
+              128.229,
+              ".06"
+            ],
+            [
+              129.329,
+              "billion."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s03-03",
+          "text": "Net income fell from $833 million to $290 million.",
+          "start": 130.529,
+          "end": 136.379,
+          "duration": 5.85,
+          "claims": [
+            "A04"
+          ],
+          "duck": true,
+          "words": [
+            [
+              130.529,
+              "Net"
+            ],
+            [
+              130.689,
+              "income"
+            ],
+            [
+              130.969,
+              "fell"
+            ],
+            [
+              131.469,
+              "from"
+            ],
+            [
+              131.789,
+              "$833"
+            ],
+            [
+              133.049,
+              "million"
+            ],
+            [
+              133.669,
+              "to"
+            ],
+            [
+              134.729,
+              "$290"
+            ],
+            [
+              135.729,
+              "million."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s03-04",
+          "text": "Why accept that? Because a box is sold once, but a subscription is billed again and again. Revenue that used to arrive in one burst is spread across months and years.",
+          "start": 136.759,
+          "end": 147.949,
+          "duration": 11.19,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              136.759,
+              "Why"
+            ],
+            [
+              136.899,
+              "accept"
+            ],
+            [
+              137.179,
+              "that?"
+            ],
+            [
+              138.299,
+              "Because"
+            ],
+            [
+              138.299,
+              "a"
+            ],
+            [
+              138.419,
+              "box"
+            ],
+            [
+              138.739,
+              "is"
+            ],
+            [
+              138.979,
+              "sold"
+            ],
+            [
+              139.199,
+              "once,"
+            ],
+            [
+              139.979,
+              "but"
+            ],
+            [
+              140.059,
+              "a"
+            ],
+            [
+              140.279,
+              "subscription"
+            ],
+            [
+              140.759,
+              "is"
+            ],
+            [
+              141.159,
+              "billed"
+            ],
+            [
+              141.359,
+              "again"
+            ],
+            [
+              141.939,
+              "and"
+            ],
+            [
+              142.159,
+              "again."
+            ],
+            [
+              143.219,
+              "Revenue"
+            ],
+            [
+              143.539,
+              "that"
+            ],
+            [
+              143.899,
+              "used"
+            ],
+            [
+              144.139,
+              "to"
+            ],
+            [
+              144.359,
+              "arrive"
+            ],
+            [
+              144.679,
+              "in"
+            ],
+            [
+              145.079,
+              "one"
+            ],
+            [
+              145.259,
+              "burst"
+            ],
+            [
+              145.579,
+              "is"
+            ],
+            [
+              145.999,
+              "spread"
+            ],
+            [
+              146.279,
+              "across"
+            ],
+            [
+              146.579,
+              "months"
+            ],
+            [
+              146.999,
+              "and"
+            ],
+            [
+              147.239,
+              "years."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s03-05",
+          "text": "By fiscal 2014, subscriptions were half of Adobe's revenue. In fiscal 2025, they were 96 percent of $23.8 billion.",
+          "start": 148.329,
+          "end": 159.711,
+          "duration": 11.382,
+          "claims": [
+            "A05",
+            "A06"
+          ],
+          "duck": true,
+          "words": [
+            [
+              148.329,
+              "By"
+            ],
+            [
+              148.449,
+              "fiscal"
+            ],
+            [
+              148.669,
+              "2014,"
+            ],
+            [
+              149.949,
+              "subscriptions"
+            ],
+            [
+              150.509,
+              "were"
+            ],
+            [
+              151.049,
+              "half"
+            ],
+            [
+              151.309,
+              "of"
+            ],
+            [
+              151.549,
+              "Adobe's"
+            ],
+            [
+              152.149,
+              "revenue."
+            ],
+            [
+              153.289,
+              "In"
+            ],
+            [
+              153.369,
+              "fiscal"
+            ],
+            [
+              153.569,
+              "2025,"
+            ],
+            [
+              155.209,
+              "they"
+            ],
+            [
+              155.389,
+              "were"
+            ],
+            [
+              155.469,
+              "96"
+            ],
+            [
+              155.889,
+              "%"
+            ],
+            [
+              156.829,
+              "of"
+            ],
+            [
+              157.149,
+              "$23"
+            ],
+            [
+              157.469,
+              ".8"
+            ],
+            [
+              158.449,
+              "billion."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s03-06",
+          "text": "Not all of that growth came from the subscription switch alone. But almost all of Adobe's revenue now comes from customers who keep paying.",
+          "start": 160.091,
+          "end": 168.681,
+          "duration": 8.59,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              160.091,
+              "Not"
+            ],
+            [
+              160.231,
+              "all"
+            ],
+            [
+              160.511,
+              "of"
+            ],
+            [
+              160.671,
+              "that"
+            ],
+            [
+              160.811,
+              "growth"
+            ],
+            [
+              161.131,
+              "came"
+            ],
+            [
+              161.511,
+              "from"
+            ],
+            [
+              161.751,
+              "the"
+            ],
+            [
+              161.891,
+              "subscription"
+            ],
+            [
+              162.351,
+              "switch"
+            ],
+            [
+              162.791,
+              "alone,"
+            ],
+            [
+              164.071,
+              "but"
+            ],
+            [
+              164.151,
+              "almost"
+            ],
+            [
+              164.371,
+              "all"
+            ],
+            [
+              164.891,
+              "of"
+            ],
+            [
+              165.051,
+              "Adobe's"
+            ],
+            [
+              165.591,
+              "revenue"
+            ],
+            [
+              165.831,
+              "now"
+            ],
+            [
+              166.431,
+              "comes"
+            ],
+            [
+              166.811,
+              "from"
+            ],
+            [
+              167.071,
+              "customers"
+            ],
+            [
+              167.511,
+              "who"
+            ],
+            [
+              167.871,
+              "keep"
+            ],
+            [
+              168.051,
+              "paying."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "title": "Two companies",
+      "chapter": "Why companies love recurring revenue",
+      "music": "lift",
+      "start": 169.131,
+      "end": 243.665,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s04-01",
+          "text": "To see why, imagine two small software companies. Both are hypothetical.",
+          "start": 169.581,
+          "end": 174.661,
+          "duration": 5.08,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              169.581,
+              "to"
+            ],
+            [
+              169.681,
+              "see"
+            ],
+            [
+              169.821,
+              "why"
+            ],
+            [
+              170.201,
+              "imagine"
+            ],
+            [
+              170.701,
+              "two"
+            ],
+            [
+              171.161,
+              "small"
+            ],
+            [
+              171.541,
+              "software"
+            ],
+            [
+              171.981,
+              "companies."
+            ],
+            [
+              173.441,
+              "Both"
+            ],
+            [
+              173.441,
+              "are"
+            ],
+            [
+              173.721,
+              "hypothetical."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s04-02",
+          "text": "The first sells a photo editor for $120, once. The second sells a similar app for $10 a month.",
+          "start": 175.041,
+          "end": 183.361,
+          "duration": 8.32,
+          "claims": [
+            "I02"
+          ],
+          "duck": false,
+          "words": [
+            [
+              175.041,
+              "The"
+            ],
+            [
+              175.121,
+              "first"
+            ],
+            [
+              175.341,
+              "sells"
+            ],
+            [
+              175.641,
+              "a"
+            ],
+            [
+              175.941,
+              "photo"
+            ],
+            [
+              176.241,
+              "editor"
+            ],
+            [
+              176.641,
+              "for"
+            ],
+            [
+              177.001,
+              "$120,"
+            ],
+            [
+              178.861,
+              "once."
+            ],
+            [
+              180.081,
+              "The"
+            ],
+            [
+              180.101,
+              "second"
+            ],
+            [
+              180.441,
+              "sells"
+            ],
+            [
+              180.761,
+              "a"
+            ],
+            [
+              181.121,
+              "similar"
+            ],
+            [
+              181.441,
+              "app"
+            ],
+            [
+              181.821,
+              "for"
+            ],
+            [
+              182.081,
+              "$10"
+            ],
+            [
+              182.401,
+              "a"
+            ],
+            [
+              183.001,
+              "month."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s04-03",
+          "text": "In month one, the first company looks like the winner. A thousand customers bring in $120,000 at once. The second company collects $10,000.",
+          "start": 183.741,
+          "end": 194.641,
+          "duration": 10.9,
+          "claims": [
+            "I02"
+          ],
+          "duck": true,
+          "words": [
+            [
+              183.741,
+              "In"
+            ],
+            [
+              183.861,
+              "month"
+            ],
+            [
+              184.001,
+              "one,"
+            ],
+            [
+              184.701,
+              "the"
+            ],
+            [
+              184.901,
+              "first"
+            ],
+            [
+              185.141,
+              "company"
+            ],
+            [
+              185.541,
+              "looks"
+            ],
+            [
+              185.861,
+              "like"
+            ],
+            [
+              186.101,
+              "the"
+            ],
+            [
+              186.261,
+              "winner."
+            ],
+            [
+              187.241,
+              "A"
+            ],
+            [
+              187.241,
+              "thousand"
+            ],
+            [
+              187.641,
+              "customers"
+            ],
+            [
+              188.181,
+              "bring"
+            ],
+            [
+              188.721,
+              "in"
+            ],
+            [
+              188.901,
+              "$120"
+            ],
+            [
+              189.881,
+              ",000"
+            ],
+            [
+              190.581,
+              "at"
+            ],
+            [
+              191.201,
+              "once."
+            ],
+            [
+              192.341,
+              "The"
+            ],
+            [
+              192.361,
+              "second"
+            ],
+            [
+              192.701,
+              "company"
+            ],
+            [
+              193.101,
+              "collects"
+            ],
+            [
+              193.461,
+              "$10"
+            ],
+            [
+              193.901,
+              ",000."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s04-04",
+          "text": "But next month, the first company has to find a thousand new buyers. The second starts the month with the customers it already has.",
+          "start": 195.021,
+          "end": 203.405,
+          "duration": 8.384,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              195.021,
+              "But"
+            ],
+            [
+              195.121,
+              "next"
+            ],
+            [
+              195.261,
+              "month,"
+            ],
+            [
+              195.941,
+              "the"
+            ],
+            [
+              196.161,
+              "first"
+            ],
+            [
+              196.421,
+              "company"
+            ],
+            [
+              196.861,
+              "has"
+            ],
+            [
+              197.161,
+              "to"
+            ],
+            [
+              197.321,
+              "find"
+            ],
+            [
+              197.621,
+              "a"
+            ],
+            [
+              197.781,
+              "thousand"
+            ],
+            [
+              198.321,
+              "new"
+            ],
+            [
+              198.581,
+              "buyers."
+            ],
+            [
+              199.861,
+              "The"
+            ],
+            [
+              199.941,
+              "second"
+            ],
+            [
+              200.281,
+              "starts"
+            ],
+            [
+              200.621,
+              "the"
+            ],
+            [
+              200.901,
+              "month"
+            ],
+            [
+              201.141,
+              "with"
+            ],
+            [
+              201.401,
+              "the"
+            ],
+            [
+              201.541,
+              "customers"
+            ],
+            [
+              201.881,
+              "it"
+            ],
+            [
+              202.301,
+              "already"
+            ],
+            [
+              202.581,
+              "has."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s04-05",
+          "text": "If all of them stay for a year, the second company catches up. And it knows, roughly, what next month will bring.",
+          "start": 203.785,
+          "end": 210.595,
+          "duration": 6.81,
+          "claims": [
+            "I02"
+          ],
+          "duck": false,
+          "words": [
+            [
+              203.785,
+              "If"
+            ],
+            [
+              203.945,
+              "all"
+            ],
+            [
+              204.145,
+              "of"
+            ],
+            [
+              204.325,
+              "them"
+            ],
+            [
+              204.465,
+              "stay"
+            ],
+            [
+              204.705,
+              "for"
+            ],
+            [
+              204.985,
+              "a"
+            ],
+            [
+              205.105,
+              "year,"
+            ],
+            [
+              205.605,
+              "the"
+            ],
+            [
+              205.625,
+              "second"
+            ],
+            [
+              205.945,
+              "company"
+            ],
+            [
+              206.385,
+              "catches"
+            ],
+            [
+              206.645,
+              "up,"
+            ],
+            [
+              207.585,
+              "and"
+            ],
+            [
+              207.745,
+              "it"
+            ],
+            [
+              207.845,
+              "knows"
+            ],
+            [
+              208.065,
+              "roughly"
+            ],
+            [
+              208.705,
+              "what"
+            ],
+            [
+              209.345,
+              "next"
+            ],
+            [
+              209.505,
+              "month"
+            ],
+            [
+              209.885,
+              "will"
+            ],
+            [
+              210.125,
+              "bring."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s04-06",
+          "text": "That is the attraction: predictability. Recurring revenue is easier to forecast and to plan around, and it can pay for work that never really ends: fixing bugs, supporting new phones, running servers.",
+          "start": 210.975,
+          "end": 224.275,
+          "duration": 13.3,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              210.975,
+              "That"
+            ],
+            [
+              211.095,
+              "is"
+            ],
+            [
+              211.215,
+              "the"
+            ],
+            [
+              211.355,
+              "attraction,"
+            ],
+            [
+              212.395,
+              "predictability."
+            ],
+            [
+              213.735,
+              "Recurring"
+            ],
+            [
+              214.095,
+              "revenue"
+            ],
+            [
+              214.435,
+              "is"
+            ],
+            [
+              214.855,
+              "easier"
+            ],
+            [
+              215.315,
+              "to"
+            ],
+            [
+              215.515,
+              "forecast"
+            ],
+            [
+              215.895,
+              "and"
+            ],
+            [
+              216.375,
+              "to"
+            ],
+            [
+              216.495,
+              "plan"
+            ],
+            [
+              216.695,
+              "around,"
+            ],
+            [
+              217.715,
+              "and"
+            ],
+            [
+              217.775,
+              "it"
+            ],
+            [
+              217.855,
+              "can"
+            ],
+            [
+              217.975,
+              "pay"
+            ],
+            [
+              218.215,
+              "for"
+            ],
+            [
+              218.455,
+              "work"
+            ],
+            [
+              218.755,
+              "that"
+            ],
+            [
+              218.935,
+              "never"
+            ],
+            [
+              219.255,
+              "really"
+            ],
+            [
+              219.555,
+              "ends,"
+            ],
+            [
+              220.615,
+              "fixing"
+            ],
+            [
+              220.975,
+              "bugs,"
+            ],
+            [
+              221.855,
+              "supporting"
+            ],
+            [
+              222.195,
+              "new"
+            ],
+            [
+              222.395,
+              "phones,"
+            ],
+            [
+              223.135,
+              "running"
+            ],
+            [
+              223.335,
+              "servers."
+            ]
+          ]
+        },
+        {
+          "id": "07",
+          "key": "s04-07",
+          "text": "Some products also cost money every time you use them. Files have to be stored somewhere. An AI answer has to be computed. A single payment does not cover a cost that keeps coming back.",
+          "start": 224.655,
+          "end": 237.295,
+          "duration": 12.64,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              224.655,
+              "Some"
+            ],
+            [
+              224.835,
+              "products"
+            ],
+            [
+              225.255,
+              "also"
+            ],
+            [
+              225.555,
+              "cost"
+            ],
+            [
+              226.115,
+              "money"
+            ],
+            [
+              226.415,
+              "every"
+            ],
+            [
+              226.775,
+              "time"
+            ],
+            [
+              227.195,
+              "you"
+            ],
+            [
+              227.435,
+              "use"
+            ],
+            [
+              227.675,
+              "them."
+            ],
+            [
+              228.795,
+              "Files"
+            ],
+            [
+              228.795,
+              "have"
+            ],
+            [
+              229.135,
+              "to"
+            ],
+            [
+              229.315,
+              "be"
+            ],
+            [
+              229.415,
+              "stored"
+            ],
+            [
+              229.675,
+              "somewhere."
+            ],
+            [
+              231.035,
+              "An"
+            ],
+            [
+              231.055,
+              "AI"
+            ],
+            [
+              231.395,
+              "answer"
+            ],
+            [
+              232.175,
+              "has"
+            ],
+            [
+              232.435,
+              "to"
+            ],
+            [
+              232.595,
+              "be"
+            ],
+            [
+              232.695,
+              "computed."
+            ],
+            [
+              233.835,
+              "A"
+            ],
+            [
+              233.915,
+              "single"
+            ],
+            [
+              234.155,
+              "payment"
+            ],
+            [
+              234.635,
+              "does"
+            ],
+            [
+              234.935,
+              "not"
+            ],
+            [
+              235.175,
+              "cover"
+            ],
+            [
+              235.535,
+              "a"
+            ],
+            [
+              235.635,
+              "cost"
+            ],
+            [
+              235.935,
+              "that"
+            ],
+            [
+              236.195,
+              "keeps"
+            ],
+            [
+              236.435,
+              "coming"
+            ],
+            [
+              236.815,
+              "back."
+            ]
+          ]
+        },
+        {
+          "id": "08",
+          "key": "s04-08",
+          "text": "But notice the catch in the second company's plan. It only works if those customers stay.",
+          "start": 237.675,
+          "end": 243.215,
+          "duration": 5.54,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              237.675,
+              "but"
+            ],
+            [
+              237.775,
+              "notice"
+            ],
+            [
+              237.995,
+              "the"
+            ],
+            [
+              238.315,
+              "catch"
+            ],
+            [
+              238.595,
+              "in"
+            ],
+            [
+              238.875,
+              "the"
+            ],
+            [
+              238.995,
+              "second"
+            ],
+            [
+              239.315,
+              "company's"
+            ],
+            [
+              239.915,
+              "plan."
+            ],
+            [
+              240.975,
+              "It"
+            ],
+            [
+              241.015,
+              "only"
+            ],
+            [
+              241.155,
+              "works"
+            ],
+            [
+              241.575,
+              "if"
+            ],
+            [
+              241.855,
+              "those"
+            ],
+            [
+              242.035,
+              "customers"
+            ],
+            [
+              242.515,
+              "stay."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "title": "Subscription math",
+      "chapter": "The subscription math",
+      "music": "process",
+      "start": 243.665,
+      "end": 337.539,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s05-01",
+          "text": "Subscription businesses live by a handful of numbers, and they all connect.",
+          "start": 244.115,
+          "end": 248.815,
+          "duration": 4.7,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              244.115,
+              "Subscription"
+            ],
+            [
+              244.715,
+              "businesses"
+            ],
+            [
+              245.095,
+              "live"
+            ],
+            [
+              245.595,
+              "by"
+            ],
+            [
+              246.035,
+              "a"
+            ],
+            [
+              246.175,
+              "handful"
+            ],
+            [
+              246.455,
+              "of"
+            ],
+            [
+              246.675,
+              "numbers,"
+            ],
+            [
+              247.535,
+              "and"
+            ],
+            [
+              247.715,
+              "they"
+            ],
+            [
+              247.835,
+              "all"
+            ],
+            [
+              248.075,
+              "connect."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s05-02",
+          "text": "Monthly recurring revenue is what the company expects to bill each month from its active subscribers.",
+          "start": 249.195,
+          "end": 255.553,
+          "duration": 6.357,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              249.195,
+              "Monthly"
+            ],
+            [
+              249.575,
+              "recurring"
+            ],
+            [
+              249.995,
+              "revenue"
+            ],
+            [
+              250.715,
+              "is"
+            ],
+            [
+              251.275,
+              "what"
+            ],
+            [
+              251.455,
+              "the"
+            ],
+            [
+              251.615,
+              "company"
+            ],
+            [
+              251.995,
+              "expects"
+            ],
+            [
+              252.495,
+              "to"
+            ],
+            [
+              252.795,
+              "bill"
+            ],
+            [
+              252.995,
+              "each"
+            ],
+            [
+              253.335,
+              "month"
+            ],
+            [
+              253.655,
+              "from"
+            ],
+            [
+              253.935,
+              "its"
+            ],
+            [
+              254.075,
+              "active"
+            ],
+            [
+              254.415,
+              "subscribers."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s05-03",
+          "text": "Churn is the share of subscribers who leave in a given period. Retention is the opposite: the share who are still paying.",
+          "start": 255.933,
+          "end": 263.493,
+          "duration": 7.56,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              255.933,
+              "Churn"
+            ],
+            [
+              256.233,
+              "is"
+            ],
+            [
+              256.473,
+              "the"
+            ],
+            [
+              256.613,
+              "share"
+            ],
+            [
+              256.893,
+              "of"
+            ],
+            [
+              257.113,
+              "subscribers"
+            ],
+            [
+              257.753,
+              "who"
+            ],
+            [
+              257.993,
+              "leave"
+            ],
+            [
+              258.233,
+              "in"
+            ],
+            [
+              258.493,
+              "a"
+            ],
+            [
+              258.533,
+              "given"
+            ],
+            [
+              258.693,
+              "period."
+            ],
+            [
+              260.033,
+              "Retention"
+            ],
+            [
+              260.313,
+              "is"
+            ],
+            [
+              260.773,
+              "the"
+            ],
+            [
+              260.913,
+              "opposite,"
+            ],
+            [
+              261.993,
+              "the"
+            ],
+            [
+              262.053,
+              "share"
+            ],
+            [
+              262.273,
+              "who"
+            ],
+            [
+              262.573,
+              "are"
+            ],
+            [
+              262.693,
+              "still"
+            ],
+            [
+              262.893,
+              "paying."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s05-04",
+          "text": "Customer acquisition cost is what the company spends, on ads and promotion, to win one paying customer. And lifetime value is what that customer is worth over all the months they keep paying.",
+          "start": 263.873,
+          "end": 276.893,
+          "duration": 13.02,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              263.873,
+              "Customer"
+            ],
+            [
+              264.193,
+              "acquisition"
+            ],
+            [
+              264.553,
+              "cost"
+            ],
+            [
+              265.273,
+              "is"
+            ],
+            [
+              265.773,
+              "what"
+            ],
+            [
+              265.953,
+              "the"
+            ],
+            [
+              266.093,
+              "company"
+            ],
+            [
+              266.453,
+              "spends"
+            ],
+            [
+              266.913,
+              "on"
+            ],
+            [
+              267.493,
+              "ads"
+            ],
+            [
+              267.853,
+              "and"
+            ],
+            [
+              268.233,
+              "promotion"
+            ],
+            [
+              268.573,
+              "to"
+            ],
+            [
+              269.473,
+              "win"
+            ],
+            [
+              269.673,
+              "one"
+            ],
+            [
+              270.033,
+              "paying"
+            ],
+            [
+              270.493,
+              "customer."
+            ],
+            [
+              271.833,
+              "And"
+            ],
+            [
+              271.873,
+              "lifetime"
+            ],
+            [
+              272.153,
+              "value"
+            ],
+            [
+              273.013,
+              "is"
+            ],
+            [
+              273.293,
+              "what"
+            ],
+            [
+              273.473,
+              "that"
+            ],
+            [
+              273.653,
+              "customer"
+            ],
+            [
+              274.053,
+              "is"
+            ],
+            [
+              274.393,
+              "worth"
+            ],
+            [
+              274.633,
+              "over"
+            ],
+            [
+              274.933,
+              "all"
+            ],
+            [
+              275.333,
+              "the"
+            ],
+            [
+              275.533,
+              "months"
+            ],
+            [
+              275.773,
+              "they"
+            ],
+            [
+              276.053,
+              "keep"
+            ],
+            [
+              276.273,
+              "paying."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s05-05",
+          "text": "Let's put hypothetical numbers on our ten-dollar app. If it sells through Apple's App Store, Apple's terms give the developer 70 percent of each payment during a subscriber's first year, and 85 percent after that. Developers in Apple's Small Business Program get 85 percent from the start.",
+          "start": 277.273,
+          "end": 297.223,
+          "duration": 19.95,
+          "claims": [
+            "P01",
+            "P02"
+          ],
+          "duck": true,
+          "words": [
+            [
+              277.273,
+              "Let's"
+            ],
+            [
+              277.533,
+              "put"
+            ],
+            [
+              277.693,
+              "hypothetical"
+            ],
+            [
+              277.953,
+              "numbers"
+            ],
+            [
+              278.813,
+              "on"
+            ],
+            [
+              279.153,
+              "our"
+            ],
+            [
+              279.253,
+              "$10"
+            ],
+            [
+              279.553,
+              "app."
+            ],
+            [
+              280.933,
+              "If"
+            ],
+            [
+              280.953,
+              "it"
+            ],
+            [
+              281.093,
+              "sells"
+            ],
+            [
+              281.313,
+              "through"
+            ],
+            [
+              281.753,
+              "Apple's"
+            ],
+            [
+              282.293,
+              "App"
+            ],
+            [
+              282.453,
+              "Store,"
+            ],
+            [
+              283.353,
+              "Apple's"
+            ],
+            [
+              283.793,
+              "terms"
+            ],
+            [
+              284.033,
+              "give"
+            ],
+            [
+              284.433,
+              "the"
+            ],
+            [
+              284.593,
+              "developers"
+            ],
+            [
+              284.933,
+              "70"
+            ],
+            [
+              285.493,
+              "%"
+            ],
+            [
+              285.993,
+              "of"
+            ],
+            [
+              286.193,
+              "each"
+            ],
+            [
+              286.413,
+              "payment"
+            ],
+            [
+              286.793,
+              "during"
+            ],
+            [
+              287.153,
+              "a"
+            ],
+            [
+              287.353,
+              "subscriber's"
+            ],
+            [
+              288.093,
+              "first"
+            ],
+            [
+              288.293,
+              "year,"
+            ],
+            [
+              289.293,
+              "and"
+            ],
+            [
+              289.373,
+              "85"
+            ],
+            [
+              289.733,
+              "%"
+            ],
+            [
+              290.573,
+              "after"
+            ],
+            [
+              290.993,
+              "that."
+            ],
+            [
+              292.453,
+              "Developers"
+            ],
+            [
+              292.453,
+              "in"
+            ],
+            [
+              292.753,
+              "Apple's"
+            ],
+            [
+              293.293,
+              "small"
+            ],
+            [
+              293.513,
+              "business"
+            ],
+            [
+              293.973,
+              "program"
+            ],
+            [
+              294.753,
+              "get"
+            ],
+            [
+              295.093,
+              "85"
+            ],
+            [
+              295.433,
+              "%"
+            ],
+            [
+              296.353,
+              "from"
+            ],
+            [
+              296.613,
+              "the"
+            ],
+            [
+              296.753,
+              "start."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s05-06",
+          "text": "So the developer keeps about $7 a month. If 10 percent of subscribers cancel every month, the average subscriber stays about ten months, and brings in roughly $70.",
+          "start": 297.603,
+          "end": 309.503,
+          "duration": 11.9,
+          "claims": [
+            "I03"
+          ],
+          "duck": true,
+          "words": [
+            [
+              297.603,
+              "so"
+            ],
+            [
+              297.723,
+              "the"
+            ],
+            [
+              297.843,
+              "developer"
+            ],
+            [
+              298.183,
+              "keeps"
+            ],
+            [
+              298.583,
+              "about"
+            ],
+            [
+              298.923,
+              "$7"
+            ],
+            [
+              299.443,
+              "a"
+            ],
+            [
+              300.023,
+              "month."
+            ],
+            [
+              300.963,
+              "If"
+            ],
+            [
+              301.023,
+              "10"
+            ],
+            [
+              301.243,
+              "%"
+            ],
+            [
+              301.643,
+              "of"
+            ],
+            [
+              301.803,
+              "subscribers"
+            ],
+            [
+              302.303,
+              "cancel"
+            ],
+            [
+              302.943,
+              "every"
+            ],
+            [
+              303.223,
+              "month,"
+            ],
+            [
+              304.123,
+              "the"
+            ],
+            [
+              304.223,
+              "average"
+            ],
+            [
+              304.543,
+              "subscriber"
+            ],
+            [
+              305.063,
+              "stays"
+            ],
+            [
+              305.603,
+              "about"
+            ],
+            [
+              305.943,
+              "10"
+            ],
+            [
+              306.343,
+              "months"
+            ],
+            [
+              306.903,
+              "and"
+            ],
+            [
+              307.243,
+              "brings"
+            ],
+            [
+              307.483,
+              "in"
+            ],
+            [
+              307.803,
+              "roughly"
+            ],
+            [
+              308.023,
+              "$70."
+            ]
+          ]
+        },
+        {
+          "id": "07",
+          "key": "s05-07",
+          "text": "If winning each subscriber costs $40 in advertising, that looks like a healthy business.",
+          "start": 309.883,
+          "end": 316.069,
+          "duration": 6.187,
+          "claims": [
+            "I03"
+          ],
+          "duck": false,
+          "words": [
+            [
+              309.883,
+              "If"
+            ],
+            [
+              310.043,
+              "winning"
+            ],
+            [
+              310.243,
+              "each"
+            ],
+            [
+              310.643,
+              "subscriber"
+            ],
+            [
+              311.183,
+              "costs"
+            ],
+            [
+              311.643,
+              "$40"
+            ],
+            [
+              312.283,
+              "in"
+            ],
+            [
+              312.903,
+              "advertising,"
+            ],
+            [
+              314.303,
+              "that"
+            ],
+            [
+              314.403,
+              "looks"
+            ],
+            [
+              314.563,
+              "like"
+            ],
+            [
+              314.823,
+              "a"
+            ],
+            [
+              314.943,
+              "healthy"
+            ],
+            [
+              315.183,
+              "business."
+            ]
+          ]
+        },
+        {
+          "id": "08",
+          "key": "s05-08",
+          "text": "But if churn doubles to 20 percent a month, the average subscriber brings in about $35. That is less than it cost to win them. Same app, same price, and now every new customer loses money.",
+          "start": 316.449,
+          "end": 330.609,
+          "duration": 14.16,
+          "claims": [
+            "I03"
+          ],
+          "duck": true,
+          "words": [
+            [
+              316.449,
+              "But"
+            ],
+            [
+              316.549,
+              "if"
+            ],
+            [
+              316.649,
+              "churn"
+            ],
+            [
+              316.909,
+              "doubles"
+            ],
+            [
+              317.469,
+              "to"
+            ],
+            [
+              317.729,
+              "20"
+            ],
+            [
+              318.009,
+              "%"
+            ],
+            [
+              318.409,
+              "a"
+            ],
+            [
+              318.549,
+              "month,"
+            ],
+            [
+              319.189,
+              "the"
+            ],
+            [
+              319.209,
+              "average"
+            ],
+            [
+              319.489,
+              "subscriber"
+            ],
+            [
+              320.089,
+              "brings"
+            ],
+            [
+              320.649,
+              "in"
+            ],
+            [
+              320.929,
+              "about"
+            ],
+            [
+              321.209,
+              "$35."
+            ],
+            [
+              323.069,
+              "That"
+            ],
+            [
+              323.569,
+              "is"
+            ],
+            [
+              323.709,
+              "less"
+            ],
+            [
+              323.969,
+              "than"
+            ],
+            [
+              324.249,
+              "it"
+            ],
+            [
+              324.349,
+              "costs"
+            ],
+            [
+              324.549,
+              "to"
+            ],
+            [
+              324.889,
+              "win"
+            ],
+            [
+              325.069,
+              "them."
+            ],
+            [
+              326.189,
+              "Same"
+            ],
+            [
+              326.189,
+              "app,"
+            ],
+            [
+              326.929,
+              "same"
+            ],
+            [
+              327.209,
+              "price,"
+            ],
+            [
+              328.169,
+              "and"
+            ],
+            [
+              328.349,
+              "now"
+            ],
+            [
+              328.569,
+              "every"
+            ],
+            [
+              328.969,
+              "new"
+            ],
+            [
+              329.189,
+              "customer"
+            ],
+            [
+              329.569,
+              "loses"
+            ],
+            [
+              329.989,
+              "money."
+            ]
+          ]
+        },
+        {
+          "id": "09",
+          "key": "s05-09",
+          "text": "That is why the people who run subscription apps watch churn more closely than almost anything else.",
+          "start": 330.989,
+          "end": 337.089,
+          "duration": 6.1,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              330.989,
+              "That"
+            ],
+            [
+              331.109,
+              "is"
+            ],
+            [
+              331.209,
+              "why"
+            ],
+            [
+              331.449,
+              "the"
+            ],
+            [
+              331.629,
+              "people"
+            ],
+            [
+              331.969,
+              "who"
+            ],
+            [
+              332.189,
+              "run"
+            ],
+            [
+              332.429,
+              "subscription"
+            ],
+            [
+              332.809,
+              "apps"
+            ],
+            [
+              333.549,
+              "watch"
+            ],
+            [
+              334.009,
+              "churn"
+            ],
+            [
+              334.389,
+              "more"
+            ],
+            [
+              334.749,
+              "closely"
+            ],
+            [
+              335.209,
+              "than"
+            ],
+            [
+              335.729,
+              "almost"
+            ],
+            [
+              335.889,
+              "anything"
+            ],
+            [
+              336.369,
+              "else."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "title": "What the data shows",
+      "chapter": "What the data shows",
+      "music": "neutral",
+      "start": 337.539,
+      "end": 422.603,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s06-01",
+          "text": "So how do real subscription apps actually do? One of the largest data sets comes from RevenueCat, a company that sells the software many apps use to manage their subscriptions.",
+          "start": 337.989,
+          "end": 350.289,
+          "duration": 12.299,
+          "claims": [
+            "R00"
+          ],
+          "duck": false,
+          "words": [
+            [
+              337.989,
+              "So"
+            ],
+            [
+              338.109,
+              "how"
+            ],
+            [
+              338.269,
+              "do"
+            ],
+            [
+              338.489,
+              "real"
+            ],
+            [
+              338.809,
+              "subscription"
+            ],
+            [
+              339.389,
+              "apps"
+            ],
+            [
+              340.009,
+              "actually"
+            ],
+            [
+              340.589,
+              "do?"
+            ],
+            [
+              341.669,
+              "One"
+            ],
+            [
+              341.809,
+              "of"
+            ],
+            [
+              341.949,
+              "the"
+            ],
+            [
+              342.069,
+              "largest"
+            ],
+            [
+              342.489,
+              "data"
+            ],
+            [
+              342.849,
+              "sets"
+            ],
+            [
+              343.209,
+              "comes"
+            ],
+            [
+              343.529,
+              "from"
+            ],
+            [
+              343.789,
+              "Revenue"
+            ],
+            [
+              344.149,
+              "Cat,"
+            ],
+            [
+              344.949,
+              "a"
+            ],
+            [
+              345.269,
+              "company"
+            ],
+            [
+              345.649,
+              "that"
+            ],
+            [
+              345.929,
+              "sells"
+            ],
+            [
+              346.189,
+              "the"
+            ],
+            [
+              346.509,
+              "software"
+            ],
+            [
+              346.989,
+              "many"
+            ],
+            [
+              347.589,
+              "apps"
+            ],
+            [
+              348.049,
+              "use"
+            ],
+            [
+              348.369,
+              "to"
+            ],
+            [
+              348.629,
+              "manage"
+            ],
+            [
+              348.929,
+              "their"
+            ],
+            [
+              349.249,
+              "subscriptions."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s06-02",
+          "text": "Its 2026 report covers more than 115,000 apps and more than $16 billion in revenue. It is not every app in the world, only apps that use RevenueCat's tools. But the picture is striking.",
+          "start": 350.669,
+          "end": 365.819,
+          "duration": 15.15,
+          "claims": [
+            "R00"
+          ],
+          "duck": true,
+          "words": [
+            [
+              350.669,
+              "Its"
+            ],
+            [
+              350.809,
+              "2026"
+            ],
+            [
+              351.549,
+              "report"
+            ],
+            [
+              352.009,
+              "covers"
+            ],
+            [
+              352.509,
+              "more"
+            ],
+            [
+              352.969,
+              "than"
+            ],
+            [
+              353.209,
+              "115"
+            ],
+            [
+              354.049,
+              ",000"
+            ],
+            [
+              354.929,
+              "apps"
+            ],
+            [
+              355.249,
+              "and"
+            ],
+            [
+              355.549,
+              "more"
+            ],
+            [
+              355.749,
+              "than"
+            ],
+            [
+              355.949,
+              "$16"
+            ],
+            [
+              356.389,
+              "billion"
+            ],
+            [
+              356.949,
+              "in"
+            ],
+            [
+              357.689,
+              "revenue."
+            ],
+            [
+              358.869,
+              "It"
+            ],
+            [
+              358.929,
+              "is"
+            ],
+            [
+              359.029,
+              "not"
+            ],
+            [
+              359.249,
+              "every"
+            ],
+            [
+              359.529,
+              "app"
+            ],
+            [
+              359.929,
+              "in"
+            ],
+            [
+              360.109,
+              "the"
+            ],
+            [
+              360.209,
+              "world,"
+            ],
+            [
+              361.009,
+              "only"
+            ],
+            [
+              361.369,
+              "apps"
+            ],
+            [
+              361.689,
+              "that"
+            ],
+            [
+              362.009,
+              "use"
+            ],
+            [
+              362.329,
+              "revenue"
+            ],
+            [
+              362.789,
+              "cats"
+            ],
+            [
+              363.109,
+              "tools,"
+            ],
+            [
+              364.289,
+              "but"
+            ],
+            [
+              364.409,
+              "the"
+            ],
+            [
+              364.529,
+              "picture"
+            ],
+            [
+              364.809,
+              "is"
+            ],
+            [
+              365.129,
+              "striking."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s06-03",
+          "text": "One year after launch, the median app earned about $72 a month. The top 10 percent earned more than $2,500 a month.",
+          "start": 366.199,
+          "end": 375.799,
+          "duration": 9.6,
+          "claims": [
+            "R02"
+          ],
+          "duck": true,
+          "words": [
+            [
+              366.199,
+              "One"
+            ],
+            [
+              366.379,
+              "year"
+            ],
+            [
+              366.599,
+              "after"
+            ],
+            [
+              366.919,
+              "launch,"
+            ],
+            [
+              367.799,
+              "the"
+            ],
+            [
+              367.819,
+              "median"
+            ],
+            [
+              368.119,
+              "app"
+            ],
+            [
+              368.559,
+              "earned"
+            ],
+            [
+              368.919,
+              "about"
+            ],
+            [
+              369.199,
+              "$72"
+            ],
+            [
+              370.059,
+              "a"
+            ],
+            [
+              370.819,
+              "month."
+            ],
+            [
+              371.799,
+              "The"
+            ],
+            [
+              371.879,
+              "top"
+            ],
+            [
+              372.079,
+              "10"
+            ],
+            [
+              372.439,
+              "%"
+            ],
+            [
+              372.839,
+              "earned"
+            ],
+            [
+              373.199,
+              "more"
+            ],
+            [
+              373.539,
+              "than"
+            ],
+            [
+              373.739,
+              "$2"
+            ],
+            [
+              374.019,
+              ",500"
+            ],
+            [
+              374.739,
+              "a"
+            ],
+            [
+              375.319,
+              "month."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s06-04",
+          "text": "Only 4.6 percent of newly launched apps reached $10,000 in monthly revenue within two years. And apps launched before 2020 still generate 69 percent of all subscription revenue in the data.",
+          "start": 376.179,
+          "end": 391.399,
+          "duration": 15.22,
+          "claims": [
+            "R03",
+            "R04"
+          ],
+          "duck": true,
+          "words": [
+            [
+              376.179,
+              "Only"
+            ],
+            [
+              376.459,
+              "4"
+            ],
+            [
+              376.839,
+              ".6"
+            ],
+            [
+              377.479,
+              "%"
+            ],
+            [
+              377.779,
+              "of"
+            ],
+            [
+              378.119,
+              "newly"
+            ],
+            [
+              378.319,
+              "-launched"
+            ],
+            [
+              378.919,
+              "apps"
+            ],
+            [
+              379.159,
+              "reached"
+            ],
+            [
+              379.639,
+              "$10"
+            ],
+            [
+              380.119,
+              ",000"
+            ],
+            [
+              380.639,
+              "in"
+            ],
+            [
+              381.559,
+              "monthly"
+            ],
+            [
+              381.779,
+              "revenue"
+            ],
+            [
+              382.279,
+              "within"
+            ],
+            [
+              382.819,
+              "two"
+            ],
+            [
+              383.039,
+              "years."
+            ],
+            [
+              384.319,
+              "An"
+            ],
+            [
+              384.359,
+              "apps"
+            ],
+            [
+              384.619,
+              "launched"
+            ],
+            [
+              385.019,
+              "before"
+            ],
+            [
+              385.419,
+              "2020"
+            ],
+            [
+              386.259,
+              "still"
+            ],
+            [
+              386.939,
+              "generate"
+            ],
+            [
+              387.459,
+              "69"
+            ],
+            [
+              387.999,
+              "%"
+            ],
+            [
+              388.839,
+              "of"
+            ],
+            [
+              389.119,
+              "all"
+            ],
+            [
+              389.399,
+              "subscription"
+            ],
+            [
+              389.919,
+              "revenue"
+            ],
+            [
+              390.399,
+              "in"
+            ],
+            [
+              390.839,
+              "the"
+            ],
+            [
+              390.959,
+              "data."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s06-05",
+          "text": "Keeping subscribers is even harder. For subscriptions that started in 2024, the median share still active a year later was about 8 percent on monthly plans, and 28 percent on yearly plans.",
+          "start": 391.779,
+          "end": 405.809,
+          "duration": 14.03,
+          "claims": [
+            "R05"
+          ],
+          "duck": true,
+          "words": [
+            [
+              391.779,
+              "Keeping"
+            ],
+            [
+              391.959,
+              "subscribers"
+            ],
+            [
+              392.419,
+              "is"
+            ],
+            [
+              393.039,
+              "even"
+            ],
+            [
+              393.319,
+              "harder."
+            ],
+            [
+              394.579,
+              "For"
+            ],
+            [
+              394.579,
+              "subscriptions"
+            ],
+            [
+              394.999,
+              "that"
+            ],
+            [
+              395.559,
+              "started"
+            ],
+            [
+              395.899,
+              "in"
+            ],
+            [
+              396.159,
+              "2024,"
+            ],
+            [
+              397.659,
+              "the"
+            ],
+            [
+              397.699,
+              "median"
+            ],
+            [
+              397.959,
+              "share"
+            ],
+            [
+              398.399,
+              "still"
+            ],
+            [
+              398.779,
+              "active"
+            ],
+            [
+              399.139,
+              "a"
+            ],
+            [
+              399.419,
+              "year"
+            ],
+            [
+              399.579,
+              "later"
+            ],
+            [
+              399.919,
+              "was"
+            ],
+            [
+              400.219,
+              "about"
+            ],
+            [
+              400.399,
+              "8"
+            ],
+            [
+              400.859,
+              "%"
+            ],
+            [
+              401.339,
+              "on"
+            ],
+            [
+              401.619,
+              "monthly"
+            ],
+            [
+              401.879,
+              "plans"
+            ],
+            [
+              402.929,
+              "and"
+            ],
+            [
+              403.279,
+              "28"
+            ],
+            [
+              403.699,
+              "%"
+            ],
+            [
+              404.279,
+              "on"
+            ],
+            [
+              404.619,
+              "yearly"
+            ],
+            [
+              404.839,
+              "plans."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s06-06",
+          "text": "Nearly half of monthly subscribers do not renew even once.",
+          "start": 406.189,
+          "end": 410.275,
+          "duration": 4.086,
+          "claims": [
+            "R06"
+          ],
+          "duck": false,
+          "words": [
+            [
+              406.189,
+              "Nearly"
+            ],
+            [
+              406.369,
+              "half"
+            ],
+            [
+              406.749,
+              "of"
+            ],
+            [
+              406.929,
+              "monthly"
+            ],
+            [
+              407.129,
+              "subscribers"
+            ],
+            [
+              407.909,
+              "do"
+            ],
+            [
+              408.609,
+              "not"
+            ],
+            [
+              408.789,
+              "renew"
+            ],
+            [
+              409.149,
+              "even"
+            ],
+            [
+              409.629,
+              "once."
+            ]
+          ]
+        },
+        {
+          "id": "07",
+          "key": "s06-07",
+          "text": "Those figures count subscriptions, not people, and payments, not use. Someone can cancel and keep using a free version. Someone else can keep paying and barely open the app.",
+          "start": 410.655,
+          "end": 422.153,
+          "duration": 11.499,
+          "claims": [
+            "R05"
+          ],
+          "duck": false,
+          "words": [
+            [
+              410.655,
+              "Those"
+            ],
+            [
+              410.835,
+              "figures"
+            ],
+            [
+              411.255,
+              "count"
+            ],
+            [
+              411.675,
+              "subscriptions,"
+            ],
+            [
+              412.955,
+              "not"
+            ],
+            [
+              412.995,
+              "people,"
+            ],
+            [
+              413.695,
+              "and"
+            ],
+            [
+              413.755,
+              "payments,"
+            ],
+            [
+              414.455,
+              "not"
+            ],
+            [
+              414.775,
+              "use."
+            ],
+            [
+              415.815,
+              "Someone"
+            ],
+            [
+              416.035,
+              "can"
+            ],
+            [
+              416.335,
+              "cancel"
+            ],
+            [
+              416.835,
+              "and"
+            ],
+            [
+              417.075,
+              "keep"
+            ],
+            [
+              417.255,
+              "using"
+            ],
+            [
+              417.635,
+              "a"
+            ],
+            [
+              417.775,
+              "free"
+            ],
+            [
+              417.955,
+              "version."
+            ],
+            [
+              419.095,
+              "Someone"
+            ],
+            [
+              419.255,
+              "else"
+            ],
+            [
+              419.535,
+              "can"
+            ],
+            [
+              419.755,
+              "keep"
+            ],
+            [
+              419.995,
+              "paying"
+            ],
+            [
+              420.395,
+              "and"
+            ],
+            [
+              420.675,
+              "barely"
+            ],
+            [
+              420.955,
+              "open"
+            ],
+            [
+              421.455,
+              "the"
+            ],
+            [
+              421.675,
+              "app."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "title": "Your wallet",
+      "chapter": "The competition for your wallet",
+      "music": "lift",
+      "start": 422.603,
+      "end": 502.179,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s07-01",
+          "text": "Now look at it from the customer's side.",
+          "start": 423.053,
+          "end": 425.203,
+          "duration": 2.15,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              423.053,
+              "Now"
+            ],
+            [
+              423.233,
+              "look"
+            ],
+            [
+              423.473,
+              "at"
+            ],
+            [
+              423.693,
+              "it"
+            ],
+            [
+              423.833,
+              "from"
+            ],
+            [
+              424.013,
+              "the"
+            ],
+            [
+              424.133,
+              "customer's"
+            ],
+            [
+              424.713,
+              "side."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s07-02",
+          "text": "A household's monthly budget is finite. Every new subscription has to find room in it, often by pushing something else out.",
+          "start": 425.583,
+          "end": 433.823,
+          "duration": 8.24,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              425.583,
+              "A"
+            ],
+            [
+              425.683,
+              "household's"
+            ],
+            [
+              426.423,
+              "monthly"
+            ],
+            [
+              426.623,
+              "budget"
+            ],
+            [
+              427.363,
+              "is"
+            ],
+            [
+              427.583,
+              "finite."
+            ],
+            [
+              428.963,
+              "Every"
+            ],
+            [
+              428.963,
+              "new"
+            ],
+            [
+              429.243,
+              "subscription"
+            ],
+            [
+              429.663,
+              "has"
+            ],
+            [
+              430.163,
+              "to"
+            ],
+            [
+              430.343,
+              "find"
+            ],
+            [
+              430.683,
+              "room"
+            ],
+            [
+              430.963,
+              "in"
+            ],
+            [
+              431.243,
+              "it,"
+            ],
+            [
+              431.643,
+              "often"
+            ],
+            [
+              432.083,
+              "by"
+            ],
+            [
+              432.323,
+              "pushing"
+            ],
+            [
+              432.703,
+              "something"
+            ],
+            [
+              433.003,
+              "else"
+            ],
+            [
+              433.323,
+              "out."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s07-03",
+          "text": "So apps are not only competing with similar apps. A meditation app competes with a streaming service, and an AI assistant competes with extra cloud storage, for the same few dollars each month.",
+          "start": 434.203,
+          "end": 447.213,
+          "duration": 13.01,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              434.203,
+              "So"
+            ],
+            [
+              434.363,
+              "apps"
+            ],
+            [
+              434.643,
+              "are"
+            ],
+            [
+              434.943,
+              "not"
+            ],
+            [
+              435.143,
+              "only"
+            ],
+            [
+              435.403,
+              "competing"
+            ],
+            [
+              435.863,
+              "with"
+            ],
+            [
+              436.323,
+              "similar"
+            ],
+            [
+              436.683,
+              "apps."
+            ],
+            [
+              437.983,
+              "A"
+            ],
+            [
+              437.983,
+              "meditation"
+            ],
+            [
+              438.243,
+              "app"
+            ],
+            [
+              438.843,
+              "competes"
+            ],
+            [
+              439.423,
+              "with"
+            ],
+            [
+              439.543,
+              "a"
+            ],
+            [
+              439.643,
+              "streaming"
+            ],
+            [
+              439.883,
+              "service,"
+            ],
+            [
+              441.143,
+              "and"
+            ],
+            [
+              441.183,
+              "an"
+            ],
+            [
+              441.283,
+              "AI"
+            ],
+            [
+              441.643,
+              "assistant"
+            ],
+            [
+              442.343,
+              "competes"
+            ],
+            [
+              443.103,
+              "with"
+            ],
+            [
+              443.223,
+              "extra"
+            ],
+            [
+              443.463,
+              "cloud"
+            ],
+            [
+              443.983,
+              "storage"
+            ],
+            [
+              445.043,
+              "for"
+            ],
+            [
+              445.343,
+              "the"
+            ],
+            [
+              445.443,
+              "same"
+            ],
+            [
+              445.683,
+              "few"
+            ],
+            [
+              445.983,
+              "dollars"
+            ],
+            [
+              446.483,
+              "each"
+            ],
+            [
+              446.783,
+              "month."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s07-04",
+          "text": "That is why so much effort goes into the first moments: free trials, discounted first months, cheaper yearly plans. Each is a way to get onto the list, and to survive the first renewal.",
+          "start": 447.593,
+          "end": 460.093,
+          "duration": 12.5,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              447.593,
+              "That"
+            ],
+            [
+              447.733,
+              "is"
+            ],
+            [
+              447.853,
+              "why"
+            ],
+            [
+              448.073,
+              "so"
+            ],
+            [
+              448.353,
+              "much"
+            ],
+            [
+              448.613,
+              "effort"
+            ],
+            [
+              449.013,
+              "goes"
+            ],
+            [
+              449.273,
+              "into"
+            ],
+            [
+              449.613,
+              "the"
+            ],
+            [
+              449.733,
+              "first"
+            ],
+            [
+              450.013,
+              "moments."
+            ],
+            [
+              451.273,
+              "Free"
+            ],
+            [
+              451.333,
+              "trials,"
+            ],
+            [
+              452.293,
+              "discounted"
+            ],
+            [
+              452.653,
+              "first"
+            ],
+            [
+              453.173,
+              "months,"
+            ],
+            [
+              454.073,
+              "cheaper"
+            ],
+            [
+              454.213,
+              "yearly"
+            ],
+            [
+              454.533,
+              "plans."
+            ],
+            [
+              456.033,
+              "Each"
+            ],
+            [
+              456.113,
+              "is"
+            ],
+            [
+              456.373,
+              "a"
+            ],
+            [
+              456.473,
+              "way"
+            ],
+            [
+              456.673,
+              "to"
+            ],
+            [
+              456.833,
+              "get"
+            ],
+            [
+              457.013,
+              "onto"
+            ],
+            [
+              457.173,
+              "the"
+            ],
+            [
+              457.393,
+              "list"
+            ],
+            [
+              457.633,
+              "and"
+            ],
+            [
+              458.173,
+              "to"
+            ],
+            [
+              458.293,
+              "survive"
+            ],
+            [
+              458.593,
+              "the"
+            ],
+            [
+              459.033,
+              "first"
+            ],
+            [
+              459.373,
+              "renewal."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s07-05",
+          "text": "RevenueCat found that apps asking for payment upfront, behind a hard paywall, turned about five times as many downloads into paying customers as freemium apps did: 10.7 percent versus 2.1 percent within 35 days. Yet a year later, retention was nearly the same.",
+          "start": 460.473,
+          "end": 480.593,
+          "duration": 20.12,
+          "claims": [
+            "R07"
+          ],
+          "duck": true,
+          "words": [
+            [
+              460.473,
+              "Revenue"
+            ],
+            [
+              460.753,
+              "Cat"
+            ],
+            [
+              461.033,
+              "found"
+            ],
+            [
+              461.413,
+              "that"
+            ],
+            [
+              461.553,
+              "apps"
+            ],
+            [
+              461.793,
+              "asking"
+            ],
+            [
+              462.293,
+              "for"
+            ],
+            [
+              462.533,
+              "payment"
+            ],
+            [
+              462.813,
+              "upfront,"
+            ],
+            [
+              463.813,
+              "behind"
+            ],
+            [
+              464.033,
+              "a"
+            ],
+            [
+              464.233,
+              "hard"
+            ],
+            [
+              464.473,
+              "paywall,"
+            ],
+            [
+              465.513,
+              "turned"
+            ],
+            [
+              465.773,
+              "about"
+            ],
+            [
+              466.113,
+              "five"
+            ],
+            [
+              466.553,
+              "times"
+            ],
+            [
+              466.953,
+              "as"
+            ],
+            [
+              467.273,
+              "many"
+            ],
+            [
+              467.473,
+              "downloads"
+            ],
+            [
+              468.033,
+              "into"
+            ],
+            [
+              468.373,
+              "paying"
+            ],
+            [
+              468.793,
+              "customers"
+            ],
+            [
+              469.233,
+              "as"
+            ],
+            [
+              469.733,
+              "freemium"
+            ],
+            [
+              470.273,
+              "apps"
+            ],
+            [
+              470.533,
+              "did,"
+            ],
+            [
+              471.673,
+              "10"
+            ],
+            [
+              471.873,
+              ".7"
+            ],
+            [
+              472.753,
+              "%"
+            ],
+            [
+              473.293,
+              "versus"
+            ],
+            [
+              473.513,
+              "2"
+            ],
+            [
+              473.973,
+              ".1"
+            ],
+            [
+              474.693,
+              "%"
+            ],
+            [
+              475.173,
+              "within"
+            ],
+            [
+              475.413,
+              "35"
+            ],
+            [
+              475.873,
+              "days."
+            ],
+            [
+              476.673,
+              "Yet"
+            ],
+            [
+              477.653,
+              "a"
+            ],
+            [
+              477.733,
+              "year"
+            ],
+            [
+              477.913,
+              "later,"
+            ],
+            [
+              478.613,
+              "retention"
+            ],
+            [
+              479.113,
+              "was"
+            ],
+            [
+              479.533,
+              "nearly"
+            ],
+            [
+              479.853,
+              "the"
+            ],
+            [
+              480.093,
+              "same."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s07-06",
+          "text": "Meanwhile, small payments add up quietly. Our hypothetical bundle costs less than three dollars a day. Over a year, it comes to nearly nine hundred.",
+          "start": 480.973,
+          "end": 491.023,
+          "duration": 10.05,
+          "claims": [
+            "I01"
+          ],
+          "duck": false,
+          "words": [
+            [
+              480.973,
+              "Meanwhile,"
+            ],
+            [
+              481.453,
+              "small"
+            ],
+            [
+              481.933,
+              "payments"
+            ],
+            [
+              482.353,
+              "add"
+            ],
+            [
+              482.733,
+              "up"
+            ],
+            [
+              482.933,
+              "quietly."
+            ],
+            [
+              484.233,
+              "Our"
+            ],
+            [
+              484.253,
+              "hypothetical"
+            ],
+            [
+              484.673,
+              "bundle"
+            ],
+            [
+              485.293,
+              "costs"
+            ],
+            [
+              485.653,
+              "less"
+            ],
+            [
+              486.133,
+              "than"
+            ],
+            [
+              486.413,
+              "$3"
+            ],
+            [
+              486.793,
+              "a"
+            ],
+            [
+              487.353,
+              "day."
+            ],
+            [
+              488.473,
+              "Over"
+            ],
+            [
+              488.473,
+              "a"
+            ],
+            [
+              488.613,
+              "year,"
+            ],
+            [
+              489.293,
+              "it"
+            ],
+            [
+              489.373,
+              "comes"
+            ],
+            [
+              489.593,
+              "to"
+            ],
+            [
+              489.813,
+              "nearly"
+            ],
+            [
+              490.033,
+              "900."
+            ]
+          ]
+        },
+        {
+          "id": "07",
+          "key": "s07-07",
+          "text": "Not every app takes the pure subscription road. In RevenueCat's data, nearly a quarter of the apps pair their subscriptions with a one-time lifetime purchase.",
+          "start": 491.403,
+          "end": 501.729,
+          "duration": 10.325,
+          "claims": [
+            "R08"
+          ],
+          "duck": false,
+          "words": [
+            [
+              491.403,
+              "Not"
+            ],
+            [
+              491.543,
+              "every"
+            ],
+            [
+              491.783,
+              "app"
+            ],
+            [
+              492.143,
+              "takes"
+            ],
+            [
+              492.463,
+              "the"
+            ],
+            [
+              492.643,
+              "pure"
+            ],
+            [
+              492.923,
+              "subscription"
+            ],
+            [
+              493.363,
+              "road."
+            ],
+            [
+              494.743,
+              "In"
+            ],
+            [
+              494.783,
+              "revenue"
+            ],
+            [
+              495.043,
+              "cats"
+            ],
+            [
+              495.463,
+              "data,"
+            ],
+            [
+              496.403,
+              "nearly"
+            ],
+            [
+              496.623,
+              "a"
+            ],
+            [
+              496.863,
+              "quarter"
+            ],
+            [
+              497.243,
+              "of"
+            ],
+            [
+              497.403,
+              "the"
+            ],
+            [
+              497.483,
+              "apps"
+            ],
+            [
+              497.803,
+              "pair"
+            ],
+            [
+              498.123,
+              "their"
+            ],
+            [
+              498.323,
+              "subscriptions"
+            ],
+            [
+              498.623,
+              "with"
+            ],
+            [
+              499.343,
+              "a"
+            ],
+            [
+              499.463,
+              "one"
+            ],
+            [
+              499.743,
+              "-time"
+            ],
+            [
+              500.203,
+              "lifetime"
+            ],
+            [
+              500.563,
+              "purchase."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "title": "Where it breaks",
+      "chapter": "Where the model breaks",
+      "music": "tension",
+      "start": 502.179,
+      "end": 600.103,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s08-01",
+          "text": "Recurring revenue sounds safe. It is not guaranteed, and it is not the same as profit.",
+          "start": 502.629,
+          "end": 508.559,
+          "duration": 5.93,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              502.629,
+              "recurring"
+            ],
+            [
+              502.929,
+              "revenue"
+            ],
+            [
+              503.489,
+              "sounds"
+            ],
+            [
+              503.909,
+              "safe."
+            ],
+            [
+              505.049,
+              "It"
+            ],
+            [
+              505.069,
+              "is"
+            ],
+            [
+              505.149,
+              "not"
+            ],
+            [
+              505.389,
+              "guaranteed"
+            ],
+            [
+              505.849,
+              "and"
+            ],
+            [
+              506.749,
+              "it"
+            ],
+            [
+              506.849,
+              "is"
+            ],
+            [
+              506.969,
+              "not"
+            ],
+            [
+              507.169,
+              "the"
+            ],
+            [
+              507.389,
+              "same"
+            ],
+            [
+              507.709,
+              "as"
+            ],
+            [
+              507.889,
+              "profit."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s08-02",
+          "text": "Payments fail. Cards expire. Banks decline charges. In RevenueCat's data, involuntary billing failures caused about 31 percent of subscription cancellations on Google Play, compared with 14 percent on the App Store.",
+          "start": 508.939,
+          "end": 524.929,
+          "duration": 15.99,
+          "claims": [
+            "R09"
+          ],
+          "duck": true,
+          "words": [
+            [
+              508.939,
+              "payments"
+            ],
+            [
+              509.259,
+              "fail,"
+            ],
+            [
+              510.199,
+              "cards"
+            ],
+            [
+              510.619,
+              "expire,"
+            ],
+            [
+              511.899,
+              "banks"
+            ],
+            [
+              512.139,
+              "decline"
+            ],
+            [
+              512.539,
+              "charges,"
+            ],
+            [
+              514.119,
+              "in"
+            ],
+            [
+              514.139,
+              "revenue"
+            ],
+            [
+              514.359,
+              "cats"
+            ],
+            [
+              514.799,
+              "data,"
+            ],
+            [
+              515.659,
+              "involuntary"
+            ],
+            [
+              515.979,
+              "billing"
+            ],
+            [
+              516.639,
+              "failures"
+            ],
+            [
+              517.259,
+              "caused"
+            ],
+            [
+              517.559,
+              "about"
+            ],
+            [
+              517.979,
+              "31"
+            ],
+            [
+              518.479,
+              "%"
+            ],
+            [
+              519.179,
+              "of"
+            ],
+            [
+              519.319,
+              "subscription"
+            ],
+            [
+              519.779,
+              "cancellations"
+            ],
+            [
+              520.739,
+              "on"
+            ],
+            [
+              521.019,
+              "Google"
+            ],
+            [
+              521.299,
+              "Play"
+            ],
+            [
+              521.719,
+              "compared"
+            ],
+            [
+              522.399,
+              "with"
+            ],
+            [
+              522.819,
+              "14"
+            ],
+            [
+              523.219,
+              "%"
+            ],
+            [
+              523.799,
+              "on"
+            ],
+            [
+              524.099,
+              "the"
+            ],
+            [
+              524.219,
+              "App"
+            ],
+            [
+              524.379,
+              "Store."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s08-03",
+          "text": "Hype fades. AI-powered apps in the report earned 41 percent more revenue per payer, but their subscribers churned about 30 percent faster.",
+          "start": 525.309,
+          "end": 535.379,
+          "duration": 10.07,
+          "claims": [
+            "R10"
+          ],
+          "duck": true,
+          "words": [
+            [
+              525.309,
+              "hype"
+            ],
+            [
+              525.489,
+              "fades."
+            ],
+            [
+              526.669,
+              "AI"
+            ],
+            [
+              526.949,
+              "-powered"
+            ],
+            [
+              527.589,
+              "apps"
+            ],
+            [
+              527.909,
+              "in"
+            ],
+            [
+              528.189,
+              "the"
+            ],
+            [
+              528.289,
+              "report"
+            ],
+            [
+              528.569,
+              "earned"
+            ],
+            [
+              528.989,
+              "41"
+            ],
+            [
+              529.529,
+              "%"
+            ],
+            [
+              530.189,
+              "more"
+            ],
+            [
+              530.429,
+              "revenue"
+            ],
+            [
+              530.689,
+              "per"
+            ],
+            [
+              531.069,
+              "payer,"
+            ],
+            [
+              532.009,
+              "but"
+            ],
+            [
+              532.069,
+              "their"
+            ],
+            [
+              532.229,
+              "subscribers"
+            ],
+            [
+              532.709,
+              "churned"
+            ],
+            [
+              533.549,
+              "about"
+            ],
+            [
+              533.709,
+              "30"
+            ],
+            [
+              534.189,
+              "%"
+            ],
+            [
+              534.689,
+              "faster."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s08-04",
+          "text": "Some companies try a shortcut: make it easy to sign up and hard to leave. That can backfire. In September 2025, Amazon agreed to pay $2.5 billion to settle Federal Trade Commission claims that it enrolled customers in Prime without their consent and made cancelling difficult.",
+          "start": 535.759,
+          "end": 555.729,
+          "duration": 19.97,
+          "claims": [
+            "F01"
+          ],
+          "duck": true,
+          "words": [
+            [
+              535.759,
+              "Some"
+            ],
+            [
+              535.919,
+              "companies"
+            ],
+            [
+              536.279,
+              "try"
+            ],
+            [
+              536.679,
+              "a"
+            ],
+            [
+              536.899,
+              "shortcut."
+            ],
+            [
+              538.159,
+              "Make"
+            ],
+            [
+              538.159,
+              "it"
+            ],
+            [
+              538.339,
+              "easy"
+            ],
+            [
+              538.639,
+              "to"
+            ],
+            [
+              538.919,
+              "sign"
+            ],
+            [
+              539.239,
+              "up"
+            ],
+            [
+              539.479,
+              "and"
+            ],
+            [
+              539.639,
+              "hard"
+            ],
+            [
+              539.899,
+              "to"
+            ],
+            [
+              540.099,
+              "leave."
+            ],
+            [
+              541.219,
+              "That"
+            ],
+            [
+              541.259,
+              "can"
+            ],
+            [
+              541.439,
+              "backfire."
+            ],
+            [
+              542.799,
+              "In"
+            ],
+            [
+              542.899,
+              "September"
+            ],
+            [
+              543.199,
+              "2025,"
+            ],
+            [
+              544.719,
+              "Amazon"
+            ],
+            [
+              545.059,
+              "agreed"
+            ],
+            [
+              545.599,
+              "to"
+            ],
+            [
+              545.819,
+              "pay"
+            ],
+            [
+              545.999,
+              "$2"
+            ],
+            [
+              546.399,
+              ".5"
+            ],
+            [
+              546.799,
+              "billion"
+            ],
+            [
+              547.739,
+              "to"
+            ],
+            [
+              548.079,
+              "settle"
+            ],
+            [
+              548.339,
+              "federal"
+            ],
+            [
+              548.739,
+              "trade"
+            ],
+            [
+              549.119,
+              "commission"
+            ],
+            [
+              549.459,
+              "claims"
+            ],
+            [
+              550.019,
+              "that"
+            ],
+            [
+              550.419,
+              "it"
+            ],
+            [
+              550.519,
+              "enrolled"
+            ],
+            [
+              551.079,
+              "customers"
+            ],
+            [
+              551.739,
+              "in"
+            ],
+            [
+              552.119,
+              "prime"
+            ],
+            [
+              552.399,
+              "without"
+            ],
+            [
+              552.819,
+              "their"
+            ],
+            [
+              553.159,
+              "consent"
+            ],
+            [
+              553.939,
+              "and"
+            ],
+            [
+              554.279,
+              "made"
+            ],
+            [
+              554.479,
+              "canceling"
+            ],
+            [
+              555.119,
+              "difficult."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s08-05",
+          "text": "And revenue is not profit. Spotify, a streaming service rather than a typical app, ended 2025 with 290 million premium subscribers and €17.2 billion in revenue.",
+          "start": 556.109,
+          "end": 570.609,
+          "duration": 14.5,
+          "claims": [
+            "S01"
+          ],
+          "duck": true,
+          "words": [
+            [
+              556.109,
+              "and"
+            ],
+            [
+              556.229,
+              "revenue"
+            ],
+            [
+              556.449,
+              "is"
+            ],
+            [
+              556.849,
+              "not"
+            ],
+            [
+              557.049,
+              "profit."
+            ],
+            [
+              558.449,
+              "Spotify,"
+            ],
+            [
+              559.449,
+              "a"
+            ],
+            [
+              559.549,
+              "streaming"
+            ],
+            [
+              559.849,
+              "service"
+            ],
+            [
+              560.409,
+              "rather"
+            ],
+            [
+              560.709,
+              "than"
+            ],
+            [
+              561.029,
+              "a"
+            ],
+            [
+              561.109,
+              "typical"
+            ],
+            [
+              561.409,
+              "app,"
+            ],
+            [
+              562.549,
+              "ended"
+            ],
+            [
+              562.589,
+              "2025"
+            ],
+            [
+              563.209,
+              "with"
+            ],
+            [
+              563.849,
+              "290"
+            ],
+            [
+              564.529,
+              "million"
+            ],
+            [
+              565.469,
+              "premium"
+            ],
+            [
+              565.869,
+              "subscribers"
+            ],
+            [
+              567.169,
+              "and"
+            ],
+            [
+              567.569,
+              "17"
+            ],
+            [
+              568.009,
+              ".2"
+            ],
+            [
+              568.869,
+              "billion"
+            ],
+            [
+              569.229,
+              "euros"
+            ],
+            [
+              569.629,
+              "in"
+            ],
+            [
+              570.049,
+              "revenue."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s08-06",
+          "text": "Most of that money goes straight back out, mainly as royalties and distribution costs. Its gross margin was 32 percent, and as recently as 2023 it reported an operating loss of €446 million.",
+          "start": 570.989,
+          "end": 587.373,
+          "duration": 16.384,
+          "claims": [
+            "S02",
+            "S03"
+          ],
+          "duck": true,
+          "words": [
+            [
+              570.989,
+              "Most"
+            ],
+            [
+              571.209,
+              "of"
+            ],
+            [
+              571.369,
+              "that"
+            ],
+            [
+              571.489,
+              "money"
+            ],
+            [
+              571.829,
+              "goes"
+            ],
+            [
+              572.029,
+              "straight"
+            ],
+            [
+              572.389,
+              "back"
+            ],
+            [
+              572.689,
+              "out,"
+            ],
+            [
+              573.549,
+              "mainly"
+            ],
+            [
+              573.869,
+              "as"
+            ],
+            [
+              574.169,
+              "royalties"
+            ],
+            [
+              574.569,
+              "and"
+            ],
+            [
+              575.089,
+              "distribution"
+            ],
+            [
+              575.469,
+              "costs."
+            ],
+            [
+              576.929,
+              "Its"
+            ],
+            [
+              577.029,
+              "gross"
+            ],
+            [
+              577.249,
+              "margin"
+            ],
+            [
+              577.849,
+              "was"
+            ],
+            [
+              578.169,
+              "32"
+            ],
+            [
+              578.609,
+              "percent,"
+            ],
+            [
+              579.909,
+              "and"
+            ],
+            [
+              580.049,
+              "as"
+            ],
+            [
+              580.169,
+              "recently"
+            ],
+            [
+              580.569,
+              "as"
+            ],
+            [
+              581.029,
+              "2023,"
+            ],
+            [
+              582.389,
+              "it"
+            ],
+            [
+              582.489,
+              "reported"
+            ],
+            [
+              582.769,
+              "an"
+            ],
+            [
+              583.089,
+              "operating"
+            ],
+            [
+              583.409,
+              "loss"
+            ],
+            [
+              584.049,
+              "of"
+            ],
+            [
+              584.309,
+              "446"
+            ],
+            [
+              585.909,
+              "million"
+            ],
+            [
+              586.449,
+              "euros."
+            ]
+          ]
+        },
+        {
+          "id": "07",
+          "key": "s08-07",
+          "text": "In 2025, its operating income was €2.2 billion. Subscriptions can become very profitable, but only when the costs behind them are under control.",
+          "start": 587.753,
+          "end": 599.653,
+          "duration": 11.9,
+          "claims": [
+            "S04"
+          ],
+          "duck": true,
+          "words": [
+            [
+              587.753,
+              "In"
+            ],
+            [
+              587.853,
+              "2025,"
+            ],
+            [
+              589.253,
+              "its"
+            ],
+            [
+              589.453,
+              "operating"
+            ],
+            [
+              589.833,
+              "income"
+            ],
+            [
+              590.433,
+              "was"
+            ],
+            [
+              590.733,
+              "2"
+            ],
+            [
+              591.053,
+              ".2"
+            ],
+            [
+              591.893,
+              "billion"
+            ],
+            [
+              592.233,
+              "euros."
+            ],
+            [
+              593.853,
+              "Subscriptions"
+            ],
+            [
+              594.433,
+              "can"
+            ],
+            [
+              594.673,
+              "become"
+            ],
+            [
+              594.873,
+              "very"
+            ],
+            [
+              595.333,
+              "profitable,"
+            ],
+            [
+              596.653,
+              "but"
+            ],
+            [
+              596.733,
+              "only"
+            ],
+            [
+              597.013,
+              "when"
+            ],
+            [
+              597.293,
+              "the"
+            ],
+            [
+              597.433,
+              "costs"
+            ],
+            [
+              597.693,
+              "behind"
+            ],
+            [
+              598.213,
+              "them"
+            ],
+            [
+              598.513,
+              "are"
+            ],
+            [
+              598.673,
+              "under"
+            ],
+            [
+              598.853,
+              "control."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "title": "The real reason",
+      "chapter": "The real reason",
+      "music": "reveal",
+      "start": 600.103,
+      "end": 668.893,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s09-01",
+          "text": "So why does every app want a subscription?",
+          "start": 600.553,
+          "end": 603.033,
+          "duration": 2.48,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              600.553,
+              "So"
+            ],
+            [
+              600.673,
+              "why"
+            ],
+            [
+              600.853,
+              "does"
+            ],
+            [
+              601.073,
+              "every"
+            ],
+            [
+              601.513,
+              "app"
+            ],
+            [
+              601.873,
+              "want"
+            ],
+            [
+              602.133,
+              "a"
+            ],
+            [
+              602.253,
+              "subscription?"
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s09-02",
+          "text": "Because a subscription turns a single sale into a relationship: one that pays every month, can be forecast, and can fund the work of keeping a product alive.",
+          "start": 603.413,
+          "end": 613.513,
+          "duration": 10.1,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              603.413,
+              "because"
+            ],
+            [
+              603.593,
+              "a"
+            ],
+            [
+              603.753,
+              "subscription"
+            ],
+            [
+              604.273,
+              "turns"
+            ],
+            [
+              604.733,
+              "a"
+            ],
+            [
+              605.053,
+              "single"
+            ],
+            [
+              605.413,
+              "sale"
+            ],
+            [
+              605.833,
+              "into"
+            ],
+            [
+              606.253,
+              "a"
+            ],
+            [
+              606.413,
+              "relationship."
+            ],
+            [
+              607.953,
+              "One"
+            ],
+            [
+              607.993,
+              "that"
+            ],
+            [
+              608.213,
+              "pays"
+            ],
+            [
+              608.533,
+              "every"
+            ],
+            [
+              608.913,
+              "month"
+            ],
+            [
+              609.273,
+              "can"
+            ],
+            [
+              609.593,
+              "be"
+            ],
+            [
+              609.733,
+              "forecast"
+            ],
+            [
+              610.733,
+              "and"
+            ],
+            [
+              611.053,
+              "can"
+            ],
+            [
+              611.193,
+              "fund"
+            ],
+            [
+              611.453,
+              "the"
+            ],
+            [
+              611.593,
+              "work"
+            ],
+            [
+              611.773,
+              "of"
+            ],
+            [
+              611.933,
+              "keeping"
+            ],
+            [
+              612.193,
+              "a"
+            ],
+            [
+              612.453,
+              "product"
+            ],
+            [
+              612.873,
+              "alive."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s09-03",
+          "text": "For customers, that can be a good deal. You pay less upfront, you get updates and new features, and you can leave when the product stops being worth it.",
+          "start": 613.893,
+          "end": 622.693,
+          "duration": 8.8,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              613.893,
+              "For"
+            ],
+            [
+              614.013,
+              "customers,"
+            ],
+            [
+              614.733,
+              "that"
+            ],
+            [
+              614.873,
+              "can"
+            ],
+            [
+              615.033,
+              "be"
+            ],
+            [
+              615.193,
+              "a"
+            ],
+            [
+              615.273,
+              "good"
+            ],
+            [
+              615.393,
+              "deal."
+            ],
+            [
+              616.493,
+              "You"
+            ],
+            [
+              616.513,
+              "pay"
+            ],
+            [
+              616.673,
+              "less"
+            ],
+            [
+              616.933,
+              "upfront,"
+            ],
+            [
+              617.813,
+              "you"
+            ],
+            [
+              617.853,
+              "get"
+            ],
+            [
+              617.993,
+              "updates"
+            ],
+            [
+              618.433,
+              "and"
+            ],
+            [
+              618.753,
+              "new"
+            ],
+            [
+              618.913,
+              "features,"
+            ],
+            [
+              619.993,
+              "and"
+            ],
+            [
+              620.073,
+              "you"
+            ],
+            [
+              620.213,
+              "can"
+            ],
+            [
+              620.353,
+              "leave"
+            ],
+            [
+              620.633,
+              "when"
+            ],
+            [
+              620.893,
+              "the"
+            ],
+            [
+              620.993,
+              "product"
+            ],
+            [
+              621.273,
+              "stops"
+            ],
+            [
+              621.733,
+              "being"
+            ],
+            [
+              622.073,
+              "worth"
+            ],
+            [
+              622.373,
+              "it."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s09-04",
+          "text": "It can also be a worse deal. If you use a tool rarely, or would happily keep an older version forever, owning it outright can cost far less. That is why one-time purchases have not disappeared. Even Adobe still licenses perpetual versions of some products.",
+          "start": 623.073,
+          "end": 640.993,
+          "duration": 17.92,
+          "claims": [
+            "A07"
+          ],
+          "duck": false,
+          "words": [
+            [
+              623.073,
+              "It"
+            ],
+            [
+              623.153,
+              "can"
+            ],
+            [
+              623.273,
+              "also"
+            ],
+            [
+              623.613,
+              "be"
+            ],
+            [
+              623.833,
+              "a"
+            ],
+            [
+              623.933,
+              "worse"
+            ],
+            [
+              624.153,
+              "deal."
+            ],
+            [
+              625.313,
+              "If"
+            ],
+            [
+              625.313,
+              "you"
+            ],
+            [
+              625.433,
+              "use"
+            ],
+            [
+              625.673,
+              "a"
+            ],
+            [
+              625.773,
+              "tool"
+            ],
+            [
+              626.013,
+              "rarely"
+            ],
+            [
+              626.433,
+              "or"
+            ],
+            [
+              627.153,
+              "would"
+            ],
+            [
+              627.393,
+              "happily"
+            ],
+            [
+              627.753,
+              "keep"
+            ],
+            [
+              628.113,
+              "an"
+            ],
+            [
+              628.253,
+              "older"
+            ],
+            [
+              628.473,
+              "version"
+            ],
+            [
+              628.953,
+              "forever,"
+            ],
+            [
+              630.273,
+              "owning"
+            ],
+            [
+              630.273,
+              "it"
+            ],
+            [
+              630.533,
+              "outright"
+            ],
+            [
+              630.813,
+              "can"
+            ],
+            [
+              631.313,
+              "cost"
+            ],
+            [
+              631.633,
+              "far"
+            ],
+            [
+              631.953,
+              "less."
+            ],
+            [
+              633.153,
+              "That"
+            ],
+            [
+              633.313,
+              "is"
+            ],
+            [
+              633.433,
+              "why"
+            ],
+            [
+              633.653,
+              "one"
+            ],
+            [
+              633.953,
+              "time"
+            ],
+            [
+              634.353,
+              "purchases"
+            ],
+            [
+              634.873,
+              "have"
+            ],
+            [
+              635.233,
+              "not"
+            ],
+            [
+              635.453,
+              "disappeared."
+            ],
+            [
+              637.073,
+              "Even"
+            ],
+            [
+              637.073,
+              "Adobe"
+            ],
+            [
+              637.273,
+              "still"
+            ],
+            [
+              637.933,
+              "licenses"
+            ],
+            [
+              638.313,
+              "perpetual"
+            ],
+            [
+              638.953,
+              "versions"
+            ],
+            [
+              639.573,
+              "of"
+            ],
+            [
+              639.913,
+              "some"
+            ],
+            [
+              640.113,
+              "products."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s09-05",
+          "text": "The data points to something easy to miss. Most subscriptions do not last. Most apps never make much money. The few that win are the ones people decide, month after month, are still worth paying for.",
+          "start": 641.373,
+          "end": 654.463,
+          "duration": 13.09,
+          "claims": [
+            "R02",
+            "R05"
+          ],
+          "duck": false,
+          "words": [
+            [
+              641.373,
+              "The"
+            ],
+            [
+              641.473,
+              "data"
+            ],
+            [
+              641.673,
+              "points"
+            ],
+            [
+              642.073,
+              "to"
+            ],
+            [
+              642.333,
+              "something"
+            ],
+            [
+              642.593,
+              "easy"
+            ],
+            [
+              642.973,
+              "to"
+            ],
+            [
+              643.313,
+              "miss."
+            ],
+            [
+              644.473,
+              "Most"
+            ],
+            [
+              644.473,
+              "subscriptions"
+            ],
+            [
+              644.953,
+              "do"
+            ],
+            [
+              645.433,
+              "not"
+            ],
+            [
+              645.633,
+              "last."
+            ],
+            [
+              646.873,
+              "Most"
+            ],
+            [
+              646.873,
+              "apps"
+            ],
+            [
+              647.213,
+              "never"
+            ],
+            [
+              647.593,
+              "make"
+            ],
+            [
+              647.933,
+              "much"
+            ],
+            [
+              648.133,
+              "money."
+            ],
+            [
+              649.193,
+              "The"
+            ],
+            [
+              649.253,
+              "few"
+            ],
+            [
+              649.453,
+              "that"
+            ],
+            [
+              649.693,
+              "win"
+            ],
+            [
+              649.953,
+              "are"
+            ],
+            [
+              650.273,
+              "the"
+            ],
+            [
+              650.393,
+              "ones"
+            ],
+            [
+              650.553,
+              "people"
+            ],
+            [
+              650.873,
+              "decide"
+            ],
+            [
+              651.393,
+              "month"
+            ],
+            [
+              651.913,
+              "after"
+            ],
+            [
+              652.253,
+              "month"
+            ],
+            [
+              652.573,
+              "are"
+            ],
+            [
+              652.993,
+              "still"
+            ],
+            [
+              653.233,
+              "worth"
+            ],
+            [
+              653.513,
+              "paying"
+            ],
+            [
+              653.813,
+              "for."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s09-06",
+          "text": "Companies would like that payment to be automatic. The best ones still have to earn it, every single month.",
+          "start": 654.843,
+          "end": 661.453,
+          "duration": 6.61,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              654.843,
+              "Companies"
+            ],
+            [
+              655.143,
+              "would"
+            ],
+            [
+              655.483,
+              "like"
+            ],
+            [
+              655.703,
+              "that"
+            ],
+            [
+              655.963,
+              "payment"
+            ],
+            [
+              656.263,
+              "to"
+            ],
+            [
+              656.523,
+              "be"
+            ],
+            [
+              656.643,
+              "automatic."
+            ],
+            [
+              658.063,
+              "The"
+            ],
+            [
+              658.083,
+              "best"
+            ],
+            [
+              658.323,
+              "ones"
+            ],
+            [
+              658.603,
+              "still"
+            ],
+            [
+              658.923,
+              "have"
+            ],
+            [
+              659.123,
+              "to"
+            ],
+            [
+              659.283,
+              "earn"
+            ],
+            [
+              659.583,
+              "it"
+            ],
+            [
+              659.763,
+              "every"
+            ],
+            [
+              660.223,
+              "single"
+            ],
+            [
+              660.683,
+              "month."
+            ]
+          ]
+        },
+        {
+          "id": "07",
+          "key": "s09-07",
+          "text": "This is Hidden Ledger. Every number in this video is sourced in the description.",
+          "start": 661.833,
+          "end": 666.393,
+          "duration": 4.56,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              661.833,
+              "This"
+            ],
+            [
+              662.033,
+              "is"
+            ],
+            [
+              662.213,
+              "Hidden"
+            ],
+            [
+              662.493,
+              "Ledger."
+            ],
+            [
+              663.773,
+              "Every"
+            ],
+            [
+              663.773,
+              "number"
+            ],
+            [
+              664.093,
+              "in"
+            ],
+            [
+              664.273,
+              "this"
+            ],
+            [
+              664.393,
+              "video"
+            ],
+            [
+              664.713,
+              "is"
+            ],
+            [
+              664.973,
+              "sourced"
+            ],
+            [
+              665.233,
+              "in"
+            ],
+            [
+              665.553,
+              "the"
+            ],
+            [
+              665.673,
+              "description."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "subtitles": [
+    {
+      "start": 0.6,
+      "end": 5.43,
+      "text": "Open the settings on almost any phone,\nand you can find a list like this one."
+    },
+    {
+      "start": 5.81,
+      "end": 9.28,
+      "text": "Music, about twelve dollars a month."
+    },
+    {
+      "start": 9.28,
+      "end": 9.79,
+      "text": "Streaming, fifteen."
+    },
+    {
+      "start": 9.79,
+      "end": 11.83,
+      "text": "Extra cloud storage, three."
+    },
+    {
+      "start": 11.83,
+      "end": 13.67,
+      "text": "A fitness app, thirteen."
+    },
+    {
+      "start": 13.67,
+      "end": 15.18,
+      "text": "A productivity app, ten."
+    },
+    {
+      "start": 15.18,
+      "end": 17.55,
+      "text": "And an AI assistant, twenty."
+    },
+    {
+      "start": 17.93,
+      "end": 20.53,
+      "text": "None of them feels expensive on its own."
+    },
+    {
+      "start": 20.53,
+      "end": 23.71,
+      "text": "Together, that is about\nseventy-three dollars a month,"
+    },
+    {
+      "start": 23.71,
+      "end": 27.33,
+      "text": "or roughly eight hundred\nand eighty dollars a year."
+    },
+    {
+      "start": 27.71,
+      "end": 31.81,
+      "text": "This bundle is a made-up\nexample, not anyone's real bill."
+    },
+    {
+      "start": 31.81,
+      "end": 34.11,
+      "text": "But the shift behind it is real."
+    },
+    {
+      "start": 34.49,
+      "end": 41.37,
+      "text": "In January 2022, about 2,000 new subscription\napps launched in a single month."
+    },
+    {
+      "start": 41.37,
+      "end": 46.38,
+      "text": "By January 2026, it was\nmore than 14,700 a month."
+    },
+    {
+      "start": 46.76,
+      "end": 50.21,
+      "text": "So why does every app suddenly\nwant a monthly payment?"
+    },
+    {
+      "start": 50.21,
+      "end": 52.23,
+      "text": "And who actually comes out ahead?"
+    },
+    {
+      "start": 53.13,
+      "end": 56.9,
+      "text": "Not long ago, buying software\nlooked a lot like buying a book."
+    },
+    {
+      "start": 57.28,
+      "end": 62.0,
+      "text": "You paid once, you got a box\nwith a disc, or a download code,"
+    },
+    {
+      "start": 62.0,
+      "end": 66.78,
+      "text": "and that version was yours to keep using\nfor as long as your computer could run it."
+    },
+    {
+      "start": 67.16,
+      "end": 68.82,
+      "text": "When a new version came out,"
+    },
+    {
+      "start": 68.82,
+      "end": 72.4,
+      "text": "you decided whether the new features\nwere worth paying for again."
+    },
+    {
+      "start": 72.78,
+      "end": 74.77,
+      "text": "That was never the whole story."
+    },
+    {
+      "start": 74.77,
+      "end": 78.93,
+      "text": "Businesses often paid yearly\nfees for support and updates."
+    },
+    {
+      "start": 78.93,
+      "end": 80.49,
+      "text": "Oracle, for example,"
+    },
+    {
+      "start": 80.49,
+      "end": 84.34,
+      "text": "says that substantially all\nof its customers buy and"
+    },
+    {
+      "start": 84.34,
+      "end": 87.4,
+      "text": "renew their software support\ncontracts every year."
+    },
+    {
+      "start": 87.78,
+      "end": 92.24,
+      "text": "But for many everyday products,\none purchase was the deal."
+    },
+    {
+      "start": 92.24,
+      "end": 97.529,
+      "text": "Then, in May 2013, one of the best-known\nsoftware makers changed the rules."
+    },
+    {
+      "start": 97.909,
+      "end": 104.479,
+      "text": "Adobe announced that new features for its creative\ntools would go only to Creative Cloud subscribers,"
+    },
+    {
+      "start": 104.479,
+      "end": 107.969,
+      "text": "and that Creative Suite\n6 would be the last major"
+    },
+    {
+      "start": 107.969,
+      "end": 111.379,
+      "text": "update for people who had\nbought perpetual licenses."
+    },
+    {
+      "start": 112.279,
+      "end": 114.049,
+      "text": "In the short run, the switch hurt."
+    },
+    {
+      "start": 114.429,
+      "end": 119.989,
+      "text": "In fiscal 2012, subscriptions were\n15 percent of Adobe's revenue."
+    },
+    {
+      "start": 119.989,
+      "end": 125.709,
+      "text": "A year later they were 28 percent, and\ntotal revenue fell about 8 percent,"
+    },
+    {
+      "start": 125.709,
+      "end": 130.149,
+      "text": "from $4.4 billion to $4.06 billion."
+    },
+    {
+      "start": 130.529,
+      "end": 136.379,
+      "text": "Net income fell from $833\nmillion to $290 million."
+    },
+    {
+      "start": 136.759,
+      "end": 137.929,
+      "text": "Why accept that?"
+    },
+    {
+      "start": 137.929,
+      "end": 142.889,
+      "text": "Because a box is sold once, but a\nsubscription is billed again and again."
+    },
+    {
+      "start": 142.889,
+      "end": 147.949,
+      "text": "Revenue that used to arrive in one\nburst is spread across months and years."
+    },
+    {
+      "start": 148.329,
+      "end": 153.369,
+      "text": "By fiscal 2014, subscriptions\nwere half of Adobe's revenue."
+    },
+    {
+      "start": 153.369,
+      "end": 159.711,
+      "text": "In fiscal 2025, they were 96\npercent of $23.8 billion."
+    },
+    {
+      "start": 160.091,
+      "end": 163.651,
+      "text": "Not all of that growth came from\nthe subscription switch alone."
+    },
+    {
+      "start": 163.651,
+      "end": 168.681,
+      "text": "But almost all of Adobe's revenue now\ncomes from customers who keep paying."
+    },
+    {
+      "start": 169.581,
+      "end": 172.931,
+      "text": "To see why, imagine two\nsmall software companies."
+    },
+    {
+      "start": 172.931,
+      "end": 174.661,
+      "text": "Both are hypothetical."
+    },
+    {
+      "start": 175.041,
+      "end": 179.611,
+      "text": "The first sells a photo\neditor for $120, once."
+    },
+    {
+      "start": 179.611,
+      "end": 183.361,
+      "text": "The second sells a similar\napp for $10 a month."
+    },
+    {
+      "start": 183.741,
+      "end": 187.241,
+      "text": "In month one, the first\ncompany looks like the winner."
+    },
+    {
+      "start": 187.241,
+      "end": 192.361,
+      "text": "A thousand customers\nbring in $120,000 at once."
+    },
+    {
+      "start": 192.361,
+      "end": 194.641,
+      "text": "The second company collects $10,000."
+    },
+    {
+      "start": 195.021,
+      "end": 199.371,
+      "text": "But next month, the first company\nhas to find a thousand new buyers."
+    },
+    {
+      "start": 199.371,
+      "end": 203.405,
+      "text": "The second starts the month with\nthe customers it already has."
+    },
+    {
+      "start": 203.785,
+      "end": 207.315,
+      "text": "If all of them stay for a year,\nthe second company catches up."
+    },
+    {
+      "start": 207.315,
+      "end": 210.595,
+      "text": "And it knows, roughly, what\nnext month will bring."
+    },
+    {
+      "start": 210.975,
+      "end": 213.395,
+      "text": "That is the attraction: predictability."
+    },
+    {
+      "start": 213.395,
+      "end": 217.385,
+      "text": "Recurring revenue is easier to\nforecast and to plan around,"
+    },
+    {
+      "start": 217.385,
+      "end": 222.975,
+      "text": "and it can pay for work that never really\nends: fixing bugs, supporting new phones,"
+    },
+    {
+      "start": 222.975,
+      "end": 224.275,
+      "text": "running servers."
+    },
+    {
+      "start": 224.655,
+      "end": 228.365,
+      "text": "Some products also cost money\nevery time you use them."
+    },
+    {
+      "start": 228.365,
+      "end": 230.605,
+      "text": "Files have to be stored somewhere."
+    },
+    {
+      "start": 230.605,
+      "end": 233.485,
+      "text": "An AI answer has to be computed."
+    },
+    {
+      "start": 233.485,
+      "end": 237.295,
+      "text": "A single payment does not cover\na cost that keeps coming back."
+    },
+    {
+      "start": 237.675,
+      "end": 240.595,
+      "text": "But notice the catch in\nthe second company's plan."
+    },
+    {
+      "start": 240.595,
+      "end": 243.215,
+      "text": "It only works if those customers stay."
+    },
+    {
+      "start": 244.115,
+      "end": 248.815,
+      "text": "Subscription businesses live by a\nhandful of numbers, and they all connect."
+    },
+    {
+      "start": 249.195,
+      "end": 252.495,
+      "text": "Monthly recurring revenue\nis what the company expects"
+    },
+    {
+      "start": 252.495,
+      "end": 255.553,
+      "text": "to bill each month from\nits active subscribers."
+    },
+    {
+      "start": 255.933,
+      "end": 259.613,
+      "text": "Churn is the share of subscribers\nwho leave in a given period."
+    },
+    {
+      "start": 259.613,
+      "end": 263.493,
+      "text": "Retention is the opposite: the\nshare who are still paying."
+    },
+    {
+      "start": 263.873,
+      "end": 268.573,
+      "text": "Customer acquisition cost is what the\ncompany spends, on ads and promotion,"
+    },
+    {
+      "start": 268.573,
+      "end": 271.453,
+      "text": "to win one paying customer."
+    },
+    {
+      "start": 271.453,
+      "end": 274.393,
+      "text": "And lifetime value is\nwhat that customer is"
+    },
+    {
+      "start": 274.393,
+      "end": 276.893,
+      "text": "worth over all the\nmonths they keep paying."
+    },
+    {
+      "start": 277.273,
+      "end": 279.553,
+      "text": "Let's put hypothetical\nnumbers on our ten-dollar app."
+    },
+    {
+      "start": 279.553,
+      "end": 282.453,
+      "text": "If it sells through Apple's App Store,"
+    },
+    {
+      "start": 282.453,
+      "end": 288.983,
+      "text": "Apple's terms give the developer 70 percent of\neach payment during a subscriber's first year,"
+    },
+    {
+      "start": 288.983,
+      "end": 291.853,
+      "text": "and 85 percent after that."
+    },
+    {
+      "start": 291.853,
+      "end": 297.223,
+      "text": "Developers in Apple's Small Business\nProgram get 85 percent from the start."
+    },
+    {
+      "start": 297.603,
+      "end": 301.023,
+      "text": "So the developer keeps about $7 a month."
+    },
+    {
+      "start": 301.023,
+      "end": 304.543,
+      "text": "If 10 percent of subscribers\ncancel every month,"
+    },
+    {
+      "start": 304.543,
+      "end": 309.503,
+      "text": "the average subscriber stays about\nten months, and brings in roughly $70."
+    },
+    {
+      "start": 309.883,
+      "end": 313.953,
+      "text": "If winning each subscriber\ncosts $40 in advertising,"
+    },
+    {
+      "start": 313.953,
+      "end": 316.069,
+      "text": "that looks like a healthy business."
+    },
+    {
+      "start": 316.449,
+      "end": 318.989,
+      "text": "But if churn doubles\nto 20 percent a month,"
+    },
+    {
+      "start": 318.989,
+      "end": 322.519,
+      "text": "the average subscriber\nbrings in about $35."
+    },
+    {
+      "start": 322.519,
+      "end": 325.739,
+      "text": "That is less than it cost to win them."
+    },
+    {
+      "start": 325.739,
+      "end": 330.609,
+      "text": "Same app, same price, and now\nevery new customer loses money."
+    },
+    {
+      "start": 330.989,
+      "end": 334.009,
+      "text": "That is why the people who\nrun subscription apps watch"
+    },
+    {
+      "start": 334.009,
+      "end": 337.089,
+      "text": "churn more closely than\nalmost anything else."
+    },
+    {
+      "start": 337.989,
+      "end": 341.809,
+      "text": "So how do real subscription\napps actually do?"
+    },
+    {
+      "start": 341.809,
+      "end": 344.729,
+      "text": "One of the largest data\nsets comes from RevenueCat,"
+    },
+    {
+      "start": 344.729,
+      "end": 350.289,
+      "text": "a company that sells the software many\napps use to manage their subscriptions."
+    },
+    {
+      "start": 350.669,
+      "end": 358.929,
+      "text": "Its 2026 report covers more than 115,000\napps and more than $16 billion in revenue."
+    },
+    {
+      "start": 358.929,
+      "end": 363.909,
+      "text": "It is not every app in the world, only\napps that use RevenueCat's tools."
+    },
+    {
+      "start": 363.909,
+      "end": 365.819,
+      "text": "But the picture is striking."
+    },
+    {
+      "start": 366.199,
+      "end": 371.879,
+      "text": "One year after launch, the median\napp earned about $72 a month."
+    },
+    {
+      "start": 371.879,
+      "end": 375.799,
+      "text": "The top 10 percent earned\nmore than $2,500 a month."
+    },
+    {
+      "start": 376.179,
+      "end": 379.639,
+      "text": "Only 4.6 percent of newly\nlaunched apps reached"
+    },
+    {
+      "start": 379.639,
+      "end": 383.039,
+      "text": "$10,000 in monthly\nrevenue within two years."
+    },
+    {
+      "start": 383.039,
+      "end": 387.999,
+      "text": "And apps launched before\n2020 still generate 69"
+    },
+    {
+      "start": 387.999,
+      "end": 391.399,
+      "text": "percent of all subscription\nrevenue in the data."
+    },
+    {
+      "start": 391.779,
+      "end": 394.119,
+      "text": "Keeping subscribers is even harder."
+    },
+    {
+      "start": 394.119,
+      "end": 397.279,
+      "text": "For subscriptions that started in 2024,"
+    },
+    {
+      "start": 397.279,
+      "end": 402.744,
+      "text": "the median share still active a year later\nwas about 8 percent on monthly plans,"
+    },
+    {
+      "start": 402.744,
+      "end": 405.809,
+      "text": "and 28 percent on yearly plans."
+    },
+    {
+      "start": 406.189,
+      "end": 410.275,
+      "text": "Nearly half of monthly subscribers\ndo not renew even once."
+    },
+    {
+      "start": 410.655,
+      "end": 415.415,
+      "text": "Those figures count subscriptions,\nnot people, and payments, not use."
+    },
+    {
+      "start": 415.415,
+      "end": 418.745,
+      "text": "Someone can cancel and\nkeep using a free version."
+    },
+    {
+      "start": 418.745,
+      "end": 422.153,
+      "text": "Someone else can keep paying\nand barely open the app."
+    },
+    {
+      "start": 423.053,
+      "end": 425.203,
+      "text": "Now look at it from the customer's side."
+    },
+    {
+      "start": 425.583,
+      "end": 428.403,
+      "text": "A household's monthly budget is finite."
+    },
+    {
+      "start": 428.403,
+      "end": 433.823,
+      "text": "Every new subscription has to find room in\nit, often by pushing something else out."
+    },
+    {
+      "start": 434.203,
+      "end": 437.523,
+      "text": "So apps are not only\ncompeting with similar apps."
+    },
+    {
+      "start": 437.523,
+      "end": 440.823,
+      "text": "A meditation app competes\nwith a streaming service,"
+    },
+    {
+      "start": 440.823,
+      "end": 444.833,
+      "text": "and an AI assistant competes\nwith extra cloud storage,"
+    },
+    {
+      "start": 444.833,
+      "end": 447.213,
+      "text": "for the same few dollars each month."
+    },
+    {
+      "start": 447.593,
+      "end": 452.113,
+      "text": "That is why so much effort goes into\nthe first moments: free trials,"
+    },
+    {
+      "start": 452.113,
+      "end": 455.603,
+      "text": "discounted first months,\ncheaper yearly plans."
+    },
+    {
+      "start": 455.603,
+      "end": 460.093,
+      "text": "Each is a way to get onto the list,\nand to survive the first renewal."
+    },
+    {
+      "start": 460.473,
+      "end": 465.303,
+      "text": "RevenueCat found that apps asking for\npayment upfront, behind a hard paywall,"
+    },
+    {
+      "start": 465.303,
+      "end": 471.873,
+      "text": "turned about five times as many downloads\ninto paying customers as freemium apps did:"
+    },
+    {
+      "start": 471.873,
+      "end": 476.673,
+      "text": "10.7 percent versus 2.1\npercent within 35 days."
+    },
+    {
+      "start": 476.673,
+      "end": 480.593,
+      "text": "Yet a year later, retention\nwas nearly the same."
+    },
+    {
+      "start": 480.973,
+      "end": 484.253,
+      "text": "Meanwhile, small payments add up quietly."
+    },
+    {
+      "start": 484.253,
+      "end": 488.613,
+      "text": "Our hypothetical bundle costs\nless than three dollars a day."
+    },
+    {
+      "start": 488.613,
+      "end": 491.023,
+      "text": "Over a year, it comes\nto nearly nine hundred."
+    },
+    {
+      "start": 491.403,
+      "end": 494.783,
+      "text": "Not every app takes the\npure subscription road."
+    },
+    {
+      "start": 494.783,
+      "end": 496.123,
+      "text": "In RevenueCat's data,"
+    },
+    {
+      "start": 496.123,
+      "end": 498.623,
+      "text": "nearly a quarter of the apps pair their"
+    },
+    {
+      "start": 498.623,
+      "end": 500.563,
+      "text": "subscriptions with a one-time lifetime"
+    },
+    {
+      "start": 500.563,
+      "end": 501.729,
+      "text": "purchase."
+    },
+    {
+      "start": 502.629,
+      "end": 504.699,
+      "text": "Recurring revenue sounds safe."
+    },
+    {
+      "start": 504.699,
+      "end": 508.559,
+      "text": "It is not guaranteed, and it\nis not the same as profit."
+    },
+    {
+      "start": 508.939,
+      "end": 510.619,
+      "text": "Payments fail."
+    },
+    {
+      "start": 510.619,
+      "end": 512.139,
+      "text": "Cards expire."
+    },
+    {
+      "start": 512.139,
+      "end": 514.139,
+      "text": "Banks decline charges."
+    },
+    {
+      "start": 514.139,
+      "end": 515.439,
+      "text": "In RevenueCat's data,"
+    },
+    {
+      "start": 515.439,
+      "end": 521.719,
+      "text": "involuntary billing failures caused about 31 percent\nof subscription cancellations on Google Play,"
+    },
+    {
+      "start": 521.719,
+      "end": 524.929,
+      "text": "compared with 14 percent on the App Store."
+    },
+    {
+      "start": 525.309,
+      "end": 526.949,
+      "text": "Hype fades."
+    },
+    {
+      "start": 526.949,
+      "end": 531.789,
+      "text": "AI-powered apps in the report earned\n41 percent more revenue per payer,"
+    },
+    {
+      "start": 531.789,
+      "end": 535.379,
+      "text": "but their subscribers churned\nabout 30 percent faster."
+    },
+    {
+      "start": 535.759,
+      "end": 541.259,
+      "text": "Some companies try a shortcut: make\nit easy to sign up and hard to leave."
+    },
+    {
+      "start": 541.259,
+      "end": 542.899,
+      "text": "That can backfire."
+    },
+    {
+      "start": 542.899,
+      "end": 545.059,
+      "text": "In September 2025,"
+    },
+    {
+      "start": 545.059,
+      "end": 550.519,
+      "text": "Amazon agreed to pay $2.5 billion to settle\nFederal Trade Commission claims that it"
+    },
+    {
+      "start": 550.519,
+      "end": 555.729,
+      "text": "enrolled customers in Prime without their\nconsent and made cancelling difficult."
+    },
+    {
+      "start": 556.109,
+      "end": 559.009,
+      "text": "And revenue is not profit."
+    },
+    {
+      "start": 559.009,
+      "end": 562.589,
+      "text": "Spotify, a streaming service\nrather than a typical app,"
+    },
+    {
+      "start": 562.589,
+      "end": 570.609,
+      "text": "ended 2025 with 290 million premium\nsubscribers and €17.2 billion in revenue."
+    },
+    {
+      "start": 570.989,
+      "end": 573.869,
+      "text": "Most of that money goes straight back out,"
+    },
+    {
+      "start": 573.869,
+      "end": 577.029,
+      "text": "mainly as royalties\nand distribution costs."
+    },
+    {
+      "start": 577.029,
+      "end": 580.049,
+      "text": "Its gross margin was 32 percent,"
+    },
+    {
+      "start": 580.049,
+      "end": 587.373,
+      "text": "and as recently as 2023 it reported\nan operating loss of €446 million."
+    },
+    {
+      "start": 587.753,
+      "end": 592.233,
+      "text": "In 2025, its operating\nincome was €2.2 billion."
+    },
+    {
+      "start": 592.233,
+      "end": 596.293,
+      "text": "Subscriptions can become very profitable,"
+    },
+    {
+      "start": 596.293,
+      "end": 599.653,
+      "text": "but only when the costs behind\nthem are under control."
+    },
+    {
+      "start": 600.553,
+      "end": 603.033,
+      "text": "So why does every app want a subscription?"
+    },
+    {
+      "start": 603.413,
+      "end": 607.513,
+      "text": "Because a subscription turns a\nsingle sale into a relationship:"
+    },
+    {
+      "start": 607.513,
+      "end": 610.423,
+      "text": "one that pays every\nmonth, can be forecast,"
+    },
+    {
+      "start": 610.423,
+      "end": 613.513,
+      "text": "and can fund the work of\nkeeping a product alive."
+    },
+    {
+      "start": 613.893,
+      "end": 616.113,
+      "text": "For customers, that can be a good deal."
+    },
+    {
+      "start": 616.113,
+      "end": 619.663,
+      "text": "You pay less upfront, you\nget updates and new features,"
+    },
+    {
+      "start": 619.663,
+      "end": 622.693,
+      "text": "and you can leave when the\nproduct stops being worth it."
+    },
+    {
+      "start": 623.073,
+      "end": 625.313,
+      "text": "It can also be a worse deal."
+    },
+    {
+      "start": 625.313,
+      "end": 630.273,
+      "text": "If you use a tool rarely, or would\nhappily keep an older version forever,"
+    },
+    {
+      "start": 630.273,
+      "end": 633.313,
+      "text": "owning it outright can cost far less."
+    },
+    {
+      "start": 633.313,
+      "end": 636.523,
+      "text": "That is why one-time purchases\nhave not disappeared."
+    },
+    {
+      "start": 636.523,
+      "end": 640.993,
+      "text": "Even Adobe still licenses perpetual\nversions of some products."
+    },
+    {
+      "start": 641.373,
+      "end": 643.983,
+      "text": "The data points to something easy to miss."
+    },
+    {
+      "start": 643.983,
+      "end": 646.413,
+      "text": "Most subscriptions do not last."
+    },
+    {
+      "start": 646.413,
+      "end": 648.823,
+      "text": "Most apps never make much money."
+    },
+    {
+      "start": 648.823,
+      "end": 652.573,
+      "text": "The few that win are the ones\npeople decide, month after month,"
+    },
+    {
+      "start": 652.573,
+      "end": 654.463,
+      "text": "are still worth paying for."
+    },
+    {
+      "start": 654.843,
+      "end": 657.543,
+      "text": "Companies would like that\npayment to be automatic."
+    },
+    {
+      "start": 657.543,
+      "end": 661.453,
+      "text": "The best ones still have to\nearn it, every single month."
+    },
+    {
+      "start": 661.833,
+      "end": 663.393,
+      "text": "This is Hidden Ledger."
+    },
+    {
+      "start": 663.393,
+      "end": 666.393,
+      "text": "Every number in this video is\nsourced in the description."
+    }
+  ]
+}

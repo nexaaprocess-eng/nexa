@@ -1,0 +1,250 @@
+{
+ "_about": "Every factual claim in Episode 005, with the narration segments that use it. Sources: fact_check.csv / sources.md. Calculations: calculations.py.",
+ "claims": [
+  {
+   "id": "P01",
+   "type": "fact",
+   "claim": "Cancellations and no-shows shift risk onto the hotel, which bears the cost of unoccupied rooms; to mitigate losses hotels adopt overbooking techniques and stringent cancellation policies.",
+   "segments": [
+    "s02-04",
+    "s02-09",
+    "s03-02"
+   ],
+   "sources": [
+    "YANG-2024"
+   ],
+   "evidence": "\"most contracts permit early cancellation before the supply of services so that it shifts the risk onto the hotel, as it is required to ensure the availability of rooms for guests who arrive as scheduled, as well as bear the cost of unoccupied rooms in the event of a cancellation or no-show\"; \"In an effort to mitigate their losses, hotels adopt overbooking techniques and stringent cancellation policies\".",
+   "method_or_caveat": "Peer-reviewed review/introduction section citing Talluri & van Ryzin (2004). The narration says 'some hotels' and does not claim the practice is universal."
+  },
+  {
+   "id": "P02",
+   "type": "fact",
+   "claim": "Overbooking may lead a hotel to refuse service to a guest, which harms the relationship with that guest and incurs fees for relocating the guest to another hotel.",
+   "segments": [
+    "s04-05",
+    "s04-06"
+   ],
+   "sources": [
+    "YANG-2024"
+   ],
+   "evidence": "\"Overbooking may lead a hotel to reject service to a client, which negatively affects the business's relationship with the guest and incurs fees for relocating the guest to an other hotel (Noone & Lee, 2011)\".",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "P03",
+   "type": "fact",
+   "claim": "Hotel rooms are perishable inventory (revenue management is also called perishable asset revenue management).",
+   "segments": [
+    "s02-03"
+   ],
+   "sources": [
+    "BASTOS-2022"
+   ],
+   "evidence": "\"hotel products and services are perishable, which implies the need for daily business cash-flows\"; \"there are related terms concerning RM, namely perishable asset revenue management (PARM\".",
+   "method_or_caveat": "The airline-seat and concert-ticket comparison in the narration is an explanatory analogy (both are sold for a fixed date and expire), not a statistic."
+  },
+  {
+   "id": "P04",
+   "type": "fact",
+   "claim": "Researchers build machine-learning models on past booking data to predict which bookings will be cancelled, as an input to revenue management.",
+   "segments": [
+    "s05-09"
+   ],
+   "sources": [
+    "YANG-2024",
+    "ANTONIO-2017"
+   ],
+   "evidence": "Yang et al.: \"it is feasible to develop a model to predict cancellations to reduce the risks for business owners\"; \"Antonio, de Almeida & Nunes (2017) ... demonstrated that predicting the cancellation likelihood of any bookings was feasible\".",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "D01",
+   "type": "fact",
+   "claim": "Public dataset of two real Portuguese hotels (resort in the Algarve, city hotel in Lisbon): 40,060 + 79,330 = 119,390 bookings due to arrive between 1 July 2015 and 31 August 2017.",
+   "segments": [
+    "s02-06"
+   ],
+   "sources": [
+    "ANTONIO-2019"
+   ],
+   "evidence": "\"31 variables describing the 40,060 observations of H1 and 79,330 observations of H2. Each observation represents a hotel booking. Both datasets comprehend bookings due to arrive between the 1st of July of 2015 and the 31st of August 2017, including bookings that effectively arrived and bookings that were canceled\"; \"H1 at the resort region of Algarve and H2 at the city of Lisbon\".",
+   "method_or_caveat": "Narration: 'almost 120,000 reservations'. Two hotels only: not representative of all hotels (said in the narration)."
+  },
+  {
+   "id": "D02",
+   "type": "fact",
+   "claim": "In that dataset 36.03% of bookings have reservation status 'Canceled' (43,017) and 1.01% 'No-Show' (1,207).",
+   "segments": [
+    "s02-07"
+   ],
+   "sources": [
+    "ANTONIO-2019",
+    "TIDY-HOTELS"
+   ],
+   "evidence": "Our count of the ReservationStatus variable (\"BO Canceled – booking was canceled by the customer; ... No-Show – customer did not check-in and did inform the hotel of the reason why\"). calculations.json dataset.cancelled_pct / no_show_pct.",
+   "method_or_caveat": "Computed by Hidden Ledger from the published data (copy distributed by the TidyTuesday project; row counts per hotel match the paper exactly). Note: the paper's variable description for No-Show reads 'did inform the hotel', the narration describes a no-show as no cancellation and no guest, which is the standard meaning of the status."
+  },
+  {
+   "id": "D03",
+   "type": "fact",
+   "claim": "Cancellation rate by lead time in that dataset: bookings made less than 7 days ahead 7.6% cancelled; 180 days or more ahead 56.5%.",
+   "segments": [
+    "s05-08"
+   ],
+   "sources": [
+    "ANTONIO-2019",
+    "TIDY-HOTELS"
+   ],
+   "evidence": "Our calculation from the LeadTime and ReservationStatus variables (calculations.json dataset.by_lead_time).",
+   "method_or_caveat": "Narration: 'about 8 percent' and 'more than half'. Two hotels, 2015-2017."
+  },
+  {
+   "id": "H01",
+   "type": "illustrative",
+   "claim": "Made-up hotel: 100 rooms, $150 a night, 8% of bookings fail to arrive on a typical night.",
+   "segments": [
+    "s03-03",
+    "s03-04"
+   ],
+   "sources": [
+    "HL-HYPO"
+   ],
+   "evidence": "calculations.py inputs.",
+   "method_or_caveat": "Labelled MADE-UP EXAMPLE on screen and in the narration."
+  },
+  {
+   "id": "H02",
+   "type": "illustrative",
+   "claim": "100 bookings: about 92 arrivals, 8 empty rooms, $1,200 of room revenue lost.",
+   "segments": [
+    "s03-05",
+    "s05-02"
+   ],
+   "sources": [
+    "HL-HYPO"
+   ],
+   "evidence": "calculations.json A_100_bookings, empty_room_revenue_A_usd.",
+   "method_or_caveat": "Expected values of a binomial model."
+  },
+  {
+   "id": "H03",
+   "type": "illustrative",
+   "claim": "106 bookings: about 98 arrivals on average, about 3 empty rooms.",
+   "segments": [
+    "s03-06"
+   ],
+   "sources": [
+    "HL-HYPO"
+   ],
+   "evidence": "calculations.json B_106_bookings (97.52 arrivals, 2.72 empty).",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "H04",
+   "type": "illustrative",
+   "claim": "Distinction between physical rooms, confirmed reservations, expected arrivals and actual arrivals.",
+   "segments": [
+    "s03-07",
+    "s03-08"
+   ],
+   "sources": [
+    "HL-HYPO"
+   ],
+   "evidence": "Definitions used in the example.",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "H05",
+   "type": "illustrative",
+   "claim": "With 106 bookings, probability that at least one guest arrives to no room: 0.14 (about one night in seven).",
+   "segments": [
+    "s04-04"
+   ],
+   "sources": [
+    "HL-HYPO"
+   ],
+   "evidence": "calculations.json B_106_bookings.p_at_least_one_moved.",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "H06",
+   "type": "illustrative",
+   "claim": "Moving a guest costs $250: option B earns about $731 more per night than option A, on average (room revenue minus moving costs).",
+   "segments": [
+    "s05-04"
+   ],
+   "sources": [
+    "HL-HYPO"
+   ],
+   "evidence": "calculations.json B_minus_A_usd_per_night.",
+   "method_or_caveat": "Room revenue, not profit (said in the narration). Excludes reputational costs."
+  },
+  {
+   "id": "H07",
+   "type": "illustrative",
+   "claim": "If only 3% fail to show, 106 bookings mean about 3 guests moved per night on average.",
+   "segments": [
+    "s05-05"
+   ],
+   "sources": [
+    "HL-HYPO"
+   ],
+   "evidence": "calculations.json B_106_bookings_bad_forecast.expected_moved (2.88).",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "S01",
+   "type": "fact",
+   "claim": "Spain's consumer authority: with a confirmed booking and no room because of overselling or another cause attributable to the hotel, demand an immediate solution and record the incident; the establishment may offer other accommodation and the region's tourism rules may set specific rehousing obligations.",
+   "segments": [
+    "s06-02",
+    "s06-03",
+    "s06-07"
+   ],
+   "sources": [
+    "DSCA-FAQ"
+   ],
+   "evidence": "\"Si tienes una reserva confirmada y el hotel no puede proporcionarte la habitación contratada por sobreventa u otra causa que le sea imputable, reclama una solución inmediata y deja constancia de la incidencia.\" \"El establecimiento puede ofrecerte otro alojamiento y la normativa turística de la comunidad autónoma puede establecer obligaciones específicas de realojamiento.\"",
+   "method_or_caveat": "Applies to Spain only; the narration says so."
+  },
+  {
+   "id": "S02",
+   "type": "fact",
+   "claim": "Spain's consumer authority: if the contracted service is not provided you can claim a refund of the amounts due and, where applicable, provable expenses and damages such as the reasonable cost of finding other accommodation.",
+   "segments": [
+    "s06-06"
+   ],
+   "sources": [
+    "DSCA-FAQ"
+   ],
+   "evidence": "\"Si no se presta el servicio contratado, puedes reclamar la devolución de las cantidades que correspondan y, en su caso, los gastos y daños que puedas acreditar, como el coste razonable de tener que buscar otro alojamiento.\"",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "V01",
+   "type": "fact",
+   "claim": "Comunitat Valenciana, Ley 15/2018, art. 20.1: accommodation owners, intermediaries and travel agencies may not actually sell more places than they can serve.",
+   "segments": [
+    "s06-04"
+   ],
+   "sources": [
+    "BOE-LEY-15-2018"
+   ],
+   "evidence": "Art. 20.1: \"Los titulares de establecimientos de alojamiento turístico, así como las mediadoras turísticas y agencias de viaje, no podrán vender efectivamente mayor número de plazas de las que puedan atender.\"",
+   "method_or_caveat": "Regional law (Valencia), consolidated text on BOE; art. 20 as amended by Ley 9/2019. Not a national rule."
+  },
+  {
+   "id": "V02",
+   "type": "fact",
+   "claim": "Ley 15/2018, art. 20.2: an establishment that oversold must accommodate affected guests in another establishment in the area of equal or higher category, on the same or better terms; travel costs and any price difference are paid by the overselling establishment (and a cheaper replacement means a refund of the difference).",
+   "segments": [
+    "s06-05"
+   ],
+   "sources": [
+    "BOE-LEY-15-2018"
+   ],
+   "evidence": "Art. 20.2: \"estará obligado a proporcionar alojamiento a las personas usuarias afectadas en otro establecimiento de la zona de igual o superior categoría y en las mismas o mejores condiciones que las pactadas. Los gastos de desplazamiento hasta el nuevo establecimiento en el que se alojarán, la posible diferencia de precio respecto del nuevo y cualquier otro que se pudiese originar, serán de cargo del establecimiento en que se haya originado la sobreventa\".",
+   "method_or_caveat": ""
+  }
+ ]
+}

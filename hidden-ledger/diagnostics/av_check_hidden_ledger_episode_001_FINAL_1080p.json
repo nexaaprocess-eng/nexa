@@ -1,0 +1,93 @@
+{
+  "video": "output/episode-001/final/hidden_ledger_episode_001_FINAL_1080p.mp4",
+  "problems": [],
+  "completeness": {
+    "video_frames": 17806,
+    "timeline_frames": 17806,
+    "video_duration": 593.533333,
+    "audio_duration": 593.533,
+    "timeline_duration": 593.518,
+    "video_start": 0.0,
+    "audio_start": 0.0
+  },
+  "audio_offset": [
+    {
+      "at_s": 5.0,
+      "offset_ms": 0.0,
+      "correlation": 0.963
+    },
+    {
+      "at_s": 296.8,
+      "offset_ms": 0.0,
+      "correlation": 0.96
+    },
+    {
+      "at_s": 568.5,
+      "offset_ms": 0.0,
+      "correlation": 0.966
+    }
+  ],
+  "scene_transitions": [
+    {
+      "scene": "s02",
+      "timeline_start": 29.08,
+      "wipe_centre": 28.947,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.88,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s03",
+      "timeline_start": 107.314,
+      "wipe_centre": 107.181,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.88,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s04",
+      "timeline_start": 182.32,
+      "wipe_centre": 182.187,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.89,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s05",
+      "timeline_start": 284.823,
+      "wipe_centre": 284.69,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.88,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s06",
+      "timeline_start": 381.123,
+      "wipe_centre": 380.99,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.9,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s07",
+      "timeline_start": 474.741,
+      "wipe_centre": 474.608,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.89,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s08",
+      "timeline_start": 546.121,
+      "wipe_centre": 545.988,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.89,
+      "baseline_coverage": 0.0
+    }
+  ],
+  "intelligibility": {
+    "wer_final_mix": 0.01,
+    "weighted_wer_dry_narration": 0.0069
+  },
+  "ok": true
+}

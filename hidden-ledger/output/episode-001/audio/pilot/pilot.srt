@@ -1,0 +1,103 @@
+1
+00:00:00,600 --> 00:00:02,120
+You order a jacket online.
+
+2
+00:00:02,120 --> 00:00:03,970
+It arrives on a Tuesday.
+
+3
+00:00:04,350 --> 00:00:07,540
+By Thursday, you've decided
+the sleeves are too short.
+
+4
+00:00:07,920 --> 00:00:09,060
+So you send it back.
+
+5
+00:00:09,060 --> 00:00:10,540
+The label is free.
+
+6
+00:00:10,540 --> 00:00:13,050
+The refund shows up a few days later.
+
+7
+00:00:13,430 --> 00:00:15,330
+For you, the story ends there.
+
+8
+00:00:15,330 --> 00:00:17,740
+For the jacket, it's just getting started.
+
+9
+00:00:18,120 --> 00:00:22,030
+It will be scanned, trucked,
+sorted, inspected, and judged.
+
+10
+00:00:22,030 --> 00:00:25,310
+And every one of those steps
+costs somebody something.
+
+11
+00:00:25,690 --> 00:00:28,010
+So who actually pays for a free return?
+
+12
+00:00:28,910 --> 00:00:30,120
+Start with the scale.
+
+13
+00:00:30,500 --> 00:00:35,710
+In October 2025, the National Retail
+Federation and Happy Returns,
+
+14
+00:00:35,710 --> 00:00:41,870
+a returns company owned by UPS,
+published a report based on two surveys:
+
+15
+00:00:41,870 --> 00:00:45,903
+one of shoppers, one of
+large American retailers.
+
+16
+00:00:46,283 --> 00:00:49,883
+Those retailers estimated that about 15.8
+
+17
+00:00:49,883 --> 00:00:53,583
+percent of their sales
+would come back in 2025.
+
+18
+00:00:53,963 --> 00:00:55,903
+Across the whole industry,
+
+19
+00:00:55,903 --> 00:01:02,583
+the report projected $849.9 billion
+worth of returned merchandise.
+
+20
+00:01:02,963 --> 00:01:08,553
+Online, the estimate was higher:
+about 19.3 percent of online sales.
+
+21
+00:01:08,933 --> 00:01:11,163
+Keep in mind what those numbers are.
+
+22
+00:01:11,163 --> 00:01:16,043
+They measure the value of goods sent
+back, not the cost of processing them.
+
+23
+00:01:16,043 --> 00:01:20,273
+And they're projections for the
+United States, not a final count.
+

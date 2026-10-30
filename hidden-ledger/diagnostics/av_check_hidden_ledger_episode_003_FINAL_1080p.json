@@ -1,0 +1,101 @@
+{
+  "video": "output/episode-003/final/hidden_ledger_episode_003_FINAL_1080p.mp4",
+  "problems": [],
+  "completeness": {
+    "video_frames": 20067,
+    "timeline_frames": 20067,
+    "video_duration": 668.9,
+    "audio_duration": 668.9,
+    "timeline_duration": 668.893,
+    "video_start": 0.0,
+    "audio_start": 0.0
+  },
+  "audio_offset": [
+    {
+      "at_s": 5.0,
+      "offset_ms": 0.0,
+      "correlation": 0.961
+    },
+    {
+      "at_s": 334.4,
+      "offset_ms": 0.0,
+      "correlation": 0.968
+    },
+    {
+      "at_s": 643.9,
+      "offset_ms": 0.0,
+      "correlation": 0.964
+    }
+  ],
+  "scene_transitions": [
+    {
+      "scene": "s02",
+      "timeline_start": 52.68,
+      "wipe_centre": 52.547,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.88,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s03",
+      "timeline_start": 111.829,
+      "wipe_centre": 111.696,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.92,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s04",
+      "timeline_start": 169.131,
+      "wipe_centre": 168.998,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.88,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s05",
+      "timeline_start": 243.665,
+      "wipe_centre": 243.532,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.88,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s06",
+      "timeline_start": 337.539,
+      "wipe_centre": 337.406,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.88,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s07",
+      "timeline_start": 422.603,
+      "wipe_centre": 422.47,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.89,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s08",
+      "timeline_start": 502.179,
+      "wipe_centre": 502.046,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.9,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s09",
+      "timeline_start": 600.103,
+      "wipe_centre": 599.97,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.89,
+      "baseline_coverage": 0.0
+    }
+  ],
+  "intelligibility": {
+    "wer_final_mix": 0.011,
+    "weighted_wer_dry_narration": 0.0126
+  },
+  "ok": true
+}

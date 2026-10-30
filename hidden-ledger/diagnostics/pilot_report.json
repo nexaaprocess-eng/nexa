@@ -1,0 +1,64 @@
+{
+  "file": "output/episode-001/preview/pilot.mp4",
+  "duration": 82.772,
+  "size_mb": 8.3,
+  "video": {
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "fps": "30/1",
+    "frames": 2483
+  },
+  "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  "integrated_lufs": -16.2,
+  "true_peak_dbfs": -2.4,
+  "black_sections": 0,
+  "long_silences": 0,
+  "ok": true,
+  "problems": [],
+  "screenshots": [
+    "diagnostics/screenshots/pilot_0003.0s.jpg",
+    "diagnostics/screenshots/pilot_0014.0s.jpg",
+    "diagnostics/screenshots/pilot_0024.0s.jpg",
+    "diagnostics/screenshots/pilot_0040.0s.jpg",
+    "diagnostics/screenshots/pilot_0052.0s.jpg",
+    "diagnostics/screenshots/pilot_0062.0s.jpg",
+    "diagnostics/screenshots/pilot_0076.0s.jpg"
+  ],
+  "audio_mix": {
+    "name": "pilot",
+    "duration": 82.773,
+    "sample_rate": 48000,
+    "channels": 2,
+    "integrated_lufs": -16.2,
+    "true_peak_dbtp": -2.6,
+    "lra": 3.9,
+    "clipped_samples": 0,
+    "music_source": "procedural (python/music.py)",
+    "sfx_events": 5,
+    "audits": [
+      {
+        "from": 0,
+        "to": 30,
+        "voice_db": -22.6,
+        "music_db": -44,
+        "voice_over_music_db": 21.4
+      },
+      {
+        "from": 24.46,
+        "to": 32.46,
+        "voice_db": -22.6,
+        "music_db": -44.6,
+        "voice_over_music_db": 22
+      }
+    ],
+    "targets": {
+      "integrated_lufs": -16,
+      "true_peak_max": -1.5
+    }
+  }
+}

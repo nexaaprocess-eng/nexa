@@ -1,0 +1,9 @@
+{
+  "video": "output/episode-002/final/parts/s03_00025d431038.mp4",
+  "samples": 150,
+  "fps": 2.0,
+  "median_content_fraction": 0.1014,
+  "p5_content_fraction": 0.0788,
+  "near_empty_runs": [],
+  "pass": true
+}

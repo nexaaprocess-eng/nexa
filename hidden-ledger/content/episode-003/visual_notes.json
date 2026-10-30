@@ -1,0 +1,443 @@
+{
+ "_about": "Visual objective and exact on-screen text per narration segment (mirrors src/scenes/ep003/*.tsx).",
+ "s01-01": {
+  "visual": "Frame 0: a phone buzzes while six renewal notifications slide in; 'this month so far' counter climbs",
+  "onScreen": [
+   "Wavebox renewed · $11.99 charged",
+   "This month so far $73.45"
+  ]
+ },
+ "s01-02": {
+  "visual": "The phone's Settings > Subscriptions list fills row by row on each spoken category; monthly total counts up",
+  "onScreen": [
+   "HYPOTHETICAL BUNDLE",
+   "Monthly total"
+  ]
+ },
+ "s01-03": {
+  "visual": "Twelve month tiles fill; yearly counter",
+  "onScreen": [
+   "$73.45",
+   "$881.40 a year"
+  ]
+ },
+ "s01-04": {
+  "visual": "Stamp over the phone",
+  "onScreen": [
+   "MADE-UP EXAMPLE"
+  ]
+ },
+ "s01-05": {
+  "visual": "App icons multiply: 20 icons (Jan 2022) vs 147 icons (Jan 2026), one icon = 100 launches",
+  "onScreen": [
+   "~2,000",
+   "14,700+",
+   "launched per month · one icon = 100 apps"
+  ]
+ },
+ "s01-06": {
+  "visual": "Paywall phone; title question",
+  "onScreen": [
+   "Why does every app want a monthly payment?",
+   "And who actually comes out ahead?"
+  ]
+ },
+ "s02-01": {
+  "visual": "Cream paper look: a shelf with books and boxed software",
+  "onScreen": [
+   "Buying software was like buying a book"
+  ]
+ },
+ "s02-02": {
+  "visual": "Box, spinning disc, PAID ONCE receipt, a monitor still running the app as years tick by",
+  "onScreen": [
+   "RECEIPT · PAID ONCE ✓",
+   "still yours, still working"
+  ]
+ },
+ "s02-03": {
+  "visual": "v5/v6/v7 boxes; two choice buttons",
+  "onScreen": [
+   "Version 7 is out.",
+   "Pay for the upgrade",
+   "Keep using version 6"
+  ]
+ },
+ "s02-04": {
+  "visual": "Server rack; four yearly support contracts stamped RENEWED; Oracle quote",
+  "onScreen": [
+   "“Substantially all of our customers elect to purchase and renew their software support contracts annually.”"
+  ]
+ },
+ "s02-05": {
+  "visual": "Calendar pages flip 2010 → MAY 2013",
+  "onScreen": [
+   "MAY 2013"
+  ]
+ },
+ "s02-06": {
+  "visual": "CREATIVE SUITE 6 box stamped LAST MAJOR UPDATE; feature stars fly to a Creative Cloud cloud",
+  "onScreen": [
+   "LAST MAJOR UPDATE",
+   "new features: subscribers only"
+  ]
+ },
+ "s03-01": {
+  "visual": "Revenue towers of blocks (orange = subscriptions); FY2012 tower builds",
+  "onScreen": [
+   "In the short run, the switch hurt.",
+   "15%"
+  ]
+ },
+ "s03-02": {
+  "visual": "FY2013 tower builds lower; red −8% arc",
+  "onScreen": [
+   "$4.40B",
+   "$4.06B",
+   "28%",
+   "−8%"
+  ]
+ },
+ "s03-03": {
+  "visual": "Coin stacks shrink from $833M to $290M",
+  "onScreen": [
+   "Adobe net income",
+   "$833M",
+   "$290M",
+   "−65%"
+  ]
+ },
+ "s03-04": {
+  "visual": "One grey burst in January vs twelve orange monthly payments and a running-total line",
+  "onScreen": [
+   "A box: sold once",
+   "A subscription: billed again and again"
+  ]
+ },
+ "s03-05": {
+  "visual": "FY2014 tower; camera pulls back to reveal the FY2025 tower, 5.4x taller",
+  "onScreen": [
+   "50%",
+   "$23.8B · FY2025 · 96% subscriptions"
+  ]
+ },
+ "s03-06": {
+  "visual": "Wide shot of all towers",
+  "onScreen": [
+   "Not all of that growth came from the switch."
+  ]
+ },
+ "s04-01": {
+  "visual": "ILLUSTRATIVE banner; two phones: PhotoOnce vs PhotoLoop",
+  "onScreen": [
+   "Two software companies"
+  ]
+ },
+ "s04-02": {
+  "visual": "Offer buttons appear",
+  "onScreen": [
+   "Buy · $120 once",
+   "Subscribe · $10/mo"
+  ]
+ },
+ "s04-03": {
+  "visual": "Customer crowds pour in; coin bursts; counters race",
+  "onScreen": [
+   "$120,000",
+   "$10,000"
+  ]
+ },
+ "s04-04": {
+  "visual": "Month two: company A's crowd walks away; B's stays",
+  "onScreen": [
+   "$0 · needs 1,000 new buyers",
+   "$10,000 · the same customers pay again"
+  ]
+ },
+ "s04-05": {
+  "visual": "Twelve-month cumulative race; forecast dashes",
+  "onScreen": [
+   "A: $120,000 in month one",
+   "B: $120,000 by month 12",
+   "next month: predictable"
+  ]
+ },
+ "s04-06": {
+  "visual": "Cards light up on the words: bugs, new phones, servers",
+  "onScreen": [
+   "Recurring revenue pays for recurring work"
+  ]
+ },
+ "s04-07": {
+  "visual": "Cost-per-use cards pulse red; use counter ticks",
+  "onScreen": [
+   "storing files",
+   "computing AI answers",
+   "Costs that come back every time you use it"
+  ]
+ },
+ "s04-08": {
+  "visual": "Part of the crowd walks out through a CANCEL door",
+  "onScreen": [
+   "The catch: it only works if customers stay"
+  ]
+ },
+ "s05-01": {
+  "visual": "Leaky bucket appears with the five-term legend",
+  "onScreen": [
+   "A handful of numbers, all connected",
+   "MRR · Churn · Retention · CAC · LTV"
+  ]
+ },
+ "s05-02": {
+  "visual": "Bucket fills: water level = MRR",
+  "onScreen": [
+   "MRR: the water in the bucket"
+  ]
+ },
+ "s05-03": {
+  "visual": "Holes open and drops leak: churn; the water that stays: retention",
+  "onScreen": [
+   "Churn: the holes",
+   "Retention: the water that stays"
+  ]
+ },
+ "s05-04": {
+  "visual": "A tap pours new customers with a CAC price tag; LTV row",
+  "onScreen": [
+   "CAC",
+   "LTV"
+  ]
+ },
+ "s05-05": {
+  "visual": "Three split bars of a $10 payment (Apple terms)",
+  "onScreen": [
+   "developer $7.00 · store $3.00",
+   "developer $8.50 · store $1.50"
+  ]
+ },
+ "s05-06": {
+  "visual": "Ten $7 coins appear month by month; LTV bar $70",
+  "onScreen": [
+   "Churn 10% a month → ~10 months",
+   "LTV $70"
+  ]
+ },
+ "s05-07": {
+  "visual": "CAC bar $40 next to LTV $70",
+  "onScreen": [
+   "$70 in, $40 out: a healthy customer"
+  ]
+ },
+ "s05-08": {
+  "visual": "Half the coins vanish; LTV shrinks to $35 and turns red",
+  "onScreen": [
+   "Churn 20% a month → ~5 months",
+   "$35 in, $40 out"
+  ]
+ },
+ "s05-09": {
+  "visual": "Churn gauge needle swings into the red",
+  "onScreen": [
+   "CHURN"
+  ]
+ },
+ "s06-01": {
+  "visual": "Dot field of apps; RevenueCat's sample highlighted",
+  "onScreen": [
+   "The largest data set we could verify"
+  ]
+ },
+ "s06-02": {
+  "visual": "Dashed boundary drawn around the sample",
+  "onScreen": [
+   "115,000+",
+   "$16B+",
+   "only apps that use RevenueCat's tools"
+  ]
+ },
+ "s06-03": {
+  "visual": "Camera pans along a skyline of app earnings, then pulls back to the towering top 10%",
+  "onScreen": [
+   "median ~$72/mo",
+   "top 10%: $2,574+/mo"
+  ]
+ },
+ "s06-04": {
+  "visual": "1,000 squares, 46 lit; donut 69%",
+  "onScreen": [
+   "4.6%",
+   "69% … before 2020"
+  ]
+ },
+ "s06-05": {
+  "visual": "Two lanes of 100 subscriber figures walking a year; most drop out",
+  "onScreen": [
+   "8% still active after a year",
+   "28% still active after a year"
+  ]
+ },
+ "s06-06": {
+  "visual": "First-renewal drop-outs",
+  "onScreen": [
+   "Nearly half of monthly subscribers never renew even once"
+  ]
+ },
+ "s06-07": {
+  "visual": "Two phones: cancelled but using the free plan; paying but idle",
+  "onScreen": [
+   "Subscriptions, not people. Payments, not use."
+  ]
+ },
+ "s07-01": {
+  "visual": "A personal budget app on a phone",
+  "onScreen": [
+   "Now, the customer's side"
+  ]
+ },
+ "s07-02": {
+  "visual": "Fixed-width monthly budget bar fills with app tiles; a newcomer knocks one out",
+  "onScreen": [
+   "A monthly budget for apps (hypothetical: $80)",
+   "A new subscription has to push something else out"
+  ]
+ },
+ "s07-03": {
+  "visual": "Cross-category rivals face off",
+  "onScreen": [
+   "meditation vs streaming",
+   "AI assistant vs cloud storage"
+  ]
+ },
+ "s07-04": {
+  "visual": "Paywall with trial / intro / yearly options; tap; 'Then: the first renewal'",
+  "onScreen": [
+   "Free trials",
+   "Discounted first months",
+   "Cheaper yearly plans"
+  ]
+ },
+ "s07-05": {
+  "visual": "Two funnels of 1,000 downloads: paying dots collect at the spout",
+  "onScreen": [
+   "Hard paywall 10.7%",
+   "Freemium 2.1%",
+   "a year later: retention nearly the same"
+  ]
+ },
+ "s07-06": {
+  "visual": "A coin drops into a jar every day for a year",
+  "onScreen": [
+   "$2.41 a day",
+   "day 365 · $881"
+  ]
+ },
+ "s07-07": {
+  "visual": "Paywall with a Lifetime option; 23 of 100 squares lit",
+  "onScreen": [
+   "23% of apps pair subscriptions with a lifetime purchase"
+  ]
+ },
+ "s08-01": {
+  "visual": "Coins stream past; two red stamps",
+  "onScreen": [
+   "≠ guaranteed",
+   "≠ profit"
+  ]
+ },
+ "s08-02": {
+  "visual": "Card shakes and is DECLINED; bars for Google Play vs App Store",
+  "onScreen": [
+   "31%",
+   "14%",
+   "of cancellations: billing failures"
+  ]
+ },
+ "s08-03": {
+  "visual": "AI app icon; two subscriber-decay curves",
+  "onScreen": [
+   "+41% revenue per payer",
+   "~30% faster churn"
+  ]
+ },
+ "s08-04": {
+  "visual": "A cursor wanders a cancellation maze of pop-ups; FTC settlement panel",
+  "onScreen": [
+   "Easy to sign up, hard to leave",
+   "$2.5B · $1B civil penalty + $1.5B in refunds"
+  ]
+ },
+ "s08-05": {
+  "visual": "Spotify revenue as an orange river",
+  "onScreen": [
+   "Revenue €17.2B",
+   "290 million premium subscribers"
+  ]
+ },
+ "s08-06": {
+  "visual": "River splits: red 68% cost of revenue, green 32% gross margin",
+  "onScreen": [
+   "mainly royalties & distribution costs",
+   "2023: operating loss of €446 million"
+  ]
+ },
+ "s08-07": {
+  "visual": "Operating income bars 2023–2025",
+  "onScreen": [
+   "−€446M",
+   "€1.4B",
+   "€2.2B"
+  ]
+ },
+ "s09-01": {
+  "visual": "A wall of app icons, each with a /mo badge",
+  "onScreen": [
+   "So why does every app want a subscription?"
+  ]
+ },
+ "s09-02": {
+  "visual": "A ring of twelve monthly links: a sale becomes a relationship",
+  "onScreen": [
+   "pays every month",
+   "can be forecast",
+   "funds the work"
+  ]
+ },
+ "s09-03": {
+  "visual": "A balance tips to 'good deal'",
+  "onScreen": [
+   "less to pay upfront",
+   "updates & new features",
+   "leave when it's not worth it"
+  ]
+ },
+ "s09-04": {
+  "visual": "The balance tips back; the v6 box returns",
+  "onScreen": [
+   "you rarely use it",
+   "an older version would do",
+   "Adobe still licenses perpetual versions of some products"
+  ]
+ },
+ "s09-05": {
+  "visual": "The retention road again: only a few figures reach the end",
+  "onScreen": [
+   "Most subscriptions don't last.",
+   "Most apps never make much money."
+  ]
+ },
+ "s09-06": {
+  "visual": "A renewal screen; the cursor hesitates between Keep and Cancel",
+  "onScreen": [
+   "Companies want it automatic.",
+   "The best still earn it, every month."
+  ]
+ },
+ "s09-07": {
+  "visual": "End card",
+  "onScreen": [
+   "HIDDEN LEDGER",
+   "Every number in this video is sourced in the description"
+  ]
+ }
+}

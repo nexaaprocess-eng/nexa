@@ -1,0 +1,395 @@
+{
+ "_about": "Every factual claim in Episode 003, with the narration segments that use it. Sources: fact_check.csv / sources.md. Calculations: calculations.py.",
+ "claims": [
+  {
+   "id": "I01",
+   "type": "illustrative",
+   "claim": "Hypothetical bundle: music $11.99, streaming $15.49, cloud storage $2.99, fitness $12.99, productivity $9.99, AI assistant $20.00 per month = $73.45/month, $881.40/year, $2.41/day.",
+   "segments": [
+    "s01-02",
+    "s01-03",
+    "s07-06"
+   ],
+   "sources": [
+    "HL-HYPO"
+   ],
+   "evidence": "Hidden Ledger assumptions; calculations.json bundle_*.",
+   "method_or_caveat": "Labelled HYPOTHETICAL on screen and in narration ('a made-up example'). Prices are not those of any named service."
+  },
+  {
+   "id": "I02",
+   "type": "illustrative",
+   "claim": "Two hypothetical companies: $120 one-time vs $10/month, 1,000 customers: $120,000 vs $10,000 in month one; $120,000 after 12 months if nobody cancels.",
+   "segments": [
+    "s04-02",
+    "s04-03",
+    "s04-05"
+   ],
+   "sources": [
+    "HL-HYPO"
+   ],
+   "evidence": "calculations.json company_*.",
+   "method_or_caveat": "Labelled hypothetical."
+  },
+  {
+   "id": "I03",
+   "type": "illustrative",
+   "claim": "Hypothetical unit economics: $10/month, developer keeps $7 (70%); expected lifetime ≈ 1/monthly churn: 10% churn → ~10 months → ~$70; 20% → ~5 months → ~$35; CAC $40.",
+   "segments": [
+    "s05-06",
+    "s05-07",
+    "s05-08"
+   ],
+   "sources": [
+    "HL-HYPO",
+    "APPLE-SUBS"
+   ],
+   "evidence": "calculations.json ltv_*; 70% from Apple's first-year terms.",
+   "method_or_caveat": "1/churn is the standard approximation of expected lifetime under constant churn; gross revenue to developer, before other costs."
+  },
+  {
+   "id": "R00",
+   "type": "fact",
+   "claim": "RevenueCat State of Subscription Apps 2026 analyzed over 115,000 apps covering more than $16 billion in revenue; only apps integrated with RevenueCat.",
+   "segments": [
+    "s06-01",
+    "s06-02"
+   ],
+   "sources": [
+    "SOSA-2026"
+   ],
+   "evidence": "\"we analyzed over 115,000 apps across all app categories, covering more than $16 billion in revenue across more than a billion transactions\"; inclusion requires a RevenueCat integration.",
+   "method_or_caveat": "Population limitation stated in narration and on screen."
+  },
+  {
+   "id": "R01",
+   "type": "fact",
+   "claim": "New subscription app launches: ~2,000 per month in Jan 2022; 14,700+ by Jan 2026.",
+   "segments": [
+    "s01-05"
+   ],
+   "sources": [
+    "SOSA-2026"
+   ],
+   "evidence": "\"~2,000 new subscription apps launched per month in Jan 2022; 14,700+ by Jan 2026.\"",
+   "method_or_caveat": "Launch data sourced by RevenueCat from Appfigures (report methodology)."
+  },
+  {
+   "id": "R02",
+   "type": "fact",
+   "claim": "Median monthly revenue one year after launch ~$72; top 10% above $2,574 (report: 'top 10% pull $2,500+').",
+   "segments": [
+    "s06-03",
+    "s09-05"
+   ],
+   "sources": [
+    "SOSA-2026"
+   ],
+   "evidence": "\"Cross-category median is ~$72, but the top 10% pull $2,500+\"; \"If you’re above $2,574, you’re in the top 10%\".",
+   "method_or_caveat": "Narrated as 'more than $2,500'."
+  },
+  {
+   "id": "R03",
+   "type": "fact",
+   "claim": "Only 4.6% of newly launched apps reach $10K monthly revenue within two years.",
+   "segments": [
+    "s06-04"
+   ],
+   "sources": [
+    "SOSA-2026"
+   ],
+   "evidence": "\"Only 4.6% of newly launched apps reach $10K in monthly revenue within two years.\"",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "R04",
+   "type": "fact",
+   "claim": "Apps launched before 2020 generate 69% of all subscription revenue (in the data).",
+   "segments": [
+    "s06-04"
+   ],
+   "sources": [
+    "SOSA-2026"
+   ],
+   "evidence": "\"apps launched before 2020 generate 69% of all subscription revenue.\"",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "R05",
+   "type": "fact",
+   "claim": "Median share of subscriptions still active after one year (2024 cohort): monthly 8%, yearly 28% (2023 cohort: 10%, 31%); subscription-level, not user-level metric.",
+   "segments": [
+    "s06-05",
+    "s06-07",
+    "s09-05"
+   ],
+   "sources": [
+    "SOSA-2026"
+   ],
+   "evidence": "\"Yearly: 31% → 28% median (-3%). Monthly: 10% → 8% median (-2%).\" Key takeaway: \"from the 2023 cohort to the 2024 cohort\"; retention \"is a subscription-level metric, not a user-level metric.\"",
+   "method_or_caveat": "Narration distinguishes subscriptions from people and payments from use."
+  },
+  {
+   "id": "R06",
+   "type": "fact",
+   "claim": "Nearly half of monthly subscribers do not renew once.",
+   "segments": [
+    "s06-06"
+   ],
+   "sources": [
+    "SOSA-2026"
+   ],
+   "evidence": "\"Nearly half of monthly subscribers ... do not renew once.\" (1st monthly renewal medians 53–61% by category)",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "R07",
+   "type": "fact",
+   "claim": "Hard paywalls convert ~5x freemium: 10.7% vs 2.1% download-to-paid by day 35; nearly identical year-one retention.",
+   "segments": [
+    "s07-05"
+   ],
+   "sources": [
+    "SOSA-2026"
+   ],
+   "evidence": "\"Hard paywalls convert five times better than freemium (10.7% vs 2.1% download-to-paid by day 35) with nearly identical year-one retention\"",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "R08",
+   "type": "fact",
+   "claim": "23.2% of apps combine subscriptions with lifetime purchases ('nearly a quarter'); 63.5% are subscriptions-only.",
+   "segments": [
+    "s07-07"
+   ],
+   "sources": [
+    "SOSA-2026"
+   ],
+   "evidence": "\"Overall: 63.5% subs-only, 23.2% + lifetime, 10.7% + consumables, 2.5% all three.\"",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "R09",
+   "type": "fact",
+   "claim": "Involuntary billing failures ≈31% of subscription cancellations on Google Play vs 14% on the App Store.",
+   "segments": [
+    "s08-02"
+   ],
+   "sources": [
+    "SOSA-2026"
+   ],
+   "evidence": "\"Nearly a third of all subscription cancellations on Google Play are involuntary billing failures — more than double the rate on the App Store (14%).\" Headline figure 31%.",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "R10",
+   "type": "fact",
+   "claim": "AI-powered apps generate 41% more revenue per payer but churn ~30% faster.",
+   "segments": [
+    "s08-03"
+   ],
+   "sources": [
+    "SOSA-2026"
+   ],
+   "evidence": "\"AI-powered apps generate 41% more revenue per payer, but they churn 30% faster.\"",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "O01",
+   "type": "fact",
+   "claim": "Oracle: substantially all customers purchase and renew software support contracts annually.",
+   "segments": [
+    "s02-04"
+   ],
+   "sources": [
+    "ORCL-10K-FY2026"
+   ],
+   "evidence": "\"Substantially all of our customers elect to purchase and renew their software support contracts annually.\"",
+   "method_or_caveat": "Used to show that recurring payments for software predate app subscriptions (business software)."
+  },
+  {
+   "id": "A01",
+   "type": "fact",
+   "claim": "May 2013: Adobe announced new creative innovations/features exclusively for Creative Cloud subscribers; CS6 the last major update for perpetual licensees.",
+   "segments": [
+    "s02-05",
+    "s02-06"
+   ],
+   "sources": [
+    "ADBE-10K-FY2013"
+   ],
+   "evidence": "\"In May 2013 we announced we would exclusively deliver new creative product innovations and features to Creative Cloud subscribers, and that Adobe Creative Suite 6 (“CS6”) ... would be the last major update we provide for perpetual licensees.\"",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "A02",
+   "type": "fact",
+   "claim": "Adobe subscription revenue as % of total: FY2012 15%, FY2013 28%, FY2014 50%.",
+   "segments": [
+    "s03-02",
+    "s03-05"
+   ],
+   "sources": [
+    "ADBE-10K-FY2014"
+   ],
+   "evidence": "Revenue table: \"Subscription 2,076.6 1,137.9 673.2 ... Percentage of total revenue 50 % 28 % 15 %\" (FY2014, FY2013, FY2012).",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "A03",
+   "type": "fact",
+   "claim": "Adobe total revenue FY2012 $4,403.7M → FY2013 $4,055.2M (−8%).",
+   "segments": [
+    "s03-02"
+   ],
+   "sources": [
+    "ADBE-10K-FY2014"
+   ],
+   "evidence": "\"Total revenue $ 4,147.1 $ 4,055.2 $ 4,403.7 2 % (8 )%\"",
+   "method_or_caveat": "Narrated '$4.4 billion to $4.06 billion'."
+  },
+  {
+   "id": "A04",
+   "type": "fact",
+   "claim": "Adobe net income FY2012 $832.8M → FY2013 $290.0M.",
+   "segments": [
+    "s03-03"
+   ],
+   "sources": [
+    "ADBE-10K-FY2014"
+   ],
+   "evidence": "\"Net income $ 268,395 $ 289,985 $ 832,775\" (thousands; FY2014, FY2013, FY2012).",
+   "method_or_caveat": "Narrated $833M → $290M. Not attributed solely to the subscription switch."
+  },
+  {
+   "id": "A05",
+   "type": "fact",
+   "claim": "Adobe FY2014: subscriptions 50% of revenue.",
+   "segments": [
+    "s03-05"
+   ],
+   "sources": [
+    "ADBE-10K-FY2014"
+   ],
+   "evidence": "See A02.",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "A06",
+   "type": "fact",
+   "claim": "Adobe FY2025: total revenue $23,769M; subscription $22,904M = 96% of total.",
+   "segments": [
+    "s03-05"
+   ],
+   "sources": [
+    "ADBE-10K-FY2025"
+   ],
+   "evidence": "\"Subscription $ 22,904 ... Percentage of total revenue 96 %\"; \"Total revenue $ 23,769\".",
+   "method_or_caveat": "Narration adds that not all growth came from the switch."
+  },
+  {
+   "id": "A07",
+   "type": "fact",
+   "claim": "Adobe still licenses perpetual versions of certain products.",
+   "segments": [
+    "s09-04"
+   ],
+   "sources": [
+    "ADBE-10K-FY2025"
+   ],
+   "evidence": "\"We also license perpetual versions of certain products with maintenance and support\"",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "P01",
+   "type": "fact",
+   "claim": "Apple auto-renewable subscriptions: developer receives 70% in a subscriber's first year, 85% after one year of paid service (minus taxes).",
+   "segments": [
+    "s05-05"
+   ],
+   "sources": [
+    "APPLE-SUBS"
+   ],
+   "evidence": "\"During a subscriber's first year of service, you receive 70% of the subscription price ... After a subscriber accumulates one year of paid service, your net revenue increases to 85%\"",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "P02",
+   "type": "fact",
+   "claim": "App Store Small Business Program members receive 85% regardless of tenure.",
+   "segments": [
+    "s05-05"
+   ],
+   "sources": [
+    "APPLE-SUBS"
+   ],
+   "evidence": "\"If you're currently enrolled in the App Store Small Business Program, you receive 85% of the subscription price at each billing cycle ... regardless of whether or not the subscription has accumulated one year of paid service.\"",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "F01",
+   "type": "fact",
+   "claim": "Sept 25, 2025: FTC announced a $2.5B settlement with Amazon ($1B civil penalty, $1.5B refunds) over alleged Prime enrollment without consent and difficult cancellation.",
+   "segments": [
+    "s08-04"
+   ],
+   "sources": [
+    "FTC-AMZN-2025"
+   ],
+   "evidence": "FTC press release \"FTC Secures Historic $2.5 Billion Settlement Against Amazon\" (Sept 25, 2025): alleged Amazon \"enrolled millions of consumers in Prime subscriptions without their consent\" and used \"a complex and difficult process\" for cancellation.",
+   "method_or_caveat": "Narrated as 'claims' (allegations settled)."
+  },
+  {
+   "id": "S01",
+   "type": "fact",
+   "claim": "Spotify: 290 million Premium Subscribers at Dec 31, 2025; 2025 revenue €17,186M.",
+   "segments": [
+    "s08-05"
+   ],
+   "sources": [
+    "SPOT-20F-2025"
+   ],
+   "evidence": "\"Premium Subscribers were 290 million as of December 31, 2025\"; \"Revenue 17,186\" (€ millions).",
+   "method_or_caveat": "Streaming service, explicitly distinguished from typical apps."
+  },
+  {
+   "id": "S02",
+   "type": "fact",
+   "claim": "Spotify cost of revenue consists predominantly of royalty and distribution costs; €11,690M of €17,186M (68%); consolidated gross margin 32% in 2025.",
+   "segments": [
+    "s08-06"
+   ],
+   "sources": [
+    "SPOT-20F-2025"
+   ],
+   "evidence": "\"Cost of revenue consists predominantly of royalty and distribution costs related to content streaming\"; \"Gross margin ... Consolidated 32 % 30 % 26 %\".",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "S03",
+   "type": "fact",
+   "claim": "Spotify operating loss €446M in 2023.",
+   "segments": [
+    "s08-06"
+   ],
+   "sources": [
+    "SPOT-20F-2025"
+   ],
+   "evidence": "\"Operating income/(loss) 2,198 1,365 ( 446 )\"",
+   "method_or_caveat": ""
+  },
+  {
+   "id": "S04",
+   "type": "fact",
+   "claim": "Spotify operating income €2,198M in 2025.",
+   "segments": [
+    "s08-07"
+   ],
+   "sources": [
+    "SPOT-20F-2025"
+   ],
+   "evidence": "See S03.",
+   "method_or_caveat": "Narrated as €2.2 billion."
+  }
+ ]
+}

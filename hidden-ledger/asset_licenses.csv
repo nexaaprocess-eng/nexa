@@ -1,0 +1,8 @@
+asset,type,source,author,license,commercial_use,attribution_required,notes
+assets/fonts/SpaceGrotesk-Variable-latin.woff2,font,npm @fontsource-variable/space-grotesk@5.1.1 (Google Fonts),Florian Karsten / The Space Grotesk Project Authors,SIL Open Font License 1.1,yes,no (keep licence file),assets/fonts/SpaceGrotesk-LICENSE.txt
+assets/fonts/Inter-Variable-latin.woff2,font,npm @fontsource-variable/inter@5.1.1 (Google Fonts),Rasmus Andersson / The Inter Project Authors,SIL Open Font License 1.1,yes,no (keep licence file),assets/fonts/Inter-LICENSE.txt
+assets/music/generated/*.wav,music,python/music.py (procedural synthesis; seed 1001),Hidden Ledger (original code),Own work,yes,no,"No samples, loops or third-party melodies; see audio_provenance.md"
+output/episode-001/audio/cache/music/*.wav,music (per-scene cues),python/music.py via python/mix.py,Hidden Ledger (original code),Own work,yes,no,Regenerated deterministically from seed + scene id
+assets/sfx/*.wav,sound effects,python/music.py sfx_set(),Hidden Ledger (original code),Own work,yes,no,"Synthesized whoosh/click/tick/thump/pop"
+output/episode-001/audio/narration/**/*.wav,voice (synthetic),Kokoro-82M v1.0 via kokoro-onnx 0.6.1,hexgrad (model) / thewh1teagle (runtime),Apache-2.0 (model weights) / MIT (runtime),yes,no,"Voice am_michael; synthetic voice, not a clone of a real person"
+src/components/icons.tsx (all illustrations),vector graphics,hand-written SVG/React,Hidden Ledger (original code),Own work,yes,no,"No stock images, no third-party logos"

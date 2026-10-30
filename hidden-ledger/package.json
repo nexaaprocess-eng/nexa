@@ -1,0 +1,44 @@
+{
+  "name": "hidden-ledger",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Hidden Ledger documentary factory: research -> script -> Kokoro TTS -> procedural music -> Remotion -> FFmpeg",
+  "type": "module",
+  "scripts": {
+    "setup": "node scripts/pipeline.mjs setup",
+    "doctor": "node scripts/pipeline.mjs doctor",
+    "voices": "node scripts/pipeline.mjs voices",
+    "narration": "node scripts/pipeline.mjs narration",
+    "pilot": "node scripts/pipeline.mjs pilot",
+    "episode:001": "node scripts/pipeline.mjs episode --episode 001",
+    "episode:001:preview": "node scripts/pipeline.mjs episode --episode 001 --quality preview",
+    "shorts:001": "node scripts/pipeline.mjs shorts --episode 001",
+    "thumbnails:001": "node scripts/pipeline.mjs thumbnails --episode 001",
+    "verify": "node scripts/pipeline.mjs verify",
+    "studio": "remotion studio src/main.ts",
+    "typecheck": "tsc -p .",
+    "episode:001:v2": "node scripts/pipeline.mjs episode --episode 001 --name full_video_v2 --bitrate 8M --concurrency 4",
+    "final:001": "node scripts/pipeline.mjs final --episode 001 --bitrate 10M --concurrency 4",
+    "final:002": "node scripts/pipeline.mjs final --episode 002 --bitrate 10M --concurrency 4",
+    "render:002": "node scripts/pipeline.mjs render --episode 002 --concurrency 4",
+    "thumbnails:002": "node scripts/pipeline.mjs thumbnails --episode 002",
+    "lint:text": "python python/text_lint.py",
+    "final:003": "node scripts/pipeline.mjs final --episode 003 --bitrate 10M --concurrency 4",
+    "thumbnails:003": "node scripts/pipeline.mjs thumbnails --episode 003"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "5.1.1",
+    "@fontsource-variable/space-grotesk": "5.1.1",
+    "@remotion/bundler": "4.0.300",
+    "@remotion/cli": "4.0.300",
+    "@remotion/renderer": "4.0.300",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.300"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "tsx": "4.19.2",
+    "typescript": "5.6.3"
+  }
+}

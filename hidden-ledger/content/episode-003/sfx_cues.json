@@ -1,0 +1,264 @@
+{
+ "_about": "Word-anchored sound effects for python/mix.py (episode 003). Chimes = renewal notifications in the cold open; decline = the card/loss moments.",
+ "cues": [
+  {
+   "segment": "s01-01",
+   "word": "Open",
+   "offset": -0.45,
+   "sound": "chime",
+   "gain_db": -7
+  },
+  {
+   "segment": "s01-01",
+   "word": "Open",
+   "offset": 0.1,
+   "sound": "chime",
+   "gain_db": -7
+  },
+  {
+   "segment": "s01-01",
+   "word": "Open",
+   "offset": 0.65,
+   "sound": "chime",
+   "gain_db": -7
+  },
+  {
+   "segment": "s01-01",
+   "word": "Open",
+   "offset": 1.2,
+   "sound": "chime",
+   "gain_db": -7
+  },
+  {
+   "segment": "s01-01",
+   "word": "Open",
+   "offset": 1.75,
+   "sound": "chime",
+   "gain_db": -7
+  },
+  {
+   "segment": "s01-01",
+   "word": "Open",
+   "offset": 2.3,
+   "sound": "chime",
+   "gain_db": -7
+  },
+  {
+   "segment": "s01-01",
+   "word": "Open",
+   "offset": -0.5,
+   "sound": "buzz",
+   "gain_db": -6
+  },
+  {
+   "segment": "s01-02",
+   "word": "Music",
+   "offset": 0.0,
+   "sound": "tick",
+   "gain_db": -1
+  },
+  {
+   "segment": "s01-02",
+   "word": "Streaming",
+   "offset": 0.0,
+   "sound": "tick",
+   "gain_db": -1
+  },
+  {
+   "segment": "s01-02",
+   "word": "cloud",
+   "offset": 0.0,
+   "sound": "tick",
+   "gain_db": -1
+  },
+  {
+   "segment": "s01-02",
+   "word": "fitness",
+   "offset": 0.0,
+   "sound": "tick",
+   "gain_db": -1
+  },
+  {
+   "segment": "s01-02",
+   "word": "productivity",
+   "offset": 0.0,
+   "sound": "tick",
+   "gain_db": -1
+  },
+  {
+   "segment": "s01-02",
+   "word": "assistant",
+   "offset": 0.0,
+   "sound": "tick",
+   "gain_db": -1
+  },
+  {
+   "segment": "s01-03",
+   "word": "year",
+   "offset": 0.2,
+   "sound": "register",
+   "gain_db": -3
+  },
+  {
+   "segment": "s01-05",
+   "word": "2026|twenty-six",
+   "offset": -0.1,
+   "sound": "whoosh",
+   "gain_db": -2
+  },
+  {
+   "segment": "s01-06",
+   "word": "monthly",
+   "offset": 0.0,
+   "sound": "pop",
+   "gain_db": -1
+  },
+  {
+   "segment": "s02-02",
+   "word": "paid",
+   "offset": 0.0,
+   "sound": "register",
+   "gain_db": -3
+  },
+  {
+   "segment": "s02-03",
+   "word": "decided",
+   "offset": 0.0,
+   "sound": "click",
+   "gain_db": 0
+  },
+  {
+   "segment": "s02-05",
+   "word": "2013|thirteen",
+   "offset": 0.0,
+   "sound": "thump",
+   "gain_db": 1
+  },
+  {
+   "segment": "s02-06",
+   "word": "last",
+   "offset": 0.0,
+   "sound": "thump",
+   "gain_db": 2
+  },
+  {
+   "segment": "s03-02",
+   "word": "fell",
+   "offset": 0.0,
+   "sound": "thump",
+   "gain_db": 1
+  },
+  {
+   "segment": "s03-03",
+   "word": "290|ninety",
+   "offset": 0.0,
+   "sound": "thump",
+   "gain_db": 2
+  },
+  {
+   "segment": "s03-05",
+   "word": "2025|ninety-six|96",
+   "offset": -0.3,
+   "sound": "whoosh",
+   "gain_db": -1
+  },
+  {
+   "segment": "s04-03",
+   "word": "120|thousand",
+   "offset": 0.1,
+   "sound": "register",
+   "gain_db": -3
+  },
+  {
+   "segment": "s04-04",
+   "word": "next",
+   "offset": 0.0,
+   "sound": "click",
+   "gain_db": 0
+  },
+  {
+   "segment": "s05-06",
+   "word": "70|seventy",
+   "offset": 0.0,
+   "sound": "pop",
+   "gain_db": 0
+  },
+  {
+   "segment": "s05-08",
+   "word": "loses",
+   "offset": 0.0,
+   "sound": "decline",
+   "gain_db": -2
+  },
+  {
+   "segment": "s06-03",
+   "word": "72|seventy",
+   "offset": 0.0,
+   "sound": "tick",
+   "gain_db": 0
+  },
+  {
+   "segment": "s06-06",
+   "word": "half",
+   "offset": 0.0,
+   "sound": "thump",
+   "gain_db": 1
+  },
+  {
+   "segment": "s07-05",
+   "word": "five",
+   "offset": 0.0,
+   "sound": "pop",
+   "gain_db": 0
+  },
+  {
+   "segment": "s07-07",
+   "word": "lifetime",
+   "offset": 0.0,
+   "sound": "click",
+   "gain_db": 0
+  },
+  {
+   "segment": "s08-02",
+   "word": "decline",
+   "offset": 0.1,
+   "sound": "decline",
+   "gain_db": -1
+  },
+  {
+   "segment": "s08-02",
+   "word": "expire",
+   "offset": 0.0,
+   "sound": "buzz",
+   "gain_db": -6
+  },
+  {
+   "segment": "s08-03",
+   "word": "faster",
+   "offset": -0.2,
+   "sound": "whoosh",
+   "gain_db": -3
+  },
+  {
+   "segment": "s08-04",
+   "word": "billion",
+   "offset": 0.0,
+   "sound": "thump",
+   "gain_db": 1
+  },
+  {
+   "segment": "s09-04",
+   "word": "perpetual",
+   "offset": 0.0,
+   "sound": "click",
+   "gain_db": 0
+  },
+  {
+   "segment": "s09-06",
+   "word": "earn",
+   "offset": 0.1,
+   "sound": "chime",
+   "gain_db": -4
+  }
+ ]
+}

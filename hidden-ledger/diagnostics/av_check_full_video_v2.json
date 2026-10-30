@@ -1,0 +1,93 @@
+{
+  "video": "output/episode-001/full/full_video_v2.mp4",
+  "problems": [],
+  "completeness": {
+    "video_frames": 17769,
+    "timeline_frames": 17769,
+    "video_duration": 592.3,
+    "audio_duration": 592.3,
+    "timeline_duration": 592.278,
+    "video_start": 0.0,
+    "audio_start": 0.0
+  },
+  "audio_offset": [
+    {
+      "at_s": 5.0,
+      "offset_ms": 0.0,
+      "correlation": 0.964
+    },
+    {
+      "at_s": 296.1,
+      "offset_ms": 0.0,
+      "correlation": 0.96
+    },
+    {
+      "at_s": 567.3,
+      "offset_ms": 0.0,
+      "correlation": 0.966
+    }
+  ],
+  "scene_transitions": [
+    {
+      "scene": "s02",
+      "timeline_start": 28.46,
+      "wipe_centre": 28.327,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.88,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s03",
+      "timeline_start": 106.694,
+      "wipe_centre": 106.561,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.88,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s04",
+      "timeline_start": 181.08,
+      "wipe_centre": 180.947,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.89,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s05",
+      "timeline_start": 283.583,
+      "wipe_centre": 283.45,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.88,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s06",
+      "timeline_start": 379.883,
+      "wipe_centre": 379.75,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.89,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s07",
+      "timeline_start": 473.501,
+      "wipe_centre": 473.368,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.89,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s08",
+      "timeline_start": 544.881,
+      "wipe_centre": 544.748,
+      "delta_s": -0.133,
+      "edge_row_coverage": 0.89,
+      "baseline_coverage": 0.0
+    }
+  ],
+  "intelligibility": {
+    "wer_final_mix": 0.01,
+    "weighted_wer_dry_narration": 0.0069
+  },
+  "ok": true
+}

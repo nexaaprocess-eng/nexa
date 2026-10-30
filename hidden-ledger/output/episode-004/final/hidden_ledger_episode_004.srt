@@ -1,0 +1,723 @@
+1
+00:00:00,400 --> 00:00:01,740
+Meet our passenger.
+
+2
+00:00:01,740 --> 00:00:03,680
+They want to visit a
+friend in another city,
+
+3
+00:00:03,680 --> 00:00:06,430
+and the airline's website says
+the flight costs twenty dollars.
+
+4
+00:00:06,930 --> 00:00:08,220
+Twenty dollars, to fly.
+
+5
+00:00:08,220 --> 00:00:09,200
+So they book it.
+
+6
+00:00:09,700 --> 00:00:11,330
+Then the checkout keeps going.
+
+7
+00:00:11,330 --> 00:00:13,210
+A cabin bag: $25.
+
+8
+00:00:13,210 --> 00:00:15,100
+A window seat: $12.
+
+9
+00:00:15,100 --> 00:00:17,370
+A checked suitcase: $35.
+
+10
+00:00:17,870 --> 00:00:20,120
+The twenty-dollar flight now costs $92.
+
+11
+00:00:20,120 --> 00:00:22,360
+Those prices are a made-up example.
+
+12
+00:00:22,360 --> 00:00:23,580
+The pattern is real.
+
+13
+00:00:24,080 --> 00:00:26,320
+At the American budget airline Frontier,
+
+14
+00:00:26,320 --> 00:00:30,900
+the average passenger in
+2025 paid $44.60 in fares,
+
+15
+00:00:30,900 --> 00:00:34,190
+and another $63.79 in other charges.
+
+16
+00:00:34,690 --> 00:00:36,960
+So how can an airline sell
+a flight for twenty dollars?
+
+17
+00:00:36,960 --> 00:00:38,980
+And who is really paying for it?
+
+18
+00:00:40,280 --> 00:00:42,860
+To find out, follow our
+passenger onto the plane,
+
+19
+00:00:42,860 --> 00:00:45,210
+and look at the bill
+for the flight itself.
+
+20
+00:00:45,710 --> 00:00:49,990
+Europe's largest budget airline,
+Ryanair, publishes that bill every year.
+
+21
+00:00:49,990 --> 00:00:53,840
+In the twelve months to March 2026,
+it carried 208 million passengers.
+
+22
+00:00:54,340 --> 00:00:59,900
+Averaged over all of them, flying
+one passenger cost Ryanair €63.21.
+
+23
+00:01:00,400 --> 00:01:05,870
+The biggest slice is fuel: €26,
+about 41 percent of all its costs.
+
+24
+00:01:05,870 --> 00:01:07,660
+Then staff, about €9.
+
+25
+00:01:07,660 --> 00:01:09,840
+Airport and handling fees, about €8.50.
+
+26
+00:01:09,840 --> 00:01:12,610
+The aircraft themselves, about €6.60.
+
+27
+00:01:12,610 --> 00:01:15,420
+Air traffic control charges, about €6.30.
+
+28
+00:01:15,420 --> 00:01:17,880
+And then sales, maintenance
+and everything else.
+
+29
+00:01:18,380 --> 00:01:20,470
+Fuel alone is close to half of that bill.
+
+30
+00:01:20,470 --> 00:01:24,190
+Remember that: when oil prices
+jump, budget airlines feel it first.
+
+31
+00:01:24,690 --> 00:01:28,430
+Now look at what the average
+passenger paid for the ticket: €50.66.
+
+32
+00:01:28,430 --> 00:01:33,360
+And Ryanair counts checked bag fees
+and change fees inside that figure.
+
+33
+00:01:33,860 --> 00:01:36,640
+So on the fare alone, the average
+passenger is flown at a loss.
+
+34
+00:01:36,640 --> 00:01:38,440
+The gap gets closed somewhere else.
+
+35
+00:01:38,440 --> 00:01:40,600
+To see where, we need three secrets.
+
+36
+00:01:41,900 --> 00:01:42,570
+Secret one.
+
+37
+00:01:42,570 --> 00:01:45,860
+Most of what a flight costs does
+not depend on who is sitting in it.
+
+38
+00:01:46,360 --> 00:01:49,700
+The crew gets paid, the fuel gets
+burned, and the airport sends its bill,
+
+39
+00:01:49,700 --> 00:01:51,700
+whether the plane is full or half empty.
+
+40
+00:01:51,700 --> 00:01:54,840
+Ryanair's own annual report says the
+operating costs of each flight do
+
+41
+00:01:54,840 --> 00:01:57,550
+not vary significantly with
+the number of passengers flown.
+
+42
+00:01:58,050 --> 00:02:02,410
+Averaged across the year, one Ryanair
+flight cost about €11,400 to operate,
+
+43
+00:02:02,410 --> 00:02:05,170
+and carried about 181 passengers.
+
+44
+00:02:05,670 --> 00:02:09,130
+And once the door closes, every empty seat
+around our passenger is gone for good.
+
+45
+00:02:09,130 --> 00:02:12,020
+Like a concert ticket after the
+show, or a hotel room after midnight,
+
+46
+00:02:12,020 --> 00:02:13,490
+it can never be sold again.
+
+47
+00:02:13,990 --> 00:02:17,680
+One more passenger, though, adds only a
+little: some per-passenger fees and taxes,
+
+48
+00:02:17,680 --> 00:02:19,000
+and a bit of extra fuel.
+
+49
+00:02:19,000 --> 00:02:21,630
+So for the airline, a cheap
+seat beats an empty one.
+
+50
+00:02:22,130 --> 00:02:23,260
+That changes the question.
+
+51
+00:02:23,260 --> 00:02:25,510
+It is not, what does one seat cost?
+
+52
+00:02:25,510 --> 00:02:27,790
+It is, how full does the plane need to be?
+
+53
+00:02:28,290 --> 00:02:30,090
+Ryanair calls that its
+break-even load factor.
+
+54
+00:02:30,090 --> 00:02:33,050
+In its last financial
+year, it was 80 percent.
+
+55
+00:02:33,050 --> 00:02:35,490
+Its planes were actually 94 percent full.
+
+56
+00:02:35,990 --> 00:02:38,890
+Picture one of its Boeing
+jets, with 197 seats.
+
+57
+00:02:38,890 --> 00:02:41,760
+Roughly the first 158
+passengers pay for the flight.
+
+58
+00:02:41,760 --> 00:02:44,250
+The next 27 or so are where the profit is.
+
+59
+00:02:45,550 --> 00:02:46,440
+Secret two.
+
+60
+00:02:46,440 --> 00:02:49,650
+The twenty-dollar seats are real,
+but there are not many of them.
+
+61
+00:02:50,150 --> 00:02:52,710
+Budget airlines change
+their prices constantly.
+
+62
+00:02:52,710 --> 00:02:56,470
+Ryanair says its fares vary with how far
+ahead you book, how many seats are left,
+
+63
+00:02:56,470 --> 00:02:57,270
+and demand.
+
+64
+00:02:57,770 --> 00:02:59,950
+And because it sells
+every journey one way,
+
+65
+00:02:59,950 --> 00:03:03,080
+each seat on each flight
+can carry its own price.
+
+66
+00:03:03,580 --> 00:03:05,670
+Think of every flight
+as a ladder of prices.
+
+67
+00:03:05,670 --> 00:03:08,120
+Our passenger booked weeks
+ahead, for a quiet Tuesday,
+
+68
+00:03:08,120 --> 00:03:09,860
+and landed on the bottom rung.
+
+69
+00:03:10,360 --> 00:03:12,970
+As the plane fills up,
+each new seat costs more.
+
+70
+00:03:12,970 --> 00:03:16,540
+The person in the next seat, who booked
+yesterday, may have paid many times as much,
+
+71
+00:03:16,540 --> 00:03:18,030
+for exactly the same flight.
+
+72
+00:03:18,530 --> 00:03:20,170
+Those cheap seats do a job.
+
+73
+00:03:20,170 --> 00:03:21,560
+They fill the plane early,
+
+74
+00:03:21,560 --> 00:03:24,070
+they put the airline's name at
+the top of every price comparison,
+
+75
+00:03:24,070 --> 00:03:25,660
+and they bring you to its website.
+
+76
+00:03:26,160 --> 00:03:30,160
+Ryanair even has a name for this:
+load factor active, yield passive.
+
+77
+00:03:30,160 --> 00:03:34,380
+In plain words: fill the plane first, and
+worry about the price of each seat second.
+
+78
+00:03:34,880 --> 00:03:36,940
+It admits that promotional
+fares can lower its
+
+79
+00:03:36,940 --> 00:03:38,640
+revenue on those routes while they run.
+
+80
+00:03:38,640 --> 00:03:41,380
+It keeps running them anyway,
+to fill quiet periods.
+
+81
+00:03:42,680 --> 00:03:43,440
+Secret three.
+
+82
+00:03:43,440 --> 00:03:45,960
+A budget fare buys you
+less than you might think.
+
+83
+00:03:46,460 --> 00:03:48,960
+At the gate, our passenger finds
+out what the fare included.
+
+84
+00:03:48,960 --> 00:03:52,430
+Usually, a seat and one small bag
+that fits under the seat in front.
+
+85
+00:03:52,430 --> 00:03:55,830
+Almost everything else is sold
+separately: a bigger bag, a suitcase,
+
+86
+00:03:55,830 --> 00:04:00,210
+choosing your seat, boarding early, changing
+your ticket, even a drink on board.
+
+87
+00:04:00,710 --> 00:04:03,470
+At Ryanair, extras like priority boarding,
+
+88
+00:04:03,470 --> 00:04:07,750
+reserved seats and onboard sales
+brought in €4.99 billion last year.
+
+89
+00:04:07,750 --> 00:04:12,000
+That is about €24 per passenger, and
+roughly a third of all its revenue.
+
+90
+00:04:12,500 --> 00:04:17,800
+Add the fare and the extras together,
+and Ryanair took in €74.60 per passenger,
+
+91
+00:04:17,800 --> 00:04:20,010
+against a cost of €63.21.
+
+92
+00:04:20,010 --> 00:04:23,430
+That gap, about €11 a
+passenger, is the profit.
+
+93
+00:04:23,930 --> 00:04:27,930
+In the United States, the
+split can be even more extreme.
+
+94
+00:04:27,930 --> 00:04:31,310
+Frontier's passengers paid more
+for extras than for their tickets:
+
+95
+00:04:31,310 --> 00:04:37,360
+$63.79 in non-fare charges,
+against $44.60 in fares.
+
+96
+00:04:37,860 --> 00:04:40,260
+And Frontier's revenue
+from extras grew from
+
+97
+00:04:40,260 --> 00:04:46,720
+$60.55 per passenger in
+2021 to $67.57 in 2025.
+
+98
+00:04:47,220 --> 00:04:48,520
+That is the trick behind
+the twenty-dollar headline.
+
+99
+00:04:48,520 --> 00:04:53,400
+The airline competes on the one number
+you compare across websites, the fare,
+
+100
+00:04:53,400 --> 00:04:55,820
+and earns its money on
+the numbers you see later.
+
+101
+00:04:56,320 --> 00:04:59,290
+For someone with one small
+backpack, that is a genuine bargain.
+
+102
+00:04:59,290 --> 00:05:01,980
+For a family with
+suitcases, it might not be.
+
+103
+00:05:03,280 --> 00:05:05,140
+But none of that works
+unless the airline's
+
+104
+00:05:05,140 --> 00:05:07,490
+own costs stay far below everyone else's.
+
+105
+00:05:07,990 --> 00:05:15,390
+Ryanair fits 197 seats into its newest
+Boeing 737s, and 189 into the older ones.
+
+106
+00:05:15,390 --> 00:05:17,250
+Traditional airlines fly the same Boeing
+
+107
+00:05:17,250 --> 00:05:21,480
+737-800 with about 162
+seats in two classes.
+
+108
+00:05:21,980 --> 00:05:26,560
+More seats on the same plane, with the
+same crew, means every seat costs less.
+
+109
+00:05:27,060 --> 00:05:29,700
+Its aircraft fly about nine and
+a half hours a day on average,
+
+110
+00:05:29,700 --> 00:05:32,140
+because a plane on the
+ground earns nothing.
+
+111
+00:05:32,640 --> 00:05:36,190
+So between flights, the clock is
+running: passengers off, a quick clean,
+
+112
+00:05:36,190 --> 00:05:38,710
+the next passengers on,
+and back in the air.
+
+113
+00:05:39,210 --> 00:05:43,490
+Almost the whole fleet is one aircraft
+family, the Boeing 737, so pilots,
+
+114
+00:05:43,490 --> 00:05:45,680
+spare parts and mechanics
+are interchangeable.
+
+115
+00:05:46,180 --> 00:05:50,070
+It looks for airports that charge less,
+uses outdoor stairs instead of jet bridges,
+
+116
+00:05:50,070 --> 00:05:52,640
+and makes every passenger check in online.
+
+117
+00:05:53,140 --> 00:05:58,540
+The result: leaving out fuel, Ryanair
+puts its own costs at €36 per passenger.
+
+118
+00:05:58,540 --> 00:06:02,070
+It puts Wizz Air at €62, easyJet at €90,
+
+119
+00:06:02,070 --> 00:06:06,750
+and the big network airline
+groups at €178 to €253.
+
+120
+00:06:07,250 --> 00:06:09,290
+That cost gap is the real product.
+
+121
+00:06:09,290 --> 00:06:11,760
+The twenty-dollar fare is just
+how it shows up on your screen.
+
+122
+00:06:13,060 --> 00:06:14,330
+The model has a weak spot.
+
+123
+00:06:14,330 --> 00:06:18,170
+It needs full planes, steady fuel
+prices, and very little going wrong.
+
+124
+00:06:18,670 --> 00:06:22,070
+Ryanair needed its planes about 80
+percent full just to break even.
+
+125
+00:06:22,070 --> 00:06:25,980
+In 2025, Frontier's planes
+were 78.4 percent full.
+
+126
+00:06:26,480 --> 00:06:30,730
+Frontier's costs came to
+about $116.66 per passenger,
+
+127
+00:06:30,730 --> 00:06:34,190
+a little more than the $112.17 it took in.
+
+128
+00:06:34,190 --> 00:06:36,900
+It lost $137 million that year.
+
+129
+00:06:37,400 --> 00:06:41,010
+Spirit Airlines, which described itself
+as a pioneer of affordable travel,
+
+130
+00:06:41,010 --> 00:06:45,550
+filed for bankruptcy in November
+2024, and again in August 2025.
+
+131
+00:06:46,050 --> 00:06:49,660
+On May 2, 2026, citing a
+sharp rise in fuel prices,
+
+132
+00:06:49,660 --> 00:06:52,500
+it cancelled all of its
+flights and began winding down.
+
+133
+00:06:53,000 --> 00:06:56,680
+When costs jump, a budget airline
+cannot simply raise its fares.
+
+134
+00:06:56,680 --> 00:06:59,300
+Low fares are the whole
+reason people fly with it.
+
+135
+00:06:59,800 --> 00:07:02,750
+That is why Ryanair locks in
+fuel prices ahead of time.
+
+136
+00:07:02,750 --> 00:07:07,320
+It says about 80 percent of its fuel for
+the year to March 2027 is already hedged:
+
+137
+00:07:07,320 --> 00:07:09,840
+a cushion that weaker
+rivals often do not have.
+
+138
+00:07:10,340 --> 00:07:12,360
+And when one of these airlines disappears,
+
+139
+00:07:12,360 --> 00:07:15,700
+the people who relied on it lose
+the cheapest way they had to travel.
+
+140
+00:07:17,000 --> 00:07:20,130
+So, how can an airline sell
+a flight for twenty dollars?
+
+141
+00:07:20,630 --> 00:07:23,500
+Because an empty seat is worth
+nothing once the plane leaves,
+
+142
+00:07:23,500 --> 00:07:26,420
+and one more passenger
+costs very little to carry.
+
+143
+00:07:26,920 --> 00:07:29,720
+Because the cheapest seats are a
+handful at the bottom of a price ladder,
+
+144
+00:07:29,720 --> 00:07:31,800
+and people who book later pay much more.
+
+145
+00:07:32,300 --> 00:07:34,580
+Because the fare is only
+part of what you pay.
+
+146
+00:07:34,580 --> 00:07:36,970
+Bags, seats and extras close the gap.
+
+147
+00:07:37,470 --> 00:07:40,220
+And because the airline
+is built, piece by piece,
+
+148
+00:07:40,220 --> 00:07:43,210
+to fly each seat more
+cheaply than its rivals.
+
+149
+00:07:43,710 --> 00:07:44,970
+So who pays for the twenty-dollar seat?
+
+150
+00:07:44,970 --> 00:07:46,570
+Partly the people who book late.
+
+151
+00:07:46,570 --> 00:07:48,010
+Partly the people who add a suitcase.
+
+152
+00:07:48,010 --> 00:07:50,680
+And partly the airline's
+obsession with cost.
+
+153
+00:07:50,680 --> 00:07:53,200
+If you travel light, book
+early and skip the extras,
+
+154
+00:07:53,200 --> 00:07:54,860
+you might be the one getting the deal.
+
+155
+00:07:55,360 --> 00:07:56,630
+This is Hidden Ledger.
+
+156
+00:07:56,630 --> 00:07:59,170
+Every number in this video is
+sourced in the description.
+

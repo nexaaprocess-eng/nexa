@@ -1,0 +1,15 @@
+{
+  "video": "/tmp/claude-0/-home-user-nexa/25a53ee5-d15f-59f1-b559-8f88654ee205/scratchpad/ep1_20s.mp4",
+  "ffmpeg_exit": 0,
+  "decode_errors": [],
+  "decode_error_count": 0,
+  "black_windows": [],
+  "freeze_starts": [],
+  "silences": [],
+  "integrated_lufs": -15.3,
+  "lra_lu": 1.9,
+  "true_peak_dbtp": -2.5,
+  "sample_peak_db": -2.535999,
+  "clipping": false,
+  "pass": true
+}

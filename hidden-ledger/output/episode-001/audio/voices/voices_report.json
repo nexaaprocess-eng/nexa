@@ -1,0 +1,49 @@
+{
+  "text": "You order a jacket online, and three days later, you send it back. The label is free. The refund arrives. But the jacket's journey is only beginning. It gets scanned, trucked, sorted, and inspected... and every step costs somebody something. In 2025, the National Retail Federation projected $849.9 billion in returned merchandise. So who actually pays for a free return?",
+  "tts_text": "You order a jacket online, and three days later, you send it back. The label is free. The refund arrives. But the jacket's journey is only beginning. It gets scanned, trucked, sorted, and inspected... and every step costs somebody something. In twenty twenty-five, the National Retail Federation projected 849.9 billion dollars in returned merchandise. So who actually pays for a free return?",
+  "speed": 0.96,
+  "results": [
+    {
+      "duration": 26.81,
+      "peak_db": -3.0,
+      "rms_db": -26.47,
+      "silence_ratio": 0.201,
+      "longest_silence": 0.6,
+      "clipped_samples": 0,
+      "voice": "am_michael",
+      "ok": true,
+      "file": "output/episode-001/audio/voices/voice_am_michael.wav",
+      "ffprobe_duration": 26.81,
+      "render_seconds": 14.8,
+      "wpm": 134.3
+    },
+    {
+      "duration": 23.381,
+      "peak_db": -3.0,
+      "rms_db": -20.81,
+      "silence_ratio": 0.172,
+      "longest_silence": 0.58,
+      "clipped_samples": 0,
+      "voice": "am_adam",
+      "ok": true,
+      "file": "output/episode-001/audio/voices/voice_am_adam.wav",
+      "ffprobe_duration": 23.381333,
+      "render_seconds": 8.0,
+      "wpm": 154.0
+    },
+    {
+      "duration": 25.02,
+      "peak_db": -3.0,
+      "rms_db": -25.07,
+      "silence_ratio": 0.193,
+      "longest_silence": 0.62,
+      "clipped_samples": 0,
+      "voice": "af_heart",
+      "ok": true,
+      "file": "output/episode-001/audio/voices/voice_af_heart.wav",
+      "ffprobe_duration": 25.02,
+      "render_seconds": 8.3,
+      "wpm": 143.9
+    }
+  ]
+}

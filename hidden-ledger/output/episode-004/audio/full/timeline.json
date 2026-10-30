@@ -1,0 +1,7498 @@
+{
+  "episode": "004",
+  "title": "How Can Airlines Sell Flights for Just $20?",
+  "name": "full",
+  "fps": 30,
+  "duration": 482.17,
+  "durationInFrames": 14466,
+  "voice": "chatterbox(ex=0.45,cfg=0.5,T=0.8)",
+  "scenes": [
+    {
+      "id": "s01",
+      "title": "Cold open",
+      "chapter": "The twenty-dollar flight",
+      "music": "intro",
+      "start": 0.0,
+      "end": 39.63,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s01-01",
+          "text": "Meet our passenger. They want to visit a friend in another city, and the airline's website says the flight costs twenty dollars.",
+          "start": 0.4,
+          "end": 6.43,
+          "duration": 6.03,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              0.4,
+              "Meet"
+            ],
+            [
+              0.56,
+              "our"
+            ],
+            [
+              0.66,
+              "passenger."
+            ],
+            [
+              1.74,
+              "They"
+            ],
+            [
+              1.74,
+              "want"
+            ],
+            [
+              1.88,
+              "to"
+            ],
+            [
+              2.04,
+              "visit"
+            ],
+            [
+              2.18,
+              "a"
+            ],
+            [
+              2.3,
+              "friend"
+            ],
+            [
+              2.56,
+              "in"
+            ],
+            [
+              2.8,
+              "another"
+            ],
+            [
+              2.94,
+              "city,"
+            ],
+            [
+              3.64,
+              "and"
+            ],
+            [
+              3.68,
+              "the"
+            ],
+            [
+              3.78,
+              "airline's"
+            ],
+            [
+              4.18,
+              "website"
+            ],
+            [
+              4.3,
+              "says"
+            ],
+            [
+              4.74,
+              "the"
+            ],
+            [
+              4.88,
+              "flight"
+            ],
+            [
+              5.02,
+              "costs"
+            ],
+            [
+              5.28,
+              "$20."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s01-02",
+          "text": "Twenty dollars, to fly. So they book it.",
+          "start": 6.93,
+          "end": 9.2,
+          "duration": 2.27,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              6.93,
+              "$20"
+            ],
+            [
+              7.21,
+              "to"
+            ],
+            [
+              7.77,
+              "fly,"
+            ],
+            [
+              8.43,
+              "so"
+            ],
+            [
+              8.63,
+              "they"
+            ],
+            [
+              8.77,
+              "book"
+            ],
+            [
+              8.87,
+              "it."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s01-03",
+          "text": "Then the checkout keeps going. A cabin bag: $25. A window seat: $12. A checked suitcase: $35.",
+          "start": 9.7,
+          "end": 17.37,
+          "duration": 7.67,
+          "claims": [
+            "I01"
+          ],
+          "duck": false,
+          "words": [
+            [
+              9.7,
+              "Then"
+            ],
+            [
+              9.96,
+              "the"
+            ],
+            [
+              10.2,
+              "checkout"
+            ],
+            [
+              10.4,
+              "keeps"
+            ],
+            [
+              10.74,
+              "going,"
+            ],
+            [
+              11.62,
+              "a"
+            ],
+            [
+              11.64,
+              "cabin"
+            ],
+            [
+              11.82,
+              "bag"
+            ],
+            [
+              12.16,
+              "$25,"
+            ],
+            [
+              13.6,
+              "a"
+            ],
+            [
+              13.8,
+              "window"
+            ],
+            [
+              13.92,
+              "seat"
+            ],
+            [
+              14.32,
+              "$12,"
+            ],
+            [
+              15.32,
+              "a"
+            ],
+            [
+              15.44,
+              "checked"
+            ],
+            [
+              15.58,
+              "suitcase"
+            ],
+            [
+              15.86,
+              "$35,"
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s01-04",
+          "text": "The twenty-dollar flight now costs $92. Those prices are a made-up example. The pattern is real.",
+          "start": 17.87,
+          "end": 23.58,
+          "duration": 5.71,
+          "claims": [
+            "I01"
+          ],
+          "duck": true,
+          "words": [
+            [
+              17.87,
+              "The"
+            ],
+            [
+              18.01,
+              "$20"
+            ],
+            [
+              18.25,
+              "flight"
+            ],
+            [
+              18.65,
+              "now"
+            ],
+            [
+              18.85,
+              "costs"
+            ],
+            [
+              19.13,
+              "$92."
+            ],
+            [
+              20.57,
+              "Those"
+            ],
+            [
+              20.75,
+              "prices"
+            ],
+            [
+              21.03,
+              "are"
+            ],
+            [
+              21.45,
+              "a"
+            ],
+            [
+              21.49,
+              "made"
+            ],
+            [
+              21.63,
+              "-up"
+            ],
+            [
+              21.75,
+              "example."
+            ],
+            [
+              22.61,
+              "The"
+            ],
+            [
+              22.61,
+              "pattern"
+            ],
+            [
+              22.81,
+              "is"
+            ],
+            [
+              23.05,
+              "real."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s01-05",
+          "text": "At the American budget airline Frontier, the average passenger in 2025 paid $44.60 in fares, and another $63.79 in other charges.",
+          "start": 24.08,
+          "end": 34.19,
+          "duration": 10.11,
+          "claims": [
+            "F01"
+          ],
+          "duck": true,
+          "words": [
+            [
+              24.08,
+              "At"
+            ],
+            [
+              24.22,
+              "the"
+            ],
+            [
+              24.32,
+              "American"
+            ],
+            [
+              24.58,
+              "budget"
+            ],
+            [
+              24.98,
+              "airline"
+            ],
+            [
+              25.26,
+              "frontier,"
+            ],
+            [
+              26.28,
+              "the"
+            ],
+            [
+              26.32,
+              "average"
+            ],
+            [
+              26.48,
+              "passenger"
+            ],
+            [
+              26.86,
+              "in"
+            ],
+            [
+              27.22,
+              "2025"
+            ],
+            [
+              27.74,
+              "paid"
+            ],
+            [
+              28.24,
+              "$44"
+            ],
+            [
+              28.64,
+              ".60"
+            ],
+            [
+              29.54,
+              "in"
+            ],
+            [
+              30.06,
+              "fares"
+            ],
+            [
+              30.26,
+              "and"
+            ],
+            [
+              30.9,
+              "another"
+            ],
+            [
+              31.1,
+              "$63"
+            ],
+            [
+              31.7,
+              ".79"
+            ],
+            [
+              32.66,
+              "in"
+            ],
+            [
+              33.24,
+              "other"
+            ],
+            [
+              33.4,
+              "charges."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s01-06",
+          "text": "So how can an airline sell a flight for twenty dollars? And who is really paying for it?",
+          "start": 34.69,
+          "end": 38.98,
+          "duration": 4.29,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              34.69,
+              "So"
+            ],
+            [
+              34.87,
+              "how"
+            ],
+            [
+              35.07,
+              "can"
+            ],
+            [
+              35.23,
+              "an"
+            ],
+            [
+              35.35,
+              "airline"
+            ],
+            [
+              35.55,
+              "sell"
+            ],
+            [
+              35.95,
+              "a"
+            ],
+            [
+              36.05,
+              "flight"
+            ],
+            [
+              36.23,
+              "for"
+            ],
+            [
+              36.41,
+              "$20,"
+            ],
+            [
+              37.25,
+              "and"
+            ],
+            [
+              37.59,
+              "who"
+            ],
+            [
+              37.77,
+              "is"
+            ],
+            [
+              37.89,
+              "really"
+            ],
+            [
+              38.07,
+              "paying"
+            ],
+            [
+              38.33,
+              "for"
+            ],
+            [
+              38.61,
+              "it?"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "title": "What a flight costs",
+      "chapter": "What one passenger costs to fly",
+      "music": "neutral",
+      "start": 39.63,
+      "end": 101.25,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s02-01",
+          "text": "To find out, follow our passenger onto the plane, and look at the bill for the flight itself.",
+          "start": 40.28,
+          "end": 45.21,
+          "duration": 4.93,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              40.28,
+              "To"
+            ],
+            [
+              40.36,
+              "find"
+            ],
+            [
+              40.56,
+              "out,"
+            ],
+            [
+              41.26,
+              "follow"
+            ],
+            [
+              41.6,
+              "our"
+            ],
+            [
+              41.78,
+              "passenger"
+            ],
+            [
+              42.12,
+              "onto"
+            ],
+            [
+              42.44,
+              "the"
+            ],
+            [
+              42.62,
+              "plane"
+            ],
+            [
+              42.86,
+              "and"
+            ],
+            [
+              43.44,
+              "look"
+            ],
+            [
+              43.62,
+              "at"
+            ],
+            [
+              43.74,
+              "the"
+            ],
+            [
+              43.84,
+              "bill"
+            ],
+            [
+              43.98,
+              "for"
+            ],
+            [
+              44.22,
+              "the"
+            ],
+            [
+              44.28,
+              "flight"
+            ],
+            [
+              44.48,
+              "itself."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s02-02",
+          "text": "Europe's largest budget airline, Ryanair, publishes that bill every year. In the twelve months to March 2026, it carried 208 million passengers.",
+          "start": 45.71,
+          "end": 53.84,
+          "duration": 8.13,
+          "claims": [
+            "R01"
+          ],
+          "duck": false,
+          "words": [
+            [
+              45.71,
+              "Europe's"
+            ],
+            [
+              46.07,
+              "largest"
+            ],
+            [
+              46.29,
+              "budget"
+            ],
+            [
+              46.51,
+              "airline,"
+            ],
+            [
+              47.25,
+              "Ryan"
+            ],
+            [
+              47.39,
+              "Eyre,"
+            ],
+            [
+              48.07,
+              "publishes"
+            ],
+            [
+              48.29,
+              "that"
+            ],
+            [
+              48.57,
+              "bill"
+            ],
+            [
+              48.77,
+              "every"
+            ],
+            [
+              49.05,
+              "year."
+            ],
+            [
+              49.97,
+              "In"
+            ],
+            [
+              49.99,
+              "the"
+            ],
+            [
+              50.05,
+              "12"
+            ],
+            [
+              50.21,
+              "months"
+            ],
+            [
+              50.43,
+              "to"
+            ],
+            [
+              50.67,
+              "March"
+            ],
+            [
+              50.81,
+              "2026,"
+            ],
+            [
+              51.83,
+              "it"
+            ],
+            [
+              51.85,
+              "carried"
+            ],
+            [
+              52.03,
+              "208"
+            ],
+            [
+              52.37,
+              "million"
+            ],
+            [
+              52.91,
+              "passengers."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s02-03",
+          "text": "Averaged over all of them, flying one passenger cost Ryanair €63.21.",
+          "start": 54.34,
+          "end": 59.9,
+          "duration": 5.56,
+          "claims": [
+            "R02"
+          ],
+          "duck": true,
+          "words": [
+            [
+              54.34,
+              "Averaged"
+            ],
+            [
+              54.76,
+              "over"
+            ],
+            [
+              54.96,
+              "all"
+            ],
+            [
+              55.22,
+              "of"
+            ],
+            [
+              55.34,
+              "them,"
+            ],
+            [
+              55.8,
+              "flying"
+            ],
+            [
+              56.0,
+              "one"
+            ],
+            [
+              56.3,
+              "passenger"
+            ],
+            [
+              56.66,
+              "cost"
+            ],
+            [
+              57.04,
+              "Ryan"
+            ],
+            [
+              57.36,
+              "Air"
+            ],
+            [
+              57.68,
+              "63"
+            ],
+            [
+              58.0,
+              "Euros"
+            ],
+            [
+              58.58,
+              "and"
+            ],
+            [
+              58.84,
+              "21"
+            ],
+            [
+              59.14,
+              "cents."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s02-04",
+          "text": "The biggest slice is fuel: €26, about 41 percent of all its costs. Then staff, about €9. Airport and handling fees, about €8.50. The aircraft themselves, about €6.60. Air traffic control charges, about €6.30. And then sales, maintenance and everything else.",
+          "start": 60.4,
+          "end": 77.88,
+          "duration": 17.48,
+          "claims": [
+            "R02",
+            "R03"
+          ],
+          "duck": false,
+          "words": [
+            [
+              60.4,
+              "The"
+            ],
+            [
+              60.52,
+              "biggest"
+            ],
+            [
+              60.7,
+              "slice"
+            ],
+            [
+              60.98,
+              "is"
+            ],
+            [
+              61.26,
+              "fuel,"
+            ],
+            [
+              62.24,
+              "26"
+            ],
+            [
+              62.24,
+              "euros,"
+            ],
+            [
+              62.88,
+              "about"
+            ],
+            [
+              63.0,
+              "41"
+            ],
+            [
+              63.34,
+              "%"
+            ],
+            [
+              63.76,
+              "of"
+            ],
+            [
+              63.98,
+              "all"
+            ],
+            [
+              64.12,
+              "its"
+            ],
+            [
+              64.24,
+              "costs,"
+            ],
+            [
+              65.42,
+              "then"
+            ],
+            [
+              65.42,
+              "staff,"
+            ],
+            [
+              66.1,
+              "about"
+            ],
+            [
+              66.26,
+              "9"
+            ],
+            [
+              66.5,
+              "euros,"
+            ],
+            [
+              67.66,
+              "airport"
+            ],
+            [
+              67.66,
+              "and"
+            ],
+            [
+              67.86,
+              "handling"
+            ],
+            [
+              68.16,
+              "fees,"
+            ],
+            [
+              68.68,
+              "about"
+            ],
+            [
+              68.8,
+              "8"
+            ],
+            [
+              69.04,
+              "euros"
+            ],
+            [
+              69.26,
+              "50,"
+            ],
+            [
+              70.18,
+              "the"
+            ],
+            [
+              70.24,
+              "aircraft"
+            ],
+            [
+              70.38,
+              "themselves,"
+            ],
+            [
+              71.24,
+              "about"
+            ],
+            [
+              71.42,
+              "6"
+            ],
+            [
+              71.62,
+              "euros"
+            ],
+            [
+              71.88,
+              "60,"
+            ],
+            [
+              72.96,
+              "air"
+            ],
+            [
+              73.04,
+              "traffic"
+            ],
+            [
+              73.28,
+              "control"
+            ],
+            [
+              73.58,
+              "charges,"
+            ],
+            [
+              74.26,
+              "about"
+            ],
+            [
+              74.38,
+              "6"
+            ],
+            [
+              74.6,
+              "euros"
+            ],
+            [
+              74.86,
+              "30,"
+            ],
+            [
+              75.7,
+              "and"
+            ],
+            [
+              75.9,
+              "then"
+            ],
+            [
+              76.0,
+              "sales,"
+            ],
+            [
+              76.56,
+              "maintenance,"
+            ],
+            [
+              76.94,
+              "and"
+            ],
+            [
+              77.02,
+              "everything"
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s02-05",
+          "text": "Fuel alone is close to half of that bill. Remember that: when oil prices jump, budget airlines feel it first.",
+          "start": 78.38,
+          "end": 84.19,
+          "duration": 5.81,
+          "claims": [
+            "R03"
+          ],
+          "duck": false,
+          "words": [
+            [
+              78.38,
+              "Fuel"
+            ],
+            [
+              78.52,
+              "alone"
+            ],
+            [
+              78.84,
+              "is"
+            ],
+            [
+              79.16,
+              "close"
+            ],
+            [
+              79.34,
+              "to"
+            ],
+            [
+              79.52,
+              "half"
+            ],
+            [
+              79.7,
+              "of"
+            ],
+            [
+              79.86,
+              "that"
+            ],
+            [
+              80.02,
+              "bill."
+            ],
+            [
+              80.7,
+              "Remember"
+            ],
+            [
+              80.82,
+              "that,"
+            ],
+            [
+              81.4,
+              "when"
+            ],
+            [
+              81.48,
+              "oil"
+            ],
+            [
+              81.64,
+              "prices"
+            ],
+            [
+              81.9,
+              "jump,"
+            ],
+            [
+              82.56,
+              "budget"
+            ],
+            [
+              82.74,
+              "airlines"
+            ],
+            [
+              83.02,
+              "feel"
+            ],
+            [
+              83.42,
+              "it"
+            ],
+            [
+              83.56,
+              "first."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s02-06",
+          "text": "Now look at what the average passenger paid for the ticket: €50.66. And Ryanair counts checked bag fees and change fees inside that figure.",
+          "start": 84.69,
+          "end": 93.36,
+          "duration": 8.67,
+          "claims": [
+            "R02",
+            "R04"
+          ],
+          "duck": true,
+          "words": [
+            [
+              84.69,
+              "Now"
+            ],
+            [
+              84.83,
+              "look"
+            ],
+            [
+              85.09,
+              "at"
+            ],
+            [
+              85.25,
+              "what"
+            ],
+            [
+              85.41,
+              "the"
+            ],
+            [
+              85.53,
+              "average"
+            ],
+            [
+              85.71,
+              "passenger"
+            ],
+            [
+              86.11,
+              "paid"
+            ],
+            [
+              86.43,
+              "for"
+            ],
+            [
+              86.65,
+              "the"
+            ],
+            [
+              86.75,
+              "ticket,"
+            ],
+            [
+              87.31,
+              "50"
+            ],
+            [
+              87.49,
+              "euros"
+            ],
+            [
+              87.85,
+              "and"
+            ],
+            [
+              88.15,
+              "66"
+            ],
+            [
+              88.43,
+              "cents,"
+            ],
+            [
+              89.61,
+              "and"
+            ],
+            [
+              89.73,
+              "Ryan"
+            ],
+            [
+              89.95,
+              "Aircount's"
+            ],
+            [
+              90.57,
+              "checked"
+            ],
+            [
+              90.77,
+              "bag"
+            ],
+            [
+              91.03,
+              "fees"
+            ],
+            [
+              91.31,
+              "and"
+            ],
+            [
+              91.57,
+              "change"
+            ],
+            [
+              91.75,
+              "fees"
+            ],
+            [
+              92.09,
+              "inside"
+            ],
+            [
+              92.39,
+              "that"
+            ],
+            [
+              92.71,
+              "figure."
+            ]
+          ]
+        },
+        {
+          "id": "07",
+          "key": "s02-07",
+          "text": "So on the fare alone, the average passenger is flown at a loss. The gap gets closed somewhere else. To see where, we need three secrets.",
+          "start": 93.86,
+          "end": 100.6,
+          "duration": 6.74,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              93.86,
+              "So"
+            ],
+            [
+              93.98,
+              "on"
+            ],
+            [
+              94.1,
+              "the"
+            ],
+            [
+              94.18,
+              "fair"
+            ],
+            [
+              94.32,
+              "alone,"
+            ],
+            [
+              94.98,
+              "the"
+            ],
+            [
+              95.02,
+              "average"
+            ],
+            [
+              95.24,
+              "passenger"
+            ],
+            [
+              95.52,
+              "has"
+            ],
+            [
+              95.84,
+              "flown"
+            ],
+            [
+              96.0,
+              "at"
+            ],
+            [
+              96.14,
+              "a"
+            ],
+            [
+              96.2,
+              "loss."
+            ],
+            [
+              96.88,
+              "The"
+            ],
+            [
+              96.9,
+              "gap"
+            ],
+            [
+              97.02,
+              "gets"
+            ],
+            [
+              97.24,
+              "closed"
+            ],
+            [
+              97.52,
+              "somewhere"
+            ],
+            [
+              97.84,
+              "else."
+            ],
+            [
+              98.68,
+              "To"
+            ],
+            [
+              98.7,
+              "see"
+            ],
+            [
+              98.84,
+              "where"
+            ],
+            [
+              99.14,
+              "we"
+            ],
+            [
+              99.44,
+              "need"
+            ],
+            [
+              99.58,
+              "three"
+            ],
+            [
+              99.78,
+              "secrets."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "title": "The empty seat",
+      "chapter": "Secret one: the empty seat",
+      "music": "process",
+      "start": 101.25,
+      "end": 164.9,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s03-01",
+          "text": "Secret one. Most of what a flight costs does not depend on who is sitting in it.",
+          "start": 101.9,
+          "end": 105.86,
+          "duration": 3.96,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              101.9,
+              "Secret"
+            ],
+            [
+              102.2,
+              "One,"
+            ],
+            [
+              102.72,
+              "most"
+            ],
+            [
+              102.98,
+              "of"
+            ],
+            [
+              103.14,
+              "what"
+            ],
+            [
+              103.24,
+              "a"
+            ],
+            [
+              103.3,
+              "flight"
+            ],
+            [
+              103.48,
+              "costs,"
+            ],
+            [
+              104.16,
+              "does"
+            ],
+            [
+              104.22,
+              "not"
+            ],
+            [
+              104.44,
+              "depend"
+            ],
+            [
+              104.72,
+              "on"
+            ],
+            [
+              104.96,
+              "who"
+            ],
+            [
+              105.08,
+              "is"
+            ],
+            [
+              105.18,
+              "sitting"
+            ],
+            [
+              105.34,
+              "in"
+            ],
+            [
+              105.52,
+              "it."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s03-02",
+          "text": "The crew gets paid, the fuel gets burned, and the airport sends its bill, whether the plane is full or half empty. Ryanair's own annual report says the operating costs of each flight do not vary significantly with the number of passengers flown.",
+          "start": 106.36,
+          "end": 117.55,
+          "duration": 11.19,
+          "claims": [
+            "R05"
+          ],
+          "duck": false,
+          "words": [
+            [
+              106.36,
+              "The"
+            ],
+            [
+              106.44,
+              "crew"
+            ],
+            [
+              106.56,
+              "gets"
+            ],
+            [
+              106.74,
+              "paid,"
+            ],
+            [
+              107.4,
+              "the"
+            ],
+            [
+              107.42,
+              "fuel"
+            ],
+            [
+              107.6,
+              "gets"
+            ],
+            [
+              107.78,
+              "burned,"
+            ],
+            [
+              108.36,
+              "and"
+            ],
+            [
+              108.42,
+              "the"
+            ],
+            [
+              108.52,
+              "airport"
+            ],
+            [
+              108.7,
+              "sends"
+            ],
+            [
+              109.02,
+              "its"
+            ],
+            [
+              109.18,
+              "bill,"
+            ],
+            [
+              109.62,
+              "whether"
+            ],
+            [
+              109.7,
+              "the"
+            ],
+            [
+              109.88,
+              "plane"
+            ],
+            [
+              110.04,
+              "is"
+            ],
+            [
+              110.16,
+              "full"
+            ],
+            [
+              110.38,
+              "or"
+            ],
+            [
+              110.6,
+              "half"
+            ],
+            [
+              110.76,
+              "empty."
+            ],
+            [
+              111.54,
+              "Ryan"
+            ],
+            [
+              111.7,
+              "Ayer's"
+            ],
+            [
+              112.14,
+              "own"
+            ],
+            [
+              112.3,
+              "annual"
+            ],
+            [
+              112.56,
+              "report"
+            ],
+            [
+              113.0,
+              "says"
+            ],
+            [
+              113.22,
+              "the"
+            ],
+            [
+              113.36,
+              "operating"
+            ],
+            [
+              113.68,
+              "costs"
+            ],
+            [
+              113.98,
+              "of"
+            ],
+            [
+              114.26,
+              "each"
+            ],
+            [
+              114.36,
+              "flight"
+            ],
+            [
+              114.62,
+              "do"
+            ],
+            [
+              114.84,
+              "not"
+            ],
+            [
+              114.98,
+              "vary"
+            ],
+            [
+              115.16,
+              "significantly"
+            ],
+            [
+              115.6,
+              "with"
+            ],
+            [
+              116.06,
+              "the"
+            ],
+            [
+              116.12,
+              "number"
+            ],
+            [
+              116.34,
+              "of"
+            ],
+            [
+              116.44,
+              "passengers"
+            ],
+            [
+              116.78,
+              "flown."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s03-03",
+          "text": "Averaged across the year, one Ryanair flight cost about €11,400 to operate, and carried about 181 passengers.",
+          "start": 118.05,
+          "end": 125.17,
+          "duration": 7.12,
+          "claims": [
+            "C01"
+          ],
+          "duck": true,
+          "words": [
+            [
+              118.05,
+              "Averaged"
+            ],
+            [
+              118.43,
+              "across"
+            ],
+            [
+              118.61,
+              "the"
+            ],
+            [
+              118.89,
+              "year,"
+            ],
+            [
+              119.47,
+              "one"
+            ],
+            [
+              119.61,
+              "Ryan"
+            ],
+            [
+              119.81,
+              "air"
+            ],
+            [
+              120.09,
+              "flight"
+            ],
+            [
+              120.31,
+              "cost"
+            ],
+            [
+              120.53,
+              "about"
+            ],
+            [
+              120.77,
+              "11"
+            ],
+            [
+              121.01,
+              ",400"
+            ],
+            [
+              121.53,
+              "euros"
+            ],
+            [
+              121.97,
+              "to"
+            ],
+            [
+              122.15,
+              "operate"
+            ],
+            [
+              122.41,
+              "and"
+            ],
+            [
+              123.01,
+              "carried"
+            ],
+            [
+              123.23,
+              "about"
+            ],
+            [
+              123.45,
+              "181"
+            ],
+            [
+              124.11,
+              "passengers."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s03-04",
+          "text": "And once the door closes, every empty seat around our passenger is gone for good. Like a concert ticket after the show, or a hotel room after midnight, it can never be sold again.",
+          "start": 125.67,
+          "end": 133.49,
+          "duration": 7.82,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              125.67,
+              "And"
+            ],
+            [
+              125.77,
+              "once"
+            ],
+            [
+              125.91,
+              "the"
+            ],
+            [
+              126.11,
+              "door"
+            ],
+            [
+              126.21,
+              "closes,"
+            ],
+            [
+              126.97,
+              "every"
+            ],
+            [
+              127.09,
+              "empty"
+            ],
+            [
+              127.33,
+              "seat"
+            ],
+            [
+              127.55,
+              "around"
+            ],
+            [
+              127.71,
+              "our"
+            ],
+            [
+              127.85,
+              "passenger"
+            ],
+            [
+              128.09,
+              "is"
+            ],
+            [
+              128.37,
+              "gone"
+            ],
+            [
+              128.55,
+              "for"
+            ],
+            [
+              128.71,
+              "good."
+            ],
+            [
+              129.35,
+              "Like"
+            ],
+            [
+              129.41,
+              "a"
+            ],
+            [
+              129.49,
+              "concert"
+            ],
+            [
+              129.73,
+              "ticket"
+            ],
+            [
+              129.91,
+              "after"
+            ],
+            [
+              130.09,
+              "the"
+            ],
+            [
+              130.25,
+              "show,"
+            ],
+            [
+              130.75,
+              "or"
+            ],
+            [
+              130.85,
+              "a"
+            ],
+            [
+              130.89,
+              "hotel"
+            ],
+            [
+              131.03,
+              "room"
+            ],
+            [
+              131.35,
+              "after"
+            ],
+            [
+              131.55,
+              "midnight,"
+            ],
+            [
+              132.29,
+              "it"
+            ],
+            [
+              132.37,
+              "can"
+            ],
+            [
+              132.47,
+              "never"
+            ],
+            [
+              132.65,
+              "be"
+            ],
+            [
+              132.77,
+              "sold"
+            ],
+            [
+              132.93,
+              "again."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s03-05",
+          "text": "One more passenger, though, adds only a little: some per-passenger fees and taxes, and a bit of extra fuel. So for the airline, a cheap seat beats an empty one.",
+          "start": 133.99,
+          "end": 141.63,
+          "duration": 7.64,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              133.99,
+              "One"
+            ],
+            [
+              134.13,
+              "more"
+            ],
+            [
+              134.27,
+              "passenger"
+            ],
+            [
+              134.57,
+              "though"
+            ],
+            [
+              134.89,
+              "adds"
+            ],
+            [
+              135.11,
+              "only"
+            ],
+            [
+              135.41,
+              "a"
+            ],
+            [
+              135.53,
+              "little,"
+            ],
+            [
+              136.11,
+              "some"
+            ],
+            [
+              136.21,
+              "per"
+            ],
+            [
+              136.39,
+              "passenger"
+            ],
+            [
+              136.75,
+              "fees"
+            ],
+            [
+              137.05,
+              "and"
+            ],
+            [
+              137.23,
+              "taxes,"
+            ],
+            [
+              137.85,
+              "and"
+            ],
+            [
+              137.91,
+              "a"
+            ],
+            [
+              137.97,
+              "bit"
+            ],
+            [
+              138.13,
+              "of"
+            ],
+            [
+              138.21,
+              "extra"
+            ],
+            [
+              138.37,
+              "fuel."
+            ],
+            [
+              139.35,
+              "So"
+            ],
+            [
+              139.41,
+              "for"
+            ],
+            [
+              139.53,
+              "the"
+            ],
+            [
+              139.63,
+              "airline,"
+            ],
+            [
+              140.27,
+              "a"
+            ],
+            [
+              140.29,
+              "cheap"
+            ],
+            [
+              140.43,
+              "seat"
+            ],
+            [
+              140.65,
+              "beats"
+            ],
+            [
+              140.91,
+              "an"
+            ],
+            [
+              141.01,
+              "empty"
+            ],
+            [
+              141.11,
+              "one."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s03-06",
+          "text": "That changes the question. It is not, what does one seat cost? It is, how full does the plane need to be?",
+          "start": 142.13,
+          "end": 147.79,
+          "duration": 5.66,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              142.13,
+              "That"
+            ],
+            [
+              142.33,
+              "changes"
+            ],
+            [
+              142.49,
+              "the"
+            ],
+            [
+              142.73,
+              "question."
+            ],
+            [
+              143.61,
+              "It"
+            ],
+            [
+              143.65,
+              "is"
+            ],
+            [
+              143.73,
+              "not,"
+            ],
+            [
+              144.23,
+              "what"
+            ],
+            [
+              144.41,
+              "does"
+            ],
+            [
+              144.57,
+              "one"
+            ],
+            [
+              144.71,
+              "seat"
+            ],
+            [
+              144.93,
+              "cost,"
+            ],
+            [
+              145.79,
+              "it"
+            ],
+            [
+              145.95,
+              "is,"
+            ],
+            [
+              146.33,
+              "how"
+            ],
+            [
+              146.41,
+              "full"
+            ],
+            [
+              146.61,
+              "does"
+            ],
+            [
+              146.75,
+              "the"
+            ],
+            [
+              146.85,
+              "plane"
+            ],
+            [
+              147.03,
+              "need"
+            ],
+            [
+              147.21,
+              "to"
+            ],
+            [
+              147.37,
+              "be?"
+            ]
+          ]
+        },
+        {
+          "id": "07",
+          "key": "s03-07",
+          "text": "Ryanair calls that its break-even load factor. In its last financial year, it was 80 percent. Its planes were actually 94 percent full.",
+          "start": 148.29,
+          "end": 155.49,
+          "duration": 7.2,
+          "claims": [
+            "R06"
+          ],
+          "duck": true,
+          "words": [
+            [
+              148.29,
+              "Ryan"
+            ],
+            [
+              148.51,
+              "air"
+            ],
+            [
+              148.69,
+              "calls"
+            ],
+            [
+              148.93,
+              "that"
+            ],
+            [
+              149.27,
+              "it's"
+            ],
+            [
+              149.37,
+              "break"
+            ],
+            [
+              149.57,
+              "even"
+            ],
+            [
+              149.89,
+              "load"
+            ],
+            [
+              150.09,
+              "factor,"
+            ],
+            [
+              151.03,
+              "and"
+            ],
+            [
+              151.11,
+              "its"
+            ],
+            [
+              151.23,
+              "last"
+            ],
+            [
+              151.39,
+              "financial"
+            ],
+            [
+              151.67,
+              "year"
+            ],
+            [
+              152.15,
+              "it"
+            ],
+            [
+              152.33,
+              "was"
+            ],
+            [
+              152.43,
+              "80%,"
+            ],
+            [
+              153.05,
+              "its"
+            ],
+            [
+              153.43,
+              "planes"
+            ],
+            [
+              153.67,
+              "were"
+            ],
+            [
+              153.85,
+              "actually"
+            ],
+            [
+              154.05,
+              "94"
+            ],
+            [
+              154.41,
+              "%"
+            ],
+            [
+              154.95,
+              "full."
+            ]
+          ]
+        },
+        {
+          "id": "08",
+          "key": "s03-08",
+          "text": "Picture one of its Boeing jets, with 197 seats. Roughly the first 158 passengers pay for the flight. The next 27 or so are where the profit is.",
+          "start": 155.99,
+          "end": 164.25,
+          "duration": 8.26,
+          "claims": [
+            "I02",
+            "R08"
+          ],
+          "duck": true,
+          "words": [
+            [
+              155.99,
+              "Extra"
+            ],
+            [
+              156.19,
+              "one"
+            ],
+            [
+              156.39,
+              "of"
+            ],
+            [
+              156.49,
+              "its"
+            ],
+            [
+              156.61,
+              "Boeing"
+            ],
+            [
+              156.77,
+              "jets,"
+            ],
+            [
+              157.41,
+              "with"
+            ],
+            [
+              157.41,
+              "197"
+            ],
+            [
+              157.83,
+              "seats."
+            ],
+            [
+              159.23,
+              "Roughly"
+            ],
+            [
+              159.45,
+              "the"
+            ],
+            [
+              159.55,
+              "first"
+            ],
+            [
+              159.69,
+              "158"
+            ],
+            [
+              160.11,
+              "passengers"
+            ],
+            [
+              160.73,
+              "pay"
+            ],
+            [
+              161.03,
+              "for"
+            ],
+            [
+              161.19,
+              "the"
+            ],
+            [
+              161.29,
+              "flight."
+            ],
+            [
+              162.11,
+              "The"
+            ],
+            [
+              162.13,
+              "next"
+            ],
+            [
+              162.25,
+              "27"
+            ],
+            [
+              162.55,
+              "or"
+            ],
+            [
+              162.55,
+              "so"
+            ],
+            [
+              163.09,
+              "are"
+            ],
+            [
+              163.33,
+              "where"
+            ],
+            [
+              163.45,
+              "the"
+            ],
+            [
+              163.53,
+              "profit"
+            ],
+            [
+              163.73,
+              "is."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "title": "The price ladder",
+      "chapter": "Secret two: the price ladder",
+      "music": "tension",
+      "start": 164.9,
+      "end": 222.03,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s04-01",
+          "text": "Secret two. The twenty-dollar seats are real, but there are not many of them.",
+          "start": 165.55,
+          "end": 169.65,
+          "duration": 4.1,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              165.55,
+              "Secret"
+            ],
+            [
+              165.87,
+              "2."
+            ],
+            [
+              166.75,
+              "The"
+            ],
+            [
+              166.79,
+              "$20"
+            ],
+            [
+              167.09,
+              "seats"
+            ],
+            [
+              167.51,
+              "are"
+            ],
+            [
+              167.79,
+              "real,"
+            ],
+            [
+              168.33,
+              "but"
+            ],
+            [
+              168.41,
+              "there"
+            ],
+            [
+              168.53,
+              "are"
+            ],
+            [
+              168.61,
+              "not"
+            ],
+            [
+              168.81,
+              "many"
+            ],
+            [
+              169.03,
+              "of"
+            ],
+            [
+              169.17,
+              "them."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s04-02",
+          "text": "Budget airlines change their prices constantly. Ryanair says its fares vary with how far ahead you book, how many seats are left, and demand.",
+          "start": 170.15,
+          "end": 177.27,
+          "duration": 7.12,
+          "claims": [
+            "R09"
+          ],
+          "duck": false,
+          "words": [
+            [
+              170.15,
+              "Budget"
+            ],
+            [
+              170.35,
+              "airlines"
+            ],
+            [
+              170.61,
+              "change"
+            ],
+            [
+              170.95,
+              "their"
+            ],
+            [
+              171.19,
+              "prices"
+            ],
+            [
+              171.37,
+              "constantly."
+            ],
+            [
+              172.71,
+              "Ryan"
+            ],
+            [
+              172.71,
+              "Air"
+            ],
+            [
+              172.89,
+              "says"
+            ],
+            [
+              173.25,
+              "its"
+            ],
+            [
+              173.45,
+              "fares"
+            ],
+            [
+              173.63,
+              "vary"
+            ],
+            [
+              174.01,
+              "with"
+            ],
+            [
+              174.27,
+              "how"
+            ],
+            [
+              174.39,
+              "far"
+            ],
+            [
+              174.55,
+              "ahead"
+            ],
+            [
+              174.79,
+              "you"
+            ],
+            [
+              174.95,
+              "book,"
+            ],
+            [
+              175.53,
+              "how"
+            ],
+            [
+              175.61,
+              "many"
+            ],
+            [
+              175.73,
+              "seats"
+            ],
+            [
+              175.95,
+              "are"
+            ],
+            [
+              176.13,
+              "left,"
+            ],
+            [
+              176.63,
+              "and"
+            ],
+            [
+              176.65,
+              "demand."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s04-03",
+          "text": "And because it sells every journey one way, each seat on each flight can carry its own price.",
+          "start": 177.77,
+          "end": 183.08,
+          "duration": 5.31,
+          "claims": [
+            "R17"
+          ],
+          "duck": false,
+          "words": [
+            [
+              177.77,
+              "and"
+            ],
+            [
+              177.99,
+              "because"
+            ],
+            [
+              178.25,
+              "it"
+            ],
+            [
+              178.43,
+              "sells"
+            ],
+            [
+              178.57,
+              "every"
+            ],
+            [
+              178.91,
+              "journey"
+            ],
+            [
+              179.17,
+              "one"
+            ],
+            [
+              179.47,
+              "way,"
+            ],
+            [
+              180.17,
+              "each"
+            ],
+            [
+              180.41,
+              "seat"
+            ],
+            [
+              180.69,
+              "on"
+            ],
+            [
+              180.97,
+              "each"
+            ],
+            [
+              181.15,
+              "flight"
+            ],
+            [
+              181.45,
+              "can"
+            ],
+            [
+              181.73,
+              "carry"
+            ],
+            [
+              182.03,
+              "its"
+            ],
+            [
+              182.25,
+              "own"
+            ],
+            [
+              182.39,
+              "price."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s04-04",
+          "text": "Think of every flight as a ladder of prices. Our passenger booked weeks ahead, for a quiet Tuesday, and landed on the bottom rung.",
+          "start": 183.58,
+          "end": 189.86,
+          "duration": 6.28,
+          "claims": [
+            "I03"
+          ],
+          "duck": false,
+          "words": [
+            [
+              183.58,
+              "think"
+            ],
+            [
+              183.7,
+              "of"
+            ],
+            [
+              183.8,
+              "every"
+            ],
+            [
+              184.08,
+              "flight"
+            ],
+            [
+              184.36,
+              "as"
+            ],
+            [
+              184.62,
+              "a"
+            ],
+            [
+              184.68,
+              "ladder"
+            ],
+            [
+              184.9,
+              "of"
+            ],
+            [
+              185.04,
+              "prices."
+            ],
+            [
+              186.06,
+              "Our"
+            ],
+            [
+              186.12,
+              "passenger"
+            ],
+            [
+              186.42,
+              "booked"
+            ],
+            [
+              186.7,
+              "weeks"
+            ],
+            [
+              186.92,
+              "ahead"
+            ],
+            [
+              187.3,
+              "for"
+            ],
+            [
+              187.58,
+              "a"
+            ],
+            [
+              187.64,
+              "quiet"
+            ],
+            [
+              187.88,
+              "Tuesday"
+            ],
+            [
+              188.12,
+              "and"
+            ],
+            [
+              188.64,
+              "landed"
+            ],
+            [
+              188.78,
+              "on"
+            ],
+            [
+              189.02,
+              "the"
+            ],
+            [
+              189.12,
+              "bottom"
+            ],
+            [
+              189.32,
+              "rung."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s04-05",
+          "text": "As the plane fills up, each new seat costs more. The person in the next seat, who booked yesterday, may have paid many times as much, for exactly the same flight.",
+          "start": 190.36,
+          "end": 198.03,
+          "duration": 7.67,
+          "claims": [
+            "I03"
+          ],
+          "duck": false,
+          "words": [
+            [
+              190.36,
+              "as"
+            ],
+            [
+              190.52,
+              "the"
+            ],
+            [
+              190.62,
+              "plane"
+            ],
+            [
+              190.8,
+              "fills"
+            ],
+            [
+              191.02,
+              "up,"
+            ],
+            [
+              191.5,
+              "each"
+            ],
+            [
+              191.68,
+              "new"
+            ],
+            [
+              191.8,
+              "seat"
+            ],
+            [
+              192.06,
+              "costs"
+            ],
+            [
+              192.28,
+              "more."
+            ],
+            [
+              193.34,
+              "The"
+            ],
+            [
+              193.42,
+              "person"
+            ],
+            [
+              193.62,
+              "in"
+            ],
+            [
+              193.8,
+              "the"
+            ],
+            [
+              193.88,
+              "next"
+            ],
+            [
+              194.02,
+              "seat,"
+            ],
+            [
+              194.32,
+              "who"
+            ],
+            [
+              194.56,
+              "booked"
+            ],
+            [
+              194.7,
+              "yesterday,"
+            ],
+            [
+              195.42,
+              "may"
+            ],
+            [
+              195.5,
+              "have"
+            ],
+            [
+              195.62,
+              "paid"
+            ],
+            [
+              195.76,
+              "many"
+            ],
+            [
+              195.94,
+              "times"
+            ],
+            [
+              196.24,
+              "as"
+            ],
+            [
+              196.38,
+              "much"
+            ],
+            [
+              196.54,
+              "for"
+            ],
+            [
+              196.82,
+              "exactly"
+            ],
+            [
+              196.98,
+              "the"
+            ],
+            [
+              197.34,
+              "same"
+            ],
+            [
+              197.5,
+              "flight."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s04-06",
+          "text": "Those cheap seats do a job. They fill the plane early, they put the airline's name at the top of every price comparison, and they bring you to its website.",
+          "start": 198.53,
+          "end": 205.66,
+          "duration": 7.13,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              198.53,
+              "Those"
+            ],
+            [
+              198.77,
+              "cheap"
+            ],
+            [
+              198.97,
+              "seats"
+            ],
+            [
+              199.23,
+              "do"
+            ],
+            [
+              199.51,
+              "a"
+            ],
+            [
+              199.59,
+              "job."
+            ],
+            [
+              200.53,
+              "They"
+            ],
+            [
+              200.55,
+              "fill"
+            ],
+            [
+              200.73,
+              "the"
+            ],
+            [
+              200.89,
+              "plane"
+            ],
+            [
+              201.03,
+              "early,"
+            ],
+            [
+              201.79,
+              "they"
+            ],
+            [
+              201.81,
+              "put"
+            ],
+            [
+              201.95,
+              "the"
+            ],
+            [
+              202.07,
+              "airline's"
+            ],
+            [
+              202.45,
+              "name"
+            ],
+            [
+              202.61,
+              "at"
+            ],
+            [
+              202.75,
+              "the"
+            ],
+            [
+              202.81,
+              "top"
+            ],
+            [
+              203.01,
+              "of"
+            ],
+            [
+              203.15,
+              "every"
+            ],
+            [
+              203.37,
+              "price"
+            ],
+            [
+              203.57,
+              "comparison,"
+            ],
+            [
+              204.37,
+              "and"
+            ],
+            [
+              204.41,
+              "they"
+            ],
+            [
+              204.51,
+              "bring"
+            ],
+            [
+              204.65,
+              "you"
+            ],
+            [
+              204.77,
+              "to"
+            ],
+            [
+              204.89,
+              "its"
+            ],
+            [
+              205.01,
+              "website."
+            ]
+          ]
+        },
+        {
+          "id": "07",
+          "key": "s04-07",
+          "text": "Ryanair even has a name for this: load factor active, yield passive. In plain words: fill the plane first, and worry about the price of each seat second.",
+          "start": 206.16,
+          "end": 214.38,
+          "duration": 8.22,
+          "claims": [
+            "R09"
+          ],
+          "duck": false,
+          "words": [
+            [
+              206.16,
+              "Ryanair"
+            ],
+            [
+              206.62,
+              "even"
+            ],
+            [
+              206.88,
+              "has"
+            ],
+            [
+              207.08,
+              "a"
+            ],
+            [
+              207.16,
+              "name"
+            ],
+            [
+              207.34,
+              "for"
+            ],
+            [
+              207.48,
+              "this,"
+            ],
+            [
+              208.12,
+              "load"
+            ],
+            [
+              208.22,
+              "-factor"
+            ],
+            [
+              208.44,
+              "active,"
+            ],
+            [
+              209.34,
+              "yield"
+            ],
+            [
+              209.46,
+              "passive."
+            ],
+            [
+              210.56,
+              "In"
+            ],
+            [
+              210.58,
+              "plain"
+            ],
+            [
+              210.72,
+              "words,"
+            ],
+            [
+              211.38,
+              "fill"
+            ],
+            [
+              211.44,
+              "the"
+            ],
+            [
+              211.58,
+              "plane"
+            ],
+            [
+              211.74,
+              "first"
+            ],
+            [
+              212.0,
+              "and"
+            ],
+            [
+              212.36,
+              "worry"
+            ],
+            [
+              212.52,
+              "about"
+            ],
+            [
+              212.82,
+              "the"
+            ],
+            [
+              212.94,
+              "price"
+            ],
+            [
+              213.1,
+              "of"
+            ],
+            [
+              213.34,
+              "each"
+            ],
+            [
+              213.46,
+              "seat"
+            ],
+            [
+              213.64,
+              "second."
+            ]
+          ]
+        },
+        {
+          "id": "08",
+          "key": "s04-08",
+          "text": "It admits that promotional fares can lower its revenue on those routes while they run. It keeps running them anyway, to fill quiet periods.",
+          "start": 214.88,
+          "end": 221.38,
+          "duration": 6.5,
+          "claims": [
+            "R09"
+          ],
+          "duck": false,
+          "words": [
+            [
+              214.88,
+              "It"
+            ],
+            [
+              215.0,
+              "admits"
+            ],
+            [
+              215.2,
+              "that"
+            ],
+            [
+              215.52,
+              "promotional"
+            ],
+            [
+              215.7,
+              "fairs"
+            ],
+            [
+              216.36,
+              "can"
+            ],
+            [
+              216.48,
+              "lower"
+            ],
+            [
+              216.74,
+              "its"
+            ],
+            [
+              216.94,
+              "revenue"
+            ],
+            [
+              217.16,
+              "on"
+            ],
+            [
+              217.4,
+              "those"
+            ],
+            [
+              217.56,
+              "routes"
+            ],
+            [
+              217.78,
+              "while"
+            ],
+            [
+              218.04,
+              "they"
+            ],
+            [
+              218.18,
+              "run."
+            ],
+            [
+              218.92,
+              "It"
+            ],
+            [
+              218.98,
+              "keeps"
+            ],
+            [
+              219.14,
+              "running"
+            ],
+            [
+              219.36,
+              "them"
+            ],
+            [
+              219.56,
+              "anyway"
+            ],
+            [
+              219.92,
+              "to"
+            ],
+            [
+              220.22,
+              "fill"
+            ],
+            [
+              220.36,
+              "quiet"
+            ],
+            [
+              220.64,
+              "periods."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "title": "Paying for the rest",
+      "chapter": "Secret three: everything else is extra",
+      "music": "lift",
+      "start": 222.03,
+      "end": 302.63,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s05-01",
+          "text": "Secret three. A budget fare buys you less than you might think.",
+          "start": 222.68,
+          "end": 225.96,
+          "duration": 3.28,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              222.68,
+              "Secret"
+            ],
+            [
+              222.96,
+              "3."
+            ],
+            [
+              223.64,
+              "A"
+            ],
+            [
+              223.76,
+              "budget"
+            ],
+            [
+              223.96,
+              "fair"
+            ],
+            [
+              224.24,
+              "buys"
+            ],
+            [
+              224.54,
+              "you"
+            ],
+            [
+              224.72,
+              "less"
+            ],
+            [
+              224.94,
+              "than"
+            ],
+            [
+              225.18,
+              "you"
+            ],
+            [
+              225.26,
+              "might"
+            ],
+            [
+              225.4,
+              "think."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s05-02",
+          "text": "At the gate, our passenger finds out what the fare included. Usually, a seat and one small bag that fits under the seat in front. Almost everything else is sold separately: a bigger bag, a suitcase, choosing your seat, boarding early, changing your ticket, even a drink on board.",
+          "start": 226.46,
+          "end": 240.21,
+          "duration": 13.75,
+          "claims": [
+            "F03"
+          ],
+          "duck": false,
+          "words": [
+            [
+              226.46,
+              "At"
+            ],
+            [
+              226.58,
+              "the"
+            ],
+            [
+              226.64,
+              "gate,"
+            ],
+            [
+              227.1,
+              "our"
+            ],
+            [
+              227.18,
+              "passenger"
+            ],
+            [
+              227.44,
+              "finds"
+            ],
+            [
+              227.82,
+              "out"
+            ],
+            [
+              228.04,
+              "what"
+            ],
+            [
+              228.18,
+              "the"
+            ],
+            [
+              228.28,
+              "fare"
+            ],
+            [
+              228.42,
+              "included,"
+            ],
+            [
+              229.28,
+              "usually"
+            ],
+            [
+              229.48,
+              "a"
+            ],
+            [
+              229.86,
+              "seat"
+            ],
+            [
+              230.12,
+              "and"
+            ],
+            [
+              230.28,
+              "one"
+            ],
+            [
+              230.42,
+              "small"
+            ],
+            [
+              230.68,
+              "bag"
+            ],
+            [
+              230.94,
+              "that"
+            ],
+            [
+              231.14,
+              "fits"
+            ],
+            [
+              231.32,
+              "under"
+            ],
+            [
+              231.54,
+              "the"
+            ],
+            [
+              231.64,
+              "seat"
+            ],
+            [
+              231.86,
+              "in"
+            ],
+            [
+              231.96,
+              "front."
+            ],
+            [
+              232.76,
+              "Almost"
+            ],
+            [
+              232.96,
+              "everything"
+            ],
+            [
+              233.28,
+              "else"
+            ],
+            [
+              233.56,
+              "is"
+            ],
+            [
+              233.74,
+              "sold"
+            ],
+            [
+              233.9,
+              "separately,"
+            ],
+            [
+              234.58,
+              "a"
+            ],
+            [
+              234.7,
+              "bigger"
+            ],
+            [
+              234.82,
+              "bag,"
+            ],
+            [
+              235.38,
+              "a"
+            ],
+            [
+              235.4,
+              "suitcase,"
+            ],
+            [
+              236.12,
+              "choosing"
+            ],
+            [
+              236.44,
+              "your"
+            ],
+            [
+              236.62,
+              "seat,"
+            ],
+            [
+              237.14,
+              "boarding"
+            ],
+            [
+              237.38,
+              "early,"
+            ],
+            [
+              238.2,
+              "changing"
+            ],
+            [
+              238.38,
+              "your"
+            ],
+            [
+              238.58,
+              "ticket"
+            ],
+            [
+              238.78,
+              "even"
+            ],
+            [
+              239.14,
+              "a"
+            ],
+            [
+              239.34,
+              "drink"
+            ],
+            [
+              239.46,
+              "on"
+            ],
+            [
+              239.64,
+              "board."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s05-03",
+          "text": "At Ryanair, extras like priority boarding, reserved seats and onboard sales brought in €4.99 billion last year. That is about €24 per passenger, and roughly a third of all its revenue.",
+          "start": 240.71,
+          "end": 252.0,
+          "duration": 11.29,
+          "claims": [
+            "R10"
+          ],
+          "duck": true,
+          "words": [
+            [
+              240.71,
+              "At"
+            ],
+            [
+              240.85,
+              "Ryanair,"
+            ],
+            [
+              241.73,
+              "extras"
+            ],
+            [
+              241.91,
+              "like"
+            ],
+            [
+              242.17,
+              "priority"
+            ],
+            [
+              242.35,
+              "boarding,"
+            ],
+            [
+              243.35,
+              "reserve"
+            ],
+            [
+              243.47,
+              "seats"
+            ],
+            [
+              243.91,
+              "and"
+            ],
+            [
+              244.21,
+              "onboard"
+            ],
+            [
+              244.39,
+              "sales"
+            ],
+            [
+              244.83,
+              "brought"
+            ],
+            [
+              245.15,
+              "in"
+            ],
+            [
+              245.29,
+              "4"
+            ],
+            [
+              245.51,
+              ".99"
+            ],
+            [
+              246.03,
+              "billion"
+            ],
+            [
+              246.45,
+              "euros"
+            ],
+            [
+              246.75,
+              "last"
+            ],
+            [
+              247.11,
+              "year."
+            ],
+            [
+              248.09,
+              "That"
+            ],
+            [
+              248.17,
+              "is"
+            ],
+            [
+              248.31,
+              "about"
+            ],
+            [
+              248.49,
+              "24"
+            ],
+            [
+              248.81,
+              "euros"
+            ],
+            [
+              249.23,
+              "per"
+            ],
+            [
+              249.47,
+              "passenger"
+            ],
+            [
+              249.83,
+              "and"
+            ],
+            [
+              250.31,
+              "roughly"
+            ],
+            [
+              250.57,
+              "a"
+            ],
+            [
+              250.71,
+              "third"
+            ],
+            [
+              250.91,
+              "of"
+            ],
+            [
+              251.07,
+              "all"
+            ],
+            [
+              251.19,
+              "its"
+            ],
+            [
+              251.35,
+              "revenue."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s05-04",
+          "text": "Add the fare and the extras together, and Ryanair took in €74.60 per passenger, against a cost of €63.21. That gap, about €11 a passenger, is the profit.",
+          "start": 252.5,
+          "end": 263.43,
+          "duration": 10.93,
+          "claims": [
+            "R02",
+            "C02"
+          ],
+          "duck": true,
+          "words": [
+            [
+              252.5,
+              "Add"
+            ],
+            [
+              252.64,
+              "the"
+            ],
+            [
+              252.74,
+              "fare"
+            ],
+            [
+              252.94,
+              "and"
+            ],
+            [
+              253.14,
+              "the"
+            ],
+            [
+              253.24,
+              "extras"
+            ],
+            [
+              253.46,
+              "together,"
+            ],
+            [
+              254.28,
+              "and"
+            ],
+            [
+              254.36,
+              "Ryanair"
+            ],
+            [
+              254.84,
+              "took"
+            ],
+            [
+              255.1,
+              "in"
+            ],
+            [
+              255.26,
+              "74"
+            ],
+            [
+              255.76,
+              "euros"
+            ],
+            [
+              256.18,
+              "60"
+            ],
+            [
+              256.6,
+              "per"
+            ],
+            [
+              256.92,
+              "passenger"
+            ],
+            [
+              257.28,
+              "against"
+            ],
+            [
+              257.8,
+              "a"
+            ],
+            [
+              257.98,
+              "cost"
+            ],
+            [
+              258.24,
+              "of"
+            ],
+            [
+              258.42,
+              "63"
+            ],
+            [
+              258.74,
+              "euros"
+            ],
+            [
+              259.3,
+              "21."
+            ],
+            [
+              260.44,
+              "That"
+            ],
+            [
+              260.62,
+              "gap"
+            ],
+            [
+              260.86,
+              "about"
+            ],
+            [
+              261.24,
+              "11"
+            ],
+            [
+              261.5,
+              "euros"
+            ],
+            [
+              261.8,
+              "a"
+            ],
+            [
+              262.0,
+              "passenger"
+            ],
+            [
+              262.3,
+              "is"
+            ],
+            [
+              262.7,
+              "the"
+            ],
+            [
+              262.8,
+              "profit."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s05-05",
+          "text": "In the United States, the split can be even more extreme. Frontier's passengers paid more for extras than for their tickets: $63.79 in non-fare charges, against $44.60 in fares.",
+          "start": 263.93,
+          "end": 277.36,
+          "duration": 13.43,
+          "claims": [
+            "F01"
+          ],
+          "duck": true,
+          "words": [
+            [
+              263.93,
+              "In"
+            ],
+            [
+              264.05,
+              "the"
+            ],
+            [
+              264.15,
+              "United"
+            ],
+            [
+              264.39,
+              "States,"
+            ],
+            [
+              265.29,
+              "the"
+            ],
+            [
+              265.35,
+              "split"
+            ],
+            [
+              265.55,
+              "can"
+            ],
+            [
+              265.81,
+              "be"
+            ],
+            [
+              265.95,
+              "even"
+            ],
+            [
+              266.21,
+              "more"
+            ],
+            [
+              266.41,
+              "extreme."
+            ],
+            [
+              267.59,
+              "Frontiers"
+            ],
+            [
+              267.93,
+              "passengers"
+            ],
+            [
+              268.31,
+              "paid"
+            ],
+            [
+              268.75,
+              "more"
+            ],
+            [
+              268.99,
+              "for"
+            ],
+            [
+              269.17,
+              "extras"
+            ],
+            [
+              269.37,
+              "than"
+            ],
+            [
+              269.81,
+              "for"
+            ],
+            [
+              269.95,
+              "their"
+            ],
+            [
+              270.07,
+              "tickets,"
+            ],
+            [
+              270.93,
+              "$63"
+            ],
+            [
+              271.31,
+              ".79"
+            ],
+            [
+              272.43,
+              "in"
+            ],
+            [
+              273.11,
+              "non"
+            ],
+            [
+              273.27,
+              "-fair"
+            ],
+            [
+              273.53,
+              "charges"
+            ],
+            [
+              274.01,
+              "against"
+            ],
+            [
+              274.71,
+              "$44"
+            ],
+            [
+              275.21,
+              ".60"
+            ],
+            [
+              276.27,
+              "in"
+            ],
+            [
+              276.71,
+              "fares."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s05-06",
+          "text": "And Frontier's revenue from extras grew from $60.55 per passenger in 2021 to $67.57 in 2025.",
+          "start": 277.86,
+          "end": 286.72,
+          "duration": 8.86,
+          "claims": [
+            "F02"
+          ],
+          "duck": false,
+          "words": [
+            [
+              277.86,
+              "And"
+            ],
+            [
+              278.08,
+              "frontiers"
+            ],
+            [
+              278.52,
+              "revenue"
+            ],
+            [
+              278.74,
+              "from"
+            ],
+            [
+              279.38,
+              "extras"
+            ],
+            [
+              279.38,
+              "grew"
+            ],
+            [
+              279.7,
+              "from"
+            ],
+            [
+              279.94,
+              "$60"
+            ],
+            [
+              280.26,
+              ".55"
+            ],
+            [
+              281.26,
+              "per"
+            ],
+            [
+              281.64,
+              "passenger"
+            ],
+            [
+              282.0,
+              "in"
+            ],
+            [
+              282.32,
+              "2021"
+            ],
+            [
+              282.82,
+              "to"
+            ],
+            [
+              283.58,
+              "$67"
+            ],
+            [
+              284.12,
+              ".57"
+            ],
+            [
+              285.1,
+              "in"
+            ],
+            [
+              285.62,
+              "2025."
+            ]
+          ]
+        },
+        {
+          "id": "07",
+          "key": "s05-07",
+          "text": "That is the trick behind the twenty-dollar headline. The airline competes on the one number you compare across websites, the fare, and earns its money on the numbers you see later.",
+          "start": 287.22,
+          "end": 295.82,
+          "duration": 8.6,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              287.22,
+              "That"
+            ],
+            [
+              287.38,
+              "is"
+            ],
+            [
+              287.5,
+              "the"
+            ],
+            [
+              287.66,
+              "trick"
+            ],
+            [
+              287.82,
+              "behind"
+            ],
+            [
+              288.08,
+              "the"
+            ],
+            [
+              288.26,
+              "$20"
+            ],
+            [
+              288.52,
+              "headline."
+            ],
+            [
+              289.72,
+              "The"
+            ],
+            [
+              289.78,
+              "airline"
+            ],
+            [
+              289.94,
+              "competes"
+            ],
+            [
+              290.62,
+              "on"
+            ],
+            [
+              290.74,
+              "the"
+            ],
+            [
+              290.84,
+              "one"
+            ],
+            [
+              291.02,
+              "number"
+            ],
+            [
+              291.3,
+              "you"
+            ],
+            [
+              291.46,
+              "compare"
+            ],
+            [
+              291.72,
+              "across"
+            ],
+            [
+              292.06,
+              "websites,"
+            ],
+            [
+              292.94,
+              "the"
+            ],
+            [
+              292.96,
+              "fair,"
+            ],
+            [
+              293.68,
+              "and"
+            ],
+            [
+              293.72,
+              "earns"
+            ],
+            [
+              293.9,
+              "its"
+            ],
+            [
+              294.08,
+              "money"
+            ],
+            [
+              294.28,
+              "on"
+            ],
+            [
+              294.52,
+              "the"
+            ],
+            [
+              294.6,
+              "numbers"
+            ],
+            [
+              294.86,
+              "you"
+            ],
+            [
+              295.06,
+              "see"
+            ],
+            [
+              295.2,
+              "later."
+            ]
+          ]
+        },
+        {
+          "id": "08",
+          "key": "s05-08",
+          "text": "For someone with one small backpack, that is a genuine bargain. For a family with suitcases, it might not be.",
+          "start": 296.32,
+          "end": 301.98,
+          "duration": 5.66,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              296.32,
+              "for"
+            ],
+            [
+              296.4,
+              "someone"
+            ],
+            [
+              296.68,
+              "with"
+            ],
+            [
+              296.84,
+              "one"
+            ],
+            [
+              297.02,
+              "small"
+            ],
+            [
+              297.3,
+              "backpack"
+            ],
+            [
+              297.54,
+              "that"
+            ],
+            [
+              298.12,
+              "is"
+            ],
+            [
+              298.24,
+              "a"
+            ],
+            [
+              298.34,
+              "genuine"
+            ],
+            [
+              298.58,
+              "bargain."
+            ],
+            [
+              299.72,
+              "For"
+            ],
+            [
+              299.86,
+              "a"
+            ],
+            [
+              299.92,
+              "family"
+            ],
+            [
+              300.18,
+              "with"
+            ],
+            [
+              300.34,
+              "suitcases,"
+            ],
+            [
+              301.12,
+              "it"
+            ],
+            [
+              301.18,
+              "might"
+            ],
+            [
+              301.32,
+              "not"
+            ],
+            [
+              301.5,
+              "be."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "title": "The cost machine",
+      "chapter": "A machine built to be cheap",
+      "music": "process",
+      "start": 302.63,
+      "end": 372.41,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s06-01",
+          "text": "But none of that works unless the airline's own costs stay far below everyone else's.",
+          "start": 303.28,
+          "end": 307.49,
+          "duration": 4.21,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              303.28,
+              "But"
+            ],
+            [
+              303.38,
+              "none"
+            ],
+            [
+              303.54,
+              "of"
+            ],
+            [
+              303.7,
+              "that"
+            ],
+            [
+              303.84,
+              "works"
+            ],
+            [
+              304.08,
+              "unless"
+            ],
+            [
+              304.44,
+              "the"
+            ],
+            [
+              304.66,
+              "airline's"
+            ],
+            [
+              305.14,
+              "own"
+            ],
+            [
+              305.28,
+              "costs"
+            ],
+            [
+              305.58,
+              "stay"
+            ],
+            [
+              306.0,
+              "far"
+            ],
+            [
+              306.22,
+              "below"
+            ],
+            [
+              306.44,
+              "everyone"
+            ],
+            [
+              306.86,
+              "else's."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s06-02",
+          "text": "Ryanair fits 197 seats into its newest Boeing 737s, and 189 into the older ones. Traditional airlines fly the same Boeing 737-800 with about 162 seats in two classes.",
+          "start": 307.99,
+          "end": 321.48,
+          "duration": 13.49,
+          "claims": [
+            "R08"
+          ],
+          "duck": false,
+          "words": [
+            [
+              307.99,
+              "Ryan"
+            ],
+            [
+              308.27,
+              "Air"
+            ],
+            [
+              308.49,
+              "fits"
+            ],
+            [
+              308.77,
+              "197"
+            ],
+            [
+              309.33,
+              "seats"
+            ],
+            [
+              310.19,
+              "into"
+            ],
+            [
+              310.49,
+              "its"
+            ],
+            [
+              310.67,
+              "newest"
+            ],
+            [
+              310.95,
+              "Boeing"
+            ],
+            [
+              311.19,
+              "737s"
+            ],
+            [
+              312.41,
+              "and"
+            ],
+            [
+              312.69,
+              "189"
+            ],
+            [
+              313.49,
+              "into"
+            ],
+            [
+              313.97,
+              "the"
+            ],
+            [
+              314.11,
+              "older"
+            ],
+            [
+              314.29,
+              "ones."
+            ],
+            [
+              315.37,
+              "Traditional"
+            ],
+            [
+              315.39,
+              "airlines"
+            ],
+            [
+              315.87,
+              "fly"
+            ],
+            [
+              316.21,
+              "the"
+            ],
+            [
+              316.39,
+              "same"
+            ],
+            [
+              316.61,
+              "Boeing"
+            ],
+            [
+              316.87,
+              "737"
+            ],
+            [
+              317.25,
+              "-800"
+            ],
+            [
+              318.09,
+              "with"
+            ],
+            [
+              318.57,
+              "about"
+            ],
+            [
+              318.73,
+              "162"
+            ],
+            [
+              319.29,
+              "seats"
+            ],
+            [
+              320.31,
+              "in"
+            ],
+            [
+              320.55,
+              "two"
+            ],
+            [
+              320.67,
+              "classes."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s06-03",
+          "text": "More seats on the same plane, with the same crew, means every seat costs less.",
+          "start": 321.98,
+          "end": 326.56,
+          "duration": 4.58,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              321.98,
+              "More"
+            ],
+            [
+              322.16,
+              "seats"
+            ],
+            [
+              322.36,
+              "on"
+            ],
+            [
+              322.56,
+              "the"
+            ],
+            [
+              322.64,
+              "same"
+            ],
+            [
+              322.84,
+              "plane,"
+            ],
+            [
+              323.4,
+              "with"
+            ],
+            [
+              323.5,
+              "the"
+            ],
+            [
+              323.62,
+              "same"
+            ],
+            [
+              323.8,
+              "crew,"
+            ],
+            [
+              324.62,
+              "means"
+            ],
+            [
+              324.72,
+              "every"
+            ],
+            [
+              325.06,
+              "seat"
+            ],
+            [
+              325.36,
+              "costs"
+            ],
+            [
+              325.68,
+              "less."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s06-04",
+          "text": "Its aircraft fly about nine and a half hours a day on average, because a plane on the ground earns nothing.",
+          "start": 327.06,
+          "end": 332.14,
+          "duration": 5.08,
+          "claims": [
+            "R11"
+          ],
+          "duck": false,
+          "words": [
+            [
+              327.06,
+              "Its"
+            ],
+            [
+              327.2,
+              "aircraft"
+            ],
+            [
+              327.38,
+              "fly"
+            ],
+            [
+              327.84,
+              "about"
+            ],
+            [
+              328.04,
+              "nine"
+            ],
+            [
+              328.34,
+              "and"
+            ],
+            [
+              328.5,
+              "a"
+            ],
+            [
+              328.54,
+              "half"
+            ],
+            [
+              328.7,
+              "hours"
+            ],
+            [
+              328.94,
+              "a"
+            ],
+            [
+              329.06,
+              "day"
+            ],
+            [
+              329.2,
+              "on"
+            ],
+            [
+              329.38,
+              "average"
+            ],
+            [
+              329.7,
+              "because"
+            ],
+            [
+              330.32,
+              "a"
+            ],
+            [
+              330.46,
+              "plane"
+            ],
+            [
+              330.66,
+              "on"
+            ],
+            [
+              330.82,
+              "the"
+            ],
+            [
+              330.92,
+              "ground"
+            ],
+            [
+              331.14,
+              "earns"
+            ],
+            [
+              331.44,
+              "nothing."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s06-05",
+          "text": "So between flights, the clock is running: passengers off, a quick clean, the next passengers on, and back in the air.",
+          "start": 332.64,
+          "end": 338.71,
+          "duration": 6.07,
+          "claims": [
+            "R15"
+          ],
+          "duck": false,
+          "words": [
+            [
+              332.64,
+              "So,"
+            ],
+            [
+              332.94,
+              "between"
+            ],
+            [
+              333.12,
+              "flights,"
+            ],
+            [
+              333.84,
+              "the"
+            ],
+            [
+              333.88,
+              "clock"
+            ],
+            [
+              334.02,
+              "is"
+            ],
+            [
+              334.2,
+              "running,"
+            ],
+            [
+              334.66,
+              "passengers"
+            ],
+            [
+              334.86,
+              "off,"
+            ],
+            [
+              335.6,
+              "a"
+            ],
+            [
+              335.62,
+              "quick"
+            ],
+            [
+              335.76,
+              "clean,"
+            ],
+            [
+              336.38,
+              "the"
+            ],
+            [
+              336.42,
+              "next"
+            ],
+            [
+              336.54,
+              "passenger's"
+            ],
+            [
+              337.1,
+              "on,"
+            ],
+            [
+              337.58,
+              "and"
+            ],
+            [
+              337.68,
+              "back"
+            ],
+            [
+              337.92,
+              "in"
+            ],
+            [
+              338.08,
+              "the"
+            ],
+            [
+              338.18,
+              "air."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s06-06",
+          "text": "Almost the whole fleet is one aircraft family, the Boeing 737, so pilots, spare parts and mechanics are interchangeable.",
+          "start": 339.21,
+          "end": 345.68,
+          "duration": 6.47,
+          "claims": [
+            "R12"
+          ],
+          "duck": false,
+          "words": [
+            [
+              339.21,
+              "Almost"
+            ],
+            [
+              339.43,
+              "the"
+            ],
+            [
+              339.65,
+              "whole"
+            ],
+            [
+              339.77,
+              "fleet"
+            ],
+            [
+              340.01,
+              "is"
+            ],
+            [
+              340.29,
+              "one"
+            ],
+            [
+              340.47,
+              "aircraft"
+            ],
+            [
+              340.69,
+              "family,"
+            ],
+            [
+              341.51,
+              "the"
+            ],
+            [
+              341.57,
+              "Boeing"
+            ],
+            [
+              341.73,
+              "737,"
+            ],
+            [
+              342.83,
+              "so"
+            ],
+            [
+              343.07,
+              "pilots,"
+            ],
+            [
+              343.67,
+              "spare"
+            ],
+            [
+              343.79,
+              "parts"
+            ],
+            [
+              344.03,
+              "and"
+            ],
+            [
+              344.25,
+              "mechanics"
+            ],
+            [
+              344.45,
+              "are"
+            ],
+            [
+              344.83,
+              "interchangeable."
+            ]
+          ]
+        },
+        {
+          "id": "07",
+          "key": "s06-07",
+          "text": "It looks for airports that charge less, uses outdoor stairs instead of jet bridges, and makes every passenger check in online.",
+          "start": 346.18,
+          "end": 352.64,
+          "duration": 6.46,
+          "claims": [
+            "R13"
+          ],
+          "duck": false,
+          "words": [
+            [
+              346.18,
+              "It"
+            ],
+            [
+              346.28,
+              "looks"
+            ],
+            [
+              346.4,
+              "for"
+            ],
+            [
+              346.6,
+              "airports"
+            ],
+            [
+              346.84,
+              "that"
+            ],
+            [
+              347.14,
+              "charge"
+            ],
+            [
+              347.3,
+              "less,"
+            ],
+            [
+              348.3,
+              "uses"
+            ],
+            [
+              348.3,
+              "outdoor"
+            ],
+            [
+              348.54,
+              "stairs"
+            ],
+            [
+              348.98,
+              "instead"
+            ],
+            [
+              349.28,
+              "of"
+            ],
+            [
+              349.46,
+              "jet"
+            ],
+            [
+              349.58,
+              "bridges,"
+            ],
+            [
+              350.3,
+              "and"
+            ],
+            [
+              350.48,
+              "makes"
+            ],
+            [
+              350.64,
+              "every"
+            ],
+            [
+              350.88,
+              "passenger"
+            ],
+            [
+              351.22,
+              "check"
+            ],
+            [
+              351.58,
+              "in"
+            ],
+            [
+              351.78,
+              "online."
+            ]
+          ]
+        },
+        {
+          "id": "08",
+          "key": "s06-08",
+          "text": "The result: leaving out fuel, Ryanair puts its own costs at €36 per passenger. It puts Wizz Air at €62, easyJet at €90, and the big network airline groups at €178 to €253.",
+          "start": 353.14,
+          "end": 366.75,
+          "duration": 13.61,
+          "claims": [
+            "R14"
+          ],
+          "duck": true,
+          "words": [
+            [
+              353.14,
+              "The"
+            ],
+            [
+              353.26,
+              "result,"
+            ],
+            [
+              353.76,
+              "leaving"
+            ],
+            [
+              354.06,
+              "out"
+            ],
+            [
+              354.22,
+              "fuel,"
+            ],
+            [
+              355.28,
+              "Ryan"
+            ],
+            [
+              355.48,
+              "Air"
+            ],
+            [
+              355.72,
+              "puts"
+            ],
+            [
+              355.94,
+              "its"
+            ],
+            [
+              356.12,
+              "own"
+            ],
+            [
+              356.28,
+              "costs"
+            ],
+            [
+              356.5,
+              "at"
+            ],
+            [
+              356.9,
+              "36"
+            ],
+            [
+              357.18,
+              "euros"
+            ],
+            [
+              357.66,
+              "per"
+            ],
+            [
+              357.84,
+              "passenger."
+            ],
+            [
+              358.94,
+              "It"
+            ],
+            [
+              359.06,
+              "puts"
+            ],
+            [
+              359.26,
+              "Whiz"
+            ],
+            [
+              359.58,
+              "Air"
+            ],
+            [
+              359.72,
+              "at"
+            ],
+            [
+              359.94,
+              "62,"
+            ],
+            [
+              361.14,
+              "easy"
+            ],
+            [
+              361.14,
+              "jet"
+            ],
+            [
+              361.32,
+              "at"
+            ],
+            [
+              361.5,
+              "90,"
+            ],
+            [
+              362.4,
+              "and"
+            ],
+            [
+              362.44,
+              "the"
+            ],
+            [
+              362.54,
+              "big"
+            ],
+            [
+              362.66,
+              "network"
+            ],
+            [
+              362.92,
+              "airline"
+            ],
+            [
+              363.24,
+              "groups"
+            ],
+            [
+              363.6,
+              "at"
+            ],
+            [
+              364.7,
+              "178"
+            ],
+            [
+              364.7,
+              "-253"
+            ],
+            [
+              365.64,
+              "euros."
+            ]
+          ]
+        },
+        {
+          "id": "09",
+          "key": "s06-09",
+          "text": "That cost gap is the real product. The twenty-dollar fare is just how it shows up on your screen.",
+          "start": 367.25,
+          "end": 371.76,
+          "duration": 4.51,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              367.25,
+              "that"
+            ],
+            [
+              367.39,
+              "cost"
+            ],
+            [
+              367.61,
+              "gap"
+            ],
+            [
+              367.87,
+              "is"
+            ],
+            [
+              368.07,
+              "the"
+            ],
+            [
+              368.21,
+              "real"
+            ],
+            [
+              368.33,
+              "product."
+            ],
+            [
+              369.23,
+              "The"
+            ],
+            [
+              369.29,
+              "$20"
+            ],
+            [
+              369.53,
+              "fare"
+            ],
+            [
+              369.87,
+              "is"
+            ],
+            [
+              370.11,
+              "just"
+            ],
+            [
+              370.29,
+              "how"
+            ],
+            [
+              370.51,
+              "it"
+            ],
+            [
+              370.61,
+              "shows"
+            ],
+            [
+              370.77,
+              "up"
+            ],
+            [
+              370.93,
+              "on"
+            ],
+            [
+              371.07,
+              "your"
+            ],
+            [
+              371.19,
+              "screen."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "title": "Where it breaks",
+      "chapter": "When the math stops working",
+      "music": "tension",
+      "start": 372.41,
+      "end": 436.35,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s07-01",
+          "text": "The model has a weak spot. It needs full planes, steady fuel prices, and very little going wrong.",
+          "start": 373.06,
+          "end": 378.17,
+          "duration": 5.11,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              373.06,
+              "The"
+            ],
+            [
+              373.2,
+              "model"
+            ],
+            [
+              373.34,
+              "has"
+            ],
+            [
+              373.58,
+              "a"
+            ],
+            [
+              373.7,
+              "weak"
+            ],
+            [
+              373.82,
+              "spot."
+            ],
+            [
+              374.58,
+              "It"
+            ],
+            [
+              374.66,
+              "needs"
+            ],
+            [
+              374.8,
+              "full"
+            ],
+            [
+              375.06,
+              "planes,"
+            ],
+            [
+              375.76,
+              "steady"
+            ],
+            [
+              375.86,
+              "fuel"
+            ],
+            [
+              376.14,
+              "prices,"
+            ],
+            [
+              376.88,
+              "and"
+            ],
+            [
+              376.9,
+              "very"
+            ],
+            [
+              377.1,
+              "little"
+            ],
+            [
+              377.34,
+              "going"
+            ],
+            [
+              377.52,
+              "wrong."
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s07-02",
+          "text": "Ryanair needed its planes about 80 percent full just to break even. In 2025, Frontier's planes were 78.4 percent full.",
+          "start": 378.67,
+          "end": 385.98,
+          "duration": 7.31,
+          "claims": [
+            "R06",
+            "F04"
+          ],
+          "duck": false,
+          "words": [
+            [
+              378.67,
+              "Ryan"
+            ],
+            [
+              378.89,
+              "Air"
+            ],
+            [
+              379.13,
+              "needed"
+            ],
+            [
+              379.39,
+              "its"
+            ],
+            [
+              379.67,
+              "planes"
+            ],
+            [
+              379.83,
+              "about"
+            ],
+            [
+              380.13,
+              "80"
+            ],
+            [
+              380.39,
+              "%"
+            ],
+            [
+              380.73,
+              "full"
+            ],
+            [
+              380.95,
+              "just"
+            ],
+            [
+              381.19,
+              "to"
+            ],
+            [
+              381.33,
+              "break"
+            ],
+            [
+              381.47,
+              "even."
+            ],
+            [
+              382.45,
+              "In"
+            ],
+            [
+              382.49,
+              "2025,"
+            ],
+            [
+              383.49,
+              "Frontier's"
+            ],
+            [
+              383.85,
+              "planes"
+            ],
+            [
+              384.03,
+              "were"
+            ],
+            [
+              384.27,
+              "78"
+            ],
+            [
+              384.57,
+              ".4"
+            ],
+            [
+              385.19,
+              "%"
+            ],
+            [
+              385.41,
+              "full."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s07-03",
+          "text": "Frontier's costs came to about $116.66 per passenger, a little more than the $112.17 it took in. It lost $137 million that year.",
+          "start": 386.48,
+          "end": 396.9,
+          "duration": 10.42,
+          "claims": [
+            "F05"
+          ],
+          "duck": true,
+          "words": [
+            [
+              386.48,
+              "Frontier's"
+            ],
+            [
+              386.88,
+              "costs"
+            ],
+            [
+              387.02,
+              "came"
+            ],
+            [
+              387.4,
+              "to"
+            ],
+            [
+              387.56,
+              "about"
+            ],
+            [
+              387.76,
+              "$116"
+            ],
+            [
+              388.2,
+              ".66"
+            ],
+            [
+              389.68,
+              "per"
+            ],
+            [
+              390.1,
+              "passenger,"
+            ],
+            [
+              391.0,
+              "a"
+            ],
+            [
+              391.08,
+              "little"
+            ],
+            [
+              391.2,
+              "more"
+            ],
+            [
+              391.38,
+              "than"
+            ],
+            [
+              391.52,
+              "the"
+            ],
+            [
+              391.6,
+              "$112"
+            ],
+            [
+              392.12,
+              ".17"
+            ],
+            [
+              393.04,
+              "it"
+            ],
+            [
+              393.6,
+              "took"
+            ],
+            [
+              393.74,
+              "in."
+            ],
+            [
+              394.44,
+              "It"
+            ],
+            [
+              394.5,
+              "lost"
+            ],
+            [
+              394.64,
+              "$137"
+            ],
+            [
+              395.44,
+              "million"
+            ],
+            [
+              395.9,
+              "that"
+            ],
+            [
+              396.44,
+              "year."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s07-04",
+          "text": "Spirit Airlines, which described itself as a pioneer of affordable travel, filed for bankruptcy in November 2024, and again in August 2025.",
+          "start": 397.4,
+          "end": 405.55,
+          "duration": 8.15,
+          "claims": [
+            "S01"
+          ],
+          "duck": false,
+          "words": [
+            [
+              397.4,
+              "Spirit"
+            ],
+            [
+              397.7,
+              "Airlines,"
+            ],
+            [
+              398.44,
+              "which"
+            ],
+            [
+              398.52,
+              "described"
+            ],
+            [
+              398.76,
+              "itself"
+            ],
+            [
+              399.14,
+              "as"
+            ],
+            [
+              399.42,
+              "a"
+            ],
+            [
+              399.48,
+              "pioneer"
+            ],
+            [
+              399.76,
+              "of"
+            ],
+            [
+              400.1,
+              "affordable"
+            ],
+            [
+              400.3,
+              "travel,"
+            ],
+            [
+              401.24,
+              "filed"
+            ],
+            [
+              401.4,
+              "for"
+            ],
+            [
+              401.62,
+              "bankruptcy"
+            ],
+            [
+              401.82,
+              "in"
+            ],
+            [
+              402.24,
+              "November"
+            ],
+            [
+              402.36,
+              "2024"
+            ],
+            [
+              403.04,
+              "and"
+            ],
+            [
+              403.78,
+              "again"
+            ],
+            [
+              403.96,
+              "in"
+            ],
+            [
+              404.28,
+              "August"
+            ],
+            [
+              404.5,
+              "2025."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s07-05",
+          "text": "On May 2, 2026, citing a sharp rise in fuel prices, it cancelled all of its flights and began winding down.",
+          "start": 406.05,
+          "end": 412.5,
+          "duration": 6.45,
+          "claims": [
+            "S02"
+          ],
+          "duck": true,
+          "words": [
+            [
+              406.05,
+              "On"
+            ],
+            [
+              406.17,
+              "May"
+            ],
+            [
+              406.29,
+              "2nd,"
+            ],
+            [
+              406.87,
+              "2026,"
+            ],
+            [
+              408.09,
+              "citing"
+            ],
+            [
+              408.13,
+              "a"
+            ],
+            [
+              408.29,
+              "sharp"
+            ],
+            [
+              408.45,
+              "rise"
+            ],
+            [
+              408.65,
+              "in"
+            ],
+            [
+              408.83,
+              "fuel"
+            ],
+            [
+              408.99,
+              "prices,"
+            ],
+            [
+              409.93,
+              "it"
+            ],
+            [
+              410.03,
+              "canceled"
+            ],
+            [
+              410.25,
+              "all"
+            ],
+            [
+              410.53,
+              "of"
+            ],
+            [
+              410.65,
+              "its"
+            ],
+            [
+              410.77,
+              "flights"
+            ],
+            [
+              410.93,
+              "and"
+            ],
+            [
+              411.29,
+              "began"
+            ],
+            [
+              411.47,
+              "winding"
+            ],
+            [
+              411.77,
+              "down."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s07-06",
+          "text": "When costs jump, a budget airline cannot simply raise its fares. Low fares are the whole reason people fly with it.",
+          "start": 413.0,
+          "end": 419.3,
+          "duration": 6.3,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              413.0,
+              "When"
+            ],
+            [
+              413.14,
+              "costs"
+            ],
+            [
+              413.3,
+              "jump,"
+            ],
+            [
+              414.18,
+              "a"
+            ],
+            [
+              414.34,
+              "budget"
+            ],
+            [
+              414.54,
+              "airline"
+            ],
+            [
+              414.84,
+              "cannot"
+            ],
+            [
+              415.18,
+              "simply"
+            ],
+            [
+              415.64,
+              "raise"
+            ],
+            [
+              415.92,
+              "its"
+            ],
+            [
+              416.1,
+              "fares."
+            ],
+            [
+              417.08,
+              "Low"
+            ],
+            [
+              417.2,
+              "fares"
+            ],
+            [
+              417.46,
+              "are"
+            ],
+            [
+              417.74,
+              "the"
+            ],
+            [
+              417.84,
+              "whole"
+            ],
+            [
+              417.96,
+              "reason"
+            ],
+            [
+              418.2,
+              "people"
+            ],
+            [
+              418.44,
+              "fly"
+            ],
+            [
+              418.74,
+              "with"
+            ],
+            [
+              418.92,
+              "it."
+            ]
+          ]
+        },
+        {
+          "id": "07",
+          "key": "s07-07",
+          "text": "That is why Ryanair locks in fuel prices ahead of time. It says about 80 percent of its fuel for the year to March 2027 is already hedged: a cushion that weaker rivals often do not have.",
+          "start": 419.8,
+          "end": 429.84,
+          "duration": 10.04,
+          "claims": [
+            "R16"
+          ],
+          "duck": false,
+          "words": [
+            [
+              419.8,
+              "That"
+            ],
+            [
+              419.98,
+              "is"
+            ],
+            [
+              420.08,
+              "why"
+            ],
+            [
+              420.26,
+              "Ryan"
+            ],
+            [
+              420.56,
+              "airlocks"
+            ],
+            [
+              420.96,
+              "in"
+            ],
+            [
+              421.22,
+              "fuel"
+            ],
+            [
+              421.4,
+              "prices"
+            ],
+            [
+              421.68,
+              "ahead"
+            ],
+            [
+              422.1,
+              "of"
+            ],
+            [
+              422.22,
+              "time."
+            ],
+            [
+              423.1,
+              "It"
+            ],
+            [
+              423.18,
+              "says"
+            ],
+            [
+              423.3,
+              "about"
+            ],
+            [
+              423.56,
+              "80"
+            ],
+            [
+              423.8,
+              "%"
+            ],
+            [
+              424.14,
+              "of"
+            ],
+            [
+              424.28,
+              "its"
+            ],
+            [
+              424.38,
+              "fuel"
+            ],
+            [
+              424.56,
+              "for"
+            ],
+            [
+              424.78,
+              "the"
+            ],
+            [
+              424.88,
+              "year"
+            ],
+            [
+              425.02,
+              "to"
+            ],
+            [
+              425.16,
+              "March"
+            ],
+            [
+              425.3,
+              "2027"
+            ],
+            [
+              426.1,
+              "is"
+            ],
+            [
+              426.38,
+              "already"
+            ],
+            [
+              426.62,
+              "hedged,"
+            ],
+            [
+              427.44,
+              "a"
+            ],
+            [
+              427.58,
+              "cushion"
+            ],
+            [
+              427.8,
+              "that"
+            ],
+            [
+              428.0,
+              "weaker"
+            ],
+            [
+              428.12,
+              "rivals"
+            ],
+            [
+              428.52,
+              "often"
+            ],
+            [
+              428.92,
+              "do"
+            ],
+            [
+              429.1,
+              "not"
+            ],
+            [
+              429.22,
+              "have."
+            ]
+          ]
+        },
+        {
+          "id": "08",
+          "key": "s07-08",
+          "text": "And when one of these airlines disappears, the people who relied on it lose the cheapest way they had to travel.",
+          "start": 430.34,
+          "end": 435.7,
+          "duration": 5.36,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              430.34,
+              "And"
+            ],
+            [
+              430.64,
+              "when"
+            ],
+            [
+              430.82,
+              "one"
+            ],
+            [
+              430.98,
+              "of"
+            ],
+            [
+              431.08,
+              "these"
+            ],
+            [
+              431.22,
+              "airlines"
+            ],
+            [
+              431.48,
+              "disappears,"
+            ],
+            [
+              432.76,
+              "the"
+            ],
+            [
+              432.8,
+              "people"
+            ],
+            [
+              433.02,
+              "who"
+            ],
+            [
+              433.16,
+              "relied"
+            ],
+            [
+              433.36,
+              "on"
+            ],
+            [
+              433.66,
+              "it"
+            ],
+            [
+              433.8,
+              "lose"
+            ],
+            [
+              433.98,
+              "the"
+            ],
+            [
+              434.22,
+              "cheapest"
+            ],
+            [
+              434.44,
+              "way"
+            ],
+            [
+              434.72,
+              "they"
+            ],
+            [
+              434.86,
+              "had"
+            ],
+            [
+              435.0,
+              "to"
+            ],
+            [
+              435.14,
+              "travel."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "title": "Who pays",
+      "chapter": "Who pays for the twenty-dollar seat",
+      "music": "reveal",
+      "start": 436.35,
+      "end": 482.17,
+      "segments": [
+        {
+          "id": "01",
+          "key": "s08-01",
+          "text": "So, how can an airline sell a flight for twenty dollars?",
+          "start": 437.0,
+          "end": 440.13,
+          "duration": 3.13,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              437.0,
+              "So,"
+            ],
+            [
+              437.6,
+              "how"
+            ],
+            [
+              437.72,
+              "can"
+            ],
+            [
+              437.88,
+              "an"
+            ],
+            [
+              437.98,
+              "airline"
+            ],
+            [
+              438.18,
+              "sell"
+            ],
+            [
+              438.58,
+              "a"
+            ],
+            [
+              438.68,
+              "flight"
+            ],
+            [
+              438.88,
+              "for"
+            ],
+            [
+              439.12,
+              "$20?"
+            ]
+          ]
+        },
+        {
+          "id": "02",
+          "key": "s08-02",
+          "text": "Because an empty seat is worth nothing once the plane leaves, and one more passenger costs very little to carry.",
+          "start": 440.63,
+          "end": 446.42,
+          "duration": 5.79,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              440.63,
+              "because"
+            ],
+            [
+              440.87,
+              "an"
+            ],
+            [
+              441.05,
+              "empty"
+            ],
+            [
+              441.25,
+              "seat"
+            ],
+            [
+              441.55,
+              "is"
+            ],
+            [
+              441.77,
+              "worth"
+            ],
+            [
+              441.93,
+              "nothing"
+            ],
+            [
+              442.21,
+              "once"
+            ],
+            [
+              442.57,
+              "the"
+            ],
+            [
+              442.73,
+              "plane"
+            ],
+            [
+              442.89,
+              "leaves,"
+            ],
+            [
+              443.83,
+              "and"
+            ],
+            [
+              443.89,
+              "one"
+            ],
+            [
+              444.07,
+              "more"
+            ],
+            [
+              444.25,
+              "passenger"
+            ],
+            [
+              444.53,
+              "costs"
+            ],
+            [
+              444.95,
+              "very"
+            ],
+            [
+              445.31,
+              "little"
+            ],
+            [
+              445.67,
+              "to"
+            ],
+            [
+              445.81,
+              "carry."
+            ]
+          ]
+        },
+        {
+          "id": "03",
+          "key": "s08-03",
+          "text": "Because the cheapest seats are a handful at the bottom of a price ladder, and people who book later pay much more.",
+          "start": 446.92,
+          "end": 451.8,
+          "duration": 4.88,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              446.92,
+              "because"
+            ],
+            [
+              447.12,
+              "the"
+            ],
+            [
+              447.28,
+              "cheapest"
+            ],
+            [
+              447.5,
+              "seats"
+            ],
+            [
+              447.76,
+              "are"
+            ],
+            [
+              448.02,
+              "a"
+            ],
+            [
+              448.1,
+              "handful"
+            ],
+            [
+              448.32,
+              "at"
+            ],
+            [
+              448.54,
+              "the"
+            ],
+            [
+              448.6,
+              "bottom"
+            ],
+            [
+              448.82,
+              "of"
+            ],
+            [
+              448.94,
+              "a"
+            ],
+            [
+              449.0,
+              "price"
+            ],
+            [
+              449.14,
+              "ladder,"
+            ],
+            [
+              449.98,
+              "and"
+            ],
+            [
+              450.04,
+              "people"
+            ],
+            [
+              450.28,
+              "who"
+            ],
+            [
+              450.44,
+              "book"
+            ],
+            [
+              450.56,
+              "later"
+            ],
+            [
+              450.86,
+              "pay"
+            ],
+            [
+              451.06,
+              "much"
+            ],
+            [
+              451.24,
+              "more."
+            ]
+          ]
+        },
+        {
+          "id": "04",
+          "key": "s08-04",
+          "text": "Because the fare is only part of what you pay. Bags, seats and extras close the gap.",
+          "start": 452.3,
+          "end": 456.97,
+          "duration": 4.67,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              452.3,
+              "Because"
+            ],
+            [
+              452.5,
+              "the"
+            ],
+            [
+              452.68,
+              "fare"
+            ],
+            [
+              452.88,
+              "is"
+            ],
+            [
+              453.16,
+              "only"
+            ],
+            [
+              453.4,
+              "part"
+            ],
+            [
+              453.68,
+              "of"
+            ],
+            [
+              453.9,
+              "what"
+            ],
+            [
+              454.02,
+              "you"
+            ],
+            [
+              454.14,
+              "pay,"
+            ],
+            [
+              454.8,
+              "bags,"
+            ],
+            [
+              455.52,
+              "seats,"
+            ],
+            [
+              455.76,
+              "and"
+            ],
+            [
+              455.8,
+              "extras"
+            ],
+            [
+              456.1,
+              "close"
+            ],
+            [
+              456.42,
+              "the"
+            ],
+            [
+              456.66,
+              "gap."
+            ]
+          ]
+        },
+        {
+          "id": "05",
+          "key": "s08-05",
+          "text": "And because the airline is built, piece by piece, to fly each seat more cheaply than its rivals.",
+          "start": 457.47,
+          "end": 463.21,
+          "duration": 5.74,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              457.47,
+              "and"
+            ],
+            [
+              457.73,
+              "because"
+            ],
+            [
+              458.03,
+              "the"
+            ],
+            [
+              458.29,
+              "airline"
+            ],
+            [
+              458.47,
+              "is"
+            ],
+            [
+              458.77,
+              "built,"
+            ],
+            [
+              459.41,
+              "piece"
+            ],
+            [
+              459.53,
+              "by"
+            ],
+            [
+              459.75,
+              "piece,"
+            ],
+            [
+              460.39,
+              "to"
+            ],
+            [
+              460.69,
+              "fly"
+            ],
+            [
+              460.85,
+              "each"
+            ],
+            [
+              461.21,
+              "seat"
+            ],
+            [
+              461.45,
+              "more"
+            ],
+            [
+              461.71,
+              "cheaply"
+            ],
+            [
+              461.99,
+              "than"
+            ],
+            [
+              462.35,
+              "it"
+            ],
+            [
+              462.45,
+              "rivals."
+            ]
+          ]
+        },
+        {
+          "id": "06",
+          "key": "s08-06",
+          "text": "So who pays for the twenty-dollar seat? Partly the people who book late. Partly the people who add a suitcase. And partly the airline's obsession with cost. If you travel light, book early and skip the extras, you might be the one getting the deal.",
+          "start": 463.71,
+          "end": 474.86,
+          "duration": 11.15,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              463.71,
+              "So,"
+            ],
+            [
+              464.17,
+              "who"
+            ],
+            [
+              464.31,
+              "pays"
+            ],
+            [
+              464.47,
+              "for"
+            ],
+            [
+              464.65,
+              "the"
+            ],
+            [
+              464.73,
+              "$20"
+            ],
+            [
+              464.97,
+              "seat?"
+            ],
+            [
+              465.83,
+              "Partly"
+            ],
+            [
+              465.99,
+              "the"
+            ],
+            [
+              466.09,
+              "people"
+            ],
+            [
+              466.31,
+              "who"
+            ],
+            [
+              466.45,
+              "book"
+            ],
+            [
+              466.57,
+              "late."
+            ],
+            [
+              467.19,
+              "Partly"
+            ],
+            [
+              467.37,
+              "the"
+            ],
+            [
+              467.47,
+              "people"
+            ],
+            [
+              467.67,
+              "who"
+            ],
+            [
+              467.85,
+              "add"
+            ],
+            [
+              467.93,
+              "a"
+            ],
+            [
+              468.01,
+              "suitcase,"
+            ],
+            [
+              468.69,
+              "and"
+            ],
+            [
+              468.77,
+              "partly"
+            ],
+            [
+              469.13,
+              "the"
+            ],
+            [
+              469.31,
+              "airlines"
+            ],
+            [
+              469.47,
+              "obsession"
+            ],
+            [
+              469.93,
+              "with"
+            ],
+            [
+              470.19,
+              "cost."
+            ],
+            [
+              470.99,
+              "If"
+            ],
+            [
+              471.01,
+              "you"
+            ],
+            [
+              471.09,
+              "travel"
+            ],
+            [
+              471.31,
+              "light,"
+            ],
+            [
+              471.79,
+              "book"
+            ],
+            [
+              471.89,
+              "early"
+            ],
+            [
+              472.13,
+              "and"
+            ],
+            [
+              472.41,
+              "skip"
+            ],
+            [
+              472.61,
+              "the"
+            ],
+            [
+              472.75,
+              "extras,"
+            ],
+            [
+              473.43,
+              "you"
+            ],
+            [
+              473.47,
+              "might"
+            ],
+            [
+              473.63,
+              "be"
+            ],
+            [
+              473.79,
+              "the"
+            ],
+            [
+              473.87,
+              "one"
+            ],
+            [
+              474.01,
+              "getting"
+            ],
+            [
+              474.19,
+              "the"
+            ],
+            [
+              474.39,
+              "deal."
+            ]
+          ]
+        },
+        {
+          "id": "07",
+          "key": "s08-07",
+          "text": "This is Hidden Ledger. Every number in this video is sourced in the description.",
+          "start": 475.36,
+          "end": 479.17,
+          "duration": 3.81,
+          "claims": [],
+          "duck": false,
+          "words": [
+            [
+              475.36,
+              "This"
+            ],
+            [
+              475.64,
+              "is"
+            ],
+            [
+              475.92,
+              "Hidden"
+            ],
+            [
+              476.08,
+              "Ledger."
+            ],
+            [
+              476.8,
+              "Every"
+            ],
+            [
+              476.94,
+              "number"
+            ],
+            [
+              477.18,
+              "in"
+            ],
+            [
+              477.4,
+              "this"
+            ],
+            [
+              477.52,
+              "video"
+            ],
+            [
+              477.78,
+              "is"
+            ],
+            [
+              478.0,
+              "sourced"
+            ],
+            [
+              478.2,
+              "in"
+            ],
+            [
+              478.44,
+              "the"
+            ],
+            [
+              478.52,
+              "description."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "subtitles": [
+    {
+      "start": 0.4,
+      "end": 1.74,
+      "text": "Meet our passenger."
+    },
+    {
+      "start": 1.74,
+      "end": 3.68,
+      "text": "They want to visit a\nfriend in another city,"
+    },
+    {
+      "start": 3.68,
+      "end": 6.43,
+      "text": "and the airline's website says\nthe flight costs twenty dollars."
+    },
+    {
+      "start": 6.93,
+      "end": 8.22,
+      "text": "Twenty dollars, to fly."
+    },
+    {
+      "start": 8.22,
+      "end": 9.2,
+      "text": "So they book it."
+    },
+    {
+      "start": 9.7,
+      "end": 11.33,
+      "text": "Then the checkout keeps going."
+    },
+    {
+      "start": 11.33,
+      "end": 13.21,
+      "text": "A cabin bag: $25."
+    },
+    {
+      "start": 13.21,
+      "end": 15.1,
+      "text": "A window seat: $12."
+    },
+    {
+      "start": 15.1,
+      "end": 17.37,
+      "text": "A checked suitcase: $35."
+    },
+    {
+      "start": 17.87,
+      "end": 20.12,
+      "text": "The twenty-dollar flight now costs $92."
+    },
+    {
+      "start": 20.12,
+      "end": 22.36,
+      "text": "Those prices are a made-up example."
+    },
+    {
+      "start": 22.36,
+      "end": 23.58,
+      "text": "The pattern is real."
+    },
+    {
+      "start": 24.08,
+      "end": 26.32,
+      "text": "At the American budget airline Frontier,"
+    },
+    {
+      "start": 26.32,
+      "end": 30.9,
+      "text": "the average passenger in\n2025 paid $44.60 in fares,"
+    },
+    {
+      "start": 30.9,
+      "end": 34.19,
+      "text": "and another $63.79 in other charges."
+    },
+    {
+      "start": 34.69,
+      "end": 36.96,
+      "text": "So how can an airline sell\na flight for twenty dollars?"
+    },
+    {
+      "start": 36.96,
+      "end": 38.98,
+      "text": "And who is really paying for it?"
+    },
+    {
+      "start": 40.28,
+      "end": 42.86,
+      "text": "To find out, follow our\npassenger onto the plane,"
+    },
+    {
+      "start": 42.86,
+      "end": 45.21,
+      "text": "and look at the bill\nfor the flight itself."
+    },
+    {
+      "start": 45.71,
+      "end": 49.99,
+      "text": "Europe's largest budget airline,\nRyanair, publishes that bill every year."
+    },
+    {
+      "start": 49.99,
+      "end": 53.84,
+      "text": "In the twelve months to March 2026,\nit carried 208 million passengers."
+    },
+    {
+      "start": 54.34,
+      "end": 59.9,
+      "text": "Averaged over all of them, flying\none passenger cost Ryanair €63.21."
+    },
+    {
+      "start": 60.4,
+      "end": 65.87,
+      "text": "The biggest slice is fuel: €26,\nabout 41 percent of all its costs."
+    },
+    {
+      "start": 65.87,
+      "end": 67.66,
+      "text": "Then staff, about €9."
+    },
+    {
+      "start": 67.66,
+      "end": 69.84,
+      "text": "Airport and handling fees, about €8.50."
+    },
+    {
+      "start": 69.84,
+      "end": 72.61,
+      "text": "The aircraft themselves, about €6.60."
+    },
+    {
+      "start": 72.61,
+      "end": 75.42,
+      "text": "Air traffic control charges, about €6.30."
+    },
+    {
+      "start": 75.42,
+      "end": 77.88,
+      "text": "And then sales, maintenance\nand everything else."
+    },
+    {
+      "start": 78.38,
+      "end": 80.47,
+      "text": "Fuel alone is close to half of that bill."
+    },
+    {
+      "start": 80.47,
+      "end": 84.19,
+      "text": "Remember that: when oil prices\njump, budget airlines feel it first."
+    },
+    {
+      "start": 84.69,
+      "end": 88.43,
+      "text": "Now look at what the average\npassenger paid for the ticket: €50.66."
+    },
+    {
+      "start": 88.43,
+      "end": 93.36,
+      "text": "And Ryanair counts checked bag fees\nand change fees inside that figure."
+    },
+    {
+      "start": 93.86,
+      "end": 96.64,
+      "text": "So on the fare alone, the average\npassenger is flown at a loss."
+    },
+    {
+      "start": 96.64,
+      "end": 98.44,
+      "text": "The gap gets closed somewhere else."
+    },
+    {
+      "start": 98.44,
+      "end": 100.6,
+      "text": "To see where, we need three secrets."
+    },
+    {
+      "start": 101.9,
+      "end": 102.57,
+      "text": "Secret one."
+    },
+    {
+      "start": 102.57,
+      "end": 105.86,
+      "text": "Most of what a flight costs does\nnot depend on who is sitting in it."
+    },
+    {
+      "start": 106.36,
+      "end": 109.7,
+      "text": "The crew gets paid, the fuel gets\nburned, and the airport sends its bill,"
+    },
+    {
+      "start": 109.7,
+      "end": 111.7,
+      "text": "whether the plane is full or half empty."
+    },
+    {
+      "start": 111.7,
+      "end": 114.84,
+      "text": "Ryanair's own annual report says the\noperating costs of each flight do"
+    },
+    {
+      "start": 114.84,
+      "end": 117.55,
+      "text": "not vary significantly with\nthe number of passengers flown."
+    },
+    {
+      "start": 118.05,
+      "end": 122.41,
+      "text": "Averaged across the year, one Ryanair\nflight cost about €11,400 to operate,"
+    },
+    {
+      "start": 122.41,
+      "end": 125.17,
+      "text": "and carried about 181 passengers."
+    },
+    {
+      "start": 125.67,
+      "end": 129.13,
+      "text": "And once the door closes, every empty seat\naround our passenger is gone for good."
+    },
+    {
+      "start": 129.13,
+      "end": 132.02,
+      "text": "Like a concert ticket after the\nshow, or a hotel room after midnight,"
+    },
+    {
+      "start": 132.02,
+      "end": 133.49,
+      "text": "it can never be sold again."
+    },
+    {
+      "start": 133.99,
+      "end": 137.68,
+      "text": "One more passenger, though, adds only a\nlittle: some per-passenger fees and taxes,"
+    },
+    {
+      "start": 137.68,
+      "end": 139.0,
+      "text": "and a bit of extra fuel."
+    },
+    {
+      "start": 139.0,
+      "end": 141.63,
+      "text": "So for the airline, a cheap\nseat beats an empty one."
+    },
+    {
+      "start": 142.13,
+      "end": 143.26,
+      "text": "That changes the question."
+    },
+    {
+      "start": 143.26,
+      "end": 145.51,
+      "text": "It is not, what does one seat cost?"
+    },
+    {
+      "start": 145.51,
+      "end": 147.79,
+      "text": "It is, how full does the plane need to be?"
+    },
+    {
+      "start": 148.29,
+      "end": 150.09,
+      "text": "Ryanair calls that its\nbreak-even load factor."
+    },
+    {
+      "start": 150.09,
+      "end": 153.05,
+      "text": "In its last financial\nyear, it was 80 percent."
+    },
+    {
+      "start": 153.05,
+      "end": 155.49,
+      "text": "Its planes were actually 94 percent full."
+    },
+    {
+      "start": 155.99,
+      "end": 158.89,
+      "text": "Picture one of its Boeing\njets, with 197 seats."
+    },
+    {
+      "start": 158.89,
+      "end": 161.76,
+      "text": "Roughly the first 158\npassengers pay for the flight."
+    },
+    {
+      "start": 161.76,
+      "end": 164.25,
+      "text": "The next 27 or so are where the profit is."
+    },
+    {
+      "start": 165.55,
+      "end": 166.44,
+      "text": "Secret two."
+    },
+    {
+      "start": 166.44,
+      "end": 169.65,
+      "text": "The twenty-dollar seats are real,\nbut there are not many of them."
+    },
+    {
+      "start": 170.15,
+      "end": 172.71,
+      "text": "Budget airlines change\ntheir prices constantly."
+    },
+    {
+      "start": 172.71,
+      "end": 176.47,
+      "text": "Ryanair says its fares vary with how far\nahead you book, how many seats are left,"
+    },
+    {
+      "start": 176.47,
+      "end": 177.27,
+      "text": "and demand."
+    },
+    {
+      "start": 177.77,
+      "end": 179.95,
+      "text": "And because it sells\nevery journey one way,"
+    },
+    {
+      "start": 179.95,
+      "end": 183.08,
+      "text": "each seat on each flight\ncan carry its own price."
+    },
+    {
+      "start": 183.58,
+      "end": 185.67,
+      "text": "Think of every flight\nas a ladder of prices."
+    },
+    {
+      "start": 185.67,
+      "end": 188.12,
+      "text": "Our passenger booked weeks\nahead, for a quiet Tuesday,"
+    },
+    {
+      "start": 188.12,
+      "end": 189.86,
+      "text": "and landed on the bottom rung."
+    },
+    {
+      "start": 190.36,
+      "end": 192.97,
+      "text": "As the plane fills up,\neach new seat costs more."
+    },
+    {
+      "start": 192.97,
+      "end": 196.54,
+      "text": "The person in the next seat, who booked\nyesterday, may have paid many times as much,"
+    },
+    {
+      "start": 196.54,
+      "end": 198.03,
+      "text": "for exactly the same flight."
+    },
+    {
+      "start": 198.53,
+      "end": 200.17,
+      "text": "Those cheap seats do a job."
+    },
+    {
+      "start": 200.17,
+      "end": 201.56,
+      "text": "They fill the plane early,"
+    },
+    {
+      "start": 201.56,
+      "end": 204.07,
+      "text": "they put the airline's name at\nthe top of every price comparison,"
+    },
+    {
+      "start": 204.07,
+      "end": 205.66,
+      "text": "and they bring you to its website."
+    },
+    {
+      "start": 206.16,
+      "end": 210.16,
+      "text": "Ryanair even has a name for this:\nload factor active, yield passive."
+    },
+    {
+      "start": 210.16,
+      "end": 214.38,
+      "text": "In plain words: fill the plane first, and\nworry about the price of each seat second."
+    },
+    {
+      "start": 214.88,
+      "end": 216.94,
+      "text": "It admits that promotional\nfares can lower its"
+    },
+    {
+      "start": 216.94,
+      "end": 218.64,
+      "text": "revenue on those routes while they run."
+    },
+    {
+      "start": 218.64,
+      "end": 221.38,
+      "text": "It keeps running them anyway,\nto fill quiet periods."
+    },
+    {
+      "start": 222.68,
+      "end": 223.44,
+      "text": "Secret three."
+    },
+    {
+      "start": 223.44,
+      "end": 225.96,
+      "text": "A budget fare buys you\nless than you might think."
+    },
+    {
+      "start": 226.46,
+      "end": 228.96,
+      "text": "At the gate, our passenger finds\nout what the fare included."
+    },
+    {
+      "start": 228.96,
+      "end": 232.43,
+      "text": "Usually, a seat and one small bag\nthat fits under the seat in front."
+    },
+    {
+      "start": 232.43,
+      "end": 235.83,
+      "text": "Almost everything else is sold\nseparately: a bigger bag, a suitcase,"
+    },
+    {
+      "start": 235.83,
+      "end": 240.21,
+      "text": "choosing your seat, boarding early, changing\nyour ticket, even a drink on board."
+    },
+    {
+      "start": 240.71,
+      "end": 243.47,
+      "text": "At Ryanair, extras like priority boarding,"
+    },
+    {
+      "start": 243.47,
+      "end": 247.75,
+      "text": "reserved seats and onboard sales\nbrought in €4.99 billion last year."
+    },
+    {
+      "start": 247.75,
+      "end": 252.0,
+      "text": "That is about €24 per passenger, and\nroughly a third of all its revenue."
+    },
+    {
+      "start": 252.5,
+      "end": 257.8,
+      "text": "Add the fare and the extras together,\nand Ryanair took in €74.60 per passenger,"
+    },
+    {
+      "start": 257.8,
+      "end": 260.01,
+      "text": "against a cost of €63.21."
+    },
+    {
+      "start": 260.01,
+      "end": 263.43,
+      "text": "That gap, about €11 a\npassenger, is the profit."
+    },
+    {
+      "start": 263.93,
+      "end": 267.93,
+      "text": "In the United States, the\nsplit can be even more extreme."
+    },
+    {
+      "start": 267.93,
+      "end": 271.31,
+      "text": "Frontier's passengers paid more\nfor extras than for their tickets:"
+    },
+    {
+      "start": 271.31,
+      "end": 277.36,
+      "text": "$63.79 in non-fare charges,\nagainst $44.60 in fares."
+    },
+    {
+      "start": 277.86,
+      "end": 280.26,
+      "text": "And Frontier's revenue\nfrom extras grew from"
+    },
+    {
+      "start": 280.26,
+      "end": 286.72,
+      "text": "$60.55 per passenger in\n2021 to $67.57 in 2025."
+    },
+    {
+      "start": 287.22,
+      "end": 288.52,
+      "text": "That is the trick behind\nthe twenty-dollar headline."
+    },
+    {
+      "start": 288.52,
+      "end": 293.4,
+      "text": "The airline competes on the one number\nyou compare across websites, the fare,"
+    },
+    {
+      "start": 293.4,
+      "end": 295.82,
+      "text": "and earns its money on\nthe numbers you see later."
+    },
+    {
+      "start": 296.32,
+      "end": 299.29,
+      "text": "For someone with one small\nbackpack, that is a genuine bargain."
+    },
+    {
+      "start": 299.29,
+      "end": 301.98,
+      "text": "For a family with\nsuitcases, it might not be."
+    },
+    {
+      "start": 303.28,
+      "end": 305.14,
+      "text": "But none of that works\nunless the airline's"
+    },
+    {
+      "start": 305.14,
+      "end": 307.49,
+      "text": "own costs stay far below everyone else's."
+    },
+    {
+      "start": 307.99,
+      "end": 315.39,
+      "text": "Ryanair fits 197 seats into its newest\nBoeing 737s, and 189 into the older ones."
+    },
+    {
+      "start": 315.39,
+      "end": 317.25,
+      "text": "Traditional airlines fly the same Boeing"
+    },
+    {
+      "start": 317.25,
+      "end": 321.48,
+      "text": "737-800 with about 162\nseats in two classes."
+    },
+    {
+      "start": 321.98,
+      "end": 326.56,
+      "text": "More seats on the same plane, with the\nsame crew, means every seat costs less."
+    },
+    {
+      "start": 327.06,
+      "end": 329.7,
+      "text": "Its aircraft fly about nine and\na half hours a day on average,"
+    },
+    {
+      "start": 329.7,
+      "end": 332.14,
+      "text": "because a plane on the\nground earns nothing."
+    },
+    {
+      "start": 332.64,
+      "end": 336.19,
+      "text": "So between flights, the clock is\nrunning: passengers off, a quick clean,"
+    },
+    {
+      "start": 336.19,
+      "end": 338.71,
+      "text": "the next passengers on,\nand back in the air."
+    },
+    {
+      "start": 339.21,
+      "end": 343.49,
+      "text": "Almost the whole fleet is one aircraft\nfamily, the Boeing 737, so pilots,"
+    },
+    {
+      "start": 343.49,
+      "end": 345.68,
+      "text": "spare parts and mechanics\nare interchangeable."
+    },
+    {
+      "start": 346.18,
+      "end": 350.07,
+      "text": "It looks for airports that charge less,\nuses outdoor stairs instead of jet bridges,"
+    },
+    {
+      "start": 350.07,
+      "end": 352.64,
+      "text": "and makes every passenger check in online."
+    },
+    {
+      "start": 353.14,
+      "end": 358.54,
+      "text": "The result: leaving out fuel, Ryanair\nputs its own costs at €36 per passenger."
+    },
+    {
+      "start": 358.54,
+      "end": 362.07,
+      "text": "It puts Wizz Air at €62, easyJet at €90,"
+    },
+    {
+      "start": 362.07,
+      "end": 366.75,
+      "text": "and the big network airline\ngroups at €178 to €253."
+    },
+    {
+      "start": 367.25,
+      "end": 369.29,
+      "text": "That cost gap is the real product."
+    },
+    {
+      "start": 369.29,
+      "end": 371.76,
+      "text": "The twenty-dollar fare is just\nhow it shows up on your screen."
+    },
+    {
+      "start": 373.06,
+      "end": 374.33,
+      "text": "The model has a weak spot."
+    },
+    {
+      "start": 374.33,
+      "end": 378.17,
+      "text": "It needs full planes, steady fuel\nprices, and very little going wrong."
+    },
+    {
+      "start": 378.67,
+      "end": 382.07,
+      "text": "Ryanair needed its planes about 80\npercent full just to break even."
+    },
+    {
+      "start": 382.07,
+      "end": 385.98,
+      "text": "In 2025, Frontier's planes\nwere 78.4 percent full."
+    },
+    {
+      "start": 386.48,
+      "end": 390.73,
+      "text": "Frontier's costs came to\nabout $116.66 per passenger,"
+    },
+    {
+      "start": 390.73,
+      "end": 394.19,
+      "text": "a little more than the $112.17 it took in."
+    },
+    {
+      "start": 394.19,
+      "end": 396.9,
+      "text": "It lost $137 million that year."
+    },
+    {
+      "start": 397.4,
+      "end": 401.01,
+      "text": "Spirit Airlines, which described itself\nas a pioneer of affordable travel,"
+    },
+    {
+      "start": 401.01,
+      "end": 405.55,
+      "text": "filed for bankruptcy in November\n2024, and again in August 2025."
+    },
+    {
+      "start": 406.05,
+      "end": 409.66,
+      "text": "On May 2, 2026, citing a\nsharp rise in fuel prices,"
+    },
+    {
+      "start": 409.66,
+      "end": 412.5,
+      "text": "it cancelled all of its\nflights and began winding down."
+    },
+    {
+      "start": 413.0,
+      "end": 416.68,
+      "text": "When costs jump, a budget airline\ncannot simply raise its fares."
+    },
+    {
+      "start": 416.68,
+      "end": 419.3,
+      "text": "Low fares are the whole\nreason people fly with it."
+    },
+    {
+      "start": 419.8,
+      "end": 422.75,
+      "text": "That is why Ryanair locks in\nfuel prices ahead of time."
+    },
+    {
+      "start": 422.75,
+      "end": 427.32,
+      "text": "It says about 80 percent of its fuel for\nthe year to March 2027 is already hedged:"
+    },
+    {
+      "start": 427.32,
+      "end": 429.84,
+      "text": "a cushion that weaker\nrivals often do not have."
+    },
+    {
+      "start": 430.34,
+      "end": 432.36,
+      "text": "And when one of these airlines disappears,"
+    },
+    {
+      "start": 432.36,
+      "end": 435.7,
+      "text": "the people who relied on it lose\nthe cheapest way they had to travel."
+    },
+    {
+      "start": 437.0,
+      "end": 440.13,
+      "text": "So, how can an airline sell\na flight for twenty dollars?"
+    },
+    {
+      "start": 440.63,
+      "end": 443.5,
+      "text": "Because an empty seat is worth\nnothing once the plane leaves,"
+    },
+    {
+      "start": 443.5,
+      "end": 446.42,
+      "text": "and one more passenger\ncosts very little to carry."
+    },
+    {
+      "start": 446.92,
+      "end": 449.72,
+      "text": "Because the cheapest seats are a\nhandful at the bottom of a price ladder,"
+    },
+    {
+      "start": 449.72,
+      "end": 451.8,
+      "text": "and people who book later pay much more."
+    },
+    {
+      "start": 452.3,
+      "end": 454.58,
+      "text": "Because the fare is only\npart of what you pay."
+    },
+    {
+      "start": 454.58,
+      "end": 456.97,
+      "text": "Bags, seats and extras close the gap."
+    },
+    {
+      "start": 457.47,
+      "end": 460.22,
+      "text": "And because the airline\nis built, piece by piece,"
+    },
+    {
+      "start": 460.22,
+      "end": 463.21,
+      "text": "to fly each seat more\ncheaply than its rivals."
+    },
+    {
+      "start": 463.71,
+      "end": 464.97,
+      "text": "So who pays for the twenty-dollar seat?"
+    },
+    {
+      "start": 464.97,
+      "end": 466.57,
+      "text": "Partly the people who book late."
+    },
+    {
+      "start": 466.57,
+      "end": 468.01,
+      "text": "Partly the people who add a suitcase."
+    },
+    {
+      "start": 468.01,
+      "end": 470.68,
+      "text": "And partly the airline's\nobsession with cost."
+    },
+    {
+      "start": 470.68,
+      "end": 473.2,
+      "text": "If you travel light, book\nearly and skip the extras,"
+    },
+    {
+      "start": 473.2,
+      "end": 474.86,
+      "text": "you might be the one getting the deal."
+    },
+    {
+      "start": 475.36,
+      "end": 476.63,
+      "text": "This is Hidden Ledger."
+    },
+    {
+      "start": 476.63,
+      "end": 479.17,
+      "text": "Every number in this video is\nsourced in the description."
+    }
+  ]
+}

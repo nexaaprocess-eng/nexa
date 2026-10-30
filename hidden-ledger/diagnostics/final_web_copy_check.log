@@ -1,0 +1,7 @@
+[Parsed_ssim_0 @ 0x5587283b8b00] SSIM Y:0.999843 (38.050510) U:0.999659 (34.671055) V:0.999675 (34.883575) All:0.999785 (36.667017)
+[Parsed_psnr_1 @ 0x5587283b8dc0] PSNR y:60.908942 u:62.544022 v:62.934757 average:61.436662 min:49.803317 max:79.568134
+    I:         -15.3 LUFS
+    Peak:       -2.5 dBFS
+stream|codec_name=h264|width=1920|height=1080|r_frame_rate=30/1|bit_rate=6530722
+stream|codec_name=aac|sample_rate=48000|channels=2|r_frame_rate=0/0|bit_rate=253110
+format|duration=593.533333|size=503925551

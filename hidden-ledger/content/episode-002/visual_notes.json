@@ -1,0 +1,446 @@
+{
+ "_about": "Visual objective and exact on-screen text per narration segment (mirrors src/scenes/ep002/*.tsx). Merged with real audio timings into storyboard.json by python/write_docs.py.",
+ "s01-01": {
+  "visual": "Checkout lane already moving at frame 0; a generic $100 bill slides in; question band on screen",
+  "onScreen": [
+   "Of every $100 you spend at a supermarket… how much does the store keep?"
+  ]
+ },
+ "s01-02": {
+  "visual": "Bread, coffee, milk and a deli meal cross the scanner on the spoken words (beeps); register total climbs; receipt prints",
+  "onScreen": [
+   "register total"
+  ]
+ },
+ "s01-03": {
+  "visual": "Close-up on the bill with a question badge",
+  "onScreen": [
+   "How much does the supermarket keep?"
+  ]
+ },
+ "s01-04": {
+  "visual": "Bill shrinks to the left; 2,697 green squares fill in (one per supermarket); $1.28 counts up",
+  "onScreen": [
+   "≈2,700 Kroger supermarkets",
+   "2,697 at fiscal year-end · one square = one store",
+   "$1.28 operating profit per $100 of sales",
+   "SOURCE Kroger 10-K FY2025"
+  ]
+ },
+ "s01-05": {
+  "visual": "$147.6B counter beside the tiny $1.28",
+  "onScreen": [
+   "Kroger sales, fiscal 2025",
+   "$147.6B",
+   "more than $147 billion"
+  ]
+ },
+ "s01-06": {
+  "visual": "A tiny pulsing coin vs a growing stack of crates",
+  "onScreen": [
+   "Tiny margins.",
+   "Enormous numbers.",
+   "How does that business actually work?"
+  ]
+ },
+ "s02-01": {
+  "visual": "Camera pulls back from one storefront to a grid of 49 stores",
+  "onScreen": [
+   "Start with the scale"
+  ]
+ },
+ "s02-02": {
+  "visual": "A $147.6B column of crates; a thin green sliver on top is circled",
+  "onScreen": [
+   "$147.6B sales",
+   "$1.9B operating profit = 1.28%"
+  ]
+ },
+ "s02-03": {
+  "visual": "Red card for the charge; FY2025 vs FY2024 margin bars",
+  "onScreen": [
+   "Includes a $2.5B charge",
+   "1.28% FY2025",
+   "2.62% FY2024"
+  ]
+ },
+ "s02-04": {
+  "visual": "100-dot grid (cents in a dollar); two dots light green",
+  "onScreen": [
+   "1–2¢ of operating profit",
+   "…multiplied across a mountain of sales"
+  ]
+ },
+ "s02-05": {
+  "visual": "Equation builds term by term",
+  "onScreen": [
+   "1% × $147.6B = $1.48B"
+  ]
+ },
+ "s02-06": {
+  "visual": "Supercenter storefront; net-sales bar with a 4.2% green slice",
+  "onScreen": [
+   "$706B net sales",
+   "4.2% operating income",
+   "≈$30B"
+  ]
+ },
+ "s02-07": {
+  "visual": "Four checkout belts running at once",
+  "onScreen": [
+   "SECRET #1",
+   "Not a lot per sale. An enormous number of sales."
+  ]
+ },
+ "s03-01": {
+  "visual": "100 one-dollar coins on the left; waterfall starts with the $100 sales bar",
+  "onScreen": [
+   "$100 of Kroger sales",
+   "Sales $100.00"
+  ]
+ },
+ "s03-02": {
+  "visual": "77 coins fly into the 'Cost of goods' row; red bar grows",
+  "onScreen": [
+   "Cost of goods −$77.14",
+   "includes advertising, warehousing and transportation"
+  ]
+ },
+ "s03-03": {
+  "visual": "Gross profit row appears",
+  "onScreen": [
+   "Gross profit $22.86",
+   "Gross margin 22.9%"
+  ]
+ },
+ "s03-04": {
+  "visual": "Stamp on the gross-profit row",
+  "onScreen": [
+   "NOT PROFIT YET"
+  ]
+ },
+ "s03-05": {
+  "visual": "22 coins fly into 'Running the business'; cost chips appear on the spoken words",
+  "onScreen": [
+   "wages & benefits",
+   "utilities",
+   "rent",
+   "depreciation",
+   "$2.5B charge",
+   "−$21.58"
+  ]
+ },
+ "s03-06": {
+  "visual": "Last coin pulses green; operating-profit sliver",
+  "onScreen": [
+   "Operating profit $1.28",
+   "Operating margin 1.28%"
+  ]
+ },
+ "s03-07": {
+  "visual": "Interest/taxes row and net earnings",
+  "onScreen": [
+   "−$0.59",
+   "Net earnings $0.69",
+   "Net margin 0.69%"
+  ]
+ },
+ "s03-08": {
+  "visual": "Three cards land on the words gross / operating / net",
+  "onScreen": [
+   "Gross 22.9%",
+   "Operating 1.28%",
+   "Net 0.69%"
+  ]
+ },
+ "s04-01": {
+  "visual": "ILLUSTRATIVE banner; checkout scans the ten basket items",
+  "onScreen": [
+   "A hypothetical basket",
+   "Prices & costs are invented"
+  ]
+ },
+ "s04-02": {
+  "visual": "Receipt prints as the tenth item scans; register reads $54.00",
+  "onScreen": [
+   "10 items · $54.00"
+  ]
+ },
+ "s04-03": {
+  "visual": "Milk close-up with a price-vs-cost bar",
+  "onScreen": [
+   "price $3.80 · cost $3.65 · kept $0.15 (4%)",
+   "Loss leader: a thin margin, or even below cost, to bring shoppers in"
+  ]
+ },
+ "s04-04": {
+  "visual": "National vs store-brand cereal side by side on a shelf; deli meal pops in",
+  "onScreen": [
+   "National brand: kept $1.10 (20%)",
+   "Store brand: kept $1.40 (36%)",
+   "Deli meal: kept $3.40 (40%)"
+  ]
+ },
+ "s04-05": {
+  "visual": "Basket profit waterfall built item by item; total column",
+  "onScreen": [
+   "23.2%",
+   "gross margin on $54.00: $12.55 after product costs",
+   "Numbers chosen to land near Kroger's reported 22.9%"
+  ]
+ },
+ "s04-06": {
+  "visual": "High-margin items outlined in the waterfall",
+  "onScreen": [
+   "The mix has to be profitable, not every item"
+  ]
+ },
+ "s05-01": {
+  "visual": "Speed streaks",
+  "onScreen": [
+   "SECRET #2",
+   "Speed"
+  ]
+ },
+ "s05-02": {
+  "visual": "Perishables with clocks, then one tracking shot: truck backs in → pallet through the stockroom → shelf refills → shoppers empty it",
+  "onScreen": [
+   "Perishable: it can't sit for long",
+   "Trucks arrive",
+   "Through the stockroom",
+   "Shelves refilled…",
+   "…and emptied again"
+  ]
+ },
+ "s05-03": {
+  "visual": "Goods flow over a fraction bar; a small stock sits under it",
+  "onScreen": [
+   "Inventory turnover",
+   "cost of goods sold in a year",
+   "average inventory on hand"
+  ]
+ },
+ "s05-04": {
+  "visual": "Three lanes count laps for one simulated year",
+  "onScreen": [
+   "Costco 14.1×",
+   "Kroger 12.0×",
+   "Walmart 9.3×"
+  ]
+ },
+ "s05-05": {
+  "visual": "30-day calendar lights up day by day from truck to scanner",
+  "onScreen": [
+   "12 turns a year ≈ about a month from truck to checkout",
+   "less cash sitting on the shelves"
+  ]
+ },
+ "s05-06": {
+  "visual": "A coin loops Truck → Shelf → Checkout; turn counter increments",
+  "onScreen": [
+   "+N turns, each one earning the thin margin again",
+   "Same shelf space. Same money tied up in stock."
+  ]
+ },
+ "s06-01": {
+  "visual": "Three balance scales tip toward payables",
+  "onScreen": [
+   "Accounts payable > inventory",
+   "Walmart 107%",
+   "Costco 117%",
+   "Kroger 111%"
+  ]
+ },
+ "s06-02": {
+  "visual": "Stack of invoices stamped NOT YET PAID",
+  "onScreen": [
+   "Accounts payable = bills not paid yet",
+   "…suppliers are, in effect, helping finance the shelves"
+  ]
+ },
+ "s06-03": {
+  "visual": "ILLUSTRATIVE 30-day timeline: truck drops a pasta case on day 1, shelf empties by day 21, till fills, invoice paid on day 30",
+  "onScreen": [
+   "day 1 … day 30",
+   "9 days holding the cash"
+  ]
+ },
+ "s06-04": {
+  "visual": "Arrows from a supplier warehouse to a store, one per spoken payment type",
+  "onScreen": [
+   "volume incentives",
+   "warehouse allowances",
+   "markdowns",
+   "certain advertising",
+   "→ booked as a reduction of cost of sales"
+  ]
+ },
+ "s06-05": {
+  "visual": "A shelf darkens to reveal two contracts behind it",
+  "onScreen": [
+   "The shelf price is only part of the story",
+   "Gross margin is also shaped by negotiations shoppers never see"
+  ]
+ },
+ "s07-01": {
+  "visual": "Dolly down a supermarket aisle",
+  "onScreen": [
+   "The store's own brand"
+  ]
+ },
+ "s07-02": {
+  "visual": "Shelf with store-brand facings lit by a sweeping spotlight; counters",
+  "onScreen": [
+   "$39B+ of sales in fiscal 2025",
+   "13,000+ private-label items in an average Kroger supermarket"
+  ]
+ },
+ "s07-03": {
+  "visual": "Pie fills to 26.4%",
+  "onScreen": [
+   "≈ 1/4",
+   "$39B of $147.6B in sales = 26.4%"
+  ]
+ },
+ "s07-04": {
+  "visual": "Store-brand box; two verbatim Costco 10-K phrases slide in",
+  "onScreen": [
+   "“prices that are generally lower than national brands”",
+   "“generally earn higher margins”"
+  ]
+ },
+ "s07-05": {
+  "visual": "Conceptual stacked bars: national brand (product, brand owner, store) vs store brand (product, store)",
+  "onScreen": [
+   "How both can be true",
+   "Conceptual diagram: bar lengths are not data"
+  ]
+ },
+ "s08-01": {
+  "visual": "Aisle under a pulsing red alert",
+  "onScreen": [
+   "THE DANGER",
+   "In a business this thin, small losses are big problems"
+  ]
+ },
+ "s08-02": {
+  "visual": "Four panels acted out on the words: banana browns, box crushes, coffee vanishes, records mismatch",
+  "onScreen": [
+   "Shrink: paid for, but never sold",
+   "Spoiled",
+   "Damaged",
+   "Stolen",
+   "Missing in the records"
+  ]
+ },
+ "s08-03": {
+  "visual": "Ten produce crates; one turns red",
+  "onScreen": [
+   "10% of the U.S. food supply was lost at the retail level in 2010",
+   "(43 billion pounds) · older estimate; USDA notes some users consider it high"
+  ]
+ },
+ "s08-04": {
+  "visual": "Salad marked 50% returns coins; a spoiled one drops into a bin",
+  "onScreen": [
+   "Marked down",
+   "Thrown away",
+   "recovers part of its cost",
+   "$0"
+  ]
+ },
+ "s08-05": {
+  "visual": "ILLUSTRATIVE: a $1 hole fills as 50 one-dollar sales ring up",
+  "onScreen": [
+   "Imagine a 2% operating margin",
+   "$50 of new sales",
+   "$1 lost ÷ 2¢ of profit per $1 of sales = $50 of sales"
+  ]
+ },
+ "s08-06": {
+  "visual": "Kroger's reasons list with 'lower shrink' highlighted beside a shelf",
+  "onScreen": [
+   "Why Kroger's gross margin rose to 22.9%",
+   "lower shrink"
+  ]
+ },
+ "s09-01": {
+  "visual": "Three storefronts drop in",
+  "onScreen": [
+   "Supermarket",
+   "Supercenter",
+   "Warehouse club"
+  ]
+ },
+ "s09-02": {
+  "visual": "Supercenter; grocery pie 59%; figures on the words",
+  "onScreen": [
+   "59% of Walmart U.S. sales were grocery",
+   "24.2% gross profit rate",
+   "4.2% operating income"
+  ]
+ },
+ "s09-03": {
+  "visual": "Warehouse club; membership card flies in",
+  "onScreen": [
+   "11.09% gross margin on net sales",
+   "$5.9B membership fees"
+  ]
+ },
+ "s09-04": {
+  "visual": "Fees bar inside the operating-income bar",
+  "onScreen": [
+   "Operating income $11.7B",
+   "fees $5.9B",
+   "≈ half (50.6%)"
+  ]
+ },
+ "s09-05": {
+  "visual": "Supermarket storefront; chips appear on the spoken words",
+  "onScreen": [
+   "Fresh food",
+   "Own brands",
+   "Pharmacy",
+   "Fuel",
+   "Advertising & other side businesses"
+  ]
+ },
+ "s09-06": {
+  "visual": "Two pies (24% vs 11%) with ≠",
+  "onScreen": [
+   "24% Walmart gross margin",
+   "11% Costco gross margin",
+   "Different businesses, not better or worse ones"
+  ]
+ },
+ "s10-01": {
+  "visual": "Back at the checkout",
+  "onScreen": [
+   "So how do supermarkets make money on tiny margins?"
+  ]
+ },
+ "s10-02": {
+  "visual": "Six lever tiles tick green on the spoken words",
+  "onScreen": [
+   "Enormous volume",
+   "Fast inventory turns",
+   "Supplier credit",
+   "Own brands",
+   "Fighting shrink",
+   "Membership & advertising"
+  ]
+ },
+ "s10-03": {
+  "visual": "The $100 bill splits into a bar: food / people · stores · trucks / kept",
+  "onScreen": [
+   "$1–3 kept as operating profit at a chain like Kroger"
+  ]
+ },
+ "s10-04": {
+  "visual": "End card",
+  "onScreen": [
+   "HIDDEN LEDGER",
+   "Every number in this video is sourced in the description"
+  ]
+ }
+}

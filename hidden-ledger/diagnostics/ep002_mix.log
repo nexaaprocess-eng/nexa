@@ -1,0 +1,64 @@
+{"duration": 599.501, "integrated_lufs": -15.3, "true_peak_dbtp": -2.4, "lra": 3.2, "clipped_samples": 0, "music_source": "procedural (python/music.py)", "sfx_events": 61}
+  audit {'from': 0, 'to': 30, 'voice_db': -22.7, 'music_db': -48.7, 'voice_over_music_db': 26.0}
+  audit {'from': 36.59, 'to': 44.59, 'voice_db': -22.9, 'music_db': -46.0, 'voice_over_music_db': 23.1}
+  audit {'from': 111.47, 'to': 119.47, 'voice_db': -23.7, 'music_db': -46.0, 'voice_over_music_db': 22.3}
+  audit {'from': 186.48, 'to': 194.48, 'voice_db': -24.6, 'music_db': -47.6, 'voice_over_music_db': 23.0}
+{
+ "voice": {
+  "segments": 59,
+  "possible_cutoffs": [],
+  "clipped_segments": [],
+  "pause_min_s": 0.38,
+  "pause_max_s": 0.9,
+  "configured_pauses_s": [
+   0.38,
+   0.9
+  ],
+  "unexpected_gaps": []
+ },
+ "music": {
+  "speech_windows": 4422,
+  "voice_over_music_db_median": 26.0,
+  "voice_over_music_db_p5": 16.3,
+  "voice_over_music_db_min": 9.0,
+  "worst_windows": [
+   {
+    "t": 481.1,
+    "voice_over_music_db": 9.0
+   },
+   {
+    "t": 536.7,
+    "voice_over_music_db": 9.2
+   },
+   {
+    "t": 554.3,
+    "voice_over_music_db": 9.9
+   },
+   {
+    "t": 401.9,
+    "voice_over_music_db": 10.1
+   },
+   {
+    "t": 399.5,
+    "voice_over_music_db": 10.1
+   }
+  ],
+  "per_scene_music_db": {
+   "s01": -50.5,
+   "s02": -49.8,
+   "s03": -52.0,
+   "s04": -49.5,
+   "s05": -49.4,
+   "s06": -48.9,
+   "s07": -49.3,
+   "s08": -49.5,
+   "s09": -49.8,
+   "s10": -47.6
+  }
+ },
+ "sfx": {
+  "peak_relative_to_voice_peak_db": -13.5
+ },
+ "issues": []
+}
+EXIT 0

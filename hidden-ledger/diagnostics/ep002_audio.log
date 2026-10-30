@@ -1,0 +1,47 @@
+
+$ python python/music.py all
+sfx whoosh 0.9 s
+sfx click 0.05 s
+sfx tick 0.08 s
+sfx thump 0.6 s
+sfx pop 0.35 s
+sfx beep 0.11 s
+sfx register 0.57 s
+music 1_intro.wav 60 s
+music 2_neutral.wav 60 s
+music 3_reveal.wav 60 s
+
+$ python python/generate_voice.py narration --episode 002
+narration: 0 rendered, 59 cached, 0 failed (voice=am_michael, speed=1.0)
+
+$ python python/build_timeline.py --episode 002 --name full
+full: 10 scenes, 599.50s total, 1370 words, 144 wpm while speaking, 147 subtitle cues
+  s01    0.00 ->   40.59  Cold open
+  s02   40.59 ->  115.47  Huge sales, thin profit
+  s03  115.47 ->  190.48  Three kinds of margin
+  s04  190.48 ->  245.62  The basket
+  s05  245.62 ->  307.13  Speed
+  s06  307.13 ->  370.85  Suppliers
+  s07  370.85 ->  411.34  Private label
+  s08  411.34 ->  477.90  Shrink
+  s09  477.90 ->  551.39  Three business models
+  s10  551.39 ->  599.50  Payoff
+
+$ python python/mix.py --episode 002 --name full
+   music cue s01 intro 41.59s
+   music cue s02 neutral 76.88s
+   music cue s03 process 77.01s
+   music cue s04 lift 57.14s
+   music cue s05 process 63.51s
+   music cue s06 neutral 65.72s
+   music cue s07 lift 42.49s
+   music cue s08 tension 68.56s
+   music cue s09 neutral 75.49s
+   music cue s10 reveal 49.11s
+   warning: sfx cue word 'thrown' not found in s08-04
+{"duration": 599.501, "integrated_lufs": -15.3, "true_peak_dbtp": -2.4, "lra": 3.2, "clipped_samples": 0, "music_source": "procedural (python/music.py)", "sfx_events": 60}
+  audit {'from': 0, 'to': 30, 'voice_db': -22.7, 'music_db': -48.7, 'voice_over_music_db': 26.0}
+  audit {'from': 36.59, 'to': 44.59, 'voice_db': -22.9, 'music_db': -46.0, 'voice_over_music_db': 23.1}
+  audit {'from': 111.47, 'to': 119.47, 'voice_db': -23.7, 'music_db': -46.0, 'voice_over_music_db': 22.3}
+  audit {'from': 186.48, 'to': 194.48, 'voice_db': -24.6, 'music_db': -47.6, 'voice_over_music_db': 23.0}
+EXIT 0

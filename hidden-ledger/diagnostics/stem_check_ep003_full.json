@@ -1,0 +1,57 @@
+{
+  "voice": {
+    "segments": 63,
+    "possible_cutoffs": [],
+    "clipped_segments": [],
+    "pause_min_s": 0.38,
+    "pause_max_s": 0.9,
+    "configured_pauses_s": [
+      0.38,
+      0.9
+    ],
+    "unexpected_gaps": []
+  },
+  "music": {
+    "speech_windows": 4942,
+    "voice_over_music_db_median": 26.0,
+    "voice_over_music_db_p5": 16.3,
+    "voice_over_music_db_min": 8.3,
+    "worst_windows": [
+      {
+        "t": 413.5,
+        "voice_over_music_db": 8.3
+      },
+      {
+        "t": 414.3,
+        "voice_over_music_db": 10.4
+      },
+      {
+        "t": 616.4,
+        "voice_over_music_db": 10.5
+      },
+      {
+        "t": 90.0,
+        "voice_over_music_db": 10.6
+      },
+      {
+        "t": 409.3,
+        "voice_over_music_db": 10.8
+      }
+    ],
+    "per_scene_music_db": {
+      "s01": -50.3,
+      "s02": -47.7,
+      "s03": -50.8,
+      "s04": -49.1,
+      "s05": -51.0,
+      "s06": -50.5,
+      "s07": -48.5,
+      "s08": -53.8,
+      "s09": -48.4
+    }
+  },
+  "sfx": {
+    "peak_relative_to_voice_peak_db": -14.8
+  },
+  "issues": []
+}

@@ -1,0 +1,94 @@
+{
+  "video": "output/episode-004/final/hidden_ledger_episode_004_FINAL_1080p.mp4",
+  "problems": [
+    "7 scene change(s) where the picture transition is not within ±0.2 s of the narration timeline"
+  ],
+  "completeness": {
+    "video_frames": 14466,
+    "timeline_frames": 14466,
+    "video_duration": 482.2,
+    "audio_duration": 482.2,
+    "timeline_duration": 482.17,
+    "video_start": 0.0,
+    "audio_start": 0.0
+  },
+  "audio_offset": [
+    {
+      "at_s": 5.0,
+      "offset_ms": 0.0,
+      "correlation": 0.985
+    },
+    {
+      "at_s": 241.1,
+      "offset_ms": 0.0,
+      "correlation": 0.983
+    },
+    {
+      "at_s": 457.2,
+      "offset_ms": 0.0,
+      "correlation": 0.982
+    }
+  ],
+  "scene_transitions": [
+    {
+      "scene": "s02",
+      "timeline_start": 39.63,
+      "wipe_centre": 38.83,
+      "delta_s": null,
+      "edge_row_coverage": 0.12,
+      "baseline_coverage": 0.06
+    },
+    {
+      "scene": "s03",
+      "timeline_start": 101.25,
+      "wipe_centre": 100.55,
+      "delta_s": null,
+      "edge_row_coverage": 0.04,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s04",
+      "timeline_start": 164.9,
+      "wipe_centre": 164.1,
+      "delta_s": null,
+      "edge_row_coverage": 0.21,
+      "baseline_coverage": 0.08
+    },
+    {
+      "scene": "s05",
+      "timeline_start": 222.03,
+      "wipe_centre": 222.63,
+      "delta_s": null,
+      "edge_row_coverage": 0.17,
+      "baseline_coverage": 0.06
+    },
+    {
+      "scene": "s06",
+      "timeline_start": 302.63,
+      "wipe_centre": 301.83,
+      "delta_s": null,
+      "edge_row_coverage": 0.11,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s07",
+      "timeline_start": 372.41,
+      "wipe_centre": 371.977,
+      "delta_s": null,
+      "edge_row_coverage": 0.1,
+      "baseline_coverage": 0.0
+    },
+    {
+      "scene": "s08",
+      "timeline_start": 436.35,
+      "wipe_centre": 436.383,
+      "delta_s": null,
+      "edge_row_coverage": 0.11,
+      "baseline_coverage": 0.0
+    }
+  ],
+  "intelligibility": {
+    "wer_final_mix": 0.032
+  },
+  "ok": false
+}

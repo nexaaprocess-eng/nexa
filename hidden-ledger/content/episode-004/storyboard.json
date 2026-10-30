@@ -1,0 +1,946 @@
+{
+  "episode": "004",
+  "title": "How Can Airlines Sell Flights for Just $20?",
+  "fps": 30,
+  "timing_source": "measured WAV durations (output/episode-XXX/audio/full/timeline.json)",
+  "duration": 482.17,
+  "scenes": [
+    {
+      "id": "s01",
+      "title": "Cold open",
+      "chapter": "The twenty-dollar flight",
+      "music": "intro",
+      "start": 0.0,
+      "end": 39.63,
+      "duration": 39.63,
+      "component": "src/scenes (registry id s01)",
+      "beats": [
+        {
+          "segment": "s01-01",
+          "start": 0.4,
+          "end": 6.43,
+          "narration": "Meet our passenger. They want to visit a friend in another city, and the airline's website says the flight costs twenty dollars.",
+          "visual": "sh01 · Apartment, golden hour, over the shoulder: the passenger browses flights; '$20' lands at the top of the results and pops out of the screen; the passenger recoils a little",
+          "on_screen_text": [
+            "One way $20"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s01-02",
+          "start": 6.93,
+          "end": 9.2,
+          "narration": "Twenty dollars, to fly. So they book it.",
+          "visual": "sh02 · Front three-quarter: surprise turns into a grin, a glance to camera, then a click: booked",
+          "on_screen_text": [],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s01-03",
+          "start": 9.7,
+          "end": 17.37,
+          "narration": "Then the checkout keeps going. A cabin bag: $25. A window seat: $12. A checked suitcase: $35.",
+          "visual": "sh03 · Closer over the shoulder: the checkout adds a cabin bag, a window seat, a checked suitcase; expression goes happy → confused → worried",
+          "on_screen_text": [
+            "+ $25 cabin bag",
+            "+ $12 window seat",
+            "+ $35 checked suitcase"
+          ],
+          "claims": [
+            "I01"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s01-04",
+          "start": 17.87,
+          "end": 23.58,
+          "narration": "The twenty-dollar flight now costs $92. Those prices are a made-up example. The pattern is real.",
+          "visual": "sh04 · Close-up: the total lands, the passenger slumps, then a skeptical look to camera",
+          "on_screen_text": [
+            "New total $92",
+            "MADE-UP EXAMPLE"
+          ],
+          "claims": [
+            "I01"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s01-05",
+          "start": 24.08,
+          "end": 34.19,
+          "narration": "At the American budget airline Frontier, the average passenger in 2025 paid $44.60 in fares, and another $63.79 in other charges.",
+          "visual": "sh05 · Studio stage: two coin stacks beside the passenger, heights proportional to $44.60 (fares) and $63.79 (other charges); the passenger looks up at the taller one",
+          "on_screen_text": [
+            "FRONTIER · AVERAGE PER PASSENGER, 2025",
+            "$44.60 fares",
+            "$63.79 other charges"
+          ],
+          "claims": [
+            "F01"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s01-06",
+          "start": 34.69,
+          "end": 38.98,
+          "narration": "So how can an airline sell a flight for twenty dollars? And who is really paying for it?",
+          "visual": "sh06 · Apron at sunset: the passenger, backpack on, hands in pockets, looks up at the aircraft",
+          "on_screen_text": [
+            "How can a flight cost $20?",
+            "And who is really paying for it?"
+          ],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "title": "What a flight costs",
+      "chapter": "What one passenger costs to fly",
+      "music": "neutral",
+      "start": 39.63,
+      "end": 101.25,
+      "duration": 61.62,
+      "component": "src/scenes (registry id s02)",
+      "beats": [
+        {
+          "segment": "s02-01",
+          "start": 40.28,
+          "end": 45.21,
+          "narration": "To find out, follow our passenger onto the plane, and look at the bill for the flight itself.",
+          "visual": "sh07 · Wide: the passenger crosses the apron and climbs the outdoor boarding stairs",
+          "on_screen_text": [],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s02-02",
+          "start": 45.71,
+          "end": 53.84,
+          "narration": "Europe's largest budget airline, Ryanair, publishes that bill every year. In the twelve months to March 2026, it carried 208 million passengers.",
+          "visual": "sh08 · Cabin: the passenger settles in window seat 4F, looks around",
+          "on_screen_text": [
+            "RYANAIR · 12 MONTHS TO MARCH 2026",
+            "208 million passengers"
+          ],
+          "claims": [
+            "R01"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s02-03",
+          "start": 54.34,
+          "end": 59.9,
+          "narration": "Averaged over all of them, flying one passenger cost Ryanair €63.21.",
+          "visual": "sh08 · Same seat, thinking",
+          "on_screen_text": [
+            "Average cost to fly one passenger €63.21"
+          ],
+          "claims": [
+            "R02"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s02-04",
+          "start": 60.4,
+          "end": 77.88,
+          "narration": "The biggest slice is fuel: €26, about 41 percent of all its costs. Then staff, about €9. Airport and handling fees, about €8.50. The aircraft themselves, about €6.60. Air traffic control charges, about €6.30. And then sales, maintenance and everything else.",
+          "visual": "sh09 · Wide apron with fuel truck, tower and terminal: callouts pinned to the things that cost money",
+          "on_screen_text": [
+            "Fuel · 41% of costs €26.01",
+            "Staff €8.91",
+            "Airport & handling €8.46",
+            "The aircraft (depreciation) €6.59",
+            "Air traffic control €6.33",
+            "+ sales, maintenance, other €6.91"
+          ],
+          "claims": [
+            "R02",
+            "R03"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s02-05",
+          "start": 78.38,
+          "end": 84.19,
+          "narration": "Fuel alone is close to half of that bill. Remember that: when oil prices jump, budget airlines feel it first.",
+          "visual": "sh09 · Hold on the apron; the fuel callout stays lit",
+          "on_screen_text": [
+            "Fuel ≈ 41% of the bill"
+          ],
+          "claims": [
+            "R03"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s02-06",
+          "start": 84.69,
+          "end": 93.36,
+          "narration": "Now look at what the average passenger paid for the ticket: €50.66. And Ryanair counts checked bag fees and change fees inside that figure.",
+          "visual": "sh10 · A balance scale on the stage: the fare pan rides higher than the cost pan; the passenger looks from one to the other",
+          "on_screen_text": [
+            "Fare €50.66 incl. bag & change fees",
+            "Cost €63.21"
+          ],
+          "claims": [
+            "R02",
+            "R04"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s02-07",
+          "start": 93.86,
+          "end": 100.6,
+          "narration": "So on the fare alone, the average passenger is flown at a loss. The gap gets closed somewhere else. To see where, we need three secrets.",
+          "visual": "sh10 · The passenger shrugs, then looks up: three secrets",
+          "on_screen_text": [
+            "On the fare alone −€12.55 per passenger",
+            "Three secrets."
+          ],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "title": "The empty seat",
+      "chapter": "Secret one: the empty seat",
+      "music": "process",
+      "start": 101.25,
+      "end": 164.9,
+      "duration": 63.65,
+      "component": "src/scenes (registry id s03)",
+      "beats": [
+        {
+          "segment": "s03-01",
+          "start": 101.9,
+          "end": 105.86,
+          "narration": "Secret one. Most of what a flight costs does not depend on who is sitting in it.",
+          "visual": "sh11 · An almost empty cabin seen from the aisle; the passenger alone in row 6",
+          "on_screen_text": [],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s03-02",
+          "start": 106.36,
+          "end": 117.55,
+          "narration": "The crew gets paid, the fuel gets burned, and the airport sends its bill, whether the plane is full or half empty. Ryanair's own annual report says the operating costs of each flight do not vary significantly with the number of passengers flown.",
+          "visual": "sh11 · Costs keep ticking",
+          "on_screen_text": [
+            "Crew: paid",
+            "Fuel: burned",
+            "Airport: billed",
+            "Quote: Ryanair Form 20-F, operating costs of each flight"
+          ],
+          "claims": [
+            "R05"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s03-03",
+          "start": 118.05,
+          "end": 125.17,
+          "narration": "Averaged across the year, one Ryanair flight cost about €11,400 to operate, and carried about 181 passengers.",
+          "visual": "sh12 · Wide: the aircraft at the stand in the low sun, slow push-in",
+          "on_screen_text": [
+            "One average Ryanair flight ≈ €11,400 to operate · ≈ 181 passengers"
+          ],
+          "claims": [
+            "C01"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s03-04",
+          "start": 125.67,
+          "end": 133.49,
+          "narration": "And once the door closes, every empty seat around our passenger is gone for good. Like a concert ticket after the show, or a hotel room after midnight, it can never be sold again.",
+          "visual": "sh13 · The door has closed; the passenger looks around at the empty seats, worried",
+          "on_screen_text": [
+            "€0 — an empty seat can never be sold again"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s03-05",
+          "start": 133.99,
+          "end": 141.63,
+          "narration": "One more passenger, though, adds only a little: some per-passenger fees and taxes, and a bit of extra fuel. So for the airline, a cheap seat beats an empty one.",
+          "visual": "sh14 · Another passenger walks down the aisle and sits in 5C",
+          "on_screen_text": [
+            "+ per-passenger fees & taxes",
+            "+ a bit of extra fuel"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s03-06",
+          "start": 142.13,
+          "end": 147.79,
+          "narration": "That changes the question. It is not, what does one seat cost? It is, how full does the plane need to be?",
+          "visual": "sh14 · The passenger thinks",
+          "on_screen_text": [
+            "How full does the plane need to be?"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s03-07",
+          "start": 148.29,
+          "end": 155.49,
+          "narration": "Ryanair calls that its break-even load factor. In its last financial year, it was 80 percent. Its planes were actually 94 percent full.",
+          "visual": "sh15 · Top-down cutaway of a 197-seat cabin: seats fill to break-even (158)",
+          "on_screen_text": [
+            "158 / 197 seats covering the cost of the flight"
+          ],
+          "claims": [
+            "R06"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s03-08",
+          "start": 155.99,
+          "end": 164.25,
+          "narration": "Picture one of its Boeing jets, with 197 seats. Roughly the first 158 passengers pay for the flight. The next 27 or so are where the profit is.",
+          "visual": "sh15 · Seats keep filling to 94%: the last ~27 are orange (profit)",
+          "on_screen_text": [
+            "ILLUSTRATIVE · ONE 197-SEAT AIRCRAFT",
+            "break-even at 158 · 27 seats of profit"
+          ],
+          "claims": [
+            "I02",
+            "R08"
+          ],
+          "music_dip": true
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "title": "The price ladder",
+      "chapter": "Secret two: the price ladder",
+      "music": "tension",
+      "start": 164.9,
+      "end": 222.03,
+      "duration": 57.13,
+      "component": "src/scenes (registry id s04)",
+      "beats": [
+        {
+          "segment": "s04-01",
+          "start": 165.55,
+          "end": 169.65,
+          "narration": "Secret two. The twenty-dollar seats are real, but there are not many of them.",
+          "visual": "sh16 · Departure hall at golden hour: the passenger walks to a fares board whose prices keep rising",
+          "on_screen_text": [],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s04-02",
+          "start": 170.15,
+          "end": 177.27,
+          "narration": "Budget airlines change their prices constantly. Ryanair says its fares vary with how far ahead you book, how many seats are left, and demand.",
+          "visual": "sh16 · Board prices tick up; quote card",
+          "on_screen_text": [
+            "Quote: prices vary with advance booking, seat availability and demand — Ryanair"
+          ],
+          "claims": [
+            "R09"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s04-03",
+          "start": 177.77,
+          "end": 183.08,
+          "narration": "And because it sells every journey one way, each seat on each flight can carry its own price.",
+          "visual": "sh16 · Board keeps changing: one-way pricing",
+          "on_screen_text": [
+            "Sold one way: every seat, its own price"
+          ],
+          "claims": [
+            "R17"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s04-04",
+          "start": 183.58,
+          "end": 189.86,
+          "narration": "Think of every flight as a ladder of prices. Our passenger booked weeks ahead, for a quiet Tuesday, and landed on the bottom rung.",
+          "visual": "sh17 · A staircase of airline seats; the passenger on the bottom step, price tags rising up the stairs",
+          "on_screen_text": [
+            "ILLUSTRATIVE FARES",
+            "$20 … $189"
+          ],
+          "claims": [
+            "I03"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s04-05",
+          "start": 190.36,
+          "end": 198.03,
+          "narration": "As the plane fills up, each new seat costs more. The person in the next seat, who booked yesterday, may have paid many times as much, for exactly the same flight.",
+          "visual": "sh18 · Cabin two-shot: the passenger turns to the neighbour; price tags over their heads",
+          "on_screen_text": [
+            "$20 booked weeks ahead",
+            "$160 booked yesterday",
+            "ILLUSTRATIVE FARES"
+          ],
+          "claims": [
+            "I03"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s04-06",
+          "start": 198.53,
+          "end": 205.66,
+          "narration": "Those cheap seats do a job. They fill the plane early, they put the airline's name at the top of every price comparison, and they bring you to its website.",
+          "visual": "sh18b · Back at the laptop: a comparison site with the budget fare on top",
+          "on_screen_text": [
+            "fills the plane early",
+            "tops every price comparison",
+            "brings you to its website"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s04-07",
+          "start": 206.16,
+          "end": 214.38,
+          "narration": "Ryanair even has a name for this: load factor active, yield passive. In plain words: fill the plane first, and worry about the price of each seat second.",
+          "visual": "sh19 · By the glass, sitting, watching aircraft outside",
+          "on_screen_text": [
+            "“load factor active – yield passive”",
+            "Fill the plane first. Worry about the price of each seat second."
+          ],
+          "claims": [
+            "R09"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s04-08",
+          "start": 214.88,
+          "end": 221.38,
+          "narration": "It admits that promotional fares can lower its revenue on those routes while they run. It keeps running them anyway, to fill quiet periods.",
+          "visual": "sh19 · Skeptical look",
+          "on_screen_text": [
+            "Promotional fares: lower revenue, fuller planes"
+          ],
+          "claims": [
+            "R09"
+          ],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "title": "Paying for the rest",
+      "chapter": "Secret three: everything else is extra",
+      "music": "lift",
+      "start": 222.03,
+      "end": 302.63,
+      "duration": 80.6,
+      "component": "src/scenes (registry id s05)",
+      "beats": [
+        {
+          "segment": "s05-01",
+          "start": 222.68,
+          "end": 225.96,
+          "narration": "Secret three. A budget fare buys you less than you might think.",
+          "visual": "sh20 · Gate: the passenger walks up to the bag sizer",
+          "on_screen_text": [],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s05-02",
+          "start": 226.46,
+          "end": 240.21,
+          "narration": "At the gate, our passenger finds out what the fare included. Usually, a seat and one small bag that fits under the seat in front. Almost everything else is sold separately: a bigger bag, a suitcase, choosing your seat, boarding early, changing your ticket, even a drink on board.",
+          "visual": "sh20 · Sizer tag 'Included · one small bag'; everything else pops up as a list; the passenger points, then shrugs",
+          "on_screen_text": [
+            "Included · one small bag",
+            "bigger bag",
+            "suitcase",
+            "choosing your seat",
+            "boarding early",
+            "changing your ticket",
+            "a drink on board"
+          ],
+          "claims": [
+            "F03"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s05-03",
+          "start": 240.71,
+          "end": 252.0,
+          "narration": "At Ryanair, extras like priority boarding, reserved seats and onboard sales brought in €4.99 billion last year. That is about €24 per passenger, and roughly a third of all its revenue.",
+          "visual": "sh21 · Stage: blocks you could stand on",
+          "on_screen_text": [
+            "Ryanair extras, year to March 2026 €4.99 billion · ≈ €24 per passenger · about a third of revenue"
+          ],
+          "claims": [
+            "R10"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s05-04",
+          "start": 252.5,
+          "end": 263.43,
+          "narration": "Add the fare and the extras together, and Ryanair took in €74.60 per passenger, against a cost of €63.21. That gap, about €11 a passenger, is the profit.",
+          "visual": "sh21 · Fare block + extras block vs cost block; the passenger points at the gap",
+          "on_screen_text": [
+            "Fare €50.66",
+            "Extras €23.94",
+            "€74.60 revenue",
+            "Cost €63.21",
+            "The gap: profit ≈ €11"
+          ],
+          "claims": [
+            "R02",
+            "C02"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s05-05",
+          "start": 263.93,
+          "end": 277.36,
+          "narration": "In the United States, the split can be even more extreme. Frontier's passengers paid more for extras than for their tickets: $63.79 in non-fare charges, against $44.60 in fares.",
+          "visual": "sh22 · Frontier coin stacks: fares vs non-fare charges; the passenger is surprised",
+          "on_screen_text": [
+            "$44.60 fares",
+            "$63.79 non-fare charges"
+          ],
+          "claims": [
+            "F01"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s05-06",
+          "start": 277.86,
+          "end": 286.72,
+          "narration": "And Frontier's revenue from extras grew from $60.55 per passenger in 2021 to $67.57 in 2025.",
+          "visual": "sh22 · Thinking",
+          "on_screen_text": [
+            "Frontier · ancillary revenue per passenger $60.55 → $67.57 (2021 → 2025)"
+          ],
+          "claims": [
+            "F02"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s05-07",
+          "start": 287.22,
+          "end": 295.82,
+          "narration": "That is the trick behind the twenty-dollar headline. The airline competes on the one number you compare across websites, the fare, and earns its money on the numbers you see later.",
+          "visual": "sh23 · The passenger strolls past a family with suitcases at the desk",
+          "on_screen_text": [
+            "The headline: the fare"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s05-08",
+          "start": 296.32,
+          "end": 301.98,
+          "narration": "For someone with one small backpack, that is a genuine bargain. For a family with suitcases, it might not be.",
+          "visual": "sh23 · Contrast",
+          "on_screen_text": [
+            "One small backpack: a genuine bargain",
+            "A family with suitcases: maybe not"
+          ],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "title": "The cost machine",
+      "chapter": "A machine built to be cheap",
+      "music": "process",
+      "start": 302.63,
+      "end": 372.41,
+      "duration": 69.78,
+      "component": "src/scenes (registry id s06)",
+      "beats": [
+        {
+          "segment": "s06-01",
+          "start": 303.28,
+          "end": 307.49,
+          "narration": "But none of that works unless the airline's own costs stay far below everyone else's.",
+          "visual": "sh24 · Top-down: two cabins of the same aircraft",
+          "on_screen_text": [],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s06-02",
+          "start": 307.99,
+          "end": 321.48,
+          "narration": "Ryanair fits 197 seats into its newest Boeing 737s, and 189 into the older ones. Traditional airlines fly the same Boeing 737-800 with about 162 seats in two classes.",
+          "visual": "sh24 · Seat counts labelled",
+          "on_screen_text": [
+            "Traditional airline · Boeing 737-800 · ~162 seats, two classes",
+            "Ryanair · Boeing 737-8200 · 197 seats (189 on older 737-800s)"
+          ],
+          "claims": [
+            "R08"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s06-03",
+          "start": 321.98,
+          "end": 326.56,
+          "narration": "More seats on the same plane, with the same crew, means every seat costs less.",
+          "visual": "sh24 · Hold on the dense cabin",
+          "on_screen_text": [],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s06-04",
+          "start": 327.06,
+          "end": 332.14,
+          "narration": "Its aircraft fly about nine and a half hours a day on average, because a plane on the ground earns nothing.",
+          "visual": "sh25 · Turnaround at the stand: the passenger and others come down the stairs",
+          "on_screen_text": [
+            "Each aircraft, every day ≈ 9.5 hours in the air"
+          ],
+          "claims": [
+            "R11"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s06-05",
+          "start": 332.64,
+          "end": 338.71,
+          "narration": "So between flights, the clock is running: passengers off, a quick clean, the next passengers on, and back in the air.",
+          "visual": "sh25 · The clock is running",
+          "on_screen_text": [
+            "passengers off",
+            "quick clean",
+            "next ones on",
+            "back in the air"
+          ],
+          "claims": [
+            "R15"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s06-06",
+          "start": 339.21,
+          "end": 345.68,
+          "narration": "Almost the whole fleet is one aircraft family, the Boeing 737, so pilots, spare parts and mechanics are interchangeable.",
+          "visual": "sh26 · A row of identical aircraft; the passenger walks to the outdoor stairs",
+          "on_screen_text": [
+            "One aircraft family: 621 of 647 aircraft are Boeing 737s"
+          ],
+          "claims": [
+            "R12"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s06-07",
+          "start": 346.18,
+          "end": 352.64,
+          "narration": "It looks for airports that charge less, uses outdoor stairs instead of jet bridges, and makes every passenger check in online.",
+          "visual": "sh26 · Cheaper ways to board",
+          "on_screen_text": [
+            "airports that charge less",
+            "outdoor stairs, no jet bridges",
+            "online check-in for everyone"
+          ],
+          "claims": [
+            "R13"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s06-08",
+          "start": 353.14,
+          "end": 366.75,
+          "narration": "The result: leaving out fuel, Ryanair puts its own costs at €36 per passenger. It puts Wizz Air at €62, easyJet at €90, and the big network airline groups at €178 to €253.",
+          "visual": "sh27 · Pillars of cost per passenger excluding fuel; the passenger stands on the shortest",
+          "on_screen_text": [
+            "COST PER PASSENGER, EXCLUDING FUEL",
+            "Ryanair €36",
+            "Wizz Air €62",
+            "easyJet €90",
+            "IAG €178",
+            "Lufthansa €178",
+            "Air France-KLM €253"
+          ],
+          "claims": [
+            "R14"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s06-09",
+          "start": 367.25,
+          "end": 371.76,
+          "narration": "That cost gap is the real product. The twenty-dollar fare is just how it shows up on your screen.",
+          "visual": "sh27 · The passenger looks back to camera, pleased",
+          "on_screen_text": [],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "title": "Where it breaks",
+      "chapter": "When the math stops working",
+      "music": "tension",
+      "start": 372.41,
+      "end": 436.35,
+      "duration": 63.94,
+      "component": "src/scenes (registry id s07)",
+      "beats": [
+        {
+          "segment": "s07-01",
+          "start": 373.06,
+          "end": 378.17,
+          "narration": "The model has a weak spot. It needs full planes, steady fuel prices, and very little going wrong.",
+          "visual": "sh28 · A narrow beam over the dark; the passenger balances on it",
+          "on_screen_text": [],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s07-02",
+          "start": 378.67,
+          "end": 385.98,
+          "narration": "Ryanair needed its planes about 80 percent full just to break even. In 2025, Frontier's planes were 78.4 percent full.",
+          "visual": "sh28 · Labels",
+          "on_screen_text": [
+            "Ryanair break-even 80% full",
+            "Frontier, 2025 78.4% full"
+          ],
+          "claims": [
+            "R06",
+            "F04"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s07-03",
+          "start": 386.48,
+          "end": 396.9,
+          "narration": "Frontier's costs came to about $116.66 per passenger, a little more than the $112.17 it took in. It lost $137 million that year.",
+          "visual": "sh29 · Frontier blocks: cost per passenger slightly taller than revenue per passenger; the passenger slumps",
+          "on_screen_text": [
+            "$112.17 revenue / passenger",
+            "$116.66 cost / passenger",
+            "Frontier, 2025 −$137 million"
+          ],
+          "claims": [
+            "F05"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s07-04",
+          "start": 397.4,
+          "end": 405.55,
+          "narration": "Spirit Airlines, which described itself as a pioneer of affordable travel, filed for bankruptcy in November 2024, and again in August 2025.",
+          "visual": "sh30 · Night terminal: the passenger with a suitcase in front of the departures board",
+          "on_screen_text": [
+            "SPIRIT AIRLINES",
+            "Nov 2024 Chapter 11 bankruptcy",
+            "Mar 2025 emerges",
+            "Aug 2025 Chapter 11 again"
+          ],
+          "claims": [
+            "S01"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s07-05",
+          "start": 406.05,
+          "end": 412.5,
+          "narration": "On May 2, 2026, citing a sharp rise in fuel prices, it cancelled all of its flights and began winding down.",
+          "visual": "sh30 · Every flight on the board turns CANCELLED; the passenger slumps",
+          "on_screen_text": [
+            "2 May 2026 all flights cancelled · wind-down",
+            "CANCELLED"
+          ],
+          "claims": [
+            "S02"
+          ],
+          "music_dip": true
+        },
+        {
+          "segment": "s07-06",
+          "start": 413.0,
+          "end": 419.3,
+          "narration": "When costs jump, a budget airline cannot simply raise its fares. Low fares are the whole reason people fly with it.",
+          "visual": "sh31 · Night, wide: the passenger alone on a bench, head down",
+          "on_screen_text": [],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s07-07",
+          "start": 419.8,
+          "end": 429.84,
+          "narration": "That is why Ryanair locks in fuel prices ahead of time. It says about 80 percent of its fuel for the year to March 2027 is already hedged: a cushion that weaker rivals often do not have.",
+          "visual": "sh31 · Night, the passenger on the bench; a fuel-hedge note",
+          "on_screen_text": [
+            "Ryanair: ~80% of fuel for the year to March 2027 already hedged"
+          ],
+          "claims": [
+            "R16"
+          ],
+          "music_dip": false
+        },
+        {
+          "segment": "s07-08",
+          "start": 430.34,
+          "end": 435.7,
+          "narration": "And when one of these airlines disappears, the people who relied on it lose the cheapest way they had to travel.",
+          "visual": "sh31 · Hold",
+          "on_screen_text": [],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "title": "Who pays",
+      "chapter": "Who pays for the twenty-dollar seat",
+      "music": "reveal",
+      "start": 436.35,
+      "end": 482.17,
+      "duration": 45.82,
+      "component": "src/scenes (registry id s08)",
+      "beats": [
+        {
+          "segment": "s08-01",
+          "start": 437.0,
+          "end": 440.13,
+          "narration": "So, how can an airline sell a flight for twenty dollars?",
+          "visual": "sh32 · Golden hour: the passenger walks the hall towards the gate",
+          "on_screen_text": [],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s08-02",
+          "start": 440.63,
+          "end": 446.42,
+          "narration": "Because an empty seat is worth nothing once the plane leaves, and one more passenger costs very little to carry.",
+          "visual": "sh32 · Answer 1",
+          "on_screen_text": [
+            "1 An empty seat earns nothing."
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s08-03",
+          "start": 446.92,
+          "end": 451.8,
+          "narration": "Because the cheapest seats are a handful at the bottom of a price ladder, and people who book later pay much more.",
+          "visual": "sh32 · Answer 2",
+          "on_screen_text": [
+            "2 Cheap seats: a handful, at the bottom of the ladder."
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s08-04",
+          "start": 452.3,
+          "end": 456.97,
+          "narration": "Because the fare is only part of what you pay. Bags, seats and extras close the gap.",
+          "visual": "sh32 · Answer 3",
+          "on_screen_text": [
+            "3 Bags, seats and extras close the gap."
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s08-05",
+          "start": 457.47,
+          "end": 463.21,
+          "narration": "And because the airline is built, piece by piece, to fly each seat more cheaply than its rivals.",
+          "visual": "sh32 · Answer 4",
+          "on_screen_text": [
+            "4 A machine built to cost less per seat."
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s08-06",
+          "start": 463.71,
+          "end": 474.86,
+          "narration": "So who pays for the twenty-dollar seat? Partly the people who book late. Partly the people who add a suitcase. And partly the airline's obsession with cost. If you travel light, book early and skip the extras, you might be the one getting the deal.",
+          "visual": "sh33 · Up the stairs with one small backpack; at the top a look back, a smile and a small wave",
+          "on_screen_text": [
+            "Who pays for the $20 seat?",
+            "people who book late",
+            "people who add a suitcase",
+            "the airline's obsession with cost"
+          ],
+          "claims": [],
+          "music_dip": false
+        },
+        {
+          "segment": "s08-07",
+          "start": 475.36,
+          "end": 479.17,
+          "narration": "This is Hidden Ledger. Every number in this video is sourced in the description.",
+          "visual": "sh33 · End card",
+          "on_screen_text": [
+            "HIDDEN LEDGER",
+            "Every number in this video is sourced in the description."
+          ],
+          "claims": [],
+          "music_dip": false
+        }
+      ]
+    }
+  ]
+}

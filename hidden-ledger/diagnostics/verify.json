@@ -1,0 +1,161 @@
+{
+  "videos": [
+    {
+      "file": "output/episode-001/preview/pilot.mp4",
+      "exists": true,
+      "duration_s": 82.77,
+      "size_mb": 8.3,
+      "video": "h264 1280x720 @ 30/1",
+      "audio": "aac 48000 Hz 2ch",
+      "integrated_lufs": -16.2,
+      "true_peak_dbfs": -2.4,
+      "lra": 3.9,
+      "problems": [],
+      "ok": true
+    },
+    {
+      "file": "output/episode-001/full/full_video.mp4",
+      "exists": true,
+      "duration_s": 592.17,
+      "size_mb": 76.0,
+      "video": "h264 1920x1080 @ 30/1",
+      "audio": "aac 48000 Hz 2ch",
+      "integrated_lufs": -16.2,
+      "true_peak_dbfs": -2.3,
+      "lra": 4.1,
+      "problems": [],
+      "ok": true
+    },
+    {
+      "file": "output/episode-001/shorts/short_1.mp4",
+      "exists": true,
+      "duration_s": 28.5,
+      "size_mb": 3.4,
+      "video": "h264 1080x1920 @ 30/1",
+      "audio": "aac 48000 Hz 2ch",
+      "integrated_lufs": -16.5,
+      "true_peak_dbfs": -2.5,
+      "lra": 4.4,
+      "problems": [],
+      "ok": true
+    },
+    {
+      "file": "output/episode-001/shorts/short_2.mp4",
+      "exists": true,
+      "duration_s": 44.83,
+      "size_mb": 4.7,
+      "video": "h264 1080x1920 @ 30/1",
+      "audio": "aac 48000 Hz 2ch",
+      "integrated_lufs": -16.0,
+      "true_peak_dbfs": -2.5,
+      "lra": 2.8,
+      "problems": [],
+      "ok": true
+    }
+  ],
+  "audio": [
+    {
+      "file": "output/episode-001/audio/voices/voice_af_heart.wav",
+      "duration_s": 25.02
+    },
+    {
+      "file": "output/episode-001/audio/voices/voice_am_adam.wav",
+      "duration_s": 23.38
+    },
+    {
+      "file": "output/episode-001/audio/voices/voice_am_michael.wav",
+      "duration_s": 26.81
+    },
+    {
+      "mix": "pilot",
+      "duration": 82.773,
+      "integrated_lufs": -16.2,
+      "true_peak_dbtp": -2.6,
+      "clipped_samples": 0,
+      "music_source": "procedural (python/music.py)",
+      "sfx_events": 5
+    },
+    {
+      "mix": "full",
+      "duration": 592.278,
+      "integrated_lufs": -16.2,
+      "true_peak_dbtp": -2.6,
+      "clipped_samples": 0,
+      "music_source": "procedural (python/music.py)",
+      "sfx_events": 26
+    },
+    {
+      "file": "assets/music/generated/1_intro.wav",
+      "duration_s": 60.0
+    },
+    {
+      "file": "assets/music/generated/2_neutral.wav",
+      "duration_s": 60.0
+    },
+    {
+      "file": "assets/music/generated/3_reveal.wav",
+      "duration_s": 60.0
+    },
+    {
+      "file": "assets/sfx/click.wav",
+      "duration_s": 0.05
+    },
+    {
+      "file": "assets/sfx/pop.wav",
+      "duration_s": 0.35
+    },
+    {
+      "file": "assets/sfx/thump.wav",
+      "duration_s": 0.6
+    },
+    {
+      "file": "assets/sfx/tick.wav",
+      "duration_s": 0.08
+    },
+    {
+      "file": "assets/sfx/whoosh.wav",
+      "duration_s": 0.9
+    }
+  ],
+  "files": {
+    "content/episode-001/script_en.md": true,
+    "content/episode-001/script_review_es.md": true,
+    "content/episode-001/sources.md": true,
+    "content/episode-001/fact_check.csv": true,
+    "content/episode-001/claims.json": true,
+    "content/episode-001/storyboard.json": true,
+    "content/episode-001/episode.json": true,
+    "content/episode-001/youtube_description.md": true,
+    "content/episode-001/titles_thumbnails.md": true,
+    "output/episode-001/preview/pilot.srt": true,
+    "output/episode-001/full/full_video.en.srt": true,
+    "output/episode-001/audio/voices/voice_comparison.md": true,
+    "README.md": true,
+    "LICENSE_NOTES.md": true,
+    "asset_licenses.csv": true,
+    "audio_provenance.md": true,
+    "publishing_checklist.md": true,
+    "output/episode-001/thumbnails/thumbnail_1.png": true,
+    "output/episode-001/thumbnails/thumbnail_2.png": true,
+    "output/episode-001/thumbnails/thumbnail_3.png": true
+  },
+  "licences": {
+    "fonts": [
+      "Inter-LICENSE.txt",
+      "Inter-Variable-latin.woff2",
+      "SpaceGrotesk-LICENSE.txt",
+      "SpaceGrotesk-Variable-latin.woff2"
+    ],
+    "asset_licenses_rows": 7,
+    "unknown_licence_rows": []
+  },
+  "summary": [
+    "OK output/episode-001/preview/pilot.mp4: 82.77s h264 1280x720 @ 30/1 | aac 48000 Hz 2ch | -16.2 LUFS, TP -2.4 dBFS",
+    "OK output/episode-001/full/full_video.mp4: 592.17s h264 1920x1080 @ 30/1 | aac 48000 Hz 2ch | -16.2 LUFS, TP -2.3 dBFS",
+    "OK output/episode-001/shorts/short_1.mp4: 28.5s h264 1080x1920 @ 30/1 | aac 48000 Hz 2ch | -16.5 LUFS, TP -2.5 dBFS",
+    "OK output/episode-001/shorts/short_2.mp4: 44.83s h264 1080x1920 @ 30/1 | aac 48000 Hz 2ch | -16.0 LUFS, TP -2.5 dBFS",
+    "files: all present"
+  ],
+  "contact_sheet": "diagnostics/screenshots/full_contact_sheet.jpg",
+  "pilot_contact_sheet": "diagnostics/screenshots/pilot_contact_sheet.jpg"
+}

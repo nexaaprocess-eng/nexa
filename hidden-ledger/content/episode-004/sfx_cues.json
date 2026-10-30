@@ -1,0 +1,131 @@
+{
+ "_about": "Word-anchored sound effects for python/mix.py (episode 004). Sparse: registers on the checkout, a stamp, a door thump, distant jets on the apron.",
+ "cues": [
+  {
+   "segment": "s01-01",
+   "word": "twenty|20",
+   "offset": 0.05,
+   "sound": "pop",
+   "gain_db": -4
+  },
+  {
+   "segment": "s01-02",
+   "word": "book",
+   "offset": 0.1,
+   "sound": "click",
+   "gain_db": 0
+  },
+  {
+   "segment": "s01-03",
+   "word": "cabin",
+   "offset": 0.0,
+   "sound": "register",
+   "gain_db": -4
+  },
+  {
+   "segment": "s01-03",
+   "word": "window",
+   "offset": 0.0,
+   "sound": "register",
+   "gain_db": -4
+  },
+  {
+   "segment": "s01-03",
+   "word": "suitcase|checked",
+   "offset": 0.0,
+   "sound": "register",
+   "gain_db": -3
+  },
+  {
+   "segment": "s01-04",
+   "word": "ninety|92",
+   "offset": 0.1,
+   "sound": "decline",
+   "gain_db": -2
+  },
+  {
+   "segment": "s01-04",
+   "word": "made",
+   "offset": 0.0,
+   "sound": "stamp",
+   "gain_db": 0
+  },
+  {
+   "segment": "s01-06",
+   "word": "So",
+   "offset": -1.5,
+   "sound": "jet",
+   "gain_db": -8
+  },
+  {
+   "segment": "s02-01",
+   "word": "follow",
+   "offset": 0.0,
+   "sound": "jet",
+   "gain_db": -9
+  },
+  {
+   "segment": "s02-04",
+   "word": "fuel",
+   "offset": 0.0,
+   "sound": "tick",
+   "gain_db": -2
+  },
+  {
+   "segment": "s03-04",
+   "word": "door",
+   "offset": -0.1,
+   "sound": "thump",
+   "gain_db": -6
+  },
+  {
+   "segment": "s03-07",
+   "word": "break",
+   "offset": 0.0,
+   "sound": "tick",
+   "gain_db": -3
+  },
+  {
+   "segment": "s04-02",
+   "word": "change",
+   "offset": 0.0,
+   "sound": "tick",
+   "gain_db": -4
+  },
+  {
+   "segment": "s05-02",
+   "word": "gate",
+   "offset": 0.0,
+   "sound": "chime",
+   "gain_db": -8
+  },
+  {
+   "segment": "s06-05",
+   "word": "clock",
+   "offset": 0.0,
+   "sound": "tick",
+   "gain_db": -2
+  },
+  {
+   "segment": "s07-05",
+   "word": "cancel",
+   "offset": 0.0,
+   "sound": "decline",
+   "gain_db": -3
+  },
+  {
+   "segment": "s08-06",
+   "word": "travel",
+   "offset": 0.0,
+   "sound": "chime",
+   "gain_db": -8
+  },
+  {
+   "segment": "s08-07",
+   "word": "Hidden",
+   "offset": -0.3,
+   "sound": "jet",
+   "gain_db": -10
+  }
+ ]
+}

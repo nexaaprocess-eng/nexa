@@ -1,0 +1,17 @@
+[
+  {
+    "voice": "am_michael",
+    "wer": 0.0,
+    "transcript": "You order a jacket online, and three days later you send it back. The label is free. The refund arrives, but the jacket's journey is only beginning. It gets scanned, trucked, sorted, and inspected. And every step costs somebody something. In 2025, the National Retail Federation projected $849.9 billion in returned merchandise. So who actually pays for a free return?"
+  },
+  {
+    "voice": "am_adam",
+    "wer": 0.0,
+    "transcript": "You order a jacket online and three days later you send it back, the label is free. The refund arrives, but the jacket's journey is only beginning. It gets scanned, trucked, sorted and inspected, and every step costs somebody something. In 2025, the National Retail Federation projected $849.9 billion in returned merchandise, so who actually pays for a free return."
+  },
+  {
+    "voice": "af_heart",
+    "wer": 0.0,
+    "transcript": "You order a jacket online, and three days later you send it back. The label is free. The refund arrives, but the jacket's journey is only beginning. It gets scanned, trucked, sorted, and inspected, and every step costs somebody something. In 2025, the National Retail Federation projected $849.9 billion in returned merchandise, so who actually pays for a free return."
+  }
+]

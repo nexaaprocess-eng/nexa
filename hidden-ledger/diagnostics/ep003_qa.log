@@ -1,0 +1,211 @@
+
+$ python python/av_check.py --episode 003 --video output/episode-003/final/hidden_ledger_episode_003_FINAL_1080p.mp4 --asr
+{
+ "video": "output/episode-003/final/hidden_ledger_episode_003_FINAL_1080p.mp4",
+ "problems": [],
+ "completeness": {
+  "video_frames": 20067,
+  "timeline_frames": 20067,
+  "video_duration": 668.9,
+  "audio_duration": 668.9,
+  "timeline_duration": 668.893,
+  "video_start": 0.0,
+  "audio_start": 0.0
+ },
+ "audio_offset": [
+  {
+   "at_s": 5.0,
+   "offset_ms": 0.0,
+   "correlation": 0.961
+  },
+  {
+   "at_s": 334.4,
+   "offset_ms": 0.0,
+   "correlation": 0.968
+  },
+  {
+   "at_s": 643.9,
+   "offset_ms": 0.0,
+   "correlation": 0.964
+  }
+ ],
+ "scene_transitions": [
+  {
+   "scene": "s02",
+   "timeline_start": 52.68,
+   "wipe_centre": 52.547,
+   "delta_s": -0.133,
+   "edge_row_coverage": 0.88,
+   "baseline_coverage": 0.0
+  },
+  {
+   "scene": "s03",
+   "timeline_start": 111.829,
+   "wipe_centre": 111.696,
+   "delta_s": -0.133,
+   "edge_row_coverage": 0.92,
+   "baseline_coverage": 0.0
+  },
+  {
+   "scene": "s04",
+   "timeline_start": 169.131,
+   "wipe_centre": 168.998,
+   "delta_s": -0.133,
+   "edge_row_coverage": 0.88,
+   "baseline_coverage": 0.0
+  },
+  {
+   "scene": "s05",
+   "timeline_start": 243.665,
+   "wipe_centre": 243.532,
+   "delta_s": -0.133,
+   "edge_row_coverage": 0.88,
+   "baseline_coverage": 0.0
+  },
+  {
+   "scene": "s06",
+   "timeline_start": 337.539,
+   "wipe_centre": 337.406,
+   "delta_s": -0.133,
+   "edge_row_coverage": 0.88,
+   "baseline_coverage": 0.0
+  },
+  {
+   "scene": "s07",
+   "timeline_start": 422.603,
+   "wipe_centre": 422.47,
+   "delta_s": -0.133,
+   "edge_row_coverage": 0.89,
+   "baseline_coverage": 0.0
+  },
+  {
+   "scene": "s08",
+   "timeline_start": 502.179,
+   "wipe_centre": 502.046,
+   "delta_s": -0.133,
+   "edge_row_coverage": 0.9,
+   "baseline_coverage": 0.0
+  },
+  {
+   "scene": "s09",
+   "timeline_start": 600.103,
+   "wipe_centre": 599.97,
+   "delta_s": -0.133,
+   "edge_row_coverage": 0.89,
+   "baseline_coverage": 0.0
+  }
+ ],
+ "intelligibility": {
+  "wer_final_mix": 0.011,
+  "weighted_wer_dry_narration": 0.0126
+ },
+ "ok": true
+}
+
+$ python python/stem_check.py --episode 003 --name full
+{
+ "voice": {
+  "segments": 63,
+  "possible_cutoffs": [],
+  "clipped_segments": [],
+  "pause_min_s": 0.38,
+  "pause_max_s": 0.9,
+  "configured_pauses_s": [
+   0.38,
+   0.9
+  ],
+  "unexpected_gaps": []
+ },
+ "music": {
+  "speech_windows": 4942,
+  "voice_over_music_db_median": 26.0,
+  "voice_over_music_db_p5": 16.3,
+  "voice_over_music_db_min": 8.3,
+  "worst_windows": [
+   {
+    "t": 413.5,
+    "voice_over_music_db": 8.3
+   },
+   {
+    "t": 414.3,
+    "voice_over_music_db": 10.4
+   },
+   {
+    "t": 616.4,
+    "voice_over_music_db": 10.5
+   },
+   {
+    "t": 90.0,
+    "voice_over_music_db": 10.6
+   },
+   {
+    "t": 409.3,
+    "voice_over_music_db": 10.8
+   }
+  ],
+  "per_scene_music_db": {
+   "s01": -50.3,
+   "s02": -47.7,
+   "s03": -50.8,
+   "s04": -49.1,
+   "s05": -51.0,
+   "s06": -50.5,
+   "s07": -48.5,
+   "s08": -53.8,
+   "s09": -48.4
+  }
+ },
+ "sfx": {
+  "peak_relative_to_voice_peak_db": -14.8
+ },
+ "issues": []
+}
+
+$ python python/content_check.py --video output/episode-003/final/hidden_ledger_episode_003_FINAL_1080p.mp4
+{"samples": 1338, "median_content_fraction": 0.0982, "p5_content_fraction": 0.0249, "pass": true} 0 near-empty run(s)
+
+$ python python/final_scan.py --video output/episode-003/final/hidden_ledger_episode_003_FINAL_1080p.mp4
+{
+ "video": "output/episode-003/final/hidden_ledger_episode_003_FINAL_1080p.mp4",
+ "ffmpeg_exit": 0,
+ "decode_error_count": 0,
+ "black_windows": [
+  {
+   "start": 337.433,
+   "end": 337.933,
+   "seconds": 0.5
+  }
+ ],
+ "freeze_starts": [],
+ "silences": [],
+ "integrated_lufs": -15.3,
+ "lra_lu": 3.3,
+ "true_peak_dbtp": -2.4,
+ "sample_peak_db": -2.480931,
+ "clipping": false,
+ "pass": true
+}
+{
+  "file": "output/episode-003/final/hidden_ledger_episode_003_FINAL_1080p.mp4",
+  "duration": 668.9,
+  "size_mb": 761.5,
+  "video": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "frames": 20067
+  },
+  "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  "integrated_lufs": null,
+  "true_peak_dbfs": null,
+  "black_sections": 0,
+  "long_silences": 0,
+  "ok": true,
+  "problems": [],
+  "expected_frames": 20067
+}
