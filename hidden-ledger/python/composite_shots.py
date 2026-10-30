@@ -34,7 +34,7 @@ def composite(d: Path, meta: dict) -> Path:
     tmp = d / "shot.partial.mp4"
     enc = ["-c:v", "libx264", "-preset", "medium", "-crf", "12", "-g", "30", "-pix_fmt", "yuv420p", "-r", "30", "-frames:v", str(n), "-movflags", "+faststart"]
     if chars and meta.get("crop"):
-        x, y, _, _ = meta["crop"]
+        x, y, cw, ch = meta["crop"]
         lst = d / "char_list.txt"
         frames = {int(p.stem): p for p in chars}
         lines = []
@@ -50,7 +50,8 @@ def composite(d: Path, meta: dict) -> Path:
         lst.write_text("\n".join(lines) + "\n")
         cmd = ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-loop", "1", "-framerate", "30", "-i", str(plate),
                "-f", "concat", "-safe", "0", "-i", str(lst),
-               "-filter_complex", f"[1:v]fps=30,format=rgba[c];[0:v][c]overlay={x}:{y}:eof_action=repeat:format=auto,format=yuv420p[v]",
+               # character frames rendered below 100% (big crops) are scaled back to the crop size (Lanczos)
+               "-filter_complex", f"[1:v]fps=30,format=rgba,scale={cw}:{ch}:flags=lanczos[c];[0:v][c]overlay={x}:{y}:eof_action=repeat:format=auto,format=yuv420p[v]",
                "-map", "[v]", *enc, str(tmp)]
     else:
         cmd = ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-loop", "1", "-framerate", "30", "-i", str(plate), *enc, str(tmp)]

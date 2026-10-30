@@ -1,10 +1,11 @@
 {
  "sh01": {
+  "plate_hash": "79bd103b0554",
   "id": "sh01",
   "scene": "s01",
   "t0": 0.0,
-  "t1": 8.878,
-  "frames": 266,
+  "t1": 6.68,
+  "frames": 200,
   "step": 2,
   "anchors": {},
   "screens": {
@@ -27,8 +28,51 @@
     ]
    ]
   },
-  "hash": "682fb8fa16d1",
-  "plate_hash": "f28173aca30c",
+  "hash": "67e572332a0a",
+  "crop": [
+   0,
+   0,
+   1920,
+   1080
+  ],
   "file": "output/episode-004/shots/sh01/shot.mp4"
+ },
+ "sh02": {
+  "id": "sh02",
+  "scene": "s01",
+  "t0": 6.68,
+  "t1": 9.45,
+  "frames": 83,
+  "step": 2,
+  "anchors": {},
+  "screens": {
+   "laptop": [
+    [
+     1242.4,
+     873.0
+    ],
+    [
+     1463.0,
+     830.1
+    ],
+    [
+     1424.5,
+     993.6
+    ],
+    [
+     1207.5,
+     1050.6
+    ]
+   ]
+  },
+  "hash": "7b5b7da4aa93",
+  "plate_hash": "e1c1c7c6b2e7",
+  "crop": [
+   0,
+   0,
+   1920,
+   1080
+  ],
+  "file": "output/episode-004/shots/sh02/shot.mp4"
  }
 }

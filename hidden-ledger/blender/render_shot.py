@@ -42,7 +42,8 @@ import hl_sets as S  # noqa: E402
 FPS = 30
 W, H = 1920, 1080
 PLATE_SPP = 40  # static plate, OIDN-denoised
-CHAR_SPP = 6    # character layer: 6 spp + fast OIDN (the denoiser's quality mode was 15 s/frame on this CPU)
+CHAR_SPP = 4    # character layer: 4 spp + fast OIDN (the denoiser's quality mode alone was 15 s/frame on this CPU)
+BIG_CROP = 0.35  # crops covering more of the frame than this render at 2/3 resolution and are upscaled 1.5x
 
 
 class ShotCtx:
@@ -164,7 +165,13 @@ def char_crop(ctx, cam, frames):
                 p = oe.matrix_world @ Vector(c)
                 pts = [p]
                 if sun is not None and sun.z < -0.05 and p.z > 0:
-                    pts.append(p - sun * (p.z / sun.z))
+                    # ground shadow point, capped at 2.5 m from the body (low suns give endless shadows that
+                    # would otherwise stretch the crop to the whole frame; beyond that the shadow is faint)
+                    sh = p - sun * (p.z / sun.z)
+                    d = sh - Vector((p.x, p.y, 0))
+                    if d.length > 2.5:
+                        sh = Vector((p.x, p.y, 0)) + d.normalized() * 2.5
+                    pts.append(sh)
                 for q in pts:
                     v = world_to_camera_view(sc, cam, q)
                     if v.z > 0:
@@ -309,6 +316,10 @@ def main():
             sc.render.use_crop_to_border = True
             sc.render.border_min_x, sc.render.border_max_x, sc.render.border_min_y, sc.render.border_max_y = crop
             meta["crop"] = [round(crop[0] * W), round((1 - crop[3]) * H), round((crop[1] - crop[0]) * W), round((crop[3] - crop[2]) * H)]
+            area = (crop[1] - crop[0]) * (crop[3] - crop[2])
+            pct = 67 if area > BIG_CROP else 100
+            sc.render.resolution_percentage = pct
+            meta["char_pct"] = pct
             meta_path.write_text(json.dumps(meta, indent=1))
             cdir = out / "char"
             cdir.mkdir(exist_ok=True)
