@@ -8,6 +8,7 @@ exported here. Illustrative props are labelled on screen by Remotion.
 from __future__ import annotations
 
 import math
+import bpy
 
 import hl_render as R
 import hl_sets as S
@@ -86,6 +87,15 @@ def seat_in_cabin(h, seats, nm, f0=0):
     x, y = seats[nm]
     h.place(f0, (x + 0.06, y), yaw=90, z=-0.2)
     h.pose(f0, "sit", ease=1)
+
+
+def crisp_tail():
+    """Fin and winglets without subdivision: their 4-point sections stay crisp swept blades instead of rounding into
+    leaves. Used by the shots where the tail is large in frame; local, so the shared airliner (and every other shot's
+    cache) is unchanged."""
+    for o in bpy.data.objects:
+        if (o.name.endswith("_fin") or "_winglet" in o.name) and "Sub" in o.modifiers:
+            o.modifiers.remove(o.modifiers["Sub"])
 
 
 # ================================================================== S01 · Cold open
@@ -217,10 +227,11 @@ def sh08(ctx):
     return R.camera((-0.25, 0.05, 1.5), (-2.4, 1.1, 1.15), lens=30)
 
 
-@shot("sh09", "s02", "s02-04", uses=["tarmac_setup"])
+@shot("sh09", "s02", "s02-04", uses=["crisp_tail", "tarmac_setup"])
 def sh09(ctx):
     """The cost of a flight, attached to the things that cost money: fuel, crew, airport, aircraft, air traffic control."""
     tarmac_setup(ctx, az=300, elev=5.0)
+    crisp_tail()
     # fuel truck under the wing, control tower and terminal in the distance
     S.box("FuelTruck", (6.5, 2.4, 2.6), (1.5, -10.5, 1.5), S.M("fueltruck", (0.85, 0.84, 0.8, 1), rough=0.4), bevel=0.15)
     S.box("FuelCab", (2.2, 2.4, 2.2), (5.5, -10.5, 1.3), S.M("fuelcab", S.ORANGE, rough=0.4), bevel=0.15)
@@ -288,11 +299,12 @@ def sh11(ctx):
     return R.camera((1.2, -0.25, 2.05), (-5.5, 0.4, 0.9), lens=24)
 
 
-@shot("sh12", "s03", "s03-03", uses=["tarmac_setup"])
+@shot("sh12", "s03", "s03-03", uses=["tarmac_setup", "crisp_tail"])
 def sh12(ctx):
     """Wide: the aircraft at the stand in the low sun — one flight, one bill (plate only + Remotion camera move)."""
     tarmac_setup(ctx, az=80, elev=3.0, stairs=True)
-    return R.camera((-30, -38, 3.2), (2, 0, 3.6), lens=50)
+    crisp_tail()
+    return R.camera((-34, -40, 3.4), (-1, 0, 3.6), lens=40)
 
 
 @shot("sh13", "s03", "s03-04", uses=["cabin_setup", "seat_in_cabin"])

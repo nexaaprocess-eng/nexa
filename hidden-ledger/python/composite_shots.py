@@ -24,6 +24,30 @@ def newest(paths):
     return max((p.stat().st_mtime for p in paths if p.exists()), default=0)
 
 
+FEATHER = 32
+
+
+def write_feather(path: Path, w: int, h: int, left: bool, right: bool, top: bool, bottom: bool):
+    """8-bit PGM: 255 inside, linear ramp to 0 over FEATHER px along the chosen edges."""
+    def ramp(n, lo, hi):
+        v = [1.0] * n
+        for i in range(min(FEATHER, n)):
+            f = (i + 0.5) / FEATHER
+            if lo:
+                v[i] = min(v[i], f)
+            if hi:
+                v[n - 1 - i] = min(v[n - 1 - i], f)
+        return v
+    rx, ry = ramp(w, left, right), ramp(h, top, bottom)
+    row = bytearray(w)
+    data = bytearray()
+    for fy in ry:
+        for i, fx in enumerate(rx):
+            row[i] = round(255 * fx * fy)
+        data += row
+    path.write_bytes(f"P5 {w} {h} 255\n".encode() + bytes(data))
+
+
 def composite(d: Path, meta: dict) -> Path:
     out = d / "shot.mp4"
     plate = d / "plate.png"
@@ -50,12 +74,20 @@ def composite(d: Path, meta: dict) -> Path:
             lines += [f"file '{p.as_posix()}'", f"duration {step / fps:.6f}"]
         lines.append(f"file '{last.as_posix()}'")
         lst.write_text("\n".join(lines) + "\n")
+        # crop edges inside the frame fade out over FEATHER px: static set pieces still occlude the sky / cast shadows
+        # onto the shadow catcher in the character pass, so a big static shadow crossing the crop edge would show a
+        # seam. The crop margin (5% of the frame) keeps the characters themselves clear of the ramp.
+        mask = d / "feather.pgm"
+        write_feather(mask, cw, ch, left=x > 0, right=x + cw < 1920, top=y > 0, bottom=y + ch < 1080)
         cmd = ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-loop", "1", "-framerate", "30", "-i", str(plate),
-               "-f", "concat", "-safe", "0", "-i", str(lst),
+               "-f", "concat", "-safe", "0", "-i", str(lst), "-loop", "1", "-framerate", "30", "-i", str(mask),
                # character frames rendered below 100% (big crops) are scaled back to the crop size (Lanczos)
                # premultiply BEFORE scaling: scaling straight alpha bleeds the black of transparent pixels into the
                # edges (a dark fringe around the character); overlay then treats the layer as premultiplied
-               "-filter_complex", f"[1:v]fps=30,format=rgba,premultiply=inplace=1,scale={cw}:{ch}:flags=lanczos[c];"
+               # (multiplying all four premultiplied channels by the feather mask is an exact fade)
+               "-filter_complex", f"[1:v]fps=30,format=rgba,premultiply=inplace=1,scale={cw}:{ch}:flags=lanczos[s];"
+                                  f"[2:v]format=gray,format=rgba,colorchannelmixer=aa=0:ar=1[m];"
+                                  f"[s][m]blend=all_mode=multiply:shortest=1[c];"
                                   f"[0:v][c]overlay={x}:{y}:alpha=premultiplied:eof_action=repeat:format=auto,format=yuv420p[v]",
                "-map", "[v]", *enc, str(tmp)]
     else:
