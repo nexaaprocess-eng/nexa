@@ -58,3 +58,4 @@ output/**/shots/*/meta.json
 # shot manifest changes after every composited shot; the final version is force-added at delivery
 output/**/shots/manifest.json
 output/episode-004/thumbnails/plate_*.png
+episode004/*.mp4
