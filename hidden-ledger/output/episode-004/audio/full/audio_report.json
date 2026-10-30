@@ -8,7 +8,7 @@
   "lra": 2.8,
   "clipped_samples": 0,
   "music_source": "procedural (python/music.py)",
-  "sfx_events": 30,
+  "sfx_events": 32,
   "audits": [
     {
       "from": 0,

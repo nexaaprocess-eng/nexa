@@ -72,9 +72,9 @@ for k, (v, t) in N.items():
     notes[k] = {"visual": v, "onScreen": t}
 (HERE / "visual_notes.json").write_text(json.dumps(notes, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 C = [
-    ("s01-01", r"twenty", 0.05, "pop", -4), ("s01-02", r"book", 0.1, "click", 0),
+    ("s01-01", r"twenty|20", 0.05, "pop", -4), ("s01-02", r"book", 0.1, "click", 0),
     ("s01-03", r"cabin", 0.0, "register", -4), ("s01-03", r"window", 0.0, "register", -4), ("s01-03", r"suitcase|checked", 0.0, "register", -3),
-    ("s01-04", r"ninety", 0.1, "decline", -2), ("s01-04", r"made", 0.0, "stamp", 0),
+    ("s01-04", r"ninety|92", 0.1, "decline", -2), ("s01-04", r"made", 0.0, "stamp", 0),
     ("s01-06", r"So", -1.5, "jet", -8), ("s02-01", r"follow", 0.0, "jet", -9), ("s02-04", r"fuel", 0.0, "tick", -2),
     ("s03-04", r"door", -0.1, "thump", -6), ("s03-07", r"break", 0.0, "tick", -3), ("s04-02", r"change", 0.0, "tick", -4),
     ("s05-02", r"gate", 0.0, "chime", -8), ("s06-05", r"clock", 0.0, "tick", -2), ("s07-05", r"cancel", 0.0, "decline", -3),

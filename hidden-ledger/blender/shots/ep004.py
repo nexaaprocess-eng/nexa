@@ -97,7 +97,7 @@ def sh01(ctx):
     seated_at_desk(h)
     h.expr(0, "curious")
     h.look(0, (0, 0.94, 0.9))
-    t20 = ctx.word("s01-01", r"twenty", off=0.0)
+    t20 = ctx.word("s01-01", r"twenty|20", off=0.0)
     h.gesture(t20 - 2, t20 + 22, {"spine": (-9, 0, 0), "chest": (-6, 0, 0), "head": (-8, 0, 0)})  # recoils a little
     h.expr(t20, "surprised")
     return R.camera((0.95, -1.3, 1.62), (-0.08, 0.94, 0.98), lens=30)

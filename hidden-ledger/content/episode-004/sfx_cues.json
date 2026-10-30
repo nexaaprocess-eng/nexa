@@ -3,7 +3,7 @@
  "cues": [
   {
    "segment": "s01-01",
-   "word": "twenty",
+   "word": "twenty|20",
    "offset": 0.05,
    "sound": "pop",
    "gain_db": -4
@@ -38,7 +38,7 @@
   },
   {
    "segment": "s01-04",
-   "word": "ninety",
+   "word": "ninety|92",
    "offset": 0.1,
    "sound": "decline",
    "gain_db": -2

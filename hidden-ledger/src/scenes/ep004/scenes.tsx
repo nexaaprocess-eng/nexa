@@ -28,7 +28,7 @@ const Missing: React.FC = () => {
 export const E4S01: React.FC = () => {
   const b = useBeats();
   const f = b.frame;
-  const t20 = b.word(0, /twenty/i, 0.7);
+  const t20 = b.word(0, /twenty|20/i, 0.7);
   const adds = [b.word(2, /cabin/i, 0.3), b.word(2, /window/i, 0.55), b.word(2, /suitcase|checked/i, 0.8)];
   return (
     <AbsoluteFill>
