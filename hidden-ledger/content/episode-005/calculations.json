@@ -1,0 +1,63 @@
+{
+ "inputs": {
+  "rooms": 100,
+  "price_usd": 150,
+  "move_cost_usd": 250,
+  "no_show_rate_typical": 0.08,
+  "no_show_rate_bad_season": 0.03
+ },
+ "A_100_bookings": {
+  "bookings": 100,
+  "p_show": 0.92,
+  "expected_arrivals": 92.0,
+  "expected_occupied": 92.0,
+  "expected_empty": 8.0,
+  "expected_moved": 0.0,
+  "p_at_least_one_moved": 0,
+  "room_revenue_minus_moving": 13800.0
+ },
+ "B_106_bookings": {
+  "bookings": 106,
+  "p_show": 0.92,
+  "expected_arrivals": 97.52,
+  "expected_occupied": 97.28,
+  "expected_empty": 2.72,
+  "expected_moved": 0.24,
+  "p_at_least_one_moved": 0.14,
+  "room_revenue_minus_moving": 14531.0
+ },
+ "B_106_bookings_bad_forecast": {
+  "bookings": 106,
+  "p_show": 0.97,
+  "expected_arrivals": 102.82,
+  "expected_occupied": 99.94,
+  "expected_empty": 0.06,
+  "expected_moved": 2.88,
+  "p_at_least_one_moved": 0.9,
+  "room_revenue_minus_moving": 14270.0
+ },
+ "empty_room_revenue_A_usd": 1200,
+ "B_minus_A_usd_per_night": 731.0,
+ "dataset": {
+  "file": "hotels.csv",
+  "bookings": 119390,
+  "by_hotel": {
+   "Resort Hotel": 40060,
+   "City Hotel": 79330
+  },
+  "cancelled": 43017,
+  "cancelled_pct": 36.03,
+  "no_show": 1207,
+  "no_show_pct": 1.01,
+  "by_lead_time": {
+   "under_7_days": {
+    "bookings": 18415,
+    "cancelled_pct": 7.6
+   },
+   "180_days_or_more": {
+    "bookings": 24962,
+    "cancelled_pct": 56.5
+   }
+  }
+ }
+}

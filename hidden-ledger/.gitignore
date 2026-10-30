@@ -59,3 +59,8 @@ output/**/shots/*/meta.json
 output/**/shots/manifest.json
 output/episode-004/thumbnails/plate_*.png
 episode004/*.mp4
+
+# V2 character test renders (sheets *.jpg are kept)
+output/char2/anim/
+output/char2/*.png
+output/*/narration.log

@@ -85,6 +85,18 @@ def take(text: str, seed: int, exaggeration: float, cfg: float, temperature: flo
     return trim_silence(x, SR)
 
 
+def stretch(x: np.ndarray, tempo: float) -> np.ndarray:
+    """Slow the delivery down without changing pitch (ffmpeg rubberband, formant-preserving). Chatterbox speaks at
+    ~220 words/min even with a low cfg; a documentary pace is nearer 170-180."""
+    if abs(tempo - 1.0) < 1e-3:
+        return x
+    import subprocess
+    p = subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-f", "f32le", "-ar", str(SR), "-ac", "1", "-i", "pipe:0",
+                        "-af", f"rubberband=tempo={tempo}:transients=smooth:formant=preserved:pitchq=quality", "-f", "f32le", "pipe:1"],
+                       input=x.astype(np.float32).tobytes(), capture_output=True, check=True)
+    return np.frombuffer(p.stdout, dtype=np.float32).copy()
+
+
 def check(x: np.ndarray, text: str) -> tuple[list[str], dict]:
     a = analyze(x, SR)
     n = len(words(text))
@@ -101,7 +113,10 @@ def check(x: np.ndarray, text: str) -> tuple[list[str], dict]:
 
 def seg_hash(text: str, vc: dict) -> str:
     h = hashlib.sha256()
-    h.update(json.dumps([text, ENGINE, vc.get("exaggeration"), vc.get("cfg"), vc.get("temperature"), vc.get("prompt")]).encode())
+    parts = [text, ENGINE, vc.get("exaggeration"), vc.get("cfg"), vc.get("temperature"), vc.get("prompt")]
+    if vc.get("tempo", 1.0) != 1.0:  # only part of the key when used: older episodes keep their cached takes
+        parts.append(vc["tempo"])
+    h.update(json.dumps(parts).encode())
     return h.hexdigest()[:16]
 
 
@@ -156,7 +171,7 @@ def main():
             t0 = time.time()
             for k in range(a.max_takes):
                 seed = base + k
-                x = take(text, seed, ex, cfg, temp)
+                x = stretch(take(text, seed, ex, cfg, temp), float(vc.get("tempo", 1.0)))
                 probs, an = check(x, text)
                 hyp = asr(x)
                 w = wer(text, hyp)

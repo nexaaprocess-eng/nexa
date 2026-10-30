@@ -35,7 +35,9 @@ sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(HERE / "shots"))
 
 import hl_anim  # noqa: E402
+import hl_anim2  # noqa: E402
 import hl_char  # noqa: E402
+import hl_char2  # noqa: E402
 import hl_render as R  # noqa: E402
 import hl_sets as S  # noqa: E402
 
@@ -66,6 +68,7 @@ class ShotCtx:
         # behaviour, e.g. a walk across a bright lounge floor, where the catcher would record the ceiling's sky occlusion
         self.static_shadows = None
         self.chars_pct = 100
+        self.v2 = False  # episode 005+: V2 character, rendered on ones (set from the shot module's CHARACTER)
 
     # ---- timing (shot-local frames)
     def at(self, key, off=0.0):
@@ -85,8 +88,22 @@ class ShotCtx:
         return round(s * FPS)
 
     # ---- actors
+    def person(self, name, style, seed=1, static=False):
+        """V2 rig with a style from hl_char2.STYLES ('hero', 'clerk', 'guest1'...)."""
+        rig, parts = hl_char2.build(name, style, parent_col=S.col(S.STATIC if static else S.DYNAMIC))
+        a = hl_anim2.Actor(rig, parts, seed=seed)
+        if style != "hero":
+            a.breath = 0.8
+        if static:
+            self._static_actors = getattr(self, "_static_actors", []) + [a]
+        else:
+            self.actors.append(a)
+        return a
+
     def hero(self, seed=1, static=False):
         """The protagonist. static=True puts it in the plate (for shots where it does not move)."""
+        if self.v2:
+            return self.person("Hero", "hero", seed, static)
         rig, parts = hl_char.build("Passenger", parent_col=S.col(S.STATIC if static else S.DYNAMIC))
         a = hl_anim.Acting(rig, parts["face"], FPS, seed=seed)
         if static:
@@ -197,14 +214,15 @@ def source_hash(shot, mod, t0, t1, tl):
     """(plate_hash, full_hash): the plate depends on code only; the character layer also on the narration timing."""
     h = hashlib.sha256()
     # plate: what the static image depends on (not the character-pass settings in this file)
-    for f in ("hl_char.py", "hl_sets.py", "hl_render.py"):
+    v2 = getattr(mod, "CHARACTER", "v1") == "v2"
+    for f in ("hl_char.py", "hl_sets.py", "hl_render.py") + (("hl_char2.py", "hl_hotel.py") if v2 else ()):
         h.update((HERE / f).read_bytes())
     h.update(inspect.getsource(shot["build"]).encode())
     for nm in shot.get("uses", []):
         h.update(inspect.getsource(getattr(mod, nm)).encode())
     h.update(f"plate_spp={PLATE_SPP}".encode())
     plate = h.hexdigest()[:12]
-    for f in ("hl_anim.py", "render_shot.py"):
+    for f in ("hl_anim.py", "render_shot.py") + (("hl_anim2.py",) if v2 else ()):
         h.update((HERE / f).read_bytes())
     segs = [g for sc in tl["scenes"] for g in sc["segments"] if g["end"] > t0 and g["start"] < t1]
     h.update(json.dumps([round(t0, 3), round(t1, 3), [(g["key"], g["start"], g["end"], g.get("words")) for g in segs]]).encode())
@@ -236,6 +254,8 @@ def main():
     R.reset()
     sc = R.cycles(samples=64, threads=a.threads)
     ctx = ShotCtx(tl, t0, t1, a.shot)
+    if getattr(mod, "CHARACTER", "v1") == "v2":
+        ctx.v2, ctx.step = True, 1
     S.col(S.STATIC)
     S.col(S.DYNAMIC)
     cam = shot["build"](ctx)
@@ -244,7 +264,13 @@ def main():
     if ctx.n - 1 not in frames:
         frames.append(ctx.n - 1)
     for act in ctx.actors + getattr(ctx, "_static_actors", []):
-        act.bake(frames if act in ctx.actors else [0])
+        if isinstance(act, hl_anim2.Actor):
+            act.bake(ctx.n if act in ctx.actors else 1)  # springs need every frame, in order
+        else:
+            act.bake(frames if act in ctx.actors else [0])
+    if ctx.v2 and os.environ.get("HL_VALIDATE"):
+        import hl_validate
+        hl_validate.run(ctx, out)
     sc.frame_start, sc.frame_end = 0, ctx.n - 1
     if a.mode == "plan":
         print(json.dumps({"shot": a.shot, "t0": t0, "t1": t1, "frames": ctx.n, "hash": hsh}))
