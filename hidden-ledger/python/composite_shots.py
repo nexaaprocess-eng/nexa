@@ -53,7 +53,10 @@ def composite(d: Path, meta: dict) -> Path:
         cmd = ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-loop", "1", "-framerate", "30", "-i", str(plate),
                "-f", "concat", "-safe", "0", "-i", str(lst),
                # character frames rendered below 100% (big crops) are scaled back to the crop size (Lanczos)
-               "-filter_complex", f"[1:v]fps=30,format=rgba,scale={cw}:{ch}:flags=lanczos[c];[0:v][c]overlay={x}:{y}:eof_action=repeat:format=auto,format=yuv420p[v]",
+               # premultiply BEFORE scaling: scaling straight alpha bleeds the black of transparent pixels into the
+               # edges (a dark fringe around the character); overlay then treats the layer as premultiplied
+               "-filter_complex", f"[1:v]fps=30,format=rgba,premultiply=inplace=1,scale={cw}:{ch}:flags=lanczos[c];"
+                                  f"[0:v][c]overlay={x}:{y}:alpha=premultiplied:eof_action=repeat:format=auto,format=yuv420p[v]",
                "-map", "[v]", *enc, str(tmp)]
     else:
         cmd = ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-loop", "1", "-framerate", "30", "-i", str(plate), *enc, str(tmp)]
