@@ -399,6 +399,7 @@ const commands = {
       console.log(`+ ${c.scene} rendered ${n} frames in ${((Date.now() - t0) / 1000).toFixed(0)} s`);
     }
     fs.writeFileSync(path.join(parts, 'manifest.json'), JSON.stringify(manifest, null, 2));
+    stopServer(); // the running child process would otherwise keep node alive after the last chunk
   },
   encode() {
     const {tl} = loadFull();
