@@ -62,6 +62,9 @@ class ShotCtx:
         # False: the character pass catches no floor shadows (the floor is a plain holdout). For shots under a ceiling
         # whose character shadow is hidden anyway: there the catcher would also record the ceiling's sky occlusion.
         self.floor_shadows = True
+        # None: static holdouts cast shadows only under a ceiling (see the character pass). False forces the open-set
+        # behaviour, e.g. a walk across a bright lounge floor, where the catcher would record the ceiling's sky occlusion
+        self.static_shadows = None
         self.chars_pct = 100
 
     # ---- timing (shot-local frames)
@@ -293,7 +296,7 @@ def main():
             #    with a visible seam at the crop edge. Under a ceiling they must keep blocking the sun and sky.
             catch = ("Floor", "Tarmac", "Cyclorama", "Ground", "Street", "Rim")
             statics = [o for o in S.col(S.STATIC).all_objects if o.type in ("MESH", "CURVE")]
-            open_set = not any("Ceiling" in o.name for o in statics)
+            open_set = not any("Ceiling" in o.name for o in statics) if ctx.static_shadows is None else not ctx.static_shadows
             for o in statics:
                 o.visible_diffuse = o.visible_glossy = o.visible_transmission = o.visible_volume_scatter = False
                 if ctx.floor_shadows and any(k in o.name for k in catch):

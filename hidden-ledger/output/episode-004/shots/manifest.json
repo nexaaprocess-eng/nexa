@@ -4074,5 +4074,45 @@
   "char_pct": 67,
   "composited_hash": "925b522e1aba",
   "file": "output/episode-004/shots/sh31/shot.mp4"
+ },
+ "sh32": {
+  "id": "sh32",
+  "scene": "s08",
+  "t0": 436.35,
+  "t1": 463.46,
+  "frames": 813,
+  "step": 2,
+  "anchors": {},
+  "screens": {
+   "board": [
+    [
+     1367.4,
+     210.7
+    ],
+    [
+     1775.1,
+     221.7
+    ],
+    [
+     1777.9,
+     453.1
+    ],
+    [
+     1368.9,
+     449.5
+    ]
+   ]
+  },
+  "hash": "bb99a666c73d",
+  "plate_hash": "650cafa3c1a0",
+  "crop": [
+   0,
+   82,
+   1920,
+   998
+  ],
+  "char_pct": 67,
+  "composited_hash": "bb99a666c73d",
+  "file": "output/episode-004/shots/sh32/shot.mp4"
  }
 }

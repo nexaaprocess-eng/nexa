@@ -52,6 +52,9 @@ def tarmac_setup(ctx, az=40, elev=4.5, stairs=True, plane=True):
 def terminal_setup(ctx, night=False, board=True):
     S.terminal(board=board, night=night)
     crisp_tail()
+    # bright lounge floor under a deep ceiling: if the set kept casting shadows in the character pass, the floor's
+    # shadow catcher would record the ceiling's sky occlusion a second time (a darker floor). Catch only the characters.
+    ctx.static_shadows = False
     if night:
         sun = R.dusk_night()
         R.area_light("HallFill", (0, -6, 8), (0, 0, 0), power=5000, size=14, color=(1.0, 0.82, 0.62))
@@ -65,6 +68,7 @@ def terminal_setup(ctx, night=False, board=True):
 def gate_setup(ctx):
     S.gate()
     crisp_tail()
+    ctx.static_shadows = False  # same lounge floor and ceiling as terminal_setup
     sun = R.golden(az=15, elev=5, sun_power=3.6, sky_strength=0.4, fill=False)
     R.area_light("HallFill", (-2, -8, 7), (1, 1, 0.5), power=10000, size=14, color=(0.85, 0.88, 1.0))
     R.area_light("GateKey", (3, -2, 4), (0.5, 1.5, 1), power=500, size=3, color=(1.0, 0.8, 0.6))
