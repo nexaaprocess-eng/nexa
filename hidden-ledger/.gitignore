@@ -64,3 +64,4 @@ episode004/*.mp4
 output/char2/anim/
 output/char2/*.png
 output/*/narration.log
+output/**/shots/*/validate.json

@@ -10,10 +10,44 @@ Zero paid APIs. Everything runs on CPU. This folder lives inside the `nexa` repo
 | 002 | How Supermarkets Make Money on Tiny Margins | same | 9:59 | `episode002/` |
 | 003 | Why Every App Wants a Subscription | same + light phone UIs | 11:09 | `episode003/` |
 | 004 | How Can Airlines Sell Flights for Just $20? | **character-led 3D** (Blender + Remotion), Chatterbox narration | 8:02 | `episode004/` |
+| 005 | Why Do Hotels Sell Rooms They Don't Have? | 3D with the **V2 character** (IK rig, footstep walks, rendered on ones) | see `episode005/episode_005_QA_report.md` | `episode005/` |
 
 Never delete or overwrite previous episodes' content, scenes or deliverables. Shared code changes must stay backward compatible (episodes 001–003 still render with `wipe` transitions, the old HUD and Kokoro).
 
-## The main character ("the Passenger"), episode 004 onwards
+## The main character V2 ("the Stickman"), episode 005 onwards
+Source of truth: `blender/hl_char2.py` (build + rig + face) and `blender/hl_anim2.py` (performance). Reusable for 006+.
+- Design: minimalist ivory-white mascot: one smooth body (skin-modifier graph baked to a mesh, distance weights with a
+  narrow blend at each joint, Armature -> Subdivision), round head (r 0.175 m, total height ~1.70 m), tall black glossy
+  eyes, thin brows, a small line mouth (+ "o" shape), mitten hands with a thumb, rounded feet. No clothes, no backpack,
+  no accessories. Other people (`STYLES`: clerk, guest1-3) share the rig with coloured bodies and darker heads.
+- Rig: deform chain hips>spine>chest>neck>head + arms/legs; control bones `ik_foot.*`, `pole_knee.*`, `ik_hand.*`,
+  `pole_elbow.*`. Legs are always IK; arms are IK with chest-space or world-space targets. Pole angles were measured
+  (legs -90, arms +90): change them only after a numeric check (elbow below the shoulder, knee forward).
+- Face: eye pivots at the head centre (rotating a pivot slides the eye over the head = gaze); brows on pivots (raise =
+  pivot pitch, inner angle = brow roll, + = inner end up); mouth curve points re-projected onto the head every frame.
+- Why ep004's Passenger looked robotic (diagnosed from `hl_anim.py`): the root slid along the path at a speed unrelated
+  to the sine-wave legs (foot sliding), every bone shared one ease (no overlap), turns spun the body on planted feet,
+  gestures were symmetric bumps, hands could not hold anything, and characters rendered on twos.
+- `hl_anim2.Actor` fixes those at the source:
+  - walks are planned as footsteps (`walk(f0, path, speed, end_yaw)` returns the frame the feet are together); each
+    foot is planted in world space between steps, rolls over the heel at contact and the toe at push-off (pivots at
+    sole level); the centre of mass follows the feet (spring + velocity feed-forward), the pelvis bobs/sways/twists from
+    the support phase and is lowered when a leg cannot reach; `turn()` steps, `shift()` adjusts stance, `sit()`/`stand_up()`
+    blend the pelvis onto a seat with a forward lean while the feet stay planted;
+  - upper body: `pose()` (library `POSES`, or a dict: spine-chain euler degrees + hand/pole offsets in the chest frame),
+    each channel through its own spring with per-joint delays (hips lead, hands follow: overlap and follow-through),
+    `back=True` adds anticipation/overshoot; `gesture()`, `nod()`, `shake()`;
+  - hands: `reach(f, side, world point | callable(f) | None)`, `attach()` (prop in the palm), `hold()` (grip taken at
+    that frame), `pull()` (wheeled suitcase solved from the hand each frame, wheels on the floor); props are keyed only on
+    frames the actor controls them (hand-overs between actors work);
+  - gaze: `look(f, point | "phone" | None)`: eyes jump first, the head follows, eyes counter-rotate; big gaze shifts
+    blink; targets behind the character never flip the head; expressions (`EXPR`) blend continuously.
+  - `bake(n)` simulates every frame in order (springs need history) and keys every frame: V2 shots render ON ONES.
+- Validation: `HL_VALIDATE=1` + `render_shot.py` writes `shots/<id>/validate.json` (`blender/hl_validate.py`): planted-foot
+  sliding (mm), IK miss, per-frame rotation (snaps), lowest foot vertex vs floor, body/set mesh overlap (seats excluded).
+- QA renders: `blender/test_char2.py` (turnaround / face), `blender/test_anim2.py` (walk-stop-turn-act-walk with numbers).
+
+## The main character ("the Passenger"), episode 004
 Reference sheet: `assets/character/reference_sheet.png` (primary reference, supplied by the channel owner).
 - Smooth **ivory-white round head** (≈ one third of total height) on a thin neck; **tall black glossy oval eyes**; thin black **eyebrows** do most of the acting; no mouth unless an expression needs one.
 - Oversized **cream hoodie** (hood bunched at the neck, drawstrings, pocket, ribbed cuffs), **black baggy trousers** bunching over **chunky white/grey sneakers**, **black backpack**, ivory mitten hands.
@@ -57,6 +91,19 @@ src/scenes/ep004/scenes.tsx   <Shot id=…> plays shot.mp4 under a virtual camer
 - Measured cost on this 4-vCPU machine: ≈ 1–5 s per character frame at 1080p (depends on how much of the frame the characters cover). Plates take ≈ 1–3 min each. Remotion renders the episode in per-scene chunks as before.
 - The Remotion render fetches shot videos over HTTP from a local server started by the pipeline (port 8766), instead of copying them into every bundle.
 - Episode 004 uses `"style": "cine"` and `"transitions": "cut"` in `episode.json`: no orange wipes or whooshes, a light HUD (logo + chapter card), softer subtitles, a vignette grade.
+
+## Episode 005 specifics
+- Sets: `blender/hl_hotel.py` (night lobby/reception, street with a 100-window facade = the hotel's inventory, corridor
+  with a hinged door, guest room, room blocks; props: suitcase, phone, key card). Shot list: `blender/shots/ep005.py`
+  (`CHARACTER = "v2"`: render_shot.py bakes every frame and renders on ones; hl_char2/hl_anim2/hl_hotel join the hash).
+- Staging rule: the protagonist is seen from the front or three-quarters; desk scenes are shot over the clerk's shoulder.
+- Sound anchored to animation: shots call `ctx.sfx(frame, name, gain)` and `ctx.ambience(bed)`; render_shot writes them to
+  meta.json and `python/mix.py` places them from the shot manifest (re-run `pipeline.mjs audio` after the shots).
+  New synthesised sounds in `python/music.py`: bell, keys, keycard, door, wheels, ding, paper, bed_lobby/street/corridor.
+- Narration: Chatterbox with `cfg 0.3` and `tempo 0.87` (rubberband time-stretch in `chatterbox_narration.py`; the
+  tempo joins the cache key only when it is not 1.0) for a calmer documentary pace.
+- Docs: `content/episode-005/build_storyboard.py` (storyboard with the 8 fields per scene + shot times),
+  `build_youtube.py` (metadata with chapters rounded up), `calculations.py` (binomial made-up hotel + dataset counts).
 
 ## Narration
 - Episodes 001–003: Kokoro-82M (`python/generate_voice.py`), voice `am_michael`.
