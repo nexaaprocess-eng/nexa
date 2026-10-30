@@ -59,6 +59,9 @@ class ShotCtx:
         self.plate_samples = PLATE_SPP
         self.margin = 0.05
         self.shadow_dir = None
+        # False: the character pass catches no floor shadows (the floor is a plain holdout). For shots under a ceiling
+        # whose character shadow is hidden anyway: there the catcher would also record the ceiling's sky occlusion.
+        self.floor_shadows = True
         self.chars_pct = 100
 
     # ---- timing (shot-local frames)
@@ -285,15 +288,20 @@ def main():
             #  * floors/grounds: shadow catchers (contact shadows), invisible to bounce rays
             #  * everything else static: holdout (occludes the characters where it is in front), casts shadows,
             #    but takes no part in indirect light (the shot's fill lights stand in for the room bounce)
+            #  * open sets (no ceiling: tarmac, stage): holdouts cast no shadows either. Otherwise their shadows and
+            #    sky occlusion land on the shadow catcher a second time (the plate already has them): a darker patch
+            #    with a visible seam at the crop edge. Under a ceiling they must keep blocking the sun and sky.
             catch = ("Floor", "Tarmac", "Cyclorama", "Ground", "Street", "Rim")
-            for o in S.col(S.STATIC).all_objects:
-                if o.type not in ("MESH", "CURVE"):
-                    continue
+            statics = [o for o in S.col(S.STATIC).all_objects if o.type in ("MESH", "CURVE")]
+            open_set = not any("Ceiling" in o.name for o in statics)
+            for o in statics:
                 o.visible_diffuse = o.visible_glossy = o.visible_transmission = o.visible_volume_scatter = False
-                if any(k in o.name for k in catch):
+                if ctx.floor_shadows and any(k in o.name for k in catch):
                     o.is_shadow_catcher = True
                 else:
                     o.is_holdout = True
+                    if open_set:
+                        o.visible_shadow = False
             # emissive set pieces (city windows, screens, strip lights) stop being sampled as lights here: the
             # characters are lit by the shot's lamps + sky, and light-tree sampling of hundreds of emitters was the
             # dominant per-ray cost

@@ -428,12 +428,14 @@ def sh18b(ctx):
     return R.camera((0.9, -1.1, 1.55), (-0.03, 0.94, 0.94), lens=34)
 
 
-@shot("sh19", "s04", "s04-07", uses=["terminal_setup"])
+@shot("sh19", "s04", "s04-07", uses=["terminal_setup", "crisp_tail"])
 def sh19(ctx):
     """By the glass: planes outside; 'fill the plane first' — the passenger sits, watching the apron."""
     terminal_setup(ctx, board=False)
+    crisp_tail()
+    ctx.floor_shadows = False  # seated behind a bench: no visible floor shadow, and the lounge ceiling would darken the catcher
     h = ctx.hero()
-    h.place(0, (-6.5, 2.2), yaw=180, z=-0.12)
+    h.place(0, (-6.5, 2.4), yaw=180, z=-0.12)  # forward on the seat: the backpack clears the seat back
     h.pose(0, "sit")
     h.expr(0, "thinking")
     h.look(0, (8, 34, 4))
