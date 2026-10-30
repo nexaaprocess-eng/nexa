@@ -467,7 +467,7 @@ def build(name="Hero", style="hero", parent_col=None, at=(0, 0, 0)):
     op = on_head(0, -0.078, lift=-0.003)
     oo.location = hc + op
     oo.scale = (0.0, 0.0, 0.0)
-    oo["rest"] = [0.011, 0.006, 0.014]
+    oo["rest"] = [0.016, 0.008, 0.021]
     _parent_bone(oo, rig, "head")
     face["mouth_o"] = oo
 

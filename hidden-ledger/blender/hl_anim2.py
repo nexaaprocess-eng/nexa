@@ -750,7 +750,7 @@ class Actor:
                 raise_ = ex["brow" + s] - 0.25 * blink
                 bp.rotation_euler = (math.radians(7.5 * raise_), 0, 0)
                 br = fc[f"brow.{s}"]
-                br.rotation_euler = (math.radians(-28), math.radians(-13 * ex["ang" + s] * sg), br.rotation_euler.z)
+                br.rotation_euler = (math.radians(-28), math.radians(14 * ex["ang" + s] * sg), br.rotation_euler.z)  # + = inner end up
         # mouth line: re-projected onto the head surface
         mo = fc["mouth"]
         pts = C.mouth_points(ex["width"] * (1 - 0.45 * ex["oh"]), ex["curve"] * (1 - ex["oh"]))
