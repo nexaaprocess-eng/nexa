@@ -31,18 +31,30 @@ Source of truth for the asset: `blender/hl_char.py` (procedural build + rig + `P
 ```
 blender/shots/ep004.py        one function per shot: set + camera + lights + acting, timed to narration words
   │  blender/render_shot.py   (Blender 4.5 LTS, Cycles CPU, AgX)
-  │     plate.png             static set, 96 spp, once
-  │     char/NNNN.png         characters only, transparent, cropped, every 2nd frame ("on twos"), 10 spp + OIDN;
-  │                           static objects become shadow catchers → exact contact shadows and occlusion
+  │     plate.png             static set, 40 spp + OIDN, rendered once
+  │     char/NNNN.png         characters only, transparent, cropped, every 2nd frame ("on twos"), 4 spp + OIDN (fast);
+  │                           crops > 35 % of the frame render at 67 % and are scaled back (Lanczos, premultiplied)
   │     meta.json             frames, crop, projected anchors ("ANCHOR:x") and screens ("SCREEN:x"), source hash
   ▼  python/composite_shots.py → shots/<id>/shot.mp4 (frame-exact) + shots/manifest.json
+                              crop edges inside the frame fade over 32 px (feather mask; blend forced to gbrap)
 src/scenes/ep004/scenes.tsx   <Shot id=…> plays shot.mp4 under a virtual camera move; overlays (price tags, callouts,
                               screen UIs mapped with a homography) attach to the projected anchors, timed with useBeats().word()
 ```
+- Character pass, static set: floors ("Floor", "Tarmac", "Cyclorama", "Ground", "Street", "Rim") are shadow catchers,
+  everything else is a holdout. In an **open set** (no object named "Ceiling") holdouts cast no shadows, otherwise their
+  shadows would be counted twice (they are already in the plate). Per-shot overrides on `ctx`:
+  `ctx.static_shadows = False` (force open-set behaviour, used by the terminal and gate sets) and
+  `ctx.floor_shadows = False` (floor becomes a plain holdout, used for seated characters in sh19/sh31).
+- `crisp_tail()` in `shots/ep004.py` removes the subdivision from the fin and winglets (a 4-vertex section turned
+  leaf-shaped); it is local to the shots that list it in `uses`, so the shared airliner is unchanged.
+- Hashes: `render_shot.py` and `hl_anim.py` are part of every shot's full hash, so editing them invalidates every
+  character layer. When an edit cannot change a shot's output, rewrite its meta hash instead of re-rendering
+  (`render_shot.py … --mode plan` prints the new hash; set `hash`, and `composited_hash` if it was composited).
+  Long renders: `scripts/render_shots_ep.sh 004 [shots…]` (detached; log in `output/episode-004/shots/render.log`).
 - Install Blender: the official 4.5 LTS Linux tarball (`/opt/blender-dl/…`, symlinked as `blender`). Set `BLENDER=` to override.
 - `node scripts/pipeline.mjs shots --episode 004 [--only sh01,sh02]` renders (resumable: existing frames are skipped; a changed shot function, timing or shared rig code invalidates only that shot), composites and refreshes the props.
 - Layout checks before the narration exists: `render_shot.py … --mode still --timeline <provisional.json>`.
-- Measured cost on this 4-vCPU machine: ≈ 2–6 s per character frame at 1080p (depends on how much of the frame the characters cover). Plates take ≈ 1–3 min each. Remotion renders the episode in per-scene chunks as before.
+- Measured cost on this 4-vCPU machine: ≈ 1–5 s per character frame at 1080p (depends on how much of the frame the characters cover). Plates take ≈ 1–3 min each. Remotion renders the episode in per-scene chunks as before.
 - The Remotion render fetches shot videos over HTTP from a local server started by the pipeline (port 8766), instead of copying them into every bundle.
 - Episode 004 uses `"style": "cine"` and `"transitions": "cut"` in `episode.json`: no orange wipes or whooshes, a light HUD (logo + chapter card), softer subtitles, a vignette grade.
 
