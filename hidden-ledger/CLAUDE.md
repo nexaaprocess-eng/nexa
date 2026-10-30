@@ -9,7 +9,7 @@ Zero paid APIs. Everything runs on CPU. This folder lives inside the `nexa` repo
 | 001 | Who Really Pays for FREE Returns? | 2D Remotion infographics, dark ledger look, Kokoro `am_michael` | 9:53 | `output/episode-001/final/` |
 | 002 | How Supermarkets Make Money on Tiny Margins | same | 9:59 | `episode002/` |
 | 003 | Why Every App Wants a Subscription | same + light phone UIs | 11:09 | `episode003/` |
-| 004 | How Can Airlines Sell Flights for Just $20? | **character-led 3D** (Blender + Remotion), Chatterbox narration | see `episode004/qa_report_es.md` | `episode004/` |
+| 004 | How Can Airlines Sell Flights for Just $20? | **character-led 3D** (Blender + Remotion), Chatterbox narration | 8:02 | `episode004/` |
 
 Never delete or overwrite previous episodes' content, scenes or deliverables. Shared code changes must stay backward compatible (episodes 001–003 still render with `wipe` transitions, the old HUD and Kokoro).
 
